@@ -93,3 +93,5 @@ Caldas, M. (2023).
 SMILES-transformers Dataset. 
 Hugging Face. 
 https://huggingface.co/datasets/maykcaldas/smiles-transformers
+
+sunqm. (2024). Semiempirical module for PySCF. GitHub. https://github.com/pyscf/semiempirical
