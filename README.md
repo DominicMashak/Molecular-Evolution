@@ -94,6 +94,8 @@ SMILES-transformers Dataset.
 Hugging Face. 
 https://huggingface.co/datasets/maykcaldas/smiles-transformers
 
-sunqm. (2024). Semiempirical module for PySCF. GitHub. https://github.com/pyscf/semiempirical
+Qiming Sun. (2024). Semiempirical module for PySCF. GitHub. https://github.com/pyscf/semiempirical
 
 Moussa, J. E., & Stewart, J. J. P. (2025). MOPAC (v23.1.2). Zenodo. https://doi.org/10.5281/zenodo.14885238
+
+Sebastian Ehlert. (2021). Light-weight tight-binding framework. GitHub. https://github.com/tblite/tblite
