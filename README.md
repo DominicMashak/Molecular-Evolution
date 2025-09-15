@@ -90,3 +90,5 @@ Qiming Sun. (2024). Semiempirical module for PySCF. GitHub. https://github.com/p
 Moussa, J. E., & Stewart, J. J. P. (2025). MOPAC (v23.1.2). Zenodo. https://doi.org/10.5281/zenodo.14885238
 
 Sebastian Ehlert. (2021). Light-weight tight-binding framework. GitHub. https://github.com/tblite/tblite
+
+Landrum, G. 2010. RDKit: Open-source cheminformatics. https://www.rdkit.org
