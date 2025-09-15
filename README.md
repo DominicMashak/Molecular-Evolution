@@ -51,18 +51,6 @@ To ensure chemically feasible molecules, the following default constraints are a
 
 These restrictions can be modified for specific use.
 
-## Installation
-
-TODO
-
-## Usage
-
-TODO
-
-## Contributing
-
-TODO
-
 ## License
 
 This project is licensed under the Creative Commons BY-NC-ND 4.0 License.
