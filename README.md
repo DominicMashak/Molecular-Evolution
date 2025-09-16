@@ -14,7 +14,7 @@ The project currently implements algorithms such as Simulated Annealing (SA) and
 ## Key Features
 
 - **Evolutionary Optimization**: Apply SA and NSGA-II to evolve molecular populations toward optimal NLO properties.
-- **NLO Property Focus**: At the moment specifically targets hyperpolarizability (β), along with 
+- **NLO Property Focus**: At the moment, it specifically targets hyperpolarizability (β), along with 
 the ability for related properties like polarizability (α) and second hyperpolarizability (γ), to be screened and optimized.
 - **SMILES-Based**: Uses RDKit for generating and manipulating SMILES strings, ensuring compatibility with standard cheminformatics pipelines. We currently use 7 mutation operators, which include: changing a bond, adding an atom, adding a branch, deleting an atom, changing an atom, adding a ring, and deleting a ring. All of the mutation operators have mutable weights.
 - **Benchmarking and Statistics**: Includes tools for generating benchmark datasets and computing various statistical comparisons (e.g., mean, max, min values for properties like β, HOMO-LUMO, and Kendall Tau, Spearman Rho, and pairwise agreement for rank correlation). Visualization of results and method comparisons is also included.
@@ -27,7 +27,7 @@ The repository supports a range of computational methods for property calculatio
 - **Coupled-Cluster Methods**:
   - CCSD(T), CCSD
 
-- **Ab Initio and  Methods**:
+- **Ab Initio and DFT Methods**:
   - Hartree-Fock (HF)
   - Density Functional Theory (DFT) variants: B3LYP, PBE, PBE0
 
