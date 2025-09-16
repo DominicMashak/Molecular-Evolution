@@ -24,7 +24,10 @@ the ability for related properties like polarizability (α) and second hyperpola
 
 The repository supports a range of computational methods for property calculations, allowing users to balance speed and accuracy:
 
-- **Ab Initio and DFT Methods**:
+- **Coupled-Cluster Methods**:
+  - CCSD(T), CCSD
+
+- **Ab Initio and  Methods**:
   - Hartree-Fock (HF)
   - Density Functional Theory (DFT) variants: B3LYP, PBE, PBE0
 
