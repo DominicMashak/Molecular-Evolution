@@ -1,1 +1,14 @@
-TODO
+cff-version: 1.2.0
+message: "If you use this program, please cite it as below."
+authors:
+  - family-names: "Mashak"
+    given-names: "Dominic"
+title: "Molecular-Evolution"
+abstract: "Using algorithms (e.g., SA, NSGA-II) to optimize molecular structures for enhanced properties like hyperpolarizability. Uses SMILES-based representation, quantum chemistry calculations (Ab initio and DFT, xTB, semi-empirical), and benchmarking. Designed for computational chemistry, physics, and materials science research."
+license: CC-BY-NC-ND-4.0
+repository-code: "https://github.com/DominicMashak/Molecular-Evolution"
+keywords:
+  - computational-chemistry
+  - evolutionary-algorithms
+  - molecular-optimization
+  - quantum-chemistry
