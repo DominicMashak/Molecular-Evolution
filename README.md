@@ -92,6 +92,6 @@ Qiming Sun. (2024). Semiempirical module for PySCF. GitHub. https://github.com/p
 
 Moussa, J. E., & Stewart, J. J. P. (2025). MOPAC (v23.1.2). Zenodo. https://doi.org/10.5281/zenodo.14885238
 
-Sebastian Ehlert. (2021). Light-weight tight-binding framework. GitHub. https://github.com/tblite/tblite
-
 Landrum, G. (2010). RDKit: Open-source cheminformatics. https://www.rdkit.org
+
+Hourahine, B., Aradi, B., Blum, V., Bonafé, F., Buccheri, A., Camacho, C., Cevallos, C., Deshaye, M. Y., Dumitrică, T., Dominguez, A., Ehlert, S., Elstner, M., van der Heide, T., Hermann, J., Irle, S., Kranz, J. J., Köhler, C., Kowalczyk, T., Kubař, T., Lee, I. S., Lutsker, V., Maurer, R. J., Min, S. K., Mitchell, I., Negre, C., Niehaus, T. A., Niklasson, A. M. N., Page, A. J., Pecchia, A., Penazzi, G., Persson, M. P., Řezáč, J., Sánchez, C. G., Sternberg, M., Stöhr, M., Stuckenberg, F., Tkatchenko, A., Yu, V. W., & Frauenheim, T. (2020). DFTB+, a software package for efficient approximate density functional theory based atomistic simulations. The Journal of Chemical Physics, 152. https://doi.org/10.1063/1.5143190
