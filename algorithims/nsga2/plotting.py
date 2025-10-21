@@ -33,16 +33,6 @@ def format_objective_name(obj_name):
         'natoms': 'Number of Atoms',
         'n_atoms': 'Number of Atoms',
         'num_atoms': 'Number of Atoms',
-        'qed': 'QED',
-        'sa_score': 'SA Score',
-        'logp': 'LogP',
-        'tpsa': 'TPSA',
-        'mw': 'Molecular Weight',
-        'molecular_weight': 'Molecular Weight',
-        'rssi': 'RSSI',
-        'altitude': 'Altitude/Elevation',
-        'latitude': 'Latitude',
-        'longitude': 'Longitude',
     }
     
     obj_lower = obj_name.lower()
