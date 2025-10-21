@@ -1,0 +1,902 @@
+Temperature: 100.000000, Iteration: 0
+Best molecule: C1=CC=CC=C1, Beta: 1.390500
+Temperature: 100.000000, Iteration: 1
+Best molecule: C1=CC=CC=C1, Beta: 1.390500
+Mutated 1 (Change bond type): c1ccccc1, Beta: 1.390500
+Mutated 2 (Add atom inline): C1=C=CC=CC=C=1, Beta: -1000.000000
+Mutated 3 (Add branch): Oc1ccccc1, Beta: 200.869200
+Mutated 4 (Delete atom): C1=CC=CC=C1, Beta: 1.390500
+Mutated 5 (Change atom type): c1ccncc1, Beta: 58.243400
+Mutated 6 (Add ring): c1cc2cc-2c1, Beta: 35.831200
+Mutated 7 (Delete ring): C1=CC=CC=C1, Beta: 1.390500
+Temperature: 99.000100, Iteration: 2
+Best molecule: Oc1ccccc1, Beta: 200.869200
+Mutated 1 (Change bond type): Oc1ccccc1, Beta: 200.869200
+Mutated 2 (Add atom inline): OC1=C=NC=CC=C1, Beta: 60.607600
+Mutated 3 (Add branch): Oc1ccc(O)cc1, Beta: 167.985000
+Mutated 4 (Delete atom): c1ccccc1, Beta: 1.390500
+Mutated 5 (Change atom type): Oc1ccccn1, Beta: 52.468900
+Mutated 6 (Add ring): c1ccc2c(c1)O2, Beta: 75.507600
+Mutated 7 (Delete ring): Oc1ccccc1, Beta: 200.869200
+Temperature: 98.000200, Iteration: 3
+Best molecule: Oc1ccccc1, Beta: 200.869200
+Mutated 1 (Change bond type): Oc1ccccc1, Beta: 200.869200
+Mutated 2 (Add atom inline): O=Nc1ccccc1, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cccc(O)c1, Beta: -1000.000000
+Mutated 4 (Delete atom): c1ccccc1, Beta: 1.390500
+Mutated 5 (Change atom type): Oc1cccnc1, Beta: 25.489200
+Mutated 6 (Add ring): Oc1ccc2cc1-2, Beta: 89.648700
+Mutated 7 (Delete ring): Oc1ccccc1, Beta: 200.869200
+Temperature: 97.000300, Iteration: 4
+Best molecule: Oc1ccccc1, Beta: 200.869200
+Mutated 1 (Change bond type): Oc1ccccc1, Beta: 200.869200
+Mutated 2 (Add atom inline): OC1=COC=CC=C1, Beta: 73.614100
+Mutated 3 (Add branch): Nc1cccc(O)c1, Beta: -1000.000000
+Mutated 4 (Delete atom): c1ccccc1, Beta: 1.390500
+Mutated 5 (Change atom type): Oc1cccnc1, Beta: 25.489200
+Mutated 6 (Add ring): Oc1cc2ccc1-2, Beta: 327.070900
+Mutated 7 (Delete ring): Oc1ccccc1, Beta: 200.869200
+Temperature: 96.000400, Iteration: 5
+Best molecule: Oc1cc2ccc1-2, Beta: 327.070900
+Mutated 1 (Change bond type): Oc1cc2ccc1-2, Beta: 327.070900
+Mutated 2 (Add atom inline): OC1=CC2=CC=C2C1, Beta: 33.147300
+Mutated 3 (Add branch): Cc1cc2cc(O)c1-2, Beta: 410.290000
+Mutated 4 (Delete atom): c1cc2ccc1-2, Beta: 0.005100
+Mutated 5 (Change atom type): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 6 (Add ring): Oc1c2c3cc2c13, Beta: 86.356500
+Mutated 7 (Delete ring): Oc1ccccc1, Beta: 200.869200
+Temperature: 95.000500, Iteration: 6
+Best molecule: Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 1 (Change bond type): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 2 (Add atom inline): NCc1cc2ccc1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2ccc-2c1O, Beta: -1000.000000
+Mutated 4 (Delete atom): c1cc2ccc1-2, Beta: 0.005100
+Mutated 5 (Change atom type): Nc1cc2ncc1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2c3cc2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccccc1, Beta: -1000.000000
+Temperature: 94.000600, Iteration: 7
+Best molecule: Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 1 (Change bond type): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 2 (Add atom inline): NC1=CC2=CC=C2C1, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 4 (Delete atom): c1cc2ccc1-2, Beta: 0.005100
+Mutated 5 (Change atom type): Oc1cc2ccc1-2, Beta: 327.070900
+Mutated 6 (Add ring): c1cc2c1c1[nH]c21, Beta: 26.109900
+Mutated 7 (Delete ring): Nc1ccccc1, Beta: -1000.000000
+Temperature: 93.000700, Iteration: 8
+Best molecule: Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 1 (Change bond type): Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 2 (Add atom inline): NC1=CC2=CC(N)=C1C2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 5 (Change atom type): Nc1cc2nc(N)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2[nH]c3cc2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1cccc(N)c1, Beta: -1000.000000
+Temperature: 92.000800, Iteration: 9
+Best molecule: Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 1 (Change bond type): Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 2 (Add atom inline): NOc1cc2cc(N)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 5 (Change atom type): Nc1cc2cc(O)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): c1c2cc3c-2c1NN3, Beta: 163.760100
+Mutated 7 (Delete ring): Nc1cccc(N)c1, Beta: -1000.000000
+Temperature: 91.000900, Iteration: 10
+Best molecule: Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 1 (Change bond type): Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 2 (Add atom inline): NC1=Cc2coc(N)c21, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1cc2cc(N)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 5 (Change atom type): Nc1cc2nc(N)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): c1c2cc3c-2c1NN3, Beta: 163.760100
+Mutated 7 (Delete ring): Nc1cccc(N)c1, Beta: -1000.000000
+Temperature: 90.001000, Iteration: 11
+Best molecule: Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 1 (Change bond type): Nc1cc2cc(N)c1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=c2oc(N)cc2=C1, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(O)c(N)c1-2, Beta: 1804.440800
+Mutated 4 (Delete atom): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 5 (Change atom type): Cc1cc2cc(N)c1-2, Beta: 210.618900
+Mutated 6 (Add ring): Nc1c2[nH]c3cc2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1cccc(N)c1, Beta: -1000.000000
+Temperature: 89.001100, Iteration: 12
+Best molecule: Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 1 (Change bond type): Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 2 (Add atom inline): NC1=C=NC2=CC(N)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 4 (Delete atom): Nc1cc2ccc1-2, Beta: 666.704600
+Mutated 5 (Change atom type): Nc1cc2cc(O)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): c1c2cc3c-2c1N=N3, Beta: 59.966000
+Mutated 7 (Delete ring): Nc1cccc(N)c1, Beta: -1000.000000
+Temperature: 88.001200, Iteration: 13
+Best molecule: Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 1 (Change bond type): Nc1c(N)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NCc1c(N)c2cc(N)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(NO)c-2c1N, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1N, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(N)c1-2, Beta: 1804.440800
+Mutated 6 (Add ring): Nc1c2c3cc-2c1nn3, Beta: 1393.290500
+Mutated 7 (Delete ring): Nc1ccc(N)c(N)c1, Beta: -1000.000000
+Temperature: 87.001300, Iteration: 14
+Best molecule: Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 2 (Add atom inline): NC1=CC2=C(N)C(N)=C1C2, Beta: -1000.000000
+Mutated 3 (Add branch): NNc1cc2c(N)c(N)c1-2, Beta: 581.244400
+Mutated 4 (Delete atom): Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 5 (Change atom type): Cc1c2cc(N)c-2c1N, Beta: 288.668800
+Mutated 6 (Add ring): Nc1cc2c3[nH][nH]c3c1-2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(N)c1, Beta: -1000.000000
+Temperature: 86.001400, Iteration: 15
+Best molecule: Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 2 (Add atom inline): NC1=C(N)c2c1coc2N, Beta: -1000.000000
+Mutated 3 (Add branch): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 4 (Delete atom): Nc1cc2cc(N)c1-2, Beta: 2043.215300
+Mutated 5 (Change atom type): Nc1cc2c(O)c(N)c1-2, Beta: 1804.440800
+Mutated 6 (Add ring): Nc1c2c3cc-2c1nn3, Beta: 1393.290500
+Mutated 7 (Delete ring): Nc1ccc(N)c(N)c1, Beta: -1000.000000
+Temperature: 85.001500, Iteration: 16
+Best molecule: Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 2 (Add atom inline): NOc1cc2c(N)c(N)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 4 (Delete atom): Nc1c2ccc-2c1N, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(O)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N=N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(N)c1, Beta: -1000.000000
+Temperature: 84.001600, Iteration: 17
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2cc(N)[nH]c2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(O)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 83.001700, Iteration: 18
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2[nH]cc(N)c2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c(NO)c2c(N)c(O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 82.001800, Iteration: 19
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(ONO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(O)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1NON3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 81.001900, Iteration: 20
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NNO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(O)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 80.002000, Iteration: 21
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=CC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(N)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 79.002100, Iteration: 22
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): N=Nc1c2cc(N)c-2c1NO, Beta: 201.213800
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): CNc1c(N)c2cc(N)c1-2, Beta: 153.092600
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 78.002200, Iteration: 23
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=CC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): CNc1c(N)c2cc(N)c1-2, Beta: 153.092600
+Mutated 6 (Add ring): Nc1c(NO)c2c3[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 77.002300, Iteration: 24
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=CC2=C(N)C(NO)=C1C2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(NO)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 76.002400, Iteration: 25
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2occ(N)c2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1cc2c(N)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 75.002500, Iteration: 26
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2cc(N)[nH]c2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(N)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 74.002600, Iteration: 27
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(N=CO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1c2cc(N)c-2c1NO, Beta: 232.332900
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): ONc1c2c3cc-2c1nn3, Beta: 44.773500
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 73.002700, Iteration: 28
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2cc(N)[nH]c2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NOO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 72.002800, Iteration: 29
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=C=CC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1cc2c(N)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 68.402660, Iteration: 30
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=NC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NOO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1cc2c3[nH]n(O)c3c1-2, Beta: 4584.814400
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 70.003000, Iteration: 31
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): N=Nc1cc2c(N)c(NO)c1-2, Beta: 392.076500
+Mutated 3 (Add branch): Nc1cc2c(NO)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 69.003100, Iteration: 32
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=CC2=C(N)C(NO)=C2C1, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 68.003200, Iteration: 33
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=Cc2c(N)[nH]c(NO)c21, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(O)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 67.003300, Iteration: 34
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): N=Cc1cc2c(N)c(NO)c1-2, Beta: 411.889000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 66.003400, Iteration: 35
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): N=Nc1cc2c(N)c(NO)c1-2, Beta: 392.076500
+Mutated 3 (Add branch): Nc1c(N)c2c(NO)c(N)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 65.003500, Iteration: 36
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=CC2=C(N)C(NO)=C2C1, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(NO)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 64.003600, Iteration: 37
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(N=CO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(N=O)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 63.003700, Iteration: 38
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(O)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 62.003800, Iteration: 39
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NN=O)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): CONc1c(N)c2cc(N)c1-2, Beta: 78.345600
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 61.003900, Iteration: 40
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NNc1cc2c(N)c(NO)c1-2, Beta: 534.826600
+Mutated 3 (Add branch): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): Nc1c2cc3c-2c1NON3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 60.004000, Iteration: 41
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=C=CC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Cc1c(N)c2c(NO)c(N)c1-2, Beta: 228.499500
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1c2cc3c-2c1NON3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 59.004100, Iteration: 42
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(CNO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1c2cc(N)c-2c1NO, Beta: 232.332900
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): Nc1c2c3c(c(NO)c1-3)N2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 58.004200, Iteration: 43
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NOc1cc2c(N)c(NO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): N=Nc1c2cc(N)c-2c1NO, Beta: 201.213800
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 57.004300, Iteration: 44
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NCc1cc2c(N)c(NO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NOO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 56.004400, Iteration: 45
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(N=CO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N=O)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 55.004500, Iteration: 46
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C2C(=C=C1)C(N)=C2NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c(N)c2c(NO)c(N)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 54.004600, Iteration: 47
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NC=O)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(O)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): Nc1cc2c3[nH]n(O)c3c1-2, Beta: 4584.814400
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 53.004700, Iteration: 48
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=C2C(=C1)C(N)=C2NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c(NO)c2c(N)c(O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1c2cc(N)c-2c1NO, Beta: 120.420600
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 52.004800, Iteration: 49
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=CC2=C(N)CC(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1c2cc(N)c-2c1NO, Beta: 232.332900
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1c2cc(N)c-2c1NO, Beta: 120.420600
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 51.004900, Iteration: 50
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NCO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 50.005000, Iteration: 51
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2[nH]c(NO)c(N)c2=C1, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c(N)c2c(NO)c(N)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): ONc1c2c3cc-2c1nn3, Beta: 44.773500
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 49.005100, Iteration: 52
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C2C(=C1)CC(N)=C2NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NOO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 48.005200, Iteration: 53
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=NC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 47.005300, Iteration: 54
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(CNO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 46.005400, Iteration: 55
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=CC2=C(N)C(NO)=C2C1, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(O)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 45.005500, Iteration: 56
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=CCC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N=O)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 44.005600, Iteration: 57
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C2C(=C=N1)C(N)=C2NO, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1cc2c(N)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1c2cc(N)c-2c1NO, Beta: 120.420600
+Mutated 6 (Add ring): Nc1c2c3c(c(NO)c1-3)N2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 43.005700, Iteration: 58
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 3 (Add branch): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 42.005800, Iteration: 59
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): N=Nc1cc2c(N)c(NO)c1-2, Beta: 392.076500
+Mutated 3 (Add branch): Nc1c2cc(N=O)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 41.005900, Iteration: 60
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=CC2=C(N)CC(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): CNc1c(N)c2cc(N)c1-2, Beta: 153.092600
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 40.006000, Iteration: 61
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2c(NO)c(N)[nH]c2=C1, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 39.006100, Iteration: 62
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=NC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(N)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 38.006200, Iteration: 63
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(N=NO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(N=O)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 37.006300, Iteration: 64
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=CCC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(NO)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 36.006400, Iteration: 65
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=NC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): N=Nc1c2cc(N)c-2c1NO, Beta: 201.213800
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): CNc1c(N)c2cc(N)c1-2, Beta: 153.092600
+Mutated 6 (Add ring): Nc1c(NO)c2c3[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 35.006500, Iteration: 66
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NNO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): CONc1c(N)c2cc(N)c1-2, Beta: 78.345600
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c(NO)c2c3[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 34.006600, Iteration: 67
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 33.006700, Iteration: 68
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=c2cc(N)oc2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1c2cc(N)c-2c1NO, Beta: 232.332900
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1cc2c3[nH]n(O)c3c1-2, Beta: 4584.814400
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 32.006800, Iteration: 69
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): Nc1c(NO)c2oc1cc2N, Beta: -1000.000000
+Mutated 3 (Add branch): NONc1c(N)c2cc(N)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1cc2c3[nH]n(O)c3c1-2, Beta: 4584.814400
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 31.006900, Iteration: 70
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): N=Cc1cc2c(N)c(NO)c1-2, Beta: 411.889000
+Mutated 3 (Add branch): NNc1cc2c(N)c(NO)c1-2, Beta: 534.826600
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2c3c(c(NO)c1-3)N2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 30.007000, Iteration: 71
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NOc1cc2c(N)c(NO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): CN(O)c1c(N)c2cc(N)c1-2, Beta: 1450.725600
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): CNc1c(N)c2cc(N)c1-2, Beta: 153.092600
+Mutated 6 (Add ring): Nc1c2c3c(c(NO)c1-3)N2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 29.007100, Iteration: 72
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NNc1cc2c(N)c(NO)c1-2, Beta: 534.826600
+Mutated 3 (Add branch): CONc1c(N)c2cc(N)c1-2, Beta: 78.345600
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Cc1c2cc(N)c-2c1NO, Beta: 120.420600
+Mutated 6 (Add ring): ONc1c2c3cc-2c1nn3, Beta: 44.773500
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 28.007200, Iteration: 73
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=Cc2c(N)oc(NO)c21, Beta: -1000.000000
+Mutated 3 (Add branch): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Cc1c2cc(N)c-2c1NO, Beta: 120.420600
+Mutated 6 (Add ring): Nc1c(NO)c2c3[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 27.007300, Iteration: 74
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(C=NO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): NONc1c(N)c2cc(N)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): CNc1c(N)c2cc(N)c1-2, Beta: 153.092600
+Mutated 6 (Add ring): Nc1c2cc3c-2c1NON3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 26.007400, Iteration: 75
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NCc1cc2c(N)c(NO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NOO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 24.707030, Iteration: 76
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NC=O)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 24.007600, Iteration: 77
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): N=Cc1cc2c(N)c(NO)c1-2, Beta: 411.889000
+Mutated 3 (Add branch): CONc1c(N)c2cc(N)c1-2, Beta: 78.345600
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2o[nH]c3c(N)c2c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 23.007700, Iteration: 78
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2c(NO)c(N)[nH]c2=C1, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 22.007800, Iteration: 79
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(N=NO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N=O)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): Nc1c2cc3c-2c1NON3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 21.007900, Iteration: 80
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C2C(=C1)CC(N)=C2NO, Beta: -1000.000000
+Mutated 3 (Add branch): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 20.008000, Iteration: 81
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=c2cc(N)oc2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): CNc1cc2c(N)c(NO)c1-2, Beta: 562.493500
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 19.008100, Iteration: 82
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NNc1cc2c(N)c(NO)c1-2, Beta: 534.826600
+Mutated 3 (Add branch): CN(O)c1c(N)c2cc(N)c1-2, Beta: 1450.725600
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Cc1c2cc(N)c-2c1NO, Beta: 120.420600
+Mutated 6 (Add ring): Nc1c2c3c(c(NO)c1-3)N2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 18.008200, Iteration: 83
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=c2c(NO)c(N)oc2=C1, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NOO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): Nc1cc2c3[nH]n(O)c3c1-2, Beta: 4584.814400
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 17.008300, Iteration: 84
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NC=O)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 16.008400, Iteration: 85
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C=NC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(NOO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 15.008500, Iteration: 86
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=C2C(=CC1)C(N)=C2NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(NO)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 14.008600, Iteration: 87
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C(NO)c2c1coc2N, Beta: -1000.000000
+Mutated 3 (Add branch): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): Nc1cc2c3[nH]n(O)c3c1-2, Beta: 4584.814400
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 13.008700, Iteration: 88
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=c2c(NO)c(N)oc2=C1, Beta: -1000.000000
+Mutated 3 (Add branch): N=Nc1c2cc(N)c-2c1NO, Beta: 201.213800
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1NON3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 12.008800, Iteration: 89
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2oc(NO)c(N)c2=C1, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): CNc1c(N)c2cc(N)c1-2, Beta: 153.092600
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 11.008900, Iteration: 90
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2cc(N)oc2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): NNc1cc2c(N)c(NO)c1-2, Beta: 534.826600
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2c3c(c(NO)c1-3)N2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 10.009000, Iteration: 91
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2[nH]cc(N)c2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): CONc1c(N)c2cc(N)c1-2, Beta: 78.345600
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(OO)c1-2, Beta: 1848.521500
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 9.009100, Iteration: 92
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NCO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): ONc1c2[nH][nH]c3cc2c13, Beta: 113.005700
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 8.009200, Iteration: 93
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): N=Cc1cc2c(N)c(NO)c1-2, Beta: 411.889000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(N)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1nc2c(N)c(NO)c1-2, Beta: 2449.896700
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 7.009300, Iteration: 94
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=CC2=C(N)CC(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): NNc1c2cc(N)c-2c1NO, Beta: 200.812900
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): NNc1c(N)c2cc(N)c1-2, Beta: 8.008000
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 6.009400, Iteration: 95
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(ONO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): C=Nc1c2cc(N)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(O)c(NO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 5.708930, Iteration: 96
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(N=O)c1-2, Beta: -1000.000000
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(NN=O)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c(NO)c2c(N)c(O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1c2c3c(N)c2n(O)c13, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 4.009600, Iteration: 97
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=c2occ(N)c2=C1NO, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N)c(N(N)O)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): NC12C=C3C1=C(NO)C32N, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 3.009700, Iteration: 98
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): Nc1cc2c(N)c(N=CO)c1-2, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1cc2c(N=O)c(NO)c1-2, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2cc(NO)c1-2, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1c2cc(O)c-2c1NO, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2c3c(c(NO)c1-3)N2, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 2.009800, Iteration: 99
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1c(NO)c2c(N)cc1=2, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC1=CCC2=C(N)C(NO)=C12, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(NO)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1cc2c(N)c(N)c1-2, Beta: 4744.449000
+Mutated 5 (Change atom type): Cc1cc2c(N)c(NO)c1-2, Beta: 274.822500
+Mutated 6 (Add ring): Nc1cc2c3[nH]o[nH]c3c12, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
+Temperature: 1.009900, Iteration: 100
+Best molecule: Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 1 (Change bond type): Nc1cc2c(N)c(NO)c1-2, Beta: 13354.187300
+Mutated 2 (Add atom inline): NC1=C(NO)c2c1c[nH]c2N, Beta: -1000.000000
+Mutated 3 (Add branch): Nc1c2cc(NO)c-2c1NO, Beta: -1000.000000
+Mutated 4 (Delete atom): Nc1c2ccc-2c1NO, Beta: -1000.000000
+Mutated 5 (Change atom type): Nc1cc2c(N)c(CO)c1-2, Beta: -1000.000000
+Mutated 6 (Add ring): Nc1c2cc3c-2c1N(O)N3, Beta: -1000.000000
+Mutated 7 (Delete ring): Nc1ccc(N)c(NO)c1, Beta: -1000.000000
