@@ -1,4 +1,15 @@
-For the DFT functionals with up to 6-31G basis set, and any xTB or semi-empirical:
+For the cheapest DFT functional HF, and STO-3G, any xTB or semi-empirical:
+
+Minimum spec -
+Memory: 8GB+
+CPU: 4 cores+
+
+Recommended spec -
+Memory: 32GB+
+CPU: 8 cores+
+
+
+For the DFT higher functionals (e.g., B3LYP, PBE0) with up to 6-31G basis set, and any xTB or semi-empirical:
 
 Minimum spec -
 Memory: 16GB+
