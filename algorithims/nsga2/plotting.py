@@ -1,6 +1,6 @@
 """
 Plotting for multi-objective NSGA-II optimization
-Supports 2D, 3D, and high-dimensional visualization
+Supports 2D, 3D, 4D (3D + color), and high-dimensional visualization
 """
 
 import matplotlib.pyplot as plt
@@ -9,6 +9,8 @@ import pandas as pd
 from mpl_toolkits.mplot3d import Axes3D
 import logging
 from matplotlib.ticker import ScalarFormatter
+from matplotlib.colors import Normalize
+from matplotlib.cm import ScalarMappable
 import numpy as np
 from dominance import fast_non_dominated_sort
 
@@ -37,6 +39,10 @@ def format_objective_name(obj_name):
         'tpsa': 'TPSA',
         'mw': 'Molecular Weight',
         'molecular_weight': 'Molecular Weight',
+        'rssi': 'RSSI',
+        'altitude': 'Altitude/Elevation',
+        'latitude': 'Latitude',
+        'longitude': 'Longitude',
     }
     
     obj_lower = obj_name.lower()
@@ -52,8 +58,9 @@ def plot_pareto_front(self, population, generation):
     
     Supports:
     - 2D scatter plot for 2 objectives
-    - 3D scatter plot for 3 objectives  
-    - Parallel coordinates plot for 4-6 objectives
+    - 3D scatter plot for 3 objectives
+    - 4D visualization (3D + color gradient) for 4 objectives
+    - Parallel coordinates plot for 5-6 objectives
     - Multiple 3D projections for 7+ objectives
     
     Args:
@@ -105,11 +112,6 @@ def plot_pareto_front(self, population, generation):
         y = np.array([obj[1] for obj in obj_data], dtype=float)
         
         # Darker blue for non-Pareto points
-        colors = ['#DC143C' if id(ind) in pareto_ids else '#1E90FF' for ind in population]  # Crimson red vs Dodger blue
-        sizes = [120 if id(ind) in pareto_ids else 50 for ind in population]
-        alphas = [0.9 if id(ind) in pareto_ids else 0.7 for ind in population]
-        
-        # Plot non-Pareto points first, then Pareto front on top
         non_pareto_mask = [id(ind) not in pareto_ids for ind in population]
         pareto_mask = [id(ind) in pareto_ids for ind in population]
         
@@ -194,8 +196,94 @@ def plot_pareto_front(self, population, generation):
                           framealpha=0.95, edgecolor='black', facecolor='white')
         legend.get_frame().set_linewidth(1.5)
         
+    elif n_objectives == 4:
+        # 4D visualization: 3D plot with color gradient for 4th dimension
+        fig = plt.figure(figsize=(14, 11))
+        ax = fig.add_subplot(111, projection='3d')
+        
+        x = np.array([obj[0] for obj in obj_data], dtype=float)
+        y = np.array([obj[1] for obj in obj_data], dtype=float)
+        z = np.array([obj[2] for obj in obj_data], dtype=float)
+        c = np.array([obj[3] for obj in obj_data], dtype=float)
+        
+        # Normalize color values for the 4th dimension
+        c_norm = Normalize(vmin=c.min(), vmax=c.max())
+        
+        # Choose colormap (viridis, plasma, jet, coolwarm, etc.)
+        cmap = plt.cm.viridis
+        
+        non_pareto_mask = np.array([id(ind) not in pareto_ids for ind in population])
+        pareto_mask = np.array([id(ind) in pareto_ids for ind in population])
+        
+        # Non-Pareto points with color gradient
+        if np.any(non_pareto_mask):
+            scatter_non_pareto = ax.scatter(
+                x[non_pareto_mask], 
+                y[non_pareto_mask], 
+                z[non_pareto_mask],
+                c=c[non_pareto_mask],
+                cmap=cmap,
+                norm=c_norm,
+                s=60,
+                alpha=0.6,
+                edgecolors='k',
+                linewidths=0.3,
+                label='Non-Pareto Solutions'
+            )
+        
+        # Pareto front points with color gradient and larger size
+        if np.any(pareto_mask):
+            scatter_pareto = ax.scatter(
+                x[pareto_mask], 
+                y[pareto_mask], 
+                z[pareto_mask],
+                c=c[pareto_mask],
+                cmap=cmap,
+                norm=c_norm,
+                s=120,
+                alpha=0.9,
+                edgecolors='k',
+                linewidths=0.8,
+                marker='o',
+                label='Pareto Front'
+            )
+        
+        # Add colorbar for the 4th dimension
+        sm = ScalarMappable(cmap=cmap, norm=c_norm)
+        sm.set_array([])
+        cbar = plt.colorbar(sm, ax=ax, pad=0.1, shrink=0.8)
+        cbar.set_label(format_axis_label(3), fontsize=12, fontweight='bold')
+        
+        ax.set_xlabel(format_axis_label(0), fontsize=12, fontweight='bold')
+        ax.set_ylabel(format_axis_label(1), fontsize=12, fontweight='bold')
+        ax.set_zlabel(format_axis_label(2), fontsize=12, fontweight='bold')
+        ax.set_title(f'4D Pareto Front - Generation {generation}', fontsize=15, fontweight='bold')
+        
+        # Format tick labels
+        try:
+            ax.xaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+            ax.yaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+            ax.zaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+        except Exception:
+            pass
+        
+        # Invert axes for minimization objectives
+        if hasattr(self, 'optimize_objectives'):
+            if len(self.optimize_objectives) >= 3:
+                if self.optimize_objectives[0][0] == 'min':
+                    ax.invert_xaxis()
+                if self.optimize_objectives[1][0] == 'min':
+                    ax.invert_yaxis()
+                if self.optimize_objectives[2][0] == 'min':
+                    ax.invert_zaxis()
+        
+        # legend with box
+        legend = ax.legend(loc='best', frameon=True, fancybox=True, shadow=True,
+                          framealpha=0.95, edgecolor='black', facecolor='white')
+        legend.get_frame().set_linewidth(1.5)
+        
     elif n_objectives <= 6:
-        # Parallel coordinates plot for 4-6 objectives
+        # Parallel coordinates plot for 5-6 objectives
         fig, ax = plt.subplots(figsize=(14, 8))
         
         # Normalize data for visualization
