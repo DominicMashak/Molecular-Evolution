@@ -3,6 +3,7 @@ Last updated: 10/20/2025
 
 algorithms:
 
+"natoms" printing incorrectly in molecule database JSON during NSGA-II.
 Graphing > 4D for NSGA-II is bad.
 Explicit Valence and Can't kekulize mol. are errors are known, can be ignored for now during NSGA-II evolution.
 NSGA-II has a redundant population declaration in the run command; it should only have the number of children and parents. 
