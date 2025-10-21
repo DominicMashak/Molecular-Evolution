@@ -7,11 +7,13 @@ NSGA-II has a redundant population declaration in the run command; it should onl
 MOPAC PM7 and PM6 have result inconsistencies when running with NSGA-II as opposed to a single calculation in quantum_chemistry.
 Rank tracking is stored in the molecule database JSON file for NSGA-II and is pegged to 999999.
 NSGA-II has significant memory consumption over time when using DFT functionals, causing memory swap and CPU utilization instability (resulting in worse performance over time).
+Hypervolume is not fully implemented for NSGA-II.
 SA has issues extracting the correct beta mean from quantum_chemistry, needs to have the same flow as NSGA-II, with parsing output and extracting beta mean.
-Hypervolume for NSGA-II is still in progress.
+Hypervolume for NSGA-II is still in progress. So essentially, do NOT use SA, it is broken at the moment.
 
 
 quantum_chemistry:
 
 xTB-based methods are still in progress, NOT ready for use.
+MOPAC PM7 and PM6 have strange inconsistencies, NOT ready for use, unfortunately.
 Coupled Cluster is lacking additional property calculations; it just has the beta mean.
