@@ -9,7 +9,7 @@ Memory: 16GB+
 CPU: 8 cores+
 
 
-For the DFT higher functionals (e.g., B3LYP, PBE0) with up to 6-31G basis set, and any xTB or semi-empirical:
+For the more expensive DFT functionals (e.g., B3LYP, PBE0) with up to 6-31G basis set, and any xTB or semi-empirical:
 
 Minimum spec -
 Memory: 16GB+
@@ -20,7 +20,7 @@ Memory: 32GB+
 CPU: 12 cores+
 
 
-For most greater DFT basis sets, and any xTB or semi-empirical, as well as Coupled Cluster with moderate basis sets:
+For the most expensive DFT basis sets (e.g., CAM-B3LYP), any xTB or semi-empirical, as well as Coupled Cluster with moderate basis sets:
 
 Minimum spec -
 Memory: 92GB+
