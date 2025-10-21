@@ -3,6 +3,7 @@ Last updated: 10/20/2025
 
 algorithms:
 
+Explicit Valence and Can't kekulize mol. are errors are known, can be ignored for now during NSGA-II evolution.
 NSGA-II has a redundant population declaration in the run command; it should only have the number of children and parents. 
 MOPAC PM7 and PM6 have result inconsistencies when running with NSGA-II as opposed to a single calculation in quantum_chemistry.
 Rank tracking is stored in the molecule database JSON file for NSGA-II and is pegged to 999999.
