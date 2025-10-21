@@ -38,8 +38,10 @@ cd quantum_chemistry
 bash run_dft.sh
 (first test)
 
-Result should be 6,101.47 a.u. 
-(Hopefully, the calculation took under 10 minutes)
+Beta mean result should be 6.101466e+03 or 6,101.47 a.u. 
+HOMO-LUMO gap should be 3.767602 eV
+Total energy should be -491.949483 a.u.
+(Hopefully, the calculation took around 10 or fewer minutes)
 
 cd ..
 
@@ -48,4 +50,4 @@ cd algorithms/nsga2
 bash run_nsga2.sh
 (second test)
 
-After the generation 1, if there is a graph in the nsga2_results folder, then it works. 
+After generation 1, if there is a graph in the nsga2_results folder, then it works. 
