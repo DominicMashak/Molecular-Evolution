@@ -4,7 +4,7 @@ cd ~/Molecular-Evolution/algorithims/nsga2
 # Set Python path to include quantum_chemistry directory
 export PYTHONPATH="$HOME/Molecular-Evolution/quantum_chemistry:$PYTHONPATH"
 
-python3 main.py \
+python main.py \
     --calculator dft \
     --functional HF \
     --basis STO-3G \
