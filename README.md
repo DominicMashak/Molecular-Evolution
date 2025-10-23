@@ -64,9 +64,9 @@ https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 ## References
 
-Dominic Mashak and S.A. Alexander, Finding Molecules with Large Hyperpolarizabilities. MATCH Commun. Math. Comput. Chem. 94 (2025) 633-644. https://doi.org/10.46793/match94-3.25824
+Mashak, D., & Alexander, S. A. Finding Molecules with Large Hyperpolarizabilities. MATCH Commun. Math. Comput. Chem. 94 (2025) 633–644. https://match.pmf.kg.ac.rs/issues/m94n3/m94n3_25824.html
 
-Steven Alexander and Dominic Mashak. 2025. Finding Molecules with Specific Properties: Simulated Annealing vs. Evolution. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '25 Companion). Association for Computing Machinery, New York, NY, USA, 759–762. https://doi.org/10.1145/3712255.3726635
+Mashak, D., & Alexander, S. A. Finding Molecules with Specific Properties: Simulated Annealing vs. Evolution. Companion Proceedings of the Genetic and Evolutionary Computation Conference (GECCO ’25). ACM, 2025. https://doi.org/10.1145/3712255.3726635
 
 Sun, Q., Berkelbach, T. C., Blunt, N. S., Booth, G. H., Guo, S., Li, Z., Liu, J., McClain, J. D., Sayfutyarova, E. R., Sharma, S., Wouters, S., & Chan, G. K.-L. (2018). 
 The Python-based Simulations of Chemistry Framework (PySCF). 
