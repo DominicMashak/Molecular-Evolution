@@ -15,10 +15,8 @@ The project currently implements algorithms such as Simulated Annealing (SA) and
 
 - **Evolutionary Optimization**: Apply SA and NSGA-II to evolve molecular populations toward optimal NLO properties.
 - **NLO Property Focus**: At the moment, it specifically targets hyperpolarizability (β), along with 
-the ability for related properties like polarizability (α) and second hyperpolarizability (γ), to be screened and optimized.
+the ability for related properties like polarizability (α), second hyperpolarizability (γ), HUMO-LUMO gap, and total energy to be screened and optimized.
 - **SMILES-Based**: Uses RDKit for generating and manipulating SMILES strings, ensuring compatibility with standard cheminformatics pipelines. We currently use 7 mutation operators, which include: changing a bond, adding an atom, adding a branch, deleting an atom, changing an atom, adding a ring, and deleting a ring. All of the mutation operators have mutable weights.
-- **Benchmarking and Statistics**: Includes tools for generating benchmark datasets and computing various statistical comparisons (e.g., mean, max, min values for properties like β, HOMO-LUMO, and Kendall Tau, Spearman Rho, and pairwise agreement for rank correlation). Visualization of results and method comparisons is also included.
-- **Dataset Generation**: Integrates with this Hugging Face dataset at [maykcaldas/smiles-transformers](https://huggingface.co/datasets/maykcaldas/smiles-transformers) to create custom benchmark sets.
 
 ## Supported Quantum Chemistry Methods
 
@@ -29,11 +27,11 @@ The repository supports a range of computational methods for property calculatio
 
 - **Ab Initio and DFT Methods**:
   - Hartree-Fock (HF)
-  - Density Functional Theory (DFT) variants: B3LYP, PBE, PBE0
+  - Density Functional Theory (DFT) variants: CAM-B3LYP, B3LYP, PBE, PBE0
 
 - **Semi-Empirical Methods**:
-  - PM3, AM1, MNDO
-  - MOPAC PM7
+  - MINDO3
+  - MOPAC PM7, PM6
 
 - **Tight-Binding Methods**:
   - xTB: GFN0-xTB, GFN1-xTB, GFN2-xTB, GFNFF
