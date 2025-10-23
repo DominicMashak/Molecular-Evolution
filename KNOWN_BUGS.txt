@@ -1,4 +1,4 @@
-Last updated: 10/20/2025
+Last updated: 10/23/2025
 
 
 algorithms:
@@ -11,9 +11,8 @@ MOPAC PM7 and PM6 have result inconsistencies when running with NSGA-II as oppos
 Rank tracking is stored in the molecule database JSON file for NSGA-II and is pegged to 999999.
 NSGA-II has significant memory consumption over time when using DFT functionals, causing memory swap and CPU utilization instability (resulting in worse performance over time).
 Hypervolume is not fully implemented for NSGA-II.
-SA has issues extracting the correct beta mean from quantum_chemistry, needs to have the same flow as NSGA-II, with parsing output and extracting beta mean.
-Hypervolume for NSGA-II is still in progress. So essentially, do NOT use SA, it is broken at the moment.
-
+SA has a problem extracting the correct beta mean from quantum_chemistry, needs to have the same flow as NSGA-II, with parsing output and extracting beta mean.
+Hypervolume for NSGA-II is still in progress. 
 
 quantum_chemistry:
 
