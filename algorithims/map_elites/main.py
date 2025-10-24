@@ -26,15 +26,16 @@ def main():
     
     def evaluate_solution(solution):
         """Evaluate: objective is sum, measures are the vector elements."""
-        return {
+        return { # TODO: Replace this with calculations about the molecule. Start with num atoms and num bonds, then try more.
             'fitness': random.random(),
             'measure_0': random.random() * 10,
             'measure_1': random.random() * 10,
-            'sum_squared': random.random() * 10  # Extra tracked property
+            'sum_squared': random.random() * 10  # Extra tracked property # Not that arbitrary extra properties can be stored.
         }
     
     # Create archive and optimizer
     archive = ar.MAPElitesArchive(
+        # The number of measure dims should equal the number of measure keys. Not sure about specifying range yet.
         measure_dims=[10, 10],
         measure_keys=['measure_0', 'measure_1'],
         objective_key='fitness'
