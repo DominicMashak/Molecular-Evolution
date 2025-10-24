@@ -5,6 +5,7 @@ import random
 
 def main():
     # Example: Evolving 2D vectors where objective is sum and measures are the values
+    random.seed(42)
     
     def generate_solution():
         """Generate a random 2D vector with values in [0, 9]."""
