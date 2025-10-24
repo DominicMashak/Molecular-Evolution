@@ -1,30 +1,36 @@
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'molev_utils')))
+
 import archive as ar
 import optimizer as op
 import random
 
+from molecule_generator import MoleculeGenerator
+
 def main():
     # Example: Evolving 2D vectors where objective is sum and measures are the values
     random.seed(42)
+    mutation_weights = [0.1] * 7 # Maybe change this
+    generator = MoleculeGenerator(mutation_weights=mutation_weights)
     
     def generate_solution():
-        """Generate a random 2D vector with values in [0, 9]."""
-        return [random.randint(0, 9), random.randint(0, 9)]
+        """Generate one SMILES string."""
+        return generator.generate_initial_population(1)
     
     def mutate_solution(parent):
-        """Mutate by randomly changing one element by ±1."""
-        child = parent.copy()
-        idx = random.randint(0, 1)
-        child[idx] = max(0, min(9, child[idx] + random.choice([-1, 1])))
-        return child
+        """Mutate one SMILES string."""
+        return generator.mutate_multiple([parent])
     
     def evaluate_solution(solution):
         """Evaluate: objective is sum, measures are the vector elements."""
         return {
-            'fitness': sum(solution),
-            'measure_0': solution[0],
-            'measure_1': solution[1],
-            'sum_squared': sum(x**2 for x in solution)  # Extra tracked property
+            'fitness': random.random(),
+            'measure_0': random.random() * 10,
+            'measure_1': random.random() * 10,
+            'sum_squared': random.random() * 10  # Extra tracked property
         }
     
     # Create archive and optimizer
