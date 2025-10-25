@@ -133,7 +133,7 @@ class QuantumChemistryInterface:
                 cmd,
                 capture_output=True,
                 text=True,
-                timeout=300,  # Shorter timeout for MAP-Elites
+                timeout=9999,
                 cwd=str(self.qc_dir)
             )
             
