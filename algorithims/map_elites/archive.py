@@ -80,6 +80,8 @@ class MAPElitesArchive:
             return float(properties[self.objective_key])
         except KeyError:
             raise ValueError(f"Missing required objective key: '{self.objective_key}'")
+        except (ValueError, TypeError):
+            raise ValueError(f"Invalid objective value for '{self.objective_key}': {properties.get(self.objective_key)}")
     
     def add(self, solution: Any, properties: Dict[str, Any]) -> bool:
         """

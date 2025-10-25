@@ -51,6 +51,8 @@ class MAPElitesOptimizer:
         for i in range(self.random_init_size):
             # Generate and evaluate a random solution
             solution = self.generate_fn()
+            if solution is None:
+                continue  # Skip invalid generations
             properties = self.evaluate_fn(solution)
             self.total_evaluations += 1
             
@@ -102,6 +104,9 @@ class MAPElitesOptimizer:
             else:
                 # Mutate the parent
                 solution = self.mutate_fn(parent)
+            
+            if solution is None:
+                continue  # Skip invalid mutations
             
             # Evaluate the solution
             properties = self.evaluate_fn(solution)
