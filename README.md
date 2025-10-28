@@ -36,7 +36,7 @@ The repository supports a range of computational methods for property calculatio
   - xTB: GFN0-xTB, GFN1-xTB, GFN2-xTB, GFNFF
 
 - **Supported basis sets (non-xTB methods) include**: 
-  - STO-3G, 3-21G, 6-31G, 6-31G*, 6-31G**, 6-31+G*, 6-311G, 6-311G*, 6-311G**, 6-311++G**, def2-SVP, def2-TZVP, def2-TZVPP, cc-pVDZ, cc-pVTZ, cc-pVQZ, aug-cc-pVDZ, aug-cc-pVTZ, def2-TZVP
+  - STO-3G, 3-21G, 6-31G, 6-31G*, 6-31G**, 6-31+G*, 6-311G, 6-311G*, 6-311G**, 6-311++G**, def2-SVP, def2-TZVP, def2-TZVPP, cc-pVDZ, cc-pVTZ, cc-pVQZ, aug-cc-pVDZ, aug-cc-pVTZ
 
 These methods enable rapid screening (e.g., via xTB) to more accurate but computationally expensive calculations (e.g., DFT with larger basis sets).
 
