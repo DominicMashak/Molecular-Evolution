@@ -9,7 +9,7 @@ To learn how to start using, skip to reading [TUTORIAL.md](https://github.com/Do
 
 Molecular-Evolution is a GitHub repository for our project of using evolutionary algorithms for optimizing molecular structures, with a primary focus on enhancing Non-Linear Optical (NLO) properties, particularly hyperpolarizability. We utilize genetic and evolutionary optimization algorithms to evolve molecules from initial SMILES representations, evaluating and selecting candidates based on quantum chemical calculations. It is designed for researchers in computational physics/chemistry, materials science who aim to discover novel molecules with improved NLO characteristics.
 
-The project currently implements algorithms such as Simulated Annealing (SA), Multi-dimensional Archive of Phenotypic Elites (MAP-Elites), and Non-dominated Sorting Genetic Algorithm II (NSGA-II). We plan to expand to additional evolutionary algorithms such as Multi-Objective MAP-Elites (MOME). Molecules are represented using SMILES strings generated via RDKit, and properties are computed using a variety of quantum chemistry methods and basis sets. Benchmarking tools are included to compare performance across methods and generate datasets for validation and testing.
+The project currently implements algorithms such as Simulated Annealing (SA), Multi-dimensional Archive of Phenotypic Elites (MAP-Elites), Non-dominated Sorting Genetic Algorithm II (NSGA-II), and Multi-Objective MAP-Elites (MOME). Molecules are represented using SMILES strings generated via RDKit, and properties are computed using a variety of quantum chemistry methods and basis sets. Benchmarking tools are included to compare performance across methods and generate datasets for validation and testing.
 
 ## Key Features
 
