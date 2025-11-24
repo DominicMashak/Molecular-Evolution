@@ -2,7 +2,9 @@ from typing import Dict, List, Tuple
 from collections import defaultdict
 import numpy as np
 from individual import Individual
-from dominance import dominates
+from dominance import dominates, fast_non_dominated_sort
+from pymoo.indicators.hv import Hypervolume
+import matplotlib.pyplot as plt
 
 class BinnedParetoArchive:
     """
@@ -45,6 +47,27 @@ class BinnedParetoArchive:
         self.feature_bounds = [(float('inf'), float('-inf')) for _ in range(4)]  # For 4 features
         self.bin_visits = defaultdict(int)
         self.optimize_objectives = optimize_objectives or [('max', None)] * 2  # Default
+        self.hv_indicator = Hypervolume(ref_point=self._get_ref_point())
+    
+    def _get_ref_point(self):
+        """Get reference point for hypervolume calculation in transformed (minimization) space."""
+        ref = []
+        for opt, _ in self.optimize_objectives:
+            if opt == 'max':
+                # For maximization (transformed to -obj), reference is 0.0 (worse than negative values)
+                ref.append(0.0)
+            else:
+                # For minimization, reference is a large value
+                ref.append(1000.0)
+        return np.array(ref)
+    
+    def _transform_objectives(self, objectives: np.ndarray) -> np.ndarray:
+        """Transform objectives for minimization (negate maximization objectives)."""
+        transformed = objectives.copy()
+        for i, (opt, _) in enumerate(self.optimize_objectives):
+            if opt == 'max':
+                transformed[:, i] = -transformed[:, i]
+        return transformed
     
     def update_bounds(self, features: List[float]):
         """Update bounds for each feature."""
@@ -73,29 +96,19 @@ class BinnedParetoArchive:
         bin_coords = self.discretize(features)
         self.bin_visits[bin_coords] += 1
         
-        if bin_coords not in self.cells:
-            self.cells[bin_coords] = [individual]
+        current_front = self.cells.get(bin_coords, [])
+        combined = current_front + [individual]
+        
+        fronts = fast_non_dominated_sort(combined, self.optimize_objectives)
+        new_front = fronts[0] if fronts else []
+        
+        if new_front != current_front:
+            self.cells[bin_coords] = new_front
+            # Prune if total archive size exceeds max_size
+            if self.total_individuals() > self.max_size:
+                self._prune_to_size()
             return True
-        
-        current_front = self.cells[bin_coords]
-        
-        # Check if new individual is dominated
-        is_dominated = any(dominates(existing, individual, self.optimize_objectives) for existing in current_front)
-        if is_dominated:
-            return False
-        
-        # Remove dominated individuals
-        non_dominated = [existing for existing in current_front
-                         if not dominates(individual, existing, self.optimize_objectives)]
-        non_dominated.append(individual)
-        
-        self.cells[bin_coords] = non_dominated
-        
-        # Prune if total archive size exceeds max_size
-        if self.total_individuals() > self.max_size:
-            self._prune_to_size()
-        
-        return True
+        return False
     
     def _prune_to_size(self):
         """Prune archive to max_size by removing least visited bins."""
@@ -124,5 +137,41 @@ class BinnedParetoArchive:
     def size(self) -> int:
         """Number of occupied bins."""
         return len(self.cells)
-        """Number of occupied bins."""
-        return len(self.cells)
+    
+    def compute_global_hypervolume(self) -> float:
+        """Compute global hypervolume by combining all Pareto fronts and calculating HV on the overall front."""
+        all_individuals = self.get_all_individuals()
+        if not all_individuals:
+            return 0.0
+        fronts = fast_non_dominated_sort(all_individuals, self.optimize_objectives)
+        pareto_front = fronts[0] if fronts else []
+        if not pareto_front:
+            return 0.0
+        objectives = np.array([ind.objectives for ind in pareto_front])
+        transformed_objectives = self._transform_objectives(objectives)
+        return self.hv_indicator(transformed_objectives)
+    
+    def compute_moqd_score(self) -> float:
+        """Compute MOQD score as sum of hypervolumes of individual cell Pareto fronts."""
+        total_score = 0.0
+        for bin_coords, front in self.cells.items():
+            if front:
+                objectives = np.array([ind.objectives for ind in front])
+                transformed_objectives = self._transform_objectives(objectives)
+                total_score += self.hv_indicator(transformed_objectives)
+        return total_score
+    
+    def plot_individual_cells(self, output_dir):
+        """Save individual plots for each cell's Pareto front."""
+        for bin_coords, front in self.cells.items():
+            if front:
+                fig, ax = plt.subplots()
+                objectives = np.array([ind.objectives for ind in front])
+                if objectives.shape[1] >= 2:
+                    ax.scatter(objectives[:, 0], objectives[:, 1], c='red', label='Pareto Front')
+                    ax.set_xlabel('Objective 1')
+                    ax.set_ylabel('Objective 2')
+                    ax.set_title(f'Cell {bin_coords} Pareto Front')
+                    ax.legend()
+                    plt.savefig(output_dir / f'cell_{bin_coords}.png')
+                    plt.close()

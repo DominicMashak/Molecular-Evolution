@@ -104,17 +104,35 @@ class MoleculeGenerator:
     """
     """Generate diverse molecules using shared MoleculeMutator"""
     def __init__(self, seed=92, mutation_weights=None):
+        # Set random seed for reproducibility
         random.seed(seed)
+
+        # Set numpy seed if numpy is available (used by some RDKit operations)
+        try:
+            import numpy as np
+            np.random.seed(seed)
+        except ImportError:
+            pass
+
+        # Set RDKit random seed
+        try:
+            from rdkit import rdBase
+            rdBase.SeedRandomNumberGenerator(seed)
+        except:
+            pass
+
         self.mutator = MoleculeMutator()
         if mutation_weights is None:
+            # Equal weights for all mutation types (1/7 each)
+            equal_weight = 1.0 / 7.0
             self.mutation_weights = {
-                'change_bond': 0.1429,
-                'add_atom_inline': 0.1429,
-                'add_branch': 0.1428,
-                'delete_atom': 0.1429,
-                'change_atom': 0.1429,
-                'add_ring': 0.1428,
-                'delete_ring': 0.1428
+                'change_bond': equal_weight,
+                'add_atom_inline': equal_weight,
+                'add_branch': equal_weight,
+                'delete_atom': equal_weight,
+                'change_atom': equal_weight,
+                'add_ring': equal_weight,
+                'delete_ring': equal_weight
             }
         else:
             self.mutation_weights = mutation_weights
@@ -169,40 +187,103 @@ class MoleculeGenerator:
     def validate_molecule(self, smiles: str, max_atoms: int = 50):
         return self.mutator.validate(smiles, max_atoms)
 
-    def generate_initial_population(self, size: int):
-        # Read seeds from initial_seeds.txt
-        seeds_file = os.path.join(os.path.dirname(__file__), 'initial_seeds.txt')
-        seeds = []
-        try:
-            with open(seeds_file, 'r') as f:
-                for line in f:
-                    line = line.strip()
-                    if line:
-                        seeds.append(line)
-        except FileNotFoundError:
-            print(f"ERROR: {seeds_file} not found")
-        
-        # Use dynamically loaded canonicalize_smiles
-        global _mol_utils
-        if _mol_utils and hasattr(_mol_utils, 'canonicalize_smiles'):
-            canonicalize_smiles = _mol_utils.canonicalize_smiles
-        else:
-            # Fallback: use RDKit canonicalization
-            def canonicalize_smiles(smiles):
-                from rdkit import Chem
-                mol = Chem.MolFromSmiles(smiles)
-                if mol:
-                    return Chem.MolToSmiles(mol, canonical=True)
-                return smiles
-        
-        seeds = [canonicalize_smiles(s) for s in seeds if canonicalize_smiles(s)]
+    def generate_initial_population(self, size: int, save_to_file=False, seed_number=None, algorithm_name=None):
+        """Generate random initial molecules based on random seed.
+
+        Uses simple base molecules and applies multiple mutations to create
+        diverse starting populations. The random seed controls both selection
+        of base molecules and the mutations applied, ensuring reproducibility.
+
+        Args:
+            size (int): Number of molecules to generate
+            save_to_file (bool): Whether to save the generated population to a file
+            seed_number (int): Random seed used for generation (for filename/metadata)
+            algorithm_name (str): Name of algorithm using these seeds (for filename/metadata)
+
+        Returns:
+            list: List of valid SMILES strings
+        """
+        # Simple base molecules (very basic structures to start from)
+        base_molecules = [
+            'C',           # Methane
+            'CC',          # Ethane
+            'CCC',         # Propane
+            'CCCC',        # Butane
+            'CCO',         # Ethanol
+            'CCN',         # Ethylamine
+            'C=C',         # Ethene
+            'C=CC',        # Propene
+            'C1CC1',       # Cyclopropane
+            'C1CCC1',      # Cyclobutane
+            'C1CCCC1',     # Cyclopentane
+            'C1CCCCC1',    # Cyclohexane
+        ]
+
         population = []
-        for seed in seeds:
-            if self.mutator.validate(seed):
-                population.append(seed)
-        while len(population) < size:
-            base = random.choice(population[:len(seeds)])
-            mutant = self.mutate_multiple(base)
-            if mutant and mutant not in population:
+        attempts = 0
+        max_attempts = size * 100  # Prevent infinite loops
+
+        while len(population) < size and attempts < max_attempts:
+            attempts += 1
+
+            # Randomly select a base molecule
+            base = random.choice(base_molecules)
+
+            # Apply multiple mutations (5-15 mutations to create diversity)
+            n_mutations = random.randint(5, 15)
+            mutant = base
+
+            for _ in range(n_mutations):
+                # Try to mutate
+                temp = self.mutate_multiple(mutant, n_mutations=1)
+                if temp:
+                    mutant = temp
+
+            # Add to population if valid and unique
+            if mutant and mutant not in population and self.mutator.validate(mutant):
                 population.append(mutant)
-        return population[:size]
+
+        # If we couldn't generate enough, fill with base molecules
+        if len(population) < size:
+            for base in base_molecules:
+                if len(population) >= size:
+                    break
+                if base not in population and self.mutator.validate(base):
+                    population.append(base)
+
+        final_population = population[:size]
+
+        # Save to file if requested
+        if save_to_file:
+            from datetime import datetime
+
+            # Create generated_seeds directory if it doesn't exist
+            seeds_dir = os.path.join(os.path.dirname(__file__), 'generated_seeds')
+            os.makedirs(seeds_dir, exist_ok=True)
+
+            # Create filename with algorithm and seed
+            algo_str = f"{algorithm_name}_" if algorithm_name else ""
+            seed_str = f"seed_{seed_number}_" if seed_number is not None else ""
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"initial_seeds_{algo_str}{seed_str}{timestamp}.txt"
+            filepath = os.path.join(seeds_dir, filename)
+
+            # Write to file with metadata
+            with open(filepath, 'w') as f:
+                f.write("# Initial Seeds for Molecular Evolution\n")
+                f.write(f"# Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                if algorithm_name:
+                    f.write(f"# Algorithm: {algorithm_name}\n")
+                if seed_number is not None:
+                    f.write(f"# Random Seed: {seed_number}\n")
+                f.write(f"# Population Size: {len(final_population)}\n")
+                f.write("#\n")
+                f.write("# SMILES strings (one per line):\n")
+                f.write("#" + "="*60 + "\n\n")
+
+                for i, smiles in enumerate(final_population, 1):
+                    f.write(f"{smiles}\n")
+
+            print(f"Initial seeds saved to: {filepath}")
+
+        return final_population

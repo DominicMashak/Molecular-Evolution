@@ -8,6 +8,11 @@ import argparse
 import logging
 import sys
 import os
+import json
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO)
 
@@ -15,6 +20,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 
 from molecule_generator import MoleculeGenerator
 from optimizer import NSGA2Optimizer
+from archive import BinnedParetoArchive
+from individual import Individual
+from performance import PerformancePlotter
 
 def parse_optimize_arg(arg):
     """Parse optimize argument: 'maximize' -> ('max', None), 'target:5.0' -> ('target', 5.0)"""
@@ -35,9 +43,12 @@ def parse_optimize_arg(arg):
 def validate_objectives(objectives, optimize_objectives):
     """Validate that objectives and optimization directions are valid"""
     valid_objectives = {
-        'beta', 'beta_mean', 'natoms', 'energy', 'dipole', 
-        'homo_lumo_gap', 'alpha', 'gamma', 'transition_dipole', 
-        'oscillator_strength'
+        'beta', 'beta_mean', 'natoms', 'energy', 'dipole',
+        'homo_lumo_gap', 'alpha', 'gamma', 'transition_dipole',
+        'oscillator_strength',
+        # Derived objectives
+        'beta_gamma_ratio', 'total_energy_atom_ratio',
+        'alpha_range_distance', 'homo_lumo_gap_range_distance'
     }
     
     for obj in objectives:
@@ -51,6 +62,227 @@ def validate_objectives(objectives, optimize_objectives):
         )
     
     return True
+
+
+def recalculate_from_database(results_dir):
+    """
+    Recalculate archive, hypervolume, MOQD, and plots from existing all_molecules_database.json.
+    
+    Args:
+        results_dir (str): Path to the results directory containing all_molecules_database.json
+    """
+    from rdkit import Chem, rdBase
+    
+    results_path = Path(results_dir)
+    db_file = results_path / 'all_molecules_database.json'
+    
+    if not db_file.exists():
+        logging.error(f"Database file not found: {db_file}")
+        return
+    
+    # Load database
+    with open(db_file, 'r') as f:
+        db = json.load(f)
+    
+    logging.info(f"Loaded {len(db)} molecules from {db_file}")
+    
+    # Find max generation
+    max_gen = max((m.get('generation', 0) for m in db), default=0)
+    logging.info(f"Max generation: {max_gen}")
+    
+    # Reconstruct metrics for each generation
+    metrics = {
+        'generation': [],
+        'hypervolume': [],
+        'moqd': [],
+        'max_beta': [],
+        'avg_beta': [],
+        'min_atoms': [],
+        'avg_atoms': [],
+        'pareto_size': [],
+        'population_diversity': [],
+        'qd_bins': []  # Add QD bins metric
+    }
+    
+    optimize_objectives = [('max', None), ('min', None)]
+    
+    for gen in range(max_gen + 1):
+        # Get molecules up to this generation
+        molecules_up_to_gen = [m for m in db if m.get('generation', 0) <= gen]
+        if not molecules_up_to_gen:
+            continue
+        
+        # Reconstruct individuals
+        individuals = []
+        for mol in molecules_up_to_gen:
+            if 'objectives' in mol and 'smiles' in mol:
+                ind = Individual(
+                    smiles=mol['smiles'],
+                    objectives=mol['objectives'],
+                    generation=mol.get('generation', 0)
+                )
+                # Compute num_atoms and num_bonds using RDKit
+                mol_obj = Chem.MolFromSmiles(mol['smiles'])
+                num_atoms = mol_obj.GetNumAtoms() if mol_obj else 0
+                num_bonds = mol_obj.GetNumBonds() if mol_obj else 0
+                
+                # Bin using same scheme as MAP-Elites
+                num_atoms_bin = min(19, max(0, (num_atoms - 5) // 2))
+                num_bonds_bin = min(19, max(0, (num_bonds - 5) // 2))
+                
+                # Set features for binning (use num_atoms_bin and num_bonds_bin)
+                ind.homo_lumo_gap = num_atoms_bin
+                ind.transition_dipole = num_bonds_bin
+                ind.oscillator_strength = 0.0
+                ind.gamma = 0.0
+                ind.beta_surrogate = mol.get('beta_surrogate', mol.get('beta', 0.0))
+                ind.natoms = num_atoms
+                individuals.append(ind)
+        
+        # Create archive with 20 bins to match MAP-Elites
+        archive = BinnedParetoArchive(n_bins=20, max_size=1000, optimize_objectives=optimize_objectives)
+        
+        # Rebuild archive
+        for ind in individuals:
+            archive.add(ind)
+        
+        # Compute metrics
+        global_hv = archive.compute_global_hypervolume()
+        moqd = archive.compute_moqd_score()
+        population = archive.get_all_individuals()
+        
+        # Beta values
+        betas = [getattr(ind, 'beta_surrogate', None) for ind in population]
+        betas = [b for b in betas if b is not None]
+        max_beta = max(betas) if betas else 0.0
+        avg_beta = float(np.mean(betas)) if betas else 0.0
+        
+        # Atom counts
+        atoms = [getattr(ind, 'natoms', None) for ind in population]
+        atoms = [a for a in atoms if a is not None]
+        min_atoms = min(atoms) if atoms else 0
+        avg_atoms = float(np.mean(atoms)) if atoms else 0.0
+        
+        # Pareto size
+        pareto_size = len(population)
+        
+        # Diversity
+        if population and len(population) > 1:
+            obj_array = np.array([getattr(ind, 'objectives', []) for ind in population])
+            if obj_array.size:
+                diversity = float(np.mean(np.std(obj_array, axis=0)))
+            else:
+                diversity = 0.0
+        else:
+            diversity = 0.0
+        
+        # Append to metrics
+        metrics['generation'].append(gen)
+        metrics['hypervolume'].append(global_hv)
+        metrics['moqd'].append(moqd)
+        metrics['max_beta'].append(max_beta)
+        metrics['avg_beta'].append(avg_beta)
+        metrics['min_atoms'].append(min_atoms)
+        metrics['avg_atoms'].append(avg_atoms)
+        metrics['pareto_size'].append(pareto_size)
+        metrics['population_diversity'].append(diversity)
+        metrics['qd_bins'].append(archive.size())  # Add QD bins
+        
+        logging.info(f"Generation {gen}: HV={global_hv:.6f}, MOQD={moqd:.6f}, Pareto size={pareto_size}, QD bins={archive.size()}")
+    
+    # Save full metrics
+    metrics_file = results_path / 'performance_metrics.json'
+    with open(metrics_file, 'w') as f:
+        json.dump(metrics, f, indent=2)
+    logging.info(f"Saved reconstructed performance metrics to {metrics_file}")
+    
+    # Now compute final archive from all molecules
+    individuals = []
+    for mol in db:
+        if 'objectives' in mol and 'smiles' in mol:
+            ind = Individual(
+                smiles=mol['smiles'],
+                objectives=mol['objectives'],
+                generation=mol.get('generation', 0)
+            )
+            # Compute num_atoms and num_bonds using RDKit
+            mol_obj = Chem.MolFromSmiles(mol['smiles'])
+            num_atoms = mol_obj.GetNumAtoms() if mol_obj else 0
+            num_bonds = mol_obj.GetNumBonds() if mol_obj else 0
+            
+            # Bin using same scheme as MAP-Elites
+            num_atoms_bin = min(19, max(0, (num_atoms - 5) // 2))
+            num_bonds_bin = min(19, max(0, (num_bonds - 5) // 2))
+            
+            # Set features for binning
+            ind.homo_lumo_gap = num_atoms_bin
+            ind.transition_dipole = num_bonds_bin
+            ind.oscillator_strength = 0.0
+            ind.gamma = 0.0
+            individuals.append(ind)
+    
+    # Create final archive with 20 bins
+    archive = BinnedParetoArchive(n_bins=20, max_size=1000, optimize_objectives=optimize_objectives)
+    
+    # Rebuild archive
+    for ind in individuals:
+        archive.add(ind)
+    
+    logging.info(f"Final archive rebuilt with {archive.total_individuals()} individuals in {archive.size()} bins")
+    
+    # Generate archive heatmap
+    heatmap = np.full((20, 20), np.nan)
+    for bin_coords, front in archive.cells.items():
+        if front:
+            max_beta = max(ind.objectives[0] for ind in front)  # Assuming first objective is beta
+            heatmap[bin_coords[0], bin_coords[1]] = max_beta
+    
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(heatmap, cmap='viridis', cbar_kws={'label': 'Max Beta'})
+    plt.xlabel('Num Bonds Bin')
+    plt.ylabel('Num Atoms Bin')
+    plt.title('Archive Heatmap')
+    heatmap_file = results_path / 'archive_heatmap.png'
+    plt.savefig(heatmap_file, dpi=150, bbox_inches='tight')
+    plt.close()
+    logging.info(f"Saved archive heatmap to {heatmap_file}")
+    
+    # Regenerate plots
+    population = archive.get_all_individuals()
+    plotter = PerformancePlotter(results_path)
+    plotter.objectives = ['beta', 'natoms']
+    plotter.optimize_objectives = [('max', None), ('min', None)]
+    plotter.plot_pareto_front(population, generation=999)  # Dummy generation for recalculation
+    
+    # Save the rebuilt archive to a JSON file
+    archive_data = {
+        'bins': {
+            str(bin_coords): [
+                {
+                    'smiles': ind.smiles,
+                    'objectives': ind.objectives,
+                    'generation': getattr(ind, 'generation', 0),
+                    'homo_lumo_gap': getattr(ind, 'homo_lumo_gap', 0.0),
+                    'transition_dipole': getattr(ind, 'transition_dipole', 0.0),
+                    'oscillator_strength': getattr(ind, 'oscillator_strength', 0.0),
+                    'gamma': getattr(ind, 'gamma', 0.0)
+                } for ind in front
+            ] for bin_coords, front in archive.cells.items()
+        },
+        'total_individuals': archive.total_individuals(),
+        'size': archive.size()
+    }
+    archive_file = results_path / 'archive.json'
+    with open(archive_file, 'w') as f:
+        json.dump(archive_data, f, indent=2)
+    logging.info(f"Saved rebuilt archive to {archive_file}")
+    
+    # Generate convergence plots (HV, MOQD, etc.)
+    from performance import load_results, plot_convergence
+    results = load_results(str(results_path))
+    plot_convergence(results, results_path)
+    
+    logging.info("Recalculation complete. Check the results directory for updated plots and metrics.")
 
 
 def main():
@@ -100,7 +332,7 @@ Examples:
     )
     
     # Calculator options
-    parser.add_argument('--calculator', type=str, required=True, 
+    parser.add_argument('--calculator', type=str, required=False, 
                        choices=['dft', 'cc', 'semiempirical', 'xtb'],
                        help='Calculator type')
     parser.add_argument('--basis', type=str, default="6-31G", 
@@ -139,10 +371,12 @@ Examples:
                        help='Output directory for results')
     
     # Objective options
-    parser.add_argument('--objectives', nargs='+', required=True,
+    parser.add_argument('--objectives', nargs='+', required=False,
                        help='List of objectives (e.g., beta natoms homo_lumo_gap)')
-    parser.add_argument('--optimize', nargs='+', required=True,
+    parser.add_argument('--optimize', nargs='+', required=False,
                        help='Optimization types (e.g., maximize minimize target:15.0)')
+    parser.add_argument('--reference-points', nargs='+', type=float, default=None,
+                       help='Reference points for hypervolume calculation, one per objective (e.g., 0.0 50.0)')
     
     # Stagnation response options
     parser.add_argument('--no-stagnation-response', action='store_true',
@@ -171,7 +405,24 @@ Examples:
     parser.add_argument('--archive-max-size', type=int, default=1000,
                        help='Maximum archive size')
     
+    # Recalculation option
+    parser.add_argument('--recalculate', type=str,
+                       help='Recalculate archive, HV, MOQD, and plots from existing all_molecules_database.json in the specified results directory')
+    
     args = parser.parse_args()
+    
+    # Handle recalculation mode
+    if args.recalculate:
+        recalculate_from_database(args.recalculate)
+        return
+    
+    # Validate required arguments for optimization mode
+    if not args.calculator:
+        parser.error("--calculator is required")
+    if not args.objectives:
+        parser.error("--objectives is required")
+    if not args.optimize:
+        parser.error("--optimize is required")
     
     # Parse optimization objectives
     try:
@@ -185,6 +436,14 @@ Examples:
     except ValueError as e:
         parser.error(str(e))
     
+    # Validate reference points
+    if args.reference_points:
+        if len(args.reference_points) != len(args.objectives):
+            parser.error("Number of reference points must match number of objectives")
+        reference_points = args.reference_points
+    else:
+        reference_points = None
+    
     # Log configuration
     logging.info("="*60)
     logging.info("NSGA-II Multi-Objective Optimization")
@@ -192,11 +451,24 @@ Examples:
     logging.info(f"Calculator: {args.calculator}")
     logging.info(f"Objectives ({len(args.objectives)}): {', '.join(args.objectives)}")
     logging.info(f"Optimization: {', '.join([opt[0] for opt in optimize_objectives])}")
+    if reference_points:
+        logging.info(f"Reference points: {reference_points}")
     logging.info(f"Population size: {args.pop_size}")
     logging.info(f"Generations: {args.n_gen}")
     logging.info(f"Output directory: {args.output_dir}")
     logging.info("="*60)
-    
+
+    # Set random seeds for reproducibility
+    if args.seed is not None:
+        import random
+        import numpy as np
+        from rdkit import Chem, rdBase
+
+        random.seed(args.seed)
+        np.random.seed(args.seed)
+        rdBase.SeedRandomNumberGenerator(args.seed)
+        logging.info(f"Random seed set to: {args.seed}")
+
     # Load mutation weights
     mutation_weights = None
     if args.mutation_weights:
@@ -207,7 +479,7 @@ Examples:
             logging.info(f"Loaded mutation weights from {args.mutation_weights}")
         except Exception as e:
             logging.warning(f"Failed to load mutation weights: {e}")
-    
+
     # Setup calculator kwargs
     calculator_kwargs = {}
     if args.basis:
@@ -223,8 +495,9 @@ Examples:
     if args.debug_mopac:
         calculator_kwargs['debug_mopac'] = True
     
-    # Create generator
-    generator = MoleculeGenerator(mutation_weights=mutation_weights)
+    # Create generator (uses equal mutation weights by default if mutation_weights is None)
+    generator = MoleculeGenerator(seed=args.seed if args.seed is not None else 92,
+                                  mutation_weights=mutation_weights)
     
     # Create optimizer
     optimizer = NSGA2Optimizer(
@@ -239,6 +512,7 @@ Examples:
         output_dir=args.output_dir,
         objectives=args.objectives,
         optimize_objectives=optimize_objectives,
+        reference_points=reference_points,
         seed=args.seed,
         n_parents=args.n_parents,
         n_children=args.n_children,

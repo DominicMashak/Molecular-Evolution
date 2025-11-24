@@ -1,6 +1,10 @@
 from rdkit import Chem
 from rdkit.Chem import Descriptors
+from rdkit import RDLogger
 import random
+
+# Suppress RDKit warnings for invalid molecules (they get rejected anyway)
+RDLogger.DisableLog('rdApp.*')
 
 class MoleculeMutator:
     """Perform mutations on molecules represented as SMILES strings.
@@ -158,8 +162,15 @@ class MoleculeMutator:
             if 'F' in smiles or 'Cl' in smiles or 'Br' in smiles or 'I' in smiles:  # Halogens
                 return False
 
-            mol = Chem.MolFromSmiles(smiles)
+            # Parse without sanitization first to avoid warnings
+            mol = Chem.MolFromSmiles(smiles, sanitize=False)
             if not mol:
+                return False
+
+            # Try to sanitize - this will fail for chemically invalid molecules
+            try:
+                Chem.SanitizeMol(mol)
+            except:
                 return False
 
             # Check for disconnected fragments (even if no '.' in SMILES)

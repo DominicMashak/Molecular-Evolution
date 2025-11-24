@@ -13,81 +13,146 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 from typing import Dict, List
+from pymoo.indicators.hv import Hypervolume
+from matplotlib.ticker import ScalarFormatter
+from matplotlib.colors import Normalize
+from dominance import fast_non_dominated_sort
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Compatibility classes for optimizer imports
 class HypervolumeCalculator:
-    """Simple hypervolume calculator compatible with optimizer usage."""
+    """
+    Hypervolume calculator compatible with optimizer usage.
+    
+    PyMoo's Hypervolume class expects:
+    1. All objectives to be MINIMIZATION problems
+    2. Reference point to be WORSE than all points
+    
+    This class handles the transformation automatically based on optimize_objectives.
+    """
     def __init__(self, reference_point: List[float], optimize_objectives: List[tuple]):
-        self.reference_point = reference_point
+        """
+        Initialize hypervolume calculator.
+        
+        Args:
+            reference_point: Reference point for each objective in ORIGINAL space
+            optimize_objectives: List of tuples (opt_type, target) where opt_type is 'max', 'min', or 'target'
+        """
+        self.reference_point = np.array(reference_point, dtype=float)
         self.optimize_objectives = optimize_objectives
+        
+        # Transform reference point for PyMoo (which expects minimization)
+        self.transformed_ref = self._transform_reference_point()
+        
+        # Create PyMoo hypervolume indicator
+        self.hv_indicator = Hypervolume(ref_point=self.transformed_ref)
+        
+        logger.info(f"HypervolumeCalculator initialized:")
+        logger.info(f"  Original reference point: {self.reference_point}")
+        logger.info(f"  Transformed reference point: {self.transformed_ref}")
+        logger.info(f"  Optimization directions: {[opt[0] for opt in optimize_objectives]}")
 
-    def _transform(self, point: List[float]) -> List[float]:
-        t = []
+    def _transform_reference_point(self):
+        """
+        Transform reference point for PyMoo's minimization-based hypervolume.
+        
+        For 'max' objectives: use negative of reference (e.g., 0.0 -> 0.0, but we'll use the negated values)
+        For 'min' objectives: use reference as-is
+        For 'target' objectives: treat as minimization of distance to target
+        """
+        transformed = []
         for i, (opt_type, target) in enumerate(self.optimize_objectives):
-            val = point[i]
+            ref_val = self.reference_point[i]
+            
             if opt_type == 'max':
-                t.append(val)
+                # For maximization: negate the reference point
+                # The reference should be WORSE (more negative) than all points
+                transformed.append(-ref_val)
             elif opt_type == 'min':
-                t.append(-val)
+                # For minimization: reference point should be LARGER than all points
+                transformed.append(ref_val)
             elif opt_type == 'target':
-                t.append(-abs(val - (target if target is not None else 0.0)))
+                # For target: we'll treat as minimization of |x - target|
+                # Reference is the maximum possible distance
+                transformed.append(ref_val)
             else:
-                t.append(val)
-        return t
+                # Default to minimization
+                transformed.append(ref_val)
+        
+        return np.array(transformed, dtype=float)
+
+    def _transform_objectives(self, objectives: np.ndarray) -> np.ndarray:
+        """
+        Transform objectives for PyMoo's minimization framework.
+        
+        Args:
+            objectives: Array of shape (n_points, n_objectives) in ORIGINAL space
+            
+        Returns:
+            Transformed objectives for minimization
+        """
+        if len(objectives) == 0:
+            return objectives
+            
+        transformed = objectives.copy()
+        
+        for i, (opt_type, target) in enumerate(self.optimize_objectives):
+            if opt_type == 'max':
+                # Negate maximization objectives
+                transformed[:, i] = -transformed[:, i]
+            elif opt_type == 'target':
+                # Convert to distance from target
+                transformed[:, i] = np.abs(transformed[:, i] - target)
+            # 'min' objectives stay as-is
+        
+        return transformed
 
     def calculate(self, population) -> float:
-        """Calculate hypervolume for populations of Individuals with .objectives"""
+        """
+        Calculate hypervolume for population of Individuals with .objectives
+        
+        Args:
+            population: List of Individual objects with .objectives attribute
+            
+        Returns:
+            Hypervolume value (higher is better)
+        """
         if not population:
             return 0.0
-        points = [getattr(ind, 'objectives', None) for ind in population]
-        points = [p for p in points if p]
-        if not points:
-            return 0.0
-        n_obj = len(points[0])
-        # simple 2D and 3D approximation
-        transformed = [self._transform(p) for p in points]
-        ref = []
-        for i, (opt_type, target) in enumerate(self.optimize_objectives[:n_obj]):
-            rp = self.reference_point[i] if i < len(self.reference_point) else 0.0
-            if opt_type == 'max':
-                ref.append(rp)
-            elif opt_type == 'min':
-                ref.append(-rp)
-            elif opt_type == 'target':
-                ref.append(-abs(rp - (target if target is not None else 0.0)))
-            else:
-                ref.append(rp)
-
-        # Filter points not better than reference
-        good = [p for p in transformed if all(p[i] >= ref[i] for i in range(len(ref)))]
-        if not good:
-            return 0.0
-
-        if n_obj == 2:
-            # sort by first objective descending
-            good.sort(key=lambda x: -x[0])
-            hv = 0.0
-            prev_x = ref[0]
-            for x, y in good:
-                dx = max(0.0, x - prev_x)
-                dy = max(0.0, y - ref[1])
-                hv += dx * dy
-                prev_x = max(prev_x, x)
+        
+        try:
+            # Extract objectives
+            objectives = np.array([ind.objectives for ind in population], dtype=float)
+            
+            if len(objectives) == 0 or objectives.shape[1] == 0:
+                return 0.0
+            
+            # Transform objectives for minimization
+            transformed_objectives = self._transform_objectives(objectives)
+            
+            # Filter out any points that are worse than reference point
+            # (PyMoo's HV doesn't include these anyway, but this makes it explicit)
+            valid_mask = np.all(transformed_objectives < self.transformed_ref, axis=1)
+            
+            if not np.any(valid_mask):
+                # No valid points (all worse than reference)
+                return 0.0
+            
+            valid_objectives = transformed_objectives[valid_mask]
+            
+            # Calculate hypervolume
+            hv = self.hv_indicator(valid_objectives)
+            
             return float(hv)
-        elif n_obj == 3:
-            # approximation: sum of rectangular volumes then correct
-            hv = 0.0
-            for x, y, z in good:
-                dx = max(0.0, x - ref[0])
-                dy = max(0.0, y - ref[1])
-                dz = max(0.0, z - ref[2])
-                hv += dx * dy * dz
-            return float(hv * 0.7)  # overlap correction
-        else:
-            logger.warning(f"Hypervolume not implemented for {n_obj} objectives")
+            
+        except Exception as e:
+            logger.warning(f"Hypervolume calculation failed: {e}")
+            logger.warning(f"  Population size: {len(population)}")
+            if len(population) > 0:
+                logger.warning(f"  Sample objectives: {population[0].objectives}")
+            logger.warning(f"  Reference point: {self.transformed_ref}")
             return 0.0
 
 
@@ -104,12 +169,14 @@ class PerformanceTracker:
             'avg_atoms': [],
             'pareto_size': [],
             'population_diversity': [],
-            'best_beta_per_atom': []
+            'best_beta_per_atom': [],
+            'moqd': []  # Add MOQD metric
         }
 
-    def update(self, generation: int, population: List, fronts: List = None, hypervolume: float = None):
+    def update(self, generation: int, population: List, fronts: List = None, hypervolume: float = None, moqd: float = None):
         self.metrics['generation'].append(int(generation))
         self.metrics['hypervolume'].append(float(hypervolume) if hypervolume is not None else 0.0)
+        self.metrics['moqd'].append(float(moqd) if moqd is not None else 0.0)  # Track MOQD
 
         # Beta values
         betas = [getattr(ind, 'beta_surrogate', None) for ind in population]
@@ -161,6 +228,8 @@ class PerformancePlotter:
         self.output_dir = Path(output_dir)
         self.colors = colors or ['#2E86AB', '#E63946', '#F77F00', '#06D6A0', '#7209B7']
         self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.objectives = None
+        self.optimize_objectives = None
 
     def plot_convergence(self, tracker: PerformanceTracker, save_name: str = 'convergence_plot.pdf'):
         """Wrap existing plot_convergence function which expects results dict."""
@@ -238,6 +307,428 @@ class PerformancePlotter:
         plt.close()
         logger.info(f"Saved parallel coordinates plot to {save_path}")
 
+    def plot_pareto_front(self, population, generation):
+        """
+        Plot the Pareto front for any number of objectives.
+        
+        Supports:
+        - 2D scatter plot for 2 objectives
+        - 3D scatter plot for 3 objectives
+        - 4D visualization (3D + color gradient) for 4 objectives
+        - Parallel coordinates plot for 5-6 objectives
+        - Multiple 3D projections for 7+ objectives
+        
+        Args:
+            population: List of individuals with objectives
+            generation: Current generation number
+        """
+        if not population:
+            return
+
+        # Ensure objectives are floats
+        for ind in population:
+            ind.objectives = [float(x) if x is not None else 0.0 for x in (ind.objectives or [])]
+
+        n_objectives = len(population[0].objectives)
+        obj_data = [[float(val) for val in ind.objectives] for ind in population]
+
+        # Compute Pareto front (front 0)
+        try:
+            fronts = fast_non_dominated_sort(population, getattr(self, 'optimize_objectives', None))
+            pareto_front = fronts[0] if fronts else []
+            pareto_ids = {id(ind) for ind in pareto_front}
+        except Exception as e:
+            logger.exception(f"Error computing pareto front for plotting: {e}")
+            pareto_ids = set()
+
+        # Helper to format axis labels
+        def format_axis_label(idx):
+            """Create descriptive axis label with optimization direction"""
+            obj_name = self.objectives[idx] if hasattr(self, 'objectives') and idx < len(self.objectives) else f'Obj{idx+1}'
+            formatted_name = format_objective_name(obj_name)
+            opt_dir = self.optimize_objectives[idx][0] if hasattr(self, 'optimize_objectives') and idx < len(self.optimize_objectives) else 'max'
+            return f'{formatted_name} ({opt_dir})'
+
+        # Helper to set scalar formatter
+        def set_axis_scalar_format(ax):
+            fmt = ScalarFormatter(useOffset=False)
+            fmt.set_scientific(False)
+            try:
+                ax.xaxis.set_major_formatter(fmt)
+                ax.yaxis.set_major_formatter(fmt)
+            except Exception:
+                pass
+
+        if n_objectives == 2:
+            # 2D scatter plot
+            fig, ax = plt.subplots(figsize=(10, 8))
+            
+            x = np.array([obj[0] for obj in obj_data], dtype=float)
+            y = np.array([obj[1] for obj in obj_data], dtype=float)
+            
+            # Darker blue for non-Pareto points
+            non_pareto_mask = [id(ind) not in pareto_ids for ind in population]
+            pareto_mask = [id(ind) in pareto_ids for ind in population]
+            
+            # Non-Pareto points
+            ax.scatter(x[non_pareto_mask], y[non_pareto_mask], 
+                      c='#1E90FF', s=50, alpha=0.7, edgecolors='k', linewidths=0.5, 
+                      label='Non-Pareto Solutions')
+            
+            # Pareto front points
+            if any(pareto_mask):
+                ax.scatter(x[pareto_mask], y[pareto_mask], 
+                          c='#DC143C', s=120, alpha=0.9, edgecolors='k', linewidths=0.8, 
+                          label='Pareto Front')
+            
+            ax.set_xlabel(format_axis_label(0), fontsize=13, fontweight='bold')
+            ax.set_ylabel(format_axis_label(1), fontsize=13, fontweight='bold')
+            ax.set_title(f'Pareto Front - Generation {generation}', fontsize=15, fontweight='bold')
+            ax.grid(True, alpha=0.3)
+            set_axis_scalar_format(ax)
+            
+            # Invert axes for minimization objectives
+            if hasattr(self, 'optimize_objectives'):
+                if self.optimize_objectives[0][0] == 'min':
+                    ax.invert_xaxis()
+                if self.optimize_objectives[1][0] == 'min':
+                    ax.invert_yaxis()
+            
+            # Legend with box
+            legend = ax.legend(loc='best', frameon=True, fancybox=True, shadow=True, 
+                              framealpha=0.95, edgecolor='black', facecolor='white')
+            legend.get_frame().set_linewidth(1.5)
+            
+        elif n_objectives == 3:
+            # 3D scatter plot
+            fig = plt.figure(figsize=(12, 10))
+            ax = fig.add_subplot(111, projection='3d')
+            
+            x = np.array([obj[0] for obj in obj_data], dtype=float)
+            y = np.array([obj[1] for obj in obj_data], dtype=float)
+            z = np.array([obj[2] for obj in obj_data], dtype=float)
+            
+            # color scheme
+            non_pareto_mask = [id(ind) not in pareto_ids for ind in population]
+            pareto_mask = [id(ind) in pareto_ids for ind in population]
+            
+            # Non-Pareto points
+            ax.scatter(x[non_pareto_mask], y[non_pareto_mask], z[non_pareto_mask],
+                      c='#1E90FF', s=40, alpha=0.6, edgecolors='k', linewidths=0.3,
+                      label='Non-Pareto Solutions')
+            
+            # Pareto front points
+            if any(pareto_mask):
+                ax.scatter(x[pareto_mask], y[pareto_mask], z[pareto_mask],
+                      c='#DC143C', s=80, alpha=0.9, edgecolors='k', linewidths=0.5,
+                      label='Pareto Front')
+            
+            ax.set_xlabel(format_axis_label(0), fontsize=12, fontweight='bold')
+            ax.set_ylabel(format_axis_label(1), fontsize=12, fontweight='bold')
+            ax.set_zlabel(format_axis_label(2), fontsize=12, fontweight='bold')
+            ax.set_title(f'Pareto Front - Generation {generation}', fontsize=15, fontweight='bold')
+            
+            # Format tick labels
+            try:
+                ax.xaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+                ax.yaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+                ax.zaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+            except Exception:
+                pass
+            
+            # Invert axes for minimization objectives
+            if hasattr(self, 'optimize_objectives'):
+                if len(self.optimize_objectives) >= 3:
+                    if self.optimize_objectives[0][0] == 'min':
+                        ax.invert_xaxis()
+                    if self.optimize_objectives[1][0] == 'min':
+                        ax.invert_yaxis()
+                    if self.optimize_objectives[2][0] == 'min':
+                        ax.invert_zaxis()
+            
+            # legend with box
+            legend = ax.legend(loc='best', frameon=True, fancybox=True, shadow=True,
+                              framealpha=0.95, edgecolor='black', facecolor='white')
+            legend.get_frame().set_linewidth(1.5)
+            
+        elif n_objectives == 4:
+            # 4D visualization: 3D plot with color gradient for 4th dimension
+            fig = plt.figure(figsize=(14, 11))
+            ax = fig.add_subplot(111, projection='3d')
+            
+            x = np.array([obj[0] for obj in obj_data], dtype=float)
+            y = np.array([obj[1] for obj in obj_data], dtype=float)
+            z = np.array([obj[2] for obj in obj_data], dtype=float)
+            c = np.array([obj[3] for obj in obj_data], dtype=float)
+            
+            # Normalize color values for the 4th dimension
+            c_norm = Normalize(vmin=c.min(), vmax=c.max())
+            
+            # Choose colormap (viridis, plasma, jet, coolwarm, etc.)
+            cmap = plt.cm.viridis
+            
+            non_pareto_mask = np.array([id(ind) not in pareto_ids for ind in population])
+            pareto_mask = np.array([id(ind) in pareto_ids for ind in population])
+            
+            # Non-Pareto points with color gradient
+            if np.any(non_pareto_mask):
+                scatter_non_pareto = ax.scatter(
+                    x[non_pareto_mask], 
+                    y[non_pareto_mask], 
+                    z[non_pareto_mask],
+                    c=c[non_pareto_mask],
+                    cmap=cmap,
+                    norm=c_norm,
+                    s=60,
+                    alpha=0.6,
+                    edgecolors='k',
+                    linewidths=0.3,
+                    label='Non-Pareto Solutions'
+                )
+            
+            # Pareto front points with color gradient and larger size
+            if np.any(pareto_mask):
+                scatter_pareto = ax.scatter(
+                    x[pareto_mask], 
+                    y[pareto_mask], 
+                    z[pareto_mask],
+                    c=c[pareto_mask],
+                    cmap=cmap,
+                    norm=c_norm,
+                    s=120,
+                    alpha=0.9,
+                    edgecolors='k',
+                    linewidths=0.8,
+                    marker='o',
+                    label='Pareto Front'
+                )
+            
+            # Add colorbar for the 4th dimension
+            sm = ScalarMappable(cmap=cmap, norm=c_norm)
+            sm.set_array([])
+            cbar = plt.colorbar(sm, ax=ax, pad=0.1, shrink=0.8)
+            cbar.set_label(format_axis_label(3), fontsize=12, fontweight='bold')
+            
+            ax.set_xlabel(format_axis_label(0), fontsize=12, fontweight='bold')
+            ax.set_ylabel(format_axis_label(1), fontsize=12, fontweight='bold')
+            ax.set_zlabel(format_axis_label(2), fontsize=12, fontweight='bold')
+            ax.set_title(f'4D Pareto Front - Generation {generation}', fontsize=15, fontweight='bold')
+            
+            # Format tick labels
+            try:
+                ax.xaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+                ax.yaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+                ax.zaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+            except Exception:
+                pass
+            
+            # Invert axes for minimization objectives
+            if hasattr(self, 'optimize_objectives'):
+                if len(self.optimize_objectives) >= 3:
+                    if self.optimize_objectives[0][0] == 'min':
+                        ax.invert_xaxis()
+                    if self.optimize_objectives[1][0] == 'min':
+                        ax.invert_yaxis()
+                    if self.optimize_objectives[2][0] == 'min':
+                        ax.invert_zaxis()
+            
+            # legend with box
+            legend = ax.legend(loc='best', frameon=True, fancybox=True, shadow=True,
+                              framealpha=0.95, edgecolor='black', facecolor='white')
+            legend.get_frame().set_linewidth(1.5)
+            
+        elif n_objectives <= 6:
+            # Parallel coordinates plot for 5-6 objectives
+            fig, ax = plt.subplots(figsize=(14, 8))
+            
+            # Normalize data for visualization
+            obj_array = np.array(obj_data)
+            obj_min = obj_array.min(axis=0)
+            obj_max = obj_array.max(axis=0)
+            obj_range = obj_max - obj_min
+            obj_range[obj_range == 0] = 1.0  # Avoid division by zero
+            obj_normalized = (obj_array - obj_min) / obj_range
+            
+            # Plot lines
+            x_positions = np.arange(n_objectives)
+            for i, (ind, obj_norm) in enumerate(zip(population, obj_normalized)):
+                if id(ind) in pareto_ids:
+                    ax.plot(x_positions, obj_norm, color='#DC143C', alpha=0.8, linewidth=2, zorder=2)
+                else:
+                    ax.plot(x_positions, obj_norm, color='#1E90FF', alpha=0.5, linewidth=1, zorder=1)
+            
+            # Set x-axis labels with formatted names
+            ax.set_xticks(x_positions)
+            formatted_labels = [format_axis_label(i) for i in range(n_objectives)]
+            ax.set_xticklabels(formatted_labels, rotation=15, ha='right', fontweight='bold')
+            ax.set_ylabel('Normalized Value', fontsize=13, fontweight='bold')
+            ax.set_title(f'Parallel Coordinates - Generation {generation}', fontsize=15, fontweight='bold')
+            ax.grid(True, alpha=0.3, axis='y')
+            ax.set_ylim(-0.05, 1.05)
+            
+            # legend with box
+            from matplotlib.lines import Line2D
+            legend_elements = [
+                Line2D([0], [0], color='#DC143C', linewidth=2.5, label='Pareto Front'),
+                Line2D([0], [0], color='#1E90FF', linewidth=1.5, label='Non-Pareto Solutions')
+            ]
+            legend = ax.legend(handles=legend_elements, loc='upper right', frameon=True, 
+                              fancybox=True, shadow=True, framealpha=0.95, 
+                              edgecolor='black', facecolor='white')
+            legend.get_frame().set_linewidth(1.5)
+            
+        else:
+            # For 7+ objectives: Create multiple 3D projection plots
+            n_plots = min(4, n_objectives // 3 + 1)  # Up to 4 subplots
+            fig = plt.figure(figsize=(16, 12))
+            
+            plot_combinations = [
+                (0, 1, 2),  # First 3 objectives
+            ]
+            
+            # Add additional combinations
+            if n_objectives >= 6:
+                plot_combinations.append((3, 4, 5))
+            if n_objectives >= 9:
+                plot_combinations.append((6, 7, 8))
+            if n_objectives >= 4:
+                plot_combinations.append((0, 1, 3))  # Alternative view
+            
+            for plot_idx, (i, j, k) in enumerate(plot_combinations[:n_plots]):
+                if k >= n_objectives:
+                    break
+                    
+                ax = fig.add_subplot(2, 2, plot_idx + 1, projection='3d')
+                
+                x = np.array([obj[i] for obj in obj_data], dtype=float)
+                y = np.array([obj[j] for obj in obj_data], dtype=float)
+                z = np.array([obj[k] for obj in obj_data], dtype=float)
+                
+                non_pareto_mask = [id(ind) not in pareto_ids for ind in population]
+                pareto_mask = [id(ind) in pareto_ids for ind in population]
+                
+                # Non-Pareto points
+                ax.scatter(x[non_pareto_mask], y[non_pareto_mask], z[non_pareto_mask],
+                          c='#1E90FF', s=25, alpha=0.5, edgecolors='k', linewidths=0.2)
+                
+                # Pareto front points
+                if any(pareto_mask):
+                    ax.scatter(x[pareto_mask], y[pareto_mask], z[pareto_mask],
+                          c='#DC143C', s=50, alpha=0.8, edgecolors='k', linewidths=0.3)
+                
+                ax.set_xlabel(format_axis_label(i), fontsize=10, fontweight='bold')
+                ax.set_ylabel(format_axis_label(j), fontsize=10, fontweight='bold')
+                ax.set_zlabel(format_axis_label(k), fontsize=10, fontweight='bold')
+                ax.set_title(f'{format_objective_name(self.objectives[i])}, '
+                            f'{format_objective_name(self.objectives[j])}, '
+                            f'{format_objective_name(self.objectives[k])}', 
+                            fontsize=11, fontweight='bold')
+                
+                # Format tick labels
+                try:
+                    ax.xaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+                    ax.yaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+                    ax.zaxis.set_major_formatter(ScalarFormatter(useOffset=False))
+                except Exception:
+                    pass
+            
+            plt.suptitle(f'Pareto Front Projections - Generation {generation}', 
+                        fontsize=15, fontweight='bold', y=0.98)
+
+        plt.tight_layout()
+        plot_file = self.output_dir / f'pareto_front_gen_{generation:03d}.png'
+        plt.savefig(plot_file, dpi=150, bbox_inches='tight')
+        plt.close()
+        
+        logger.info(f"Saved Pareto front plot to {plot_file}")
+        
+        # Additionally create a pair plot for detailed analysis (for 4-6 objectives)
+        if 4 <= n_objectives <= 6:
+            try:
+                create_pairplot(population, pareto_ids, self.objectives, self.output_dir, generation)
+            except Exception as e:
+                logger.warning(f"Could not create pair plot: {e}")
+
+
+def format_objective_name(obj_name):
+    """
+    Format objective names to be more formal and readable.
+    Converts snake_case to Title Case and handles common abbreviations.
+    
+    Args:
+        obj_name: Raw objective name string
+        
+    Returns:
+        Formatted objective name
+    """
+    replacements = {
+        'beta': 'Beta',
+        'natoms': 'Number of Atoms',
+        'n_atoms': 'Number of Atoms',
+        'num_atoms': 'Number of Atoms',
+        'alpha_mean': 'Alpha',
+    }
+    
+    obj_lower = obj_name.lower()
+    if obj_lower in replacements:
+        return replacements[obj_lower]
+    
+    return obj_name.replace('_', ' ').title()
+
+
+def create_pairplot(population, pareto_ids, objective_names, output_dir, generation):
+    """
+    Create a seaborn pair plot for detailed multi-objective analysis.
+    
+    Args:
+        population: List of individuals
+        pareto_ids: Set of IDs for Pareto front members
+        objective_names: List of objective names
+        output_dir: Directory to save plot
+        generation: Current generation number
+    """
+    # Prepare data
+    data_dict = {}
+    n_objectives = len(population[0].objectives)
+    
+    for i, obj_name in enumerate(objective_names[:n_objectives]):
+        formatted_name = format_objective_name(obj_name)
+        data_dict[formatted_name] = [ind.objectives[i] for ind in population]
+    
+    data_dict['Pareto Front'] = [id(ind) in pareto_ids for ind in population]
+    
+    df = pd.DataFrame(data_dict)
+    
+    # Create pair plot
+    pairplot = sns.pairplot(
+        df, 
+        hue='Pareto Front',
+        palette={True: '#DC143C', False: '#1E90FF'},
+        diag_kind='kde',
+        plot_kws={'alpha': 0.7, 's': 40, 'edgecolor': 'k', 'linewidth': 0.4},
+        diag_kws={'alpha': 0.8}
+    )
+    
+    pairplot.fig.suptitle(f'Objective Space Analysis - Generation {generation}', 
+                         fontsize=15, fontweight='bold', y=1.02)
+    
+    # legend
+    for ax in pairplot.axes.flat:
+        legend = ax.get_legend()
+        if legend:
+            legend.set_frame_on(True)
+            legend.get_frame().set_facecolor('white')
+            legend.get_frame().set_edgecolor('black')
+            legend.get_frame().set_linewidth(1.5)
+            legend.get_frame().set_alpha(0.95)
+    
+    # Save
+    pair_file = output_dir / f'pairplot_gen_{generation:03d}.png'
+    plt.savefig(pair_file, dpi=150, bbox_inches='tight')
+    plt.close()
+    
+    logger.info(f"Saved pair plot to {pair_file}")
+
 # Set publication-quality defaults
 plt.style.use('seaborn-v0_8-darkgrid')
 plt.rcParams['font.size'] = 11
@@ -254,162 +745,110 @@ def load_results(results_dir: str) -> Dict:
     
     results = {}
     
-    # Load database
-    db_file = results_path / 'all_molecules_database.json'
-    if db_file.exists():
-        with open(db_file, 'r') as f:
-            results['database'] = json.load(f)
-        logger.info(f"Loaded {len(results['database'])} molecules from database")
-    
-    # Load Pareto front
-    pareto_file = results_path / 'pareto_front_molecules.json'
-    if pareto_file.exists():
-        with open(pareto_file, 'r') as f:
-            results['pareto'] = json.load(f)
-        logger.info(f"Loaded {len(results['pareto'])} Pareto-optimal molecules")
-    
     # Load performance metrics
     metrics_file = results_path / 'performance_metrics.json'
     if metrics_file.exists():
         with open(metrics_file, 'r') as f:
             results['metrics'] = json.load(f)
-        logger.info("Loaded performance metrics")
     
-    # Load statistics
+    # Load pareto front
+    pareto_file = results_path / 'pareto_front_molecules.json'
+    if pareto_file.exists():
+        with open(pareto_file, 'r') as f:
+            results['pareto'] = json.load(f)
+    
+    # Load molecule database
+    db_file = results_path / 'all_molecules_database.json'
+    if db_file.exists():
+        with open(db_file, 'r') as f:
+            results['database'] = json.load(f)
+    
+    # Load statistics if available
     stats_file = results_path / 'database_statistics.json'
     if stats_file.exists():
         with open(stats_file, 'r') as f:
             results['statistics'] = json.load(f)
-        logger.info("Loaded statistics")
     
     return results
 
 
-def plot_pareto_front_2d(results: Dict, output_dir: Path, obj_x: int = 1, obj_y: int = 0):
-    """Plot 2D Pareto front projection"""
-    if 'pareto' not in results or not results['pareto']:
-        logger.warning("No Pareto front data available")
-        return
-    
-    pareto = results['pareto']
-    database = results.get('database', [])
-    
-    fig, ax = plt.subplots(figsize=(10, 8))
-    
-    # Plot all molecules
-    if database:
-        all_x = [m['objectives'][obj_x] for m in database if 'objectives' in m and len(m['objectives']) > max(obj_x, obj_y)]
-        all_y = [m['objectives'][obj_y] for m in database if 'objectives' in m and len(m['objectives']) > max(obj_x, obj_y)]
-        ax.scatter(all_x, all_y, c='lightblue', s=30, alpha=0.5, label='All molecules')
-    
-    # Plot Pareto front
-    pareto_x = [m['objectives'][obj_x] for m in pareto if 'objectives' in m and len(m['objectives']) > max(obj_x, obj_y)]
-    pareto_y = [m['objectives'][obj_y] for m in pareto if 'objectives' in m and len(m['objectives']) > max(obj_x, obj_y)]
-    ax.scatter(pareto_x, pareto_y, c='red', s=100, alpha=0.8, edgecolors='k', linewidths=1, label='Pareto front')
-    
-    # Get objective names if available
-    if pareto and 'objectives' in pareto[0]:
-        obj_names = [k for k in pareto[0].keys() if k not in ['smiles', 'objectives', 'generation', 'rank']]
-        if len(obj_names) > max(obj_x, obj_y):
-            xlabel = obj_names[obj_x] if obj_x < len(obj_names) else f'Objective {obj_x+1}'
-            ylabel = obj_names[obj_y] if obj_y < len(obj_names) else f'Objective {obj_y+1}'
-        else:
-            xlabel = f'Objective {obj_x+1}'
-            ylabel = f'Objective {obj_y+1}'
-    else:
-        xlabel = f'Objective {obj_x+1}'
-        ylabel = f'Objective {obj_y+1}'
-    
-    ax.set_xlabel(xlabel, fontsize=12)
-    ax.set_ylabel(ylabel, fontsize=12)
-    ax.set_title('Pareto Front', fontsize=14, fontweight='bold')
-    ax.legend(loc='best')
-    ax.grid(True, alpha=0.3)
-    
-    plt.tight_layout()
-    save_path = output_dir / 'pareto_front_analysis.png'
-    plt.savefig(save_path, dpi=300, bbox_inches='tight')
-    plt.close()
-    
-    logger.info(f"Saved Pareto front plot to {save_path}")
-
-
 def plot_convergence(results: Dict, output_dir: Path):
-    """Plot convergence curves for all tracked metrics"""
+    """Plot convergence metrics over generations"""
     if 'metrics' not in results:
-        logger.warning("No metrics data available")
+        logger.warning("No metrics data found")
         return
     
     metrics = results['metrics']
     
-    fig, axes = plt.subplots(2, 3, figsize=(15, 9))
-    axes = axes.flatten()
+    # Create figure with subplots (expanded to 2x3 for QD bins)
+    fig, axes = plt.subplots(2, 3, figsize=(18, 10))
+    fig.suptitle('NSGA-II Convergence Analysis', fontsize=16, fontweight='bold')
     
-    # Hypervolume
+    # Plot 1: Hypervolume (now global)
+    ax = axes[0, 0]
     if 'hypervolume' in metrics and metrics['hypervolume']:
-        ax = axes[0]
-        ax.plot(metrics['generation'], metrics['hypervolume'], 'o-', color='darkblue', linewidth=2)
-        ax.fill_between(metrics['generation'], 0, metrics['hypervolume'], alpha=0.3, color='lightblue')
+        generations = metrics.get('generation', list(range(len(metrics['hypervolume']))))
+        ax.plot(generations, metrics['hypervolume'], 'b-', linewidth=2, marker='o', markersize=4)
         ax.set_xlabel('Generation')
-        ax.set_ylabel('Hypervolume')
-        ax.set_title('(a) Hypervolume Indicator')
+        ax.set_ylabel('Global Hypervolume')
+        ax.set_title('Global Hypervolume Evolution')
         ax.grid(True, alpha=0.3)
     
-    # Max Beta
-    if 'max_beta' in metrics and metrics['max_beta']:
-        ax = axes[1]
-        ax.plot(metrics['generation'], metrics['max_beta'], 'o-', color='red', linewidth=2, label='Max')
-        if 'avg_beta' in metrics:
-            ax.plot(metrics['generation'], metrics['avg_beta'], 's--', color='red', linewidth=1.5, alpha=0.7, label='Avg')
+    # Plot 2: MOQD
+    ax = axes[0, 1]
+    if 'moqd' in metrics and metrics['moqd']:
+        generations = metrics.get('generation', list(range(len(metrics['moqd']))))
+        ax.plot(generations, metrics['moqd'], 'g-', linewidth=2, marker='o', markersize=4)
         ax.set_xlabel('Generation')
-        ax.set_ylabel('β (a.u.)')
-        ax.set_title('(b) Hyperpolarizability')
-        ax.legend()
+        ax.set_ylabel('MOQD Score')
+        ax.set_title('MOQD Evolution')
         ax.grid(True, alpha=0.3)
-        ax.ticklabel_format(style='scientific', axis='y', scilimits=(0,0))
     
-    # Atom count
+    # Plot 3: QD Bins
+    ax = axes[0, 2]
+    if 'qd_bins' in metrics and metrics['qd_bins']:
+        generations = metrics.get('generation', list(range(len(metrics['qd_bins']))))
+        ax.plot(generations, metrics['qd_bins'], 'purple', linewidth=2, marker='d', markersize=4)
+        ax.set_xlabel('Generation')
+        ax.set_ylabel('QD Bins')
+        ax.set_title('QD Bins Evolution')
+        ax.grid(True, alpha=0.3)
+    
+    # Plot 4: Atoms
+    ax = axes[1, 0]
     if 'min_atoms' in metrics and metrics['min_atoms']:
-        ax = axes[2]
-        ax.plot(metrics['generation'], metrics['min_atoms'], 'o-', color='green', linewidth=2, label='Min')
+        generations = metrics.get('generation', list(range(len(metrics['min_atoms']))))
+        ax.plot(generations, metrics['min_atoms'], 'g-', linewidth=2, label='Min atoms', marker='o', markersize=4)
         if 'avg_atoms' in metrics:
-            ax.plot(metrics['generation'], metrics['avg_atoms'], 's--', color='green', linewidth=1.5, alpha=0.7, label='Avg')
+            ax.plot(generations, metrics['avg_atoms'], 'lightgreen', linewidth=2, label='Avg atoms', marker='s', markersize=4)
         ax.set_xlabel('Generation')
         ax.set_ylabel('Number of Atoms')
-        ax.set_title('(c) Molecular Size')
+        ax.set_title('Molecular Size Evolution')
         ax.legend()
         ax.grid(True, alpha=0.3)
     
-    # Pareto front size
+    # Plot 5: Pareto size
+    ax = axes[1, 1]
     if 'pareto_size' in metrics and metrics['pareto_size']:
-        ax = axes[3]
-        ax.plot(metrics['generation'], metrics['pareto_size'], 'o-', color='purple', linewidth=2)
-        ax.fill_between(metrics['generation'], 0, metrics['pareto_size'], alpha=0.3, color='purple')
+        generations = metrics.get('generation', list(range(len(metrics['pareto_size']))))
+        ax.plot(generations, metrics['pareto_size'], 'm-', linewidth=2, label='Pareto size', marker='o', markersize=4)
         ax.set_xlabel('Generation')
-        ax.set_ylabel('Pareto Front Size')
-        ax.set_title('(d) Non-dominated Solutions')
+        ax.set_ylabel('Pareto Front Size', color='m')
+        ax.tick_params(axis='y', labelcolor='m')
+        ax.legend(loc='upper left')
         ax.grid(True, alpha=0.3)
     
-    # Diversity
-    if 'population_diversity' in metrics and metrics['population_diversity']:
-        ax = axes[4]
-        ax.plot(metrics['generation'], metrics['population_diversity'], 'o-', color='orange', linewidth=2)
+    # Plot 6: Population diversity
+    ax = axes[1, 2]
+    if 'population_diversity' in metrics:
+        generations = metrics.get('generation', list(range(len(metrics['population_diversity']))))
+        ax.plot(generations, metrics['population_diversity'], 'c-', linewidth=2, label='Diversity', marker='s', markersize=4)
         ax.set_xlabel('Generation')
-        ax.set_ylabel('Diversity')
-        ax.set_title('(e) Population Diversity')
+        ax.set_ylabel('Population Diversity', color='c')
+        ax.tick_params(axis='y', labelcolor='c')
+        ax.legend(loc='upper right')
         ax.grid(True, alpha=0.3)
     
-    # Beta per atom
-    if 'best_beta_per_atom' in metrics and metrics['best_beta_per_atom']:
-        ax = axes[5]
-        ax.plot(metrics['generation'], metrics['best_beta_per_atom'], 'o-', color='brown', linewidth=2)
-        ax.set_xlabel('Generation')
-        ax.set_ylabel('β/atom (a.u.)')
-        ax.set_title('(f) Efficiency Metric')
-        ax.grid(True, alpha=0.3)
-        ax.ticklabel_format(style='scientific', axis='y', scilimits=(0,0))
-    
-    plt.suptitle('Optimization Convergence Analysis', fontsize=14, fontweight='bold', y=0.995)
     plt.tight_layout()
     
     save_path = output_dir / 'convergence_analysis.png'
@@ -419,28 +858,112 @@ def plot_convergence(results: Dict, output_dir: Path):
     logger.info(f"Saved convergence analysis to {save_path}")
 
 
+def plot_pareto_front_2d(results: Dict, output_dir: Path):
+    """Plot 2D Pareto front"""
+    if 'pareto' not in results or not results['pareto']:
+        logger.warning("No Pareto front data found")
+        return
+    
+    pareto = results['pareto']
+    
+    # Extract objectives - handle both old and new formats
+    obj1_vals = []
+    obj2_vals = []
+    
+    for mol in pareto:
+        if 'objectives' in mol and len(mol['objectives']) >= 2:
+            obj1_vals.append(mol['objectives'][0])
+            obj2_vals.append(mol['objectives'][1])
+        elif 'beta_surrogate' in mol and 'natoms' in mol:
+            # Legacy format
+            obj1_vals.append(mol['beta_surrogate'])
+            obj2_vals.append(mol['natoms'])
+    
+    if not obj1_vals:
+        logger.warning("No valid objective data in Pareto front")
+        return
+    
+    # Determine objective names from first molecule
+    if 'beta' in pareto[0]:
+        obj1_name = 'β (a.u.)'
+    else:
+        obj1_name = 'Objective 1'
+    
+    if 'natoms' in pareto[0]:
+        obj2_name = 'Number of Atoms'
+    else:
+        obj2_name = 'Objective 2'
+    
+    # Create plot
+    fig, ax = plt.subplots(figsize=(10, 7))
+    
+    # Plot all database molecules if available
+    if 'database' in results:
+        db = results['database']
+        db_obj1 = []
+        db_obj2 = []
+        for mol in db:
+            if 'objectives' in mol and len(mol['objectives']) >= 2:
+                db_obj1.append(mol['objectives'][0])
+                db_obj2.append(mol['objectives'][1])
+            elif 'beta_surrogate' in mol and 'natoms' in mol:
+                db_obj1.append(mol['beta_surrogate'])
+                db_obj2.append(mol['natoms'])
+        
+        if db_obj1:
+            ax.scatter(db_obj1, db_obj2, c='lightgray', s=50, alpha=0.5, 
+                      label='All evaluated molecules', zorder=1)
+    
+    # Plot Pareto front
+    ax.scatter(obj1_vals, obj2_vals, c='red', s=100, alpha=0.8, 
+              label='Pareto front', zorder=2, edgecolors='darkred', linewidths=1.5)
+    
+    # Sort and connect Pareto front
+    sorted_indices = sorted(range(len(obj1_vals)), key=lambda i: obj1_vals[i])
+    sorted_obj1 = [obj1_vals[i] for i in sorted_indices]
+    sorted_obj2 = [obj2_vals[i] for i in sorted_indices]
+    ax.plot(sorted_obj1, sorted_obj2, 'r--', alpha=0.5, linewidth=1.5, zorder=2)
+    
+    ax.set_xlabel(obj1_name, fontsize=12)
+    ax.set_ylabel(obj2_name, fontsize=12)
+    ax.set_title('Pareto Front - Final Generation', fontsize=14, fontweight='bold')
+    ax.legend(loc='best', fontsize=10)
+    ax.grid(True, alpha=0.3)
+    
+    plt.tight_layout()
+    
+    save_path = output_dir / 'pareto_front_2d.png'
+    plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    logger.info(f"Saved Pareto front plot to {save_path}")
+
+
 def plot_objective_distributions(results: Dict, output_dir: Path):
-    """Plot distributions of all objectives"""
-    if 'database' not in results or not results['database']:
-        logger.warning("No database available")
+    """Plot distributions of objectives"""
+    if 'database' not in results:
+        logger.warning("No database found for distribution plots")
         return
     
     database = results['database']
     pareto = results.get('pareto', [])
     
-    # Get number of objectives
-    n_objectives = len(database[0]['objectives']) if database and 'objectives' in database[0] else 0
-    
-    if n_objectives == 0:
-        logger.warning("No objectives found in database")
+    # Determine number of objectives
+    sample_mol = database[0] if database else None
+    if not sample_mol:
         return
+    
+    if 'objectives' in sample_mol:
+        n_objectives = len(sample_mol['objectives'])
+    else:
+        n_objectives = 2  # Legacy: beta and natoms
     
     # Get objective names
     obj_names = []
-    if database and 'objectives' in database[0]:
-        for key in database[0].keys():
-            if key not in ['smiles', 'objectives', 'generation', 'rank', 'homo_lumo_gap', 
+    if 'objectives' in sample_mol:
+        for key in ['beta', 'natoms', 'homo_lumo_gap', 'energy', 'alpha', 
                           'transition_dipole', 'oscillator_strength', 'gamma']:
+            if key in sample_mol:
                 obj_names.append(key)
     
     if len(obj_names) < n_objectives:
@@ -553,7 +1076,13 @@ def create_summary_report(results: Dict, output_dir: Path):
             initial_hv = metrics['hypervolume'][0]
             final_hv = metrics['hypervolume'][-1]
             improvement = (final_hv - initial_hv) / (initial_hv + 1e-10) * 100
-            report_lines.append(f"\nHypervolume: {initial_hv:.6f} → {final_hv:.6f} ({improvement:+.1f}%)")
+            report_lines.append(f"\nGlobal Hypervolume: {initial_hv:.6f} → {final_hv:.6f} ({improvement:+.1f}%)")
+        
+        if 'moqd' in metrics and metrics['moqd']:
+            initial_moqd = metrics['moqd'][0]
+            final_moqd = metrics['moqd'][-1]
+            moqd_improvement = (final_moqd - initial_moqd) / (initial_moqd + 1e-10) * 100
+            report_lines.append(f"MOQD Score: {initial_moqd:.6f} → {final_moqd:.6f} ({moqd_improvement:+.1f}%)")
         
         if 'max_beta' in metrics and metrics['max_beta']:
             initial_beta = metrics['max_beta'][0]

@@ -25,6 +25,7 @@ from analysis import analyze_parent_child_performance
 from plotting import plot_pareto_front
 from results import save_results
 from archive import BinnedParetoArchive
+from pymoo.indicators.hv import Hypervolume
 
 from performance import (
     PerformanceTracker, 
@@ -372,7 +373,50 @@ class QuantumChemistryInterface:
         osc_match = re.search(r'Oscillator strength:\s+([-+]?\d+\.\d+e[+-]?\d+)', stdout)
         if osc_match:
             result['oscillator_strength'] = float(osc_match.group(1))
-        
+
+        # Calculate number of atoms from SMILES
+        try:
+            from rdkit import Chem
+            mol = Chem.MolFromSmiles(smiles, sanitize=False)
+            if mol:
+                result['natoms'] = mol.GetNumAtoms()
+            else:
+                result['natoms'] = 0
+        except:
+            result['natoms'] = 0
+
+        # Calculate derived properties (ratios)
+        # beta_gamma_ratio = beta_mean / gamma
+        if result.get('beta_mean') and result.get('gamma') and result['gamma'] != 0:
+            result['beta_gamma_ratio'] = result['beta_mean'] / result['gamma']
+        else:
+            result['beta_gamma_ratio'] = 0.0
+
+        # total_energy_atom_ratio = total_energy / natoms
+        if result.get('total_energy') and result.get('natoms') and result['natoms'] > 0:
+            result['total_energy_atom_ratio'] = result['total_energy'] / result['natoms']
+        else:
+            result['total_energy_atom_ratio'] = 0.0
+
+        # Range-based objectives: distance from target range (0 if within range)
+        # alpha target range: [100, 500]
+        alpha = result.get('alpha_mean', 0.0)
+        if alpha and alpha < 100.0:
+            result['alpha_range_distance'] = 100.0 - alpha
+        elif alpha and alpha > 500.0:
+            result['alpha_range_distance'] = alpha - 500.0
+        else:
+            result['alpha_range_distance'] = 0.0
+
+        # homo_lumo_gap target range: [2.5, 3.5]
+        homo_lumo_gap = result.get('homo_lumo_gap', 0.0)
+        if homo_lumo_gap and homo_lumo_gap < 2.5:
+            result['homo_lumo_gap_range_distance'] = 2.5 - homo_lumo_gap
+        elif homo_lumo_gap and homo_lumo_gap > 3.5:
+            result['homo_lumo_gap_range_distance'] = homo_lumo_gap - 3.5
+        else:
+            result['homo_lumo_gap_range_distance'] = 0.0
+
         return result
     
     def _error_result(self, smiles: str, error: str) -> dict:
@@ -410,6 +454,7 @@ class NSGA2Optimizer:
                  output_dir: str = "nsga2_results",
                  objectives: list = None,
                  optimize_objectives: list = None,
+                 reference_points: list = None,
                  seed: int = None,
                  initial_seeds: list = None,
                  archive_bins: int = 10,
@@ -464,19 +509,23 @@ class NSGA2Optimizer:
         self.performance_plotter = PerformancePlotter(self.output_dir)
 
         # Setup hypervolume reference point based on objectives
-        self.hv_reference = []
-        for i, obj_name in enumerate(self.objectives):
-            opt_type, target = self.optimize_objectives[i]
-            if obj_name == 'natoms':
-                self.hv_reference.append(float(self.max_natoms))
-            elif opt_type == 'max':
-                self.hv_reference.append(0.0)
-            elif opt_type == 'min':
-                self.hv_reference.append(1000.0)  # Large value for minimization
-            else:  # target
-                self.hv_reference.append(abs(target) * 10)
+        if reference_points is not None:
+            self.hv_reference = reference_points
+        else:
+            self.hv_reference = []
+            for i, obj_name in enumerate(self.objectives):
+                opt_type, target = self.optimize_objectives[i]
+                if obj_name == 'natoms':
+                    self.hv_reference.append(float(self.max_natoms))
+                elif opt_type == 'max':
+                    self.hv_reference.append(0.0)
+                elif opt_type == 'min':
+                    self.hv_reference.append(1000.0)  # Large value for minimization
+                else:  # target
+                    self.hv_reference.append(abs(target) * 10)
         
-        self.hv_calculator = HypervolumeCalculator(self.hv_reference, self.optimize_objectives)
+        # Remove direct Hypervolume usage; rely on archive for global HV and MOQD
+        # self.hv_calculator = Hypervolume(ref_point=np.array(self.hv_reference))
         logger.info(f"Performance tracking initialized with reference point: {self.hv_reference}")
 
         self.archive = BinnedParetoArchive(
@@ -532,9 +581,11 @@ class NSGA2Optimizer:
     def compute_objectives(self, smiles: str, atomic_numbers, positions) -> list:
         """
         Compute all objectives for a molecule using subprocess.
-        
-        Supports: beta, beta_mean, natoms, energy, dipole, homo_lumo_gap, 
-                 alpha, gamma, transition_dipole, oscillator_strength
+
+        Supports: beta, beta_mean, natoms, energy, dipole, homo_lumo_gap,
+                 alpha, gamma, transition_dipole, oscillator_strength,
+                 beta_gamma_ratio, total_energy_atom_ratio, alpha_range_distance,
+                 homo_lumo_gap_range_distance
         """
         from rdkit import Chem
         
@@ -555,7 +606,14 @@ class NSGA2Optimizer:
         
         # Run quantum chemistry calculation via subprocess
         qc_result = self.qc_interface.calculate(smiles)
-        
+
+        # DEBUG: Print all properties returned from QC calculation
+        logger.info(f"DEBUG - QC Result for {smiles}:")
+        for key, value in qc_result.items():
+            logger.info(f"  {key}: {value}")
+
+        logger.info(f"DEBUG - Objectives we're evolving: {self.objectives}")
+
         # Build objectives list based on requested objectives
         obj_values = []
         for obj_name in self.objectives:
@@ -601,10 +659,36 @@ class NSGA2Optimizer:
             elif obj_name == 'oscillator_strength':
                 value = _safe_float(qc_result.get('oscillator_strength', 0.0), default=0.0)
                 obj_values.append(float(value))
-            
+
+            # Derived objectives
+            elif obj_name == 'beta_gamma_ratio':
+                value = _safe_float(qc_result.get('beta_gamma_ratio', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'total_energy_atom_ratio':
+                value = _safe_float(qc_result.get('total_energy_atom_ratio', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'alpha_range_distance':
+                value = _safe_float(qc_result.get('alpha_range_distance', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'homo_lumo_gap_range_distance':
+                value = _safe_float(qc_result.get('homo_lumo_gap_range_distance', 0.0), default=0.0)
+                obj_values.append(float(value))
+
             else:
                 logger.warning(f"Unknown objective: {obj_name}, using 0.0")
                 obj_values.append(0.0)
+        
+        # After computing objectives, add to MAP-Elites archive
+        obj_dict = {
+            'beta': obj_values[0] if len(obj_values) > 0 else 0.0,  # Assuming beta is first objective
+            'num_atoms_bin': min(9, heavy_natoms // 5),
+            'homo_lumo_gap_bin': min(9, int(qc_result.get('homo_lumo_gap', 0.0) or 0.0)),
+            'num_atoms': heavy_natoms,
+            'homo_lumo_gap': qc_result.get('homo_lumo_gap', 0.0) or 0.0
+        }
         
         return obj_values
     
@@ -694,7 +778,8 @@ class NSGA2Optimizer:
             homo_lumo_gap=qc_result.get('homo_lumo_gap', 0.0) or 0.0,
             transition_dipole=qc_result.get('transition_dipole', 0.0) or 0.0,
             oscillator_strength=qc_result.get('oscillator_strength', 0.0) or 0.0,
-            gamma=qc_result.get('gamma', 0.0) or 0.0
+            gamma=qc_result.get('gamma', 0.0) or 0.0,
+            alpha_mean=qc_result.get('alpha_mean', 0.0) or 0.0
         )
     
     def create_offspring_with_adaptive_mutation(self, parents):
@@ -773,10 +858,20 @@ class NSGA2Optimizer:
         if self.initial_seeds:
             initial_smiles = self.initial_seeds[:]
             if len(initial_smiles) < self.pop_size:
-                additional = self.generator.generate_initial_population(self.pop_size - len(initial_smiles))
+                additional = self.generator.generate_initial_population(
+                    self.pop_size - len(initial_smiles),
+                    save_to_file=True,
+                    seed_number=self.seed,
+                    algorithm_name="nsga2"
+                )
                 initial_smiles.extend(additional)
         else:
-            initial_smiles = self.generator.generate_initial_population(self.pop_size)
+            initial_smiles = self.generator.generate_initial_population(
+                self.pop_size,
+                save_to_file=True,
+                seed_number=self.seed,
+                algorithm_name="nsga2"
+            )
         
         logger.info("Calculating properties for initial population...")
         self.population = []
@@ -799,8 +894,10 @@ class NSGA2Optimizer:
 
         # Track initial population
         initial_fronts = self.fast_non_dominated_sort(self.population, self.optimize_objectives)
-        initial_hv = self.hv_calculator.calculate(self.population)
-        self.performance_tracker.update(0, self.population, initial_fronts, initial_hv)
+        # Use global hypervolume and MOQD from archive
+        initial_global_hv = self.archive.compute_global_hypervolume()
+        initial_moqd = self.archive.compute_moqd_score()
+        self.performance_tracker.update(0, self.population, initial_fronts, initial_global_hv, initial_moqd)
         
         # Main loop
         for gen in range(self.n_gen):
@@ -867,10 +964,10 @@ class NSGA2Optimizer:
                                     else f"{name}={val}" 
                                     for name, val in zip(self.objectives, child.objectives)])
                 logger.info(f"  {child.smiles}: {obj_str}")
-            
+
+            # Update database with new children only (parents already in database from previous generations)
             self.update_molecule_database(children)
             combined_population = parents + children
-            self.update_molecule_database(combined_population)
             self.analyze_parent_child_performance(parents, children)
             
             # Environmental selection
@@ -888,12 +985,13 @@ class NSGA2Optimizer:
             
             self.population = new_population
 
-            # Calculate metrics
+            # Calculate metrics using global hypervolume and MOQD
             fronts = self.fast_non_dominated_sort(self.population, self.optimize_objectives)
-            hypervolume = self.hv_calculator.calculate(self.population)
-            self.performance_tracker.update(gen + 1, self.population, fronts, hypervolume)
+            global_hv = self.archive.compute_global_hypervolume()
+            moqd = self.archive.compute_moqd_score()
+            self.performance_tracker.update(gen + 1, self.population, fronts, global_hv, moqd)
 
-            logger.info(f"Hypervolume: {hypervolume:.6f}")
+            logger.info(f"Global Hypervolume: {global_hv:.6f}, MOQD: {moqd:.6f}")
             
             # Log pareto front details
             best_front = fronts[0] if fronts else []
@@ -1058,6 +1156,7 @@ class NSGA2Optimizer:
                     'transition_dipole': ind.transition_dipole,
                     'oscillator_strength': ind.oscillator_strength,
                     'gamma': ind.gamma,
+                    'alpha_mean': ind.alpha_mean,
                     'generation': ind.generation
                 }
                 for ind in self.archive.get_all_individuals()
@@ -1099,7 +1198,7 @@ class NSGA2Optimizer:
             initial_hv = metrics['hypervolume'][0]
             final_hv = metrics['hypervolume'][-1]
             hv_improvement = (final_hv - initial_hv) / (initial_hv + 1e-10) * 100
-            logger.info(f"Hypervolume: {initial_hv:.6f} → {final_hv:.6f} ({hv_improvement:+.1f}%)")
+            logger.info(f"Global Hypervolume: {initial_hv:.6f} → {final_hv:.6f} ({hv_improvement:+.1f}%)")
         
         # Save all_molecules_database.json
         molecules_file = self.output_dir / "all_molecules_database.json"

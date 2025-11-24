@@ -21,6 +21,7 @@ class Individual:
     transition_dipole: float = 0.0
     oscillator_strength: float = 0.0
     gamma: float = 0.0
+    alpha_mean: float = 0.0
 
     def __post_init__(self):
         if not self.objectives:

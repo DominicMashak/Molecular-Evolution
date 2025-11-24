@@ -12,19 +12,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../.
 
 from molev_utils.molecule_ops import mutate_smiles, MoleculeMutator
 from molev_utils.io_utils import cleanup_mopac_files, update_progress_file
-
-def get_calculator(calculator_type, **kwargs):
-    if calculator_type == "dft":
-        from quantum_chemistry.calculators.dft import DFTCalculator
-        return DFTCalculator(**kwargs)
-    elif calculator_type == "cc":
-        from quantum_chemistry.calculators.cc import CCCalculator
-        return CCCalculator(**kwargs)
-    elif calculator_type == "semiempirical":
-        from quantum_chemistry.calculators.semiempirical import SemiEmpiricalCalculator
-        return SemiEmpiricalCalculator(**kwargs)
-    else:
-        raise ValueError(f"Unknown calculator type: {calculator_type}")
+from molev_utils.quantum_chemistry_interface import QuantumChemistryInterface
 
 # Simulated Annealing parameters
 T_initial = 100.0
@@ -43,38 +31,29 @@ def signal_handler(signum, frame):
     cleanup_mopac_files(current_mopac_files)
     sys.exit(0)
 
-def get_fitness(smiles, calculator):
-    # Convert SMILES to atomic numbers and positions (using RDKit)
-    from rdkit import Chem
-    from rdkit.Chem import AllChem
-    mol = Chem.MolFromSmiles(smiles)
-    if not mol:
-        return -1000.0
-    mol = Chem.AddHs(mol)
+def get_fitness(smiles, qc_interface):
+    # Use QuantumChemistryInterface to calculate properties including hyperpolarizabilities
     try:
-        AllChem.EmbedMolecule(mol, randomSeed=42)
-        AllChem.MMFFOptimizeMolecule(mol)
-    except Exception:
-        return -1000.0
-    conf = mol.GetConformer()
-    positions = []
-    atomic_numbers = []
-    for atom in mol.GetAtoms():
-        pos = conf.GetAtomPosition(atom.GetIdx())
-        positions.append([pos.x, pos.y, pos.z])
-        atomic_numbers.append(atom.GetAtomicNum())
-    positions = np.array(positions)
-    atomic_numbers = np.array(atomic_numbers)
-    # Run quantum chemistry calculator
-    try:
-        result = calculator.single_point(atomic_numbers, positions)
-        # Use hyperpolarizability beta_mean as fitness (higher is better)
-        beta = result.get('beta_mean', -1000.0)
-        if beta > 999999:
-            beta = -1000.0
-        return beta
+        print(f"DEBUG: Getting fitness for: {smiles}")
+        result = qc_interface.calculate(smiles)
+        print(f"DEBUG: QC interface returned result with keys: {result.keys() if result else 'None'}")
+
+        if result.get('error'):
+            print(f"DEBUG: Calculation failed with error: {result['error']}")
+            return -1000.0
+
+        # Use beta_gamma_ratio as fitness (higher is better)
+        beta_gamma_ratio = result.get('beta_gamma_ratio', -1000.0)
+        print(f"DEBUG: beta_gamma_ratio = {beta_gamma_ratio}")
+
+        if beta_gamma_ratio is None or beta_gamma_ratio > 999999 or beta_gamma_ratio < -999999:
+            beta_gamma_ratio = -1000.0
+
+        return beta_gamma_ratio
     except Exception as e:
         print(f"Calculator error: {e}")
+        import traceback
+        traceback.print_exc()
         return -1000.0
 
 def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, cooling_rate, max_iterations, initial_smiles, cooling_schedule='exponential', output_dir='sa_results'):
@@ -123,7 +102,19 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
     signal.signal(signal.SIGINT, signal_handler)
     print("Starting simulated annealing with calculator:", calculator_type)
     print("Press Ctrl+C to interrupt and clean up...")
-    calculator = get_calculator(calculator_type, **calculator_kwargs)
+
+    # Extract method and field_strength from calculator_kwargs
+    method = calculator_kwargs.pop('method', None)
+    field_strength = calculator_kwargs.pop('field_strength', 0.001)
+
+    # Initialize QuantumChemistryInterface
+    qc_interface = QuantumChemistryInterface(
+        calculator_type=calculator_type,
+        calculator_kwargs=calculator_kwargs,
+        method=method,
+        field_strength=field_strength,
+        verbose=False
+    )
 
     # Initialize with starting molecule
     mutator = MoleculeMutator()
@@ -142,7 +133,7 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
             print("No valid fallback seed found. Exiting.")
             return
 
-    current_beta = get_fitness(current_smiles, calculator)
+    current_beta = get_fitness(current_smiles, qc_interface)
     if current_beta is None or current_beta == -1000.0:
         print("Initial molecule invalid in fitness calculation.")
         return
@@ -192,7 +183,7 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
                 break
             
             # Calculate beta for this mutation
-            new_beta = get_fitness(new_smiles, calculator)
+            new_beta = get_fitness(new_smiles, qc_interface)
             if new_beta is None or new_beta == -1000.0:
                 mutated_molecules.append((new_smiles, -1000.0))
             else:
@@ -269,7 +260,7 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
         print(f"\n=== FINAL RESULTS ===")
         print(f"Best SMILES: {best_smiles}")
         print(f"Best Beta: {best_beta:.2f}")
-        initial_beta = get_fitness(initial_smiles, calculator)
+        initial_beta = get_fitness(initial_smiles, qc_interface)
         print(f"Initial Beta: {initial_beta:.2f}")
         if initial_beta != 0:
             print(f"Improvement factor: {best_beta/initial_beta:.2f}x")
@@ -283,6 +274,7 @@ if __name__ == "__main__":
     parser.add_argument('--basis', type=str, default="6-31G", help='Basis set')
     parser.add_argument('--functional', type=str, default="B3LYP", help='Functional (for DFT)')
     parser.add_argument('--method', type=str, default=None, help='Method (for DFT/CC)')
+    parser.add_argument('--field-strength', type=float, default=0.001, help='Electric field strength for hyperpolarizability calculations')
     parser.add_argument('--se-method', type=str, default=None, help='Semiempirical method (PM7, PM6, etc)')
     parser.add_argument('--other', type=str, default=None, help='Other calculator options')
     parser.add_argument('--T_initial', type=float, default=100.0, help='Initial temperature')
@@ -301,10 +293,22 @@ if __name__ == "__main__":
         calculator_kwargs['functional'] = args.functional
     if args.method:
         calculator_kwargs['method'] = args.method
+    if args.field_strength:
+        calculator_kwargs['field_strength'] = args.field_strength
     if args.se_method:
         calculator_kwargs['method'] = args.se_method
         calculator_kwargs['se_method'] = args.se_method
     calculator_kwargs['n_threads'] = multiprocessing.cpu_count()
+    # Set random seeds for reproducibility
+    if args.seed is not None:
+        import numpy as np
+        from rdkit import Chem, rdBase
+
+        random.seed(args.seed)
+        np.random.seed(args.seed)
+        rdBase.SeedRandomNumberGenerator(args.seed)
+        print(f"Random seed set to: {args.seed}")
+
     valid_seeds = [
         "CCO", "CCN", "CCC", "C1CCCCC1", "c1ccccc1", "CC(=O)O", "C1COC1", "C1CC1", "C1CCC1", "C1CCCC1"
     ]

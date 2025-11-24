@@ -33,6 +33,7 @@ def format_objective_name(obj_name):
         'natoms': 'Number of Atoms',
         'n_atoms': 'Number of Atoms',
         'num_atoms': 'Number of Atoms',
+        'alpha_mean': 'Alpha',
     }
     
     obj_lower = obj_name.lower()
@@ -563,3 +564,6 @@ def plot_hypervolume_progress(self, performance_tracker, output_dir=None):
     plt.close()
     
     logger.info(f"Saved hypervolume progress plot to {hv_file}")
+    
+    # Optionally add global HV and MOQD plotting here if tracker is extended
+    # For now, keep as is

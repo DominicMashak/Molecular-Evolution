@@ -209,6 +209,7 @@ class SemiEmpiricalCalculator(Calculator):
                 beta = None
                 beta_pattern = r'AVERAGE BETA\s*\(SHG\)\s*VALUE AT\s*[\d.]+\s*EV\s*=\s*([-]?[\d.]+(?:[eE][+-]?\d+)?)\s*a\.u\.'
                 energy = None
+                dipole = None
                 dipole_pattern = r"DIPOLE\s*=\s*([-]?\d+\.\d+)\s*DEBYE"
                 energy_pattern = r"FINAL HEAT OF FORMATION\s*=\s*([-]?\d+\.\d+)"
                 if os.path.exists(output_file):
