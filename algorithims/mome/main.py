@@ -188,7 +188,7 @@ Examples:
 
     def generate_solution():
         """Generate one SMILES string."""
-        global initial_exhausted
+        nonlocal initial_exhausted
         if not initial_exhausted:
             try:
                 return next(population_iter)

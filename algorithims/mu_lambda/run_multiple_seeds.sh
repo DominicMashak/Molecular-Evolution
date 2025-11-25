@@ -5,7 +5,7 @@
 
 # Default seeds if none provided
 if [ $# -eq 0 ]; then
-    SEEDS=(42 123 456 789 1000)
+    SEEDS=(31 32 33 34 35 36 37 38 39)
     echo "No seeds provided. Using default seeds: ${SEEDS[@]}"
 else
     SEEDS=("$@")
