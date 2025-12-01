@@ -1,0 +1,27 @@
+name: mol-evo
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - h5py
+  - rdkit
+  - periodictable
+  - ase
+  - pyscf
+  - tblite-python
+  - dftbplus
+  - dftd4
+  - simple-dftd3
+  - plumed
+  - pymoo
+  - jupyter
+  - notebook
+  - pip
