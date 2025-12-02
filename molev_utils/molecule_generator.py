@@ -83,12 +83,12 @@ class MoleculeGenerator:
                 success_rates (dict): Success rates from get_mutation_success_rates().
                 adaptation_rate (float, optional): Rate of adaptation. Defaults to 0.1.
 
-        validate_molecule(smiles: str, max_atoms: int = 50) -> bool:
+        validate_molecule(smiles: str, max_atoms: int = 30) -> bool:
             Validates a SMILES string using the mutator.
-            
+
             Args:
                 smiles (str): The SMILES string to validate.
-                max_atoms (int, optional): Maximum allowed atoms. Defaults to 50.
+                max_atoms (int, optional): Maximum allowed atoms. Defaults to 30.
             
             Returns:
                 bool: True if valid, False otherwise.
@@ -184,7 +184,7 @@ class MoleculeGenerator:
         total = sum(self.mutation_weights.values())
         self.mutation_weights = {k: v/total for k, v in self.mutation_weights.items()}
 
-    def validate_molecule(self, smiles: str, max_atoms: int = 50):
+    def validate_molecule(self, smiles: str, max_atoms: int = 30):
         return self.mutator.validate(smiles, max_atoms)
 
     def generate_initial_population(self, size: int, save_to_file=False, seed_number=None, algorithm_name=None):
