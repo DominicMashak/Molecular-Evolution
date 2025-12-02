@@ -150,7 +150,7 @@ class MoleculeMutator:
         
         return None
     
-    def validate(self, smiles, max_atoms=50):
+    def validate(self, smiles, max_atoms=30):
         """Validate molecule - ONLY C,N,O,H with single/double bonds, single connected component"""
         try:
             if '.' in smiles:  # Disconnected structures
@@ -193,7 +193,7 @@ class MoleculeMutator:
                 return False
 
             # Check for reasonable chemistry
-            if mol.GetNumAtoms() < 4:  # Too small
+            if mol.GetNumAtoms() < 5:  # Too small
                 return False
 
             # Check molecular weight
