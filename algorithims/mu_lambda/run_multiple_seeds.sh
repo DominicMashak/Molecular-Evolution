@@ -25,9 +25,9 @@ for SEED in "${SEEDS[@]}"; do
         --basis 3-21G \
         --method full_tensor \
         --field-strength 0.001 \
-        --mu 10 \
+        --mu 20 \
         --lambda 20 \
-        --n-gen 50 \
+        --n-gen 100 \
         --objective beta_gamma_ratio \
         --maximize \
         --output-dir mu_lambda_results_seed_${SEED} \
