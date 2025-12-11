@@ -34,7 +34,7 @@ for SEED in "${SEEDS[@]}"; do
         --T_initial 100.0 \
         --T_min 0.01 \
         --cooling_rate 0.95 \
-        --max_iterations 100 \
+        --max_iterations 285 \
         --seed ${SEED} \
         --cooling_schedule linear \
         --output_dir sa_results_seed_${SEED}
