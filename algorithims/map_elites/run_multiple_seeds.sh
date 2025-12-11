@@ -28,9 +28,9 @@ for SEED in "${SEEDS[@]}"; do
         --basis 3-21G \
         --method full_tensor \
         --field-strength 0.001 \
-        --pop_size 30 \
-        --n_gen 20 \
-        --iterations_per_gen 30 \
+        --pop_size 50 \
+        --n_gen 100 \
+        --iterations_per_gen 20 \
         --log_frequency 1 \
         --save_frequency 1 \
         --output_dir map_elites_results_seed_${SEED} \
