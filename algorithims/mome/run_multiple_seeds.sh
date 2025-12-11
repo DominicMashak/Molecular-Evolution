@@ -28,7 +28,7 @@ for SEED in "${SEEDS[@]}"; do
         --basis 3-21G \
         --method full_tensor \
         --field-strength 0.001 \
-        --pop_size 20 \
+        --pop_size 50 \
         --n_gen 100 \
         --objectives beta_gamma_ratio total_energy_atom_ratio alpha_range_distance homo_lumo_gap_range_distance \
         --optimize maximize minimize minimize minimize \
