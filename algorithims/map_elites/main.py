@@ -89,7 +89,7 @@ Examples:
     if args.recalculate:
         print(f"Recalculating results from {args.recalculate}...")
         archive_config = {
-            'measure_dims': [20, 20],
+            'measure_dims': [10, 10],
             'measure_keys': ['num_atoms_bin', 'num_bonds_bin'],
             'objective_key': 'beta_gamma_ratio'
         }
@@ -174,10 +174,10 @@ Examples:
         beta_mean = qc_result.get('beta_mean', 0.0) or 0.0
         homo_lumo_gap = qc_result.get('homo_lumo_gap', 0.0) or 0.0
         
-        # Bin measures for MAP-Elites (0-19) - finer granularity
-        # Bin size 2 gives better coverage across typical molecule sizes (5-40 atoms)
-        num_atoms_bin = min(19, max(0, (num_atoms - 5) // 2))  # Starts at 5 atoms, bin size 2
-        num_bonds_bin = min(19, max(0, (num_bonds - 5) // 2))  # Starts at 5 bonds, bin size 2
+        # Bin measures for MAP-Elites (0-9) - coarser granularity for 5-30 atom molecules
+        # Bin size 3 gives good coverage for target range (10x10 = 100 cells)
+        num_atoms_bin = min(9, max(0, (num_atoms - 5) // 3))  # Starts at 5 atoms, bin size 3
+        num_bonds_bin = min(9, max(0, (num_bonds - 5) // 3))  # Starts at 5 bonds, bin size 3
         
         return {
             'beta_mean': beta_mean,
@@ -199,7 +199,7 @@ Examples:
     
     # Create archive and optimizer
     archive = ar.MAPElitesArchive(
-        measure_dims=[20, 20],  # Changed from [10, 10] to match new finer binning
+        measure_dims=[10, 10],  # 10x10 = 100 cells, bin size 3 for 5-32 atom coverage
         measure_keys=['num_atoms_bin', 'num_bonds_bin'],
         objective_key='beta_gamma_ratio'
     )

@@ -397,7 +397,7 @@ class MOMEOptimizer:
                 objective_keys = [f'obj_{i}' for i in range(len(sample_mol['objectives']))]
 
             archive_config = {
-                'measure_dims': [20, 20],
+                'measure_dims': [10, 10],
                 'measure_keys': ['num_atoms_bin', 'num_bonds_bin'],
                 'objective_keys': objective_keys,
                 'max_front_size': 50,

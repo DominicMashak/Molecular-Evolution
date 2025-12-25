@@ -218,10 +218,13 @@ class QuantumChemistryInterface:
         try:
             # Generic patterns
             float_pat = r'([-+]?\d*\.?\d+(?:[eE][+-]?\d+)?)'
-            # mean
-            mean_regex = re.compile(r'(?:β|beta|b)[\s_]*mean[:\s]*' + float_pat, re.IGNORECASE | re.UNICODE)
+            # mean - Match ONLY "β mean:" with COLON (the actual result line, not debug output)
+            # The actual QC output format is: "β mean:           6.750244e+03"
+            mean_regex = re.compile(r'β\s+mean:\s+' + float_pat, re.IGNORECASE | re.UNICODE)
             m = mean_regex.search(stdout)
             if m:
+                print(f"DEBUG REGEX: Matched string = '{m.group()}'")
+                print(f"DEBUG REGEX: Extracted value = {m.group(1)}")
                 beta_mean = float(m.group(1))
 
             # vector
@@ -249,7 +252,9 @@ class QuantumChemistryInterface:
                     if self.verbose:
                         print(f"Clamping negative beta_mean ({beta_mean}) to 0.0 for {smiles}")
                     beta_mean = 0.0
+                print(f"DEBUG: About to store beta_mean = {beta_mean}")
                 result['beta_mean'] = beta_mean
+                print(f"DEBUG: Stored in result dict, result['beta_mean'] = {result['beta_mean']}")
             if beta_vec is not None:
                 result['beta_vec'] = beta_vec
             result.update({
@@ -257,6 +262,7 @@ class QuantumChemistryInterface:
                 'beta_yyy': beta_components.get('beta_yyy', result['beta_yyy']),
                 'beta_zzz': beta_components.get('beta_zzz', result['beta_zzz'])
             })
+            print(f"DEBUG: After result.update(), result['beta_mean'] = {result.get('beta_mean')}")
 
         except Exception as e:
             if self.verbose:
@@ -313,6 +319,7 @@ class QuantumChemistryInterface:
 
         # Calculate derived properties (ratios)
         print(f"DEBUG QCI - Calculating derived objectives for {smiles}")
+        print(f"DEBUG: BEFORE derived calc, result['beta_mean'] = {result.get('beta_mean')}")
         print(f"  beta_mean: {result.get('beta_mean')}, gamma: {result.get('gamma')}")
         print(f"  total_energy: {result.get('total_energy')}, natoms: {result.get('natoms')}")
         print(f"  alpha_mean: {result.get('alpha_mean')}, homo_lumo_gap: {result.get('homo_lumo_gap')}")

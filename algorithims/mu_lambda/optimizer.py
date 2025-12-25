@@ -142,6 +142,11 @@ class MuLambdaOptimizer:
         # Calculate quantum properties
         qc_result = self.qc_interface.calculate(smiles)
 
+        # DEBUG: Show what's in qc_result
+        print(f"DEBUG OPTIMIZER: qc_result keys = {list(qc_result.keys())}")
+        print(f"DEBUG OPTIMIZER: beta_mean from qc_result = {qc_result.get('beta_mean')}")
+        print(f"DEBUG OPTIMIZER: gamma from qc_result = {qc_result.get('gamma')}")
+
         # Handle calculation errors
         if qc_result.get('error'):
             logger.warning(f"QC error for {smiles}: {qc_result['error']}")
@@ -159,11 +164,14 @@ class MuLambdaOptimizer:
         mol = Chem.MolFromSmiles(smiles)
         natoms = mol.GetNumAtoms() if mol else 0
 
-        return Individual(
+        extracted_beta = _safe_float(qc_result.get('beta_mean', 0.0))
+        print(f"DEBUG OPTIMIZER: Extracted beta_mean = {extracted_beta}")
+
+        ind = Individual(
             smiles=smiles,
             fitness=fitness,
             generation=generation,
-            beta_mean=_safe_float(qc_result.get('beta_mean', 0.0)),
+            beta_mean=extracted_beta,
             natoms=natoms,
             homo_lumo_gap=_safe_float(qc_result.get('homo_lumo_gap', 0.0)),
             dipole_moment=_safe_float(qc_result.get('dipole_moment', 0.0)),
@@ -172,23 +180,36 @@ class MuLambdaOptimizer:
             total_energy=_safe_float(qc_result.get('total_energy', 0.0))
         )
 
+        print(f"DEBUG OPTIMIZER: Created Individual with beta_mean = {ind.beta_mean}")
+        print(f"DEBUG OPTIMIZER: Individual.to_dict()['beta'] = {ind.to_dict()['beta']}")
+
+        return ind
+
     def update_molecule_database(self, individuals: List[Individual]):
         """Update the molecule database with evaluated individuals"""
         for ind in individuals:
+            ind_dict = ind.to_dict()
+            print(f"DEBUG UPDATE_DB: Adding molecule {ind.smiles}, beta = {ind_dict.get('beta')}")
+
             # Check if molecule already exists
             existing = next((m for m in self.all_molecules if m['smiles'] == ind.smiles), None)
 
             if existing:
                 # Update if this is from an earlier generation
                 if ind.generation < existing['generation']:
-                    existing.update(ind.to_dict())
+                    existing.update(ind_dict)
             else:
                 # Add new entry
-                self.all_molecules.append(ind.to_dict())
+                self.all_molecules.append(ind_dict)
+                print(f"DEBUG UPDATE_DB: Appended to all_molecules, beta = {self.all_molecules[-1].get('beta')}")
 
     def save_molecule_database(self):
         """Save the complete molecule database to JSON"""
         db_file = self.output_dir / "all_molecules_database.json"
+
+        print(f"DEBUG SAVE_DB: Saving {len(self.all_molecules)} molecules")
+        for i, mol in enumerate(self.all_molecules):
+            print(f"DEBUG SAVE_DB: Molecule {i}: smiles={mol.get('smiles')}, beta={mol.get('beta')}")
 
         # Sort by generation
         sorted_molecules = sorted(self.all_molecules, key=lambda x: x.get('generation', 0))

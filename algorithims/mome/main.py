@@ -248,9 +248,10 @@ Examples:
         alpha_range_distance = qc_result.get('alpha_range_distance', 0.0) or 0.0
         homo_lumo_gap_range_distance = qc_result.get('homo_lumo_gap_range_distance', 0.0) or 0.0
 
-        # Bin measures for MAP-Elites grid
-        num_atoms_bin = min(19, max(0, (num_atoms - 5) // 2))
-        num_bonds_bin = min(19, max(0, (num_bonds - 5) // 2))
+        # Bin measures for MAP-Elites grid (0-9) - coarser granularity for 5-30 atom molecules
+        # Bin size 3 gives good coverage for target range (10x10 = 100 cells)
+        num_atoms_bin = min(9, max(0, (num_atoms - 5) // 3))
+        num_bonds_bin = min(9, max(0, (num_bonds - 5) // 3))
 
         return {
             'beta_mean': beta_mean,
@@ -281,7 +282,7 @@ Examples:
         optimize_objectives = [('maximize', None)] * len(args.objectives)
 
     archive = ma.MOMEArchive(
-        measure_dims=[20, 20],
+        measure_dims=[10, 10],  # 10x10 = 100 cells, bin size 3 for 5-32 atom coverage
         measure_keys=['num_atoms_bin', 'num_bonds_bin'],
         objective_keys=args.objectives,
         max_front_size=args.max_front_size,
