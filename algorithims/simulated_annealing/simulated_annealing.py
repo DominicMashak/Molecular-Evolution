@@ -6,7 +6,9 @@ import argparse
 import numpy as np
 import multiprocessing
 import shutil
-from plotting import plot_progress 
+import json
+from pathlib import Path
+from plotting import plot_progress
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
@@ -19,7 +21,6 @@ T_initial = 100.0
 T_min = 0.01
 cooling_rate = 0.95
 max_iterations = 100
-initial_smiles = "C-CN(=(=N)C-N)-C=C-C=C"
 interrupted = False
 current_mopac_files = []
 
@@ -32,7 +33,12 @@ def signal_handler(signum, frame):
     sys.exit(0)
 
 def get_fitness(smiles, qc_interface):
-    # Use QuantumChemistryInterface to calculate properties including hyperpolarizabilities
+    """
+    Calculate fitness and return both fitness value and full QC result.
+
+    Returns:
+        tuple: (fitness_value, qc_result_dict)
+    """
     try:
         print(f"DEBUG: Getting fitness for: {smiles}")
         result = qc_interface.calculate(smiles)
@@ -40,7 +46,7 @@ def get_fitness(smiles, qc_interface):
 
         if result.get('error'):
             print(f"DEBUG: Calculation failed with error: {result['error']}")
-            return -1000.0
+            return -1000.0, result
 
         # Use beta_gamma_ratio as fitness (higher is better)
         beta_gamma_ratio = result.get('beta_gamma_ratio', -1000.0)
@@ -49,12 +55,56 @@ def get_fitness(smiles, qc_interface):
         if beta_gamma_ratio is None or beta_gamma_ratio > 999999 or beta_gamma_ratio < -999999:
             beta_gamma_ratio = -1000.0
 
-        return beta_gamma_ratio
+        return beta_gamma_ratio, result
     except Exception as e:
         print(f"Calculator error: {e}")
         import traceback
         traceback.print_exc()
-        return -1000.0
+        error_result = {'smiles': smiles, 'error': str(e)}
+        return -1000.0, error_result
+
+
+def save_all_molecules_database(all_molecules, output_dir):
+    """
+    Save all evaluated molecules to a JSON database file.
+
+    Args:
+        all_molecules: List of molecule dictionaries with QC properties
+        output_dir: Directory to save the database
+    """
+    db_file = Path(output_dir) / "all_molecules_database.json"
+
+    # Convert molecules to serializable format
+    serializable_molecules = []
+    for mol in all_molecules:
+        mol_dict = {
+            'smiles': mol.get('smiles', ''),
+            'fitness': mol.get('fitness', 0.0),
+            'beta': mol.get('beta_mean', 0.0),
+            'beta_vec': mol.get('beta_vec'),
+            'beta_xxx': mol.get('beta_xxx'),
+            'beta_yyy': mol.get('beta_yyy'),
+            'beta_zzz': mol.get('beta_zzz'),
+            'gamma': mol.get('gamma', 0.0),
+            'alpha_mean': mol.get('alpha_mean', 0.0),
+            'dipole_moment': mol.get('dipole_moment', 0.0),
+            'homo_lumo_gap': mol.get('homo_lumo_gap', 0.0),
+            'total_energy': mol.get('total_energy', 0.0),
+            'transition_dipole': mol.get('transition_dipole'),
+            'oscillator_strength': mol.get('oscillator_strength'),
+            'natoms': mol.get('natoms', 0),
+            'beta_gamma_ratio': mol.get('beta_gamma_ratio', 0.0),
+            'total_energy_atom_ratio': mol.get('total_energy_atom_ratio', 0.0),
+            'alpha_range_distance': mol.get('alpha_range_distance', 0.0),
+            'homo_lumo_gap_range_distance': mol.get('homo_lumo_gap_range_distance', 0.0),
+            'error': mol.get('error')
+        }
+        serializable_molecules.append(mol_dict)
+
+    with open(db_file, 'w') as f:
+        json.dump(serializable_molecules, f, indent=2)
+
+    print(f"Saved {len(serializable_molecules)} molecules to {db_file}")
 
 def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, cooling_rate, max_iterations, initial_smiles, cooling_schedule='exponential', output_dir='sa_results'):
     """
@@ -133,10 +183,17 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
             print("No valid fallback seed found. Exiting.")
             return
 
-    current_beta = get_fitness(current_smiles, qc_interface)
+    # Initialize all_molecules database
+    all_molecules = []
+
+    current_beta, current_qc_result = get_fitness(current_smiles, qc_interface)
     if current_beta is None or current_beta == -1000.0:
         print("Initial molecule invalid in fitness calculation.")
         return
+
+    # Add initial molecule to database
+    current_qc_result['fitness'] = current_beta
+    all_molecules.append(current_qc_result)
 
     # Track the best solution found
     best_smiles = current_smiles
@@ -173,17 +230,22 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
         for mutation_type in range(1, 8):
             if interrupted:
                 break
-                
+
             print(f"\nTesting mutation type {mutation_type}")
-            
+
             # Generate new candidate solution (guaranteed to be valid)
             new_smiles = mutate_smiles(current_smiles, mutation_type, interrupted)
-            
+
             if interrupted:
                 break
-            
+
             # Calculate beta for this mutation
-            new_beta = get_fitness(new_smiles, qc_interface)
+            new_beta, new_qc_result = get_fitness(new_smiles, qc_interface)
+
+            # Add to all_molecules database
+            new_qc_result['fitness'] = new_beta
+            all_molecules.append(new_qc_result)
+
             if new_beta is None or new_beta == -1000.0:
                 mutated_molecules.append((new_smiles, -1000.0))
             else:
@@ -195,7 +257,11 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
         
         # Update progress file with all mutation results
         update_progress_file(progress_file, iteration + 1, T, best_smiles, best_beta, mutated_molecules)
-        
+
+        # Save all_molecules database periodically (every 10 iterations)
+        if (iteration + 1) % 10 == 0:
+            save_all_molecules_database(all_molecules, output_dir)
+
         # Plot every iteration
         plot_progress(progress_file, output_dir)
         
@@ -255,16 +321,21 @@ def simulated_annealing(calculator_type, calculator_kwargs, T_initial, T_min, co
         print(f"Current beta: {current_beta:.2f}, Best beta: {best_beta:.2f}")
     
     cleanup_mopac_files(current_mopac_files)
-    
+
+    # Save final all_molecules database
+    save_all_molecules_database(all_molecules, output_dir)
+
     if not interrupted:
         print(f"\n=== FINAL RESULTS ===")
         print(f"Best SMILES: {best_smiles}")
-        print(f"Best Beta: {best_beta:.2f}")
-        initial_beta = get_fitness(initial_smiles, qc_interface)
+        print(f"Best Beta (beta_gamma_ratio): {best_beta:.2f}")
+        initial_beta, _ = get_fitness(initial_smiles, qc_interface)
         print(f"Initial Beta: {initial_beta:.2f}")
         if initial_beta != 0:
             print(f"Improvement factor: {best_beta/initial_beta:.2f}x")
         print(f"Progress saved to: {progress_file}")
+        print(f"All molecules database saved to: {Path(output_dir) / 'all_molecules_database.json'}")
+        print(f"Total molecules evaluated: {len(all_molecules)}")
     else:
         print("Optimization interrupted by user")
 
@@ -282,7 +353,7 @@ if __name__ == "__main__":
     parser.add_argument('--cooling_rate', type=float, default=0.95, help='Cooling rate')
     parser.add_argument('--max_iterations', type=int, default=100, help='Number of iterations/generations')
     parser.add_argument('--initial_smiles', type=str, default="CCO", help='Initial SMILES string')
-    parser.add_argument('--seed', type=int, default=None, help='Index of predefined seed molecule (0-9), overrides initial_smiles if provided')
+    parser.add_argument('--seed', type=int, default=42, help='Random seed for reproducibility')
     parser.add_argument('--cooling_schedule', type=str, default='exponential', choices=['exponential', 'linear'], help='Temperature cooling schedule')
     parser.add_argument('--output_dir', type=str, default='sa_results', help='Directory to store output files and plots')
     args = parser.parse_args()
@@ -299,24 +370,32 @@ if __name__ == "__main__":
         calculator_kwargs['method'] = args.se_method
         calculator_kwargs['se_method'] = args.se_method
     calculator_kwargs['n_threads'] = multiprocessing.cpu_count()
+
     # Set random seeds for reproducibility
-    if args.seed is not None:
-        import numpy as np
-        from rdkit import Chem, rdBase
+    import numpy as np
+    from rdkit import Chem, rdBase
 
-        random.seed(args.seed)
-        np.random.seed(args.seed)
-        rdBase.SeedRandomNumberGenerator(args.seed)
-        print(f"Random seed set to: {args.seed}")
+    random.seed(args.seed)
+    np.random.seed(args.seed)
+    rdBase.SeedRandomNumberGenerator(args.seed)
+    print(f"Random seed set to: {args.seed}")
 
-    valid_seeds = [
-        "CCO", "CCN", "CCC", "C1CCCCC1", "c1ccccc1", "CC(=O)O", "C1COC1", "C1CC1", "C1CCC1", "C1CCCC1"
-    ]
-    if args.seed is not None and args.initial_smiles == "CCO":  # Only override if initial_smiles is default
-        if 0 <= args.seed < len(valid_seeds):
-            args.initial_smiles = valid_seeds[args.seed]
+    # Generate diverse initial molecule based on random seed
+    # This ensures different seed values start from different molecules for better exploration
+    # Only auto-generate if initial_smiles is still the default "CCO"
+    from molev_utils.molecule_generator import MoleculeGenerator
+
+    if args.initial_smiles == "CCO":  # Default value - generate diverse molecule
+        generator = MoleculeGenerator(seed=args.seed)
+        initial_population = generator.generate_initial_population(size=1, save_to_file=False)
+        if initial_population and len(initial_population) > 0:
+            args.initial_smiles = initial_population[0]
+            print(f"Generated diverse initial molecule for seed {args.seed}: {args.initial_smiles}")
         else:
-            print(f"Invalid seed {args.seed}, using default initial_smiles")
+            print(f"Failed to generate molecule, using default: {args.initial_smiles}")
+    else:  # User explicitly provided a molecule
+        print(f"Using user-specified initial molecule: {args.initial_smiles}")
+
     simulated_annealing(
         args.calculator,
         calculator_kwargs,

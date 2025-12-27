@@ -4,7 +4,7 @@ import random
 import importlib.util
 from pathlib import Path
 from collections import defaultdict
-from molecule_ops import MoleculeMutator
+from molev_utils.molecule_ops import MoleculeMutator
 
 
 # Helper function to load canonicalize_smiles
