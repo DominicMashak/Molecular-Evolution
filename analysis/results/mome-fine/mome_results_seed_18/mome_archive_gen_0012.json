@@ -1,0 +1,4647 @@
+{
+  "generation": 12,
+  "n_objectives": 4,
+  "objective_keys": [
+    "beta_gamma_ratio",
+    "total_energy_atom_ratio",
+    "alpha_range_distance",
+    "homo_lumo_gap_range_distance"
+  ],
+  "cells": [
+    {
+      "indices": [
+        0,
+        0
+      ],
+      "front_size": 14,
+      "solutions": [
+        {
+          "smiles": "C=CC(C)=CC",
+          "properties": {
+            "beta_mean": 6725.937,
+            "homo_lumo_gap": 11.965527,
+            "dipole_moment": 0.185496,
+            "alpha_mean": -32.89855,
+            "gamma": 4294.388,
+            "total_energy": -231.692778,
+            "beta_gamma_ratio": 1.5662154886796442,
+            "total_energy_atom_ratio": -38.615463,
+            "alpha_range_distance": 132.89855,
+            "homo_lumo_gap_range_distance": 8.465527,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 6,
+            "num_bonds": 5,
+            "error": null
+          },
+          "objectives": [
+            1.5662154886796442,
+            -38.615463,
+            132.89855,
+            8.465527
+          ]
+        },
+        {
+          "smiles": "C=C=CC=C",
+          "properties": {
+            "beta_mean": 5669.008,
+            "homo_lumo_gap": 12.349329,
+            "dipole_moment": 0.073701,
+            "alpha_mean": 28.24487,
+            "gamma": 1257.045,
+            "total_energy": -191.674195,
+            "beta_gamma_ratio": 4.50978922791149,
+            "total_energy_atom_ratio": -38.334839,
+            "alpha_range_distance": 71.75513000000001,
+            "homo_lumo_gap_range_distance": 8.849329,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 5,
+            "num_bonds": 4,
+            "error": null
+          },
+          "objectives": [
+            4.50978922791149,
+            -38.334839,
+            71.75513000000001,
+            8.849329
+          ]
+        },
+        {
+          "smiles": "CC=CCC",
+          "properties": {
+            "beta_mean": 8128.764,
+            "homo_lumo_gap": 13.855917,
+            "dipole_moment": 0.031883,
+            "alpha_mean": 6.05038,
+            "gamma": 1216.695,
+            "total_energy": -194.052951,
+            "beta_gamma_ratio": 6.681020305006596,
+            "total_energy_atom_ratio": -38.8105902,
+            "alpha_range_distance": 93.94962,
+            "homo_lumo_gap_range_distance": 10.355917,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 5,
+            "num_bonds": 4,
+            "error": null
+          },
+          "objectives": [
+            6.681020305006596,
+            -38.8105902,
+            93.94962,
+            10.355917
+          ]
+        },
+        {
+          "smiles": "CCC1NO1",
+          "properties": {
+            "beta_mean": 5856.868,
+            "homo_lumo_gap": 17.698545,
+            "dipole_moment": 1.309733,
+            "alpha_mean": 19.55765,
+            "gamma": 652.6382,
+            "total_energy": -245.476101,
+            "beta_gamma_ratio": 8.974142181686577,
+            "total_energy_atom_ratio": -49.0952202,
+            "alpha_range_distance": 80.44235,
+            "homo_lumo_gap_range_distance": 14.198545,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 5,
+            "num_bonds": 5,
+            "error": null
+          },
+          "objectives": [
+            8.974142181686577,
+            -49.0952202,
+            80.44235,
+            14.198545
+          ]
+        },
+        {
+          "smiles": "CC=CCN=N",
+          "properties": {
+            "beta_mean": 7739.759,
+            "homo_lumo_gap": 13.113297,
+            "dipole_moment": 1.392934,
+            "alpha_mean": -6.154131,
+            "gamma": 1344.953,
+            "total_energy": -263.418757,
+            "beta_gamma_ratio": 5.754668750506523,
+            "total_energy_atom_ratio": -43.903126166666674,
+            "alpha_range_distance": 106.154131,
+            "homo_lumo_gap_range_distance": 9.613297,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 6,
+            "num_bonds": 5,
+            "error": null
+          },
+          "objectives": [
+            5.754668750506523,
+            -43.903126166666674,
+            106.154131,
+            9.613297
+          ]
+        },
+        {
+          "smiles": "CCOOC",
+          "properties": {
+            "beta_mean": 5490.352,
+            "homo_lumo_gap": 18.031803,
+            "dipole_moment": 0.718431,
+            "alpha_mean": 0.8988338,
+            "gamma": 867.0516,
+            "total_energy": -266.378003,
+            "beta_gamma_ratio": 6.332209063451356,
+            "total_energy_atom_ratio": -53.2756006,
+            "alpha_range_distance": 99.1011662,
+            "homo_lumo_gap_range_distance": 14.531803,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 5,
+            "num_bonds": 4,
+            "error": null
+          },
+          "objectives": [
+            6.332209063451356,
+            -53.2756006,
+            99.1011662,
+            14.531803
+          ]
+        },
+        {
+          "smiles": "CC(C)CC=O",
+          "properties": {
+            "beta_mean": 8312.704,
+            "homo_lumo_gap": 14.992287,
+            "dipole_moment": 1.117759,
+            "alpha_mean": -24.78419,
+            "gamma": 1056.568,
+            "total_energy": -268.50716,
+            "beta_gamma_ratio": 7.8676469474752215,
+            "total_energy_atom_ratio": -44.75119333333333,
+            "alpha_range_distance": 124.78419,
+            "homo_lumo_gap_range_distance": 11.492287,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 6,
+            "num_bonds": 5,
+            "error": null
+          },
+          "objectives": [
+            7.8676469474752215,
+            -44.75119333333333,
+            124.78419,
+            11.492287
+          ]
+        },
+        {
+          "smiles": "C1CCNC1",
+          "properties": {
+            "beta_mean": 6622.385,
+            "homo_lumo_gap": 15.772702,
+            "dipole_moment": 0.709402,
+            "alpha_mean": -1.019427,
+            "gamma": 675.404,
+            "total_energy": -209.96172,
+            "beta_gamma_ratio": 9.8050722234396,
+            "total_energy_atom_ratio": -41.992344,
+            "alpha_range_distance": 101.019427,
+            "homo_lumo_gap_range_distance": 12.272702,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 5,
+            "num_bonds": 5,
+            "error": null
+          },
+          "objectives": [
+            9.8050722234396,
+            -41.992344,
+            101.019427,
+            12.272702
+          ]
+        },
+        {
+          "smiles": "C=CC1=C=C1C",
+          "properties": {
+            "beta_mean": 3471.978,
+            "homo_lumo_gap": 8.439207,
+            "dipole_moment": 2.587793,
+            "alpha_mean": -29.07917,
+            "gamma": 4747.117,
+            "total_energy": -228.814561,
+            "beta_gamma_ratio": 0.7313866500446481,
+            "total_energy_atom_ratio": -38.135760166666664,
+            "alpha_range_distance": 129.07917,
+            "homo_lumo_gap_range_distance": 4.939207,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 6,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            0.7313866500446481,
+            -38.135760166666664,
+            129.07917,
+            4.939207
+          ]
+        },
+        {
+          "smiles": "CCCOOC",
+          "properties": {
+            "beta_mean": 6912.311,
+            "homo_lumo_gap": 17.823524,
+            "dipole_moment": 0.703217,
+            "alpha_mean": -7.150396,
+            "gamma": 1144.637,
+            "total_energy": -305.197122,
+            "beta_gamma_ratio": 6.0388673439701845,
+            "total_energy_atom_ratio": -50.866187,
+            "alpha_range_distance": 107.150396,
+            "homo_lumo_gap_range_distance": 14.323523999999999,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 6,
+            "num_bonds": 5,
+            "error": null
+          },
+          "objectives": [
+            6.0388673439701845,
+            -50.866187,
+            107.150396,
+            14.323523999999999
+          ]
+        },
+        {
+          "smiles": "NCC1C=C=C1",
+          "properties": {
+            "beta_mean": 8811.804,
+            "homo_lumo_gap": 8.560388,
+            "dipole_moment": 0.557559,
+            "alpha_mean": 5.355789,
+            "gamma": 1608.1,
+            "total_energy": -246.175781,
+            "beta_gamma_ratio": 5.479636838505068,
+            "total_energy_atom_ratio": -41.02929683333333,
+            "alpha_range_distance": 94.644211,
+            "homo_lumo_gap_range_distance": 5.060388,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 6,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            5.479636838505068,
+            -41.02929683333333,
+            94.644211,
+            5.060388
+          ]
+        },
+        {
+          "smiles": "CCC(N)N",
+          "properties": {
+            "beta_mean": 7176.64,
+            "homo_lumo_gap": 15.812104,
+            "dipole_moment": 1.335375,
+            "alpha_mean": 11.09818,
+            "gamma": 1140.506,
+            "total_energy": -227.024603,
+            "beta_gamma_ratio": 6.292505256438808,
+            "total_energy_atom_ratio": -45.404920600000004,
+            "alpha_range_distance": 88.90182,
+            "homo_lumo_gap_range_distance": 12.312104,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 5,
+            "num_bonds": 4,
+            "error": null
+          },
+          "objectives": [
+            6.292505256438808,
+            -45.404920600000004,
+            88.90182,
+            12.312104
+          ]
+        },
+        {
+          "smiles": "CC=C=NC",
+          "properties": {
+            "beta_mean": 5794.221,
+            "homo_lumo_gap": 10.090778,
+            "dipole_moment": 0.731366,
+            "alpha_mean": 11.5485,
+            "gamma": 456.6516,
+            "total_energy": -208.701024,
+            "beta_gamma_ratio": 12.688493810160743,
+            "total_energy_atom_ratio": -41.7402048,
+            "alpha_range_distance": 88.4515,
+            "homo_lumo_gap_range_distance": 6.590778,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 5,
+            "num_bonds": 4,
+            "error": null
+          },
+          "objectives": [
+            12.688493810160743,
+            -41.7402048,
+            88.4515,
+            6.590778
+          ]
+        },
+        {
+          "smiles": "CC=CCOC",
+          "properties": {
+            "beta_mean": 7468.572,
+            "homo_lumo_gap": 13.883186,
+            "dipole_moment": 0.589552,
+            "alpha_mean": -4.552736,
+            "gamma": 1948.1,
+            "total_energy": -268.471413,
+            "beta_gamma_ratio": 3.833772393614291,
+            "total_energy_atom_ratio": -44.7452355,
+            "alpha_range_distance": 104.552736,
+            "homo_lumo_gap_range_distance": 10.383186,
+            "num_atoms_bin": 0,
+            "num_bonds_bin": 0,
+            "num_atoms": 6,
+            "num_bonds": 5,
+            "error": null
+          },
+          "objectives": [
+            3.833772393614291,
+            -44.7452355,
+            104.552736,
+            10.383186
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        1,
+        0
+      ],
+      "front_size": 11,
+      "solutions": [
+        {
+          "smiles": "N=C=C=C=CCN",
+          "properties": {
+            "beta_mean": 9193.208,
+            "homo_lumo_gap": 8.670224,
+            "dipole_moment": 1.303059,
+            "alpha_mean": -49.68166,
+            "gamma": -2666.487,
+            "total_energy": -299.860186,
+            "beta_gamma_ratio": -3.4476852877962654,
+            "total_energy_atom_ratio": -42.83716942857143,
+            "alpha_range_distance": 149.68166,
+            "homo_lumo_gap_range_distance": 5.170223999999999,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            -3.4476852877962654,
+            -42.83716942857143,
+            149.68166,
+            5.170223999999999
+          ]
+        },
+        {
+          "smiles": "CNC=C=CCO",
+          "properties": {
+            "beta_mean": 7941.669,
+            "homo_lumo_gap": 8.862346,
+            "dipole_moment": 0.483551,
+            "alpha_mean": -15.72862,
+            "gamma": 2748.91,
+            "total_energy": -321.902094,
+            "beta_gamma_ratio": 2.889024740715411,
+            "total_energy_atom_ratio": -45.986013428571425,
+            "alpha_range_distance": 115.72862,
+            "homo_lumo_gap_range_distance": 5.3623460000000005,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            2.889024740715411,
+            -45.986013428571425,
+            115.72862,
+            5.3623460000000005
+          ]
+        },
+        {
+          "smiles": "C=C(N)C=C(C)N",
+          "properties": {
+            "beta_mean": 9441.938,
+            "homo_lumo_gap": 11.806485,
+            "dipole_moment": 1.161775,
+            "alpha_mean": 2.876236,
+            "gamma": 1807.981,
+            "total_energy": -302.30785,
+            "beta_gamma_ratio": 5.222365721763669,
+            "total_energy_atom_ratio": -43.18683571428571,
+            "alpha_range_distance": 97.123764,
+            "homo_lumo_gap_range_distance": 8.306485,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            5.222365721763669,
+            -43.18683571428571,
+            97.123764,
+            8.306485
+          ]
+        },
+        {
+          "smiles": "CNC=COC=N",
+          "properties": {
+            "beta_mean": 11022.34,
+            "homo_lumo_gap": 12.209794,
+            "dipole_moment": 0.59004,
+            "alpha_mean": -7.06852,
+            "gamma": 4695.778,
+            "total_energy": -337.914174,
+            "beta_gamma_ratio": 2.3472872865795615,
+            "total_energy_atom_ratio": -48.27345342857143,
+            "alpha_range_distance": 107.06852,
+            "homo_lumo_gap_range_distance": 8.709794,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            2.3472872865795615,
+            -48.27345342857143,
+            107.06852,
+            8.709794
+          ]
+        },
+        {
+          "smiles": "CCCOCC=O",
+          "properties": {
+            "beta_mean": 7790.481,
+            "homo_lumo_gap": 14.900396,
+            "dipole_moment": 1.0922,
+            "alpha_mean": 22.96745,
+            "gamma": 1259.139,
+            "total_energy": -342.930061,
+            "beta_gamma_ratio": 6.187149313935952,
+            "total_energy_atom_ratio": -48.990008714285715,
+            "alpha_range_distance": 77.03255,
+            "homo_lumo_gap_range_distance": 11.400396,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            6.187149313935952,
+            -48.990008714285715,
+            77.03255,
+            11.400396
+          ]
+        },
+        {
+          "smiles": "NN(N)OONO",
+          "properties": {
+            "beta_mean": 2959.93,
+            "homo_lumo_gap": 14.909794,
+            "dipole_moment": 1.611736,
+            "alpha_mean": -13.95328,
+            "gamma": 1095.619,
+            "total_energy": -442.989494,
+            "beta_gamma_ratio": 2.701605211300644,
+            "total_energy_atom_ratio": -63.28421342857143,
+            "alpha_range_distance": 113.95328,
+            "homo_lumo_gap_range_distance": 11.409794,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            2.701605211300644,
+            -63.28421342857143,
+            113.95328,
+            11.409794
+          ]
+        },
+        {
+          "smiles": "CNCCOCN",
+          "properties": {
+            "beta_mean": 7772.365,
+            "homo_lumo_gap": 16.417024,
+            "dipole_moment": 1.150288,
+            "alpha_mean": 17.18219,
+            "gamma": 2074.16,
+            "total_energy": -340.256528,
+            "beta_gamma_ratio": 3.7472350252632394,
+            "total_energy_atom_ratio": -48.60807542857143,
+            "alpha_range_distance": 82.81781000000001,
+            "homo_lumo_gap_range_distance": 12.917024000000001,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            3.7472350252632394,
+            -48.60807542857143,
+            82.81781000000001,
+            12.917024000000001
+          ]
+        },
+        {
+          "smiles": "N=NN(N)CCN",
+          "properties": {
+            "beta_mean": 7973.684,
+            "homo_lumo_gap": 14.011204,
+            "dipole_moment": 2.231995,
+            "alpha_mean": -10.07984,
+            "gamma": 1754.15,
+            "total_energy": -351.069009,
+            "beta_gamma_ratio": 4.545611264715104,
+            "total_energy_atom_ratio": -50.15271557142857,
+            "alpha_range_distance": 110.07984,
+            "homo_lumo_gap_range_distance": 10.511204,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            4.545611264715104,
+            -50.15271557142857,
+            110.07984,
+            10.511204
+          ]
+        },
+        {
+          "smiles": "C=CC=C(O)CC",
+          "properties": {
+            "beta_mean": 14834.79,
+            "homo_lumo_gap": 11.862225,
+            "dipole_moment": 1.174392,
+            "alpha_mean": 4.498268,
+            "gamma": 2679.978,
+            "total_energy": -306.131863,
+            "beta_gamma_ratio": 5.535414842957667,
+            "total_energy_atom_ratio": -43.733123285714285,
+            "alpha_range_distance": 95.501732,
+            "homo_lumo_gap_range_distance": 8.362225,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            5.535414842957667,
+            -43.733123285714285,
+            95.501732,
+            8.362225
+          ]
+        },
+        {
+          "smiles": "COOCN(N)O",
+          "properties": {
+            "beta_mean": 4610.444,
+            "homo_lumo_gap": 16.070602,
+            "dipole_moment": 1.304911,
+            "alpha_mean": -9.569297,
+            "gamma": 1317.157,
+            "total_energy": -411.330164,
+            "beta_gamma_ratio": 3.5002995087146034,
+            "total_energy_atom_ratio": -58.761452000000006,
+            "alpha_range_distance": 109.569297,
+            "homo_lumo_gap_range_distance": 12.570602000000001,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            3.5002995087146034,
+            -58.761452000000006,
+            109.569297,
+            12.570602000000001
+          ]
+        },
+        {
+          "smiles": "CCC(C=N)CC",
+          "properties": {
+            "beta_mean": 10251.07,
+            "homo_lumo_gap": 15.050131,
+            "dipole_moment": 0.708914,
+            "alpha_mean": 26.97392,
+            "gamma": 1642.187,
+            "total_energy": -287.588804,
+            "beta_gamma_ratio": 6.2423280661702965,
+            "total_energy_atom_ratio": -41.08411485714286,
+            "alpha_range_distance": 73.02608000000001,
+            "homo_lumo_gap_range_distance": 11.550131,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 0,
+            "num_atoms": 7,
+            "num_bonds": 6,
+            "error": null
+          },
+          "objectives": [
+            6.2423280661702965,
+            -41.08411485714286,
+            73.02608000000001,
+            11.550131
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        1,
+        1
+      ],
+      "front_size": 23,
+      "solutions": [
+        {
+          "smiles": "NC1C=C=NCC1",
+          "properties": {
+            "beta_mean": 7350.327,
+            "homo_lumo_gap": 10.013184,
+            "dipole_moment": 1.233005,
+            "alpha_mean": -7.565417,
+            "gamma": 1020.226,
+            "total_energy": -301.032506,
+            "beta_gamma_ratio": 7.20460662637494,
+            "total_energy_atom_ratio": -43.00464371428571,
+            "alpha_range_distance": 107.565417,
+            "homo_lumo_gap_range_distance": 6.513184000000001,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 7,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            7.20460662637494,
+            -43.00464371428571,
+            107.565417,
+            6.513184000000001
+          ]
+        },
+        {
+          "smiles": "CON=C[N+]([O-])N=N",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": "Full tensor calculation failed: Electron number 61 and spin 0 are not consistent"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "ONOC1NN1O",
+          "properties": {
+            "beta_mean": 5517.304,
+            "homo_lumo_gap": 17.439322,
+            "dipole_moment": 0.788921,
+            "alpha_mean": 1.3101,
+            "gamma": 691.576,
+            "total_energy": -425.996293,
+            "beta_gamma_ratio": 7.977870834152718,
+            "total_energy_atom_ratio": -60.85661328571428,
+            "alpha_range_distance": 98.6899,
+            "homo_lumo_gap_range_distance": 13.939322,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 7,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            7.977870834152718,
+            -60.85661328571428,
+            98.6899,
+            13.939322
+          ]
+        },
+        {
+          "smiles": "C=C1COCCON1",
+          "properties": {
+            "beta_mean": 6464.062,
+            "homo_lumo_gap": 13.632251,
+            "dipole_moment": 0.395723,
+            "alpha_mean": -22.40261,
+            "gamma": 875.4644,
+            "total_energy": -396.406831,
+            "beta_gamma_ratio": 7.383580645883488,
+            "total_energy_atom_ratio": -49.550853875,
+            "alpha_range_distance": 122.40261,
+            "homo_lumo_gap_range_distance": 10.132251,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            7.383580645883488,
+            -49.550853875,
+            122.40261,
+            10.132251
+          ]
+        },
+        {
+          "smiles": "CC=CNCC(C)=N",
+          "properties": {
+            "beta_mean": 9465.754,
+            "homo_lumo_gap": 12.447643,
+            "dipole_moment": 0.922638,
+            "alpha_mean": -20.12979,
+            "gamma": 3022.516,
+            "total_energy": -341.109991,
+            "beta_gamma_ratio": 3.1317465316974338,
+            "total_energy_atom_ratio": -42.638748875,
+            "alpha_range_distance": 120.12979,
+            "homo_lumo_gap_range_distance": 8.947643,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            3.1317465316974338,
+            -42.638748875,
+            120.12979,
+            8.947643
+          ]
+        },
+        {
+          "smiles": "CCC(N)(C=N)CC",
+          "properties": {
+            "beta_mean": 12287.09,
+            "homo_lumo_gap": 14.602417,
+            "dipole_moment": 1.031584,
+            "alpha_mean": 36.3465,
+            "gamma": 1973.698,
+            "total_energy": -342.300808,
+            "beta_gamma_ratio": 6.225415438430804,
+            "total_energy_atom_ratio": -42.787601,
+            "alpha_range_distance": 63.6535,
+            "homo_lumo_gap_range_distance": 11.102417,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            6.225415438430804,
+            -42.787601,
+            63.6535,
+            11.102417
+          ]
+        },
+        {
+          "smiles": "CCC(C)OC=NC",
+          "properties": {
+            "beta_mean": 9701.783,
+            "homo_lumo_gap": 14.594918,
+            "dipole_moment": 0.502112,
+            "alpha_mean": 28.83781,
+            "gamma": 2512.688,
+            "total_energy": -362.03121,
+            "beta_gamma_ratio": 3.8611172576937522,
+            "total_energy_atom_ratio": -45.25390125,
+            "alpha_range_distance": 71.16219,
+            "homo_lumo_gap_range_distance": 11.094918,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            3.8611172576937522,
+            -45.25390125,
+            71.16219,
+            11.094918
+          ]
+        },
+        {
+          "smiles": "CC(O)=COC(C)O",
+          "properties": {
+            "beta_mean": 9518.708,
+            "homo_lumo_gap": 13.874115,
+            "dipole_moment": 0.347442,
+            "alpha_mean": -28.45935,
+            "gamma": 1197.009,
+            "total_energy": -417.368061,
+            "beta_gamma_ratio": 7.9520772191353615,
+            "total_energy_atom_ratio": -52.171007625,
+            "alpha_range_distance": 128.45935,
+            "homo_lumo_gap_range_distance": 10.374115,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            7.9520772191353615,
+            -52.171007625,
+            128.45935,
+            10.374115
+          ]
+        },
+        {
+          "smiles": "CNCOCC(N)O",
+          "properties": {
+            "beta_mean": 8540.102,
+            "homo_lumo_gap": 15.967793,
+            "dipole_moment": 1.994192,
+            "alpha_mean": -26.20207,
+            "gamma": 1891.92,
+            "total_energy": -414.688393,
+            "beta_gamma_ratio": 4.513986849338239,
+            "total_energy_atom_ratio": -51.836049125,
+            "alpha_range_distance": 126.20206999999999,
+            "homo_lumo_gap_range_distance": 12.467793,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            4.513986849338239,
+            -51.836049125,
+            126.20206999999999,
+            12.467793
+          ]
+        },
+        {
+          "smiles": "ONOC1NNN1O",
+          "properties": {
+            "beta_mean": 5411.811,
+            "homo_lumo_gap": 15.358119,
+            "dipole_moment": 1.829657,
+            "alpha_mean": 3.860907,
+            "gamma": 862.5231,
+            "total_energy": -480.677222,
+            "beta_gamma_ratio": 6.2743954335831695,
+            "total_energy_atom_ratio": -60.08465275,
+            "alpha_range_distance": 96.139093,
+            "homo_lumo_gap_range_distance": 11.858119,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            6.2743954335831695,
+            -60.08465275,
+            96.139093,
+            11.858119
+          ]
+        },
+        {
+          "smiles": "NC1C2=C=NCC21",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 7,
+            "num_bonds": 8,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "NC1NC2=C=CC21",
+          "properties": {
+            "beta_mean": 8471.603,
+            "homo_lumo_gap": 9.400849,
+            "dipole_moment": 1.111333,
+            "alpha_mean": -4.10599,
+            "gamma": 1882.427,
+            "total_energy": -299.650117,
+            "beta_gamma_ratio": 4.500362032631278,
+            "total_energy_atom_ratio": -42.80715957142858,
+            "alpha_range_distance": 104.10599,
+            "homo_lumo_gap_range_distance": 5.900848999999999,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 7,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            4.500362032631278,
+            -42.80715957142858,
+            104.10599,
+            5.900848999999999
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(N)CCO",
+          "properties": {
+            "beta_mean": 11440.56,
+            "homo_lumo_gap": 14.365338,
+            "dipole_moment": 0.790165,
+            "alpha_mean": -32.59224,
+            "gamma": 1827.023,
+            "total_energy": -362.009792,
+            "beta_gamma_ratio": 6.261858772440194,
+            "total_energy_atom_ratio": -45.251224,
+            "alpha_range_distance": 132.59224,
+            "homo_lumo_gap_range_distance": 10.865338,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            6.261858772440194,
+            -45.251224,
+            132.59224,
+            10.865338
+          ]
+        },
+        {
+          "smiles": "C=C=C=C1COC1N",
+          "properties": {
+            "beta_mean": 10119.88,
+            "homo_lumo_gap": 7.562518,
+            "dipole_moment": 1.260902,
+            "alpha_mean": 46.70594,
+            "gamma": 1080.764,
+            "total_energy": -358.320335,
+            "beta_gamma_ratio": 9.363635354249402,
+            "total_energy_atom_ratio": -44.790041875,
+            "alpha_range_distance": 53.29406,
+            "homo_lumo_gap_range_distance": 4.062518,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            9.363635354249402,
+            -44.790041875,
+            53.29406,
+            4.062518
+          ]
+        },
+        {
+          "smiles": "NCC1C=C=C=C1",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 7,
+            "num_bonds": 7,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CC=NNCC(C)=N",
+          "properties": {
+            "beta_mean": 8004.141,
+            "homo_lumo_gap": 12.415324,
+            "dipole_moment": 1.219065,
+            "alpha_mean": -32.8575,
+            "gamma": 3148.064,
+            "total_energy": -356.956064,
+            "beta_gamma_ratio": 2.5425598081868728,
+            "total_energy_atom_ratio": -44.619508,
+            "alpha_range_distance": 132.85750000000002,
+            "homo_lumo_gap_range_distance": 8.915324,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            2.5425598081868728,
+            -44.619508,
+            132.85750000000002,
+            8.915324
+          ]
+        },
+        {
+          "smiles": "C=CC=C=C(C)C=C",
+          "properties": {
+            "beta_mean": 3322.658,
+            "homo_lumo_gap": 6.77895,
+            "dipole_moment": 0.153383,
+            "alpha_mean": -39.90463,
+            "gamma": -4560.51,
+            "total_energy": -306.827495,
+            "beta_gamma_ratio": -0.7285715851955153,
+            "total_energy_atom_ratio": -38.353436875,
+            "alpha_range_distance": 139.90463,
+            "homo_lumo_gap_range_distance": 3.27895,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            -0.7285715851955153,
+            -38.353436875,
+            139.90463,
+            3.27895
+          ]
+        },
+        {
+          "smiles": "C=C=C(C)NCCC",
+          "properties": {
+            "beta_mean": 12570.8,
+            "homo_lumo_gap": 8.428417,
+            "dipole_moment": 0.819444,
+            "alpha_mean": -15.48171,
+            "gamma": 3489.504,
+            "total_energy": -325.099025,
+            "beta_gamma_ratio": 3.602460406980476,
+            "total_energy_atom_ratio": -40.637378125,
+            "alpha_range_distance": 115.48170999999999,
+            "homo_lumo_gap_range_distance": 4.928417,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            3.602460406980476,
+            -40.637378125,
+            115.48170999999999,
+            4.928417
+          ]
+        },
+        {
+          "smiles": "C=CCC(=C)N=CO",
+          "properties": {
+            "beta_mean": 10853.1,
+            "homo_lumo_gap": 12.015096,
+            "dipole_moment": 0.187719,
+            "alpha_mean": -9.863937,
+            "gamma": 2765.83,
+            "total_energy": -359.654672,
+            "beta_gamma_ratio": 3.923993882487355,
+            "total_energy_atom_ratio": -44.956834,
+            "alpha_range_distance": 109.86393699999999,
+            "homo_lumo_gap_range_distance": 8.515096,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            3.923993882487355,
+            -44.956834,
+            109.86393699999999,
+            8.515096
+          ]
+        },
+        {
+          "smiles": "CC(N)C=C=NCO",
+          "properties": {
+            "beta_mean": 8709.583,
+            "homo_lumo_gap": 10.734574,
+            "dipole_moment": 1.811541,
+            "alpha_mean": -23.37088,
+            "gamma": 1294.988,
+            "total_energy": -376.676803,
+            "beta_gamma_ratio": 6.725609040392652,
+            "total_energy_atom_ratio": -47.084600375,
+            "alpha_range_distance": 123.37088,
+            "homo_lumo_gap_range_distance": 7.234574,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            6.725609040392652,
+            -47.084600375,
+            123.37088,
+            7.234574
+          ]
+        },
+        {
+          "smiles": "CC(N)=C1C=C1N",
+          "properties": {
+            "beta_mean": 8352.586,
+            "homo_lumo_gap": 10.71289,
+            "dipole_moment": 0.836286,
+            "alpha_mean": 30.0999,
+            "gamma": 1033.603,
+            "total_energy": -301.032365,
+            "beta_gamma_ratio": 8.08103885147392,
+            "total_energy_atom_ratio": -43.004623571428574,
+            "alpha_range_distance": 69.9001,
+            "homo_lumo_gap_range_distance": 7.21289,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 7,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            8.08103885147392,
+            -43.004623571428574,
+            69.9001,
+            7.21289
+          ]
+        },
+        {
+          "smiles": "C=CCCC(C)=CC",
+          "properties": {
+            "beta_mean": 11738.14,
+            "homo_lumo_gap": 13.286864,
+            "dipole_moment": 0.046059,
+            "alpha_mean": 17.53253,
+            "gamma": 3150.963,
+            "total_energy": -309.317555,
+            "beta_gamma_ratio": 3.7252547871872816,
+            "total_energy_atom_ratio": -38.664694375,
+            "alpha_range_distance": 82.46746999999999,
+            "homo_lumo_gap_range_distance": 9.786864,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            3.7252547871872816,
+            -38.664694375,
+            82.46746999999999,
+            9.786864
+          ]
+        },
+        {
+          "smiles": "C=CCCC(N)=CC",
+          "properties": {
+            "beta_mean": 13754.93,
+            "homo_lumo_gap": 12.351558,
+            "dipole_moment": 0.457776,
+            "alpha_mean": 22.20553,
+            "gamma": 3546.252,
+            "total_energy": -325.220812,
+            "beta_gamma_ratio": 3.878723226662967,
+            "total_energy_atom_ratio": -40.6526015,
+            "alpha_range_distance": 77.79447,
+            "homo_lumo_gap_range_distance": 8.851558,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 1,
+            "num_atoms": 8,
+            "num_bonds": 7,
+            "error": null
+          },
+          "objectives": [
+            3.878723226662967,
+            -40.6526015,
+            77.79447,
+            8.851558
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "front_size": 3,
+      "solutions": [
+        {
+          "smiles": "NC1N(N)C2=C=CN21",
+          "properties": {
+            "beta_mean": 12437.18,
+            "homo_lumo_gap": 8.149293,
+            "dipole_moment": 1.494848,
+            "alpha_mean": 28.45722,
+            "gamma": 2056.102,
+            "total_energy": -370.150694,
+            "beta_gamma_ratio": 6.048911970320539,
+            "total_energy_atom_ratio": -46.26883675,
+            "alpha_range_distance": 71.54278,
+            "homo_lumo_gap_range_distance": 4.649293,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 2,
+            "num_atoms": 8,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            6.048911970320539,
+            -46.26883675,
+            71.54278,
+            4.649293
+          ]
+        },
+        {
+          "smiles": "NC1=NC1C1C=NN1",
+          "properties": {
+            "beta_mean": 7703.217,
+            "homo_lumo_gap": 12.355637,
+            "dipole_moment": 2.619624,
+            "alpha_mean": 4.055839,
+            "gamma": 1507.696,
+            "total_energy": -370.337633,
+            "beta_gamma_ratio": 5.109264069149218,
+            "total_energy_atom_ratio": -46.292204125,
+            "alpha_range_distance": 95.944161,
+            "homo_lumo_gap_range_distance": 8.855637,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 2,
+            "num_atoms": 8,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            5.109264069149218,
+            -46.292204125,
+            95.944161,
+            8.855637
+          ]
+        },
+        {
+          "smiles": "CC1=NC1C1=C=NN1",
+          "properties": {
+            "beta_mean": 6870.111,
+            "homo_lumo_gap": 7.291669,
+            "dipole_moment": 1.667008,
+            "alpha_mean": -31.30447,
+            "gamma": 1441.909,
+            "total_energy": -352.998164,
+            "beta_gamma_ratio": 4.764594020843202,
+            "total_energy_atom_ratio": -44.1247705,
+            "alpha_range_distance": 131.30447,
+            "homo_lumo_gap_range_distance": 3.7916689999999997,
+            "num_atoms_bin": 1,
+            "num_bonds_bin": 2,
+            "num_atoms": 8,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            4.764594020843202,
+            -44.1247705,
+            131.30447,
+            3.7916689999999997
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        2,
+        1
+      ],
+      "front_size": 18,
+      "solutions": [
+        {
+          "smiles": "CCCCC(C=O)N=O",
+          "properties": {
+            "beta_mean": 9981.969,
+            "homo_lumo_gap": 13.068037,
+            "dipole_moment": 1.634201,
+            "alpha_mean": -3.89378,
+            "gamma": 2897.271,
+            "total_energy": -435.204399,
+            "beta_gamma_ratio": 3.445300422362975,
+            "total_energy_atom_ratio": -48.35604433333334,
+            "alpha_range_distance": 103.89378,
+            "homo_lumo_gap_range_distance": 9.568037,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            3.445300422362975,
+            -48.35604433333334,
+            103.89378,
+            9.568037
+          ]
+        },
+        {
+          "smiles": "C=CN=NCC(N)=NC",
+          "properties": {
+            "beta_mean": 11932.37,
+            "homo_lumo_gap": 10.756936,
+            "dipole_moment": 1.963841,
+            "alpha_mean": -6.03676,
+            "gamma": 1813.059,
+            "total_energy": -410.486947,
+            "beta_gamma_ratio": 6.581346773601963,
+            "total_energy_atom_ratio": -45.609660777777776,
+            "alpha_range_distance": 106.03676,
+            "homo_lumo_gap_range_distance": 7.256936,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            6.581346773601963,
+            -45.609660777777776,
+            106.03676,
+            7.256936
+          ]
+        },
+        {
+          "smiles": "C=NCOCC=CCO",
+          "properties": {
+            "beta_mean": 9578.057,
+            "homo_lumo_gap": 13.293095,
+            "dipole_moment": 1.830571,
+            "alpha_mean": 6.247706,
+            "gamma": 3014.88,
+            "total_energy": -435.238278,
+            "beta_gamma_ratio": 3.1769281032744257,
+            "total_energy_atom_ratio": -48.359808666666666,
+            "alpha_range_distance": 93.752294,
+            "homo_lumo_gap_range_distance": 9.793095,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            3.1769281032744257,
+            -48.359808666666666,
+            93.752294,
+            9.793095
+          ]
+        },
+        {
+          "smiles": "CC=C=C(N)CN(C)O",
+          "properties": {
+            "beta_mean": 10702.92,
+            "homo_lumo_gap": 8.367002,
+            "dipole_moment": 0.4469,
+            "alpha_mean": -28.76872,
+            "gamma": 4523.505,
+            "total_energy": -415.37066,
+            "beta_gamma_ratio": 2.3660679053079416,
+            "total_energy_atom_ratio": -46.152295555555554,
+            "alpha_range_distance": 128.76872,
+            "homo_lumo_gap_range_distance": 4.867001999999999,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            2.3660679053079416,
+            -46.152295555555554,
+            128.76872,
+            4.867001999999999
+          ]
+        },
+        {
+          "smiles": "CNC=NCN=CC=O",
+          "properties": {
+            "beta_mean": 6809.031,
+            "homo_lumo_gap": 10.730605,
+            "dipole_moment": 1.522959,
+            "alpha_mean": -34.61971,
+            "gamma": 3915.128,
+            "total_energy": -430.263778,
+            "beta_gamma_ratio": 1.7391592305538923,
+            "total_energy_atom_ratio": -47.807086444444444,
+            "alpha_range_distance": 134.61971,
+            "homo_lumo_gap_range_distance": 7.230605000000001,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            1.7391592305538923,
+            -47.807086444444444,
+            134.61971,
+            7.230605000000001
+          ]
+        },
+        {
+          "smiles": "C=C(NO)C(C)CON",
+          "properties": {
+            "beta_mean": 10651.21,
+            "homo_lumo_gap": 13.837414,
+            "dipole_moment": 1.103644,
+            "alpha_mean": -36.80817,
+            "gamma": 1972.201,
+            "total_energy": -452.237389,
+            "beta_gamma_ratio": 5.400671635396189,
+            "total_energy_atom_ratio": -50.24859877777778,
+            "alpha_range_distance": 136.80817,
+            "homo_lumo_gap_range_distance": 10.337414,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            5.400671635396189,
+            -50.24859877777778,
+            136.80817,
+            10.337414
+          ]
+        },
+        {
+          "smiles": "N=NNOC(O)OCO",
+          "properties": {
+            "beta_mean": 5956.5,
+            "homo_lumo_gap": 14.434601,
+            "dipole_moment": 2.127861,
+            "alpha_mean": 0.4571644,
+            "gamma": 1216.335,
+            "total_energy": -539.365213,
+            "beta_gamma_ratio": 4.897088384367794,
+            "total_energy_atom_ratio": -59.92946811111111,
+            "alpha_range_distance": 99.5428356,
+            "homo_lumo_gap_range_distance": 10.934601,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            4.897088384367794,
+            -59.92946811111111,
+            99.5428356,
+            10.934601
+          ]
+        },
+        {
+          "smiles": "C=CCOCC=C=C=O",
+          "properties": {
+            "beta_mean": 11007.78,
+            "homo_lumo_gap": 10.475528,
+            "dipole_moment": 1.986877,
+            "alpha_mean": -31.66048,
+            "gamma": 2799.671,
+            "total_energy": -416.976815,
+            "beta_gamma_ratio": 3.9318119879085796,
+            "total_energy_atom_ratio": -46.33075722222222,
+            "alpha_range_distance": 131.66048,
+            "homo_lumo_gap_range_distance": 6.975528000000001,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            3.9318119879085796,
+            -46.33075722222222,
+            131.66048,
+            6.975528000000001
+          ]
+        },
+        {
+          "smiles": "C=C=C(CCN)N=CO",
+          "properties": {
+            "beta_mean": 7232.5,
+            "homo_lumo_gap": 6.830315,
+            "dipole_moment": 0.106823,
+            "alpha_mean": -48.42278,
+            "gamma": 95.30747,
+            "total_energy": -414.220485,
+            "beta_gamma_ratio": 75.88597200198474,
+            "total_energy_atom_ratio": -46.024498333333334,
+            "alpha_range_distance": 148.42278,
+            "homo_lumo_gap_range_distance": 3.3303149999999997,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            75.88597200198474,
+            -46.024498333333334,
+            148.42278,
+            3.3303149999999997
+          ]
+        },
+        {
+          "smiles": "CN=C(O)C=CN=C=O",
+          "properties": {
+            "beta_mean": 3341.186,
+            "homo_lumo_gap": 11.326398,
+            "dipole_moment": 1.632645,
+            "alpha_mean": -46.96013,
+            "gamma": 13302.86,
+            "total_energy": -448.845027,
+            "beta_gamma_ratio": 0.2511629829976411,
+            "total_energy_atom_ratio": -49.87166966666667,
+            "alpha_range_distance": 146.96013,
+            "homo_lumo_gap_range_distance": 7.826397999999999,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            0.2511629829976411,
+            -49.87166966666667,
+            146.96013,
+            7.826397999999999
+          ]
+        },
+        {
+          "smiles": "C=NC(=C=O)CN(C)O",
+          "properties": {
+            "beta_mean": 12667.03,
+            "homo_lumo_gap": 12.003291,
+            "dipole_moment": 1.163683,
+            "alpha_mean": -33.07173,
+            "gamma": 1028.051,
+            "total_energy": -449.921721,
+            "beta_gamma_ratio": 12.321402342879878,
+            "total_energy_atom_ratio": -49.99130233333333,
+            "alpha_range_distance": 133.07173,
+            "homo_lumo_gap_range_distance": 8.503291,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            12.321402342879878,
+            -49.99130233333333,
+            133.07173,
+            8.503291
+          ]
+        },
+        {
+          "smiles": "C=CCCC(=C=O)N=O",
+          "properties": {
+            "beta_mean": 10263.01,
+            "homo_lumo_gap": 11.98632,
+            "dipole_moment": 1.275156,
+            "alpha_mean": 17.95804,
+            "gamma": 2160.05,
+            "total_energy": -432.836624,
+            "beta_gamma_ratio": 4.7512835351033536,
+            "total_energy_atom_ratio": -48.09295822222222,
+            "alpha_range_distance": 82.04196,
+            "homo_lumo_gap_range_distance": 8.48632,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            4.7512835351033536,
+            -48.09295822222222,
+            82.04196,
+            8.48632
+          ]
+        },
+        {
+          "smiles": "C=C(NN)N(CN)OC",
+          "properties": {
+            "beta_mean": 5955.56,
+            "homo_lumo_gap": 13.433682,
+            "dipole_moment": 1.261893,
+            "alpha_mean": -39.32226,
+            "gamma": 2636.947,
+            "total_energy": -448.42061,
+            "beta_gamma_ratio": 2.258505764431367,
+            "total_energy_atom_ratio": -49.824512222222225,
+            "alpha_range_distance": 139.32226,
+            "homo_lumo_gap_range_distance": 9.933682,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            2.258505764431367,
+            -49.824512222222225,
+            139.32226,
+            9.933682
+          ]
+        },
+        {
+          "smiles": "C=NCOCC=C=CO",
+          "properties": {
+            "beta_mean": 9188.79,
+            "homo_lumo_gap": 8.705489,
+            "dipole_moment": 1.486147,
+            "alpha_mean": -38.01903,
+            "gamma": 4287.548,
+            "total_energy": -433.935676,
+            "beta_gamma_ratio": 2.143134024388765,
+            "total_energy_atom_ratio": -48.21507511111111,
+            "alpha_range_distance": 138.01903,
+            "homo_lumo_gap_range_distance": 5.205489,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            2.143134024388765,
+            -48.21507511111111,
+            138.01903,
+            5.205489
+          ]
+        },
+        {
+          "smiles": "C=C=CN(C)C=C=NN",
+          "properties": {
+            "beta_mean": 10076.54,
+            "homo_lumo_gap": 9.317305,
+            "dipole_moment": 0.849416,
+            "alpha_mean": -19.35196,
+            "gamma": 21161.57,
+            "total_energy": -393.318738,
+            "beta_gamma_ratio": 0.47617166401169675,
+            "total_energy_atom_ratio": -43.702082,
+            "alpha_range_distance": 119.35195999999999,
+            "homo_lumo_gap_range_distance": 5.817304999999999,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            0.47617166401169675,
+            -43.702082,
+            119.35195999999999,
+            5.817304999999999
+          ]
+        },
+        {
+          "smiles": "CN(ON)OON(N)N",
+          "properties": {
+            "beta_mean": 6127.385,
+            "homo_lumo_gap": 16.73794,
+            "dipole_moment": 2.006534,
+            "alpha_mean": 24.94226,
+            "gamma": 1417.485,
+            "total_energy": -536.481156,
+            "beta_gamma_ratio": 4.322715937029317,
+            "total_energy_atom_ratio": -59.60901733333334,
+            "alpha_range_distance": 75.05774,
+            "homo_lumo_gap_range_distance": 13.237939999999998,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            4.322715937029317,
+            -59.60901733333334,
+            75.05774,
+            13.237939999999998
+          ]
+        },
+        {
+          "smiles": "C=C(O)C=C=C(C)CC",
+          "properties": {
+            "beta_mean": 9922.888,
+            "homo_lumo_gap": 7.659702,
+            "dipole_moment": 0.363648,
+            "alpha_mean": -77.87321,
+            "gamma": 19264.48,
+            "total_energy": -382.450605,
+            "beta_gamma_ratio": 0.5150872486565949,
+            "total_energy_atom_ratio": -42.49451166666667,
+            "alpha_range_distance": 177.87321,
+            "homo_lumo_gap_range_distance": 4.159702,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            0.5150872486565949,
+            -42.49451166666667,
+            177.87321,
+            4.159702
+          ]
+        },
+        {
+          "smiles": "C=C(NN=CC)C(C)N",
+          "properties": {
+            "beta_mean": 9595.071,
+            "homo_lumo_gap": 12.17155,
+            "dipole_moment": 0.902761,
+            "alpha_mean": 46.27105,
+            "gamma": 4689.184,
+            "total_energy": -395.807554,
+            "beta_gamma_ratio": 2.0462133710257477,
+            "total_energy_atom_ratio": -43.978617111111106,
+            "alpha_range_distance": 53.72895,
+            "homo_lumo_gap_range_distance": 8.67155,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 1,
+            "num_atoms": 9,
+            "num_bonds": 8,
+            "error": null
+          },
+          "objectives": [
+            2.0462133710257477,
+            -43.978617111111106,
+            53.72895,
+            8.67155
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        2,
+        2
+      ],
+      "front_size": 18,
+      "solutions": [
+        {
+          "smiles": "CC=C1N=NCN=CO1",
+          "properties": {
+            "beta_mean": 6986.968,
+            "homo_lumo_gap": 10.859075,
+            "dipole_moment": 1.064303,
+            "alpha_mean": 36.87479,
+            "gamma": 707.8332,
+            "total_energy": -429.0482,
+            "beta_gamma_ratio": 9.870924392921948,
+            "total_energy_atom_ratio": -47.672022222222225,
+            "alpha_range_distance": 63.12521,
+            "homo_lumo_gap_range_distance": 7.359075000000001,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 9,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            9.870924392921948,
+            -47.672022222222225,
+            63.12521,
+            7.359075000000001
+          ]
+        },
+        {
+          "smiles": "NCCNN=CNCCO",
+          "properties": {
+            "beta_mean": 10661.06,
+            "homo_lumo_gap": 13.531812,
+            "dipole_moment": 1.276002,
+            "alpha_mean": -23.73465,
+            "gamma": 5290.303,
+            "total_energy": -487.298693,
+            "beta_gamma_ratio": 2.01520782458018,
+            "total_energy_atom_ratio": -48.729869300000004,
+            "alpha_range_distance": 123.73465,
+            "homo_lumo_gap_range_distance": 10.031812,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            2.01520782458018,
+            -48.729869300000004,
+            123.73465,
+            10.031812
+          ]
+        },
+        {
+          "smiles": "C=C1CC1(N)C(=N)COO",
+          "properties": {
+            "beta_mean": 7238.233,
+            "homo_lumo_gap": 13.836649,
+            "dipole_moment": 1.934046,
+            "alpha_mean": -13.17683,
+            "gamma": 1356.398,
+            "total_energy": -488.640818,
+            "beta_gamma_ratio": 5.336363663172609,
+            "total_energy_atom_ratio": -48.8640818,
+            "alpha_range_distance": 113.17683,
+            "homo_lumo_gap_range_distance": 10.336649,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            5.336363663172609,
+            -48.8640818,
+            113.17683,
+            10.336649
+          ]
+        },
+        {
+          "smiles": "CC=C1N=NCNCO1",
+          "properties": {
+            "beta_mean": 7239.939,
+            "homo_lumo_gap": 11.07581,
+            "dipole_moment": 1.837567,
+            "alpha_mean": -8.627114,
+            "gamma": 898.6945,
+            "total_energy": -430.21947,
+            "beta_gamma_ratio": 8.056062432784445,
+            "total_energy_atom_ratio": -47.80216333333333,
+            "alpha_range_distance": 108.627114,
+            "homo_lumo_gap_range_distance": 7.575810000000001,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 9,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            8.056062432784445,
+            -47.80216333333333,
+            108.627114,
+            7.575810000000001
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(N)C(=N)C1OO1",
+          "properties": {
+            "beta_mean": 11395.16,
+            "homo_lumo_gap": 13.780669,
+            "dipole_moment": 2.207223,
+            "alpha_mean": -34.70024,
+            "gamma": 1613.595,
+            "total_energy": -488.661138,
+            "beta_gamma_ratio": 7.061970320929353,
+            "total_energy_atom_ratio": -48.8661138,
+            "alpha_range_distance": 134.70024,
+            "homo_lumo_gap_range_distance": 10.280669,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            7.061970320929353,
+            -48.8661138,
+            134.70024,
+            10.280669
+          ]
+        },
+        {
+          "smiles": "N=NC1C2C=C=C2N1O",
+          "properties": {
+            "beta_mean": 7669.11,
+            "homo_lumo_gap": 9.105927,
+            "dipole_moment": 1.745726,
+            "alpha_mean": -34.90772,
+            "gamma": 2985.0,
+            "total_energy": -427.49174,
+            "beta_gamma_ratio": 2.56921608040201,
+            "total_energy_atom_ratio": -47.49908222222222,
+            "alpha_range_distance": 134.90771999999998,
+            "homo_lumo_gap_range_distance": 5.605926999999999,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 9,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            2.56921608040201,
+            -47.49908222222222,
+            134.90771999999998,
+            5.605926999999999
+          ]
+        },
+        {
+          "smiles": "C=C=C(N)CNN(O)CN",
+          "properties": {
+            "beta_mean": 6196.305,
+            "homo_lumo_gap": 8.323471,
+            "dipole_moment": 1.304705,
+            "alpha_mean": -49.084,
+            "gamma": 10297.26,
+            "total_energy": -485.923916,
+            "beta_gamma_ratio": 0.6017430850536939,
+            "total_energy_atom_ratio": -48.5923916,
+            "alpha_range_distance": 149.084,
+            "homo_lumo_gap_range_distance": 4.823471,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            0.6017430850536939,
+            -48.5923916,
+            149.084,
+            4.823471
+          ]
+        },
+        {
+          "smiles": "NCCC1C=NC1NO",
+          "properties": {
+            "beta_mean": 8993.259,
+            "homo_lumo_gap": 14.218361,
+            "dipole_moment": 1.656286,
+            "alpha_mean": 6.780481,
+            "gamma": 1881.972,
+            "total_energy": -431.330548,
+            "beta_gamma_ratio": 4.77863592019435,
+            "total_energy_atom_ratio": -47.925616444444444,
+            "alpha_range_distance": 93.219519,
+            "homo_lumo_gap_range_distance": 10.718361,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 9,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            4.77863592019435,
+            -47.925616444444444,
+            93.219519,
+            10.718361
+          ]
+        },
+        {
+          "smiles": "C=C(O)N1CN(N)C1N",
+          "properties": {
+            "beta_mean": 8931.671,
+            "homo_lumo_gap": 13.939014,
+            "dipole_moment": 0.482524,
+            "alpha_mean": -25.3623,
+            "gamma": 2991.783,
+            "total_energy": -447.256621,
+            "beta_gamma_ratio": 2.985400679126795,
+            "total_energy_atom_ratio": -49.695180111111114,
+            "alpha_range_distance": 125.3623,
+            "homo_lumo_gap_range_distance": 10.439014,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 9,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            2.985400679126795,
+            -49.695180111111114,
+            125.3623,
+            10.439014
+          ]
+        },
+        {
+          "smiles": "CNCC1=CCOOC=C1",
+          "properties": {
+            "beta_mean": 15662.39,
+            "homo_lumo_gap": 11.574149,
+            "dipole_moment": 1.221494,
+            "alpha_mean": 16.43051,
+            "gamma": 2286.508,
+            "total_energy": -472.814492,
+            "beta_gamma_ratio": 6.849916991324763,
+            "total_energy_atom_ratio": -47.2814492,
+            "alpha_range_distance": 83.56949,
+            "homo_lumo_gap_range_distance": 8.074149,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            6.849916991324763,
+            -47.2814492,
+            83.56949,
+            8.074149
+          ]
+        },
+        {
+          "smiles": "NCC1C2C=C=C2N1N",
+          "properties": {
+            "beta_mean": 10507.89,
+            "homo_lumo_gap": 9.411171,
+            "dipole_moment": 1.865892,
+            "alpha_mean": -1.205282,
+            "gamma": 2460.448,
+            "total_energy": -393.132047,
+            "beta_gamma_ratio": 4.270722242453407,
+            "total_energy_atom_ratio": -43.681338555555556,
+            "alpha_range_distance": 101.205282,
+            "homo_lumo_gap_range_distance": 5.9111709999999995,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 9,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            4.270722242453407,
+            -43.681338555555556,
+            101.205282,
+            5.9111709999999995
+          ]
+        },
+        {
+          "smiles": "C=C(NO)C(C)(N)CNN",
+          "properties": {
+            "beta_mean": 10734.15,
+            "homo_lumo_gap": 13.39516,
+            "dipole_moment": 0.770394,
+            "alpha_mean": -40.17597,
+            "gamma": 2168.425,
+            "total_energy": -487.239046,
+            "beta_gamma_ratio": 4.950205794528286,
+            "total_energy_atom_ratio": -48.7239046,
+            "alpha_range_distance": 140.17597,
+            "homo_lumo_gap_range_distance": 9.89516,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            4.950205794528286,
+            -48.7239046,
+            140.17597,
+            9.89516
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(NN)C(=N)CN",
+          "properties": {
+            "beta_mean": 13841.43,
+            "homo_lumo_gap": 13.920075,
+            "dipole_moment": 0.826502,
+            "alpha_mean": 14.97095,
+            "gamma": 2312.201,
+            "total_energy": -450.491065,
+            "beta_gamma_ratio": 5.986257250126611,
+            "total_energy_atom_ratio": -45.0491065,
+            "alpha_range_distance": 85.02905,
+            "homo_lumo_gap_range_distance": 10.420075,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            5.986257250126611,
+            -45.0491065,
+            85.02905,
+            10.420075
+          ]
+        },
+        {
+          "smiles": "NN=C=CN1C=C=C=C1",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 9,
+            "num_bonds": 9,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CC=C=C(CCN)NCO",
+          "properties": {
+            "beta_mean": 7608.274,
+            "homo_lumo_gap": 11.629743,
+            "dipole_moment": 0.512649,
+            "alpha_mean": -40.17873,
+            "gamma": 3495.681,
+            "total_energy": -454.317908,
+            "beta_gamma_ratio": 2.1764783457071744,
+            "total_energy_atom_ratio": -45.4317908,
+            "alpha_range_distance": 140.17873,
+            "homo_lumo_gap_range_distance": 8.129743,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            2.1764783457071744,
+            -45.4317908,
+            140.17873,
+            8.129743
+          ]
+        },
+        {
+          "smiles": "CCC(C)OC(=NC)NO",
+          "properties": {
+            "beta_mean": 10125.82,
+            "homo_lumo_gap": 14.379252,
+            "dipole_moment": 0.946893,
+            "alpha_mean": -19.7743,
+            "gamma": 2839.405,
+            "total_energy": -491.123985,
+            "beta_gamma_ratio": 3.566176716600837,
+            "total_energy_atom_ratio": -49.1123985,
+            "alpha_range_distance": 119.7743,
+            "homo_lumo_gap_range_distance": 10.879252,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            3.566176716600837,
+            -49.1123985,
+            119.7743,
+            10.879252
+          ]
+        },
+        {
+          "smiles": "C=CC(N)(NN)C(=N)CN",
+          "properties": {
+            "beta_mean": 13560.28,
+            "homo_lumo_gap": 12.532137,
+            "dipole_moment": 0.819273,
+            "alpha_mean": 1.860501,
+            "gamma": 3186.907,
+            "total_energy": -466.393047,
+            "beta_gamma_ratio": 4.254997086516801,
+            "total_energy_atom_ratio": -46.639304700000004,
+            "alpha_range_distance": 98.139499,
+            "homo_lumo_gap_range_distance": 9.032137,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            4.254997086516801,
+            -46.639304700000004,
+            98.139499,
+            9.032137
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(O)C(=N)COO",
+          "properties": {
+            "beta_mean": 13142.31,
+            "homo_lumo_gap": 13.838103,
+            "dipole_moment": 0.558269,
+            "alpha_mean": -0.7473577,
+            "gamma": 1949.502,
+            "total_energy": -509.607077,
+            "beta_gamma_ratio": 6.741367795467766,
+            "total_energy_atom_ratio": -50.9607077,
+            "alpha_range_distance": 100.7473577,
+            "homo_lumo_gap_range_distance": 10.338103,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 2,
+            "num_atoms": 10,
+            "num_bonds": 9,
+            "error": null
+          },
+          "objectives": [
+            6.741367795467766,
+            -50.9607077,
+            100.7473577,
+            10.338103
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        2,
+        3
+      ],
+      "front_size": 4,
+      "solutions": [
+        {
+          "smiles": "NN=c1[nH]c2coocc1-2",
+          "properties": {
+            "beta_mean": 2674.887,
+            "homo_lumo_gap": 9.456951,
+            "dipole_moment": 1.677893,
+            "alpha_mean": -47.33736,
+            "gamma": 6490.495,
+            "total_energy": -502.138466,
+            "beta_gamma_ratio": 0.4121237286216229,
+            "total_energy_atom_ratio": -50.2138466,
+            "alpha_range_distance": 147.33736,
+            "homo_lumo_gap_range_distance": 5.956951,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 3,
+            "num_atoms": 10,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            0.4121237286216229,
+            -50.2138466,
+            147.33736,
+            5.956951
+          ]
+        },
+        {
+          "smiles": "CN=c1[nH]c2coocc1-2",
+          "properties": {
+            "beta_mean": 3474.274,
+            "homo_lumo_gap": 9.665783,
+            "dipole_moment": 0.237702,
+            "alpha_mean": -6.680468,
+            "gamma": 2140.268,
+            "total_energy": -486.274676,
+            "beta_gamma_ratio": 1.6232892329371835,
+            "total_energy_atom_ratio": -48.6274676,
+            "alpha_range_distance": 106.680468,
+            "homo_lumo_gap_range_distance": 6.165782999999999,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 3,
+            "num_atoms": 10,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            1.6232892329371835,
+            -48.6274676,
+            106.680468,
+            6.165782999999999
+          ]
+        },
+        {
+          "smiles": "NN=c1[nH]c2c3ooc3c1-2",
+          "properties": {
+            "beta_mean": 15749.92,
+            "homo_lumo_gap": 6.552234,
+            "dipole_moment": 1.415993,
+            "alpha_mean": -34.30991,
+            "gamma": -34529.69,
+            "total_energy": -500.461205,
+            "beta_gamma_ratio": -0.45612688674587,
+            "total_energy_atom_ratio": -50.0461205,
+            "alpha_range_distance": 134.30991,
+            "homo_lumo_gap_range_distance": 3.0522340000000003,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 3,
+            "num_atoms": 10,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            -0.45612688674587,
+            -50.0461205,
+            134.30991,
+            3.0522340000000003
+          ]
+        },
+        {
+          "smiles": "CC1=C=C2N=C(CN=N1)N2",
+          "properties": {
+            "beta_mean": 8389.941,
+            "homo_lumo_gap": 10.462643,
+            "dipole_moment": 1.85749,
+            "alpha_mean": -3.12491,
+            "gamma": 2904.585,
+            "total_energy": -445.525884,
+            "beta_gamma_ratio": 2.88851625963778,
+            "total_energy_atom_ratio": -44.552588400000005,
+            "alpha_range_distance": 103.12491,
+            "homo_lumo_gap_range_distance": 6.962643,
+            "num_atoms_bin": 2,
+            "num_bonds_bin": 3,
+            "num_atoms": 10,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            2.88851625963778,
+            -44.552588400000005,
+            103.12491,
+            6.962643
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        3,
+        2
+      ],
+      "front_size": 4,
+      "solutions": [
+        {
+          "smiles": "C=CC(C)(NN)C(=N)COO",
+          "properties": {
+            "beta_mean": 12180.65,
+            "homo_lumo_gap": 13.329776,
+            "dipole_moment": 1.666153,
+            "alpha_mean": -22.13937,
+            "gamma": 2028.249,
+            "total_energy": -544.54915,
+            "beta_gamma_ratio": 6.005500310859268,
+            "total_energy_atom_ratio": -49.50446818181819,
+            "alpha_range_distance": 122.13937,
+            "homo_lumo_gap_range_distance": 9.829776,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 2,
+            "num_atoms": 11,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            6.005500310859268,
+            -49.50446818181819,
+            122.13937,
+            9.829776
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(NN)C(=N)CNO",
+          "properties": {
+            "beta_mean": 12804.68,
+            "homo_lumo_gap": 13.667135,
+            "dipole_moment": 1.49732,
+            "alpha_mean": 37.80889,
+            "gamma": 2579.668,
+            "total_energy": -524.871045,
+            "beta_gamma_ratio": 4.963693002355342,
+            "total_energy_atom_ratio": -47.71554954545454,
+            "alpha_range_distance": 62.19111,
+            "homo_lumo_gap_range_distance": 10.167135,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 2,
+            "num_atoms": 11,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            4.963693002355342,
+            -47.71554954545454,
+            62.19111,
+            10.167135
+          ]
+        },
+        {
+          "smiles": "CC(N)(C=C=O)C(=N)CCO",
+          "properties": {
+            "beta_mean": 15180.47,
+            "homo_lumo_gap": 12.463085,
+            "dipole_moment": 1.11906,
+            "alpha_mean": -19.32488,
+            "gamma": 2597.555,
+            "total_energy": -527.622242,
+            "beta_gamma_ratio": 5.844138045200198,
+            "total_energy_atom_ratio": -47.965658363636365,
+            "alpha_range_distance": 119.32488000000001,
+            "homo_lumo_gap_range_distance": 8.963085,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 2,
+            "num_atoms": 11,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            5.844138045200198,
+            -47.965658363636365,
+            119.32488000000001,
+            8.963085
+          ]
+        },
+        {
+          "smiles": "C=CC(N=C)(NN)C(=N)CN",
+          "properties": {
+            "beta_mean": 14306.46,
+            "homo_lumo_gap": 13.476465,
+            "dipole_moment": 1.154968,
+            "alpha_mean": -19.06567,
+            "gamma": 2244.216,
+            "total_energy": -504.015509,
+            "beta_gamma_ratio": 6.374814189008545,
+            "total_energy_atom_ratio": -45.81959172727273,
+            "alpha_range_distance": 119.06567,
+            "homo_lumo_gap_range_distance": 9.976465,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 2,
+            "num_atoms": 11,
+            "num_bonds": 10,
+            "error": null
+          },
+          "objectives": [
+            6.374814189008545,
+            -45.81959172727273,
+            119.06567,
+            9.976465
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        3,
+        3
+      ],
+      "front_size": 13,
+      "solutions": [
+        {
+          "smiles": "C=NC1(C)NOC(OO)C1=N",
+          "properties": {
+            "beta_mean": 11427.26,
+            "homo_lumo_gap": 13.064683,
+            "dipole_moment": 1.044734,
+            "alpha_mean": 21.34142,
+            "gamma": 1859.955,
+            "total_energy": -578.996775,
+            "beta_gamma_ratio": 6.143836813256235,
+            "total_energy_atom_ratio": -52.636070454545454,
+            "alpha_range_distance": 78.65858,
+            "homo_lumo_gap_range_distance": 9.564683,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 11,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            6.143836813256235,
+            -52.636070454545454,
+            78.65858,
+            9.564683
+          ]
+        },
+        {
+          "smiles": "CONC1N=CC1CC=CN",
+          "properties": {
+            "beta_mean": 10967.9,
+            "homo_lumo_gap": 12.346846,
+            "dipole_moment": 1.187185,
+            "alpha_mean": 12.32681,
+            "gamma": 2220.721,
+            "total_energy": -507.788295,
+            "beta_gamma_ratio": 4.938891468131296,
+            "total_energy_atom_ratio": -46.162572272727274,
+            "alpha_range_distance": 87.67319,
+            "homo_lumo_gap_range_distance": 8.846846,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 11,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            4.938891468131296,
+            -46.162572272727274,
+            87.67319,
+            8.846846
+          ]
+        },
+        {
+          "smiles": "CC(N)C=CC1C=NC1NO",
+          "properties": {
+            "beta_mean": 9866.231,
+            "homo_lumo_gap": 13.422848,
+            "dipole_moment": 0.818693,
+            "alpha_mean": -35.6437,
+            "gamma": 3153.938,
+            "total_energy": -507.78262,
+            "beta_gamma_ratio": 3.1282260462951395,
+            "total_energy_atom_ratio": -46.16205636363637,
+            "alpha_range_distance": 135.6437,
+            "homo_lumo_gap_range_distance": 9.922848,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 11,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            3.1282260462951395,
+            -46.16205636363637,
+            135.6437,
+            9.922848
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(NNN)C(=N)CNO",
+          "properties": {
+            "beta_mean": 13527.05,
+            "homo_lumo_gap": 13.398225,
+            "dipole_moment": 1.98149,
+            "alpha_mean": 54.41569,
+            "gamma": 2964.043,
+            "total_energy": -579.556037,
+            "beta_gamma_ratio": 4.563715843528585,
+            "total_energy_atom_ratio": -48.29633641666666,
+            "alpha_range_distance": 45.58431,
+            "homo_lumo_gap_range_distance": 9.898225,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 12,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            4.563715843528585,
+            -48.29633641666666,
+            45.58431,
+            9.898225
+          ]
+        },
+        {
+          "smiles": "C=CC(CC)(NN)C(=N)COO",
+          "properties": {
+            "beta_mean": 13737.14,
+            "homo_lumo_gap": 13.690414,
+            "dipole_moment": 0.801543,
+            "alpha_mean": -32.17376,
+            "gamma": 2442.031,
+            "total_energy": -583.374994,
+            "beta_gamma_ratio": 5.625293045010485,
+            "total_energy_atom_ratio": -48.61458283333334,
+            "alpha_range_distance": 132.17376000000002,
+            "homo_lumo_gap_range_distance": 10.190414,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 12,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            5.625293045010485,
+            -48.61458283333334,
+            132.17376000000002,
+            10.190414
+          ]
+        },
+        {
+          "smiles": "COONCN=CCCCCN",
+          "properties": {
+            "beta_mean": 13417.32,
+            "homo_lumo_gap": 13.886675,
+            "dipole_moment": 2.436971,
+            "alpha_mean": -21.34883,
+            "gamma": 3592.239,
+            "total_energy": -584.530407,
+            "beta_gamma_ratio": 3.7350855552762496,
+            "total_energy_atom_ratio": -48.71086725,
+            "alpha_range_distance": 121.34882999999999,
+            "homo_lumo_gap_range_distance": 10.386675,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 12,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            3.7350855552762496,
+            -48.71086725,
+            121.34882999999999,
+            10.386675
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(NNN)C(N)CN=O",
+          "properties": {
+            "beta_mean": 13227.82,
+            "homo_lumo_gap": 13.091709,
+            "dipole_moment": 2.603448,
+            "alpha_mean": -42.99347,
+            "gamma": 2891.018,
+            "total_energy": -579.524072,
+            "beta_gamma_ratio": 4.575488634107432,
+            "total_energy_atom_ratio": -48.29367266666667,
+            "alpha_range_distance": 142.99347,
+            "homo_lumo_gap_range_distance": 9.591709,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 12,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            4.575488634107432,
+            -48.29367266666667,
+            142.99347,
+            9.591709
+          ]
+        },
+        {
+          "smiles": "C=CC1(N=N)CC(=NN)C1=N",
+          "properties": {
+            "beta_mean": 16057.82,
+            "homo_lumo_gap": 11.468089,
+            "dipole_moment": 1.62687,
+            "alpha_mean": 17.43955,
+            "gamma": 3947.207,
+            "total_energy": -501.612766,
+            "beta_gamma_ratio": 4.068147426775439,
+            "total_energy_atom_ratio": -45.60116054545455,
+            "alpha_range_distance": 82.56045,
+            "homo_lumo_gap_range_distance": 7.968089000000001,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 11,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            4.068147426775439,
+            -45.60116054545455,
+            82.56045,
+            7.968089000000001
+          ]
+        },
+        {
+          "smiles": "CN=C1C2CC(=CC2C)N1O",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 11,
+            "num_bonds": 12,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CN=C1CC(N)=C2CCON12",
+          "properties": {
+            "beta_mean": 14734.06,
+            "homo_lumo_gap": 11.352593,
+            "dipole_moment": 1.94641,
+            "alpha_mean": -21.14972,
+            "gamma": 2948.468,
+            "total_energy": -506.677452,
+            "beta_gamma_ratio": 4.997191761959092,
+            "total_energy_atom_ratio": -46.061586545454546,
+            "alpha_range_distance": 121.14972,
+            "homo_lumo_gap_range_distance": 7.852593000000001,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 11,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            4.997191761959092,
+            -46.061586545454546,
+            121.14972,
+            7.852593000000001
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(NNN)C(=N)CNN",
+          "properties": {
+            "beta_mean": 14501.43,
+            "homo_lumo_gap": 13.446824,
+            "dipole_moment": 1.167687,
+            "alpha_mean": 30.58642,
+            "gamma": 3223.401,
+            "total_energy": -559.853092,
+            "beta_gamma_ratio": 4.498798008687098,
+            "total_energy_atom_ratio": -46.65442433333333,
+            "alpha_range_distance": 69.41358,
+            "homo_lumo_gap_range_distance": 9.946824,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 12,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            4.498798008687098,
+            -46.65442433333333,
+            69.41358,
+            9.946824
+          ]
+        },
+        {
+          "smiles": "NN1CCC2=NCC2C1=NO",
+          "properties": {
+            "beta_mean": 12788.24,
+            "homo_lumo_gap": 12.50357,
+            "dipole_moment": 1.45843,
+            "alpha_mean": 52.05507,
+            "gamma": 2454.726,
+            "total_energy": -522.49168,
+            "beta_gamma_ratio": 5.209640505702062,
+            "total_energy_atom_ratio": -47.49924363636364,
+            "alpha_range_distance": 47.94493,
+            "homo_lumo_gap_range_distance": 9.00357,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 11,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            5.209640505702062,
+            -47.49924363636364,
+            47.94493,
+            9.00357
+          ]
+        },
+        {
+          "smiles": "CC(C(=O)CN)C(NO)NC=O",
+          "properties": {
+            "beta_mean": 12124.57,
+            "homo_lumo_gap": 14.222852,
+            "dipole_moment": 1.760594,
+            "alpha_mean": -14.42794,
+            "gamma": 2765.622,
+            "total_energy": -619.121408,
+            "beta_gamma_ratio": 4.384030066292501,
+            "total_energy_atom_ratio": -51.59345066666666,
+            "alpha_range_distance": 114.42794,
+            "homo_lumo_gap_range_distance": 10.722852,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 3,
+            "num_atoms": 12,
+            "num_bonds": 11,
+            "error": null
+          },
+          "objectives": [
+            4.384030066292501,
+            -51.59345066666666,
+            114.42794,
+            10.722852
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        3,
+        4
+      ],
+      "front_size": 8,
+      "solutions": [
+        {
+          "smiles": "CNC1C2C3=NC=C(C32)N1O",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 11,
+            "num_bonds": 13,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "C=NN=c1[nH]c2c3o[nH]oc3c12",
+          "properties": {
+            "beta_mean": 27776.42,
+            "homo_lumo_gap": 6.49763,
+            "dipole_moment": 1.628583,
+            "alpha_mean": -49.28334,
+            "gamma": -16354.23,
+            "total_energy": -592.947455,
+            "beta_gamma_ratio": -1.6984241997330354,
+            "total_energy_atom_ratio": -49.41228791666666,
+            "alpha_range_distance": 149.28334,
+            "homo_lumo_gap_range_distance": 2.99763,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 12,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            -1.6984241997330354,
+            -49.41228791666666,
+            149.28334,
+            2.99763
+          ]
+        },
+        {
+          "smiles": "CN=C1C2C3=NC=C(C32)N1O",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 11,
+            "num_bonds": 13,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "ON=C1C2C3=NC2=C(C3)N1O",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 11,
+            "num_bonds": 13,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CN=C1C2C3=NC=C(C2C3)N1O",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 12,
+            "num_bonds": 14,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "NN=C1N=Nc2cooocc21",
+          "properties": {
+            "beta_mean": 7406.271,
+            "homo_lumo_gap": 9.205709,
+            "dipole_moment": 0.866819,
+            "alpha_mean": 46.72255,
+            "gamma": 3254.21,
+            "total_energy": -630.042468,
+            "beta_gamma_ratio": 2.2759044437820544,
+            "total_energy_atom_ratio": -52.503538999999996,
+            "alpha_range_distance": 53.27745,
+            "homo_lumo_gap_range_distance": 5.705709000000001,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 12,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            2.2759044437820544,
+            -52.503538999999996,
+            53.27745,
+            5.705709000000001
+          ]
+        },
+        {
+          "smiles": "C=NCN1OC2CC1=C1CC2=N1",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 12,
+            "num_bonds": 14,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "C=NNCN1OC2C=NC=C1O2",
+          "properties": {
+            "beta_mean": 11878.93,
+            "homo_lumo_gap": 8.016387,
+            "dipole_moment": 0.847145,
+            "alpha_mean": 26.52855,
+            "gamma": 12059.14,
+            "total_energy": -595.643569,
+            "beta_gamma_ratio": 0.9850561482825476,
+            "total_energy_atom_ratio": -49.63696408333333,
+            "alpha_range_distance": 73.47145,
+            "homo_lumo_gap_range_distance": 4.516387,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 4,
+            "num_atoms": 12,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            0.9850561482825476,
+            -49.63696408333333,
+            73.47145,
+            4.516387
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        3,
+        5
+      ],
+      "front_size": 1,
+      "solutions": [
+        {
+          "smiles": "CNC1C2C3=NC2=C2CC3ON21",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 3,
+            "num_bonds_bin": 5,
+            "num_atoms": 12,
+            "num_bonds": 15,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        4,
+        3
+      ],
+      "front_size": 7,
+      "solutions": [
+        {
+          "smiles": "CN(O)OCCCOCC=C=C=N",
+          "properties": {
+            "beta_mean": 24682.04,
+            "homo_lumo_gap": 10.762614,
+            "dipole_moment": 1.109397,
+            "alpha_mean": 43.26806,
+            "gamma": 2191.011,
+            "total_energy": -640.731185,
+            "beta_gamma_ratio": 11.26513741829685,
+            "total_energy_atom_ratio": -49.28701423076923,
+            "alpha_range_distance": 56.73194,
+            "homo_lumo_gap_range_distance": 7.262613999999999,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 3,
+            "num_atoms": 13,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            11.26513741829685,
+            -49.28701423076923,
+            56.73194,
+            7.262613999999999
+          ]
+        },
+        {
+          "smiles": "CN(O)OOOCOCC=C=C=O",
+          "properties": {
+            "beta_mean": 16670.28,
+            "homo_lumo_gap": 10.527549,
+            "dipole_moment": 0.639664,
+            "alpha_mean": -22.89095,
+            "gamma": 2691.953,
+            "total_energy": -731.520963,
+            "beta_gamma_ratio": 6.19263412102663,
+            "total_energy_atom_ratio": -56.27084330769231,
+            "alpha_range_distance": 122.89095,
+            "homo_lumo_gap_range_distance": 7.0275490000000005,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 3,
+            "num_atoms": 13,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            6.19263412102663,
+            -56.27084330769231,
+            122.89095,
+            7.0275490000000005
+          ]
+        },
+        {
+          "smiles": "NCNOOOCOCC=C=C=O",
+          "properties": {
+            "beta_mean": 12146.38,
+            "homo_lumo_gap": 10.525612,
+            "dipole_moment": 2.128323,
+            "alpha_mean": 8.561771,
+            "gamma": 2526.311,
+            "total_energy": -711.836358,
+            "beta_gamma_ratio": 4.80795119840748,
+            "total_energy_atom_ratio": -54.756642923076924,
+            "alpha_range_distance": 91.438229,
+            "homo_lumo_gap_range_distance": 7.025612000000001,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 3,
+            "num_atoms": 13,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            4.80795119840748,
+            -54.756642923076924,
+            91.438229,
+            7.025612000000001
+          ]
+        },
+        {
+          "smiles": "C=C(ON)C(C=C=NC)C=CNO",
+          "properties": {
+            "beta_mean": 16201.7,
+            "homo_lumo_gap": 11.049244,
+            "dipole_moment": 1.903559,
+            "alpha_mean": -51.72851,
+            "gamma": 5263.17,
+            "total_energy": -619.792493,
+            "beta_gamma_ratio": 3.0783159198733845,
+            "total_energy_atom_ratio": -47.67634561538462,
+            "alpha_range_distance": 151.72851,
+            "homo_lumo_gap_range_distance": 7.549244,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 3,
+            "num_atoms": 13,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            3.0783159198733845,
+            -47.67634561538462,
+            151.72851,
+            7.549244
+          ]
+        },
+        {
+          "smiles": "O=C=C(C=CO)NCC=NNCO",
+          "properties": {
+            "beta_mean": 24226.88,
+            "homo_lumo_gap": 10.71157,
+            "dipole_moment": 3.441468,
+            "alpha_mean": 23.4401,
+            "gamma": 4146.424,
+            "total_energy": -655.52485,
+            "beta_gamma_ratio": 5.842837104936688,
+            "total_energy_atom_ratio": -50.42498846153846,
+            "alpha_range_distance": 76.5599,
+            "homo_lumo_gap_range_distance": 7.21157,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 3,
+            "num_atoms": 13,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            5.842837104936688,
+            -50.42498846153846,
+            76.5599,
+            7.21157
+          ]
+        },
+        {
+          "smiles": "C=CC(C)(NN)C(C=NOO)=NO",
+          "properties": {
+            "beta_mean": 14610.23,
+            "homo_lumo_gap": 12.460462,
+            "dipole_moment": 0.648645,
+            "alpha_mean": -51.69606,
+            "gamma": 3546.196,
+            "total_energy": -672.399668,
+            "beta_gamma_ratio": 4.119972500109977,
+            "total_energy_atom_ratio": -51.72305138461539,
+            "alpha_range_distance": 151.69606,
+            "homo_lumo_gap_range_distance": 8.960462,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 3,
+            "num_atoms": 13,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            4.119972500109977,
+            -51.72305138461539,
+            151.69606,
+            8.960462
+          ]
+        },
+        {
+          "smiles": "CN=CC=C(N)C=C(NC)NOC",
+          "properties": {
+            "beta_mean": 11945.05,
+            "homo_lumo_gap": 10.806042,
+            "dipole_moment": 2.502093,
+            "alpha_mean": -71.86135,
+            "gamma": 8566.872,
+            "total_energy": -601.365179,
+            "beta_gamma_ratio": 1.3943303927034278,
+            "total_energy_atom_ratio": -46.258859923076926,
+            "alpha_range_distance": 171.86135000000002,
+            "homo_lumo_gap_range_distance": 7.306042,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 3,
+            "num_atoms": 13,
+            "num_bonds": 12,
+            "error": null
+          },
+          "objectives": [
+            1.3943303927034278,
+            -46.258859923076926,
+            171.86135000000002,
+            7.306042
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        4,
+        4
+      ],
+      "front_size": 11,
+      "solutions": [
+        {
+          "smiles": "N=C=C=CC1=CN(O)OCCCO1",
+          "properties": {
+            "beta_mean": 6408.441,
+            "homo_lumo_gap": 9.046244,
+            "dipole_moment": 1.399558,
+            "alpha_mean": -103.5044,
+            "gamma": 39866.64,
+            "total_energy": -638.36273,
+            "beta_gamma_ratio": 0.160746955349134,
+            "total_energy_atom_ratio": -49.10482538461539,
+            "alpha_range_distance": 203.5044,
+            "homo_lumo_gap_range_distance": 5.546244,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 13,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            0.160746955349134,
+            -49.10482538461539,
+            203.5044,
+            5.546244
+          ]
+        },
+        {
+          "smiles": "CON(C)OOOCOCC=CC=N",
+          "properties": {
+            "beta_mean": 15934.19,
+            "homo_lumo_gap": 12.35524,
+            "dipole_moment": 0.874268,
+            "alpha_mean": 7.477745,
+            "gamma": 2207.457,
+            "total_energy": -751.810868,
+            "beta_gamma_ratio": 7.218346722042605,
+            "total_energy_atom_ratio": -53.70077628571429,
+            "alpha_range_distance": 92.522255,
+            "homo_lumo_gap_range_distance": 8.85524,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            7.218346722042605,
+            -53.70077628571429,
+            92.522255,
+            8.85524
+          ]
+        },
+        {
+          "smiles": "C=CCNC(C)(NN)C(=N)CN=NO",
+          "properties": {
+            "beta_mean": 14816.84,
+            "homo_lumo_gap": 13.211435,
+            "dipole_moment": 2.00873,
+            "alpha_mean": -50.81133,
+            "gamma": 4941.436,
+            "total_energy": -671.881456,
+            "beta_gamma_ratio": 2.9984886984269354,
+            "total_energy_atom_ratio": -47.99153257142857,
+            "alpha_range_distance": 150.81133,
+            "homo_lumo_gap_range_distance": 9.711435,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            2.9984886984269354,
+            -47.99153257142857,
+            150.81133,
+            9.711435
+          ]
+        },
+        {
+          "smiles": "CNC(N)(C=NO)C(C)(C=O)NNN",
+          "properties": {
+            "beta_mean": 16382.25,
+            "homo_lumo_gap": 13.843782,
+            "dipole_moment": 1.731446,
+            "alpha_mean": -20.67599,
+            "gamma": 4038.839,
+            "total_energy": -708.709483,
+            "beta_gamma_ratio": 4.056178025417701,
+            "total_energy_atom_ratio": -50.62210592857143,
+            "alpha_range_distance": 120.67599,
+            "homo_lumo_gap_range_distance": 10.343782,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            4.056178025417701,
+            -50.62210592857143,
+            120.67599,
+            10.343782
+          ]
+        },
+        {
+          "smiles": "CCC=C1N=CC1C(NC)NOC",
+          "properties": {
+            "beta_mean": 18433.55,
+            "homo_lumo_gap": 12.032722,
+            "dipole_moment": 2.352888,
+            "alpha_mean": -30.90965,
+            "gamma": 4239.647,
+            "total_energy": -585.403253,
+            "beta_gamma_ratio": 4.347897360322687,
+            "total_energy_atom_ratio": -45.031019461538456,
+            "alpha_range_distance": 130.90965,
+            "homo_lumo_gap_range_distance": 8.532722,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 13,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            4.347897360322687,
+            -45.031019461538456,
+            130.90965,
+            8.532722
+          ]
+        },
+        {
+          "smiles": "C=CCNC(C)(NN)C(=N)ONNO",
+          "properties": {
+            "beta_mean": 16890.01,
+            "homo_lumo_gap": 13.596559,
+            "dipole_moment": 0.752261,
+            "alpha_mean": -13.14844,
+            "gamma": 3436.829,
+            "total_energy": -708.643275,
+            "beta_gamma_ratio": 4.914416748694799,
+            "total_energy_atom_ratio": -50.617376785714285,
+            "alpha_range_distance": 113.14844,
+            "homo_lumo_gap_range_distance": 10.096559,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            4.914416748694799,
+            -50.617376785714285,
+            113.14844,
+            10.096559
+          ]
+        },
+        {
+          "smiles": "CCC=C1N=CC1C(C)(NC)NOC",
+          "properties": {
+            "beta_mean": 21426.41,
+            "homo_lumo_gap": 11.853054,
+            "dipole_moment": 1.381472,
+            "alpha_mean": -49.37462,
+            "gamma": 3141.243,
+            "total_energy": -624.223246,
+            "beta_gamma_ratio": 6.820997293109766,
+            "total_energy_atom_ratio": -44.587374714285716,
+            "alpha_range_distance": 149.37462,
+            "homo_lumo_gap_range_distance": 8.353054,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            6.820997293109766,
+            -44.587374714285716,
+            149.37462,
+            8.353054
+          ]
+        },
+        {
+          "smiles": "CCC=CC(C=N)C(C)(NC)NOC",
+          "properties": {
+            "beta_mean": 17424.34,
+            "homo_lumo_gap": 13.643496,
+            "dipole_moment": 1.592077,
+            "alpha_mean": 56.34037,
+            "gamma": 4246.582,
+            "total_energy": -625.463726,
+            "beta_gamma_ratio": 4.103144599586208,
+            "total_energy_atom_ratio": -44.67598042857143,
+            "alpha_range_distance": 43.65963,
+            "homo_lumo_gap_range_distance": 10.143496,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            4.103144599586208,
+            -44.67598042857143,
+            43.65963,
+            10.143496
+          ]
+        },
+        {
+          "smiles": "CC1CONC(N(C)N)C2NN=C12",
+          "properties": {
+            "beta_mean": 15732.09,
+            "homo_lumo_gap": 13.071975,
+            "dipole_moment": 0.755015,
+            "alpha_mean": 41.0272,
+            "gamma": 2775.247,
+            "total_energy": -617.161329,
+            "beta_gamma_ratio": 5.668717054734228,
+            "total_energy_atom_ratio": -47.47394838461538,
+            "alpha_range_distance": 58.9728,
+            "homo_lumo_gap_range_distance": 9.571975,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 13,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            5.668717054734228,
+            -47.47394838461538,
+            58.9728,
+            9.571975
+          ]
+        },
+        {
+          "smiles": "CCC=CON=CCC(NC)NOC",
+          "properties": {
+            "beta_mean": 12965.09,
+            "homo_lumo_gap": 12.824043,
+            "dipole_moment": 0.818703,
+            "alpha_mean": 51.12979,
+            "gamma": 5682.523,
+            "total_energy": -661.030291,
+            "beta_gamma_ratio": 2.2815728154553883,
+            "total_energy_atom_ratio": -47.21644935714286,
+            "alpha_range_distance": 48.87021,
+            "homo_lumo_gap_range_distance": 9.324043,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            2.2815728154553883,
+            -47.21644935714286,
+            48.87021,
+            9.324043
+          ]
+        },
+        {
+          "smiles": "C=CCNC(C)(N=N)C(N)CN=NO",
+          "properties": {
+            "beta_mean": 14054.57,
+            "homo_lumo_gap": 12.562001,
+            "dipole_moment": 0.898597,
+            "alpha_mean": 8.761001,
+            "gamma": 5212.731,
+            "total_energy": -671.869136,
+            "beta_gamma_ratio": 2.6962008973798954,
+            "total_energy_atom_ratio": -47.990652571428576,
+            "alpha_range_distance": 91.238999,
+            "homo_lumo_gap_range_distance": 9.062001,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 4,
+            "num_atoms": 14,
+            "num_bonds": 13,
+            "error": null
+          },
+          "objectives": [
+            2.6962008973798954,
+            -47.990652571428576,
+            91.238999,
+            9.062001
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        4,
+        5
+      ],
+      "front_size": 10,
+      "solutions": [
+        {
+          "smiles": "CNC1C2C3=NC2=C(CC3)N1OC",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 15,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CNC1C2c3ccc(c2n3)N1OC",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 15,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "C=CNC1C2C3=NC2=C2CC3ON21",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 16,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CNC1C2=NC3=NC2=C2CC3ON21",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 16,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "C=NN=c1o[nH]c2c3o[nH]oc-3c12",
+          "properties": {
+            "beta_mean": 5504.579,
+            "homo_lumo_gap": 7.617164,
+            "dipole_moment": 2.408857,
+            "alpha_mean": -51.77694,
+            "gamma": 47959.74,
+            "total_energy": -667.477794,
+            "beta_gamma_ratio": 0.11477499669514472,
+            "total_energy_atom_ratio": -51.344445692307694,
+            "alpha_range_distance": 151.77694,
+            "homo_lumo_gap_range_distance": 4.117164,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            0.11477499669514472,
+            -51.344445692307694,
+            151.77694,
+            4.117164
+          ]
+        },
+        {
+          "smiles": "C=CNCC1C2=NC1=C1CC2ON1",
+          "properties": {
+            "beta_mean": 16848.08,
+            "homo_lumo_gap": 7.59763,
+            "dipole_moment": 0.608743,
+            "alpha_mean": -59.05303,
+            "gamma": 39291.95,
+            "total_energy": -581.588833,
+            "beta_gamma_ratio": 0.4287921571721435,
+            "total_energy_atom_ratio": -44.73760253846154,
+            "alpha_range_distance": 159.05303,
+            "homo_lumo_gap_range_distance": 4.09763,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            0.4287921571721435,
+            -44.73760253846154,
+            159.05303,
+            4.09763
+          ]
+        },
+        {
+          "smiles": "CC(=N)C1=C2N=NN=C2C(C)C2ON12",
+          "properties": {
+            "beta_mean": 25924.39,
+            "homo_lumo_gap": 9.802116,
+            "dipole_moment": 1.469275,
+            "alpha_mean": 11.94727,
+            "gamma": 4919.229,
+            "total_energy": -651.27023,
+            "beta_gamma_ratio": 5.270010808604356,
+            "total_energy_atom_ratio": -46.51930214285714,
+            "alpha_range_distance": 88.05273,
+            "homo_lumo_gap_range_distance": 6.302116,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 14,
+            "num_bonds": 16,
+            "error": null
+          },
+          "objectives": [
+            5.270010808604356,
+            -46.51930214285714,
+            88.05273,
+            6.302116
+          ]
+        },
+        {
+          "smiles": "CC1=C2N=CC2C2(O)NCCON12",
+          "properties": {
+            "beta_mean": 14012.1,
+            "homo_lumo_gap": 11.245333,
+            "dipole_moment": 1.642183,
+            "alpha_mean": 16.67287,
+            "gamma": 3049.801,
+            "total_energy": -618.665609,
+            "beta_gamma_ratio": 4.594430915328574,
+            "total_energy_atom_ratio": -47.589662230769235,
+            "alpha_range_distance": 83.32713,
+            "homo_lumo_gap_range_distance": 7.7453330000000005,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            4.594430915328574,
+            -47.589662230769235,
+            83.32713,
+            7.7453330000000005
+          ]
+        },
+        {
+          "smiles": "CCON1C2=C3N=C(C=C2)C3C1NC",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 14,
+            "num_bonds": 16,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CNC1C(OC)C2=C3N=C(C=C2)C31",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 4,
+            "num_bonds_bin": 5,
+            "num_atoms": 13,
+            "num_bonds": 15,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        5,
+        4
+      ],
+      "front_size": 6,
+      "solutions": [
+        {
+          "smiles": "CCNNC(C)(N=CN)C(=N)ON=NO",
+          "properties": {
+            "beta_mean": 15698.65,
+            "homo_lumo_gap": 12.652915,
+            "dipole_moment": 2.074181,
+            "alpha_mean": -51.71428,
+            "gamma": 3902.869,
+            "total_energy": -762.216304,
+            "beta_gamma_ratio": 4.022335876505206,
+            "total_energy_atom_ratio": -50.814420266666666,
+            "alpha_range_distance": 151.71428,
+            "homo_lumo_gap_range_distance": 9.152915,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 4,
+            "num_atoms": 15,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            4.022335876505206,
+            -50.814420266666666,
+            151.71428,
+            9.152915
+          ]
+        },
+        {
+          "smiles": "CCN(NC(C)(N=CN)NO)ON=NO",
+          "properties": {
+            "beta_mean": 16146.5,
+            "homo_lumo_gap": 12.524462,
+            "dipole_moment": 0.158385,
+            "alpha_mean": -52.81062,
+            "gamma": 2922.585,
+            "total_energy": -798.91071,
+            "beta_gamma_ratio": 5.5247323858844135,
+            "total_energy_atom_ratio": -53.260714,
+            "alpha_range_distance": 152.81062,
+            "homo_lumo_gap_range_distance": 9.024462,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 4,
+            "num_atoms": 15,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            5.5247323858844135,
+            -53.260714,
+            152.81062,
+            9.024462
+          ]
+        },
+        {
+          "smiles": "CCONC(C)(N=CN)C(=N)OC=NO",
+          "properties": {
+            "beta_mean": 13276.72,
+            "homo_lumo_gap": 14.105365,
+            "dipole_moment": 1.989324,
+            "alpha_mean": 59.88755,
+            "gamma": 3619.562,
+            "total_energy": -766.104263,
+            "beta_gamma_ratio": 3.6680460232481167,
+            "total_energy_atom_ratio": -51.073617533333326,
+            "alpha_range_distance": 40.11245,
+            "homo_lumo_gap_range_distance": 10.605365,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 4,
+            "num_atoms": 15,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            3.6680460232481167,
+            -51.073617533333326,
+            40.11245,
+            10.605365
+          ]
+        },
+        {
+          "smiles": "CN(NC(C)(CO)CN=CN)ON=CO",
+          "properties": {
+            "beta_mean": 16617.99,
+            "homo_lumo_gap": 14.081592,
+            "dipole_moment": 1.859445,
+            "alpha_mean": -11.81863,
+            "gamma": 3682.696,
+            "total_energy": -767.244284,
+            "beta_gamma_ratio": 4.512452290387261,
+            "total_energy_atom_ratio": -51.149618933333336,
+            "alpha_range_distance": 111.81863,
+            "homo_lumo_gap_range_distance": 10.581592,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 4,
+            "num_atoms": 15,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            4.512452290387261,
+            -51.149618933333336,
+            111.81863,
+            10.581592
+          ]
+        },
+        {
+          "smiles": "CC(NN)(NCC=CN)C(=N)CN=NO",
+          "properties": {
+            "beta_mean": 16249.82,
+            "homo_lumo_gap": 11.104603,
+            "dipole_moment": 1.762974,
+            "alpha_mean": 41.31713,
+            "gamma": 4416.355,
+            "total_energy": -726.597132,
+            "beta_gamma_ratio": 3.6794641735096025,
+            "total_energy_atom_ratio": -48.4398088,
+            "alpha_range_distance": 58.68287,
+            "homo_lumo_gap_range_distance": 7.604602999999999,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 4,
+            "num_atoms": 15,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            3.6794641735096025,
+            -48.4398088,
+            58.68287,
+            7.604602999999999
+          ]
+        },
+        {
+          "smiles": "C=CC(=C)NC(C)(N=N)C(N)CN=NO",
+          "properties": {
+            "beta_mean": 23387.39,
+            "homo_lumo_gap": 11.659778,
+            "dipole_moment": 1.660778,
+            "alpha_mean": 56.35747,
+            "gamma": 4312.521,
+            "total_energy": -709.524358,
+            "beta_gamma_ratio": 5.423136490233903,
+            "total_energy_atom_ratio": -47.30162386666667,
+            "alpha_range_distance": 43.64253,
+            "homo_lumo_gap_range_distance": 8.159778,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 4,
+            "num_atoms": 15,
+            "num_bonds": 14,
+            "error": null
+          },
+          "objectives": [
+            5.423136490233903,
+            -47.30162386666667,
+            43.64253,
+            8.159778
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        5,
+        5
+      ],
+      "front_size": 9,
+      "solutions": [
+        {
+          "smiles": "CCN(NC(C)(CO)CN=CN)ON=CO",
+          "properties": {
+            "beta_mean": 15710.33,
+            "homo_lumo_gap": 14.094927,
+            "dipole_moment": 1.309152,
+            "alpha_mean": 66.20823,
+            "gamma": 4385.053,
+            "total_energy": -806.070848,
+            "beta_gamma_ratio": 3.58270014068245,
+            "total_energy_atom_ratio": -50.379428,
+            "alpha_range_distance": 33.79177,
+            "homo_lumo_gap_range_distance": 10.594927,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            3.58270014068245,
+            -50.379428,
+            33.79177,
+            10.594927
+          ]
+        },
+        {
+          "smiles": "CCN(NC(C)(CN=CN)OO)ON=CO",
+          "properties": {
+            "beta_mean": 15947.94,
+            "homo_lumo_gap": 13.740476,
+            "dipole_moment": 1.362927,
+            "alpha_mean": 40.50049,
+            "gamma": 3577.346,
+            "total_energy": -841.591802,
+            "beta_gamma_ratio": 4.45803676803977,
+            "total_energy_atom_ratio": -52.599487625,
+            "alpha_range_distance": 59.49951,
+            "homo_lumo_gap_range_distance": 10.240476,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            4.45803676803977,
+            -52.599487625,
+            59.49951,
+            10.240476
+          ]
+        },
+        {
+          "smiles": "CCNNNC(C)(N=CN)C(=N)ON=NO",
+          "properties": {
+            "beta_mean": 17226.95,
+            "homo_lumo_gap": 10.719821,
+            "dipole_moment": 1.818758,
+            "alpha_mean": 7.387849,
+            "gamma": 6071.408,
+            "total_energy": -816.865407,
+            "beta_gamma_ratio": 2.8373896137436323,
+            "total_energy_atom_ratio": -51.0540879375,
+            "alpha_range_distance": 92.612151,
+            "homo_lumo_gap_range_distance": 7.219821,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            2.8373896137436323,
+            -51.0540879375,
+            92.612151,
+            7.219821
+          ]
+        },
+        {
+          "smiles": "CC=NCC(C=O)(NNON=CO)OOC",
+          "properties": {
+            "beta_mean": 14227.39,
+            "homo_lumo_gap": 12.758755,
+            "dipole_moment": 1.048762,
+            "alpha_mean": -37.2925,
+            "gamma": 4131.38,
+            "total_energy": -860.113767,
+            "beta_gamma_ratio": 3.443737927762636,
+            "total_energy_atom_ratio": -53.7571104375,
+            "alpha_range_distance": 137.2925,
+            "homo_lumo_gap_range_distance": 9.258755,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            3.443737927762636,
+            -53.7571104375,
+            137.2925,
+            9.258755
+          ]
+        },
+        {
+          "smiles": "C=CCNCC(C)(NNN)C(=N)ONNO",
+          "properties": {
+            "beta_mean": 17600.12,
+            "homo_lumo_gap": 12.600285,
+            "dipole_moment": 0.907806,
+            "alpha_mean": 47.77855,
+            "gamma": 3518.38,
+            "total_energy": -802.14602,
+            "beta_gamma_ratio": 5.002336302502856,
+            "total_energy_atom_ratio": -50.13412625,
+            "alpha_range_distance": 52.22145,
+            "homo_lumo_gap_range_distance": 9.100285,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            5.002336302502856,
+            -50.13412625,
+            52.22145,
+            9.100285
+          ]
+        },
+        {
+          "smiles": "C=CC(CN=CO)(NNON=CO)OOC",
+          "properties": {
+            "beta_mean": 17656.08,
+            "homo_lumo_gap": 13.919529,
+            "dipole_moment": 1.848836,
+            "alpha_mean": 36.98886,
+            "gamma": 3951.754,
+            "total_energy": -860.110824,
+            "beta_gamma_ratio": 4.467909692759216,
+            "total_energy_atom_ratio": -53.7569265,
+            "alpha_range_distance": 63.01114,
+            "homo_lumo_gap_range_distance": 10.419529,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            4.467909692759216,
+            -53.7569265,
+            63.01114,
+            10.419529
+          ]
+        },
+        {
+          "smiles": "CCN(NC(C)(N=CN)NO)ON=CNO",
+          "properties": {
+            "beta_mean": 14603.76,
+            "homo_lumo_gap": 13.625003,
+            "dipole_moment": 3.562645,
+            "alpha_mean": -23.92729,
+            "gamma": 4075.067,
+            "total_energy": -837.731528,
+            "beta_gamma_ratio": 3.583685863324456,
+            "total_energy_atom_ratio": -52.3582205,
+            "alpha_range_distance": 123.92729,
+            "homo_lumo_gap_range_distance": 10.125003,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            3.583685863324456,
+            -52.3582205,
+            123.92729,
+            10.125003
+          ]
+        },
+        {
+          "smiles": "CNCN=C1c2nc1c(NOC)cc2C",
+          "properties": {
+            "beta_mean": 1681.352,
+            "homo_lumo_gap": 6.47008,
+            "dipole_moment": 3.380142,
+            "alpha_mean": 5.994459,
+            "gamma": 8310182.0,
+            "total_energy": -675.118449,
+            "beta_gamma_ratio": 0.0002023243293588516,
+            "total_energy_atom_ratio": -45.0078966,
+            "alpha_range_distance": 94.005541,
+            "homo_lumo_gap_range_distance": 2.9700800000000003,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 15,
+            "num_bonds": 16,
+            "error": null
+          },
+          "objectives": [
+            0.0002023243293588516,
+            -45.0078966,
+            94.005541,
+            2.9700800000000003
+          ]
+        },
+        {
+          "smiles": "CN(NC(CO)(CN=CO)OO)ON=CO",
+          "properties": {
+            "beta_mean": 16110.38,
+            "homo_lumo_gap": 14.263622,
+            "dipole_moment": 0.187468,
+            "alpha_mean": 22.17768,
+            "gamma": 3574.769,
+            "total_energy": -896.925896,
+            "beta_gamma_ratio": 4.506691201585333,
+            "total_energy_atom_ratio": -56.0578685,
+            "alpha_range_distance": 77.82232,
+            "homo_lumo_gap_range_distance": 10.763622,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 5,
+            "num_atoms": 16,
+            "num_bonds": 15,
+            "error": null
+          },
+          "objectives": [
+            4.506691201585333,
+            -56.0578685,
+            77.82232,
+            10.763622
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        5,
+        6
+      ],
+      "front_size": 3,
+      "solutions": [
+        {
+          "smiles": "CNC1N=c2c3c(C)cc(c2=N3)N1OC",
+          "properties": {
+            "beta_mean": 18817.94,
+            "homo_lumo_gap": 7.498984,
+            "dipole_moment": 1.492685,
+            "alpha_mean": 53.48342,
+            "gamma": 9412.74,
+            "total_energy": -673.896835,
+            "beta_gamma_ratio": 1.9991989580079763,
+            "total_energy_atom_ratio": -44.92645566666667,
+            "alpha_range_distance": 46.51658,
+            "homo_lumo_gap_range_distance": 3.998984,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 6,
+            "num_atoms": 15,
+            "num_bonds": 17,
+            "error": null
+          },
+          "objectives": [
+            1.9991989580079763,
+            -44.92645566666667,
+            46.51658,
+            3.998984
+          ]
+        },
+        {
+          "smiles": "CNC(N=C1c2nc1c(N)cc2C)NOC",
+          "properties": {
+            "beta_mean": 16401.14,
+            "homo_lumo_gap": 6.700969,
+            "dipole_moment": 3.183273,
+            "alpha_mean": -23.78175,
+            "gamma": -130346.7,
+            "total_energy": -729.859957,
+            "beta_gamma_ratio": -0.12582704433637368,
+            "total_energy_atom_ratio": -45.6162473125,
+            "alpha_range_distance": 123.78175,
+            "homo_lumo_gap_range_distance": 3.2009689999999997,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 6,
+            "num_atoms": 16,
+            "num_bonds": 17,
+            "error": null
+          },
+          "objectives": [
+            -0.12582704433637368,
+            -45.6162473125,
+            123.78175,
+            3.2009689999999997
+          ]
+        },
+        {
+          "smiles": "CNC(=NOC)N=C1c2nc1c(N)cc2C",
+          "properties": {
+            "beta_mean": 21682.65,
+            "homo_lumo_gap": 6.647851,
+            "dipole_moment": 3.492905,
+            "alpha_mean": -76.37447,
+            "gamma": -331472.2,
+            "total_energy": -728.70374,
+            "beta_gamma_ratio": -0.06541317793769734,
+            "total_energy_atom_ratio": -45.54398375,
+            "alpha_range_distance": 176.37447,
+            "homo_lumo_gap_range_distance": 3.147851,
+            "num_atoms_bin": 5,
+            "num_bonds_bin": 6,
+            "num_atoms": 16,
+            "num_bonds": 17,
+            "error": null
+          },
+          "objectives": [
+            -0.06541317793769734,
+            -45.54398375,
+            176.37447,
+            3.147851
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        6,
+        5
+      ],
+      "front_size": 1,
+      "solutions": [
+        {
+          "smiles": "CCN(NC(C=O)(CN=CN)OO)ON=CO",
+          "properties": {
+            "beta_mean": 23013.25,
+            "homo_lumo_gap": 13.034655,
+            "dipole_moment": 1.13446,
+            "alpha_mean": -23.40383,
+            "gamma": 4059.833,
+            "total_energy": -914.865016,
+            "beta_gamma_ratio": 5.66852134065613,
+            "total_energy_atom_ratio": -53.81558917647059,
+            "alpha_range_distance": 123.40383,
+            "homo_lumo_gap_range_distance": 9.534655,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 5,
+            "num_atoms": 17,
+            "num_bonds": 16,
+            "error": null
+          },
+          "objectives": [
+            5.66852134065613,
+            -53.81558917647059,
+            123.40383,
+            9.534655
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        6,
+        6
+      ],
+      "front_size": 2,
+      "solutions": [
+        {
+          "smiles": "CNC1N=CC(N)=C(CO)N(O)C=CN1OC",
+          "properties": {
+            "beta_mean": 14526.5,
+            "homo_lumo_gap": 11.000547,
+            "dipole_moment": 2.688867,
+            "alpha_mean": 37.86101,
+            "gamma": 8737.667,
+            "total_energy": -842.471232,
+            "beta_gamma_ratio": 1.6625147193180974,
+            "total_energy_atom_ratio": -49.557131294117646,
+            "alpha_range_distance": 62.13899,
+            "homo_lumo_gap_range_distance": 7.500546999999999,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 6,
+            "num_atoms": 17,
+            "num_bonds": 17,
+            "error": null
+          },
+          "objectives": [
+            1.6625147193180974,
+            -49.557131294117646,
+            62.13899,
+            7.500546999999999
+          ]
+        },
+        {
+          "smiles": "C=CNNC(N=C1c2nc1c(N)cc2C)NC",
+          "properties": {
+            "beta_mean": 31392.88,
+            "homo_lumo_gap": 6.687378,
+            "dipole_moment": 3.008777,
+            "alpha_mean": 118.5302,
+            "gamma": -15872.96,
+            "total_energy": -747.799058,
+            "beta_gamma_ratio": -1.9777584017095742,
+            "total_energy_atom_ratio": -43.98817988235294,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 3.187378,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 6,
+            "num_atoms": 17,
+            "num_bonds": 18,
+            "error": null
+          },
+          "objectives": [
+            -1.9777584017095742,
+            -43.98817988235294,
+            0.0,
+            3.187378
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        6,
+        7
+      ],
+      "front_size": 4,
+      "solutions": [
+        {
+          "smiles": "CNC1N=C2CC(=CN3ONC2=C3CO)N1OC",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 7,
+            "num_atoms": 18,
+            "num_bonds": 20,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CNC1N=C2CC(=CN(O)C(CO)=C2N)N1OC",
+          "properties": {
+            "beta_mean": 18847.13,
+            "homo_lumo_gap": 10.053892,
+            "dipole_moment": 0.45342,
+            "alpha_mean": 18.41689,
+            "gamma": 10699.52,
+            "total_energy": -880.113436,
+            "beta_gamma_ratio": 1.7614930389400647,
+            "total_energy_atom_ratio": -48.89519088888889,
+            "alpha_range_distance": 81.58311,
+            "homo_lumo_gap_range_distance": 6.553891999999999,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 7,
+            "num_atoms": 18,
+            "num_bonds": 19,
+            "error": null
+          },
+          "objectives": [
+            1.7614930389400647,
+            -48.89519088888889,
+            81.58311,
+            6.553891999999999
+          ]
+        },
+        {
+          "smiles": "CON1C2=CN3ONC(=C3CO)C(=NC1NN)C2",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 7,
+            "num_atoms": 18,
+            "num_bonds": 20,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "smiles": "CCN1C=CN2ONC(=C2CO)C=CC1NCO",
+          "properties": {
+            "beta_mean": 19843.23,
+            "homo_lumo_gap": 9.522582,
+            "dipole_moment": 2.805216,
+            "alpha_mean": 23.84135,
+            "gamma": 6522.744,
+            "total_energy": -864.11668,
+            "beta_gamma_ratio": 3.0421598640081537,
+            "total_energy_atom_ratio": -48.00648222222222,
+            "alpha_range_distance": 76.15865,
+            "homo_lumo_gap_range_distance": 6.022582,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 7,
+            "num_atoms": 18,
+            "num_bonds": 19,
+            "error": null
+          },
+          "objectives": [
+            3.0421598640081537,
+            -48.00648222222222,
+            76.15865,
+            6.022582
+          ]
+        }
+      ]
+    },
+    {
+      "indices": [
+        6,
+        8
+      ],
+      "front_size": 1,
+      "solutions": [
+        {
+          "smiles": "CNC1C=C2C3=C(CO)N(C=C4C2CON41)ON3",
+          "properties": {
+            "beta_mean": 0.0,
+            "homo_lumo_gap": 0.0,
+            "dipole_moment": 0.0,
+            "alpha_mean": 0.0,
+            "gamma": 0.0,
+            "total_energy": 0.0,
+            "beta_gamma_ratio": 0.0,
+            "total_energy_atom_ratio": 0.0,
+            "alpha_range_distance": 0.0,
+            "homo_lumo_gap_range_distance": 0.0,
+            "num_atoms_bin": 6,
+            "num_bonds_bin": 8,
+            "num_atoms": 18,
+            "num_bonds": 21,
+            "error": "Failed to generate 3D geometry"
+          },
+          "objectives": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ]
+}

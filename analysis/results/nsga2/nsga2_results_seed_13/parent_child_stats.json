@@ -1,0 +1,902 @@
+[
+  {
+    "generation": 0,
+    "avg_parent_beta": 6.050438967045318,
+    "avg_child_beta": 4.194662990870691,
+    "avg_parent_atoms": -47.9,
+    "avg_child_atoms": -47.75,
+    "beta_improvement": -1.8557759761746269,
+    "atom_change": 0.14999999999999858
+  },
+  {
+    "generation": 1,
+    "avg_parent_beta": 4.311555301339515,
+    "avg_child_beta": 4.1312434942381895,
+    "avg_parent_atoms": -47.9,
+    "avg_child_atoms": -47.05,
+    "beta_improvement": -0.18031180710132588,
+    "atom_change": 0.8500000000000014
+  },
+  {
+    "generation": 2,
+    "avg_parent_beta": 3.746274598921512,
+    "avg_child_beta": 2.083486883710822,
+    "avg_parent_atoms": -46.6,
+    "avg_child_atoms": -46.85,
+    "beta_improvement": -1.66278771521069,
+    "atom_change": -0.25
+  },
+  {
+    "generation": 3,
+    "avg_parent_beta": 3.3721901300781623,
+    "avg_child_beta": 2.927924813577854,
+    "avg_parent_atoms": -48.8,
+    "avg_child_atoms": -46.6,
+    "beta_improvement": -0.4442653165003083,
+    "atom_change": 2.1999999999999957
+  },
+  {
+    "generation": 4,
+    "avg_parent_beta": 4.481648893625747,
+    "avg_child_beta": 0.5295106759760658,
+    "avg_parent_atoms": -49.0,
+    "avg_child_atoms": -48.85,
+    "beta_improvement": -3.9521382176496807,
+    "atom_change": 0.14999999999999858
+  },
+  {
+    "generation": 5,
+    "avg_parent_beta": 3.9881694502602314,
+    "avg_child_beta": 3.1766527798013025,
+    "avg_parent_atoms": -48.5,
+    "avg_child_atoms": -46.5,
+    "beta_improvement": -0.811516670458929,
+    "atom_change": 2.0
+  },
+  {
+    "generation": 6,
+    "avg_parent_beta": 3.4026280581727946,
+    "avg_child_beta": 3.3959020985725834,
+    "avg_parent_atoms": -47.3,
+    "avg_child_atoms": -47.15,
+    "beta_improvement": -0.006725959600211162,
+    "atom_change": 0.14999999999999858
+  },
+  {
+    "generation": 7,
+    "avg_parent_beta": 3.7119203009966197,
+    "avg_child_beta": 1.3754643843211278,
+    "avg_parent_atoms": -42.0,
+    "avg_child_atoms": -39.75,
+    "beta_improvement": -2.336455916675492,
+    "atom_change": 2.25
+  },
+  {
+    "generation": 8,
+    "avg_parent_beta": 0.8182463075229538,
+    "avg_child_beta": 5.630980677340833,
+    "avg_parent_atoms": -40.3,
+    "avg_child_atoms": -35.7,
+    "beta_improvement": 4.812734369817879,
+    "atom_change": 4.599999999999994
+  },
+  {
+    "generation": 9,
+    "avg_parent_beta": 4.5957222463939695,
+    "avg_child_beta": 2.6473712113228114,
+    "avg_parent_atoms": -40.3,
+    "avg_child_atoms": -36.25,
+    "beta_improvement": -1.9483510350711581,
+    "atom_change": 4.049999999999997
+  },
+  {
+    "generation": 10,
+    "avg_parent_beta": 4.182832781204347,
+    "avg_child_beta": 2.394134550401732,
+    "avg_parent_atoms": -38.3,
+    "avg_child_atoms": -36.8,
+    "beta_improvement": -1.788698230802615,
+    "atom_change": 1.5
+  },
+  {
+    "generation": 11,
+    "avg_parent_beta": 3.8086243024337785,
+    "avg_child_beta": -4.325794453616547,
+    "avg_parent_atoms": -40.7,
+    "avg_child_atoms": -46.45,
+    "beta_improvement": -8.134418756050326,
+    "atom_change": -5.75
+  },
+  {
+    "generation": 12,
+    "avg_parent_beta": 7.643730107983082,
+    "avg_child_beta": 1.5160252397142375,
+    "avg_parent_atoms": -38.8,
+    "avg_child_atoms": -40.75,
+    "beta_improvement": -6.127704868268844,
+    "atom_change": -1.9500000000000028
+  },
+  {
+    "generation": 13,
+    "avg_parent_beta": 7.0174358952212526,
+    "avg_child_beta": 4.607853292796778,
+    "avg_parent_atoms": -39.6,
+    "avg_child_atoms": -44.55,
+    "beta_improvement": -2.409582602424474,
+    "atom_change": -4.949999999999996
+  },
+  {
+    "generation": 14,
+    "avg_parent_beta": 6.994102527240129,
+    "avg_child_beta": 5.193307550160542,
+    "avg_parent_atoms": -37.9,
+    "avg_child_atoms": -47.05,
+    "beta_improvement": -1.8007949770795868,
+    "atom_change": -9.149999999999999
+  },
+  {
+    "generation": 15,
+    "avg_parent_beta": 6.636873527431734,
+    "avg_child_beta": 3.770901712890411,
+    "avg_parent_atoms": -42.6,
+    "avg_child_atoms": -40.5,
+    "beta_improvement": -2.8659718145413233,
+    "atom_change": 2.1000000000000014
+  },
+  {
+    "generation": 16,
+    "avg_parent_beta": 4.163767531199275,
+    "avg_child_beta": 6.425368546074447,
+    "avg_parent_atoms": -41.5,
+    "avg_child_atoms": -43.45,
+    "beta_improvement": 2.261601014875172,
+    "atom_change": -1.9500000000000028
+  },
+  {
+    "generation": 17,
+    "avg_parent_beta": 4.924200801075524,
+    "avg_child_beta": 17.545854280860517,
+    "avg_parent_atoms": -43.0,
+    "avg_child_atoms": -36.8,
+    "beta_improvement": 12.621653479784992,
+    "atom_change": 6.200000000000003
+  },
+  {
+    "generation": 18,
+    "avg_parent_beta": 14.910814640383709,
+    "avg_child_beta": 4.28630106073281,
+    "avg_parent_atoms": -40.8,
+    "avg_child_atoms": -46.25,
+    "beta_improvement": -10.624513579650898,
+    "atom_change": -5.450000000000003
+  },
+  {
+    "generation": 19,
+    "avg_parent_beta": 15.92097618312334,
+    "avg_child_beta": 1.2371077656333687,
+    "avg_parent_atoms": -41.1,
+    "avg_child_atoms": -29.55,
+    "beta_improvement": -14.683868417489972,
+    "atom_change": 11.55
+  },
+  {
+    "generation": 20,
+    "avg_parent_beta": 19.369147870020768,
+    "avg_child_beta": -16.98872795205187,
+    "avg_parent_atoms": -42.8,
+    "avg_child_atoms": -38.95,
+    "beta_improvement": -36.35787582207264,
+    "atom_change": 3.8499999999999943
+  },
+  {
+    "generation": 21,
+    "avg_parent_beta": -16.561282209055463,
+    "avg_child_beta": 1.9634989435499228,
+    "avg_parent_atoms": -41.9,
+    "avg_child_atoms": -41.2,
+    "beta_improvement": 18.524781152605385,
+    "atom_change": 0.6999999999999957
+  },
+  {
+    "generation": 22,
+    "avg_parent_beta": -16.891646501872447,
+    "avg_child_beta": 1.1609185630772436,
+    "avg_parent_atoms": -41.4,
+    "avg_child_atoms": -38.6,
+    "beta_improvement": 18.05256506494969,
+    "atom_change": 2.799999999999997
+  },
+  {
+    "generation": 23,
+    "avg_parent_beta": 20.601908738723672,
+    "avg_child_beta": 1.494289181065896,
+    "avg_parent_atoms": -42.0,
+    "avg_child_atoms": -44.3,
+    "beta_improvement": -19.107619557657777,
+    "atom_change": -2.299999999999997
+  },
+  {
+    "generation": 24,
+    "avg_parent_beta": 19.6633856824513,
+    "avg_child_beta": 2.9696837154266893,
+    "avg_parent_atoms": -42.7,
+    "avg_child_atoms": -41.0,
+    "beta_improvement": -16.69370196702461,
+    "atom_change": 1.7000000000000028
+  },
+  {
+    "generation": 25,
+    "avg_parent_beta": 19.333234078814105,
+    "avg_child_beta": 1.9015237611111697,
+    "avg_parent_atoms": -42.0,
+    "avg_child_atoms": -40.5,
+    "beta_improvement": -17.431710317702937,
+    "atom_change": 1.5
+  },
+  {
+    "generation": 26,
+    "avg_parent_beta": 17.8538118880192,
+    "avg_child_beta": -3.1257221761305174,
+    "avg_parent_atoms": -43.4,
+    "avg_child_atoms": -36.65,
+    "beta_improvement": -20.979534064149718,
+    "atom_change": 6.75
+  },
+  {
+    "generation": 27,
+    "avg_parent_beta": 10.566717223703687,
+    "avg_child_beta": -0.42435034800015126,
+    "avg_parent_atoms": -41.6,
+    "avg_child_atoms": -37.55,
+    "beta_improvement": -10.991067571703839,
+    "atom_change": 4.050000000000004
+  },
+  {
+    "generation": 28,
+    "avg_parent_beta": 19.0325392798204,
+    "avg_child_beta": -3.089942896542834,
+    "avg_parent_atoms": -42.0,
+    "avg_child_atoms": -39.05,
+    "beta_improvement": -22.122482176363235,
+    "atom_change": 2.950000000000003
+  },
+  {
+    "generation": 29,
+    "avg_parent_beta": 19.28058734683349,
+    "avg_child_beta": 1.3951350837479548,
+    "avg_parent_atoms": -42.9,
+    "avg_child_atoms": -33.85,
+    "beta_improvement": -17.885452263085533,
+    "atom_change": 9.049999999999997
+  },
+  {
+    "generation": 30,
+    "avg_parent_beta": 20.39829878029813,
+    "avg_child_beta": 2.0054210817491773,
+    "avg_parent_atoms": -43.2,
+    "avg_child_atoms": -42.4,
+    "beta_improvement": -18.392877698548954,
+    "atom_change": 0.8000000000000043
+  },
+  {
+    "generation": 31,
+    "avg_parent_beta": 18.48527770259205,
+    "avg_child_beta": 3.4994320668483554,
+    "avg_parent_atoms": -41.9,
+    "avg_child_atoms": -44.15,
+    "beta_improvement": -14.985845635743695,
+    "atom_change": -2.25
+  },
+  {
+    "generation": 32,
+    "avg_parent_beta": 18.976846082420252,
+    "avg_child_beta": -0.9160763257110288,
+    "avg_parent_atoms": -42.3,
+    "avg_child_atoms": -35.4,
+    "beta_improvement": -19.89292240813128,
+    "atom_change": 6.899999999999999
+  },
+  {
+    "generation": 33,
+    "avg_parent_beta": 18.964438366321616,
+    "avg_child_beta": 1.7585924964034216,
+    "avg_parent_atoms": -44.7,
+    "avg_child_atoms": -41.9,
+    "beta_improvement": -17.205845869918193,
+    "atom_change": 2.8000000000000043
+  },
+  {
+    "generation": 34,
+    "avg_parent_beta": 18.993714497881946,
+    "avg_child_beta": 1.3647087396490667,
+    "avg_parent_atoms": -44.2,
+    "avg_child_atoms": -49.35,
+    "beta_improvement": -17.62900575823288,
+    "atom_change": -5.149999999999999
+  },
+  {
+    "generation": 35,
+    "avg_parent_beta": 14.75541727216834,
+    "avg_child_beta": 1.708679084309209,
+    "avg_parent_atoms": -44.9,
+    "avg_child_atoms": -37.7,
+    "beta_improvement": -13.046738187859132,
+    "atom_change": 7.199999999999996
+  },
+  {
+    "generation": 36,
+    "avg_parent_beta": 14.166627861841551,
+    "avg_child_beta": 2.206839382267421,
+    "avg_parent_atoms": -43.7,
+    "avg_child_atoms": -34.7,
+    "beta_improvement": -11.95978847957413,
+    "atom_change": 9.0
+  },
+  {
+    "generation": 37,
+    "avg_parent_beta": 14.67862849249613,
+    "avg_child_beta": 5.416817768629349,
+    "avg_parent_atoms": -42.9,
+    "avg_child_atoms": -39.5,
+    "beta_improvement": -9.261810723866782,
+    "atom_change": 3.3999999999999986
+  },
+  {
+    "generation": 38,
+    "avg_parent_beta": 14.163680543460057,
+    "avg_child_beta": 0.4803435855232984,
+    "avg_parent_atoms": -46.8,
+    "avg_child_atoms": -24.75,
+    "beta_improvement": -13.683336957936758,
+    "atom_change": 22.049999999999997
+  },
+  {
+    "generation": 39,
+    "avg_parent_beta": 14.063920043745668,
+    "avg_child_beta": 8.85355046522324,
+    "avg_parent_atoms": -44.8,
+    "avg_child_atoms": -42.15,
+    "beta_improvement": -5.210369578522428,
+    "atom_change": 2.6499999999999986
+  },
+  {
+    "generation": 40,
+    "avg_parent_beta": 14.11685472679306,
+    "avg_child_beta": 1.33898866197076,
+    "avg_parent_atoms": -42.6,
+    "avg_child_atoms": -27.75,
+    "beta_improvement": -12.7778660648223,
+    "atom_change": 14.850000000000001
+  },
+  {
+    "generation": 41,
+    "avg_parent_beta": 14.21508417511436,
+    "avg_child_beta": 0.8525293274529616,
+    "avg_parent_atoms": -44.4,
+    "avg_child_atoms": -39.6,
+    "beta_improvement": -13.362554847661398,
+    "atom_change": 4.799999999999997
+  },
+  {
+    "generation": 42,
+    "avg_parent_beta": 14.207191396686486,
+    "avg_child_beta": 1.9605412479509021,
+    "avg_parent_atoms": -44.1,
+    "avg_child_atoms": -42.7,
+    "beta_improvement": -12.246650148735585,
+    "atom_change": 1.3999999999999986
+  },
+  {
+    "generation": 43,
+    "avg_parent_beta": 14.373042034709375,
+    "avg_child_beta": 11.292727269750355,
+    "avg_parent_atoms": -42.6,
+    "avg_child_atoms": -35.9,
+    "beta_improvement": -3.08031476495902,
+    "atom_change": 6.700000000000003
+  },
+  {
+    "generation": 44,
+    "avg_parent_beta": 14.29610672148299,
+    "avg_child_beta": 2.3130118075067396,
+    "avg_parent_atoms": -42.7,
+    "avg_child_atoms": -45.45,
+    "beta_improvement": -11.98309491397625,
+    "atom_change": -2.75
+  },
+  {
+    "generation": 45,
+    "avg_parent_beta": 14.361801832789032,
+    "avg_child_beta": 2.108739183448469,
+    "avg_parent_atoms": -45.0,
+    "avg_child_atoms": -36.6,
+    "beta_improvement": -12.253062649340563,
+    "atom_change": 8.399999999999999
+  },
+  {
+    "generation": 46,
+    "avg_parent_beta": 13.854085169720324,
+    "avg_child_beta": -14.062466211976863,
+    "avg_parent_atoms": -45.3,
+    "avg_child_atoms": -34.75,
+    "beta_improvement": -27.91655138169719,
+    "atom_change": 10.549999999999997
+  },
+  {
+    "generation": 47,
+    "avg_parent_beta": -17.707201015991313,
+    "avg_child_beta": 2.1504649716746593,
+    "avg_parent_atoms": -47.1,
+    "avg_child_atoms": -32.0,
+    "beta_improvement": 19.85766598766597,
+    "atom_change": 15.100000000000001
+  },
+  {
+    "generation": 48,
+    "avg_parent_beta": 13.359539579967414,
+    "avg_child_beta": 1.4685963281262324,
+    "avg_parent_atoms": -43.8,
+    "avg_child_atoms": -26.95,
+    "beta_improvement": -11.890943251841183,
+    "atom_change": 16.849999999999998
+  },
+  {
+    "generation": 49,
+    "avg_parent_beta": 13.487434165421309,
+    "avg_child_beta": 0.2703787224363806,
+    "avg_parent_atoms": -44.5,
+    "avg_child_atoms": -39.9,
+    "beta_improvement": -13.217055442984929,
+    "atom_change": 4.600000000000001
+  },
+  {
+    "generation": 50,
+    "avg_parent_beta": 13.554402442311977,
+    "avg_child_beta": 0.5867582745955466,
+    "avg_parent_atoms": -44.2,
+    "avg_child_atoms": -36.2,
+    "beta_improvement": -12.967644167716431,
+    "atom_change": 8.0
+  },
+  {
+    "generation": 51,
+    "avg_parent_beta": 13.137415815962408,
+    "avg_child_beta": 1.6873188060438946,
+    "avg_parent_atoms": -42.6,
+    "avg_child_atoms": -34.5,
+    "beta_improvement": -11.450097009918514,
+    "atom_change": 8.100000000000001
+  },
+  {
+    "generation": 52,
+    "avg_parent_beta": 12.056332725503266,
+    "avg_child_beta": 5.574878607218854,
+    "avg_parent_atoms": -42.7,
+    "avg_child_atoms": -40.5,
+    "beta_improvement": -6.481454118284412,
+    "atom_change": 2.200000000000003
+  },
+  {
+    "generation": 53,
+    "avg_parent_beta": 12.144709686930664,
+    "avg_child_beta": 7.522246529008963,
+    "avg_parent_atoms": -42.7,
+    "avg_child_atoms": -31.7,
+    "beta_improvement": -4.622463157921701,
+    "atom_change": 11.000000000000004
+  },
+  {
+    "generation": 54,
+    "avg_parent_beta": 12.5233873995719,
+    "avg_child_beta": -4.036236915316119,
+    "avg_parent_atoms": -44.6,
+    "avg_child_atoms": -38.7,
+    "beta_improvement": -16.55962431488802,
+    "atom_change": 5.899999999999999
+  },
+  {
+    "generation": 55,
+    "avg_parent_beta": 13.006462628020913,
+    "avg_child_beta": -17.943196911878882,
+    "avg_parent_atoms": -44.6,
+    "avg_child_atoms": -27.1,
+    "beta_improvement": -30.949659539899795,
+    "atom_change": 17.5
+  },
+  {
+    "generation": 56,
+    "avg_parent_beta": 12.858390434371547,
+    "avg_child_beta": 6.195504343167121,
+    "avg_parent_atoms": -44.9,
+    "avg_child_atoms": -40.2,
+    "beta_improvement": -6.662886091204426,
+    "atom_change": 4.699999999999996
+  },
+  {
+    "generation": 57,
+    "avg_parent_beta": 12.197181966197856,
+    "avg_child_beta": 0.7001156321270119,
+    "avg_parent_atoms": -42.3,
+    "avg_child_atoms": -18.65,
+    "beta_improvement": -11.497066334070844,
+    "atom_change": 23.65
+  },
+  {
+    "generation": 58,
+    "avg_parent_beta": 12.110718381558955,
+    "avg_child_beta": 1.1023561591058646,
+    "avg_parent_atoms": -42.4,
+    "avg_child_atoms": -27.55,
+    "beta_improvement": -11.00836222245309,
+    "atom_change": 14.849999999999998
+  },
+  {
+    "generation": 59,
+    "avg_parent_beta": 12.351864257525893,
+    "avg_child_beta": 0.9650742148921136,
+    "avg_parent_atoms": -42.3,
+    "avg_child_atoms": -40.65,
+    "beta_improvement": -11.386790042633779,
+    "atom_change": 1.6499999999999986
+  },
+  {
+    "generation": 60,
+    "avg_parent_beta": 12.22165436240142,
+    "avg_child_beta": -0.41657050696306647,
+    "avg_parent_atoms": -41.1,
+    "avg_child_atoms": -31.4,
+    "beta_improvement": -12.638224869364487,
+    "atom_change": 9.700000000000003
+  },
+  {
+    "generation": 61,
+    "avg_parent_beta": 12.448189261818577,
+    "avg_child_beta": 3.7322981197006926,
+    "avg_parent_atoms": -44.3,
+    "avg_child_atoms": -34.4,
+    "beta_improvement": -8.715891142117885,
+    "atom_change": 9.899999999999999
+  },
+  {
+    "generation": 62,
+    "avg_parent_beta": 14.598930883947759,
+    "avg_child_beta": 0.42357347169978093,
+    "avg_parent_atoms": -44.1,
+    "avg_child_atoms": -21.15,
+    "beta_improvement": -14.175357412247978,
+    "atom_change": 22.950000000000003
+  },
+  {
+    "generation": 63,
+    "avg_parent_beta": 14.893811398452735,
+    "avg_child_beta": 2.9520099662553916,
+    "avg_parent_atoms": -44.3,
+    "avg_child_atoms": -31.55,
+    "beta_improvement": -11.941801432197344,
+    "atom_change": 12.749999999999996
+  },
+  {
+    "generation": 64,
+    "avg_parent_beta": 14.092667181887162,
+    "avg_child_beta": 4.846642664832978,
+    "avg_parent_atoms": -43.8,
+    "avg_child_atoms": -42.05,
+    "beta_improvement": -9.246024517054185,
+    "atom_change": 1.75
+  },
+  {
+    "generation": 65,
+    "avg_parent_beta": 16.34531930597082,
+    "avg_child_beta": 3.9426738372709407,
+    "avg_parent_atoms": -45.9,
+    "avg_child_atoms": -25.8,
+    "beta_improvement": -12.402645468699877,
+    "atom_change": 20.099999999999998
+  },
+  {
+    "generation": 66,
+    "avg_parent_beta": 15.999242149083145,
+    "avg_child_beta": 5.255125629549144,
+    "avg_parent_atoms": -45.9,
+    "avg_child_atoms": -24.25,
+    "beta_improvement": -10.744116519534,
+    "atom_change": 21.65
+  },
+  {
+    "generation": 67,
+    "avg_parent_beta": 16.72708076620162,
+    "avg_child_beta": 0.6969331354223005,
+    "avg_parent_atoms": -45.8,
+    "avg_child_atoms": -22.85,
+    "beta_improvement": -16.030147630779318,
+    "atom_change": 22.949999999999996
+  },
+  {
+    "generation": 68,
+    "avg_parent_beta": 16.72708076620162,
+    "avg_child_beta": 1.1129674395689437,
+    "avg_parent_atoms": -45.8,
+    "avg_child_atoms": -19.9,
+    "beta_improvement": -15.614113326632676,
+    "atom_change": 25.9
+  },
+  {
+    "generation": 69,
+    "avg_parent_beta": 14.959136053456135,
+    "avg_child_beta": 2.197717159222157,
+    "avg_parent_atoms": -45.6,
+    "avg_child_atoms": -41.55,
+    "beta_improvement": -12.761418894233977,
+    "atom_change": 4.050000000000004
+  },
+  {
+    "generation": 70,
+    "avg_parent_beta": 15.04203490639199,
+    "avg_child_beta": 4.961637998195003,
+    "avg_parent_atoms": -48.2,
+    "avg_child_atoms": -35.9,
+    "beta_improvement": -10.080396908196988,
+    "atom_change": 12.300000000000004
+  },
+  {
+    "generation": 71,
+    "avg_parent_beta": 14.50576384354314,
+    "avg_child_beta": 8.457077797518108,
+    "avg_parent_atoms": -45.4,
+    "avg_child_atoms": -35.5,
+    "beta_improvement": -6.048686046025031,
+    "atom_change": 9.899999999999999
+  },
+  {
+    "generation": 72,
+    "avg_parent_beta": 25.37934080863105,
+    "avg_child_beta": 1.6242943533000809,
+    "avg_parent_atoms": -43.2,
+    "avg_child_atoms": -36.9,
+    "beta_improvement": -23.75504645533097,
+    "atom_change": 6.300000000000004
+  },
+  {
+    "generation": 73,
+    "avg_parent_beta": 25.36310621716799,
+    "avg_child_beta": 6.354265026425954,
+    "avg_parent_atoms": -44.2,
+    "avg_child_atoms": -23.5,
+    "beta_improvement": -19.008841190742036,
+    "atom_change": 20.700000000000003
+  },
+  {
+    "generation": 74,
+    "avg_parent_beta": 25.478220753982775,
+    "avg_child_beta": 1.117362979092572,
+    "avg_parent_atoms": -44.3,
+    "avg_child_atoms": -22.85,
+    "beta_improvement": -24.360857774890203,
+    "atom_change": 21.449999999999996
+  },
+  {
+    "generation": 75,
+    "avg_parent_beta": 25.431358963975853,
+    "avg_child_beta": -16.567526441622288,
+    "avg_parent_atoms": -44.5,
+    "avg_child_atoms": -46.05,
+    "beta_improvement": -41.998885405598145,
+    "atom_change": -1.5499999999999972
+  },
+  {
+    "generation": 76,
+    "avg_parent_beta": 24.7840834252858,
+    "avg_child_beta": 1.451483861776219,
+    "avg_parent_atoms": -45.2,
+    "avg_child_atoms": -40.6,
+    "beta_improvement": -23.332599563509582,
+    "atom_change": 4.600000000000001
+  },
+  {
+    "generation": 77,
+    "avg_parent_beta": 24.245582269649866,
+    "avg_child_beta": -0.6633987716400757,
+    "avg_parent_atoms": -44.4,
+    "avg_child_atoms": -32.55,
+    "beta_improvement": -24.90898104128994,
+    "atom_change": 11.850000000000001
+  },
+  {
+    "generation": 78,
+    "avg_parent_beta": 24.452356296811296,
+    "avg_child_beta": 1.4470445562441783,
+    "avg_parent_atoms": -45.6,
+    "avg_child_atoms": -28.6,
+    "beta_improvement": -23.005311740567116,
+    "atom_change": 17.0
+  },
+  {
+    "generation": 79,
+    "avg_parent_beta": 24.881038536128234,
+    "avg_child_beta": 1.119109811131048,
+    "avg_parent_atoms": -45.5,
+    "avg_child_atoms": -28.6,
+    "beta_improvement": -23.761928724997187,
+    "atom_change": 16.9
+  },
+  {
+    "generation": 80,
+    "avg_parent_beta": 24.85512843587021,
+    "avg_child_beta": 1.3554207922099915,
+    "avg_parent_atoms": -47.2,
+    "avg_child_atoms": -26.2,
+    "beta_improvement": -23.49970764366022,
+    "atom_change": 21.000000000000004
+  },
+  {
+    "generation": 81,
+    "avg_parent_beta": 26.01299297501036,
+    "avg_child_beta": 3.4015073120000907,
+    "avg_parent_atoms": -48.3,
+    "avg_child_atoms": -49.2,
+    "beta_improvement": -22.611485663010267,
+    "atom_change": -0.9000000000000057
+  },
+  {
+    "generation": 82,
+    "avg_parent_beta": 26.412056421440518,
+    "avg_child_beta": -0.9960396177481909,
+    "avg_parent_atoms": -46.0,
+    "avg_child_atoms": -46.05,
+    "beta_improvement": -27.40809603918871,
+    "atom_change": -0.04999999999999716
+  },
+  {
+    "generation": 83,
+    "avg_parent_beta": 18.824161285359473,
+    "avg_child_beta": 4.942383991398801,
+    "avg_parent_atoms": -46.1,
+    "avg_child_atoms": -44.65,
+    "beta_improvement": -13.881777293960672,
+    "atom_change": 1.4500000000000028
+  },
+  {
+    "generation": 84,
+    "avg_parent_beta": 18.824161285359473,
+    "avg_child_beta": 7.1810152297916705,
+    "avg_parent_atoms": -46.1,
+    "avg_child_atoms": -38.6,
+    "beta_improvement": -11.643146055567803,
+    "atom_change": 7.5
+  },
+  {
+    "generation": 85,
+    "avg_parent_beta": 25.57603291944374,
+    "avg_child_beta": 10.753269914553448,
+    "avg_parent_atoms": -48.8,
+    "avg_child_atoms": -36.65,
+    "beta_improvement": -14.822763004890293,
+    "atom_change": 12.149999999999999
+  },
+  {
+    "generation": 86,
+    "avg_parent_beta": 46.45037648829357,
+    "avg_child_beta": 3.1511479964977953,
+    "avg_parent_atoms": -47.3,
+    "avg_child_atoms": -31.8,
+    "beta_improvement": -43.29922849179577,
+    "atom_change": 15.499999999999996
+  },
+  {
+    "generation": 87,
+    "avg_parent_beta": 45.76050055824978,
+    "avg_child_beta": 1.707652434217049,
+    "avg_parent_atoms": -47.5,
+    "avg_child_atoms": -42.6,
+    "beta_improvement": -44.052848124032735,
+    "atom_change": 4.899999999999999
+  },
+  {
+    "generation": 88,
+    "avg_parent_beta": 29.58821140050484,
+    "avg_child_beta": 1.3371979644434753,
+    "avg_parent_atoms": -46.5,
+    "avg_child_atoms": -25.9,
+    "beta_improvement": -28.251013436061363,
+    "atom_change": 20.6
+  },
+  {
+    "generation": 89,
+    "avg_parent_beta": 29.111684804121126,
+    "avg_child_beta": 5.2508180979274055,
+    "avg_parent_atoms": -46.9,
+    "avg_child_atoms": -32.5,
+    "beta_improvement": -23.86086670619372,
+    "atom_change": 14.399999999999999
+  },
+  {
+    "generation": 90,
+    "avg_parent_beta": 34.67837478628651,
+    "avg_child_beta": 0.3608180411619554,
+    "avg_parent_atoms": -46.7,
+    "avg_child_atoms": -17.9,
+    "beta_improvement": -34.317556745124556,
+    "atom_change": 28.800000000000004
+  },
+  {
+    "generation": 91,
+    "avg_parent_beta": 34.29148647285036,
+    "avg_child_beta": 4.362004674539169,
+    "avg_parent_atoms": -46.7,
+    "avg_child_atoms": -39.45,
+    "beta_improvement": -29.92948179831119,
+    "atom_change": 7.25
+  },
+  {
+    "generation": 92,
+    "avg_parent_beta": 34.77617908205898,
+    "avg_child_beta": 4.814204700340801,
+    "avg_parent_atoms": -49.8,
+    "avg_child_atoms": -43.8,
+    "beta_improvement": -29.96197438171818,
+    "atom_change": 6.0
+  },
+  {
+    "generation": 93,
+    "avg_parent_beta": 31.516730753812585,
+    "avg_child_beta": 3.2108792505457857,
+    "avg_parent_atoms": -49.4,
+    "avg_child_atoms": -41.05,
+    "beta_improvement": -28.305851503266798,
+    "atom_change": 8.350000000000001
+  },
+  {
+    "generation": 94,
+    "avg_parent_beta": 31.191313792298427,
+    "avg_child_beta": 1.5005180456669585,
+    "avg_parent_atoms": -48.1,
+    "avg_child_atoms": -23.85,
+    "beta_improvement": -29.69079574663147,
+    "atom_change": 24.25
+  },
+  {
+    "generation": 95,
+    "avg_parent_beta": 30.96121730856627,
+    "avg_child_beta": 2.272468123176428,
+    "avg_parent_atoms": -47.6,
+    "avg_child_atoms": -43.1,
+    "beta_improvement": -28.68874918538984,
+    "atom_change": 4.5
+  },
+  {
+    "generation": 96,
+    "avg_parent_beta": 30.96121730856627,
+    "avg_child_beta": 1.979493870720837,
+    "avg_parent_atoms": -47.6,
+    "avg_child_atoms": -29.1,
+    "beta_improvement": -28.98172343784543,
+    "atom_change": 18.5
+  },
+  {
+    "generation": 97,
+    "avg_parent_beta": 19.53113451437505,
+    "avg_child_beta": 13.15953490150488,
+    "avg_parent_atoms": -47.7,
+    "avg_child_atoms": -36.85,
+    "beta_improvement": -6.37159961287017,
+    "atom_change": 10.850000000000001
+  },
+  {
+    "generation": 98,
+    "avg_parent_beta": 24.956950581003795,
+    "avg_child_beta": 3.9882322222536493,
+    "avg_parent_atoms": -48.8,
+    "avg_child_atoms": -44.75,
+    "beta_improvement": -20.968718358750145,
+    "atom_change": 4.049999999999997
+  },
+  {
+    "generation": 99,
+    "avg_parent_beta": 23.856297347417815,
+    "avg_child_beta": 9.62392644752684,
+    "avg_parent_atoms": -47.9,
+    "avg_child_atoms": -34.0,
+    "beta_improvement": -14.232370899890975,
+    "atom_change": 13.899999999999999
+  }
+]

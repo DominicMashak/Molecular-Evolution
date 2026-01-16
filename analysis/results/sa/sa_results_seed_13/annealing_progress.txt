@@ -1,0 +1,2567 @@
+Temperature: 100.000000, Iteration: 0
+Best molecule: NC1NCCO1, Beta: 7.659647
+Temperature: 100.000000, Iteration: 1
+Best molecule: NC1NCCO1, Beta: 7.659647
+Mutated 1 (Change bond type): NC1NC=CO1, Beta: 2.647350
+Mutated 2 (Add atom inline): NC1NNCCO1, Beta: 5.888902
+Mutated 3 (Add branch): CN1CCOC1N, Beta: 5.286970
+Mutated 4 (Delete atom): C1COCN1, Beta: 9.054940
+Mutated 5 (Change atom type): NC1NNCO1, Beta: 5.310140
+Mutated 6 (Add ring): C1OC2N=C1N2, Beta: -1000.000000
+Mutated 7 (Delete ring): CCOC(N)N, Beta: 4.736507
+Temperature: 99.649158, Iteration: 2
+Best molecule: C1COCN1, Beta: 9.054940
+Mutated 1 (Change bond type): C1=NCCO1, Beta: 8.152356
+Mutated 2 (Add atom inline): C1CNOCN1, Beta: 5.716748
+Mutated 3 (Add branch): CC1COCN1, Beta: 7.925629
+Mutated 4 (Delete atom): C1COCN1, Beta: 9.206889
+Mutated 5 (Change atom type): C1NCON1, Beta: 6.330183
+Mutated 6 (Add ring): C1NC2OC12, Beta: 19.725692
+Mutated 7 (Delete ring): CNCCO, Beta: 8.781888
+Temperature: 99.298316, Iteration: 3
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=C2OC2N1, Beta: 6.216432
+Mutated 2 (Add atom inline): C1NN=C2OC12, Beta: 5.079806
+Mutated 3 (Add branch): CC12NCC1O2, Beta: 7.966784
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.247829
+Mutated 5 (Change atom type): N1OC2OC12, Beta: 17.114358
+Mutated 6 (Add ring): C1N2C3OC132, Beta: -3.221698
+Mutated 7 (Delete ring): OC1CNC1, Beta: 7.978828
+Temperature: 98.947474, Iteration: 4
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=C2OC2N1, Beta: 6.218733
+Mutated 2 (Add atom inline): C1N=C2OC2N1, Beta: 9.085044
+Mutated 3 (Add branch): O=C1NC2OC12, Beta: 6.559067
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 18.963942
+Mutated 5 (Change atom type): N1OC2OC12, Beta: 17.371815
+Mutated 6 (Add ring): N1C2C3OC123, Beta: 4.733866
+Mutated 7 (Delete ring): CNC1CO1, Beta: 5.909278
+Temperature: 98.596632, Iteration: 5
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=C2OC2N1, Beta: 6.337766
+Mutated 2 (Add atom inline): C1N=NC2OC12, Beta: 11.003496
+Mutated 3 (Add branch): NN1CC2OC21, Beta: 7.934736
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 18.918938
+Mutated 5 (Change atom type): C1NN2OC12, Beta: 13.130456
+Mutated 6 (Add ring): C1N2C3OC132, Beta: -3.218503
+Mutated 7 (Delete ring): CC1OC1N, Beta: 5.576233
+Temperature: 98.245789, Iteration: 6
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=C2OC2N1, Beta: 6.225933
+Mutated 2 (Add atom inline): C1NNC2OC12, Beta: 6.175794
+Mutated 3 (Add branch): NC12NCC1O2, Beta: 8.019148
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.508462
+Mutated 5 (Change atom type): N1NC2OC12, Beta: 7.483880
+Mutated 6 (Add ring): C1N2C3OC132, Beta: -3.213027
+Mutated 7 (Delete ring): OC1CNC1, Beta: 7.941189
+Temperature: 97.894947, Iteration: 7
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1NC2=C1O2, Beta: 6.003310
+Mutated 2 (Add atom inline): C1ONC2OC12, Beta: 6.042374
+Mutated 3 (Add branch): NN1CC2OC21, Beta: 7.902613
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.295973
+Mutated 5 (Change atom type): C1NC2CC12, Beta: 11.145544
+Mutated 6 (Add ring): C1N2C3OC132, Beta: -3.213636
+Mutated 7 (Delete ring): CNC1CO1, Beta: 5.942475
+Temperature: 97.544105, Iteration: 8
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1N=C2OC12, Beta: 9.062076
+Mutated 2 (Add atom inline): C1=NCC2OC12, Beta: 7.645193
+Mutated 3 (Add branch): CC12NCC1O2, Beta: 7.962184
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.123161
+Mutated 5 (Change atom type): C1NC2CC12, Beta: 11.059069
+Mutated 6 (Add ring): N1C2C3OC123, Beta: 4.737862
+Mutated 7 (Delete ring): CC1OC1N, Beta: 5.596652
+Temperature: 97.193263, Iteration: 9
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1NC2=C1O2, Beta: 5.956014
+Mutated 2 (Add atom inline): C1=C2NCC1O2, Beta: -36.242840
+Mutated 3 (Add branch): ON1CC2OC21, Beta: 11.827050
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 18.752784
+Mutated 5 (Change atom type): N1NC2OC12, Beta: 7.417618
+Mutated 6 (Add ring): C1N2C3OC132, Beta: -3.206752
+Mutated 7 (Delete ring): C1COCN1, Beta: 9.132056
+Temperature: 96.842421, Iteration: 10
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=NC2OC12, Beta: 15.841453
+Mutated 2 (Add atom inline): C1NC2OCC12, Beta: 6.604900
+Mutated 3 (Add branch): ON1CC2OC21, Beta: 11.651152
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 18.523299
+Mutated 5 (Change atom type): C1NN2OC12, Beta: 12.990767
+Mutated 6 (Add ring): N1C2C3OC123, Beta: 4.680182
+Mutated 7 (Delete ring): OC1CNC1, Beta: 7.899712
+Temperature: 96.491579, Iteration: 11
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=NC2OC12, Beta: 15.617584
+Mutated 2 (Add atom inline): C1=C2CNC2O1, Beta: 11.358517
+Mutated 3 (Add branch): CC1NC2OC12, Beta: 7.626192
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.042462
+Mutated 5 (Change atom type): C1OC2OC12, Beta: 12.474128
+Mutated 6 (Add ring): C1N2C3OC132, Beta: -3.198551
+Mutated 7 (Delete ring): C1COCN1, Beta: 9.208275
+Temperature: 96.140737, Iteration: 12
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1N=C2OC12, Beta: 9.286156
+Mutated 2 (Add atom inline): C1CC2OC2N1, Beta: 7.744789
+Mutated 3 (Add branch): OC1NC2OC12, Beta: 8.712823
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.068272
+Mutated 5 (Change atom type): C1CC2OC12, Beta: 12.508714
+Mutated 6 (Add ring): N1C2C3OC123, Beta: 4.690874
+Mutated 7 (Delete ring): C1COCN1, Beta: 9.122242
+Temperature: 95.789895, Iteration: 13
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=C2OC2N1, Beta: 6.223914
+Mutated 2 (Add atom inline): C1=C2NCC1O2, Beta: -36.954988
+Mutated 3 (Add branch): NC1NC2OC12, Beta: 8.126197
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.037918
+Mutated 5 (Change atom type): C1CC2OC12, Beta: 12.414535
+Mutated 6 (Add ring): N1C2C3OC123, Beta: 4.672779
+Mutated 7 (Delete ring): C1COCN1, Beta: 9.105662
+Temperature: 95.439053, Iteration: 14
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1N=C2OC12, Beta: 9.175085
+Mutated 2 (Add atom inline): C1N=NC2OC12, Beta: 10.904763
+Mutated 3 (Add branch): NC12CNC1O2, Beta: 6.599224
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.149190
+Mutated 5 (Change atom type): C1NC2NC12, Beta: 8.977510
+Mutated 6 (Add ring): C1N2C3OC132, Beta: -3.208105
+Mutated 7 (Delete ring): C1COCN1, Beta: 9.153116
+Temperature: 95.088211, Iteration: 15
+Best molecule: C1NC2OC12, Beta: 19.725692
+Mutated 1 (Change bond type): C1=C2OC2N1, Beta: 6.225356
+Mutated 2 (Add atom inline): C1=C2CNC1O2, Beta: 52.567603
+Mutated 3 (Add branch): CC12NCC1O2, Beta: 7.962538
+Mutated 4 (Delete atom): C1NC2OC12, Beta: 19.342790
+Mutated 5 (Change atom type): C1NC2NC12, Beta: 8.961545
+Mutated 6 (Add ring): N1C2C3OC123, Beta: 4.699777
+Mutated 7 (Delete ring): CC1OC1N, Beta: 5.614274
+Temperature: 94.737368, Iteration: 16
+Best molecule: C1=C2CNC1O2, Beta: 52.567603
+Mutated 1 (Change bond type): C1=C2CN=C1O2, Beta: 13.282856
+Mutated 2 (Add atom inline): C1=C2CONC1O2, Beta: 5.144541
+Mutated 3 (Add branch): OC1NC2C=C1O2, Beta: 76.719749
+Mutated 4 (Delete atom): NC1C=CO1, Beta: 4.767468
+Mutated 5 (Change atom type): C1=C2CCC1O2, Beta: -91.131240
+Mutated 6 (Add ring): C1=C2OC13NC23, Beta: 7.640333
+Mutated 7 (Delete ring): OC1=CCNC1, Beta: 3.199297
+Temperature: 94.386526, Iteration: 17
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): OC1NC2=C=C1O2, Beta: 35.196339
+Mutated 2 (Add atom inline): OC1NC2C=C1NO2, Beta: -1000.000000
+Mutated 3 (Add branch): OOC1NC2C=C1O2, Beta: 7.755618
+Mutated 4 (Delete atom): C=C(O)C(N)O, Beta: 5.319015
+Mutated 5 (Change atom type): OC1Nn2cc1o2, Beta: -1000.000000
+Mutated 6 (Add ring): OC12NC13C=C2O3, Beta: 0.694715
+Mutated 7 (Delete ring): NC(O)C1=CCO1, Beta: 3.360547
+Temperature: 94.035684, Iteration: 18
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): O=C1NC2C=C1O2, Beta: 7.640566
+Mutated 2 (Add atom inline): OC1NC2CCC1O2, Beta: 6.864566
+Mutated 3 (Add branch): NC12C=C(O1)C(O)N2, Beta: 26.236313
+Mutated 4 (Delete atom): OCC1=CCO1, Beta: 3.390494
+Mutated 5 (Change atom type): OC1CC2C=C1O2, Beta: 14.519224
+Mutated 6 (Add ring): C1=C2OC13NC2O3, Beta: -1000.000000
+Mutated 7 (Delete ring): OC1C=CC(O)N1, Beta: 5.347533
+Temperature: 93.684842, Iteration: 19
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): NC12CC(O1)C(O)N2, Beta: 6.256466
+Mutated 2 (Add atom inline): NC12C=C(O1)C(N=O)N2, Beta: 7.186254
+Mutated 3 (Add branch): CC1=C2OC1(N)NC2O, Beta: 3.614653
+Mutated 4 (Delete atom): NC12C=C(CN1)O2, Beta: 18.208647
+Mutated 5 (Change atom type): NC12C=C(C1)C(O)N2, Beta: -1000.000000
+Mutated 6 (Add ring): OC1C2=CC3(NN13)O2, Beta: 1.546117
+Mutated 7 (Delete ring): NC1(O)C=CC(O)N1, Beta: 8.213295
+Temperature: 93.334000, Iteration: 20
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): NC12C=C(C=N1)O2, Beta: 8.360183
+Mutated 2 (Add atom inline): NOC12C=C(CN1)O2, Beta: 9.923264
+Mutated 3 (Add branch): C=C1NC2(N)C=C1O2, Beta: 7.688543
+Mutated 4 (Delete atom): CC1=CC(N)O1, Beta: 3.714664
+Mutated 5 (Change atom type): NC12N=C(CN1)O2, Beta: 5.467813
+Mutated 6 (Add ring): NC12NC3C(=C31)O2, Beta: 5.772717
+Mutated 7 (Delete ring): NC1C=C(O)CN1, Beta: 3.441152
+Temperature: 92.983158, Iteration: 21
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): NOC12CC(CN1)O2, Beta: 7.091763
+Mutated 2 (Add atom inline): NOC12C=C(C=NN1)O2, Beta: 7.689567
+Mutated 3 (Add branch): N=NOC12C=C(CN1)O2, Beta: 19.148824
+Mutated 4 (Delete atom): CC1=CC(ON)O1, Beta: 3.056132
+Mutated 5 (Change atom type): NOC12C=C(CN1)N2, Beta: -1000.000000
+Mutated 6 (Add ring): C1=C2OC13NC2NO3, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C1CNC(ON)O1, Beta: 6.601926
+Temperature: 92.632316, Iteration: 22
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): N=NOC12CC(CN1)O2, Beta: 5.001033
+Mutated 2 (Add atom inline): N=NOC12C=C(CN1)CO2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1CC2=CC1(ON=N)O2, Beta: 9.046296
+Mutated 4 (Delete atom): NOC12C=C(CN1)O2, Beta: 10.195134
+Mutated 5 (Change atom type): N=NOC12C=C(CC1)O2, Beta: 9.836079
+Mutated 6 (Add ring): C1=C2OC13NC2N=NO3, Beta: -1000.000000
+Mutated 7 (Delete ring): CC1=CC(N)(ON=N)O1, Beta: 2.871304
+Temperature: 92.281474, Iteration: 23
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): NOC12CC(CN1)O2, Beta: 7.194115
+Mutated 2 (Add atom inline): NOC12C=CC(CN1)O2, Beta: 5.498869
+Mutated 3 (Add branch): N=NOC12C=C(CN1)O2, Beta: 18.445297
+Mutated 4 (Delete atom): CC1=CC(ON)O1, Beta: 3.048242
+Mutated 5 (Change atom type): COC12C=C(CN1)O2, Beta: 14.228202
+Mutated 6 (Add ring): C1=C2CN3NOC13O2, Beta: 12.808231
+Mutated 7 (Delete ring): C=C1CNC(ON)O1, Beta: 6.690354
+Temperature: 91.930632, Iteration: 24
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): N=NOC12CC(CN1)O2, Beta: 5.046353
+Mutated 2 (Add atom inline): N=NOOC12C=C(CN1)O2, Beta: 24.319449
+Mutated 3 (Add branch): C=C1NC2(ON=N)C=C1O2, Beta: 5.740739
+Mutated 4 (Delete atom): N=NOC1(N)C=CO1, Beta: 4.723576
+Mutated 5 (Change atom type): N=NNC12C=C(CN1)O2, Beta: 7.475825
+Mutated 6 (Add ring): C1=C2CN3N=NOC13O2, Beta: 10.612298
+Mutated 7 (Delete ring): N=NOC1C=C(CN)O1, Beta: 2.495035
+Temperature: 91.579789, Iteration: 25
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): N=NOOC12CC(CN1)O2, Beta: 3.614196
+Mutated 2 (Add atom inline): N=NOOC12C=NCC(=C1)O2, Beta: 4.784271
+Mutated 3 (Add branch): CN1CC2=CC1(OON=N)O2, Beta: 6.967017
+Mutated 4 (Delete atom): CC1=CC(OON=N)O1, Beta: 2.362321
+Mutated 5 (Change atom type): N=NNOC12C=C(CN1)O2, Beta: 5.460983
+Mutated 6 (Add ring): C1NC23OON=NC2=C1O3, Beta: -3.625799
+Mutated 7 (Delete ring): N=NOOC1C=C(CN)O1, Beta: 2.277486
+Temperature: 91.228947, Iteration: 26
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): CN1CC2=CC1(OONN)O2, Beta: 10.664454
+Mutated 2 (Add atom inline): CN1CC2=CC1(OON=N)OC2, Beta: -1000.000000
+Mutated 3 (Add branch): N=NOOC12C=C(CN1CN)O2, Beta: 6.795697
+Mutated 4 (Delete atom): CN1CC2=CC1(OON)O2, Beta: 9.884431
+Mutated 5 (Change atom type): CN1CC2=CC1(CON=N)O2, Beta: 3.530634
+Mutated 6 (Add ring): CN1CC2=C3N=NOOC31O2, Beta: 43.670771
+Mutated 7 (Delete ring): CNCC1=CC(OON=N)O1, Beta: 2.603436
+Temperature: 90.878105, Iteration: 27
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): CN1CC2OC13OON=NC23, Beta: 6.987346
+Mutated 2 (Add atom inline): C=NN1CC2=C3N=NOOC31O2, Beta: 2.012601
+Mutated 3 (Add branch): C[N+]1([O-])CC2=C3N=NOOC31O2, Beta: 3.232746
+Mutated 4 (Delete atom): CN(C)C1(O)CN=NOO1, Beta: 7.614630
+Mutated 5 (Change atom type): CN1CC2=C3N=NNOC31O2, Beta: 1.781223
+Mutated 6 (Add ring): C1=C2C3=C4N=NOOC4(O3)N12, Beta: -1000.000000
+Mutated 7 (Delete ring): CNCC1=C2N=NOOC2O1, Beta: 3.879311
+Temperature: 90.527263, Iteration: 28
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): CN1CC2=C3NNOOC31O2, Beta: -2.424198
+Mutated 2 (Add atom inline): CN1CC2=C3N=NOOOC31O2, Beta: 6.572128
+Mutated 3 (Add branch): O=CN1CC2=C3N=NOOC31O2, Beta: 2.596426
+Mutated 4 (Delete atom): C1NC23OON=NC2=C1O3, Beta: -3.624068
+Mutated 5 (Change atom type): CN1CC2=C3N=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): C1=C2C3=C4N=NOOC4(O3)N12, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(C)C12OC=C1N=NOO2, Beta: 6.296640
+Temperature: 90.176421, Iteration: 29
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): CN1CC2=C3NNOOC31O2, Beta: -2.420825
+Mutated 2 (Add atom inline): CN1CC2OC3N=NOOC31O2, Beta: 8.212801
+Mutated 3 (Add branch): C[N+]1([O-])CC2=C3N=NOOC31O2, Beta: 3.248355
+Mutated 4 (Delete atom): CN1CC=C2N=NOOC21, Beta: 4.099788
+Mutated 5 (Change atom type): CN1NC2=C3N=NOOC31O2, Beta: 9.428298
+Mutated 6 (Add ring): C1=C2C3=C4N=NOOC4(O3)N12, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1CC2=C(N=NO)C1(O)O2, Beta: 2.113942
+Temperature: 89.825579, Iteration: 30
+Best molecule: OC1NC2C=C1O2, Beta: 76.719749
+Mutated 1 (Change bond type): CN1NC2OC13OON=NC23, Beta: 6.272121
+Mutated 2 (Add atom inline): CN1NC2=C3N=NOOC3(O2)O1, Beta: 1.286604
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 724.082725
+Mutated 4 (Delete atom): CN1NC=C2N=NOOC21, Beta: 1.340400
+Mutated 5 (Change atom type): CN1NC2=C3N=NOCC31O2, Beta: -7.379049
+Mutated 6 (Add ring): CN1NC2=C3N=NOOC31O2, Beta: 9.503967
+Mutated 7 (Delete ring): CNNC1=C2N=NOOC2O1, Beta: 2.158975
+Temperature: 89.474737, Iteration: 31
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 724.082725
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.775863
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.653825
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.619523
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.293916
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.267878
+Temperature: 89.123895, Iteration: 32
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.696088
+Mutated 2 (Add atom inline): CON1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6.234203
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.593725
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.617361
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.291157
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3381.151195
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.984331
+Temperature: 88.773053, Iteration: 33
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31CO2, Beta: 10.663098
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.727393
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.057422
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.403695
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172656
+Temperature: 88.422211, Iteration: 34
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.710417
+Mutated 2 (Add atom inline): CN1NC2NC3[N+]([O-])=NOOC31O2, Beta: 11.294804
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.696660
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.419736
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.649840
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1174.719874
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.109738
+Temperature: 88.071368, Iteration: 35
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])CNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.618059
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.382020
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.691312
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 646.975710
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.929640
+Temperature: 87.720526, Iteration: 36
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3OC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.596455
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.525178
+Temperature: 87.369684, Iteration: 37
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.806640
+Mutated 2 (Add atom inline): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.602002
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.919660
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.996041
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172542
+Temperature: 87.018842, Iteration: 38
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=CNOOC31O2, Beta: 0.543265
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.672617
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.500345
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.670662
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.998414
+Temperature: 86.668000, Iteration: 39
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2N=C3[N+]([O-])=NOOC31O2, Beta: 6.128861
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 80.127809
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.396932
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.787392
+Temperature: 86.317158, Iteration: 40
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.242534
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.723285
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.681851
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -5476.512941
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.301157
+Temperature: 85.966316, Iteration: 41
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.781714
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OC2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.930234
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.621723
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.395858
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.605494
+Temperature: 85.615474, Iteration: 42
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.695556
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=CNOOC31O2, Beta: 0.543022
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.714503
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.044638
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1413.936279
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873890
+Temperature: 85.264632, Iteration: 43
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2OC3[N+]([O-])=NOOC31O2, Beta: 7.690494
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.669780
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.380405
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.269389
+Temperature: 84.913789, Iteration: 44
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.648656
+Mutated 2 (Add atom inline): CN1CNC2=C3[N+]([O-])=NOOC31O2, Beta: -27.380651
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.607253
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.354669
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.298030
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.959640
+Temperature: 84.562947, Iteration: 45
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.745655
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](C[O-])=NOOC31O2, Beta: 0.363997
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 81.154486
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.905064
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.699466
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873570
+Temperature: 84.212105, Iteration: 46
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.587240
+Mutated 2 (Add atom inline): CN1NC2=C=C3[N+]([O-])=NOOC31O2, Beta: 4.695761
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.607253
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.048529
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873928
+Temperature: 83.861263, Iteration: 47
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3N[N+]([O-])=NOOC31O2, Beta: 1.265909
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.599791
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.500795
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.133468
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254590
+Temperature: 83.510421, Iteration: 48
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.709891
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(N1)O2, Beta: 0.415128
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.398203
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.404157
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.913123
+Temperature: 83.159579, Iteration: 49
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.786037
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])ONOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.727139
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881032
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -49.899113
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 9970.059455
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172954
+Temperature: 82.808737, Iteration: 50
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.663356
+Mutated 2 (Add atom inline): C=NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.599593
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.958068
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.784721
+Temperature: 82.457895, Iteration: 51
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.761759
+Mutated 2 (Add atom inline): CNN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -152.585405
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.677855
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.399644
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928064
+Temperature: 82.107053, Iteration: 52
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1C=NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.932058
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 74.395239
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.899804
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2273.873290
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.127319
+Temperature: 81.756211, Iteration: 53
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.818610
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 17.004366
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.657603
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.357602
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.861847
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1211.315887
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172751
+Temperature: 81.405368, Iteration: 54
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.789285
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.778973
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 85.329000
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.425039
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928808
+Temperature: 81.054526, Iteration: 55
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.718400
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.931862
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.359828
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -53.165685
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1501.283143
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873423
+Temperature: 80.703684, Iteration: 56
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CON1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6.118221
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567486
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.621108
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.432440
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -9042.614625
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.975899
+Temperature: 80.352842, Iteration: 57
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.731203
+Mutated 2 (Add atom inline): CN1N=CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.248454
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.668453
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.350213
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.659322
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.109934
+Temperature: 80.002000, Iteration: 58
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.813709
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.340007
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.735385
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.622534
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873751
+Temperature: 79.651158, Iteration: 59
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.247863
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.656284
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881318
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.295607
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.793346
+Temperature: 79.300316, Iteration: 60
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.701391
+Mutated 2 (Add atom inline): CN1NOC2=C3[N+]([O-])=NOOC31O2, Beta: 4.844036
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 81.091507
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.515170
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492615
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.626443
+Temperature: 78.949474, Iteration: 61
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.588276
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OO2, Beta: 8.679141
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.936722
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.922508
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.954458
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2328.337521
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172428
+Temperature: 78.598632, Iteration: 62
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.677056
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])NNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.596146
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.356739
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.914165
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3633.946766
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173824
+Temperature: 78.247789, Iteration: 63
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NNC2=C3[N+]([O-])=NOOC31O2, Beta: 4.404072
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 90.974288
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.466393
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.397085
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173443
+Temperature: 77.896947, Iteration: 64
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.744043
+Mutated 2 (Add atom inline): CN1NNC2=C3[N+]([O-])=NOOC31O2, Beta: 4.382701
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.935471
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.046183
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.948310
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -77766.454276
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.127911
+Temperature: 77.546105, Iteration: 65
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.642367
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31NO2, Beta: 2.861677
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.729431
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.354413
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.296856
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -4574.498304
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.874025
+Temperature: 77.195263, Iteration: 66
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.727468
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NONOC31O2, Beta: 1.291801
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.619303
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881270
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 76.844421, Iteration: 67
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.622002
+Mutated 2 (Add atom inline): CN1NC2=C3C[N+]([O-])=NOOC31O2, Beta: 4.110466
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.598199
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.621658
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.934556
+Temperature: 76.493579, Iteration: 68
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](N[O-])=NOOC31O2, Beta: 0.550185
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.630162
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.926981
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.687215
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.131170
+Temperature: 76.142737, Iteration: 69
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CON1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6.236963
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.617145
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.621367
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.916590
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.124166
+Temperature: 75.791895, Iteration: 70
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2N=C3[N+]([O-])=NOOC31O2, Beta: 6.104269
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.621294
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.134177
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.927468
+Temperature: 75.441053, Iteration: 71
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.690791
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(N1)O2, Beta: 0.415936
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.708373
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.407942
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.297134
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1791.854121
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.101540
+Temperature: 75.090211, Iteration: 72
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.653901
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])NNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567266
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.847281
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.411671
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.993334
+Temperature: 74.739368, Iteration: 73
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.670197
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.776375
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.902230
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -2541.387772
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.610568
+Temperature: 74.388526, Iteration: 74
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.738687
+Mutated 2 (Add atom inline): CNN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -195.212454
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.666596
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.053104
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.431891
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254288
+Temperature: 74.037684, Iteration: 75
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.619398
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31NO2, Beta: 2.861091
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.730580
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.622728
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -54.050281
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -2273.873290
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873670
+Temperature: 73.686842, Iteration: 76
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.675101
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.880773
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.400413
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1561.575615
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873870
+Temperature: 73.336000, Iteration: 77
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.571254
+Mutated 2 (Add atom inline): CNN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -138.029006
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.728327
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.358135
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.425928
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1291.801750
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254817
+Temperature: 72.985158, Iteration: 78
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2N=C3[N+]([O-])=NOOC31O2, Beta: 6.098264
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.627461
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.953555
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.023858
+Temperature: 72.634316, Iteration: 79
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CNN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -129.593094
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.617408
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881772
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.522111
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.251797
+Temperature: 72.283474, Iteration: 80
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.693970
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])C=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.974905
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.046726
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 969.656768
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.010837
+Temperature: 71.932632, Iteration: 81
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.594480
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31NO2, Beta: 2.850648
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 86.422722
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.852855
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.295146
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.935450
+Temperature: 71.581789, Iteration: 82
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])C=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.720705
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.355346
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.120918
+Temperature: 71.230947, Iteration: 83
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.724265
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NNOOC31O2, Beta: 1.331716
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.978209
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881129
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.874411
+Temperature: 70.880105, Iteration: 84
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=NC3[N+]([O-])=NOOC31O2, Beta: 6.169703
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.621011
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.401857
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -49.938455
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873261
+Temperature: 70.529263, Iteration: 85
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.328259
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.593491
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.386533
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173882
+Temperature: 70.178421, Iteration: 86
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOONC31O2, Beta: 1.064155
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.983159
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.618264
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.675887
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 4574.498304
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 69.827579, Iteration: 87
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.593569
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.603240
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881869
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.429901
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3567.269046
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172796
+Temperature: 69.476737, Iteration: 88
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])N=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.740698
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.356501
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.646891
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.522409
+Temperature: 69.125895, Iteration: 89
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.753164
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])CNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.355456
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.094734
+Temperature: 68.775053, Iteration: 90
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.716271
+Mutated 2 (Add atom inline): CN1NOC2=C3[N+]([O-])=NOOC31O2, Beta: 4.841843
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567400
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.931465
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -4008.581361
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.954046
+Temperature: 68.424211, Iteration: 91
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.761759
+Mutated 2 (Add atom inline): CN1NC2C=C3[N+]([O-])=NOOC31O2, Beta: 5.817156
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.628493
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.108878
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.296147
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.825942
+Temperature: 68.073368, Iteration: 92
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2NC3[N+]([O-])=NOOC31O2, Beta: 11.306161
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567459
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.522693
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.396983
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 955.362301
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 67.722526, Iteration: 93
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.681276
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])ONOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 83.388544
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881302
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.934636
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1915.430371
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.807966
+Temperature: 67.371684, Iteration: 94
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 74.821323
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 7.087825
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492006
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -6374.301792
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.121999
+Temperature: 67.020842, Iteration: 95
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OO2, Beta: 8.626040
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567468
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.507271
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -56.610280
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1009.954208
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873118
+Temperature: 66.670000, Iteration: 96
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.650752
+Mutated 2 (Add atom inline): CON1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6.236618
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 80.467136
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.482507
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.296347
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 422.184949
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.252476
+Temperature: 66.319158, Iteration: 97
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NCC2=C3[N+]([O-])=NOOC31O2, Beta: 2.189439
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.978036
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.624872
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.702320
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 743.465118
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.111402
+Temperature: 65.968316, Iteration: 98
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.325939
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.621596
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.503135
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.291601
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.331568
+Temperature: 65.617474, Iteration: 99
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3C[N+]([O-])=NOOC31O2, Beta: 4.119843
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.721423
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.806308
+Temperature: 65.266632, Iteration: 100
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.244525
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.601146
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.353098
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492123
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 4092.972301
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 64.915789, Iteration: 101
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.711483
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])CNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.683521
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.623475
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.930976
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.519334
+Temperature: 64.564947, Iteration: 102
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): C=NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.933627
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.965064
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254792
+Temperature: 64.214105, Iteration: 103
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1ONC2=C3[N+]([O-])=NOOC31O2, Beta: -65.050935
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.617253
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.451014
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -29910.178364
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.309399
+Temperature: 63.863263, Iteration: 104
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.783333
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOONC31O2, Beta: 1.063132
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.974856
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.501698
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.435190
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.123377
+Temperature: 63.512421, Iteration: 105
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3CC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.619608
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.992450
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.132324
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.115125
+Temperature: 63.161579, Iteration: 106
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.748867
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.662453
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.616935
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.673014
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928622
+Temperature: 62.810737, Iteration: 107
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])N=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.970510
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.040357
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.900880
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928828
+Temperature: 62.459895, Iteration: 108
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2NC3[N+]([O-])=NOOC31O2, Beta: 11.155170
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.740569
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.063107
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.135257
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 710.845245
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.090659
+Temperature: 62.109053, Iteration: 109
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.494718
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.342835
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 83.890596
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.436875
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.524651
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1120.554108
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.552714
+Temperature: 61.758211, Iteration: 110
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.720541
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.933031
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881210
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492246
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1283.275143
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172840
+Temperature: 61.407368, Iteration: 111
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.330390
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.934914
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.066094
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.491971
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1512.966400
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.936344
+Temperature: 61.056526, Iteration: 112
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.826793
+Mutated 2 (Add atom inline): CN1NNC2=C3[N+]([O-])=NOOC31O2, Beta: 4.438383
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.623972
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.054850
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.405595
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1640.642850
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.799850
+Temperature: 60.705684, Iteration: 113
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.748867
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.377745
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.618759
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.622826
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.297891
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873496
+Temperature: 60.354842, Iteration: 114
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.831168
+Mutated 2 (Add atom inline): CN1NC2=C3C[N+]([O-])=NOOC31O2, Beta: 4.130138
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.725866
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.415042
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -52.767121
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.126630
+Temperature: 60.004000, Iteration: 115
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C=C3[N+]([O-])=NOOC31O2, Beta: 4.682551
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.619743
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.041860
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.447962
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.609940
+Temperature: 59.653158, Iteration: 116
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.675469
+Mutated 2 (Add atom inline): CN1NC2=NC3[N+]([O-])=NOOC31O2, Beta: 6.205417
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 81.661818
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.377982
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -51.522509
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 15553.294139
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.927905
+Temperature: 59.302316, Iteration: 117
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.570738
+Mutated 2 (Add atom inline): CN1NNC2=C3[N+]([O-])=NOOC31O2, Beta: 4.398318
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.688290
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.356391
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3849.825093
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254515
+Temperature: 58.951474, Iteration: 118
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.702448
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31NO2, Beta: 2.864714
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.933415
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.824279
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.295623
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928795
+Temperature: 58.600632, Iteration: 119
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](O[O-])=NOOC31O2, Beta: 1.440967
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.601767
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.355768
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.296193
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.929427
+Temperature: 58.249789, Iteration: 120
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.748336
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])NNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.727690
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.495686
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.513198
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.251797
+Temperature: 57.898947, Iteration: 121
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1C=NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.943875
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.620795
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.027832
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492083
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 8273.027701
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.929527
+Temperature: 57.548105, Iteration: 122
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.638184
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])ONOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.725675
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.620072
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -57.379463
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 850.836890
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.798502
+Temperature: 57.197263, Iteration: 123
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.668620
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.694919
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.029992
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.685135
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1160.693594
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.047162
+Temperature: 56.846421, Iteration: 124
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CNN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -187.475382
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.935337
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.843303
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.664636
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.104757
+Temperature: 56.495579, Iteration: 125
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.708825
+Mutated 2 (Add atom inline): C=NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.725172
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.391002
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.446855
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928835
+Temperature: 56.144737, Iteration: 126
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(N1)O2, Beta: 0.415920
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.618180
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881070
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.491970
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.610317
+Temperature: 55.793895, Iteration: 127
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.723196
+Mutated 2 (Add atom inline): CN1NC2=C=C3[N+]([O-])=NOOC31O2, Beta: 4.654142
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.722818
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -47.990097
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 4921.929097
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.252174
+Temperature: 55.443053, Iteration: 128
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])ONOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.974217
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881178
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.708123
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -2057.313944
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173570
+Temperature: 55.092211, Iteration: 129
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(N1)O2, Beta: 0.415805
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 82.859600
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.398203
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492141
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -7336.461092
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172383
+Temperature: 54.741368, Iteration: 130
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])CNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.700766
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.487740
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.171389
+Temperature: 54.390526, Iteration: 131
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.767682
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(N1)O2, Beta: 0.415809
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.979666
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.881673
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492320
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2057.313944
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.789919
+Temperature: 54.039684, Iteration: 132
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.655473
+Mutated 2 (Add atom inline): CN1NC2=C3OC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567284
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.391002
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.256987
+Temperature: 53.688842, Iteration: 133
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.805551
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOONC31O2, Beta: 1.063207
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.598058
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.436465
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492658
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3440.994404
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.304988
+Temperature: 53.338000, Iteration: 134
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=CNOOC31O2, Beta: 0.543482
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.972055
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.045443
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.426886
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3567.269046
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254716
+Temperature: 52.987158, Iteration: 135
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.756921
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOCC31O2, Beta: -1.901317
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.365484
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492255
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6590.379191
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172403
+Temperature: 52.636316, Iteration: 136
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.625653
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOCOC31O2, Beta: 3.014901
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.727311
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.487292
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.520750
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -10508.979858
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.316704
+Temperature: 52.285474, Iteration: 137
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31CO2, Beta: 10.818445
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.598734
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 7.045444
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172777
+Temperature: 51.934632, Iteration: 138
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(N1)O2, Beta: 0.415430
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 83.388544
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.396778
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -25922.155986
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173354
+Temperature: 51.583789, Iteration: 139
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOCOC31O2, Beta: 3.020687
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.975915
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.947815
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.687232
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1146.998313
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.587131
+Temperature: 51.232947, Iteration: 140
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.611262
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.384846
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.961647
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 50.882105, Iteration: 141
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.776846
+Mutated 2 (Add atom inline): CN1NC2=C=C3[N+]([O-])=NOOC31O2, Beta: 4.666451
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.600482
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.335962
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.293916
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 11782.800437
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.265234
+Temperature: 50.531263, Iteration: 142
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])N=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.588358
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.057422
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -53.032173
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.300584
+Temperature: 50.180421, Iteration: 143
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.446033
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.675012
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.050142
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -9970.059455
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.938357
+Temperature: 49.829579, Iteration: 144
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.626699
+Mutated 2 (Add atom inline): CON1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6.157630
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.715003
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.274222
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.134955
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.972529
+Temperature: 49.478737, Iteration: 145
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.775583
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.882043
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.641863
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 49.127895, Iteration: 146
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.749942
+Mutated 2 (Add atom inline): CN1NC2=C3CC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.693933
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881415
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1524.832768
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.255927
+Temperature: 48.777053, Iteration: 147
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.604822
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.619783
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1393.663789
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.022161
+Temperature: 48.426211, Iteration: 148
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.630870
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])C=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.620511
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881821
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.282849
+Temperature: 48.075368, Iteration: 149
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.892801
+Mutated 2 (Add atom inline): CN1NC2=CC3[N+]([O-])=NOOC31O2, Beta: -7.670724
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.668630
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.404695
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.666032
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.566744
+Temperature: 47.724526, Iteration: 150
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])C=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567493
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.899398
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 666.950918
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.813478
+Temperature: 47.373684, Iteration: 151
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.680217
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OO2, Beta: 8.774750
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 86.315640
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.479370
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.519483
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1775.490204
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.116400
+Temperature: 47.022842, Iteration: 152
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OO2, Beta: 8.750792
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.681327
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.617071
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.665378
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.527950
+Temperature: 46.672000, Iteration: 153
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 95.724034
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.399016
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.293324
+Temperature: 46.321158, Iteration: 154
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C=C3[N+]([O-])=NOOC31O2, Beta: 4.637139
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 82.925356
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.474300
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.137511
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1878.417091
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.613836
+Temperature: 45.970316, Iteration: 155
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3C[N+]([O-])=NOOC31O2, Beta: 4.124693
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.621065
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.049470
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -55.935476
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.113753
+Temperature: 45.619474, Iteration: 156
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.625130
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31ON2, Beta: -1000.000000
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.725104
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.033557
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.650699
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3323.353152
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.562994
+Temperature: 45.268632, Iteration: 157
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])N=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.984451
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 7.008146
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.440564
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -2148.244975
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.811965
+Temperature: 44.917789, Iteration: 158
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.511228
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.937860
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881329
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.696018
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 12542.978845
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.798352
+Temperature: 44.566947, Iteration: 159
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.764450
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31CO2, Beta: 10.831347
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 79.246761
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.040490
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -51.065641
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 752.093581
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 44.216105, Iteration: 160
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])C=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.629144
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.526513
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.597081
+Temperature: 43.865263, Iteration: 161
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 17.072230
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.628493
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.880719
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -58.089778
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254515
+Temperature: 43.514421, Iteration: 162
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OO2, Beta: 8.729660
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.920067
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.135364
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.932101
+Temperature: 43.163579, Iteration: 163
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 17.112839
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 84.775234
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 7.055569
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.295869
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1071.163287
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.609815
+Temperature: 42.812737, Iteration: 164
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOCOC31O2, Beta: 3.041952
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.620039
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.890524
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -51.045064
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 847.129111
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.614591
+Temperature: 42.461895, Iteration: 165
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.701391
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.620903
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.522482
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.104855
+Temperature: 42.111053, Iteration: 166
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOCOC31O2, Beta: 3.027326
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.704878
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.357988
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.491813
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.874164
+Temperature: 41.760211, Iteration: 167
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(O2)O1, Beta: 0.595971
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.930234
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.640515
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.795959
+Temperature: 41.409368, Iteration: 168
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.700859
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.777681
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.705127
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.063650
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.267499
+Temperature: 41.058526, Iteration: 169
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.749942
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NNOOC31O2, Beta: 1.325756
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.626271
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1697.957904
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.564555
+Temperature: 40.707684, Iteration: 170
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1C=NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.959803
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 88.247160
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 7.008982
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.678915
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 760.924282
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.100858
+Temperature: 40.356842, Iteration: 171
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.715737
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.683021
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.355548
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492304
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1860.441861
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.795884
+Temperature: 40.006000, Iteration: 172
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.671782
+Mutated 2 (Add atom inline): CN1NC2N=C3[N+]([O-])=NOOC31O2, Beta: 6.109173
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.720898
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.861232
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.429901
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 4800.398756
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.534736
+Temperature: 39.655158, Iteration: 173
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.777401
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.721526
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.880762
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.927522
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 39.304316, Iteration: 174
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3O[N+]([O-])=NOOC31O2, Beta: 4.714805
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.436975
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.635257
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.931580
+Temperature: 38.953474, Iteration: 175
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.650752
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31NO2, Beta: 2.871718
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.731005
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.033025
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.398416
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172586
+Temperature: 38.602632, Iteration: 176
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.701391
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])NNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.705127
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.505612
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.674893
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 38.251789, Iteration: 177
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.646561
+Mutated 2 (Add atom inline): C=NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 83.823301
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881572
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 669.246753
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873809
+Temperature: 37.900947, Iteration: 178
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOONC31O2, Beta: 1.061569
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.614743
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.882281
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.929873
+Temperature: 37.550105, Iteration: 179
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.751011
+Mutated 2 (Add atom inline): CN1NC2OC3[N+]([O-])=NOOC31O2, Beta: 7.778502
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.603960
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.687513
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.928018
+Temperature: 37.199263, Iteration: 180
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.681683
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.352788
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.619763
+Temperature: 36.848421, Iteration: 181
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2N=C3[N+]([O-])=NOOC31O2, Beta: 6.098264
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.602929
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.052362
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.675244
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173018
+Temperature: 36.497579, Iteration: 182
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.706168
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOCC31O2, Beta: -1.888895
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.628970
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.506897
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -52.613710
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.600750
+Temperature: 36.146737, Iteration: 183
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.795783
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])C=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.607882
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.454887
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.253281
+Temperature: 35.795895, Iteration: 184
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.324781
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.688111
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.361248
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -53.889330
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873767
+Temperature: 35.445053, Iteration: 185
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CNN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -129.320539
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567558
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.059450
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.975471
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.610841
+Temperature: 35.094211, Iteration: 186
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31ON2, Beta: -1000.000000
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.598508
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.470748
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.524247
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2247.585816
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.319017
+Temperature: 34.743368, Iteration: 187
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CON1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6.099364
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.937763
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.356391
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3213.490561
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.602283
+Temperature: 34.392526, Iteration: 188
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OC2, Beta: -1000.000000
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.700943
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.491486
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 850.836890
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.816432
+Temperature: 34.041684, Iteration: 189
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.749404
+Mutated 2 (Add atom inline): CN1NC2CC3[N+]([O-])=NOOC31O2, Beta: 9.151640
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.725569
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881291
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.874025
+Temperature: 33.690842, Iteration: 190
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(N1)O2, Beta: 0.415829
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.936414
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.352622
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.680480
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -43203.595843
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.626443
+Temperature: 33.340000, Iteration: 191
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OC2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.939712
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.062226
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.947900
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 32.989158, Iteration: 192
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.710417
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOONC31O2, Beta: 1.060206
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.720536
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.421622
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.137393
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.926938
+Temperature: 32.638316, Iteration: 193
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOONC31O2, Beta: 1.061260
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.601455
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.491486
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.404157
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.095608
+Temperature: 32.287474, Iteration: 194
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3N[N+]([O-])=NOOC31O2, Beta: 1.268005
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.694796
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.028372
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 31.936632, Iteration: 195
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.648656
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31ON2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567068
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881583
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.652545
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873982
+Temperature: 31.585789, Iteration: 196
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.698207
+Mutated 2 (Add atom inline): CN1NC2NC3[N+]([O-])=NOOC31O2, Beta: 11.322800
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.723538
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.050546
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 847.129111
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.171959
+Temperature: 31.234947, Iteration: 197
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NNC2=C3[N+]([O-])=NOOC31O2, Beta: 4.468916
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 71.592177
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.986053
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.293302
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.809172
+Temperature: 30.884105, Iteration: 198
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.752626
+Mutated 2 (Add atom inline): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.608039
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 83.689034
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.877655
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.391622
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1250.264307
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873350
+Temperature: 30.533263, Iteration: 199
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.693970
+Mutated 2 (Add atom inline): CN1NC2C=C3[N+]([O-])=NOOC31O2, Beta: 5.769591
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.977641
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.360547
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.683028
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873836
+Temperature: 30.182421, Iteration: 200
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3NC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.566854
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.106682
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -10508.979858
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.126333
+Temperature: 29.831579, Iteration: 201
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.546614
+Mutated 2 (Add atom inline): CN1NC2N=C3[N+]([O-])=NOOC31O2, Beta: 6.101823
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 72.941314
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.509865
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.396983
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -29910.178364
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.253533
+Temperature: 29.480737, Iteration: 202
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NNOOC31O2, Beta: 1.323503
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.638530
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.445037
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.950971
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.929154
+Temperature: 29.129895, Iteration: 203
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.653375
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])CNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.618180
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.918036
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.675868
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3061.671899
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.626417
+Temperature: 28.779053, Iteration: 204
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(O2)O1, Beta: 0.596615
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567367
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.681381
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173158
+Temperature: 28.428211, Iteration: 205
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.777137
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.931172
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.981261
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -56.383544
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873767
+Temperature: 28.077368, Iteration: 206
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2N=C3[N+]([O-])=NOOC31O2, Beta: 6.086730
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.604048
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.353294
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.434640
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.073429
+Temperature: 27.726526, Iteration: 207
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.722668
+Mutated 2 (Add atom inline): CN1NNC2=C3[N+]([O-])=NOOC31O2, Beta: 4.379591
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.598832
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.956317
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.432578
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 4272.882623
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.126137
+Temperature: 27.375684, Iteration: 208
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=CC3[N+]([O-])=NOOC31O2, Beta: -7.585472
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567064
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881523
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.295777
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1242.275529
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.114928
+Temperature: 27.024842, Iteration: 209
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.700859
+Mutated 2 (Add atom inline): CN1NC2=CC3[N+]([O-])=NOOC31O2, Beta: -7.543983
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567268
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.973284
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.700291
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 26.674000, Iteration: 210
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](N[O-])=NOOC31O2, Beta: 0.550427
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.687480
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.622274
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.132488
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.283039
+Temperature: 26.323158, Iteration: 211
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 87.471611
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.543250
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.391572
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254389
+Temperature: 25.972316, Iteration: 212
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.603960
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.752122
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881848
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.673139
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -4684.726846
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.581471
+Temperature: 25.621474, Iteration: 213
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.246575
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.618746
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.050142
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.298447
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.301157
+Temperature: 25.270632, Iteration: 214
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.695848
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.598142
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.421773
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.676256
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 836.198590
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.926238
+Temperature: 24.919789, Iteration: 215
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.626699
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](N[O-])=NOOC31O2, Beta: 0.550421
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.980507
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 7.004815
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.524899
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 24.568947, Iteration: 216
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.637660
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOCC31O2, Beta: -1.893503
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 84.059263
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.485495
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.643334
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.105049
+Temperature: 24.218105, Iteration: 217
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.695556
+Mutated 2 (Add atom inline): CN1NC2OC3[N+]([O-])=NOOC31O2, Beta: 7.737063
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.930349
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.458980
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.439046
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -11782.800437
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.125052
+Temperature: 23.867263, Iteration: 218
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](C[O-])=NOOC31O2, Beta: 0.363885
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.982291
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881097
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.973198
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.252903
+Temperature: 23.516421, Iteration: 219
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.810450
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOCC31O2, Beta: -1.896576
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.621992
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.355420
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.679111
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.604619
+Temperature: 23.165579, Iteration: 220
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOONC31O2, Beta: 1.060943
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567182
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.954203
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492168
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.800974
+Temperature: 22.814737, Iteration: 221
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NNOOC31O2, Beta: 1.328245
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.726332
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.395041
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172865
+Temperature: 22.463895, Iteration: 222
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOCOC31O2, Beta: 3.021878
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.978579
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.062836
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.392081
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.818709
+Temperature: 22.113053, Iteration: 223
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.730138
+Mutated 2 (Add atom inline): CN1NOC2=C3[N+]([O-])=NOOC31O2, Beta: 4.828089
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.714627
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881448
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492116
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1896.743056
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.601966
+Temperature: 21.762211, Iteration: 224
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.786579
+Mutated 2 (Add atom inline): CN1NC2=CC3[N+]([O-])=NOOC31O2, Beta: -7.595484
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.602150
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.944946
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3014.204258
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.873925
+Temperature: 21.411368, Iteration: 225
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])ONOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.980854
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.370672
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.913156
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1953.931370
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.173488
+Temperature: 21.060526, Iteration: 226
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NNC2=C3[N+]([O-])=NOOC31O2, Beta: 4.394837
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.673653
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.072768
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.917398
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2356.559710
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.294278
+Temperature: 20.709684, Iteration: 227
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOCOC31O2, Beta: 3.036974
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.929527
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.506217
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -53.076583
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 791.919062
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.929148
+Temperature: 20.358842, Iteration: 228
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.680747
+Mutated 2 (Add atom inline): CN1NC2=CC3[N+]([O-])=NOOC31O2, Beta: -7.609889
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.935972
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.134624
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.925131
+Temperature: 20.008000, Iteration: 229
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.762298
+Mutated 2 (Add atom inline): CN1ONC2=C3[N+]([O-])=NOOC31O2, Beta: -60.697473
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567624
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.902230
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.690491
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.813780
+Temperature: 19.657158, Iteration: 230
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.640275
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NONOC31O2, Beta: 1.295012
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.917896
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -54.988638
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 12542.978845
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.892370
+Temperature: 19.306316, Iteration: 231
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOCC31O2, Beta: -1.895403
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.734501
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.038154
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.519946
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 773.026663
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.025564
+Temperature: 18.955474, Iteration: 232
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.669669
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])NNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.614569
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.294259
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.394581
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928629
+Temperature: 18.604632, Iteration: 233
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): C=NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.977271
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.442842
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -7069.678001
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.275256
+Temperature: 18.253789, Iteration: 234
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])ONOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.604352
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.484150
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.934228
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1973.768176
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172219
+Temperature: 17.902947, Iteration: 235
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.609517
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31NO2, Beta: 2.883451
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.594519
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.507271
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.443119
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.255801
+Temperature: 17.552105, Iteration: 236
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.630870
+Mutated 2 (Add atom inline): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.617013
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.977665
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.619136
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928828
+Temperature: 17.201263, Iteration: 237
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3O[N+]([O-])=NOOC31O2, Beta: 4.665255
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.617871
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.432581
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.675088
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.171857
+Temperature: 16.850421, Iteration: 238
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.673889
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.495741
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.617645
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.035377
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.982082
+Temperature: 16.499579, Iteration: 239
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.332522
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.728242
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.478624
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.630986
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.607120
+Temperature: 16.148737, Iteration: 240
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])NNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.976161
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.360141
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.630986
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3849.825093
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.129095
+Temperature: 15.797895, Iteration: 241
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOCC31O2, Beta: -1.894104
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567427
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.395757
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.611478
+Temperature: 15.447053, Iteration: 242
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.790364
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31NO2, Beta: 2.872308
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.603725
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.987369
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.449349
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 15.096211, Iteration: 243
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C=C3[N+]([O-])=NOOC31O2, Beta: 4.717355
+Mutated 3 (Add branch): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 76.688080
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.882059
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.954252
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 9042.614625
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.926759
+Temperature: 14.745368, Iteration: 244
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.805013
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC3(O2)O1, Beta: 0.596691
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.934549
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.433883
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1354.816643
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.932027
+Temperature: 14.394526, Iteration: 245
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.773274
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.672971
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.362782
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.383233
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3267.498644
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.607433
+Temperature: 14.043684, Iteration: 246
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](N[O-])=NOOC31O2, Beta: 0.550660
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.724976
+Mutated 4 (Delete atom): CN1NC2=C([N+](=N)[O-])C1(O)O2, Beta: 5.461668
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.697366
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.821978
+Temperature: 13.692842, Iteration: 247
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.755311
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](N[O-])=NOOC31O2, Beta: 0.550148
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.639007
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.417970
+Mutated 5 (Change atom type): CC1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.400720
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1728.143732
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.567366
+Temperature: 13.342000, Iteration: 248
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=C=NOOC31O2, Beta: 0.444304
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.626508
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.996078
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.136592
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 4092.972301
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.795959
+Temperature: 12.991158, Iteration: 249
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.706168
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.680013
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567087
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.927335
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.691237
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.032941
+Temperature: 12.640316, Iteration: 250
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2C=C3[N+]([O-])=NOOC31O2, Beta: 5.800461
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.670666
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.602275
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.634280
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -12542.978845
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.127319
+Temperature: 12.289474, Iteration: 251
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.245416
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.625636
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.038617
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=COOC31O2, Beta: 2.678446
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.962440
+Temperature: 11.938632, Iteration: 252
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.758537
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=CNOOC31O2, Beta: 0.542829
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.677678
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.920516
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492131
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.254716
+Temperature: 11.587789, Iteration: 253
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.806095
+Mutated 2 (Add atom inline): CN1NC2NC3[N+]([O-])=NOOC31O2, Beta: 11.250469
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.723368
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.522017
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 955.362301
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.976462
+Temperature: 11.236947, Iteration: 254
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.810988
+Mutated 2 (Add atom inline): CN1N=CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.253076
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.728540
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.624222
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.171819
+Temperature: 10.886105, Iteration: 255
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])C=NOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.735821
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.905870
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -51.838709
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1712.917842
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172339
+Temperature: 10.535263, Iteration: 256
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.710417
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NNOOC31O2, Beta: 1.321596
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.417700
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -50.779094
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1318.075249
+Mutated 7 (Delete ring): CN1NC2=CC1(OON=[N+][O-])O2, Beta: -1000.000000
+Temperature: 10.184421, Iteration: 257
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.742975
+Mutated 2 (Add atom inline): CN1NC2C=C3[N+]([O-])=NOOC31O2, Beta: 5.774062
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.981548
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.962673
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -54.609425
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.578330
+Temperature: 9.833579, Iteration: 258
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.738158
+Mutated 2 (Add atom inline): CN1NC2=C3CC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1N(N)C2=C3[N+]([O-])=NOOC31O2, Beta: 4.713500
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.320838
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.809700
+Temperature: 9.482737, Iteration: 259
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 35348.398483
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=C=NOOC31O2, Beta: 0.444388
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567015
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.902230
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -50.860644
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.928709
+Temperature: 9.131895, Iteration: 260
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NNOOC31O2, Beta: 1.325160
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567200
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.622826
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.442151
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.548053
+Temperature: 8.781053, Iteration: 261
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31ON2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.937763
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.688852
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.995595
+Temperature: 8.430211, Iteration: 262
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3O[N+]([O-])=NOOC31O2, Beta: 4.698221
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.936549
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.624937
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6374.301792
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.526100
+Temperature: 8.079368, Iteration: 263
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31OO2, Beta: 8.639256
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.605999
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.335962
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31C2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 632.247767
+Mutated 7 (Delete ring): CN1NCOC12C[N+]([O-])=NOO2, Beta: 5.596592
+Temperature: 7.728526, Iteration: 264
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+](C[O-])=NOOC31O2, Beta: 0.364291
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567708
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.884888
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.610944
+Temperature: 7.377684, Iteration: 265
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3CC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.601175
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.520573
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492378
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 4469.337727
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 10.142611
+Temperature: 7.026842, Iteration: 266
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOCC31O2, Beta: -1.889053
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.932552
+Mutated 4 (Delete atom): CN1NC2=C([N+][O-])C1(OO)O2, Beta: 3.061345
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.910738
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.311705
+Temperature: 6.676000, Iteration: 267
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3OC1(OON=[N+]3[O-])O2, Beta: -1000.000000
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.601570
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 8.099552
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.410061
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1934.489324
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.628197
+Temperature: 6.325158, Iteration: 268
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.603812
+Mutated 2 (Add atom inline): CN1CC23OON=[N+]([O-])C2=C(N1)O3, Beta: 1.774343
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.318226
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.298494
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2541.387772
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.253407
+Temperature: 5.974316, Iteration: 269
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.850333
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])CNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567561
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.967975
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -54.281855
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 3381.151195
+Mutated 7 (Delete ring): CNNC1=C2C(OON=[N+]2[O-])O1, Beta: 5.321522
+Temperature: 5.623474, Iteration: 270
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.669148
+Mutated 2 (Add atom inline): C=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 90.895153
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.596048
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.297242
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.813856
+Temperature: 5.272632, Iteration: 271
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.639751
+Mutated 2 (Add atom inline): CN1NC2=C3N[N+]([O-])=NOOC31O2, Beta: 1.268928
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.618248
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.964238
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NONC31O2, Beta: 4.636601
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1994.012161
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NO)C1(O)O2, Beta: 0.927588
+Temperature: 4.921789, Iteration: 272
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.704045
+Mutated 2 (Add atom inline): CN1NC2=C3C[N+]([O-])=NOOC31O2, Beta: 4.108153
+Mutated 3 (Add branch): O=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1000.000000
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.432789
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([N-])=NOOC31O2, Beta: -1000.000000
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1896.743056
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.801049
+Temperature: 4.570947, Iteration: 273
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NCOOC31O2, Beta: 1.849397
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.595767
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.292112
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.296748
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1743.642733
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.938507
+Temperature: 4.220105, Iteration: 274
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3N[N+]([O-])=NOOC31O2, Beta: 1.263797
+Mutated 3 (Add branch): CN1NC2=C3[N+]([O-])=[N+]([O-])OOC31O2, Beta: 0.567561
+Mutated 4 (Delete atom): CNC12OC=C1[N+]([O-])=NOO2, Beta: 7.947338
+Mutated 5 (Change atom type): NN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.517138
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.258680
+Temperature: 3.869263, Iteration: 275
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.361033
+Mutated 3 (Add branch): N=CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.981969
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.377577
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOOC31N2, Beta: -1000.000000
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.111990
+Temperature: 3.518421, Iteration: 276
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1CNC2=C3[N+]([O-])=NOOC31O2, Beta: -26.968289
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.614490
+Mutated 4 (Delete atom): CN1NC2=C3[N+]=NOOC31O2, Beta: 9.456533
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NCOC31O2, Beta: -2.686694
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2797.355097
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.621914
+Temperature: 3.167579, Iteration: 277
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1ONC2=C3[N+]([O-])=NOOC31O2, Beta: -71.098396
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.935298
+Mutated 4 (Delete atom): CN(N)C1(O)C[N+]([O-])=NOO1, Beta: 6.968770
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.890662
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC(O)=C2C1OON=[N+]2[O-], Beta: 2.804202
+Temperature: 2.816737, Iteration: 278
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.679688
+Mutated 2 (Add atom inline): CN1NOC2=C3[N+]([O-])=NOOC31O2, Beta: 4.838751
+Mutated 3 (Add branch): [O-][N+]1=NOOC23OC(=C12)NN3CO, Beta: 3.692140
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.624352
+Mutated 5 (Change atom type): CN1CC2=C3[N+]([O-])=NOOC31O2, Beta: 1.295577
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC=C2[N+]([O-])=NOOC21O, Beta: 4.106514
+Temperature: 2.465895, Iteration: 279
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1C=NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.946752
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.744689
+Mutated 4 (Delete atom): [O-][N+]1=NOOC23NNC(=C12)O3, Beta: 1.357969
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.942791
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2968.186007
+Mutated 7 (Delete ring): CN(N)C12OC=C1[N+]([O-])=NOO2, Beta: 9.984895
+Temperature: 2.115053, Iteration: 280
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1N=NC2=C3[N+]([O-])=NOOC31O2, Beta: 3.351936
+Mutated 3 (Add branch): CCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -3.606155
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.624287
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NOCC31O2, Beta: -53.299901
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2356.559710
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.259793
+Temperature: 1.764211, Iteration: 281
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOCOC31O2, Beta: 3.022033
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.725442
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881924
+Mutated 5 (Change atom type): [C-][N+]1=NOOC23OC(=C12)NN3C, Beta: 0.492214
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+](=N)[O-])C1(OO)O2, Beta: 0.874168
+Temperature: 1.413368, Iteration: 282
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOOC31O2, Beta: 16.507783
+Mutated 3 (Add branch): C[N+]1([O-])NC2=C3[N+]([O-])=NOOC31O2, Beta: 1.594056
+Mutated 4 (Delete atom): CNNC(O)=C[N+]([O-])=NOO, Beta: 0.881054
+Mutated 5 (Change atom type): CN1OC2=C3[N+]([O-])=NOOC31O2, Beta: 3.430039
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CN1NC2=C([N+]([O-])=NOO)C1O2, Beta: 1.172453
+Temperature: 1.062526, Iteration: 283
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])=NOOC31CO2, Beta: 10.643211
+Mutated 3 (Add branch): NCN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 2.724764
+Mutated 4 (Delete atom): CN1NC=C2C1OON=[N+]2[O-], Beta: 1.622145
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.133818
+Mutated 6 (Add ring): [O-][N+]1=NOOC23OC(=C12)N1CN13, Beta: -1000.000000
+Mutated 7 (Delete ring): CNC12OON=[N+]([O-])C1=C(N)O2, Beta: 2.602309
+Temperature: 0.711684, Iteration: 284
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2=C3[N+]([O-])NOOC31O2, Beta: -1000.000000
+Mutated 2 (Add atom inline): CN1NC2=C3[N+]([O-])CNOOC31O2, Beta: -1000.000000
+Mutated 3 (Add branch): CN1C2=C3[N+]([O-])=NOOC3(O2)N1C, Beta: 1.931402
+Mutated 4 (Delete atom): CN1NC2=C([N+]([O-])=NO)C1O2, Beta: 13.160165
+Mutated 5 (Change atom type): [O-][N+]1=NOOC23OC(=C12)NN3O, Beta: 4.968449
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6171.940971
+Mutated 7 (Delete ring): CN1NC2=C([N+][O-])C1(OON)O2, Beta: 2.257593
+Temperature: 0.360842, Iteration: 285
+Best molecule: CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: 43203.595843
+Mutated 1 (Change bond type): CN1NC2OC13OON=[N+]([O-])C23, Beta: 8.696088
+Mutated 2 (Add atom inline): CON1NC2=C3[N+]([O-])=NOOC31O2, Beta: 6.195512
+Mutated 3 (Add branch): CN1N(O)C2=C3[N+]([O-])=NOOC31O2, Beta: 1.618732
+Mutated 4 (Delete atom): CN1NCOC1OON=[N+][O-], Beta: -1000.000000
+Mutated 5 (Change atom type): CN1NC2=C3[N+]([O-])=NNOC31O2, Beta: 1.134381
+Mutated 6 (Add ring): CN1NC2=C3[N+]([O-])=NOOC31O2, Beta: -1467.291488
+Mutated 7 (Delete ring): CN1NC2=C[N+]([O-])=NOOC1O2, Beta: 2.937462

@@ -1,0 +1,2567 @@
+Temperature: 100.000000, Iteration: 0
+Best molecule: CC=C=C=CN, Beta: -6.732692
+Temperature: 100.000000, Iteration: 1
+Best molecule: CC=C=C=CN, Beta: -6.732692
+Mutated 1 (Change bond type): CC=C=C=C=N, Beta: -1.704910
+Mutated 2 (Add atom inline): CCOC=C=CN, Beta: -3.836753
+Mutated 3 (Add branch): CC(C)=C=C=CN, Beta: -2.456338
+Mutated 4 (Delete atom): C=C=C=CN, Beta: -0.734177
+Mutated 5 (Change atom type): NC=C=C=CN, Beta: -3.339353
+Mutated 6 (Add ring): C1=C=CN=CC=1, Beta: -1000.000000
+Mutated 7 (Delete ring): CC=C=C=CN, Beta: -6.765413
+Temperature: 99.649158, Iteration: 2
+Best molecule: C=C=C=CN, Beta: -0.734177
+Mutated 1 (Change bond type): C=C=C=C=N, Beta: -0.649951
+Mutated 2 (Add atom inline): C=COC=CN, Beta: 1.008531
+Mutated 3 (Add branch): NC=C=C=C=O, Beta: -0.703630
+Mutated 4 (Delete atom): C=C=C=CN, Beta: -0.733943
+Mutated 5 (Change atom type): NC=C=C=O, Beta: -9.444941
+Mutated 6 (Add ring): NC1=C=C=C1, Beta: 0.000000
+Mutated 7 (Delete ring): C=C=C=CN, Beta: -0.733058
+Temperature: 99.298316, Iteration: 3
+Best molecule: C=COC=CN, Beta: 1.008531
+Mutated 1 (Change bond type): C=COCCN, Beta: 4.264398
+Mutated 2 (Add atom inline): C=COCC=CN, Beta: 4.083652
+Mutated 3 (Add branch): NC=COC=CN, Beta: 5.023596
+Mutated 4 (Delete atom): COC=CN, Beta: 2.496285
+Mutated 5 (Change atom type): NC=COC=O, Beta: 1.078412
+Mutated 6 (Add ring): C=C1NC=CO1, Beta: -105.188413
+Mutated 7 (Delete ring): C=COC=CN, Beta: 1.006942
+Temperature: 98.947474, Iteration: 4
+Best molecule: NC=COC=CN, Beta: 5.023596
+Mutated 1 (Change bond type): NC=COCCN, Beta: 3.296304
+Mutated 2 (Add atom inline): N=NC=COC=CN, Beta: 0.164925
+Mutated 3 (Add branch): NC=COC=CNO, Beta: 2.051936
+Mutated 4 (Delete atom): C=COC=CN, Beta: 1.006699
+Mutated 5 (Change atom type): CC=COC=CN, Beta: 0.885893
+Mutated 6 (Add ring): NC=COC1=CN1, Beta: 0.474300
+Mutated 7 (Delete ring): NC=COC=CN, Beta: 5.028153
+Temperature: 98.596632, Iteration: 5
+Best molecule: NC=COC=CN, Beta: 5.028153
+Mutated 1 (Change bond type): NC=COCCN, Beta: 3.283257
+Mutated 2 (Add atom inline): NC=COC=NCN, Beta: 1.063104
+Mutated 3 (Add branch): CC(=CN)OC=CN, Beta: 2.327158
+Mutated 4 (Delete atom): C=COC=CN, Beta: 1.006870
+Mutated 5 (Change atom type): NC=COC=NN, Beta: 3.100337
+Mutated 6 (Add ring): NC=COC1=CN1, Beta: 0.473065
+Mutated 7 (Delete ring): NC=COC=CN, Beta: 4.999683
+Temperature: 98.245789, Iteration: 6
+Best molecule: NC=COC=CN, Beta: 5.028153
+Mutated 1 (Change bond type): NC=COCCN, Beta: 3.294814
+Mutated 2 (Add atom inline): NC=COCNCN, Beta: 3.300780
+Mutated 3 (Add branch): NC=COC(O)=CN, Beta: 0.482284
+Mutated 4 (Delete atom): C=COC=CN, Beta: 1.009864
+Mutated 5 (Change atom type): NC=CON=CN, Beta: 0.897952
+Mutated 6 (Add ring): NC=COC1=CN1, Beta: 0.472995
+Mutated 7 (Delete ring): NC=COC=CN, Beta: 5.016860
+Temperature: 97.894947, Iteration: 7
+Best molecule: NC=COC=CN, Beta: 5.028153
+Mutated 1 (Change bond type): N=C=COC=CN, Beta: 0.850217
+Mutated 2 (Add atom inline): NC=C=COC=CN, Beta: 0.334714
+Mutated 3 (Add branch): C=NC=COC=CN, Beta: 1.707859
+Mutated 4 (Delete atom): C=COC=CN, Beta: 1.008077
+Mutated 5 (Change atom type): NC=COC=CO, Beta: 0.417103
+Mutated 6 (Add ring): Nc1cocc1N, Beta: 8.088711
+Mutated 7 (Delete ring): NC=COC=CN, Beta: 4.986355
+Temperature: 97.544105, Iteration: 8
+Best molecule: Nc1cocc1N, Beta: 8.088711
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.159293
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.824774
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.987024
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.465105
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.894097
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.790319
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.029365
+Temperature: 97.193263, Iteration: 9
+Best molecule: Nc1cocc1N, Beta: 8.159293
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.064869
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.311531
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.561461
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.516236
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.730105
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572918
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.133241
+Temperature: 96.842421, Iteration: 10
+Best molecule: Nc1cocc1N, Beta: 8.159293
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.273062
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.097681
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.042825
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.464028
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.734746
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.347592
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.092256
+Temperature: 96.491579, Iteration: 11
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.257801
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.443024
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.036799
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.471314
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.377582
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.770243
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.041602
+Temperature: 96.140737, Iteration: 12
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.089597
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.246554
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.094754
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.484342
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.853747
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572392
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.065309
+Temperature: 95.789895, Iteration: 13
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.183246
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.044337
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.989321
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.486251
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.859990
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.743653
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.212358
+Temperature: 95.439053, Iteration: 14
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.033295
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.063542
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.042091
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.469152
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379253
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.352644
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.097135
+Temperature: 95.088211, Iteration: 15
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.137721
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.827356
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.996790
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.475916
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.733929
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.759238
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.252727
+Temperature: 94.737368, Iteration: 16
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.171930
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.441692
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.991472
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.422523
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.724792
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.777453
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.229742
+Temperature: 94.386526, Iteration: 17
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.187328
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.766978
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196440
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.477816
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.895958
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.835236
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.040727
+Temperature: 94.035684, Iteration: 18
+Best molecule: Nc1cocc1N, Beta: 8.273062
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.052560
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.090583
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.077178
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.464566
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.841143
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572092
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.275841
+Temperature: 93.684842, Iteration: 19
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.982511
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.834212
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281395
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.507655
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.375777
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.573570
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.009342
+Temperature: 93.334000, Iteration: 20
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.124296
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.268809
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.083242
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.493357
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.724792
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.360293
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.129213
+Temperature: 92.983158, Iteration: 21
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.083844
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.441885
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.533010
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.441289
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381946
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.724466
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.135033
+Temperature: 92.632316, Iteration: 22
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.126084
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352829
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.206979
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.469422
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.746989
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.354962
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.118938
+Temperature: 92.281474, Iteration: 23
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.982943
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.059792
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196609
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.445014
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.939437
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.361288
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.140411
+Temperature: 91.930632, Iteration: 24
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.134585
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.956191
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.973732
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.443683
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.383688
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.755798
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.077215
+Temperature: 91.579789, Iteration: 25
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.110915
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353621
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.077850
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.491714
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.731983
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570350
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.049050
+Temperature: 91.228947, Iteration: 26
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.163351
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.269772
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.662608
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.475375
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.749844
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.358181
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.043792
+Temperature: 90.878105, Iteration: 27
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.023261
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.065227
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.058048
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.459187
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.869914
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570387
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.087826
+Temperature: 90.527263, Iteration: 28
+Best molecule: Nc1cocc1N, Beta: 8.275841
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.288842
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.834624
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.093469
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.427525
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.844534
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.773817
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.095360
+Temperature: 90.176421, Iteration: 29
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.173738
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.077257
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196462
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.461068
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.744898
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572105
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.085171
+Temperature: 89.825579, Iteration: 30
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.098910
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.218804
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196483
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.454896
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.386338
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.794325
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.128766
+Temperature: 89.474737, Iteration: 31
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.104242
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.758446
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.572653
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.434393
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380708
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.196234
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.002401
+Temperature: 89.123895, Iteration: 32
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.064869
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.233602
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281456
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.466183
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382146
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.776960
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.981218
+Temperature: 88.773053, Iteration: 33
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.127872
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.750664
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.213310
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.478630
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.377622
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.784870
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.162900
+Temperature: 88.422211, Iteration: 34
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.058270
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.080425
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.587686
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.466183
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.386640
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570027
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.224244
+Temperature: 88.071368, Iteration: 35
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.103797
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.267714
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.217002
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.473749
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.736129
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.713786
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.216012
+Temperature: 87.720526, Iteration: 36
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.185059
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.263664
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280908
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453290
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.907593
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.748190
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.098022
+Temperature: 87.369684, Iteration: 37
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.124296
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.045697
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.082487
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.449548
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.840148
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.785089
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.211901
+Temperature: 87.018842, Iteration: 38
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.068391
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.826377
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.227465
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.430692
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382566
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.825688
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.006738
+Temperature: 86.668000, Iteration: 39
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.148492
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.074827
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.082527
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.464566
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379193
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.796562
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.043354
+Temperature: 86.317158, Iteration: 40
+Best molecule: Nc1cocc1N, Beta: 8.288842
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.322461
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.048701
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.563363
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.471314
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.721366
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.765095
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.161096
+Temperature: 85.966316, Iteration: 41
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.085171
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.058675
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.043103
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.474833
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.889352
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.768053
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.144001
+Temperature: 85.615474, Iteration: 42
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.159743
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.273676
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.659782
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.468342
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379253
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.750727
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.101575
+Temperature: 85.264632, Iteration: 43
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.208252
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.039715
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.558736
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.460531
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.905717
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.789458
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.118492
+Temperature: 84.913789, Iteration: 44
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.046421
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.049384
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.550914
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.438899
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379731
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.801506
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.132345
+Temperature: 84.562947, Iteration: 45
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.228367
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352795
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196282
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.448213
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.384931
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.770024
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.086941
+Temperature: 84.212105, Iteration: 46
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.102019
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.761687
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196106
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.417274
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.744202
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.788320
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.121616
+Temperature: 83.861263, Iteration: 47
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.177811
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.827629
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281257
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.487069
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.743823
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.797078
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.054756
+Temperature: 83.510421, Iteration: 48
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.166961
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.248314
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280789
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.450349
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.885032
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.763763
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.154340
+Temperature: 83.159579, Iteration: 49
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.239380
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.056306
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.557498
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.471854
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380050
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.760321
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.185059
+Temperature: 82.808737, Iteration: 50
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.191412
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.067039
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.219161
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.497744
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.383748
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.748462
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.077215
+Temperature: 82.457895, Iteration: 51
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.048173
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.041962
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196386
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.448213
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379572
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.807942
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.063548
+Temperature: 82.107053, Iteration: 52
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.098022
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.443231
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.081733
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.459456
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.726478
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.771847
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.074566
+Temperature: 81.756211, Iteration: 53
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.165156
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.086467
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.573736
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.492809
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.742180
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.768566
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.121170
+Temperature: 81.405368, Iteration: 54
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.147145
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352652
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281062
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.437042
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380908
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.751864
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.310757
+Temperature: 81.054526, Iteration: 55
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.015426
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.097209
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.043380
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.418847
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.916171
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.214959
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.259648
+Temperature: 80.703684, Iteration: 56
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.198686
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353339
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.656117
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.482980
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.383547
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.574664
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.086056
+Temperature: 80.352842, Iteration: 57
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.145797
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.768067
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.024861
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453290
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.731419
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.751680
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.097135
+Temperature: 80.002000, Iteration: 58
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.012383
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.060272
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.224739
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.462144
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.747685
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.766064
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.063548
+Temperature: 79.651158, Iteration: 59
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.944309
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.828718
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.218602
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.475916
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.373009
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.355535
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.199597
+Temperature: 79.300316, Iteration: 60
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.019776
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.045697
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.217143
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.454896
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.798763
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.571556
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.038977
+Temperature: 78.949474, Iteration: 61
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.273524
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.223420
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.656631
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.480261
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.885443
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.201378
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.930663
+Temperature: 78.598632, Iteration: 62
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.257340
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.756393
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.657077
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.458919
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.881340
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.814438
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.241219
+Temperature: 78.247789, Iteration: 63
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.067951
+Mutated 2 (Add atom inline): NC1=COC=C(N)O1, Beta: 3.983812
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.017886
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.466183
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.740664
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.734327
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.158842
+Temperature: 77.896947, Iteration: 64
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.108689
+Mutated 2 (Add atom inline): NC1=COC=C(N)O1, Beta: 4.004756
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.082169
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.446612
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381327
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570809
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.056952
+Temperature: 77.546105, Iteration: 65
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.149391
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.591465
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281056
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.428316
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.813139
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.779520
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.124296
+Temperature: 77.195263, Iteration: 66
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.044668
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.283979
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196699
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.464836
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.872559
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.776009
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.053877
+Temperature: 76.844421, Iteration: 67
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.987690
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.104162
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.217564
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.465914
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.884827
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.783550
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.134585
+Temperature: 76.493579, Iteration: 68
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.123849
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.233816
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.567173
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.450883
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.742749
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.683591
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.067071
+Temperature: 76.142737, Iteration: 69
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.165156
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.209989
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196198
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.467262
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.727103
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.776887
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.208708
+Temperature: 75.791895, Iteration: 70
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.188689
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.591699
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.000966
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.475104
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.813139
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.574097
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.119384
+Temperature: 75.441053, Iteration: 71
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.029801
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.094393
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.514887
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.470502
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.732862
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.765507
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.092256
+Temperature: 75.090211, Iteration: 72
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.232493
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.836134
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.534314
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.448747
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.867274
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.820782
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.124296
+Temperature: 74.739368, Iteration: 73
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.999801
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.046259
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.660454
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.455968
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.745025
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.771483
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.230201
+Temperature: 74.388526, Iteration: 74
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.969163
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.275476
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.211835
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.455968
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.837165
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.215746
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.078539
+Temperature: 74.037684, Iteration: 75
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.068391
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442008
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.087544
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.425681
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.739088
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.739009
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.001534
+Temperature: 73.686842, Iteration: 76
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.215098
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442543
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.991616
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.485432
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.745277
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.356617
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.122063
+Temperature: 73.336000, Iteration: 77
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.054316
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.959160
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.213495
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.459187
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.376352
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.823958
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.066190
+Temperature: 72.985158, Iteration: 78
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.017600
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.038670
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.010065
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.464836
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.386620
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.785163
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.078539
+Temperature: 72.634316, Iteration: 79
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.112251
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.953953
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.053083
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.425681
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.944776
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.790157
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.944309
+Temperature: 72.283474, Iteration: 80
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.178716
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.074827
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196376
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.462144
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.911980
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.362090
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.085613
+Temperature: 71.932632, Iteration: 81
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.291168
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.964360
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.083799
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.437838
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.738899
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.776302
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.025440
+Temperature: 71.581789, Iteration: 82
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.072801
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.834926
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.010065
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.477816
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379970
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.743862
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.132345
+Temperature: 71.230947, Iteration: 83
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.128318
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.274445
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.220243
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.481076
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380449
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.832913
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.095804
+Temperature: 70.880105, Iteration: 84
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.021083
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.007865
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.670986
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.436512
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.385755
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.722217
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.093586
+Temperature: 70.529263, Iteration: 85
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.264730
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.956690
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.535291
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.446346
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.725604
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.352707
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.029365
+Temperature: 70.178421, Iteration: 86
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.937481
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.593291
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.216393
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.487342
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.743381
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.794866
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.095360
+Temperature: 69.827579, Iteration: 87
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.119384
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.351899
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.566593
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.518457
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.864235
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.182082
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.205061
+Temperature: 69.476737, Iteration: 88
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.111806
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.101488
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196255
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.437308
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.880521
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.755488
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.065309
+Temperature: 69.125895, Iteration: 89
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.072801
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.952483
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.110998
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.454896
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.867072
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572305
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.144899
+Temperature: 68.775053, Iteration: 90
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.122956
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.050067
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.083759
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.451151
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.742495
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.785015
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.983374
+Temperature: 68.424211, Iteration: 91
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.108689
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352890
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.215809
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.444481
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.740917
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.355439
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.157942
+Temperature: 68.073368, Iteration: 92
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.076331
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.062897
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.092266
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.485432
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.866666
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.355121
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.197322
+Temperature: 67.722526, Iteration: 93
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.066190
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.586710
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.956259
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.442885
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.731608
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.763790
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.116709
+Temperature: 67.371684, Iteration: 94
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.140411
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353077
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.559645
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.493631
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.747623
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.180194
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.154790
+Temperature: 67.020842, Iteration: 95
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.995039
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.049756
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.045573
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.421209
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.826875
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.770461
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.027620
+Temperature: 66.670000, Iteration: 96
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.167864
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.768170
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.047059
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.420159
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382426
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.359813
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.273062
+Temperature: 66.319158, Iteration: 97
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.086056
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.832788
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.664498
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.489526
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.934967
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.773663
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.214184
+Temperature: 65.968316, Iteration: 98
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.092700
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442291
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196580
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.510972
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379233
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.749817
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.139514
+Temperature: 65.617474, Iteration: 99
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.001534
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.226084
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.220243
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.459725
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.738016
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.735553
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.200051
+Temperature: 65.266632, Iteration: 100
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.094473
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.038425
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.091905
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.483797
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.374233
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.571120
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.089154
+Temperature: 64.915789, Iteration: 101
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.080306
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442201
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.017595
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.441555
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.871541
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.766912
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.982511
+Temperature: 64.564947, Iteration: 102
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.104686
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.840485
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.220123
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.485705
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.743064
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.798627
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.024132
+Temperature: 64.214105, Iteration: 103
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.190504
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.272142
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.195969
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.469422
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.881545
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.354834
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.071477
+Temperature: 63.863263, Iteration: 104
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.168316
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.767148
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.074336
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.477544
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.821757
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.831760
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.077215
+Temperature: 63.512421, Iteration: 105
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.146696
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.821822
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.215454
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.462951
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382286
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.571756
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.185059
+Temperature: 63.161579, Iteration: 106
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.032421
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442672
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.978725
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.465375
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381887
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.789717
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.003268
+Temperature: 62.810737, Iteration: 107
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.197322
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.089902
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.223844
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.447412
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.870320
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.356904
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.205516
+Temperature: 62.459895, Iteration: 108
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.148942
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.085949
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.214735
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.445546
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.731796
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.780399
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.959717
+Temperature: 62.109053, Iteration: 109
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.176000
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.828800
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.222876
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.458382
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.385232
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.768624
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.193684
+Temperature: 61.758211, Iteration: 110
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.058709
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.270505
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.218453
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.448213
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.749780
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.352993
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.166510
+Temperature: 61.407368, Iteration: 111
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.173286
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442669
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196231
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.486796
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.889352
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.781740
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.176905
+Temperature: 61.056526, Iteration: 112
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.044668
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352523
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281293
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.409952
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.721864
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.759808
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.998501
+Temperature: 60.705684, Iteration: 113
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.250884
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.271254
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.226112
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.464297
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378298
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.736013
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.117155
+Temperature: 60.354842, Iteration: 114
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.065749
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.777312
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.667002
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.494452
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.386097
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.806670
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.150740
+Temperature: 60.004000, Iteration: 115
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.114925
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.767148
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.039992
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.456505
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.854149
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.566933
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.028929
+Temperature: 59.653158, Iteration: 116
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.058270
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.212972
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280797
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.433070
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378337
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.832341
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.052560
+Temperature: 59.302316, Iteration: 117
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.090040
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.835667
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.553709
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.445546
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.919953
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.767605
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.017600
+Temperature: 58.951474, Iteration: 118
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.986827
+Mutated 2 (Add atom inline): NC1=COC=C(N)O1, Beta: 4.004636
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.050906
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.440492
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.385072
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.191768
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.139962
+Temperature: 58.600632, Iteration: 119
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.114479
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.081058
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.215131
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.487888
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381607
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.220706
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.178716
+Temperature: 58.249789, Iteration: 120
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.063548
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.758075
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.059238
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.440226
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.825101
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.770388
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.162449
+Temperature: 57.898947, Iteration: 121
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.069273
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.829754
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.652026
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.461068
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382967
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.571270
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.183246
+Temperature: 57.548105, Iteration: 122
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.063988
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353089
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.568085
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.446346
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.746544
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.235070
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.127872
+Temperature: 57.197263, Iteration: 123
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.003268
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.055918
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.982301
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.465914
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.743759
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.792321
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.059588
+Temperature: 56.846421, Iteration: 124
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.075448
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352295
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281154
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.490893
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.851538
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.751680
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.125190
+Temperature: 56.495579, Iteration: 125
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.126531
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.050119
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.216253
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.449281
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382746
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.575951
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.284658
+Temperature: 56.144737, Iteration: 126
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.069273
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.756393
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.049911
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.435188
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.866463
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.786884
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.065309
+Temperature: 55.793895, Iteration: 127
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.071918
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.050875
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.555686
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.461875
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.889352
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.772430
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.308887
+Temperature: 55.443053, Iteration: 128
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.140859
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.963331
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281482
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.442353
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.900103
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.573909
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.103797
+Temperature: 55.092211, Iteration: 129
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.207796
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.120475
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.645683
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.479445
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380668
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.830310
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.030674
+Temperature: 54.741368, Iteration: 130
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.110470
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.832349
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196164
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.448480
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.914703
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.774323
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.199142
+Temperature: 54.390526, Iteration: 131
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.163802
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.601271
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.053987
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.452755
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.844733
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.793183
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.227909
+Temperature: 54.039684, Iteration: 132
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.079864
+Mutated 2 (Add atom inline): NC1=COC=C(N)O1, Beta: 3.992830
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.058612
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.429899
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.926489
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.573394
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.083844
+Temperature: 53.688842, Iteration: 133
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.076331
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.197894
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281224
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.474833
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.854953
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.180083
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.174191
+Temperature: 53.338000, Iteration: 134
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.156140
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.833527
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.022390
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.448747
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.854350
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570511
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.103797
+Temperature: 52.987158, Iteration: 135
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.207340
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.959379
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.039623
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.452487
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381287
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.797479
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.167864
+Temperature: 52.636316, Iteration: 136
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.189596
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.961958
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196282
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.463758
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380908
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.791776
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.170574
+Temperature: 52.285474, Iteration: 137
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.171930
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.771651
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280929
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.476459
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.739719
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.769076
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.316370
+Temperature: 51.934632, Iteration: 138
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.144450
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.322075
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.654982
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.460799
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.736569
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.784311
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.030238
+Temperature: 51.583789, Iteration: 139
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.044230
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.833281
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.036094
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.426735
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.858377
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.739163
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.103353
+Temperature: 51.232947, Iteration: 140
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.015426
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.044059
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.990036
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.461337
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.843935
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.776889
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.261034
+Temperature: 50.882105, Iteration: 141
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.155240
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.089297
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196128
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.449281
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.736695
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.203057
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.030238
+Temperature: 50.531263, Iteration: 142
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.081190
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.765822
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.947779
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.459456
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379233
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.790606
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.115371
+Temperature: 50.180421, Iteration: 143
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.189143
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.210345
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.229036
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.489800
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379870
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.749598
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.245358
+Temperature: 49.829579, Iteration: 144
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.142206
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.588993
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280916
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.430428
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.374747
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572430
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.216926
+Temperature: 49.478737, Iteration: 145
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.121616
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.828718
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.984015
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.431484
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378019
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.784137
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.224702
+Temperature: 49.127895, Iteration: 146
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.168768
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.053302
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.551324
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.466992
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.730731
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.760947
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.134585
+Temperature: 48.777053, Iteration: 147
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.104242
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.270855
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280487
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.438369
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.889558
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.750361
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.077655
+Temperature: 48.426211, Iteration: 148
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.087826
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442182
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281020
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.460531
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.909681
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.873645
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.078539
+Temperature: 48.075368, Iteration: 149
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.177811
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.594676
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.023115
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.440758
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.727352
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.733768
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.248581
+Temperature: 47.724526, Iteration: 150
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.176905
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.251974
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.049818
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453022
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.747115
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.814438
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.159293
+Temperature: 47.373684, Iteration: 151
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.988122
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.079642
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.214525
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.466453
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.839551
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570921
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.994606
+Temperature: 47.022842, Iteration: 152
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.003268
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.839243
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196394
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.487615
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.741800
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.783477
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.991579
+Temperature: 46.672000, Iteration: 153
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.180527
+Mutated 2 (Add atom inline): NC1=COC=C(N)O1, Beta: 3.993065
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.657881
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.488707
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.374471
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.771758
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.135481
+Temperature: 46.321158, Iteration: 154
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.984669
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.266482
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.224118
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.468342
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.740791
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.816177
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.966156
+Temperature: 45.970316, Iteration: 155
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.039852
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442623
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.219537
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.428052
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381067
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.775571
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.056952
+Temperature: 45.619474, Iteration: 156
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.053438
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.825399
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.220479
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.428316
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378874
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.358309
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.094473
+Temperature: 45.268632, Iteration: 157
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.110470
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.589955
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.985735
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.469152
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380648
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.725870
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.135929
+Temperature: 44.917789, Iteration: 158
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.163351
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353176
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.087305
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453022
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.817246
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.752456
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.119384
+Temperature: 44.566947, Iteration: 159
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.085613
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.586555
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.081257
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.480532
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.729291
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.794795
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.965297
+Temperature: 44.216105, Iteration: 160
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.153439
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352400
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.218808
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.450349
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.744329
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.569260
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.052560
+Temperature: 43.865263, Iteration: 161
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.063988
+Mutated 2 (Add atom inline): NC1=COC=C(N)O1, Beta: 4.012788
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.017595
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.444481
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382967
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.573319
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.112697
+Temperature: 43.514421, Iteration: 162
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.163351
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.823392
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.048670
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.509036
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.886471
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.756115
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.063548
+Temperature: 43.163579, Iteration: 163
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.264268
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.754379
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.226979
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.469692
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.753214
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.759775
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.058709
+Temperature: 42.812737, Iteration: 164
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.134137
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.237924
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.041807
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.456773
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.739529
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570375
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.043354
+Temperature: 42.461895, Iteration: 165
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.106020
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.043226
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281232
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.475646
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.729354
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.203057
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.032421
+Temperature: 42.111053, Iteration: 166
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.064869
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.761416
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.042270
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.450349
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.841741
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.170107
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.275378
+Temperature: 41.760211, Iteration: 167
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.184606
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353085
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.082766
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.434393
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382226
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.758384
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.135481
+Temperature: 41.409368, Iteration: 168
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.122509
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.058888
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196496
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.424891
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.741737
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572692
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.103797
+Temperature: 41.058526, Iteration: 169
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.242597
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.759761
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.054673
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.471584
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.376868
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.169001
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.120723
+Temperature: 40.707684, Iteration: 170
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.177811
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.587980
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.217072
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.501591
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.713427
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.791702
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.107799
+Temperature: 40.356842, Iteration: 171
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.267968
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352472
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.554615
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453825
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.376609
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.794866
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.045106
+Temperature: 40.006000, Iteration: 172
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.215555
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.084277
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.535371
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.482164
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.806516
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.351536
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.091370
+Temperature: 39.655158, Iteration: 173
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.152539
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.133742
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.043442
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.455432
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.879907
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.221608
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.025004
+Temperature: 39.304316, Iteration: 174
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.270283
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.829700
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.529680
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.473208
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.374154
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.779008
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.093143
+Temperature: 38.953474, Iteration: 175
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.055634
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.267835
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.949473
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.455700
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380888
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.788031
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.105131
+Temperature: 38.602632, Iteration: 176
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.066190
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.599189
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280346
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.461875
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.383547
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.572918
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.230659
+Temperature: 38.251789, Iteration: 177
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.115817
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.274584
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.983158
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.439695
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.853948
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.842479
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.221955
+Temperature: 37.900947, Iteration: 178
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.979493
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.824504
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.657188
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453022
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.734244
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.775745
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.028929
+Temperature: 37.550105, Iteration: 179
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.056073
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352034
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.210339
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.504070
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378139
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.747649
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.999801
+Temperature: 37.199263, Iteration: 180
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.070154
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.191204
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196875
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.431749
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.375123
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.746412
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.083401
+Temperature: 36.848421, Iteration: 181
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.079864
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.218234
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.047151
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.441289
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.873984
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.731231
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.126531
+Temperature: 36.497579, Iteration: 182
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.232952
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.831639
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.053426
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.483797
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.736632
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570399
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.128318
+Temperature: 36.146737, Iteration: 183
+Best molecule: Nc1cocc1N, Beta: 8.322461
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.407234
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.210060
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.218676
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.497469
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.734557
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.816453
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.993741
+Temperature: 35.795895, Iteration: 184
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.049927
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.592351
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.659491
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.469152
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.724231
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.574349
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.221955
+Temperature: 35.445053, Iteration: 185
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.056073
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.593134
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.049198
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.458382
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.841940
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.779813
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.236624
+Temperature: 35.094211, Iteration: 186
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.122509
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.306274
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196079
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.445813
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.879702
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.745063
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.004569
+Temperature: 34.743368, Iteration: 187
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.922158
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.077732
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.076665
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.477544
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.736443
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.762745
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.073683
+Temperature: 34.392526, Iteration: 188
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.043792
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.443008
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.014550
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.498293
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379054
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.569606
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.160194
+Temperature: 34.041684, Iteration: 189
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.192775
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.441930
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.927406
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.477273
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.383648
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.778312
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.228367
+Temperature: 33.690842, Iteration: 190
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.081632
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.768680
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.227204
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.449281
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.877453
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.810981
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.174643
+Temperature: 33.340000, Iteration: 191
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.133689
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442646
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.216159
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.480532
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.375104
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.749030
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.237542
+Temperature: 32.989158, Iteration: 192
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.018905
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.233082
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.562619
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.472396
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378695
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.203953
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.115371
+Temperature: 32.638316, Iteration: 193
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.206884
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.233387
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.578736
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.451685
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.761390
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.349136
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.994174
+Temperature: 32.287474, Iteration: 194
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.124743
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.219161
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.526030
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.497195
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.741800
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.750437
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.090927
+Temperature: 31.936632, Iteration: 195
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.261034
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.766740
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.555849
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.474562
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.727415
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.852060
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.249962
+Temperature: 31.585789, Iteration: 196
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.223786
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.071321
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.090102
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.449815
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.857570
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.756577
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.029365
+Temperature: 31.234947, Iteration: 197
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.973464
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.758951
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.659133
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.476188
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.745658
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.742628
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.145348
+Temperature: 30.884105, Iteration: 198
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.117155
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.219802
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.075086
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.455700
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.732046
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.197573
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.143103
+Temperature: 30.533263, Iteration: 199
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.044230
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.189517
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.519965
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.437042
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.882159
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.192324
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.035043
+Temperature: 30.182421, Iteration: 200
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.078539
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.206305
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.219302
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.451952
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.827466
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.573394
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.096692
+Temperature: 29.831579, Iteration: 201
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.991579
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.090783
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280288
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.448747
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.944135
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.784884
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.061788
+Temperature: 29.480737, Iteration: 202
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.122063
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.597245
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.226120
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.451151
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379830
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.752663
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.210988
+Temperature: 29.129895, Iteration: 203
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.034606
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.595829
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281105
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.409169
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.888940
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.353977
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.229742
+Temperature: 28.779053, Iteration: 204
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.130108
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.098335
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.042486
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.490073
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.747242
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.808392
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.103353
+Temperature: 28.428211, Iteration: 205
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.986827
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.352806
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.653135
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.442087
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380608
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.866629
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.130108
+Temperature: 28.077368, Iteration: 206
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.129213
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.241868
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281134
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.430956
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.748574
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.780693
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.147145
+Temperature: 27.726526, Iteration: 207
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.216469
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.827220
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196520
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453290
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.751052
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.831180
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.145797
+Temperature: 27.375684, Iteration: 208
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.090927
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.267501
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.568252
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.429635
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.895958
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.721652
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.203694
+Temperature: 27.024842, Iteration: 209
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.068391
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.826268
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280635
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.447146
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.385373
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.795310
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.119384
+Temperature: 26.674000, Iteration: 210
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.009776
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442436
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.042332
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.473749
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.738772
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.786925
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.053438
+Temperature: 26.323158, Iteration: 211
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.037227
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.755587
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280888
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.487888
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.828453
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.751011
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.223328
+Temperature: 25.972316, Iteration: 212
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.064869
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.034334
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.011221
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.459456
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.867477
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.788884
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.028929
+Temperature: 25.621474, Iteration: 213
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.237542
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.067429
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.018178
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.421472
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.376451
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.730665
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.021083
+Temperature: 25.270632, Iteration: 214
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.037665
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.837398
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.019338
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.437838
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380788
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.744504
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.002401
+Temperature: 24.919789, Iteration: 215
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.201872
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.080944
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281033
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.433070
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.730229
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.758107
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.051244
+Temperature: 24.568947, Iteration: 216
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.031548
+Mutated 2 (Add atom inline): NCc1cocc1N, Beta: 5.107801
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196545
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.458650
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.740160
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.789864
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.140411
+Temperature: 24.218105, Iteration: 217
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.097578
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.595357
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.078879
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.425154
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.729416
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.352835
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.973464
+Temperature: 23.867263, Iteration: 218
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.206428
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.094152
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.538061
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.482164
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.728353
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.766627
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.097578
+Temperature: 23.516421, Iteration: 219
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.114034
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.257933
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280916
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.445280
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379970
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.776603
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.144001
+Temperature: 23.165579, Iteration: 220
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.208708
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.271545
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281304
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.423312
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.721741
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.768130
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.103797
+Temperature: 22.814737, Iteration: 221
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.231117
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353123
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280861
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.498293
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380449
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.776449
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.158842
+Temperature: 22.463895, Iteration: 222
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.158393
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.957174
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196604
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.455164
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.374629
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570362
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.142206
+Temperature: 22.113053, Iteration: 223
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.182339
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.835804
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.650563
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.462144
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.824707
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.570300
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.063548
+Temperature: 21.762211, Iteration: 224
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.114925
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.227370
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.998085
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453022
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.749717
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.781570
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.052121
+Temperature: 21.411368, Iteration: 225
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.129660
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442995
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 5.003995
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.439961
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.746798
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.756111
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.149841
+Temperature: 21.060526, Iteration: 226
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.102019
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.056516
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.222057
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.434923
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.865652
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.831470
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.080306
+Temperature: 20.709684, Iteration: 227
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.145797
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.224225
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.978299
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.472396
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381887
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.751757
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.042916
+Temperature: 20.358842, Iteration: 228
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.144001
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.287956
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281099
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.508760
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.874596
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.353786
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.026312
+Temperature: 20.008000, Iteration: 229
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.128318
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442475
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.089303
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.473478
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378139
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.713505
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.990282
+Temperature: 19.657158, Iteration: 230
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.187328
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.441664
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.550338
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.436512
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.908846
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.363120
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.179621
+Temperature: 19.306316, Iteration: 231
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.195957
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.823744
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.658484
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.511525
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382827
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.204515
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.234328
+Temperature: 18.955474, Iteration: 232
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.079864
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.765516
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.656675
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.499392
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.880726
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.203282
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.162900
+Temperature: 18.604632, Iteration: 233
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.958431
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.265314
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.978582
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.428316
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.754043
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.780837
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.234328
+Temperature: 18.253789, Iteration: 234
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.070154
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.271254
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.225969
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.472125
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.726602
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.775644
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.032421
+Temperature: 17.902947, Iteration: 235
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.982943
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.208217
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281064
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.440226
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.380948
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.573833
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.940039
+Temperature: 17.552105, Iteration: 236
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.166961
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.593761
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.563693
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.418585
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.740664
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.780984
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.960575
+Temperature: 17.201263, Iteration: 237
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.019341
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.099912
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.218997
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.456505
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.888116
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.798333
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.231575
+Temperature: 16.850421, Iteration: 238
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.078980
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.830791
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281232
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.426208
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.722736
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.568223
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.146247
+Temperature: 16.499579, Iteration: 239
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.058270
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.956971
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196074
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.501041
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378457
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.716313
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.130108
+Temperature: 16.148737, Iteration: 240
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.160194
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.829754
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.221092
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.514571
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378496
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.775425
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.091370
+Temperature: 15.797895, Iteration: 241
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.126084
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.588811
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196409
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.408387
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.905092
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.773160
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.249041
+Temperature: 15.447053, Iteration: 242
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.078097
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.830164
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.078642
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.487615
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.748891
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.697822
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.155690
+Temperature: 15.096211, Iteration: 243
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.162449
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.269115
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.665557
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.477816
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381247
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.792609
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.007172
+Temperature: 14.745368, Iteration: 244
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.250423
+Mutated 2 (Add atom inline): NC1=COC=C(N)O1, Beta: 3.984046
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.663328
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.481076
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.729354
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.349451
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.075890
+Temperature: 14.394526, Iteration: 245
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.082074
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.268475
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196899
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.478359
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.377682
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.699777
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.135033
+Temperature: 14.043684, Iteration: 246
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.043792
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.087225
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.973446
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.473478
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.385634
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.791187
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.045544
+Temperature: 13.692842, Iteration: 247
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.178264
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.755923
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.979867
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.482708
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.905301
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.788247
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.191412
+Temperature: 13.342000, Iteration: 248
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.968733
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.047492
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.652869
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.442885
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378417
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.206645
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.155240
+Temperature: 12.991158, Iteration: 249
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.976909
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442830
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280901
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.397213
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.384751
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.754984
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.144450
+Temperature: 12.640316, Iteration: 250
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.958431
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.053208
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.048515
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.474562
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.370055
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.790671
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.110915
+Temperature: 12.289474, Iteration: 251
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.151190
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.443893
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.046966
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.443417
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.867072
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.798917
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.101131
+Temperature: 11.938632, Iteration: 252
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.049927
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.071464
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.658037
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.475646
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381707
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.172543
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.272598
+Temperature: 11.587789, Iteration: 253
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.247199
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.443066
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.226373
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.441821
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.383588
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.569606
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.095360
+Temperature: 11.236947, Iteration: 254
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.165156
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353051
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.559562
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.452755
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.381487
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.749739
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.052560
+Temperature: 10.886105, Iteration: 255
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.059588
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.079592
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.544599
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.477001
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382026
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.574273
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.154340
+Temperature: 10.535263, Iteration: 256
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.164253
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.825453
+Mutated 3 (Add branch): Cc1occ(N)c1N, Beta: 1.217424
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.440492
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.732736
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.360293
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.083844
+Temperature: 10.184421, Iteration: 257
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.083401
+Mutated 2 (Add atom inline): NC1=C=COC=C1N, Beta: 0.353132
+Mutated 3 (Add branch): Nc1cocc1NO, Beta: 4.976585
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.481076
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382366
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.354135
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.203694
+Temperature: 9.833579, Iteration: 258
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.141757
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.588344
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.037627
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.420685
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.382786
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.683591
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.128318
+Temperature: 9.482737, Iteration: 259
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.025004
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.956955
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.222019
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.453290
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.879907
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.355057
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.985532
+Temperature: 9.131895, Iteration: 260
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.176453
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442507
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.655182
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.434923
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.720869
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.766600
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.143552
+Temperature: 8.781053, Iteration: 261
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.156591
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.274922
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281278
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.471854
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.377503
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.353691
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.948583
+Temperature: 8.430211, Iteration: 262
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.124296
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.109569
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.043257
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.473478
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.916381
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.573268
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.071918
+Temperature: 8.079368, Iteration: 263
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 7.982080
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.256168
+Mutated 3 (Add branch): Nc1coc(O)c1N, Beta: 1.655471
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.484342
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.863223
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.204961
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.112251
+Temperature: 7.728526, Iteration: 264
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.140411
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.045573
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.074257
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.429108
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379771
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.702856
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.222871
+Temperature: 7.377684, Iteration: 265
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.078980
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.764226
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.569329
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.458382
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.379074
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.768274
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.221498
+Temperature: 7.026842, Iteration: 266
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.144899
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.272142
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280429
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.430692
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.383247
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.189650
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.145797
+Temperature: 6.676000, Iteration: 267
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.007172
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.762059
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.225522
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.466183
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.384931
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.362509
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.073683
+Temperature: 6.325158, Iteration: 268
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.116709
+Mutated 2 (Add atom inline): N=Cc1cocc1N, Beta: 4.215104
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196381
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.450616
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.375064
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.873938
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.210988
+Temperature: 5.974316, Iteration: 269
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.228825
+Mutated 2 (Add atom inline): N=Nc1cocc1N, Beta: 2.076387
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.281855
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.462682
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.873169
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.356490
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.133689
+Temperature: 5.623474, Iteration: 270
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.075007
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.758109
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280423
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.406563
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.872559
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.814840
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.251806
+Temperature: 5.272632, Iteration: 271
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.206428
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.284391
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280908
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.473478
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.869101
+Mutated 6 (Add ring): c1occ2[nH][nH]c12, Beta: 2.726760
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 7.966156
+Temperature: 4.921789, Iteration: 272
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.161096
+Mutated 2 (Add atom inline): NC1=COOC=C1N, Beta: 1.760774
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.586093
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.462951
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.889764
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.778715
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.071477
+Temperature: 4.570947, Iteration: 273
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.035480
+Mutated 2 (Add atom inline): NC1=C=NOC=C1N, Beta: 0.442895
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280878
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.463220
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.851940
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.187421
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.198686
+Temperature: 4.220105, Iteration: 274
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.091813
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.833143
+Mutated 3 (Add branch): Nc1cocc1N=O, Beta: 0.280435
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.464836
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.740537
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.226576
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.114479
+Temperature: 3.869263, Iteration: 275
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.152539
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.827302
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.087944
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.465105
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.854551
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.349608
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.134585
+Temperature: 3.518421, Iteration: 276
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.177358
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.599058
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.228251
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.439164
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.857772
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.786044
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.242137
+Temperature: 3.167579, Iteration: 277
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.209164
+Mutated 2 (Add atom inline): NNc1cocc1N, Beta: 2.042332
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.558240
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.474833
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.738709
+Mutated 6 (Add ring): Nc1c2coc1N2, Beta: -4.785823
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.210077
+Temperature: 2.816737, Iteration: 278
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.250884
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.244802
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.075520
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.458650
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.801084
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.766064
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.117155
+Temperature: 2.465895, Iteration: 279
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.136825
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.956425
+Mutated 3 (Add branch): N=Nc1cocc1N, Beta: 2.089663
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.481076
+Mutated 5 (Change atom type): Cc1cocc1N, Beta: 1.378616
+Mutated 6 (Add ring): Nc1c(N)c2oc1=2, Beta: 0.569817
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.014121
+Temperature: 2.115053, Iteration: 280
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.101131
+Mutated 2 (Add atom inline): NC1=CNOC=C1N, Beta: 1.591881
+Mutated 3 (Add branch): C=Nc1cocc1N, Beta: 0.196213
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.455968
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.906759
+Mutated 6 (Add ring): Nc1c2oc-2c1N, Beta: 5.182416
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.096692
+Temperature: 1.764211, Iteration: 281
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.072359
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.830600
+Mutated 3 (Add branch): CNc1cocc1N, Beta: 3.559645
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.497469
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.744075
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.806382
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.130108
+Temperature: 1.413368, Iteration: 282
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.155240
+Mutated 2 (Add atom inline): NC1=COC=C(N)C1, Beta: 0.957954
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.203168
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.472666
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.735374
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.717995
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.161998
+Temperature: 1.062526, Iteration: 283
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.156140
+Mutated 2 (Add atom inline): NC1=CCOC=C1N, Beta: 1.264783
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.051652
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.481892
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.865450
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.752717
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.118938
+Temperature: 0.711684, Iteration: 284
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.159293
+Mutated 2 (Add atom inline): NOc1cocc1N, Beta: 1.824856
+Mutated 3 (Add branch): NNc1cocc1N, Beta: 2.044461
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.468342
+Mutated 5 (Change atom type): Nc1conc1N, Beta: 2.735122
+Mutated 6 (Add ring): Nc1coc2c1N2, Beta: 7.728412
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.238461
+Temperature: 0.360842, Iteration: 285
+Best molecule: Nc1cocc1N, Beta: 8.407234
+Mutated 1 (Change bond type): Nc1cocc1N, Beta: 8.113142
+Mutated 2 (Add atom inline): NC1=COC=C(N)N1, Beta: 5.291113
+Mutated 3 (Add branch): Nc1coc(N)c1N, Beta: 2.212646
+Mutated 4 (Delete atom): Nc1ccoc1, Beta: 3.441023
+Mutated 5 (Change atom type): Nc1cocc1O, Beta: 2.836172
+Mutated 6 (Add ring): c1occ2c1N=N2, Beta: 1.357958
+Mutated 7 (Delete ring): Nc1cocc1N, Beta: 8.170574

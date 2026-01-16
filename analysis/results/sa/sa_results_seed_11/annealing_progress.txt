@@ -1,0 +1,2567 @@
+Temperature: 100.000000, Iteration: 0
+Best molecule: N=C(O)CN=CN, Beta: 3.425855
+Temperature: 100.000000, Iteration: 1
+Best molecule: N=C(O)CN=CN, Beta: 3.425855
+Mutated 1 (Change bond type): NC=NCC(N)O, Beta: 3.711701
+Mutated 2 (Add atom inline): N=C(O)CN=NCN, Beta: 4.021271
+Mutated 3 (Add branch): NC=NCC(O)=NN, Beta: 2.645040
+Mutated 4 (Delete atom): N=CCN=CN, Beta: 1.849892
+Mutated 5 (Change atom type): N=C(O)CN=CO, Beta: 5.335948
+Mutated 6 (Add ring): OC1=NNC=NC1, Beta: 1.787506
+Mutated 7 (Delete ring): N=C(O)CN=CN, Beta: 3.403770
+Temperature: 99.649158, Iteration: 2
+Best molecule: N=C(O)CN=CO, Beta: 5.335948
+Mutated 1 (Change bond type): N=C(O)CNCO, Beta: 4.199524
+Mutated 2 (Add atom inline): N=C(O)C=CN=CO, Beta: 1.148797
+Mutated 3 (Add branch): N=C(O)C(=O)N=CO, Beta: 5.669675
+Mutated 4 (Delete atom): N=CCN=CO, Beta: 6.102460
+Mutated 5 (Change atom type): N=C(O)CN=NO, Beta: 5.506245
+Mutated 6 (Add ring): OC=NCC1=NO1, Beta: 8.367507
+Mutated 7 (Delete ring): N=C(O)CN=CO, Beta: 5.326280
+Temperature: 99.298316, Iteration: 3
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): OCNCC1=NO1, Beta: 3.045536
+Mutated 2 (Add atom inline): OC=NOCC1=NO1, Beta: 1.413099
+Mutated 3 (Add branch): COC=NCC1=NO1, Beta: 2.467587
+Mutated 4 (Delete atom): OC=NCCO, Beta: 4.528123
+Mutated 5 (Change atom type): ON=NCC1=NO1, Beta: 5.118280
+Mutated 6 (Add ring): OC1=NC1C1=NO1, Beta: 4.266918
+Mutated 7 (Delete ring): NOCCN=CO, Beta: 5.277214
+Temperature: 98.947474, Iteration: 4
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): NOCCNCO, Beta: 3.326868
+Mutated 2 (Add atom inline): N=COCCN=CO, Beta: 2.672799
+Mutated 3 (Add branch): N=NOCCN=CO, Beta: 4.112336
+Mutated 4 (Delete atom): OC=NCCO, Beta: 4.501543
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.375740
+Mutated 6 (Add ring): NOC1CN=CO1, Beta: 4.347138
+Mutated 7 (Delete ring): NOCCN=CO, Beta: 5.273655
+Temperature: 98.596632, Iteration: 5
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): COCCNCO, Beta: 5.131023
+Mutated 2 (Add atom inline): COCCNN=CO, Beta: 3.343804
+Mutated 3 (Add branch): COC(=N)CN=CO, Beta: 5.689215
+Mutated 4 (Delete atom): OC=NCCO, Beta: 4.524910
+Mutated 5 (Change atom type): CNCCN=CO, Beta: 7.652750
+Mutated 6 (Add ring): COCC1N=CO1, Beta: 4.241076
+Mutated 7 (Delete ring): COCCN=CO, Beta: 5.388642
+Temperature: 98.245789, Iteration: 6
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.199467
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.601461
+Mutated 3 (Add branch): CNCCN=COO, Beta: 3.305936
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.333214
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.362882
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.253226
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.634447
+Temperature: 97.894947, Iteration: 7
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.100165
+Mutated 2 (Add atom inline): CNCNCN=CO, Beta: 3.348817
+Mutated 3 (Add branch): C=C(CN=CO)NC, Beta: 4.788110
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.212973
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.428493
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.984051
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.633182
+Temperature: 97.544105, Iteration: 8
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961299
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.394964
+Mutated 3 (Add branch): C=CNCCN=CO, Beta: 1.498029
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.343800
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.305155
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.155430
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.675758
+Temperature: 97.193263, Iteration: 9
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960831
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.085590
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.782397
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.336985
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.328024
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.186181
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.666541
+Temperature: 96.842421, Iteration: 10
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.192531
+Mutated 2 (Add atom inline): CNCCN=CNO, Beta: 2.119774
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.431073
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.369535
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.358440
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.265604
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.701746
+Temperature: 96.491579, Iteration: 11
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.183659
+Mutated 2 (Add atom inline): CNCCN=C=NO, Beta: 4.071006
+Mutated 3 (Add branch): C=CNCCN=CO, Beta: 1.499079
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.327428
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.069077
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.115170
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.714668
+Temperature: 96.140737, Iteration: 12
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.789517
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.618399
+Mutated 3 (Add branch): N=CNCCN=CO, Beta: 2.018665
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.225752
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.123688
+Mutated 6 (Add ring): CN1CCN=C1O, Beta: 4.110475
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.630393
+Temperature: 95.789895, Iteration: 13
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.786486
+Mutated 2 (Add atom inline): C=CNCCN=CO, Beta: 1.503330
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.725654
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.191613
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.747829
+Mutated 6 (Add ring): CN1CCN=C1O, Beta: 4.123914
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.648676
+Temperature: 95.439053, Iteration: 14
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.115523
+Mutated 2 (Add atom inline): CNCCN=C=C=O, Beta: 5.440669
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.476370
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.197037
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.432456
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.818914
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.662959
+Temperature: 95.088211, Iteration: 15
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.221457
+Mutated 2 (Add atom inline): CNCCN=NCO, Beta: 4.135302
+Mutated 3 (Add branch): CNC(=N)CN=CO, Beta: 4.157594
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.343430
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.344182
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.943442
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.593075
+Temperature: 94.737368, Iteration: 16
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.800610
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.091771
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.734198
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.201465
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.367555
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.276225
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.690917
+Temperature: 94.386526, Iteration: 17
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.183147
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.916544
+Mutated 3 (Add branch): CNC(N)CN=CO, Beta: 4.001979
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.192616
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.212909
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.165581
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.597593
+Temperature: 94.035684, Iteration: 18
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.677536
+Mutated 2 (Add atom inline): CN=NCCN=CO, Beta: 6.073975
+Mutated 3 (Add branch): CNCC(C)N=CO, Beta: 4.225210
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.182597
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.381339
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.312314
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.654795
+Temperature: 93.684842, Iteration: 19
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960538
+Mutated 2 (Add atom inline): CNCNCN=CO, Beta: 3.331458
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.421799
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.198445
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.637600
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.328464
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.643587
+Temperature: 93.334000, Iteration: 20
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960743
+Mutated 2 (Add atom inline): CN=C=CCN=CO, Beta: 3.360633
+Mutated 3 (Add branch): N=CNCCN=CO, Beta: 2.016518
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.381272
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.980270
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.284947
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.699675
+Temperature: 92.983158, Iteration: 21
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.105211
+Mutated 2 (Add atom inline): CNOCCN=CO, Beta: 3.590336
+Mutated 3 (Add branch): CNC(N)CN=CO, Beta: 4.020162
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.386220
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.722180
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.311542
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.677552
+Temperature: 92.632316, Iteration: 22
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.962258
+Mutated 2 (Add atom inline): CNCCNCCO, Beta: 4.459792
+Mutated 3 (Add branch): CNC(=N)CN=CO, Beta: 4.159596
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.200257
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.925375
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.102401
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.618504
+Temperature: 92.281474, Iteration: 23
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.105032
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 4.988309
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.023387
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.193018
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.728977
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.313287
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.624060
+Temperature: 91.930632, Iteration: 24
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.197496
+Mutated 2 (Add atom inline): CNCC=CN=CO, Beta: 1.033437
+Mutated 3 (Add branch): CNCC(N)N=CO, Beta: 4.226305
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.371955
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.056559
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.171744
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.717779
+Temperature: 91.579789, Iteration: 25
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.690614
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.093383
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.474332
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.366191
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.923116
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.280278
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.587808
+Temperature: 91.228947, Iteration: 26
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.772906
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 4.961040
+Mutated 3 (Add branch): CNC(O)CN=CO, Beta: 5.164030
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.194825
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.797416
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.310227
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.747180
+Temperature: 90.878105, Iteration: 27
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.120062
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.910243
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.390403
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.361832
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.415171
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.309816
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.576302
+Temperature: 90.527263, Iteration: 28
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.714180
+Mutated 2 (Add atom inline): C=C=NCCN=CO, Beta: 4.490129
+Mutated 3 (Add branch): CNCCN=COC, Beta: 2.877254
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.356551
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.369028
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.161498
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.590063
+Temperature: 90.176421, Iteration: 29
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.097556
+Mutated 2 (Add atom inline): CN=NCCN=CO, Beta: 6.085809
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.943509
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.222704
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.450424
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.829741
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.666541
+Temperature: 89.825579, Iteration: 30
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.801054
+Mutated 2 (Add atom inline): CNCCN=CNO, Beta: 2.118276
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.238435
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.181597
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.446437
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.158979
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.598852
+Temperature: 89.474737, Iteration: 31
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961221
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.536416
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.242410
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.353958
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.318961
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.147034
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.659387
+Temperature: 89.123895, Iteration: 32
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.091812
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.914336
+Mutated 3 (Add branch): CNCCN=CON, Beta: 3.688956
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.210142
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.392880
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.145479
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.688343
+Temperature: 88.773053, Iteration: 33
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.201956
+Mutated 2 (Add atom inline): CNC=C=CN=CO, Beta: -0.291305
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.452100
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.176205
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.098739
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.162634
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.661428
+Temperature: 88.422211, Iteration: 34
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959671
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.085996
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.806028
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.202473
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.821010
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.834593
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.576051
+Temperature: 88.071368, Iteration: 35
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.669490
+Mutated 2 (Add atom inline): C=C=NCCN=CO, Beta: 4.471555
+Mutated 3 (Add branch): CNCCN=COO, Beta: 3.308250
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.382858
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.387143
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.152287
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.573804
+Temperature: 87.720526, Iteration: 36
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.671577
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.608814
+Mutated 3 (Add branch): CNC(N)CN=CO, Beta: 4.003073
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.192616
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.325061
+Mutated 6 (Add ring): CN1CCN=C1O, Beta: 4.135295
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.654539
+Temperature: 87.369684, Iteration: 37
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.815158
+Mutated 2 (Add atom inline): CNCNCN=CO, Beta: 3.348995
+Mutated 3 (Add branch): C=CNCCN=CO, Beta: 1.499435
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.188404
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.364931
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.167554
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.622292
+Temperature: 87.018842, Iteration: 38
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.804682
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.395180
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.038128
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.197842
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.133304
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.596412
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.652750
+Temperature: 86.668000, Iteration: 39
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.798640
+Mutated 2 (Add atom inline): CNC=C=CN=CO, Beta: -0.291604
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.470935
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.180598
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.743431
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.918792
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.601366
+Temperature: 86.317158, Iteration: 40
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.177028
+Mutated 2 (Add atom inline): CNCN=CN=CO, Beta: 1.235222
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.594711
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.193018
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.366981
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.021047
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.645372
+Temperature: 85.966316, Iteration: 41
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.783649
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.083362
+Mutated 3 (Add branch): CNCCN=COC, Beta: 2.887800
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.335970
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.197356
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.299739
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.622799
+Temperature: 85.615474, Iteration: 42
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.113800
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.088737
+Mutated 3 (Add branch): CNCCN=C(N)O, Beta: 2.872703
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.339283
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.345781
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.840845
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.651223
+Temperature: 85.264632, Iteration: 43
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.787875
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.621095
+Mutated 3 (Add branch): CNC(O)CN=CO, Beta: 5.166437
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.328712
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.709123
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.135219
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.582556
+Temperature: 84.913789, Iteration: 44
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.668685
+Mutated 2 (Add atom inline): CN=C=CCN=CO, Beta: 3.354342
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.416795
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.335053
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.159130
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.149938
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.726606
+Temperature: 84.562947, Iteration: 45
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.108464
+Mutated 2 (Add atom inline): CNC=C=CN=CO, Beta: -0.291324
+Mutated 3 (Add branch): CN(O)CCN=CO, Beta: 6.609915
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.200861
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.976824
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.832684
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.705876
+Temperature: 84.212105, Iteration: 46
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.681403
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 4.998674
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.445324
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.359235
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.317116
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.929501
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.674987
+Temperature: 83.861263, Iteration: 47
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.786234
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.388886
+Mutated 3 (Add branch): CNC(=O)CN=CO, Beta: 5.271515
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.168238
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.221481
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.303215
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.694267
+Temperature: 83.510421, Iteration: 48
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.963021
+Mutated 2 (Add atom inline): CNCN=CN=CO, Beta: 1.234276
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.442942
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.201868
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.383409
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.139107
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.661941
+Temperature: 83.159579, Iteration: 49
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960909
+Mutated 2 (Add atom inline): CNCCN=C=C=O, Beta: 5.436914
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.219591
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.176006
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.798857
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.187897
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.647407
+Temperature: 82.808737, Iteration: 50
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.670453
+Mutated 2 (Add atom inline): CN=CCCN=CO, Beta: 6.467813
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.759920
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.194424
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.593532
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.882968
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.666798
+Temperature: 82.457895, Iteration: 51
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.793123
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.915037
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.225210
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.178601
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.419629
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.055300
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.658107
+Temperature: 82.107053, Iteration: 52
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.090109
+Mutated 2 (Add atom inline): CNCCN=COO, Beta: 3.318830
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.489247
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.358770
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.362337
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.126190
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.671661
+Temperature: 81.756211, Iteration: 53
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960109
+Mutated 2 (Add atom inline): C=CNCCN=CO, Beta: 1.502136
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.752660
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.362664
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.792042
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.158869
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.617491
+Temperature: 81.405368, Iteration: 54
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.113349
+Mutated 2 (Add atom inline): CNOCCN=CO, Beta: 3.599556
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.754235
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.181398
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.358034
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.647501
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.681405
+Temperature: 81.054526, Iteration: 55
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.962346
+Mutated 2 (Add atom inline): C=CNCCN=CO, Beta: 1.495561
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.430835
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.232063
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.565044
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.952885
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.638505
+Temperature: 80.703684, Iteration: 56
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.682531
+Mutated 2 (Add atom inline): CNCN=CN=CO, Beta: 1.235082
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.282146
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.199250
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.699325
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.138026
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.652750
+Temperature: 80.352842, Iteration: 57
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.190993
+Mutated 2 (Add atom inline): CNCOCN=CO, Beta: 3.383422
+Mutated 3 (Add branch): CNC(O)CN=CO, Beta: 5.141024
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.379874
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.335999
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.167441
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.615979
+Temperature: 80.002000, Iteration: 58
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.798703
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.525816
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.573798
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.210951
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.442982
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.267735
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.682429
+Temperature: 79.651158, Iteration: 59
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.104670
+Mutated 2 (Add atom inline): C=CNCCN=CO, Beta: 1.504227
+Mutated 3 (Add branch): CNC(=N)CN=CO, Beta: 4.161409
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.389210
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.088713
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.849604
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.606399
+Temperature: 79.300316, Iteration: 60
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.697421
+Mutated 2 (Add atom inline): CNCOCN=CO, Beta: 3.371059
+Mutated 3 (Add branch): CNC(N)CN=CO, Beta: 4.014987
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.355809
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.063716
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.153611
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.711819
+Temperature: 78.949474, Iteration: 61
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.183147
+Mutated 2 (Add atom inline): CNCCNNCO, Beta: 4.014936
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.532541
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.347306
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.350727
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.834548
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.652245
+Temperature: 78.598632, Iteration: 62
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.201270
+Mutated 2 (Add atom inline): CNCCN=C=C=O, Beta: 5.435860
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.461516
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.347954
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.212997
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.946942
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.689117
+Temperature: 78.247789, Iteration: 63
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.690938
+Mutated 2 (Add atom inline): C=C=NCCN=CO, Beta: 4.464654
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.471938
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.197842
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.310670
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.082564
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.615979
+Temperature: 77.896947, Iteration: 64
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.691583
+Mutated 2 (Add atom inline): CNCC=NN=CO, Beta: 4.490614
+Mutated 3 (Add branch): CNCCN=C(N)O, Beta: 2.854135
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.213175
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.426397
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.621451
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.640288
+Temperature: 77.546105, Iteration: 65
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.661468
+Mutated 2 (Add atom inline): CNCCN=C=C=O, Beta: 5.385709
+Mutated 3 (Add branch): CNCC(N)N=CO, Beta: 4.221785
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.192215
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.057364
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.055838
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.704328
+Temperature: 77.195263, Iteration: 66
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.189711
+Mutated 2 (Add atom inline): CN=NCCN=CO, Beta: 6.034752
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.396848
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.361646
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.100608
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.888546
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.688343
+Temperature: 76.844421, Iteration: 67
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.796672
+Mutated 2 (Add atom inline): CN=NCCN=CO, Beta: 6.108044
+Mutated 3 (Add branch): CNC(=O)CN=CO, Beta: 5.281718
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.323123
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.353247
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.836493
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.666028
+Temperature: 76.493579, Iteration: 68
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.783649
+Mutated 2 (Add atom inline): CONCCN=CO, Beta: 3.667023
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.232866
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.341125
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.830082
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.252999
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.647911
+Temperature: 76.142737, Iteration: 69
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.127621
+Mutated 2 (Add atom inline): CONCCN=CO, Beta: 3.681848
+Mutated 3 (Add branch): CNC(=N)CN=CO, Beta: 4.157782
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.345090
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.367540
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.623886
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.665002
+Temperature: 75.791895, Iteration: 70
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.682693
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.395616
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.923829
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.186801
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.359953
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.106219
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.690142
+Temperature: 75.441053, Iteration: 71
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.081439
+Mutated 2 (Add atom inline): CNCCN=CN=O, Beta: 1.812407
+Mutated 3 (Add branch): C=CNCCN=CO, Beta: 1.502215
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.180198
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.143363
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.124820
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.630393
+Temperature: 75.090211, Iteration: 72
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.675440
+Mutated 2 (Add atom inline): CNCC=CN=CO, Beta: 1.034211
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.736529
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.199049
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.217676
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.165357
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.673709
+Temperature: 74.739368, Iteration: 73
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.099265
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.091689
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.588176
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.320740
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.388083
+Mutated 6 (Add ring): CN1CCN=C1O, Beta: 4.117856
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.656834
+Temperature: 74.388526, Iteration: 74
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.799530
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 5.005318
+Mutated 3 (Add branch): CNCC(C)N=CO, Beta: 4.229011
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.185799
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.806277
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.819027
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.647911
+Temperature: 74.037684, Iteration: 75
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960187
+Mutated 2 (Add atom inline): CNCOCN=CO, Beta: 3.386880
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.229582
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.207112
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.073130
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.224216
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.613708
+Temperature: 73.686842, Iteration: 76
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.180170
+Mutated 2 (Add atom inline): CNC=C=CN=CO, Beta: -0.291223
+Mutated 3 (Add branch): C=C(CN=CO)NC, Beta: 4.799144
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.200861
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.141241
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.942989
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.666028
+Temperature: 73.336000, Iteration: 77
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.796355
+Mutated 2 (Add atom inline): CNN=CCN=CO, Beta: 1.508847
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.485599
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.197842
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.125308
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.241324
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.619510
+Temperature: 72.985158, Iteration: 78
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.178130
+Mutated 2 (Add atom inline): C=NNCCN=CO, Beta: 5.115602
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.022253
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.206506
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.698686
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.886764
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.616478
+Temperature: 72.634316, Iteration: 79
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.790718
+Mutated 2 (Add atom inline): CNCCN=CN=O, Beta: 1.808643
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.402875
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.172218
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.191586
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.867939
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.568814
+Temperature: 72.283474, Iteration: 80
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.116976
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.408847
+Mutated 3 (Add branch): CN(O)CCN=CO, Beta: 6.518268
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.333675
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.110860
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.938886
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.637748
+Temperature: 71.932632, Iteration: 81
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960489
+Mutated 2 (Add atom inline): CNCCN=COO, Beta: 3.303331
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.496867
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.372976
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.794631
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.833021
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.688343
+Temperature: 71.581789, Iteration: 82
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.809211
+Mutated 2 (Add atom inline): CNCCN=C=C=O, Beta: 5.452194
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.576028
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.194022
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.349005
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.131466
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.614713
+Temperature: 71.230947, Iteration: 83
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.692233
+Mutated 2 (Add atom inline): CNCCN=C=NO, Beta: 4.070290
+Mutated 3 (Add branch): N=CNCCN=CO, Beta: 2.018832
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.173015
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.434998
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.158869
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.648421
+Temperature: 70.880105, Iteration: 84
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.797561
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.537343
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.770300
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.173813
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.438286
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.122166
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.660148
+Temperature: 70.529263, Iteration: 85
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959369
+Mutated 2 (Add atom inline): CNCCNCCO, Beta: 4.462540
+Mutated 3 (Add branch): CNCCN=C(N)O, Beta: 2.857277
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.199250
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.080855
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.209794
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.679353
+Temperature: 70.178421, Iteration: 86
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.193813
+Mutated 2 (Add atom inline): C=C=NCCN=CO, Beta: 4.469115
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.026156
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.176604
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.113854
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.836941
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.688343
+Temperature: 69.827579, Iteration: 87
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960684
+Mutated 2 (Add atom inline): CNCCN=CC=O, Beta: 1.481084
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.474951
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.356830
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.090085
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.298377
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.646131
+Temperature: 69.476737, Iteration: 88
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.729891
+Mutated 2 (Add atom inline): CNCN=CN=CO, Beta: 1.234162
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.001579
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.370374
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.808016
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.108675
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.695552
+Temperature: 69.125895, Iteration: 89
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.680598
+Mutated 2 (Add atom inline): CNCCN=C=NO, Beta: 4.061247
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.881197
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.377355
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.367029
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.305116
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.662453
+Temperature: 68.775053, Iteration: 90
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.702778
+Mutated 2 (Add atom inline): CNOCCN=CO, Beta: 3.603366
+Mutated 3 (Add branch): CNCC(N)N=CO, Beta: 4.197546
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.171820
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.804540
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.097228
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.619510
+Temperature: 68.424211, Iteration: 91
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.711735
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.524063
+Mutated 3 (Add branch): N=CNCCN=CO, Beta: 2.014828
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.333398
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.735302
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.527336
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.698647
+Temperature: 68.073368, Iteration: 92
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959564
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.608202
+Mutated 3 (Add branch): N=CNCCN=CO, Beta: 2.021008
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.351557
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.349404
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.132130
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.543722
+Temperature: 67.722526, Iteration: 93
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.796039
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 5.027248
+Mutated 3 (Add branch): CNCC(=O)N=CO, Beta: 5.117330
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.184798
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.451502
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.589778
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.663471
+Temperature: 67.371684, Iteration: 94
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.109005
+Mutated 2 (Add atom inline): CONCCN=CO, Beta: 3.686004
+Mutated 3 (Add branch): CN(O)CCN=CO, Beta: 6.528559
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.206708
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.811403
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.238418
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.637239
+Temperature: 67.020842, Iteration: 95
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.690614
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.600778
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.467531
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.297938
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.060387
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.105921
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.582800
+Temperature: 66.670000, Iteration: 96
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.808572
+Mutated 2 (Add atom inline): CN=CCCN=CO, Beta: 6.473013
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.735065
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.323031
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.409725
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.903972
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.605642
+Temperature: 66.319158, Iteration: 97
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.178556
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.085428
+Mutated 3 (Add branch): CNCC(=O)N=CO, Beta: 5.124464
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.195830
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.630613
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.870781
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.671661
+Temperature: 65.968316, Iteration: 98
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.962326
+Mutated 2 (Add atom inline): CNCOCN=CO, Beta: 3.361136
+Mutated 3 (Add branch): CNC(=O)CN=CO, Beta: 5.289987
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.198445
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.091680
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.259667
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.654283
+Temperature: 65.617474, Iteration: 99
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.188175
+Mutated 2 (Add atom inline): CNCCN=CN=O, Beta: 1.808576
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.479828
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.183998
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.306669
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.612744
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.661941
+Temperature: 65.266632, Iteration: 100
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.168473
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.395398
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.479738
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.169630
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.124451
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.576755
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.644862
+Temperature: 64.915789, Iteration: 101
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959350
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.088249
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.437473
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.208525
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.386021
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.174848
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.643332
+Temperature: 64.564947, Iteration: 102
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961837
+Mutated 2 (Add atom inline): CNCC=CN=CO, Beta: 1.034073
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.748614
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.388933
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.700290
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.249012
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.706394
+Temperature: 64.214105, Iteration: 103
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.198953
+Mutated 2 (Add atom inline): C=NNCCN=CO, Beta: 5.101793
+Mutated 3 (Add branch): CNCC(N)N=CO, Beta: 4.208733
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.201062
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.800589
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.875323
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.604380
+Temperature: 63.863263, Iteration: 104
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.791857
+Mutated 2 (Add atom inline): CNCCN=CNO, Beta: 2.122624
+Mutated 3 (Add branch): C=C(CN=CO)NC, Beta: 4.823212
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.196434
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.760248
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.329319
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.593326
+Temperature: 63.512421, Iteration: 105
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959058
+Mutated 2 (Add atom inline): CN=C=CCN=CO, Beta: 3.357771
+Mutated 3 (Add branch): OC=NCCNCO, Beta: 4.222481
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.325502
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.812080
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.304761
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.640288
+Temperature: 63.161579, Iteration: 106
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961602
+Mutated 2 (Add atom inline): CNCC=CN=CO, Beta: 1.033016
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.565352
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.217226
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.798857
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.579759
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.694777
+Temperature: 62.810737, Iteration: 107
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.675602
+Mutated 2 (Add atom inline): CN=C=CCN=CO, Beta: 3.322612
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.435812
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.204892
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.143788
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.159978
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.651479
+Temperature: 62.459895, Iteration: 108
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961847
+Mutated 2 (Add atom inline): CNNCCN=CO, Beta: 3.863445
+Mutated 3 (Add branch): N=CNCCN=CO, Beta: 2.020409
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.200055
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.219267
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.833433
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.633182
+Temperature: 62.109053, Iteration: 109
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.095759
+Mutated 2 (Add atom inline): CNNCCN=CO, Beta: 3.863220
+Mutated 3 (Add branch): CNC(=N)CN=CO, Beta: 4.157594
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.187802
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.343096
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.288807
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.639778
+Temperature: 61.758211, Iteration: 110
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961729
+Mutated 2 (Add atom inline): C=NNCCN=CO, Beta: 5.125548
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.408191
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.354978
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.371233
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.208906
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.691691
+Temperature: 61.407368, Iteration: 111
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.204621
+Mutated 2 (Add atom inline): C=NNCCN=CO, Beta: 5.101663
+Mutated 3 (Add branch): CNC(=N)CN=CO, Beta: 4.155033
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.358956
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.090513
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.618612
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.646386
+Temperature: 61.056526, Iteration: 112
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.092708
+Mutated 2 (Add atom inline): CNN=CCN=CO, Beta: 1.511657
+Mutated 3 (Add branch): CNCCN=CON, Beta: 3.693606
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.336708
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.224493
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.832875
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.588813
+Temperature: 60.705684, Iteration: 113
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.192531
+Mutated 2 (Add atom inline): C=NNCCN=CO, Beta: 5.122667
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.466911
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.197640
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.217498
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.121366
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.677552
+Temperature: 60.354842, Iteration: 114
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.691100
+Mutated 2 (Add atom inline): CNCCN=C=NO, Beta: 4.058558
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.214823
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.356273
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.434506
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.932222
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.681920
+Temperature: 60.004000, Iteration: 115
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.635316
+Mutated 2 (Add atom inline): CNCCNOCO, Beta: 3.416504
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.858346
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.352757
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.344828
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.898348
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.642065
+Temperature: 59.653158, Iteration: 116
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.677693
+Mutated 2 (Add atom inline): CNCC=CN=CO, Beta: 1.034027
+Mutated 3 (Add branch): CNCC(C)N=CO, Beta: 4.205372
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.349982
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.917923
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.592592
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.664497
+Temperature: 59.302316, Iteration: 117
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.106023
+Mutated 2 (Add atom inline): CNCCON=CO, Beta: 3.716921
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.787028
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.181997
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.797223
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.828837
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.677044
+Temperature: 58.951474, Iteration: 118
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.667079
+Mutated 2 (Add atom inline): CNCCN=C=NO, Beta: 4.045163
+Mutated 3 (Add branch): CNCCN=COC, Beta: 2.879602
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.319001
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.226000
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.290104
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.688343
+Temperature: 58.600632, Iteration: 119
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.701804
+Mutated 2 (Add atom inline): CNCCN=NCO, Beta: 4.138247
+Mutated 3 (Add branch): CNCCN=COC, Beta: 2.878609
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.220471
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.840569
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.086631
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.657346
+Temperature: 58.249789, Iteration: 120
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.187151
+Mutated 2 (Add atom inline): CNCCN=CNO, Beta: 2.118890
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.745394
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.376701
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.730597
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.163018
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.642829
+Temperature: 57.898947, Iteration: 121
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.962072
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.527702
+Mutated 3 (Add branch): CNCCN=COO, Beta: 3.309533
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.348046
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.941004
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.304091
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.637239
+Temperature: 57.548105, Iteration: 122
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.214187
+Mutated 2 (Add atom inline): CC=NCCN=CO, Beta: 4.456897
+Mutated 3 (Add branch): CNCC(=O)N=CO, Beta: 5.099205
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.320006
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.073031
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.062568
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.740659
+Temperature: 57.197263, Iteration: 123
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.786045
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.527702
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.764410
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.372235
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.124118
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.840013
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.653005
+Temperature: 56.846421, Iteration: 124
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.784216
+Mutated 2 (Add atom inline): CNCCN=C=C=O, Beta: 5.417178
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.767612
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.361739
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.331914
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.830916
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.669100
+Temperature: 56.495579, Iteration: 125
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.093336
+Mutated 2 (Add atom inline): CC=NCCN=CO, Beta: 4.479602
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.882483
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.185198
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.362694
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.189560
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.612696
+Temperature: 56.144737, Iteration: 126
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.785099
+Mutated 2 (Add atom inline): CNOCCN=CO, Beta: 3.602168
+Mutated 3 (Add branch): CNC(O)CN=CO, Beta: 5.144749
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.153957
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.383773
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.316002
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.672174
+Temperature: 55.793895, Iteration: 127
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.193215
+Mutated 2 (Add atom inline): CNCOCN=CO, Beta: 3.372185
+Mutated 3 (Add branch): C=C(CN=CO)NC, Beta: 4.834041
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.195026
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.337758
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.168445
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.661941
+Temperature: 55.443053, Iteration: 128
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.687378
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.084820
+Mutated 3 (Add branch): CNCCN=C(N)O, Beta: 2.855016
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.166846
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.141453
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.144595
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.649442
+Temperature: 55.092211, Iteration: 129
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.666601
+Mutated 2 (Add atom inline): CNCCN=CNO, Beta: 2.120852
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.927876
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.185399
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.615735
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.837434
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.662197
+Temperature: 54.741368, Iteration: 130
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.801054
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.533551
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.598666
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.336431
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.086036
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.835487
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.675758
+Temperature: 54.390526, Iteration: 131
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.108192
+Mutated 2 (Add atom inline): CNC=NCN=CO, Beta: 2.700607
+Mutated 3 (Add branch): CNCCN=C(O)O, Beta: 3.780651
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.174211
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.298555
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.839766
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.656578
+Temperature: 54.039684, Iteration: 132
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.685761
+Mutated 2 (Add atom inline): CNCC=NN=CO, Beta: 4.469879
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.483390
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.196635
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.914319
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.878718
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.631403
+Temperature: 53.688842, Iteration: 133
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.183998
+Mutated 2 (Add atom inline): CNCCNOCO, Beta: 3.413214
+Mutated 3 (Add branch): OC=NCCNCO, Beta: 4.186281
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.156728
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.825588
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.601044
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.615472
+Temperature: 53.338000, Iteration: 134
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.191162
+Mutated 2 (Add atom inline): CNCCNNCO, Beta: 4.023684
+Mutated 3 (Add branch): C=C(CN=CO)NC, Beta: 4.811941
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.381178
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.123363
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.823307
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.656322
+Temperature: 52.987158, Iteration: 135
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961280
+Mutated 2 (Add atom inline): CONCCN=CO, Beta: 3.711224
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.397864
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.364893
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.077295
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.114569
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.676016
+Temperature: 52.636316, Iteration: 136
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.780375
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.919353
+Mutated 3 (Add branch): CNCC(=O)N=CO, Beta: 5.133746
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.388839
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.617590
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.162157
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.632165
+Temperature: 52.285474, Iteration: 137
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.803346
+Mutated 2 (Add atom inline): CNCCNOCO, Beta: 3.425449
+Mutated 3 (Add branch): C=C(CN=CO)NC, Beta: 4.821246
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.199854
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.806083
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.581761
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.632420
+Temperature: 51.934632, Iteration: 138
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.685118
+Mutated 2 (Add atom inline): CNCCN=CNO, Beta: 2.120351
+Mutated 3 (Add branch): CN(O)CCN=CO, Beta: 6.541862
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.363874
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.338599
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.290025
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.601864
+Temperature: 51.583789, Iteration: 139
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959204
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.530471
+Mutated 3 (Add branch): CNCCN=COO, Beta: 3.310716
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.183197
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.448436
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.830227
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.670120
+Temperature: 51.232947, Iteration: 140
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.125615
+Mutated 2 (Add atom inline): CNC=NCN=CO, Beta: 2.711531
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.741963
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.322020
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.958986
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.123173
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.651479
+Temperature: 50.882105, Iteration: 141
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.106023
+Mutated 2 (Add atom inline): CNC=NCN=CO, Beta: 2.716995
+Mutated 3 (Add branch): CNCC(C)N=CO, Beta: 4.228758
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.348134
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.125091
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.319043
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.639269
+Temperature: 50.531263, Iteration: 142
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.780251
+Mutated 2 (Add atom inline): CNCCNCCO, Beta: 4.496725
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.872294
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.248010
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.943503
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.142137
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.647662
+Temperature: 50.180421, Iteration: 143
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.105392
+Mutated 2 (Add atom inline): CNNCCN=CO, Beta: 3.865542
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.530695
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.339744
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.929218
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.317197
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.581301
+Temperature: 49.829579, Iteration: 144
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961211
+Mutated 2 (Add atom inline): CNCCNCCO, Beta: 4.474261
+Mutated 3 (Add branch): C=CNCCN=CO, Beta: 1.500744
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.178601
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.590539
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.161757
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.640543
+Temperature: 49.478737, Iteration: 145
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.118609
+Mutated 2 (Add atom inline): CONCCN=CO, Beta: 3.698216
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.424799
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.182397
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.344018
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.876556
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.659131
+Temperature: 49.127895, Iteration: 146
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.613653
+Mutated 2 (Add atom inline): CNCCNCCO, Beta: 4.479874
+Mutated 3 (Add branch): CNCCN=COC, Beta: 2.875635
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.197238
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.341578
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.836426
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.689626
+Temperature: 48.777053, Iteration: 147
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.703593
+Mutated 2 (Add atom inline): CNC=C=CN=CO, Beta: -0.291572
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.037201
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.365079
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.148570
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.569165
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.645876
+Temperature: 48.426211, Iteration: 148
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.098636
+Mutated 2 (Add atom inline): CNCCN=CC=O, Beta: 1.482710
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.856627
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.173015
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.120123
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.837213
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.548679
+Temperature: 48.075368, Iteration: 149
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.116250
+Mutated 2 (Add atom inline): CNCCN=NCO, Beta: 4.136985
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.023245
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.172617
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.365018
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.108402
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.647407
+Temperature: 47.724526, Iteration: 150
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960948
+Mutated 2 (Add atom inline): CNC=C=CN=CO, Beta: -0.291280
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.933282
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.350074
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.441663
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.162017
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.619764
+Temperature: 47.373684, Iteration: 151
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.666440
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.912865
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.466370
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.355530
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.716046
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.225612
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.599602
+Temperature: 47.022842, Iteration: 152
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.102596
+Mutated 2 (Add atom inline): CNCCN=CN=O, Beta: 1.811186
+Mutated 3 (Add branch): CNCC(C)N=CO, Beta: 4.213538
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.348046
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.121419
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.596009
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.704839
+Temperature: 46.672000, Iteration: 153
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.961309
+Mutated 2 (Add atom inline): CN=NCCN=CO, Beta: 6.119379
+Mutated 3 (Add branch): CNCCN=C(N)O, Beta: 2.869566
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.205699
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.064020
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.081481
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.694008
+Temperature: 46.321158, Iteration: 154
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.962522
+Mutated 2 (Add atom inline): CN=C=CCN=CO, Beta: 3.379138
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.470129
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.192416
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.702373
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.265919
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.707165
+Temperature: 45.970316, Iteration: 155
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.638014
+Mutated 2 (Add atom inline): CNCNCN=CO, Beta: 3.328114
+Mutated 3 (Add branch): CNCCN=COO, Beta: 3.321956
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.213175
+Mutated 5 (Change atom type): CNCCN=NO, Beta: 4.087793
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.809368
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.655299
+Temperature: 45.619474, Iteration: 156
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.692720
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 4.993300
+Mutated 3 (Add branch): CNC(N)CN=CO, Beta: 3.994752
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.336062
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.726388
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.886297
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.629123
+Temperature: 45.268632, Iteration: 157
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.668524
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.904874
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.596061
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.199854
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.812757
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.122899
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.669357
+Temperature: 44.917789, Iteration: 158
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959827
+Mutated 2 (Add atom inline): CNC=NCN=CO, Beta: 2.707920
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.520450
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.378752
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.850624
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.872705
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.670377
+Temperature: 44.566947, Iteration: 159
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.791920
+Mutated 2 (Add atom inline): CNCCN=CC=O, Beta: 1.484174
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.475242
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.191011
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.406701
+Mutated 6 (Add ring): CN1CCN=C1O, Beta: 4.130328
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.557365
+Temperature: 44.216105, Iteration: 160
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.650595
+Mutated 2 (Add atom inline): CNN=CCN=CO, Beta: 1.508182
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.401421
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.329448
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.367913
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.130341
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.700193
+Temperature: 43.865263, Iteration: 161
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.678339
+Mutated 2 (Add atom inline): CN=C=CCN=CO, Beta: 3.359415
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.852600
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.217023
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.434835
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.853255
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.622799
+Temperature: 43.514421, Iteration: 162
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.681241
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 4.994299
+Mutated 3 (Add branch): CNCC(C)N=CO, Beta: 4.218514
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.230229
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.214231
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.290637
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.635210
+Temperature: 43.163579, Iteration: 163
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.084117
+Mutated 2 (Add atom inline): CNCCN=C=C=O, Beta: 5.468035
+Mutated 3 (Add branch): OC=NCCNCO, Beta: 4.192031
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.367863
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.224050
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.833076
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.670377
+Temperature: 42.812737, Iteration: 164
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.714835
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.598578
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.467442
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.323945
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.753213
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.146707
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.677552
+Temperature: 42.461895, Iteration: 165
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.208839
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.608393
+Mutated 3 (Add branch): OC=NCCNCO, Beta: 4.187101
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.194825
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.819259
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.171189
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.606399
+Temperature: 42.111053, Iteration: 166
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.784910
+Mutated 2 (Add atom inline): CNC=C=CN=CO, Beta: -0.291458
+Mutated 3 (Add branch): CNCCN=C(C)O, Beta: 4.466102
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.217834
+Mutated 5 (Change atom type): CNCCN=CN, Beta: 4.197092
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.841902
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.653005
+Temperature: 41.760211, Iteration: 167
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.960948
+Mutated 2 (Add atom inline): CNCC=NN=CO, Beta: 4.474863
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.446396
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.173414
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.766806
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.151055
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.629377
+Temperature: 41.409368, Iteration: 168
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.680113
+Mutated 2 (Add atom inline): CNCC=CN=CO, Beta: 1.037072
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.497728
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.387157
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.378164
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.208906
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.574055
+Temperature: 41.058526, Iteration: 169
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.208236
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.531482
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.445920
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.360531
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.340332
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.848922
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.617997
+Temperature: 40.707684, Iteration: 170
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.793250
+Mutated 2 (Add atom inline): CN=NCCN=CO, Beta: 6.111663
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.926255
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.186801
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.803672
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.828047
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.631149
+Temperature: 40.356842, Iteration: 171
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.193472
+Mutated 2 (Add atom inline): CNCCN=CNO, Beta: 2.114959
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.426933
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.204287
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.920858
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.514559
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.690142
+Temperature: 40.006000, Iteration: 172
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959301
+Mutated 2 (Add atom inline): CNCCN=C=CO, Beta: 4.967088
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.583012
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.335878
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.453162
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.182949
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.616985
+Temperature: 39.655158, Iteration: 173
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.106657
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.088960
+Mutated 3 (Add branch): C=C(CNC)N=CO, Beta: 4.434745
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.202473
+Mutated 5 (Change atom type): CNOCN=CO, Beta: 5.354636
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.176792
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.638760
+Temperature: 39.304316, Iteration: 174
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.672545
+Mutated 2 (Add atom inline): CNCCN=CN=O, Beta: 1.808788
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.253614
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.229008
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.822374
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.163203
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.617238
+Temperature: 38.953474, Iteration: 175
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.176518
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.397646
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.588058
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.209940
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.433111
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.976029
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.666285
+Temperature: 38.602632, Iteration: 176
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.701967
+Mutated 2 (Add atom inline): C=C=NCCN=CO, Beta: 4.463438
+Mutated 3 (Add branch): CNC(C)CN=CO, Beta: 6.447673
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.189005
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.134782
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.916990
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.667817
+Temperature: 38.251789, Iteration: 177
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.786865
+Mutated 2 (Add atom inline): CNCNCN=CO, Beta: 3.325653
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.931568
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.169232
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.956019
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.916538
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.654283
+Temperature: 37.900947, Iteration: 178
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.202387
+Mutated 2 (Add atom inline): CNCCNNCO, Beta: 4.024976
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.928416
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.202876
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.442982
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.150960
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.733887
+Temperature: 37.550105, Iteration: 179
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.680756
+Mutated 2 (Add atom inline): CNCCNOCO, Beta: 3.417523
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.046437
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.193621
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.996148
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.134424
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.676530
+Temperature: 37.199263, Iteration: 180
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.212979
+Mutated 2 (Add atom inline): CNCCNC=CO, Beta: 2.673980
+Mutated 3 (Add branch): CCNCCN=CO, Beta: 4.400550
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.364520
+Mutated 5 (Change atom type): CNCCC=CO, Beta: 6.919506
+Mutated 6 (Add ring): CNC1CN=C1O, Beta: 4.812509
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.660660
+Temperature: 36.848421, Iteration: 181
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.108282
+Mutated 2 (Add atom inline): CN=NCCN=CO, Beta: 6.123011
+Mutated 3 (Add branch): C=CNCCN=CO, Beta: 1.501857
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.167045
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.601615
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.170634
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.622799
+Temperature: 36.497579, Iteration: 182
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.096747
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.526123
+Mutated 3 (Add branch): CNC(=O)CN=CO, Beta: 5.257712
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.335237
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.630380
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.129515
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.707683
+Temperature: 36.146737, Iteration: 183
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959788
+Mutated 2 (Add atom inline): CNCOCN=CO, Beta: 3.361695
+Mutated 3 (Add branch): CNCCN=COO, Beta: 3.302055
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.190007
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.368655
+Mutated 6 (Add ring): OC=NCC1=CN1, Beta: 3.169636
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.667054
+Temperature: 35.795895, Iteration: 184
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.103048
+Mutated 2 (Add atom inline): CONCCN=CO, Beta: 3.688598
+Mutated 3 (Add branch): CNCC(O)N=CO, Beta: 2.581596
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.356273
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.645778
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.159931
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.656322
+Temperature: 35.445053, Iteration: 185
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.113258
+Mutated 2 (Add atom inline): CNCCNC=CO, Beta: 2.678136
+Mutated 3 (Add branch): CNCCN=C(N)O, Beta: 2.859120
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.342234
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.349077
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.162587
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.607150
+Temperature: 35.094211, Iteration: 186
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.800737
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.911536
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.477400
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.370840
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.825686
+Mutated 6 (Add ring): C1=NCCNCO1, Beta: 5.140819
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.728163
+Temperature: 34.743368, Iteration: 187
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.657307
+Mutated 2 (Add atom inline): CNCCCN=CO, Beta: 3.524457
+Mutated 3 (Add branch): CNC(=N)CN=CO, Beta: 4.136267
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.341679
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.078169
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.206926
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.661428
+Temperature: 34.392526, Iteration: 188
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.113530
+Mutated 2 (Add atom inline): CNCCN=CN=O, Beta: 1.810205
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.864033
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.174211
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.621309
+Mutated 6 (Add ring): CNC1CN=CO1, Beta: 7.158433
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.662959
+Temperature: 34.041684, Iteration: 189
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.669490
+Mutated 2 (Add atom inline): CNCC=CN=CO, Beta: 1.033116
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.950416
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.357475
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.340761
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.831851
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.650457
+Temperature: 33.690842, Iteration: 190
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.187493
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.906441
+Mutated 3 (Add branch): CNC(O)CN=CO, Beta: 5.148764
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.195428
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.122032
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.937978
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.637748
+Temperature: 33.340000, Iteration: 191
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.182551
+Mutated 2 (Add atom inline): CNNCCN=CO, Beta: 3.878247
+Mutated 3 (Add branch): CNCC[N+]([O-])=CO, Beta: 3.742235
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.184798
+Mutated 5 (Change atom type): NNCCN=CO, Beta: 3.434179
+Mutated 6 (Add ring): CNCC1N=CO1, Beta: 6.309001
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.639014
+Temperature: 32.989158, Iteration: 192
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNC=CN=CO, Beta: 0.959749
+Mutated 2 (Add atom inline): CNC=CCN=CO, Beta: 2.094732
+Mutated 3 (Add branch): O=CNCCN=CO, Beta: 3.897510
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.176604
+Mutated 5 (Change atom type): CNNCN=CO, Beta: 3.814404
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.164671
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.676016
+Temperature: 32.638316, Iteration: 193
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.799402
+Mutated 2 (Add atom inline): CNOCCN=CO, Beta: 3.593530
+Mutated 3 (Add branch): CNCCN=COO, Beta: 3.304707
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.361089
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.686848
+Mutated 6 (Add ring): CNCC1N=C1O, Beta: 3.884981
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.615979
+Temperature: 32.287474, Iteration: 194
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.197838
+Mutated 2 (Add atom inline): CCNCCN=CO, Beta: 4.390475
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.239702
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.360903
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.711373
+Mutated 6 (Add ring): OC1=NCCNC1, Beta: 4.138980
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.650712
+Temperature: 31.936632, Iteration: 195
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.787433
+Mutated 2 (Add atom inline): C=C=NCCN=CO, Beta: 4.483578
+Mutated 3 (Add branch): CNCC(=N)N=CO, Beta: 4.464581
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.338734
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.545183
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.838756
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.708461
+Temperature: 31.585789, Iteration: 196
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.198096
+Mutated 2 (Add atom inline): C=C=NCCN=CO, Beta: 4.470233
+Mutated 3 (Add branch): CN(C)CCN=CO, Beta: 4.231854
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.365358
+Mutated 5 (Change atom type): CC=NCCNC, Beta: 5.125308
+Mutated 6 (Add ring): OC=NCC1CN1, Beta: 5.285495
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.639269
+Temperature: 31.234947, Iteration: 197
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCN=C=O, Beta: 5.681726
+Mutated 2 (Add atom inline): CN=CCCN=CO, Beta: 6.533413
+Mutated 3 (Add branch): CN(N)CCN=CO, Beta: 4.027150
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.189005
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.132880
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.841159
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.641045
+Temperature: 30.884105, Iteration: 198
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.127893
+Mutated 2 (Add atom inline): CNCOCN=CO, Beta: 3.370666
+Mutated 3 (Add branch): NCNCCN=CO, Beta: 3.869436
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.213175
+Mutated 5 (Change atom type): CNCON=CO, Beta: 4.131930
+Mutated 6 (Add ring): OC=NC1CNC1, Beta: 5.209497
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.762359
+Temperature: 30.533263, Iteration: 199
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=NCCN=CO, Beta: 4.210131
+Mutated 2 (Add atom inline): CC=NCCN=CO, Beta: 4.527016
+Mutated 3 (Add branch): N=CNCCN=CO, Beta: 2.020122
+Mutated 4 (Delete atom): NCCN=CO, Beta: 5.172617
+Mutated 5 (Change atom type): CNCNN=CO, Beta: 4.345694
+Mutated 6 (Add ring): CN1CCN=CO1, Beta: 4.913834
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.640543
+Temperature: 30.182421, Iteration: 200
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CNCCNCO, Beta: 3.793692
+Mutated 2 (Add atom inline): CNCCNN=CO, Beta: 2.604237
+Mutated 3 (Add branch): CNCC(=O)N=CO, Beta: 5.133746
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.341310
+Mutated 5 (Change atom type): OC=NCCNO, Beta: 5.761886
+Mutated 6 (Add ring): CN1CC1N=CO, Beta: 6.584563
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.622038
+Temperature: 29.831579, Iteration: 201
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CN=CCN=CO, Beta: 4.106657
+Mutated 2 (Add atom inline): CNCCN=CCO, Beta: 2.913180
+Mutated 3 (Add branch): CNCCN=CON, Beta: 3.693373
+Mutated 4 (Delete atom): C=NCCNC, Beta: 6.372328
+Mutated 5 (Change atom type): CCCCN=CO, Beta: 7.638770
+Mutated 6 (Add ring): OC=NC1=CNC1, Beta: 1.830183
+Mutated 7 (Delete ring): CNCCN=CO, Beta: 7.622292
+Temperature: 29.480737, Iteration: 202
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CCCCNCO, Beta: 4.618265
+Mutated 2 (Add atom inline): CCN=CCN=CO, Beta: 3.961945
+Mutated 3 (Add branch): CCCC[N+]([O-])=CO, Beta: 5.613984
+Mutated 4 (Delete atom): CCCN=CO, Beta: 3.401718
+Mutated 5 (Change atom type): NCCCN=CO, Beta: 5.084930
+Mutated 6 (Add ring): CC1=C(N=CO)C1, Beta: 1.796401
+Mutated 7 (Delete ring): CCCCN=CO, Beta: 7.571228
+Temperature: 29.129895, Iteration: 203
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): C=CCCN=CO, Beta: 4.838203
+Mutated 2 (Add atom inline): CCCC=NN=CO, Beta: 2.696487
+Mutated 3 (Add branch): CCCCN=CON, Beta: 5.959299
+Mutated 4 (Delete atom): CCCN=CO, Beta: 3.411378
+Mutated 5 (Change atom type): CCCNN=CO, Beta: 5.694281
+Mutated 6 (Add ring): CCC1CN=CO1, Beta: 7.394316
+Mutated 7 (Delete ring): CCCCN=CO, Beta: 7.574211
+Temperature: 28.779053, Iteration: 204
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CCCCNCO, Beta: 4.596650
+Mutated 2 (Add atom inline): COCCCN=CO, Beta: 5.372354
+Mutated 3 (Add branch): CCCC[N+]([O-])=CO, Beta: 5.632450
+Mutated 4 (Delete atom): CCCN=CO, Beta: 3.401718
+Mutated 5 (Change atom type): COCCN=CO, Beta: 5.336836
+Mutated 6 (Add ring): CCC1CN=CO1, Beta: 7.414888
+Mutated 7 (Delete ring): CCCCN=CO, Beta: 7.601615
+Temperature: 28.428211, Iteration: 205
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CCC=CN=CO, Beta: 2.112661
+Mutated 2 (Add atom inline): CCCCNNCO, Beta: 5.891427
+Mutated 3 (Add branch): CCCC(=N)N=CO, Beta: 3.086427
+Mutated 4 (Delete atom): C=NCCCC, Beta: 4.056942
+Mutated 5 (Change atom type): CCCCN=NO, Beta: 5.753347
+Mutated 6 (Add ring): OC1=NCCCC1, Beta: 4.672601
+Mutated 7 (Delete ring): CCCCN=CO, Beta: 7.557502
+Temperature: 28.077368, Iteration: 206
+Best molecule: OC=NCC1=NO1, Beta: 8.367507
+Mutated 1 (Change bond type): CCCCN=C=O, Beta: 5.216794
+Mutated 2 (Add atom inline): CCCNCN=CO, Beta: 4.257592
+Mutated 3 (Add branch): CCCC[N+]([O-])=CO, Beta: 5.587713
+Mutated 4 (Delete atom): C=NCCCC, Beta: 4.060326
+Mutated 5 (Change atom type): CCOCN=CO, Beta: 6.094629
+Mutated 6 (Add ring): OC=NC1CCC1, Beta: 10.977505
+Mutated 7 (Delete ring): CCCCN=CO, Beta: 7.633638
+Temperature: 27.726526, Iteration: 207
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): O=C=NC1CCC1, Beta: 7.023149
+Mutated 2 (Add atom inline): OOC=NC1CCC1, Beta: 4.071362
+Mutated 3 (Add branch): O=C1CCC1N=CO, Beta: 8.768582
+Mutated 4 (Delete atom): CCCN=CO, Beta: 3.410132
+Mutated 5 (Change atom type): OC=NC1CCN1, Beta: 4.856399
+Mutated 6 (Add ring): C1=NC2CC(C2)O1, Beta: 7.092085
+Mutated 7 (Delete ring): CCCCN=CO, Beta: 7.557044
+Temperature: 27.375684, Iteration: 208
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): O=C1CCC1NCO, Beta: 5.875210
+Mutated 2 (Add atom inline): O=C1CCC(N=CO)O1, Beta: 6.078919
+Mutated 3 (Add branch): C=C1CC(=O)C1N=CO, Beta: 6.986964
+Mutated 4 (Delete atom): CC(C=O)N=CO, Beta: 3.867544
+Mutated 5 (Change atom type): O=C1COC1N=CO, Beta: 3.901279
+Mutated 6 (Add ring): O=C1CC2C(O)=NC12, Beta: 3.768082
+Mutated 7 (Delete ring): CC(=O)C(C)N=CO, Beta: 6.888932
+Temperature: 27.024842, Iteration: 209
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): C=C1CC(=O)C1NCO, Beta: 4.730784
+Mutated 2 (Add atom inline): C=C1CC(=O)C1N=C=C=O, Beta: 1.759017
+Mutated 3 (Add branch): C=C1C(O)C(=O)C1N=CO, Beta: 4.105600
+Mutated 4 (Delete atom): O=C1CCC1N=CO, Beta: 8.792876
+Mutated 5 (Change atom type): C=C1CC(=O)C1N=CC, Beta: 5.476699
+Mutated 6 (Add ring): C=C1C2C(=O)C12N=CO, Beta: 10.594643
+Mutated 7 (Delete ring): C=C(C)C(C=O)N=CO, Beta: 6.700695
+Temperature: 26.674000, Iteration: 210
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): C=C1C2C(=O)C12N=C=O, Beta: 5.204431
+Mutated 2 (Add atom inline): C=C1C2C(=O)NC12N=CO, Beta: 8.540382
+Mutated 3 (Add branch): CC=C1C2C(=O)C12N=CO, Beta: 5.060115
+Mutated 4 (Delete atom): O=C1C2CC12N=CO, Beta: 2.922290
+Mutated 5 (Change atom type): C=C1C2C(=O)C12N=CN, Beta: 10.304639
+Mutated 6 (Add ring): O=C1C2C3=COC=NC132, Beta: 7.388398
+Mutated 7 (Delete ring): C=CC1(N=CO)CC1=O, Beta: 5.688179
+Temperature: 26.323158, Iteration: 211
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): C=C1C2C(O)C12N=CN, Beta: 5.454950
+Mutated 2 (Add atom inline): C=C1C2C(=O)OC12N=CN, Beta: 2.994194
+Mutated 3 (Add branch): C=C1C2C(=O)C12N=CNO, Beta: 4.326272
+Mutated 4 (Delete atom): C=C1C2CC12N=CN, Beta: 10.800164
+Mutated 5 (Change atom type): NC=NC12C(=O)C1C2=O, Beta: 2.034384
+Mutated 6 (Add ring): NC=NC12C(=O)C13C=C32, Beta: 2.087001
+Mutated 7 (Delete ring): C=C1C(C=O)C1N=CN, Beta: 5.498237
+Temperature: 25.972316, Iteration: 212
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): C=C1C2=CC12N=CN, Beta: 3.294384
+Mutated 2 (Add atom inline): C=C1C2CC12N=CC=N, Beta: 1.048450
+Mutated 3 (Add branch): NC=NC12CC1C2=CO, Beta: 1.567317
+Mutated 4 (Delete atom): C=C1CC1N=CN, Beta: 4.986221
+Mutated 5 (Change atom type): NC=NC12CC1C2=O, Beta: 3.109533
+Mutated 6 (Add ring): NC=NC12C3=CC1C32, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C1CC1(C)N=CN, Beta: 8.966743
+Temperature: 25.621474, Iteration: 213
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): C=C1CC1(C)NCN, Beta: 4.405690
+Mutated 2 (Add atom inline): C=C1CC1(CC)N=CN, Beta: 3.179747
+Mutated 3 (Add branch): C=C1CC1(C=O)N=CN, Beta: 3.913890
+Mutated 4 (Delete atom): C=C1CC1N=CN, Beta: 4.960743
+Mutated 5 (Change atom type): C=C1CC1(N)N=CN, Beta: 6.710632
+Mutated 6 (Add ring): NC=NC12CC=C1C2, Beta: 2.324202
+Mutated 7 (Delete ring): C=C(C)C(C)N=CN, Beta: 6.131319
+Temperature: 25.270632, Iteration: 214
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): C=C1CC1(N)N=C=N, Beta: 10.302513
+Mutated 2 (Add atom inline): C=C1CC1(N)NC=CN, Beta: 2.958362
+Mutated 3 (Add branch): C=C1C(O)C1(N)N=CN, Beta: 2.270886
+Mutated 4 (Delete atom): C=C1CC1N=CN, Beta: 4.959817
+Mutated 5 (Change atom type): C=C1CC1(N)N=CO, Beta: 7.063774
+Mutated 6 (Add ring): C=C1C2NC=NC12N, Beta: 5.051072
+Mutated 7 (Delete ring): C=CC(C)(N)N=CN, Beta: 4.038156
+Temperature: 24.919789, Iteration: 215
+Best molecule: OC=NC1CCC1, Beta: 10.977505
+Mutated 1 (Change bond type): C=C1CC1(N)N=CN, Beta: 6.682942
+Mutated 2 (Add atom inline): C=C1CC1(N)N=NC=N, Beta: 3.843010
+Mutated 3 (Add branch): C=C1C(N)C1(N)N=C=N, Beta: 2.937032
+Mutated 4 (Delete atom): C=CC(N)N=C=N, Beta: 5.880705
+Mutated 5 (Change atom type): C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 6 (Add ring): N=C=NC12CC1=CN2, Beta: 5.914655
+Mutated 7 (Delete ring): C=C(C)C(N)N=C=N, Beta: 6.294671
+Temperature: 24.568947, Iteration: 216
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=C1NC1(N)N=CN, Beta: 7.593380
+Mutated 2 (Add atom inline): C=C=C1NC1(N)N=C=N, Beta: 7.363066
+Mutated 3 (Add branch): C=NC1(N=C=N)NC1=C, Beta: 7.430409
+Mutated 4 (Delete atom): C=CC(N)N=C=N, Beta: 5.938697
+Mutated 5 (Change atom type): C=C1NC1(N)N=C=O, Beta: 2.819684
+Mutated 6 (Add ring): N=C=NC12N=C=C1N2, Beta: 2.788499
+Mutated 7 (Delete ring): C=CC(N)(N)N=C=N, Beta: 4.048954
+Temperature: 24.218105, Iteration: 217
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=C1NC1(N)NCN, Beta: 4.484714
+Mutated 2 (Add atom inline): CC=C1NC1(N)N=CN, Beta: 6.036540
+Mutated 3 (Add branch): C=C1NC1(N=CN)NN, Beta: 4.962006
+Mutated 4 (Delete atom): C=CC(N)N=CN, Beta: 3.185316
+Mutated 5 (Change atom type): C=C1NC1(N)C=CN, Beta: 6.606087
+Mutated 6 (Add ring): C=C1NC12N=CN=N2, Beta: 7.311082
+Mutated 7 (Delete ring): C=C(N)C(N)N=CN, Beta: 6.086803
+Temperature: 23.867263, Iteration: 218
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=C1NC12N=CNN2, Beta: 7.863609
+Mutated 2 (Add atom inline): C=C1CNC12N=CN=N2, Beta: 5.916526
+Mutated 3 (Add branch): C=C1NC12N=CN=[N+]2[O-], Beta: 5.124892
+Mutated 4 (Delete atom): C=C1NC1(N)N=N, Beta: 5.502289
+Mutated 5 (Change atom type): C=C1NC12C=NC=N2, Beta: 6.308026
+Mutated 6 (Add ring): C1=C2NC23N=NC1=N3, Beta: -1000.000000
+Mutated 7 (Delete ring): C=CC1(N)N=CN=N1, Beta: 8.535248
+Temperature: 23.516421, Iteration: 219
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=CC1(N)N=CNN1, Beta: 6.282057
+Mutated 2 (Add atom inline): C=CC1(N)N=NCON1, Beta: 4.807117
+Mutated 3 (Add branch): CC=CC1(N)N=CN=N1, Beta: 2.793574
+Mutated 4 (Delete atom): C=CC(N)N=NC, Beta: 4.584730
+Mutated 5 (Change atom type): C=CC1(N)C=CN=N1, Beta: 5.509716
+Mutated 6 (Add ring): C=C1NC12N=CN=N2, Beta: 7.362421
+Mutated 7 (Delete ring): C=CC(N)(N)N=NC, Beta: 4.603128
+Temperature: 23.165579, Iteration: 220
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=C1NC12N=NCN2, Beta: 5.119533
+Mutated 2 (Add atom inline): C=C1NC12N=NC=NN2, Beta: 3.188331
+Mutated 3 (Add branch): C=C1NC12N=NC=[N+]2[O-], Beta: 3.687310
+Mutated 4 (Delete atom): C=NC1(N)NC1=C, Beta: 6.054270
+Mutated 5 (Change atom type): C=C1NC12C=NC=N2, Beta: 6.337922
+Mutated 6 (Add ring): C1=NC2(N=N1)C1=CN12, Beta: 6.239751
+Mutated 7 (Delete ring): C=CC1(N)N=CN=N1, Beta: 8.573432
+Temperature: 22.814737, Iteration: 221
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=CC1(N)N=NCN1, Beta: 4.337544
+Mutated 2 (Add atom inline): C=CC1(N)N=NCNN1, Beta: 4.802302
+Mutated 3 (Add branch): C=CC1(N=C)N=CN=N1, Beta: 4.252708
+Mutated 4 (Delete atom): C=CC(N)(N)N=N, Beta: 4.279881
+Mutated 5 (Change atom type): C=NC1(N)N=CN=N1, Beta: 3.788698
+Mutated 6 (Add ring): C1=CC2(N=CN=N2)N1, Beta: 4.691323
+Mutated 7 (Delete ring): C=CC(N)N=NC=N, Beta: 1.387041
+Temperature: 22.463895, Iteration: 222
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=CC1(N)NNCNN1, Beta: 3.682075
+Mutated 2 (Add atom inline): C=CC1(N)NN=NCNN1, Beta: 4.139787
+Mutated 3 (Add branch): C=CC1(N)N=NC(C)NN1, Beta: 3.882721
+Mutated 4 (Delete atom): C=CC(N)(N)NNC, Beta: 5.576857
+Mutated 5 (Change atom type): C=CC1(N)N=NCNO1, Beta: 4.639137
+Mutated 6 (Add ring): C=C1N2CN=NC1(N)N2, Beta: 4.676098
+Mutated 7 (Delete ring): C=CC(N)(N=N)NNC, Beta: 4.842482
+Temperature: 22.113053, Iteration: 223
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=CC(N)(N)NN=C, Beta: 4.356272
+Mutated 2 (Add atom inline): C=CC(N)(N)NNN=C, Beta: 2.935074
+Mutated 3 (Add branch): C=CC(N)(NC)NNC, Beta: 4.855341
+Mutated 4 (Delete atom): C=CC(N)NNC, Beta: 3.745654
+Mutated 5 (Change atom type): C=CC(C)(N)NNC, Beta: 5.627672
+Mutated 6 (Add ring): C=CC1(NNC)NN1, Beta: 6.555873
+Mutated 7 (Delete ring): C=CC(N)(N)NNC, Beta: 5.646819
+Temperature: 21.762211, Iteration: 224
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=CC1(NN=C)NN1, Beta: 4.475601
+Mutated 2 (Add atom inline): C=CC1(NC=NC)NN1, Beta: 2.170174
+Mutated 3 (Add branch): C=CC1(NN(C)O)NN1, Beta: 5.880106
+Mutated 4 (Delete atom): C=CC(N)NNC, Beta: 3.761579
+Mutated 5 (Change atom type): C=CC1(NNC)NO1, Beta: 9.130840
+Mutated 6 (Add ring): CN1C=CC2(NN2)N1, Beta: 7.222793
+Mutated 7 (Delete ring): C=CC(NN)NNC, Beta: 3.899936
+Temperature: 21.411368, Iteration: 225
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): C=CC1(N=NC)NO1, Beta: 4.536594
+Mutated 2 (Add atom inline): C=CC1(NONC)NO1, Beta: 5.718521
+Mutated 3 (Add branch): C=CC1(NNC)ON1N, Beta: 5.568329
+Mutated 4 (Delete atom): C=CC1(NN)NO1, Beta: 7.134230
+Mutated 5 (Change atom type): C=CC1(NOC)NO1, Beta: 7.153154
+Mutated 6 (Add ring): C=CC1(N2CN2)NO1, Beta: 6.878214
+Mutated 7 (Delete ring): C=CC(NNC)ON, Beta: 4.404404
+Temperature: 21.060526, Iteration: 226
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): CCC1(NOC)NO1, Beta: 7.292095
+Mutated 2 (Add atom inline): C=CC1(CNOC)NO1, Beta: 6.344766
+Mutated 3 (Add branch): C=CC1(N(O)OC)NO1, Beta: 6.182816
+Mutated 4 (Delete atom): CONC1(C)NO1, Beta: 5.693110
+Mutated 5 (Change atom type): C=CC1(NOO)NO1, Beta: 7.834518
+Mutated 6 (Add ring): CON1C=CC12NO2, Beta: 3.657831
+Mutated 7 (Delete ring): C=CC(NOC)ON, Beta: 4.114865
+Temperature: 20.709684, Iteration: 227
+Best molecule: C=C1NC1(N)N=C=N, Beta: 12.455928
+Mutated 1 (Change bond type): CCC1(NOO)NO1, Beta: 5.640115
+Mutated 2 (Add atom inline): C=CC1(NNOO)NO1, Beta: 11.647174
+Mutated 3 (Add branch): CC=CC1(NOO)NO1, Beta: 3.136141
+Mutated 4 (Delete atom): C=CC1(NO)NO1, Beta: 6.100360
+Mutated 5 (Change atom type): C=CC1(NNO)NO1, Beta: 9.555552
+Mutated 6 (Add ring): C=CC1(n2oo2)NO1, Beta: 13.185997
+Mutated 7 (Delete ring): C=CC(NOO)ON, Beta: 4.437715
+Temperature: 20.358842, Iteration: 228
+Best molecule: C=CC1(n2oo2)NO1, Beta: 13.185997
+Mutated 1 (Change bond type): CCC1(n2oo2)NO1, Beta: 10.022813
+Mutated 2 (Add atom inline): C=CC1(n2oo2)NNO1, Beta: 6.178220
+Mutated 3 (Add branch): C=C=CC1(n2oo2)NO1, Beta: 10.054569
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.287492
+Mutated 5 (Change atom type): C=CC1(n2oo2)OO1, Beta: 26.416195
+Mutated 6 (Add ring): C1=CC2(n3oo3)ON12, Beta: 12.001357
+Mutated 7 (Delete ring): C=CC(ON)n1oo1, Beta: 3.888803
+Temperature: 20.008000, Iteration: 229
+Best molecule: C=CC1(n2oo2)OO1, Beta: 26.416195
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.107774
+Mutated 2 (Add atom inline): COCC1(n2oo2)OO1, Beta: 7.372987
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.675271
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.382769
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.389449
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.070520
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.444047
+Temperature: 19.657158, Iteration: 230
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.107774
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.376535
+Mutated 2 (Add atom inline): C=CC1(N2OCO2)OO1, Beta: 5.778363
+Mutated 3 (Add branch): N=C=CC1(n2oo2)OO1, Beta: 8.743163
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.282204
+Mutated 5 (Change atom type): N=CC1(n2oo2)OO1, Beta: 10.780951
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.913090
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.463658
+Temperature: 19.306316, Iteration: 231
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.376535
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.830496
+Mutated 2 (Add atom inline): C=CNC1(n2oo2)OO1, Beta: 7.317459
+Mutated 3 (Add branch): OC=CC1(n2oo2)OO1, Beta: 14.051565
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.353340
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.347740
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.699348
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.545960
+Temperature: 18.955474, Iteration: 232
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.699348
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 14.832066
+Mutated 2 (Add atom inline): C=CC1(On2oo2)OO1, Beta: 11.019084
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.441709
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.252296
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.091584
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.515336
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.460945
+Temperature: 18.604632, Iteration: 233
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.699348
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 2 (Add atom inline): C=CC1(n2oo2)COO1, Beta: 7.349081
+Mutated 3 (Add branch): OC=CC1(n2oo2)OO1, Beta: 13.791494
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.301084
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.512607
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.825923
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.479526
+Temperature: 18.253789, Iteration: 234
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.231284
+Mutated 2 (Add atom inline): C=CC1(n2oo2)ONO1, Beta: 7.602705
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.449527
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.320077
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.249814
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.496106
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.434401
+Temperature: 17.902947, Iteration: 235
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.010194
+Mutated 2 (Add atom inline): C=CC1(N2OOO2)OO1, Beta: 8.831598
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.407963
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.298095
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.626664
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.371774
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.409401
+Temperature: 17.552105, Iteration: 236
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 25.750607
+Mutated 2 (Add atom inline): C=CC1(n2oo2)OOO1, Beta: 4.895800
+Mutated 3 (Add branch): OC=CC1(n2oo2)OO1, Beta: 14.475983
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.334482
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.697968
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 25.434338
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.608906
+Temperature: 17.201263, Iteration: 237
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.375638
+Mutated 2 (Add atom inline): CN=CC1(n2oo2)OO1, Beta: 6.149521
+Mutated 3 (Add branch): O=C=CC1(n2oo2)OO1, Beta: 8.501399
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.306738
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.749006
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.734788
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.433278
+Temperature: 16.850421, Iteration: 238
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 25.869120
+Mutated 2 (Add atom inline): C=COC1(n2oo2)OO1, Beta: 17.845332
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.344685
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.272312
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.627590
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.949949
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.436418
+Temperature: 16.499579, Iteration: 239
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.511901
+Mutated 2 (Add atom inline): C=CC1(On2oo2)OO1, Beta: 10.821254
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.342730
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.181153
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.417948
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.405140
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.553113
+Temperature: 16.148737, Iteration: 240
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.665275
+Mutated 2 (Add atom inline): C=CC1(N2ONO2)OO1, Beta: 5.131010
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.388467
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.086380
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.987236
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.926893
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.566700
+Temperature: 15.797895, Iteration: 241
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.703045
+Mutated 2 (Add atom inline): C=CC1(n2oo2)NOO1, Beta: 8.004544
+Mutated 3 (Add branch): C=C(O)C1(n2oo2)OO1, Beta: 13.081965
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.226237
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.297690
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 25.843630
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.441131
+Temperature: 15.447053, Iteration: 242
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.743875
+Mutated 2 (Add atom inline): C=CC1(n2oo2)COO1, Beta: 7.423562
+Mutated 3 (Add branch): CC=CC1(n2oo2)OO1, Beta: 16.545380
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.365163
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.230366
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.000813
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.424962
+Temperature: 15.096211, Iteration: 243
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.385203
+Mutated 2 (Add atom inline): C=CC1(n2oo2)OCO1, Beta: 3.849143
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.460383
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.335825
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.738020
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.192074
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.364652
+Temperature: 14.745368, Iteration: 244
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.721170
+Mutated 2 (Add atom inline): C=CC1(n2oo2)NOO1, Beta: 7.750755
+Mutated 3 (Add branch): OC=CC1(n2oo2)OO1, Beta: 13.771026
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 16.990446
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 18.943168
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.352743
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.462285
+Temperature: 14.394526, Iteration: 245
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.867142
+Mutated 2 (Add atom inline): C=C=CC1(n2oo2)OO1, Beta: -989.295435
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.321155
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.505014
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.551186
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 25.993021
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.445845
+Temperature: 14.043684, Iteration: 246
+Best molecule: C=CC1(n2oo2)OO1, Beta: 27.797190
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.917693
+Mutated 2 (Add atom inline): CNCC1(n2oo2)OO1, Beta: 7.861905
+Mutated 3 (Add branch): OC=CC1(n2oo2)OO1, Beta: 14.408558
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.315736
+Mutated 5 (Change atom type): N=CC1(n2oo2)OO1, Beta: 10.613377
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.500042
+Temperature: 13.692842, Iteration: 247
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.299052
+Mutated 2 (Add atom inline): C=CC1(Nn2oo2)OO1, Beta: 5.273604
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.659899
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.288154
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.473822
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 25.856368
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.470676
+Temperature: 13.342000, Iteration: 248
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.743875
+Mutated 2 (Add atom inline): C=CC1(n2oo2)OOO1, Beta: 4.894243
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.552433
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.356719
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.345008
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.585766
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.426347
+Temperature: 12.991158, Iteration: 249
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.949949
+Mutated 2 (Add atom inline): C=COC1(n2oo2)OO1, Beta: 17.800202
+Mutated 3 (Add branch): O=C=CC1(n2oo2)OO1, Beta: 8.517293
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.836826
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.084229
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.385203
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.433054
+Temperature: 12.640316, Iteration: 250
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.839648
+Mutated 2 (Add atom inline): C=CC1(n2oo2)NOO1, Beta: 7.844254
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.355194
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.291796
+Mutated 5 (Change atom type): N=CC1(n2oo2)OO1, Beta: 10.881539
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.908488
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.475439
+Temperature: 12.289474, Iteration: 251
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.286358
+Mutated 2 (Add atom inline): C=CNC1(n2oo2)OO1, Beta: 7.517618
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.238269
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.327774
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.603563
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.225003
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.493189
+Temperature: 11.938632, Iteration: 252
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.349542
+Mutated 2 (Add atom inline): C=CC1(N2ONO2)OO1, Beta: 5.094759
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.344086
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.254914
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.341865
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.460612
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.519727
+Temperature: 11.587789, Iteration: 253
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.014718
+Mutated 2 (Add atom inline): C=CC1(N2COO2)OO1, Beta: 7.069307
+Mutated 3 (Add branch): O=C=CC1(n2oo2)OO1, Beta: 8.462799
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.223682
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.464063
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.424243
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.464792
+Temperature: 11.236947, Iteration: 254
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.027402
+Mutated 2 (Add atom inline): C=CC1(N2OOO2)OO1, Beta: 8.801309
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.170195
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.292790
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.219942
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.977669
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.408961
+Temperature: 10.886105, Iteration: 255
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.707577
+Mutated 2 (Add atom inline): C=CC1(N2COO2)OO1, Beta: 7.232695
+Mutated 3 (Add branch): O=C=CC1(n2oo2)OO1, Beta: 8.421951
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.626978
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.290309
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.336631
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.499354
+Temperature: 10.535263, Iteration: 256
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.456164
+Mutated 2 (Add atom inline): C=CC1(N2NOO2)OO1, Beta: 3.828148
+Mutated 3 (Add branch): C=C(O)C1(n2oo2)OO1, Beta: 12.546195
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.275936
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.381704
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.684933
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.643861
+Temperature: 10.184421, Iteration: 257
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.131114
+Mutated 2 (Add atom inline): CN=CC1(n2oo2)OO1, Beta: 6.098693
+Mutated 3 (Add branch): C=C(O)C1(n2oo2)OO1, Beta: 12.582552
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.298427
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 18.775677
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 28.074870
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.446070
+Temperature: 9.833579, Iteration: 258
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.405140
+Mutated 2 (Add atom inline): C=CC1(n2oo2)OCO1, Beta: 3.892912
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.363618
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.247067
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.308460
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.420630
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.447423
+Temperature: 9.482737, Iteration: 259
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.367520
+Mutated 2 (Add atom inline): COCC1(n2oo2)OO1, Beta: 7.368317
+Mutated 3 (Add branch): C=C(O)C1(n2oo2)OO1, Beta: 12.833169
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.310399
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.523780
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.248785
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.511720
+Temperature: 9.131895, Iteration: 260
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.491302
+Mutated 2 (Add atom inline): COCC1(n2oo2)OO1, Beta: 7.387036
+Mutated 3 (Add branch): OC=CC1(n2oo2)OO1, Beta: 14.154830
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.505014
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.826687
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.825923
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.484074
+Temperature: 8.781053, Iteration: 261
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.218173
+Mutated 2 (Add atom inline): C=CC1(n2oo2)NOO1, Beta: 7.797536
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.159935
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.250333
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.765681
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.037913
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.502217
+Temperature: 8.430211, Iteration: 262
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.239141
+Mutated 2 (Add atom inline): COCC1(n2oo2)OO1, Beta: 7.347951
+Mutated 3 (Add branch): N=C=CC1(n2oo2)OO1, Beta: 8.700918
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.263437
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.471107
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.486501
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.408515
+Temperature: 8.079368, Iteration: 263
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.413492
+Mutated 2 (Add atom inline): C=CC1(N2OOO2)OO1, Beta: 8.754001
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.744585
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.294115
+Mutated 5 (Change atom type): N=CC1(n2oo2)OO1, Beta: 10.581045
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 28.054850
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.443152
+Temperature: 7.728526, Iteration: 264
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.665275
+Mutated 2 (Add atom inline): CN=CC1(n2oo2)OO1, Beta: 6.242812
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.427583
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.249354
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.462003
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.281628
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.429026
+Temperature: 7.377684, Iteration: 265
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.876319
+Mutated 2 (Add atom inline): C=C=CC1(n2oo2)OO1, Beta: -649.871906
+Mutated 3 (Add branch): NC=CC1(n2oo2)OO1, Beta: 7.331923
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.264750
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.481955
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.899289
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.433278
+Temperature: 7.026842, Iteration: 266
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.554364
+Mutated 2 (Add atom inline): C=CC1(Nn2oo2)OO1, Beta: 5.204410
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.066179
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.344571
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.191532
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.281628
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.472489
+Temperature: 6.676000, Iteration: 267
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.254606
+Mutated 2 (Add atom inline): C=CC1(N2OOO2)OO1, Beta: 8.747670
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.597265
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.307403
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.327027
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.014718
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.450345
+Temperature: 6.325158, Iteration: 268
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 25.117734
+Mutated 2 (Add atom inline): C=CC1(n2oo2)ONO1, Beta: 7.641566
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.578180
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.341877
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.545965
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.917693
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.440230
+Temperature: 5.974316, Iteration: 269
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.590643
+Mutated 2 (Add atom inline): C=CCC1(n2oo2)OO1, Beta: 25.372143
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.023762
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.114807
+Mutated 5 (Change atom type): C=NC1(n2oo2)OO1, Beta: 15.822313
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.853388
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.551229
+Temperature: 5.623474, Iteration: 270
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): CCC1(n2oo2)OO1, Beta: 15.432491
+Mutated 2 (Add atom inline): C=CCC1(n2oo2)OO1, Beta: 25.039441
+Mutated 3 (Add branch): OC=CC1(n2oo2)OO1, Beta: 14.102034
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.296768
+Mutated 5 (Change atom type): N=CC1(n2oo2)OO1, Beta: 10.519048
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 27.841450
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.451700
+Temperature: 5.272632, Iteration: 271
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.784842
+Mutated 2 (Add atom inline): C=CC1(n2oo2)OOO1, Beta: 4.901255
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.587711
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.304408
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.525216
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.612730
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.447423
+Temperature: 4.921789, Iteration: 272
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.276899
+Mutated 2 (Add atom inline): C=CC1(On2oo2)OO1, Beta: 10.718442
+Mutated 3 (Add branch): C=C(C)C1(n2oo2)OO1, Beta: 7.579200
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.677457
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.479255
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 25.915970
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.668637
+Temperature: 4.570947, Iteration: 273
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.536453
+Mutated 2 (Add atom inline): C=CC1(Cn2oo2)OO1, Beta: 7.475050
+Mutated 3 (Add branch): CC=CC1(n2oo2)OO1, Beta: 16.211292
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.303743
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.321737
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.514098
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.483846
+Temperature: 4.220105, Iteration: 274
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.894692
+Mutated 2 (Add atom inline): C=CCC1(n2oo2)OO1, Beta: 24.917706
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.518937
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.264750
+Mutated 5 (Change atom type): O=CC1(n2oo2)OO1, Beta: 19.249814
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.857971
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.501474
+Temperature: 3.869263, Iteration: 275
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 27.457726
+Mutated 2 (Add atom inline): CC=CC1(n2oo2)OO1, Beta: 16.020994
+Mutated 3 (Add branch): C=C(N)C1(n2oo2)OO1, Beta: 15.252789
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.576787
+Mutated 5 (Change atom type): C=CC1(n2oo2)NO1, Beta: 13.775441
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.743875
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.501182
+Temperature: 3.518421, Iteration: 276
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.630744
+Mutated 2 (Add atom inline): C=CC1(n2oo2)NOO1, Beta: 7.977703
+Mutated 3 (Add branch): O=C=CC1(n2oo2)OO1, Beta: 8.510664
+Mutated 4 (Delete atom): CC1(n2oo2)OO1, Beta: 17.200648
+Mutated 5 (Change atom type): C=CC1(n2oo2)CO1, Beta: 12.395074
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 28.054850
+Mutated 7 (Delete ring): C=CC(O)(O)n1oo1, Beta: 7.529450
+Temperature: 3.167579, Iteration: 277
+Best molecule: C=CC1(n2oo2)OO1, Beta: 28.109974
+Mutated 1 (Change bond type): C=CC1(n2oo2)OO1, Beta: 26.451717
+Mutated 2 (Add atom inline): C=CC1(n2oo2)COO1, Beta: 7.412364
+Mutated 3 (Add branch): C=C=CC1(n2oo2)OO1, Beta: 887.539334
+Mutated 4 (Delete atom): C=CC(O)n1oo1, Beta: 6.319743
+Mutated 5 (Change atom type): N=CC1(n2oo2)OO1, Beta: 10.623961
+Mutated 6 (Add ring): C=CC1(n2oo2)OO1, Beta: 26.626238
+Mutated 7 (Delete ring): C=CC(OO)n1oo1, Beta: 6.456656
+Temperature: 2.816737, Iteration: 278
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 887.539334
+Mutated 1 (Change bond type): C=CCC1(n2oo2)OO1, Beta: 25.094282
+Mutated 2 (Add atom inline): C=C=CC1(n2oo2)OCO1, Beta: 6.485972
+Mutated 3 (Add branch): NC=C=CC1(n2oo2)OO1, Beta: 2.454137
+Mutated 4 (Delete atom): C=CC1(n2oo2)OO1, Beta: 27.187376
+Mutated 5 (Change atom type): C=C=CC1(n2oo2)CO1, Beta: 6.493011
+Mutated 6 (Add ring): C1=CC=1C1(n2oo2)OO1, Beta: 8.624460
+Mutated 7 (Delete ring): C=C=CC(OO)n1oo1, Beta: 5.173241
+Temperature: 2.465895, Iteration: 279
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 887.539334
+Mutated 1 (Change bond type): C=C=CC1(n2oo2)OO1, Beta: -1479.232297
+Mutated 2 (Add atom inline): C=COCC1(n2oo2)OO1, Beta: 7.285379
+Mutated 3 (Add branch): C=C=C(O)C1(n2oo2)OO1, Beta: 6.213466
+Mutated 4 (Delete atom): C=CC1(n2oo2)OO1, Beta: 25.830904
+Mutated 5 (Change atom type): C=C=CC1(n2oo2)NO1, Beta: 9.883225
+Mutated 6 (Add ring): C=C=CC1(n2oo2)OO1, Beta: 2677.919749
+Mutated 7 (Delete ring): C=C=CC(OO)n1oo1, Beta: 5.164043
+Temperature: 2.115053, Iteration: 280
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 2677.919749
+Mutated 1 (Change bond type): C=C=CC1(n2oo2)OO1, Beta: -6212.775242
+Mutated 2 (Add atom inline): C=C=CC1(N2COO2)OO1, Beta: 3.133584
+Mutated 3 (Add branch): C=C=C(O)C1(n2oo2)OO1, Beta: 6.211734
+Mutated 4 (Delete atom): C=C=CC(O)n1oo1, Beta: 3.687229
+Mutated 5 (Change atom type): C=C=NC1(n2oo2)OO1, Beta: 8.295564
+Mutated 6 (Add ring): C=C=CC1(n2oo2)OO1, Beta: -539.303221
+Mutated 7 (Delete ring): C=C=CC(O)(O)n1oo1, Beta: 1.810864
+Temperature: 1.764211, Iteration: 281
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 2677.919749
+Mutated 1 (Change bond type): C=C=CC1(n2oo2)OO1, Beta: -609.095616
+Mutated 2 (Add atom inline): C=C=C=CC1(n2oo2)OO1, Beta: -4.023503
+Mutated 3 (Add branch): CC=C=CC1(n2oo2)OO1, Beta: 8.741430
+Mutated 4 (Delete atom): C=C=CC(O)n1oo1, Beta: 3.709760
+Mutated 5 (Change atom type): C=C=CC1(n2oo2)NO1, Beta: 10.355890
+Mutated 6 (Add ring): C1=CC=1C1(n2oo2)OO1, Beta: 8.679259
+Mutated 7 (Delete ring): C=C=CC(OO)n1oo1, Beta: 5.187923
+Temperature: 1.413368, Iteration: 282
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 2677.919749
+Mutated 1 (Change bond type): C=C=CC1(n2oo2)OO1, Beta: 556.700067
+Mutated 2 (Add atom inline): C=C=CC1(Cn2oo2)OO1, Beta: 1.666703
+Mutated 3 (Add branch): OC=C=CC1(n2oo2)OO1, Beta: 8.257359
+Mutated 4 (Delete atom): C=C=CC(O)n1oo1, Beta: 3.723851
+Mutated 5 (Change atom type): O=C=CC1(n2oo2)OO1, Beta: 8.602167
+Mutated 6 (Add ring): C1=CC=1C1(n2oo2)OO1, Beta: 8.609963
+Mutated 7 (Delete ring): C=C=CC(OO)n1oo1, Beta: 5.207351
+Temperature: 1.062526, Iteration: 283
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 2677.919749
+Mutated 1 (Change bond type): C=C=CC1(n2oo2)OO1, Beta: -1176.661927
+Mutated 2 (Add atom inline): C=C=CC1(n2oo2)OOO1, Beta: 3.449621
+Mutated 3 (Add branch): CC=C=CC1(n2oo2)OO1, Beta: 8.787759
+Mutated 4 (Delete atom): C=C=CC(O)n1oo1, Beta: 3.721082
+Mutated 5 (Change atom type): C=C=CC1(n2oo2)CO1, Beta: 6.561280
+Mutated 6 (Add ring): C=C=CC1(n2oo2)OO1, Beta: -550.778080
+Mutated 7 (Delete ring): C=C=CC(OO)n1oo1, Beta: 5.181752
+Temperature: 0.711684, Iteration: 284
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 2677.919749
+Mutated 1 (Change bond type): C=C=CC1(n2oo2)OO1, Beta: -524.727693
+Mutated 2 (Add atom inline): C=CC=CC1(n2oo2)OO1, Beta: 8.233381
+Mutated 3 (Add branch): N=C=C=CC1(n2oo2)OO1, Beta: -10.777336
+Mutated 4 (Delete atom): C=CC1(n2oo2)OO1, Beta: 25.886141
+Mutated 5 (Change atom type): C=C=CC1(n2oo2)CO1, Beta: 6.418244
+Mutated 6 (Add ring): C1=CC=1C1(n2oo2)OO1, Beta: 8.652935
+Mutated 7 (Delete ring): C=C=CC(OO)n1oo1, Beta: 5.212648
+Temperature: 0.360842, Iteration: 285
+Best molecule: C=C=CC1(n2oo2)OO1, Beta: 2677.919749
+Mutated 1 (Change bond type): C=CCC1(n2oo2)OO1, Beta: 25.901888
+Mutated 2 (Add atom inline): C=C=C=CC1(n2oo2)OO1, Beta: -4.023661
+Mutated 3 (Add branch): CC=C=CC1(n2oo2)OO1, Beta: 8.647339
+Mutated 4 (Delete atom): C=C=CC(O)n1oo1, Beta: 3.716316
+Mutated 5 (Change atom type): C=C=NC1(n2oo2)OO1, Beta: 8.500457
+Mutated 6 (Add ring): C1=CC=1C1(n2oo2)OO1, Beta: 8.694325
+Mutated 7 (Delete ring): C=C=CC(OO)n1oo1, Beta: 5.187304

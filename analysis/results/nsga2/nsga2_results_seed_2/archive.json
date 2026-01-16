@@ -1,0 +1,287 @@
+[
+  {
+    "smiles": "C=CC(N)C=O",
+    "objectives": [
+      6.106473923202507,
+      -47.2002885,
+      86.46959,
+      10.531213
+    ],
+    "homo_lumo_gap": 14.031213,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 974.7131,
+    "alpha_mean": 13.53041,
+    "generation": 0
+  },
+  {
+    "smiles": "CC1=NC=C1",
+    "objectives": [
+      2.4070182447072597,
+      -41.4930654,
+      89.15384,
+      6.347206
+    ],
+    "homo_lumo_gap": 9.847206,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1217.974,
+    "alpha_mean": 10.84616,
+    "generation": 0
+  },
+  {
+    "smiles": "CC=C=CC(O)CO",
+    "objectives": [
+      6.417988236579817,
+      -47.5566205,
+      127.79763,
+      5.934723999999999
+    ],
+    "homo_lumo_gap": 9.434724,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1276.608,
+    "alpha_mean": -27.79763,
+    "generation": 0
+  },
+  {
+    "smiles": "C1=CC2=CC1=CC2",
+    "objectives": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "homo_lumo_gap": 0.0,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 0.0,
+    "alpha_mean": 0.0,
+    "generation": 0
+  },
+  {
+    "smiles": "NC1=CC=C=N1",
+    "objectives": [
+      1.7658786063723289,
+      -43.48603583333334,
+      85.53687,
+      7.451851
+    ],
+    "homo_lumo_gap": 10.951851,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1195.303,
+    "alpha_mean": 14.46313,
+    "generation": 0
+  },
+  {
+    "smiles": "CC=CC(C)C=NC(O)=NC",
+    "objectives": [
+      2.103760913622433,
+      -44.72782327272727,
+      55.34701,
+      8.769239
+    ],
+    "homo_lumo_gap": 12.269239,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 6510.125,
+    "alpha_mean": 44.65299,
+    "generation": 0
+  },
+  {
+    "smiles": "C=NC(NC)ON",
+    "objectives": [
+      4.282165644551818,
+      -50.70401157142857,
+      92.671727,
+      10.447411
+    ],
+    "homo_lumo_gap": 13.947411,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1744.657,
+    "alpha_mean": 7.328273,
+    "generation": 0
+  },
+  {
+    "smiles": "N=C=NC=CN=O",
+    "objectives": [
+      1.0536436499667752,
+      -50.19409,
+      63.73823,
+      7.2451360000000005
+    ],
+    "homo_lumo_gap": 10.745136,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 5608.551,
+    "alpha_mean": 36.26177,
+    "generation": 0
+  },
+  {
+    "smiles": "CC(O)=C=O",
+    "objectives": [
+      5.940563043803241,
+      -52.818480199999996,
+      110.40445,
+      8.243127
+    ],
+    "homo_lumo_gap": 11.743127,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 481.9564,
+    "alpha_mean": -10.40445,
+    "generation": 0
+  },
+  {
+    "smiles": "C=C(O)C(=C=O)C=N",
+    "objectives": [
+      0.7168208877695319,
+      -49.26174975,
+      132.77188999999998,
+      7.718674
+    ],
+    "homo_lumo_gap": 11.218674,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 3063.064,
+    "alpha_mean": -32.77189,
+    "generation": 0
+  },
+  {
+    "smiles": "CC=C=CC=O",
+    "objectives": [
+      2.6510264195745243,
+      -44.33654883333333,
+      136.35089,
+      4.335334
+    ],
+    "homo_lumo_gap": 7.835334,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 3196.419,
+    "alpha_mean": -36.35089,
+    "generation": 0
+  },
+  {
+    "smiles": "CN=C1CC1=N",
+    "objectives": [
+      3.5504067071226473,
+      -43.702842833333335,
+      105.153575,
+      8.118174
+    ],
+    "homo_lumo_gap": 11.618174,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1399.807,
+    "alpha_mean": -5.153575,
+    "generation": 0
+  },
+  {
+    "smiles": "CC1=NCCN=CNO1",
+    "objectives": [
+      4.016437973654173,
+      -47.802823333333336,
+      81.34158,
+      10.022075
+    ],
+    "homo_lumo_gap": 13.522075,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 2470.453,
+    "alpha_mean": 18.65842,
+    "generation": 0
+  },
+  {
+    "smiles": "CCCONC=CC=N",
+    "objectives": [
+      1.5750347003018945,
+      -46.165334333333334,
+      136.28921,
+      8.186762
+    ],
+    "homo_lumo_gap": 11.686762,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 6960.969,
+    "alpha_mean": -36.28921,
+    "generation": 0
+  },
+  {
+    "smiles": "CCN=C=NON",
+    "objectives": [
+      2.4370789146899314,
+      -50.52331357142857,
+      81.20755,
+      7.488123999999999
+    ],
+    "homo_lumo_gap": 10.988124,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 2524.208,
+    "alpha_mean": 18.79245,
+    "generation": 0
+  },
+  {
+    "smiles": "C=C=NC(=N)O",
+    "objectives": [
+      5.601197150060857,
+      -49.64605,
+      73.27896,
+      7.079376999999999
+    ],
+    "homo_lumo_gap": 10.579377,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1233.332,
+    "alpha_mean": 26.72104,
+    "generation": 0
+  },
+  {
+    "smiles": "C=C=CCCNC=C",
+    "objectives": [
+      2.6319463756129964,
+      -40.492781625,
+      42.42254,
+      6.352353000000001
+    ],
+    "homo_lumo_gap": 9.852353,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 5530.543,
+    "alpha_mean": 57.57746,
+    "generation": 0
+  },
+  {
+    "smiles": "C=CC=CN",
+    "objectives": [
+      0.23277915015821254,
+      -41.7549208,
+      121.84585,
+      8.23404
+    ],
+    "homo_lumo_gap": 11.73404,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 4950.437,
+    "alpha_mean": -21.84585,
+    "generation": 0
+  },
+  {
+    "smiles": "NOC(=O)OCC(=C=C=O)NC=NO",
+    "objectives": [
+      1.6225356801709512,
+      -54.598603357142856,
+      176.94975,
+      7.084129000000001
+    ],
+    "homo_lumo_gap": 10.584129,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 5167.825,
+    "alpha_mean": -76.94975,
+    "generation": 0
+  }
+]

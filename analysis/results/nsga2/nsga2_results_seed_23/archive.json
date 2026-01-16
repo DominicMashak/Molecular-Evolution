@@ -1,0 +1,272 @@
+[
+  {
+    "smiles": "CNN(O)C=C(NN)C(C)=N",
+    "objectives": [
+      2.2599930505961825,
+      -49.15773000000001,
+      135.03931,
+      7.326015
+    ],
+    "homo_lumo_gap": 10.826015,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 4115.388,
+    "alpha_mean": -35.03931,
+    "generation": 0
+  },
+  {
+    "smiles": "CNC=C=COC",
+    "objectives": [
+      -1.001277662344829,
+      -45.98052885714286,
+      52.46559,
+      3.926203
+    ],
+    "homo_lumo_gap": 7.426203,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": -8475.088,
+    "alpha_mean": 47.53441,
+    "generation": 0
+  },
+  {
+    "smiles": "NC=CC=C=NO",
+    "objectives": [
+      0.0733784335090863,
+      -48.08095671428571,
+      121.16936,
+      4.017674
+    ],
+    "homo_lumo_gap": 7.517674,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 116188.0,
+    "alpha_mean": -21.16936,
+    "generation": 0
+  },
+  {
+    "smiles": "C=CCCN",
+    "objectives": [
+      7.888641446423983,
+      -41.9887948,
+      81.20964000000001,
+      10.653329
+    ],
+    "homo_lumo_gap": 14.153329,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1060.84,
+    "alpha_mean": 18.79036,
+    "generation": 0
+  },
+  {
+    "smiles": "NCCOC1(O)CO1",
+    "objectives": [
+      6.861509075760143,
+      -54.15142675,
+      73.1026,
+      13.029664
+    ],
+    "homo_lumo_gap": 16.529664,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1302.131,
+    "alpha_mean": 26.8974,
+    "generation": 0
+  },
+  {
+    "smiles": "NOC(O)NCO",
+    "objectives": [
+      4.390152394157911,
+      -58.78062942857143,
+      101.440849,
+      13.202126
+    ],
+    "homo_lumo_gap": 16.702126,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1383.493,
+    "alpha_mean": -1.440849,
+    "generation": 0
+  },
+  {
+    "smiles": "NCC=CC(=O)COCO",
+    "objectives": [
+      2.6859503355354204,
+      -50.9701483,
+      71.49346,
+      8.860392
+    ],
+    "homo_lumo_gap": 12.360392,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 4789.702,
+    "alpha_mean": 28.50654,
+    "generation": 0
+  },
+  {
+    "smiles": "C=C(C)C1OC1N",
+    "objectives": [
+      4.648392487305714,
+      -45.99692671428571,
+      73.67829,
+      10.575025
+    ],
+    "homo_lumo_gap": 14.075025,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1399.163,
+    "alpha_mean": 26.32171,
+    "generation": 0
+  },
+  {
+    "smiles": "CC1CC=CON1",
+    "objectives": [
+      7.346937443564052,
+      -45.99888528571428,
+      114.95681,
+      10.730614
+    ],
+    "homo_lumo_gap": 14.230614,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1213.929,
+    "alpha_mean": -14.95681,
+    "generation": 0
+  },
+  {
+    "smiles": "C=CNC=CC=N",
+    "objectives": [
+      0.8828698524745452,
+      -43.01698985714285,
+      129.77803,
+      7.485207000000001
+    ],
+    "homo_lumo_gap": 10.985207,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 6643.707,
+    "alpha_mean": -29.77803,
+    "generation": 0
+  },
+  {
+    "smiles": "CN=C=CC(=N)CC=N",
+    "objectives": [
+      3.737645420165347,
+      -43.71322111111111,
+      75.66222,
+      7.2658059999999995
+    ],
+    "homo_lumo_gap": 10.765806,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 2880.389,
+    "alpha_mean": 24.33778,
+    "generation": 0
+  },
+  {
+    "smiles": "C=C1ONC=C1N",
+    "objectives": [
+      -12.757700208845272,
+      -48.09814085714286,
+      76.0957,
+      7.5154700000000005
+    ],
+    "homo_lumo_gap": 11.01547,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": -307.8829,
+    "alpha_mean": 23.9043,
+    "generation": 0
+  },
+  {
+    "smiles": "C=C=CC(=O)CCC",
+    "objectives": [
+      15.713143023079258,
+      -42.968129875,
+      69.36141,
+      7.947035
+    ],
+    "homo_lumo_gap": 11.447035,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 723.9957,
+    "alpha_mean": 30.63859,
+    "generation": 0
+  },
+  {
+    "smiles": "C=CCCC(C)=NC=O",
+    "objectives": [
+      2.240667612720119,
+      -44.277023111111106,
+      141.51579,
+      8.395062
+    ],
+    "homo_lumo_gap": 11.895062,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 3095.105,
+    "alpha_mean": -41.51579,
+    "generation": 0
+  },
+  {
+    "smiles": "C=CC=COC=CCN",
+    "objectives": [
+      0.730584354342797,
+      -44.27325033333333,
+      145.60081,
+      8.087821
+    ],
+    "homo_lumo_gap": 11.587821,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 11815.93,
+    "alpha_mean": -45.60081,
+    "generation": 0
+  },
+  {
+    "smiles": "CC1(CN)CC1=N",
+    "objectives": [
+      3.867792783788316,
+      -43.178554142857145,
+      120.51689,
+      10.039129
+    ],
+    "homo_lumo_gap": 13.539129,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 1918.465,
+    "alpha_mean": -20.51689,
+    "generation": 0
+  },
+  {
+    "smiles": "Nc1cnc(CCO)[nH]1",
+    "objectives": [
+      1.1355667649286219,
+      -47.81290177777778,
+      104.527141,
+      9.132037
+    ],
+    "homo_lumo_gap": 12.632037,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 4704.229,
+    "alpha_mean": -4.527141,
+    "generation": 0
+  },
+  {
+    "smiles": "NN(O)C=CC=C=NO",
+    "objectives": [
+      0.8892304974810655,
+      -51.74193922222222,
+      125.6582,
+      6.030074000000001
+    ],
+    "homo_lumo_gap": 9.530074,
+    "transition_dipole": 0.0,
+    "oscillator_strength": 0.0,
+    "gamma": 16205.66,
+    "alpha_mean": -25.6582,
+    "generation": 0
+  }
+]

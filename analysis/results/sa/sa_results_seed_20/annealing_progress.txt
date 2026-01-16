@@ -1,0 +1,2567 @@
+Temperature: 100.000000, Iteration: 0
+Best molecule: C=CC(N=C)C(=O)OC=C(C)O, Beta: 1.697422
+Temperature: 100.000000, Iteration: 1
+Best molecule: C=CC(N=C)C(=O)OC=C(C)O, Beta: 1.697422
+Mutated 1 (Change bond type): C=NC(CC)C(=O)OC=C(C)O, Beta: 4.570519
+Mutated 2 (Add atom inline): C=C=NC(N=C)C(=O)OC=C(C)O, Beta: 1.676653
+Mutated 3 (Add branch): C=NC(C(=C)O)C(=O)OC=C(C)O, Beta: 2.378745
+Mutated 4 (Delete atom): C=CC(N)C(=O)OC=C(C)O, Beta: 2.553694
+Mutated 5 (Change atom type): C=CC(N=C)C(=O)OC=C(N)O, Beta: 1.423664
+Mutated 6 (Add ring): C=CC1N=CCC(O)=COC1=O, Beta: 5.179848
+Mutated 7 (Delete ring): C=CC(N=C)C(=O)OC=C(C)O, Beta: 1.696303
+Temperature: 99.649158, Iteration: 2
+Best molecule: C=CC1N=CCC(O)=COC1=O, Beta: 5.179848
+Mutated 1 (Change bond type): CCC1N=CCC(O)=COC1=O, Beta: 5.770905
+Mutated 2 (Add atom inline): C=CC1NOCCC(O)=COC1=O, Beta: 5.594760
+Mutated 3 (Add branch): O=C1OC=C(O)CC=NC1C=CO, Beta: 3.393014
+Mutated 4 (Delete atom): C=CC(N)C(=O)OC=C(C)O, Beta: 2.552603
+Mutated 5 (Change atom type): C=CC1N=NCC(O)=COC1=O, Beta: 4.680301
+Mutated 6 (Add ring): C=C1C2=NC1C(=O)OC=C(O)C2, Beta: 7.780931
+Mutated 7 (Delete ring): C=CC(C=O)N=CCC(O)=CO, Beta: 5.040988
+Temperature: 99.298316, Iteration: 3
+Best molecule: C=C1C2=NC1C(=O)OC=C(O)C2, Beta: 7.780931
+Mutated 1 (Change bond type): C=C1C2CC(O)=COC(=O)C1N2, Beta: 5.496337
+Mutated 2 (Add atom inline): C=C1C2=NC1C(=O)ONC=C(O)C2, Beta: 6.414324
+Mutated 3 (Add branch): C=C1C2=[N+]([O-])C1C(=O)OC=C(O)C2, Beta: 6.182711
+Mutated 4 (Delete atom): C=C1C2=NC1COC=C(O)C2, Beta: 7.199912
+Mutated 5 (Change atom type): O=C1OC=C(O)CC2=NC1C2=O, Beta: 4.242646
+Mutated 6 (Add ring): O=C1OC2=C(O)CC3=NC1C3=C2, Beta: -1000.000000
+Mutated 7 (Delete ring): C=CC1=NCC(=O)OC=C(O)C1, Beta: 2.365984
+Temperature: 98.947474, Iteration: 4
+Best molecule: C=C1C2=NC1C(=O)OC=C(O)C2, Beta: 7.780931
+Mutated 1 (Change bond type): C=C1C2COC=C(O)CC1N2, Beta: 5.052814
+Mutated 2 (Add atom inline): C=C1C2=NC1OCOC=C(O)C2, Beta: 7.351682
+Mutated 3 (Add branch): CC=C1C2=NC1COC=C(O)C2, Beta: 5.900635
+Mutated 4 (Delete atom): C=C1C2=NC1COC=CC2, Beta: 7.115367
+Mutated 5 (Change atom type): C=C1C2=NC1CCC=C(O)C2, Beta: 7.279666
+Mutated 6 (Add ring): OC1=C2C=C3C(=NC3CO2)C1, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C1C=NC1COC=C(C)O, Beta: 6.402193
+Temperature: 98.596632, Iteration: 5
+Best molecule: C=C1C2=NC1C(=O)OC=C(O)C2, Beta: 7.780931
+Mutated 1 (Change bond type): CC1C2=NC1OCOC=C(O)C2, Beta: 5.163381
+Mutated 2 (Add atom inline): C=C1C2=NC1ONCOC=C(O)C2, Beta: 5.309889
+Mutated 3 (Add branch): C=C1C2=NC1OCOC=C(O)C2N, Beta: 3.862740
+Mutated 4 (Delete atom): C=C(O)CC1=NC(OC)C1=C, Beta: 2.658697
+Mutated 5 (Change atom type): C=C1C2=CC1OCOC=C(O)C2, Beta: 6.529693
+Mutated 6 (Add ring): OC1=COCOC23C=C2C(=N3)C1, Beta: 3.102236
+Mutated 7 (Delete ring): C=C1C=NC1OCOC=C(C)O, Beta: 5.288581
+Temperature: 98.245789, Iteration: 6
+Best molecule: C=C1C2=NC1C(=O)OC=C(O)C2, Beta: 7.780931
+Mutated 1 (Change bond type): C=C1C2=CC1OCOCC(O)C2, Beta: 7.636105
+Mutated 2 (Add atom inline): C=C=C1C2=CC1OCOC=C(O)C2, Beta: 8.612694
+Mutated 3 (Add branch): C=C1C2=CC1OCOC=C(O)C2=O, Beta: 6.721449
+Mutated 4 (Delete atom): C=C1C(CCO)=CC1OCO, Beta: 3.905341
+Mutated 5 (Change atom type): C=C1C2=CC1OCOC=C(N)C2, Beta: 5.432141
+Mutated 6 (Add ring): C=C1C2=CC1OCOC=C1OC12, Beta: 6.615876
+Mutated 7 (Delete ring): C=C1C(CC(O)=COC)=CC1O, Beta: 2.084010
+Temperature: 97.894947, Iteration: 7
+Best molecule: C=C=C1C2=CC1OCOC=C(O)C2, Beta: 8.612694
+Mutated 1 (Change bond type): C=C=C1C2CC(O)=COCOC1C2, Beta: 7.926964
+Mutated 2 (Add atom inline): C=C=C1C2=CC1OCOC=C(O)CN2, Beta: 6.070714
+Mutated 3 (Add branch): C=C=C1C2=CC1OCOC(O)=C(O)C2, Beta: 9.481745
+Mutated 4 (Delete atom): C=C=C1C=CC1OCOC=CO, Beta: 2.401882
+Mutated 5 (Change atom type): C=C=C1C2=NC1OCOC=C(O)C2, Beta: 5.978241
+Mutated 6 (Add ring): C=C=C1C2=C3C1OCOC=C(O)C23, Beta: 3.123091
+Mutated 7 (Delete ring): C=C=C1COCOC=C(O)CC1=C, Beta: 8.424225
+Temperature: 97.544105, Iteration: 8
+Best molecule: C=C=C1C2=CC1OCOC(O)=C(O)C2, Beta: 9.481745
+Mutated 1 (Change bond type): C=C=C1C2=C=C1OCOC(O)=C(O)C2, Beta: 2.754376
+Mutated 2 (Add atom inline): C=C=C1C2=CC1OCNOC(O)=C(O)C2, Beta: 5.564765
+Mutated 3 (Add branch): C=C=C1C2=CC1OCOC(O)=C(O)C2=O, Beta: 3.403352
+Mutated 4 (Delete atom): C=C=C1C(CC(O)=CO)=CC1OC, Beta: 5.067537
+Mutated 5 (Change atom type): C=C=C1C2=CC1OCNC(O)=C(O)C2, Beta: 3.856091
+Mutated 6 (Add ring): C=C=C1C2=CC1OC1OC(O)=C(O)C21, Beta: 9.858884
+Mutated 7 (Delete ring): C=C=C1C(CC(O)=C(O)O)=CC1OC, Beta: 4.475697
+Temperature: 97.193263, Iteration: 9
+Best molecule: C=C=C1C2=CC1OC1OC(O)=C(O)C21, Beta: 9.858884
+Mutated 1 (Change bond type): C=C=C1C2=C=C1C1C(O)=C(O)OC1O2, Beta: 0.488470
+Mutated 2 (Add atom inline): C=C=C1C2=CC1OC1OC(O)N=C(O)C21, Beta: 5.576081
+Mutated 3 (Add branch): C=C=C1C2=CC1OC1(N)OC(O)=C(O)C21, Beta: 7.590088
+Mutated 4 (Delete atom): C=C=C1C2=CC1OC1OC=C(O)C21, Beta: 4.715887
+Mutated 5 (Change atom type): C=C=C1C2=CC1OC1OC(O)=C(O)N21, Beta: 3.109956
+Mutated 6 (Add ring): C=C=C1C2=CC1OC1OC3=C(O)C21O3, Beta: 0.878434
+Mutated 7 (Delete ring): C=C=C1C2=CC1OCOC(O)=C(O)C2, Beta: 9.453378
+Temperature: 96.842421, Iteration: 10
+Best molecule: C=C=C1C2=CC1OC1OC(O)=C(O)C21, Beta: 9.858884
+Mutated 1 (Change bond type): CC=C1C2=CC1OCOC(O)=C(O)C2, Beta: 4.415230
+Mutated 2 (Add atom inline): C=C=C1C2=CC1OCOC(OO)=C(O)C2, Beta: 5.802972
+Mutated 3 (Add branch): C=C=C1C2=CC1OCOC(O)=C(O)C2C, Beta: 8.384280
+Mutated 4 (Delete atom): C=C=C1C2=CC1OCOC(O)=CC2, Beta: 7.680864
+Mutated 5 (Change atom type): C=C=C1C2=CC1OCNC(O)=C(O)C2, Beta: 3.860112
+Mutated 6 (Add ring): C=C=C1C2=CC13OCOC(O)=C(O)C23, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C1C=CC1OCOC(O)=C(C)O, Beta: 1.550947
+Temperature: 96.491579, Iteration: 11
+Best molecule: C=C=C1C2=CC1OC1OC(O)=C(O)C21, Beta: 9.858884
+Mutated 1 (Change bond type): CC=C1C2=CC1OCOC(O)=C(O)C2C, Beta: 5.494463
+Mutated 2 (Add atom inline): C=C=C=C1C2=CC1OCOC(O)=C(O)C2C, Beta: 6.267265
+Mutated 3 (Add branch): C=C=C1C2=CC1OCOC(OO)=C(O)C2C, Beta: 5.141470
+Mutated 4 (Delete atom): C=C=CC(=C)C(C)C(O)=C(O)OCO, Beta: 5.627934
+Mutated 5 (Change atom type): C=C=C1C2=CC1OCOC(O)=C(O)C2N, Beta: 3.516274
+Mutated 6 (Add ring): CC12C=C=C3C1=CC3OCOC(O)=C2O, Beta: 0.000000
+Mutated 7 (Delete ring): C=C=C1C(CC)=CC1OCOC(O)=CO, Beta: 4.621176
+Temperature: 96.140737, Iteration: 12
+Best molecule: C=C=C1C2=CC1OC1OC(O)=C(O)C21, Beta: 9.858884
+Mutated 1 (Change bond type): C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 2 (Add atom inline): C=C=C=C1C2=CC1OCOC(O)C=C(O)C2C, Beta: 2.929424
+Mutated 3 (Add branch): C=C=C=C1C2=CC1OCOC(O)=C(O)C2(C)C, Beta: 5.817520
+Mutated 4 (Delete atom): C=C=C=CC(C)OCOC(O)=C(O)CC, Beta: 5.289794
+Mutated 5 (Change atom type): CC1C2=CC(OCOC(O)=C1O)C2=C=C=N, Beta: 5.612991
+Mutated 6 (Add ring): C=C=C=C1C2=CC1OC1OC(=C(O)C2C)O1, Beta: 14.259420
+Mutated 7 (Delete ring): C=C=C=C1C(CC)=CC1OCOC(O)=CO, Beta: 1.360256
+Temperature: 95.789895, Iteration: 13
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2CC1C(=C)C(O)=C(O)OCO2, Beta: 6.858793
+Mutated 2 (Add atom inline): C=C=C=C1C2CC1C(C)C(O)=C(O)OC=NO2, Beta: 6.618437
+Mutated 3 (Add branch): C=C=C=C1C2CC1(O)C(C)C(O)=C(O)OCO2, Beta: 13.295525
+Mutated 4 (Delete atom): C=C=C=CC(C)OCOC(O)=C(O)CC, Beta: 5.263115
+Mutated 5 (Change atom type): C=C=C=C1C2CC1C(C)C(N)=C(O)OCO2, Beta: 1.629518
+Mutated 6 (Add ring): CC1C(O)=C(O)OCOC2C3=C=C=CC2C31, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C(CC)CC1OCOC(O)=CO, Beta: 4.706941
+Temperature: 95.439053, Iteration: 14
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=CC=C1C2CC1(O)C(C)C(O)=C(O)OCO2, Beta: 3.970293
+Mutated 2 (Add atom inline): C=C=C=C1C=C2CC1(O)C(C)C(O)=C(O)OCO2, Beta: 10.081742
+Mutated 3 (Add branch): C=C=C=C1C2CC1(O)C(C=C)C(O)=C(O)OCO2, Beta: -15.659842
+Mutated 4 (Delete atom): C=C=C=C1C(O)CC1(O)C(C)C(O)=C(O)O, Beta: 1.281546
+Mutated 5 (Change atom type): C=C=C=C1C2CC1(O)C(C)C(O)=C(C)OCO2, Beta: 10.875872
+Mutated 6 (Add ring): C=C=C=C1C2(O)CC13OC3OC(O)=C(O)C2C, Beta: 29.169193
+Mutated 7 (Delete ring): C=C=C=CC1CC(O)C(C)C(O)=C(O)OCO1, Beta: 8.155397
+Temperature: 95.088211, Iteration: 15
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2(O)CC13OC3OC(O)=C(O)C2=C, Beta: 39.789662
+Mutated 2 (Add atom inline): C=CC=C=C1C2(O)CC13OC3OC(O)=C(O)C2C, Beta: 2.132199
+Mutated 3 (Add branch): C=C=C=C1C2(O)CC13OC3OC(OO)=C(O)C2C, Beta: -13.013105
+Mutated 4 (Delete atom): C=C=C=C1C2(CO2)CC1(O)C(C)C(O)=CO, Beta: 2.283838
+Mutated 5 (Change atom type): C=C=C=C1C2(O)OC13OC3OC(O)=C(O)C2C, Beta: 5.448751
+Mutated 6 (Add ring): C=C=C=C1C2(O)CC13OC31OC(O)=C(O)C21C, Beta: 4.331022
+Mutated 7 (Delete ring): C=C=C=C1C2(CO2)CC1(O)C(C)C(O)=C(O)O, Beta: 6.188365
+Temperature: 94.737368, Iteration: 16
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=CC1C2(O)CC13OC3OC(O)=C(O)C2=C, Beta: 4.023749
+Mutated 2 (Add atom inline): C=C=C=C1C2(O)CC(=C)C(O)=C(O)OC3OC13C2, Beta: 6.681017
+Mutated 3 (Add branch): C=C=C=C1C2(O)CC13OC3OC(O)=C(O)C2=CN, Beta: 3.155730
+Mutated 4 (Delete atom): C=C=C=C1C2(O)CC(O)=C(O)OC3OC13C2, Beta: -118.692949
+Mutated 5 (Change atom type): C=C=C=C1C2(O)CC13OC3OC(O)=C(C)C2=C, Beta: 8.420201
+Mutated 6 (Add ring): C=C=C=C1C23CC14OC4OC(O)=C(OO2)C3=C, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=CC12CC(O)C(=C)C(O)=C(O)OC1O2, Beta: 3.037580
+Temperature: 94.386526, Iteration: 17
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2(O)CC13OC3OC(O)C(C)C2=C, Beta: 17.408289
+Mutated 2 (Add atom inline): C=C=C=C1C2(O)C=NC13OC3OC(O)=C(C)C2=C, Beta: 8.826566
+Mutated 3 (Add branch): C=C=C=C1C2(ON)CC13OC3OC(O)=C(C)C2=C, Beta: 15.418542
+Mutated 4 (Delete atom): C=C=C=C1C(O)CC1(O)C(=C)C(C)=C(O)O, Beta: 5.495601
+Mutated 5 (Change atom type): C=C=C=C1C2(O)CC13OC3OC(N)=C(C)C2=C, Beta: 11.141533
+Mutated 6 (Add ring): C=C=C=C1C23CC14OC4OC(=C(C)C2=C)OO3, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C(O)CC12OC2OC(O)=C(C)C=C, Beta: 5.254358
+Temperature: 94.035684, Iteration: 18
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C1C(C)C(O)OC2OC23CC1(O)C3=C=CC, Beta: 4.680667
+Mutated 2 (Add atom inline): C=C=C=C1C2(O)CC13OC3OC(O)C(C)=NC2=C, Beta: 2.566007
+Mutated 3 (Add branch): C=C=C=C1C2(ON)CC13OC3OC(O)C(C)C2=C, Beta: 8.665840
+Mutated 4 (Delete atom): C=C=C=CC(C)(O)C(=C)C(C)C(O)OCO, Beta: 5.971684
+Mutated 5 (Change atom type): C=C=C=C1C2(O)CC13NC3OC(O)C(C)C2=C, Beta: -63.631752
+Mutated 6 (Add ring): C=C=C=C1C2(O)CC13OC31C=C2C(C)C(O)O1, Beta: 11.630213
+Mutated 7 (Delete ring): C=C=C=C1C(O)C(=C)C(C)C(O)OC2OC12C, Beta: 3.590750
+Temperature: 93.684842, Iteration: 19
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=CC1C2(O)CC13OC31C=C2C(C)C(O)O1, Beta: 3.762609
+Mutated 2 (Add atom inline): C=C=C=C1C2(O)CC13OC31C=C2NC(C)C(O)O1, Beta: 0.000035
+Mutated 3 (Add branch): C=C=C=C=C1C2(O)CC13OC31C=C2C(C)C(O)O1, Beta: 26.592567
+Mutated 4 (Delete atom): C=C=C=C1C2(O)CC13OC3C=C2C(C)CO, Beta: 6.063377
+Mutated 5 (Change atom type): C=C=C=C1C2(O)CC13OC31C=C2C(C)N(O)O1, Beta: 0.188442
+Mutated 6 (Add ring): OC1OC23C=C4C1CC=C=C=C1C4(O)CC12O3, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C2(O)CC1(O)C1C=C2C(C)C(O)O1, Beta: 0.876491
+Temperature: 93.334000, Iteration: 20
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=CC=C=C1C2(O)CC13OC31C=C2C(C)C(O)O1, Beta: -0.000002
+Mutated 2 (Add atom inline): C=C=C=C=C1C2(O)CC13OC31C=C2C(C)C=C(O)O1, Beta: -4.167429
+Mutated 3 (Add branch): C=C=C=C=C1C2(OO)CC13OC31C=C2C(C)C(O)O1, Beta: 0.318600
+Mutated 4 (Delete atom): C=C=C=C1C2(O)CC13OC31C=C2C(C)C(O)O1, Beta: 11.680440
+Mutated 5 (Change atom type): C=C=C=C=C1C2(N)CC13OC31C=C2C(C)C(O)O1, Beta: -6.308310
+Mutated 6 (Add ring): CC1C2=CC3(OC1O)OC31C3=C=C=C=C=C1C32O, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C=C1C2CC1(O)C1=CC(O2)OC(O)C1C, Beta: 2.039169
+Temperature: 92.983158, Iteration: 21
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): CC=C=C1C2(O)CC13OC31C=C2C(C)C(O)O1, Beta: 0.000014
+Mutated 2 (Add atom inline): C=CNC=C1C2(O)CC13OC31C=C2C(C)C(O)O1, Beta: 3.612787
+Mutated 3 (Add branch): C=C=C=C1C2(O)CC13OC31C=C2C(C=N)C(O)O1, Beta: 9.312221
+Mutated 4 (Delete atom): C=C=C=C1C2(O)CC13OC31C=C2CC(O)O1, Beta: 6.880817
+Mutated 5 (Change atom type): C=C=C=C1C2(O)NC13OC31C=C2C(C)C(O)O1, Beta: 13.955489
+Mutated 6 (Add ring): C=C=C=C1C23CC14OC41C=C2C(CO3)C(O)O1, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C2(O)CC1(O)C1C=C2C(C)C(O)O1, Beta: 0.876739
+Temperature: 92.632316, Iteration: 22
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2(O)NC13OC31C=C2C(C)=C(O)O1, Beta: -1000.000000
+Mutated 2 (Add atom inline): C=C=CC=C1C2(O)NC13OC31C=C2C(C)C(O)O1, Beta: 0.497641
+Mutated 3 (Add branch): C=C=C=C1C2(O)NC13OC31C=C2C(C)(C)C(O)O1, Beta: 0.908650
+Mutated 4 (Delete atom): C=C=C=C1C(O)NC1(O)C(=C)C(C)C(O)O, Beta: 4.634134
+Mutated 5 (Change atom type): CC1C2=CC3(OC1O)OC31NC2(O)C1=C=C=N, Beta: 6.518433
+Mutated 6 (Add ring): C=C=C=C1C2(O)C3=CC45OC(O)C3CN2C14O5, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C2(O)NC1(O)C1C=C2C(C)C(O)O1, Beta: 2.629928
+Temperature: 92.281474, Iteration: 23
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): CC1C2=CC3(OC1O)OC31NC2(O)C1=C=CN, Beta: 2.116194
+Mutated 2 (Add atom inline): CC1C2=CC3(COC1O)OC31NC2(O)C1=C=C=N, Beta: 2.344262
+Mutated 3 (Add branch): N=C=C=C1C2(O)NC13OC31C=C2C(C=N)C(O)O1, Beta: 2.483346
+Mutated 4 (Delete atom): N=C=C=C1C2(O)NC13OC31C=C2CC(O)O1, Beta: 7.567808
+Mutated 5 (Change atom type): CC1C2=CC3(CC34NC2(O)C4=C=C=N)OC1O, Beta: 1.985254
+Mutated 6 (Add ring): N=C=C=C1C2(O)NC13OC31C=C2C2COC2O1, Beta: 4.096529
+Mutated 7 (Delete ring): CC(CO)C1=CC2(O)OC23NC1(O)C3=C=C=N, Beta: 4.190796
+Temperature: 91.930632, Iteration: 24
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): N=CC=C1C2(O)NC13OC31C=C2CC(O)O1, Beta: 1.328615
+Mutated 2 (Add atom inline): NN=C=C=C1C2(O)NC13OC31C=C2CC(O)O1, Beta: 1.238925
+Mutated 3 (Add branch): N=C=C=C1C2(O)NC13OC31C=C2CC(N)(O)O1, Beta: 8.898176
+Mutated 4 (Delete atom): N=C=C=C1C2(O)NC13OC3C=C2CCO, Beta: 2.276959
+Mutated 5 (Change atom type): N=C=C=C1C2(O)CC13OC31C=C2CC(O)O1, Beta: 12.335403
+Mutated 6 (Add ring): N=C=C=C1C23NC14OC41OC(O)CC2=C1O3, Beta: -1000.000000
+Mutated 7 (Delete ring): CC1=CC2(OCO)OC23NC1(O)C3=C=C=N, Beta: 5.558987
+Temperature: 91.579789, Iteration: 25
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): N=C=C=C1C2(O)CC13OC31C=C2CC(=O)O1, Beta: 1.316640
+Mutated 2 (Add atom inline): N=C=C=C1C2(O)CC13OC31C=C2C=NC(O)O1, Beta: 1.146372
+Mutated 3 (Add branch): N=C=C=C1C2(O)CC13OC31OC(O)CC2=C1O, Beta: 2.218711
+Mutated 4 (Delete atom): N=C=C=C1C2(O)CC13OC31C=C2CCO1, Beta: 2.828549
+Mutated 5 (Change atom type): O=C=C=C1C2(O)CC13OC31C=C2CC(O)O1, Beta: 14.338565
+Mutated 6 (Add ring): N=C=C=C1C2(O)CC13OC31OC(O)C3C2=C31, Beta: 3.196006
+Mutated 7 (Delete ring): N=C=C=C1C(O)CC12OC21C=CCC(O)O1, Beta: 1.631025
+Temperature: 91.228947, Iteration: 26
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): O=C=CC1C2(O)CC13OC31C=C2CC(O)O1, Beta: 1.894756
+Mutated 2 (Add atom inline): O=C=C=C1C2(O)CC13OC31C=C2CN=C(O)O1, Beta: 13.871890
+Mutated 3 (Add branch): NOC1CC2=CC3(O1)OC31CC2(O)C1=C=C=O, Beta: 2.365874
+Mutated 4 (Delete atom): O=C=C=C1C2(O)CC13OC31C=C2CCO1, Beta: 5.654666
+Mutated 5 (Change atom type): O=C=C=C1C2(O)CC13OC31C=C2CC(O)N1, Beta: 19.496786
+Mutated 6 (Add ring): O=C=C=C1C23OC2C12OC21C=C3CC(O)O1, Beta: 1.067080
+Mutated 7 (Delete ring): O=C=C=C1C2(O)CC13OC3C=C2CC(O)O, Beta: 3.031683
+Temperature: 90.878105, Iteration: 27
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): O=C=C=C1C2(O)CC13OC31C=C2CC(O)=N1, Beta: 0.000008
+Mutated 2 (Add atom inline): O=C=C=C1C2(O)CC13OC31C=C(CC(O)N1)N2, Beta: 14.453132
+Mutated 3 (Add branch): CN1C(O)CC2=CC13OC31CC2(O)C1=C=C=O, Beta: 16.662415
+Mutated 4 (Delete atom): O=C=C=C1C2(O)C=CC3(NCO)OC13C2, Beta: 6.323049
+Mutated 5 (Change atom type): O=C=C=C1C2(O)CC13OC31C=C2CC(O)C1, Beta: 1.314312
+Mutated 6 (Add ring): O=C=C=C1C2(O)C3=C4C2C12OC42NC(O)C3, Beta: -1000.000000
+Mutated 7 (Delete ring): NC(O)CC1=CC2OC23CC1(O)C3=C=C=O, Beta: 4.113532
+Temperature: 90.527263, Iteration: 28
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): CN1C(O)CC2=CC13OC31CC2(O)C1=CC=O, Beta: -0.000000
+Mutated 2 (Add atom inline): CN1C(O)CC2=CC13OC31CC2(O)C1=C=CCO, Beta: 1.581540
+Mutated 3 (Add branch): C=C1C2(O)C(=C=C=O)C13OC31C=C2CC(O)N1C, Beta: 3.845298
+Mutated 4 (Delete atom): O=C=C=C1C2(O)CC13OC31C=C2CC(O)N1, Beta: 19.968214
+Mutated 5 (Change atom type): CN1N(O)CC2=CC13OC31CC2(O)C1=C=C=O, Beta: 0.952217
+Mutated 6 (Add ring): O=C=C=C1C2(O)CC13OC31C3=C2CC(O)N1C3, Beta: -1000.000000
+Mutated 7 (Delete ring): CC1=CC2(N(C)CO)OC23CC1(O)C3=C=C=O, Beta: 8.771192
+Temperature: 90.176421, Iteration: 29
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): O=C=C=C1C2(O)CC13OC31C=C2CC(O)=N1, Beta: 0.000008
+Mutated 2 (Add atom inline): O=C=C=C1C2(O)CC13OC31C=C2CC(=CO)N1, Beta: 0.999091
+Mutated 3 (Add branch): C=C1C2=CC3(NC1O)OC31CC2(O)C1=C=C=O, Beta: 2.661260
+Mutated 4 (Delete atom): CC(O)(C=C=C=O)C1=CC(O)NC(O)C1, Beta: 4.555263
+Mutated 5 (Change atom type): O=C=C=C1C2(O)CC13OC31N=C2CC(O)N1, Beta: 1.289572
+Mutated 6 (Add ring): O=C=C=C1C2(O)C3=CC45OC14C2N5C(O)C3, Beta: -1000.000000
+Mutated 7 (Delete ring): O=C=C=C1C2CC1(O)C1=CC2(O)NC(O)C1, Beta: 4.898980
+Temperature: 89.825579, Iteration: 30
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): O=CC=C1C2CC1(O)C1=CC2(O)NC(O)C1, Beta: 2.737153
+Mutated 2 (Add atom inline): O=C=C=C1C2CC1(O)C1C=CC2(O)NC(O)C1, Beta: 5.975682
+Mutated 3 (Add branch): CC1C2C(=C=C=O)C1(O)C1=CC2(O)NC(O)C1, Beta: 3.290844
+Mutated 4 (Delete atom): O=C=C=C1C2CC1(O)C1=CC2(O)NCC1, Beta: -0.000001
+Mutated 5 (Change atom type): CC12C=C(CC(O)N1)C1(O)CC2C1=C=C=O, Beta: 4.219317
+Mutated 6 (Add ring): O=C=C=C1C2(O)CC13C1C2=CC3(O)NC1O, Beta: -1000.000000
+Mutated 7 (Delete ring): CC1(O)C(=C=C=O)CC2(O)C=C1CC(O)N2, Beta: 2.910004
+Temperature: 89.474737, Iteration: 31
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): O=CC=C1C2CC1(O)C1C=CC2(O)NC(O)C1, Beta: 4.771316
+Mutated 2 (Add atom inline): O=C=C=C1C2CC1(O)C1CC=CC2(O)NC(O)C1, Beta: 7.246920
+Mutated 3 (Add branch): O=C=C=C1C2C(O)C1(O)C1C=CC2(O)NC(O)C1, Beta: 5.693339
+Mutated 4 (Delete atom): O=C=C=C1C2CC1(O)CC=CC2(O)NCO, Beta: 4.379015
+Mutated 5 (Change atom type): NC1CC2C=CC(O)(N1)C1CC2(O)C1=C=C=O, Beta: 6.768396
+Mutated 6 (Add ring): O=C=C=C1C2CC1(O)C1C=C3C1C(O)NC32O, Beta: -1000.000000
+Mutated 7 (Delete ring): CC1(O)C(=C=C=O)CC2(O)C=CC1CC(O)N2, Beta: 4.833136
+Temperature: 89.123895, Iteration: 32
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): O=C=C=C1C2CC1(O)C1=CC=CC2(O)NC(O)C1, Beta: 4.849163
+Mutated 2 (Add atom inline): O=C=C=C1C2CC1(O)C1CC=CC2(O)NC(=NO)C1, Beta: 6.183662
+Mutated 3 (Add branch): C=C1C2C(=C=C=O)C1(O)C1CC=CC2(O)NC(O)C1, Beta: 6.544063
+Mutated 4 (Delete atom): O=C=C=C1C2CC1(O)C(CCO)CC=CC2O, Beta: 8.217533
+Mutated 5 (Change atom type): C=C=C=C1C2CC1(O)C1CC=CC2(O)NC(O)C1, Beta: 22.275001
+Mutated 6 (Add ring): O=C=C=C1C2CC1(O)C13CC=CC2(O)NC1(O)C3, Beta: 6.570914
+Mutated 7 (Delete ring): CC1(O)C(=C=C=O)CC2(O)C=CCC1CC(O)N2, Beta: 5.316365
+Temperature: 88.773053, Iteration: 33
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2CC1(O)C1CC=CC2(O)NC(=O)C1, Beta: -44.478241
+Mutated 2 (Add atom inline): C=C=C=C1C2CC1(O)C1=CCC=CC2(O)NC(O)C1, Beta: -40.929659
+Mutated 3 (Add branch): C=C=C=C1C2CC1(O)C1CC=CC2(O)NC(O)C1O, Beta: -69.062136
+Mutated 4 (Delete atom): C=C=C=C1C2CC1C1(O)C=CCC2CC(O)N1, Beta: 25.377965
+Mutated 5 (Change atom type): C=C=C=C1C2CC1(O)C1CC=CC2(O)OC(O)C1, Beta: -10.315662
+Mutated 6 (Add ring): OC1NC2(O)C=CCC3C1=C=C=C=C1C2CC13O, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C2CC1(O)C(CCO)CC=CC2(N)O, Beta: 8.400064
+Temperature: 88.422211, Iteration: 34
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2CC1C1(O)C=C=CC2CC(O)N1, Beta: 35.881501
+Mutated 2 (Add atom inline): C=CCC=C1C2CC1C1(O)C=CCC2CC(O)N1, Beta: -1000.000000
+Mutated 3 (Add branch): C=C=C=C1C2C(=O)C1C1(O)C=CCC2CC(O)N1, Beta: 10.591557
+Mutated 4 (Delete atom): C=C=C=C1C2CCC=CC(O)(NCO)C1C2, Beta: 5.925781
+Mutated 5 (Change atom type): C=C=C=C1C2CN1C1CC=CC2(O)NC(O)C1, Beta: -3.372370
+Mutated 6 (Add ring): OC1CC2CC=CC(O)(N1)C1C3=C=C=CC1C32, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C2CC1C(N)(O)C=CCC2CCO, Beta: 37.530185
+Temperature: 88.071368, Iteration: 35
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2=CC1C(N)(O)C=CCC2CCO, Beta: 5.051535
+Mutated 2 (Add atom inline): C=C=C=C1C2CC1C(N)(O)C=CCC2=C=CCO, Beta: 2.191343
+Mutated 3 (Add branch): C=C=C=C1C2CC1C(O)(NN)C=CCC2CCO, Beta: 5.822411
+Mutated 4 (Delete atom): C=C=C=C1C(CCCO)CC1C(N)(O)C=C, Beta: -21.713747
+Mutated 5 (Change atom type): C=C=C=C1C2CC1C(N)(O)C=CCC2NCO, Beta: 19.212465
+Mutated 6 (Add ring): C=C=C=C1C2C3=C(CO)C2CC=CC(N)(O)C13, Beta: 8.663636
+Mutated 7 (Delete ring): C=C=C=C1C(CCCO)CC1C(N)(O)C=CC, Beta: 18.415438
+Temperature: 87.720526, Iteration: 36
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2=CC1C(NCO)CC=CC2(N)O, Beta: 6.722075
+Mutated 2 (Add atom inline): C=C=C=C1C2=CC(N)(O)C=CCC(NCO)C1C2, Beta: 2.776309
+Mutated 3 (Add branch): C=C=C=C1C2CC1C(O)(NO)C=CCC2NCO, Beta: 7.121998
+Mutated 4 (Delete atom): C=C=C=C1C2CC1C(N)(O)C=CCC2NC, Beta: 9.959405
+Mutated 5 (Change atom type): NC1(O)C=CCC(NCO)C2CC1C2=C=C=O, Beta: 5.672030
+Mutated 6 (Add ring): NC1(O)C=CCC(NCO)C2C3=C=C=C=C2C31, Beta: 2.189912
+Mutated 7 (Delete ring): C=C=C=C1C(CNCO)CC1C(N)(O)C=CC, Beta: 17.270251
+Temperature: 87.369684, Iteration: 37
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C(=CNCO)CC1C(N)(O)C=CC, Beta: 0.800487
+Mutated 2 (Add atom inline): C=C=C=C1C(CNC=CO)CC1C(N)(O)C=CC, Beta: 8.272949
+Mutated 3 (Add branch): C=C=C=C1C(C(=O)NCO)CC1C(N)(O)C=CC, Beta: -36.510835
+Mutated 4 (Delete atom): C=C=C=C1C(CNC)CC1C(N)(O)C=CC, Beta: 2.799827
+Mutated 5 (Change atom type): C=C=C=C1C(CNCO)CN1C(N)(O)C=CC, Beta: -45.187929
+Mutated 6 (Add ring): C=C=C=C1C2CC1(CNCO)CC=CC2(N)O, Beta: 31.802675
+Mutated 7 (Delete ring): C=C=C=CC(CCC(N)(O)C=CC)CNCO, Beta: 3.413233
+Temperature: 87.018842, Iteration: 38
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=CC=C1C2CC1(CNCO)CC=CC2(N)O, Beta: 4.778347
+Mutated 2 (Add atom inline): C=C=C=C1C2CC1(CNCO)CC=CC2(O)N=N, Beta: 37.288666
+Mutated 3 (Add branch): C=C=C=C1C2CC1(CN(O)CO)CC=CC2(N)O, Beta: 4.622847
+Mutated 4 (Delete atom): C=C=C=C1C2CC1(CNC)CC=CC2(N)O, Beta: 6.014991
+Mutated 5 (Change atom type): C=C=C=C1N2CC1(CNCO)CC=CC2(N)O, Beta: 5.159645
+Mutated 6 (Add ring): C=C=C=C1C2CC13CC=C(OCNC3)C2(N)O, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1CCC1(CC=CC(N)O)CNCO, Beta: 6.597697
+Temperature: 86.668000, Iteration: 39
+Best molecule: C=C=C=C1C2CC1C(C)C(O)=C(O)OCO2, Beta: 39.894365
+Mutated 1 (Change bond type): C=C=C=C1C2CC1(CNC=O)CC=CC2(O)N=N, Beta: 9.424812
+Mutated 2 (Add atom inline): C=C=C=C1C2CC1(CNC=CO)CC=CC2(O)N=N, Beta: 4.321392
+Mutated 3 (Add branch): C=C=C=C1C2CC1(CNC(N)O)CC=CC2(O)N=N, Beta: 77.579319
+Mutated 4 (Delete atom): C=C=C=C1C2CC1(CNCO)CC=CC2N=N, Beta: 4.168869
+Mutated 5 (Change atom type): C=C=C=C1C2CC1(CNCO)CC=CC2(N)N=N, Beta: -364.637436
+Mutated 6 (Add ring): C=C=C=C1C2CC1(C1=C(O)N1)CC=CC2(O)N=N, Beta: 4.218882
+Mutated 7 (Delete ring): C=C=C=C1CCC1(CC=CC(O)N=N)CNCO, Beta: 18.926626
+Temperature: 86.317158, Iteration: 40
+Best molecule: C=C=C=C1C2CC1(CNC(N)O)CC=CC2(O)N=N, Beta: 77.579319
+Mutated 1 (Change bond type): C=C=C=C1C2CC1(CNC(=N)O)CC=CC2(O)N=N, Beta: 17.607051
+Mutated 2 (Add atom inline): C=C=C=C1C2CC1(CN=NC(N)O)CC=CC2(O)N=N, Beta: 36.460477
+Mutated 3 (Add branch): C=C=C=C1C2CC1(CNC(N)O)CC=C(C)C2(O)N=N, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=C1C(CNC(N)O)CC1C(O)(C=C)N=N, Beta: -70.335828
+Mutated 5 (Change atom type): C=C=C=C1C2CC1(CNC(N)O)CC=CC2(N)N=N, Beta: 13.415666
+Mutated 6 (Add ring): N=NC1(O)C=CCC23CNC(O)NC=C=C=C2C1C3, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C(C(O)(C=C)N=N)CC1(C)CNC(N)O, Beta: 54.889177
+Temperature: 85.966316, Iteration: 41
+Best molecule: C=C=C=C1C2CC1(CNC(N)O)CC=CC2(O)N=N, Beta: 77.579319
+Mutated 1 (Change bond type): C=C=C=C1C(C(O)(CC)N=N)CC1(C)CNC(N)O, Beta: 6.594361
+Mutated 2 (Add atom inline): C=C=C=C1C(C(O)(C=CC)N=N)CC1(C)CNC(N)O, Beta: -1000.000000
+Mutated 3 (Add branch): C=C=C=C1C(C(O)(C=C)N=N)CC1(C)CNC(N)OO, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=C1C(C(N)(O)C=C)CC1(C)CNC(N)O, Beta: 5.766832
+Mutated 5 (Change atom type): C=C=C=C1C(C(O)(C=C)N=N)CC1(C)NNC(N)O, Beta: 3.671704
+Mutated 6 (Add ring): C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 7 (Delete ring): C=C=C=CC(CC(C)CNC(N)O)C(O)(C=C)N=N, Beta: 3.807062
+Temperature: 85.615474, Iteration: 42
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): C=C=C=C1C(C2(O)N=NC2=C)CC1(C)C=NC(N)O, Beta: 2.422064
+Mutated 2 (Add atom inline): C=C=C=C1NC(C)(CNC(N)O)CC1C1(O)N=NC1=C, Beta: 3.870564
+Mutated 3 (Add branch): C=C=C=C1C(C2(O)N=NC2=CO)CC1(C)CNC(N)O, Beta: 7.339957
+Mutated 4 (Delete atom): C=C=C=C(CC1(O)N=NC1=C)C(C)CNC(N)O, Beta: 5.014575
+Mutated 5 (Change atom type): C=C=C=C1C(C2(O)N=NC2=O)CC1(C)CNC(N)O, Beta: 2.246282
+Mutated 6 (Add ring): CC1(CNC(N)O)CC2C1=C=C=CC=C1N=NC12O, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C(C(O)C(=C)N=N)CC1(C)CNC(N)O, Beta: 6.020446
+Temperature: 85.264632, Iteration: 43
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): C=C=C=C1C(C2(O)N=NC2=CO)CC1(C)C=NC(N)O, Beta: 5.169528
+Mutated 2 (Add atom inline): C=C=CC=C1C(C2(O)N=NC2=CO)CC1(C)CNC(N)O, Beta: -1000.000000
+Mutated 3 (Add branch): C=C=C=C1C(C2(OC)N=NC2=CO)CC1(C)CNC(N)O, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=C(CC1(O)N=NC1=CO)C(C)CNC(N)O, Beta: 6.585119
+Mutated 5 (Change atom type): C=C=C=C1C(C2(O)N=NC2=CN)CC1(C)CNC(N)O, Beta: 6.083944
+Mutated 6 (Add ring): C=C=C=C1C(C2(O)N=NC2=CO)C2NC(O)NCC12C, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C1C(C(O)(C=CO)N=N)CC1(C)CNC(N)O, Beta: 2.306000
+Temperature: 84.913789, Iteration: 44
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): C=C=C=C(CC1(O)N=NC1=CO)C(C)CN=C(N)O, Beta: 4.991491
+Mutated 2 (Add atom inline): C=C=C=C(CC1(O)N=NC1=CO)C(C)OCNC(N)O, Beta: 5.471968
+Mutated 3 (Add branch): CC(CNC(N)O)C(=C=C=CO)CC1(O)N=NC1=CO, Beta: 27.548389
+Mutated 4 (Delete atom): C=C=C(CC1(O)N=NC1=CO)C(C)CNC(N)O, Beta: 6.668223
+Mutated 5 (Change atom type): C=C=C=C(CC1(O)N=NC1=CO)N(C)CNC(N)O, Beta: 4.918823
+Mutated 6 (Add ring): CC1CN(C(N)O)C=C=C=C1CC1(O)N=NC1=CO, Beta: -1000.000000
+Mutated 7 (Delete ring): C=C=C=C(CC(O)(C=CO)N=N)C(C)CNC(N)O, Beta: 10.990789
+Temperature: 84.562947, Iteration: 45
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(CNC(N)O)C(=C=C=CO)CC1(O)N=NC1=C=O, Beta: 7.928390
+Mutated 2 (Add atom inline): CC(CNC(N)O)C(=COC=CO)CC1(O)N=NC1=CO, Beta: -1000.000000
+Mutated 3 (Add branch): CC(C(=C=C=CO)CC1(O)N=NC1=CO)C(N)NC(N)O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(CNCN)C(=C=C=CO)CC1(O)N=NC1=CO, Beta: 12.247091
+Mutated 5 (Change atom type): CC(CNC(N)O)C(=C=C=NO)CC1(O)N=NC1=CO, Beta: 2.693899
+Mutated 6 (Add ring): NC(O)NCC1CC(C2(O)N=NC2=CO)C1=C=C=CO, Beta: 64.661533
+Mutated 7 (Delete ring): CC(CNC(N)O)C(=C=C=CO)CC(O)N=NC=CO, Beta: 3.106707
+Temperature: 84.212105, Iteration: 46
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)NCC1CC(C2(O)N=NC2=CO)C1=CC=CO, Beta: 3.364618
+Mutated 2 (Add atom inline): NC(O)NCC1CC(C2(O)N=NC2=C=CO)C1=C=C=CO, Beta: 5.108188
+Mutated 3 (Add branch): NC(O)=C1N=NC1(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 73.943880
+Mutated 4 (Delete atom): C=C=C=C1C(CNC(N)O)CC1C1(O)N=NC1=CO, Beta: 9.628039
+Mutated 5 (Change atom type): NC(O)OCC1CC(C2(O)N=NC2=CO)C1=C=C=CO, Beta: 2.453231
+Mutated 6 (Add ring): NC(O)NC1OC=C=C=C2C1CC2C1(O)N=NC1=CO, Beta: -1000.000000
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 123.951828
+Temperature: 83.861263, Iteration: 47
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1C=C(CNC(N)O)C1=C=C=CO, Beta: 3.040026
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1C=CC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 3 (Add branch): N=NC(O)NCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: 17.934934
+Mutated 4 (Delete atom): NC(O)NCC1CC(C(N)(O)C=CO)C1=C=C=CO, Beta: 4.992068
+Mutated 5 (Change atom type): NC(=CO)C(N)(O)C1CC(NNC(N)O)C1=C=C=CO, Beta: 2.911583
+Mutated 6 (Add ring): NC(=CO)C(N)(O)C12CC(CNC(O)N1)C2=C=C=CO, Beta: -1000.000000
+Mutated 7 (Delete ring): CC(CNC(N)O)C(=C=C=CO)CC(N)(O)C(N)=CO, Beta: 3.555610
+Temperature: 83.510421, Iteration: 48
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1C=C=CO, Beta: 3.504996
+Mutated 2 (Add atom inline): N=NC(O)(C(N)=CO)C1CC(CNC(N)O)C1=C=C=CO, Beta: 7.108727
+Mutated 3 (Add branch): N=C1C(CNC(N)O)C(=C=C=CO)C1C(N)(O)C(N)=CO, Beta: 3.047156
+Mutated 4 (Delete atom): NC(=CO)C(N)(O)CC(=C=C=CO)CCNC(N)O, Beta: 3.337310
+Mutated 5 (Change atom type): NC(=CO)C(N)(O)C1OC(CNC(N)O)C1=C=C=CO, Beta: 8.180857
+Mutated 6 (Add ring): NC(O)NCC1CC(C(N)(O)C2=C(O)N2)C1=C=C=CO, Beta: 4.593295
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)C(C=C=C=CO)CCCNC(N)O, Beta: 1.857323
+Temperature: 83.159579, Iteration: 49
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1C=C=CO, Beta: 3.508966
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1=C=CC(CNC(N)O)C1=C=C=CO, Beta: 3.911652
+Mutated 3 (Add branch): NC(=CO)C(N)(O)C1CC(CN(N)C(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): NCNCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: 2.660832
+Mutated 5 (Change atom type): NC(=CO)C(N)(O)C1CC(COC(N)O)C1=C=C=CO, Beta: 2.744102
+Mutated 6 (Add ring): NC(O)NCC1C(=C=C=CO)C2C1=NC(=CO)C2(N)O, Beta: -9.766705
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)CCC(C=C=C=CO)CNC(N)O, Beta: 11.731608
+Temperature: 82.808737, Iteration: 50
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(CN=C(N)O)C1=C=C=CO, Beta: 4.795146
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1C=CC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 3 (Add branch): C=NC(O)(C(N)=CO)C1CC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(=CO)C(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 11.781498
+Mutated 5 (Change atom type): CC=C(N)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 5.066012
+Mutated 6 (Add ring): NC1=C(O)C2C(CNC(N)O)C(=C=C=CO)C2C1(N)O, Beta: 28.973142
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)CCC(C=C=C=CO)CNC(N)O, Beta: 11.728990
+Temperature: 82.457895, Iteration: 51
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1C=C=CO, Beta: 3.505255
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1=C=C=C=NO, Beta: 8.746518
+Mutated 3 (Add branch): NC(=CO)C(N)(O)C1CC(C(N)NC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=C1C(CNC(N)O)CC1C(N)(O)C(N)=CO, Beta: 3.066378
+Mutated 5 (Change atom type): NC(=NO)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 4.486504
+Mutated 6 (Add ring): NC1=COOC(N)NCC2CC(C2=C=C=CO)C1(N)O, Beta: -1000.000000
+Mutated 7 (Delete ring): CC(C(=C=C=CO)CCNC(N)O)C(N)(O)C(N)=CO, Beta: 10.764874
+Temperature: 82.107053, Iteration: 52
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): N=C(O)NCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: 10.080096
+Mutated 2 (Add atom inline): NC(=C=C=O)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 8.547418
+Mutated 3 (Add branch): NC(O)=C=C=C1C(CNC(N)O)CC1C(N)(O)C(N)=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=C1C(CNC(N)O)CC1C(N)(O)C(N)=CO, Beta: 3.067650
+Mutated 5 (Change atom type): NC(=CO)C(N)(N)C1CC(CNC(N)O)C1=C=C=CO, Beta: 7.121849
+Mutated 6 (Add ring): NC(=CO)C(N)(O)C1CC(CNC2NO2)C1=C=C=CO, Beta: 12.120159
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)C(C=C=C=CO)CCCNC(N)O, Beta: 1.860105
+Temperature: 81.756211, Iteration: 53
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=C=O)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 8.594754
+Mutated 2 (Add atom inline): NC(O)NCC1CC(C(N)(O)C(N)NCO)C1=C=C=CO, Beta: -1000.000000
+Mutated 3 (Add branch): NC(=CO)C(N)(O)C1(O)CC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(=CO)C(N)(O)CC(=C=C=CO)CCNC(N)O, Beta: 3.333223
+Mutated 5 (Change atom type): NC(=NO)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 4.463547
+Mutated 6 (Add ring): NC1=CONC(O)NCC2CC(C2=C=C=CO)C1(N)O, Beta: -1000.000000
+Mutated 7 (Delete ring): CC(CNC(N)O)C(=C=C=CO)CC(N)(O)C(N)=CO, Beta: 3.563003
+Temperature: 81.405368, Iteration: 54
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)NCC1CC(C(N)(O)C(N)CO)C1=C=C=CO, Beta: -1000.000000
+Mutated 2 (Add atom inline): NCC(O)NCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: -1000.000000
+Mutated 3 (Add branch): CC(O)=C=C=C1C(CNC(N)O)CC1C(N)(O)C(N)=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C(N)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 7.601411
+Mutated 5 (Change atom type): NC(=CO)C(N)(O)C1CC(CCC(N)O)C1=C=C=CO, Beta: 5.352383
+Mutated 6 (Add ring): NC(=CO)C1(N)OC(NC(N)O)C2CC1C2=C=C=CO, Beta: 4.750114
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)C(C=C=C=CO)CCCNC(N)O, Beta: 1.854212
+Temperature: 81.054526, Iteration: 55
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1C=C=CO, Beta: 3.497857
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1CC(CNC(N)O)C(=C=C=CO)N1, Beta: -1000.000000
+Mutated 3 (Add branch): NC(=CO)C(N)(O)C1(N)CC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): NCNCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: 2.664233
+Mutated 5 (Change atom type): CC=C=C=C1C(CNC(N)O)CC1C(N)(O)C(N)=CO, Beta: 4.757049
+Mutated 6 (Add ring): NC1=COC(N)(O)NCC2CC(C2=C=C=CO)C1(N)O, Beta: -1000.000000
+Mutated 7 (Delete ring): CC(CNC(N)O)C(=C=C=CO)CC(N)(O)C(N)=CO, Beta: 3.574375
+Temperature: 80.703684, Iteration: 56
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)NCC1CC(C(N)(O)C(N)CO)C1=C=C=CO, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1=C=NC=CO, Beta: -1000.000000
+Mutated 3 (Add branch): C=NC(=CO)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 7.555613
+Mutated 4 (Delete atom): NCNCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: 2.663836
+Mutated 5 (Change atom type): NC(=CO)C(N)(O)C1CC(ONC(N)O)C1=C=C=CO, Beta: 3.910782
+Mutated 6 (Add ring): NC(=CO)C1(N)OOC(N)NCC2CC1C2=C=C=CO, Beta: -1000.000000
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)CCC(C=C=C=CO)CNC(N)O, Beta: 11.688060
+Temperature: 80.352842, Iteration: 57
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1C=C=CO, Beta: 3.504565
+Mutated 2 (Add atom inline): NC(=CNO)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 3 (Add branch): N=C1C(CNC(N)O)C(=C=C=CO)C1C(N)(O)C(N)=CO, Beta: 3.046843
+Mutated 4 (Delete atom): NC(=CO)C(N)(O)CC(=C=C=CO)CCNC(N)O, Beta: 3.335451
+Mutated 5 (Change atom type): CC(N)(C(N)=CO)C1CC(CNC(N)O)C1=C=C=CO, Beta: 17.698005
+Mutated 6 (Add ring): NC1=C(O)C(N)(O)NCC2CC(C2=C=C=CO)C1(N)O, Beta: -1000.000000
+Mutated 7 (Delete ring): CC(C(=C=C=CO)CCNC(N)O)C(N)(O)C(N)=CO, Beta: 10.965714
+Temperature: 80.002000, Iteration: 58
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1C=C(CNC(N)O)C1=C=C=CO, Beta: 3.042286
+Mutated 2 (Add atom inline): NNC(O)NCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: -1000.000000
+Mutated 3 (Add branch): NOC(N)NCC1CC(C(N)(O)C(N)=CO)C1=C=C=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(=CO)C(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 11.715365
+Mutated 5 (Change atom type): NC=C(N)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 5.402027
+Mutated 6 (Add ring): NC1=C(O)C(N)(O)NCC2CC(C2=C=C=CO)C1(N)O, Beta: -1000.000000
+Mutated 7 (Delete ring): CC(CNC(N)O)C(=C=C=CO)CC(N)(O)C(N)=CO, Beta: 3.564521
+Temperature: 79.651158, Iteration: 59
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1=C=C=C=O, Beta: 7.122471
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1CNC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 3 (Add branch): CNC(=CO)C(N)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(O)NCC1CC(C(N)(O)C=CO)C1=C=C=CO, Beta: 4.994527
+Mutated 5 (Change atom type): NC(=CO)C(O)(O)C1CC(CNC(N)O)C1=C=C=CO, Beta: 3.780272
+Mutated 6 (Add ring): NC(=CO)C(N)(O)C1CC2CNC(N)(O)OC=C=C=C21, Beta: -1000.000000
+Mutated 7 (Delete ring): NC(=CO)C(N)(O)C(C=C=C=CO)CCCNC(N)O, Beta: 1.862759
+Temperature: 79.300316, Iteration: 60
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=CO)C(N)(O)C1CC(C=NC(N)O)C1=C=C=C=O, Beta: 5.750264
+Mutated 2 (Add atom inline): NC(=CO)C(N)(O)C1CC(CNC(N)O)C1=COC=C=O, Beta: 2.854919
+Mutated 3 (Add branch): NC(=COO)C(N)(O)C1CC(CNC(N)O)C1=C=C=C=O, Beta: 30.111373
+Mutated 4 (Delete atom): NC(=CO)C(O)C1CC(CNC(N)O)C1=C=C=C=O, Beta: 20.364973
+Mutated 5 (Change atom type): NC=C(N)C(N)(O)C1CC(CNC(N)O)C1=C=C=C=O, Beta: 5.820059
+Mutated 6 (Add ring): NC(O)NCC1CC(C(N)(O)C2=C(O)N2)C1=C=C=C=O, Beta: 0.981014
+Mutated 7 (Delete ring): CC(CNC(N)O)C(=C=C=C=O)CC(N)(O)C(N)=CO, Beta: 2.345766
+Temperature: 78.949474, Iteration: 61
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=COO)C(N)(O)C1CC(CNC(N)O)C1C=C=C=O, Beta: 2.967633
+Mutated 2 (Add atom inline): NC(=COO)C(N)(O)C1CC(CNC(N)O)C1N=C=C=C=O, Beta: -1000.000000
+Mutated 3 (Add branch): CC(OO)=C(N)C(N)(O)C1CC(CNC(N)O)C1=C=C=C=O, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(=COO)C(N)(O)CC(=C=C=C=O)CCNC(N)O, Beta: 1.586016
+Mutated 5 (Change atom type): C=C=C=C=C1C(CNC(N)O)CC1C(N)(O)C(N)=COO, Beta: -3.720837
+Mutated 6 (Add ring): NC(=COO)C1(O)NC2(CNC(N)O)CC1C2=C=C=C=O, Beta: 5.872060
+Mutated 7 (Delete ring): CC(CNC(N)O)C(=C=C=C=O)CC(N)(O)C(N)=COO, Beta: -1000.000000
+Temperature: 78.598632, Iteration: 62
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=COO)C(N)(O)C1C=C(CNC(N)O)C1=C=C=C=O, Beta: 5.073613
+Mutated 2 (Add atom inline): NC(=COO)C(N)(O)C1CC(CNC(N)O)OC1=C=C=C=O, Beta: -1000.000000
+Mutated 3 (Add branch): NOOC=C(N)C(N)(O)C1CC(CNC(N)O)C1=C=C=C=O, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=C1C(CNC(N)O)CC1C(N)(O)C(N)=COO, Beta: -1000.000000
+Mutated 5 (Change atom type): NC(=COO)C(N)(O)C1CC(CNC(N)N)C1=C=C=C=O, Beta: 3.535105
+Mutated 6 (Add ring): NC(=COO)C(N)(O)C1CC(C2NC2(N)O)C1=C=C=C=O, Beta: 9.456269
+Mutated 7 (Delete ring): NC(=COO)C(N)(O)CCC(C=C=C=C=O)CNC(N)O, Beta: 3.171362
+Temperature: 78.247789, Iteration: 63
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=COO)C(N)(O)C1C=C(C2NC2(N)O)C1=C=C=C=O, Beta: 4.278467
+Mutated 2 (Add atom inline): NC(=COO)C(N)(O)C1CC(C2C=NC2(N)O)C1=C=C=C=O, Beta: -1000.000000
+Mutated 3 (Add branch): NC(=COO)C(O)(NO)C1CC(C2NC2(N)O)C1=C=C=C=O, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(=COO)C(N)(O)CC(=C=C=C=O)CC1NC1(N)O, Beta: 4.190841
+Mutated 5 (Change atom type): NC(=COO)C(N)(O)C1CC(N2NC2(N)O)C1=C=C=C=O, Beta: 10.290624
+Mutated 6 (Add ring): NC(=COO)C1(O)NC2(NC2(N)O)C2CC1C2=C=C=C=O, Beta: 5.863265
+Mutated 7 (Delete ring): CC(C(=C=C=C=O)CC(N)(O)C(N)=COO)C1NC1(N)O, Beta: -1000.000000
+Temperature: 77.896947, Iteration: 64
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(=COO)C(N)(O)C1CC(N2NC2(N)O)C1=CC=C=O, Beta: 3.863286
+Mutated 2 (Add atom inline): NC(=COO)C(N)(O)C1CC(N2NC2(N)O)C1=C=C=CC=O, Beta: -1000.000000
+Mutated 3 (Add branch): C=NC1(O)NN1C1CC(C(N)(O)C(N)=COO)C1=C=C=C=O, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(=COO)C(O)C1CC(N2NC2(N)O)C1=C=C=C=O, Beta: 3.002029
+Mutated 5 (Change atom type): NC(O)(C(O)=COO)C1CC(N2NC2(N)O)C1=C=C=C=O, Beta: 13.187111
+Mutated 6 (Add ring): NC1=C(OO)NC1(O)C1CC(N2NC2(N)O)C1=C=C=C=O, Beta: 4.231546
+Mutated 7 (Delete ring): NC(=COO)C(N)(O)C(C=C=C=C=O)CCN1NC1(N)O, Beta: 6.989987
+Temperature: 77.546105, Iteration: 65
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(C(O)=COO)C1CC(N2NC2(N)O)C1=C=CC=O, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC(O)(C(O)=COO)C1CC(N2NC2(N)O)C1=NC=C=C=O, Beta: 1.636528
+Mutated 3 (Add branch): CNC(O)(C(O)=COO)C1CC(N2NC2(N)O)C1=C=C=C=O, Beta: -1000.000000
+Mutated 4 (Delete atom): NC1(O)NN1C1CC(C(O)C(O)=COO)C1=C=C=C=O, Beta: 2.093609
+Mutated 5 (Change atom type): NC(O)(C(O)=COO)C1OC(N2NC2(N)O)C1=C=C=C=O, Beta: 6.154251
+Mutated 6 (Add ring): NC(O)(C(O)=COO)C1CC(N2NC23NO3)C1=C=C=C=O, Beta: 2.275799
+Mutated 7 (Delete ring): NC(N)(O)NC1CC(C(N)(O)C(O)=COO)C1=C=C=C=O, Beta: 4.571451
+Temperature: 77.195263, Iteration: 66
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(C(O)=COO)C1OC(N2NC2(N)O)C1=C=CC=O, Beta: 2.914561
+Mutated 2 (Add atom inline): NC(O)(C(O)=COO)C1CC(=C=C=C=O)C(N2NC2(N)O)O1, Beta: 4.897577
+Mutated 3 (Add branch): NC(O)(C(O)=COO)C1OC(N2NC2(O)NO)C1=C=C=C=O, Beta: 7.536244
+Mutated 4 (Delete atom): NC(O)(C(O)=CO)C1OC(N2NC2(N)O)C1=C=C=C=O, Beta: 1.481361
+Mutated 5 (Change atom type): NC1(O)NN1C1OC(C(O)(O)C(O)=COO)C1=C=C=C=O, Beta: 6.710268
+Mutated 6 (Add ring): O=C=C=C=C1C2OC1C(O)(C(O)=COO)N=NC1(O)NN21, Beta: 1.469387
+Mutated 7 (Delete ring): NC(N)(O)NC1OC(C(N)(O)C(O)=COO)C1=C=C=C=O, Beta: 2.549962
+Temperature: 76.844421, Iteration: 67
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(C(O)=COO)C1OC(N2NC2(O)NO)C1=C=CC=O, Beta: 3.626572
+Mutated 2 (Add atom inline): NC(O)(OC1OC(N2NC2(O)NO)C1=C=C=C=O)C(O)=COO, Beta: -1000.000000
+Mutated 3 (Add branch): NC(O)(C(O)=C(O)OO)C1OC(N2NC2(O)NO)C1=C=C=C=O, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=C1C(C(O)C(O)=COO)OC1N1NC1(O)NO, Beta: 1.688714
+Mutated 5 (Change atom type): NC(O)(C(O)=CCO)C1OC(N2NC2(O)NO)C1=C=C=C=O, Beta: 13.997222
+Mutated 6 (Add ring): NC(O)(C(O)=C1OO1)C1OC(N2NC2(O)NO)C1=C=C=C=O, Beta: 12.115205
+Mutated 7 (Delete ring): NC(O)(C(O)=COO)C(C=C=C=C=O)OCN1NC1(O)NO, Beta: 3.467207
+Temperature: 76.493579, Iteration: 68
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(C(O)=CCO)C1OC(N2NC2(O)NO)C1=C=CC=O, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC(O)(C(O)=CCO)C1OC(N2NC2(O)N=NO)C1=C=C=C=O, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=C1C(N2NC2(O)NO)OC1C(O)(NO)C(O)=CCO, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(O)(C(O)=CCO)C1OC(NC(O)NO)C1=C=C=C=O, Beta: 2.967519
+Mutated 5 (Change atom type): NC(O)(C(O)=CCO)C1OC(N2OC2(O)NO)C1=C=C=C=O, Beta: -1000.000000
+Mutated 6 (Add ring): NC(O)(C(O)=CCO)C1OC2(OC3(NO)NN32)C1=C=C=C=O, Beta: 3.201001
+Mutated 7 (Delete ring): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)=CCO, Beta: 5.214171
+Temperature: 76.142737, Iteration: 69
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)CCO, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC(O)(COC(C=C=C=C=O)=NN1NC1(O)NO)C(O)=CCO, Beta: -1000.000000
+Mutated 3 (Add branch): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)=CC(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC=C(O)C(N)(O)COC(C=C=C=C=O)N1NC1(O)NO, Beta: 9.910630
+Mutated 5 (Change atom type): CCC=C(O)C(N)(O)COC(C=C=C=C=O)N1NC1(O)NO, Beta: -1000.000000
+Mutated 6 (Add ring): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)=C1CO1, Beta: 53.660789
+Mutated 7 (Delete ring): NC(O)(COC(C=C=C=C=O)NNC(O)NO)C(O)=CCO, Beta: -1000.000000
+Temperature: 75.791895, Iteration: 70
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(COC(C=C=C=CO)N1NC1(O)NO)C(O)=C1CO1, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)N=C1CO1, Beta: -1000.000000
+Mutated 3 (Add branch): CN(O)C1(O)NN1C(C=C=C=C=O)OCC(N)(O)C(O)=C1CO1, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)=CO, Beta: 9.763475
+Mutated 5 (Change atom type): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)=C1OO1, Beta: 14.301219
+Mutated 6 (Add ring): NC(O)(COC1(C=C=C=C=O)N(O)C2(O)NN21)C(O)=C1CO1, Beta: 7.272250
+Mutated 7 (Delete ring): NC(O)(COC(C=C=C=C=O)N1NC1(O)NO)C(O)=CCO, Beta: 5.214049
+Temperature: 75.441053, Iteration: 71
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(COC(C=CC=C=O)N1NC1(O)NO)C(O)=C1OO1, Beta: 2.939998
+Mutated 2 (Add atom inline): NC(O)(COC(C=C=C=C=O)=CN1NC1(O)NO)C(O)=C1OO1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(C=C=C=C=O)(OCC(N)(O)C(O)=C1OO1)N1NC1(O)NO, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(COC(C=C=C=C=O)N1NC1(O)NO)C(O)=C1OO1, Beta: 3.860394
+Mutated 5 (Change atom type): NC(O)(COC(C=C=C=C=O)N1NC1(O)CO)C(O)=C1OO1, Beta: 4.335244
+Mutated 6 (Add ring): NC(O)(COC1C(=C=C=C=O)OC2(NO)NN12)C(O)=C1OO1, Beta: 10.285300
+Mutated 7 (Delete ring): NC(O)(COC(C=C=C=C=O)NNC(O)NO)C(O)=C1OO1, Beta: 30.616300
+Temperature: 75.090211, Iteration: 72
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(COC(C=C=C=CO)NNC(O)NO)C(O)=C1OO1, Beta: -1000.000000
+Mutated 2 (Add atom inline): NC(O)(COC(=C=NNC(O)NO)C=C=C=C=O)C(O)=C1OO1, Beta: -1000.000000
+Mutated 3 (Add branch): NC(O)(COC(C=C=C=C=O)NNC(O)(O)NO)C(O)=C1OO1, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(O)(COC(C=C=C=C=O)NNCNO)C(O)=C1OO1, Beta: 3.432464
+Mutated 5 (Change atom type): NC(O)(CON(C=C=C=C=O)NNC(O)NO)C(O)=C1OO1, Beta: 2.680586
+Mutated 6 (Add ring): NC(O)(COC(C=C=C=C=O)NN1OC1NO)C(O)=C1OO1, Beta: 7.634717
+Mutated 7 (Delete ring): NC(O)(COC(C=C=C=C=O)NNC(O)NO)C(O)=COO, Beta: -1000.000000
+Temperature: 74.739368, Iteration: 73
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): NC(O)(COC(C=C=C=C=O)NNC(=O)NO)C(O)=C1OO1, Beta: 5.294422
+Mutated 2 (Add atom inline): NOC(O)(COC(C=C=C=C=O)NNC(O)NO)C(O)=C1OO1, Beta: -1000.000000
+Mutated 3 (Add branch): NC(OC(C=C=C=C=O)NNC(O)NO)C(N)(O)C(O)=C1OO1, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(O)(COC(C=C=C=C=O)NNC(O)NO)C(O)=CO, Beta: 2.166623
+Mutated 5 (Change atom type): CC(NO)NNC(C=C=C=C=O)OCC(N)(O)C(O)=C1OO1, Beta: 12.126091
+Mutated 6 (Add ring): NC(O)(COC1(C=C=C=C=O)NN1C(O)NO)C(O)=C1OO1, Beta: 5.159904
+Mutated 7 (Delete ring): NC(O)(COC(C=C=C=C=O)NNC(O)NO)C(O)=COO, Beta: 4.499903
+Temperature: 74.388526, Iteration: 74
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(NO)NNC(C=C=C=C=O)OCC(N)(O)C(O)C1OO1, Beta: -1000.000000
+Mutated 2 (Add atom inline): CC(NO)NNC(C=C=C=CC=O)OCC(N)(O)C(O)=C1OO1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NNC(C=C=C=C=O)OCC(N)(O)C(O)=C1OO1)N(N)O, Beta: -1000.000000
+Mutated 4 (Delete atom): NC(O)(COC(C=C=C=C=O)NNCNO)C(O)=C1OO1, Beta: 3.445255
+Mutated 5 (Change atom type): CC(NO)NOC(C=C=C=C=O)OCC(N)(O)C(O)=C1OO1, Beta: 10.290694
+Mutated 6 (Add ring): NC(O)(COC1(C=C=C=C=O)CC(NO)NN1)C(O)=C1OO1, Beta: 3.074807
+Mutated 7 (Delete ring): CC(NO)NNC(C=C=C=C=O)OCC(N)(O)C(O)=COO, Beta: -1000.000000
+Temperature: 74.037684, Iteration: 75
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(=NOC(C=C=C=C=O)OCC(N)(O)C(O)=C1OO1)NO, Beta: 5.809398
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=C=C=O)OCC(N)(O)C(O)=C1OCO1, Beta: -1000.000000
+Mutated 3 (Add branch): NC(O)(COC(C=C=C=C=O)ONC(CO)NO)C(O)=C1OO1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C1OO1, Beta: 13.471070
+Mutated 5 (Change atom type): CC(NO)NOC(N=C=C=C=O)OCC(N)(O)C(O)=C1OO1, Beta: 9.478646
+Mutated 6 (Add ring): CC1(NO)NOC(C=C=C=C=O)OCC(N)(O)C(=C2OO2)O1, Beta: -1000.000000
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(N)(O)C(O)=C(O)O, Beta: -1000.000000
+Temperature: 73.686842, Iteration: 76
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(N=O)NOC(C=C=C=C=O)OCC(O)C(O)=C1OO1, Beta: 16.913925
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=C=C=O)OCC(O)C(CO)=C1OO1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)NOC(C=C=C=C=O)OC(=N)C(O)C(O)=C1OO1, Beta: 2.327704
+Mutated 4 (Delete atom): CC(N)NOC(C=C=C=C=O)OCC(O)C(O)=C1OO1, Beta: 11.922041
+Mutated 5 (Change atom type): CC(NO)NNC(C=C=C=C=O)OCC(O)C(O)=C1OO1, Beta: 6.822260
+Mutated 6 (Add ring): CC(NO)N1OC(OCC(O)C(O)=C2OO2)C1=C=C=C=O, Beta: 3.577194
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 65.234686
+Temperature: 73.336000, Iteration: 77
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(NO)NOC(=C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: -3.727718
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=C=C=O)OCC(O)C(N=O)=C(O)O, Beta: 4.149224
+Mutated 3 (Add branch): CC(NO)NOC(C=C=C=C=O)OCC(O)C(ON)=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC(OCC(O)C(O)=C(O)O)ONC(C)NO, Beta: 13.222336
+Mutated 5 (Change atom type): CC(NO)NOC(C=C=C=C=O)OCC(C)C(O)=C(O)O, Beta: 17.363935
+Mutated 6 (Add ring): CC(NO)NOC(C=C=C=C=O)OCC1OOC(O)=C1O, Beta: 6.351883
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.971993
+Temperature: 72.985158, Iteration: 78
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(NO)NOC(C=CC=C=O)OCC(O)C(O)=C(O)O, Beta: 3.889442
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=C=C=O)OCC(O)NC(O)=C(O)O, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)NOC(C=C=C=C=O)OC(=N)C(O)C(O)=C(O)O, Beta: 7.197965
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.741125
+Mutated 5 (Change atom type): CC(NO)NOC(C=C=C=C=O)OOC(O)C(O)=C(O)O, Beta: 8.676120
+Mutated 6 (Add ring): CC1(NO)NOC(C=C=C=C=O)OCC(C(O)=C(O)O)O1, Beta: 3.506333
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.990051
+Temperature: 72.634316, Iteration: 79
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(NO)NOC(C=C=C=CO)OCC(O)C(O)=C(O)O, Beta: 6.227857
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)NOC(C=C=C=C=O)OC(C)C(O)C(O)=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=CO, Beta: 4.156988
+Mutated 5 (Change atom type): CC(NO)NNC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 1.790922
+Mutated 6 (Add ring): CC(NO)NOC(C=C=C=C=O)OCC(O)c1ooc1O, Beta: 7.012919
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.205243
+Temperature: 72.283474, Iteration: 80
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(NO)NOC(C=C=C=CO)OCC(O)C(O)=C(O)O, Beta: 6.293140
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=CCC=O)OCC(O)C(O)=C(O)O, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)NOC(C=C=C=C=O)OCC(O)C(ON)=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=CO, Beta: 4.141052
+Mutated 5 (Change atom type): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(N)O, Beta: 5.330540
+Mutated 6 (Add ring): CC1NOC(C=C=C=C=O)OC(C(O)C(O)=C(O)O)N1O, Beta: 8.341104
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 65.022291
+Temperature: 71.932632, Iteration: 81
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(N=O)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 2.625068
+Mutated 2 (Add atom inline): CC(C=NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O)NO, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)NOC(N)(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC(OCC(O)C(O)=C(O)O)ONCNO, Beta: 4.035260
+Mutated 5 (Change atom type): CC(NO)NOC(N=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 2.872256
+Mutated 6 (Add ring): CC(NO)N1OC(C=C=C=C=O)OC1C(O)C(O)=C(O)O, Beta: 5.116269
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 66.257823
+Temperature: 71.581789, Iteration: 82
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): C=C(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 7.662577
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=C=C=O)OCC(O)OC(O)=C(O)O, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)NOC(C=C=C=C=O)OC(=N)C(O)C(O)=C(O)O, Beta: 7.197965
+Mutated 4 (Delete atom): CC(N)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 3.485020
+Mutated 5 (Change atom type): CN(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 5.379454
+Mutated 6 (Add ring): O=C=C=C=CC(OCC(O)C(O)=C(O)O)ONC1CN1O, Beta: 11.691696
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.809954
+Temperature: 71.230947, Iteration: 83
+Best molecule: C=C=C=C1C(C2(O)N=NC2=C)CC1(C)CNC(N)O, Beta: 203.109176
+Mutated 1 (Change bond type): CC(NO)NOC(CC=C=C=O)OCC(O)C(O)=C(O)O, Beta: 3.795834
+Mutated 2 (Add atom inline): CC(NO)NOC(C=C=C=C=O)OCNC(O)C(O)=C(O)O, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)NOC(C=C=C=C=O)OCC(O)(O)C(O)=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC(OCC(O)C(O)=C(O)O)ONC(C)NO, Beta: 13.351487
+Mutated 5 (Change atom type): CC(NO)OOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 5.107182
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.117297
+Temperature: 70.880105, Iteration: 84
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.767812
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=C=O)O1, Beta: 1.576505
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.371140
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.253704
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.671006
+Mutated 6 (Add ring): CC1NOC2(O)COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.738877
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.773628
+Temperature: 70.529263, Iteration: 85
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.812389
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)NO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.092214
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.657216
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=N)O1, Beta: 5.483878
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC2(C=C=C=C=O)O1, Beta: 4.555409
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.088595
+Temperature: 70.178421, Iteration: 86
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 48.470602
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.223798
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.485615
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 11.990165
+Temperature: 69.827579, Iteration: 87
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000081
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.116248
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(=O)OC(C=C=C=C=O)O1, Beta: 5.326421
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.752775
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.779058
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C(O)COC1(C=C=C=C=O)O2, Beta: 4.165149
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.080952
+Temperature: 69.476737, Iteration: 88
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.811012
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(OC=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.586336
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.430943
+Mutated 6 (Add ring): CC1(NO)C(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 8.012734
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.504806
+Temperature: 69.125895, Iteration: 89
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.564199
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C=C(O)O)O1, Beta: 3.487022
+Mutated 3 (Add branch): CC(NON)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.071278
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.737304
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.251727
+Mutated 6 (Add ring): O=C=C=C=CC1OC2=CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 14.074384
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.007632
+Temperature: 68.775053, Iteration: 90
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.482133
+Mutated 2 (Add atom inline): CC(NO)N1ONC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(O)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.622063
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)NOC(C=C=C=C=O)O1, Beta: 13.699355
+Mutated 6 (Add ring): CC1NOC(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 2.874991
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.827920
+Temperature: 68.424211, Iteration: 91
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.983311
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(COC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.231940
+Mutated 5 (Change atom type): CC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 7.827012
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OOC2COC(C=C=C=C=O)O1, Beta: 6.957010
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.757019
+Temperature: 68.073368, Iteration: 92
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.976451
+Mutated 2 (Add atom inline): CC(=NN1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1)NO, Beta: 1.120058
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(O)(C=C=C=C=O)O1, Beta: 7.676862
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.675426
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.834419
+Mutated 6 (Add ring): CC1NOC2(O)COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.736634
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.551331
+Temperature: 67.722526, Iteration: 93
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.503634
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C=C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.891739
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.666567
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(N)COC(C=C=C=C=O)O1, Beta: 3.387249
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.285014
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.007632
+Temperature: 67.371684, Iteration: 94
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.569822
+Mutated 2 (Add atom inline): CC(NO)NN1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.003753
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.320281
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.743515
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.688535
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.124364
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.537409
+Temperature: 67.020842, Iteration: 95
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.275835
+Mutated 2 (Add atom inline): CC(NNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 8.527300
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.875076
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.700718
+Mutated 6 (Add ring): O=C=C=C=CC1OC2=CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 14.089024
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.613193
+Temperature: 66.670000, Iteration: 96
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.809095
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CN=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.458053
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.214549
+Mutated 5 (Change atom type): CC(NO)N1NC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.838920
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.278047
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.525582
+Temperature: 66.319158, Iteration: 97
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.995699
+Mutated 2 (Add atom inline): CC(NO)N1OCC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(O)OC(C=C=C=C=O)O1, Beta: 10.101459
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.595311
+Mutated 5 (Change atom type): CC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 7.821792
+Mutated 6 (Add ring): CC1N(O)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 11.483005
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.672461
+Temperature: 65.968316, Iteration: 98
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.748899
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(COC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(N)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.852094
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.642094
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.767499
+Mutated 6 (Add ring): CC1(NO)C2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 10.595604
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.571071
+Temperature: 65.617474, Iteration: 99
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.568646
+Mutated 2 (Add atom inline): CC(NO)N1ON=C(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 1.670561
+Mutated 3 (Add branch): CC(N)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.878025
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.806083
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)(COC(C=C=C=C=O)O2)N1O, Beta: 3.949212
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 65.390035
+Temperature: 65.266632, Iteration: 100
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.562904
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(=NO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.303850
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.873688
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.781252
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.703887
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.778608
+Temperature: 64.915789, Iteration: 101
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.572980
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): NCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.729838
+Mutated 5 (Change atom type): CC(NO)N1NC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.850178
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.747564
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.527563
+Temperature: 64.564947, Iteration: 102
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.588091
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)NO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(N)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.869483
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.868667
+Mutated 5 (Change atom type): CC(NO)N1NC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.476962
+Mutated 6 (Add ring): CC(NO)N1OC(=C2OO2)C(O)COC(C=C=C=C=O)O1, Beta: 142.650714
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 61.013140
+Temperature: 64.214105, Iteration: 103
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.578942
+Mutated 2 (Add atom inline): CC(NO)N1OOC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): C=C1OC(C=C=C=C=O)ON(C(C)NO)OC(=C(O)O)C1O, Beta: 9.883449
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.670284
+Mutated 5 (Change atom type): CC(CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.761631
+Mutated 6 (Add ring): O=C=C=C=CC1OCC2(O)CC(NO)N(OC2=C(O)O)O1, Beta: 5.482092
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.599261
+Temperature: 63.863263, Iteration: 104
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.756879
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=NC=O)O1, Beta: 2.268774
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(O)(C=C=C=C=O)O1, Beta: 7.647825
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.620128
+Mutated 5 (Change atom type): C=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -5.932093
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.321712
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.708274
+Temperature: 63.512421, Iteration: 105
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.297385
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(CN=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.603387
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.374081
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.798075
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(C=C=C=C=O)(O2)N1O, Beta: 6.161718
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 65.351125
+Temperature: 63.161579, Iteration: 106
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.566915
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.237955
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.315475
+Mutated 6 (Add ring): CC1NOOC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 14.917628
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.528885
+Temperature: 62.810737, Iteration: 107
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.811941
+Mutated 2 (Add atom inline): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C=O)NO)O1, Beta: 3.738410
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.291083
+Mutated 5 (Change atom type): CC(NO)N1CC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 4.811562
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C2=C(O)OCC(NO)N(O2)O1, Beta: 5.548134
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.381884
+Temperature: 62.459895, Iteration: 108
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 3.004768
+Mutated 2 (Add atom inline): CC(NO)N1OC(=NC=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 3.925964
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.087874
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.627878
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.775990
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.751562
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.646157
+Temperature: 62.109053, Iteration: 109
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.748599
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(NO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(N)(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.630031
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.314965
+Mutated 6 (Add ring): O=C=C=C=CC1OC2=CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 14.238811
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.046234
+Temperature: 61.758211, Iteration: 110
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.565989
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(NO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(N)(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.516457
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.412534
+Mutated 6 (Add ring): O=C=C=C=CC1OCC2(O)CC(NO)N(OC2=C(O)O)O1, Beta: 5.485581
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.091078
+Temperature: 61.407368, Iteration: 111
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.759633
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.899791
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.885125
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.743674
+Mutated 5 (Change atom type): CC(NO)N1CC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 4.817112
+Mutated 6 (Add ring): CC1NOOC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 5.953633
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.067437
+Temperature: 61.056526, Iteration: 112
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.812197
+Mutated 2 (Add atom inline): CC(NO)N1OC(=CC=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 2.464198
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(=O)OC(C=C=C=C=O)O1, Beta: 5.319612
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.677023
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.984097
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(O2)C(=C=C=C=O)N1O, Beta: 5.785640
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.079812
+Temperature: 60.705684, Iteration: 113
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.761890
+Mutated 2 (Add atom inline): C=C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.540118
+Mutated 3 (Add branch): CC(NO)[N+]1([O-])OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.511635
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.326807
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.087836
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.134857
+Temperature: 60.354842, Iteration: 114
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): C=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.299010
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.999503
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.463054
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.508070
+Temperature: 60.004000, Iteration: 115
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.587579
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(O)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.867802
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.317649
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.486853
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.924866
+Temperature: 59.653158, Iteration: 116
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.983875
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(CNC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(=C=C=C=O)C1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.666922
+Mutated 5 (Change atom type): CC(NO)N1CC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(C=C=C=C=O)(O2)N1O, Beta: 6.202455
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.715611
+Temperature: 59.302316, Iteration: 117
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.687986
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)CONC(C=C=C=C=O)O1, Beta: 6.902601
+Mutated 3 (Add branch): CC(N(C)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.741603
+Mutated 5 (Change atom type): CC(OO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.407484
+Mutated 6 (Add ring): CC(NO)N1OC(=C2OO2)C(O)COC(C=C=C=C=O)O1, Beta: 151.639524
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.653236
+Temperature: 58.951474, Iteration: 118
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.805114
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CC=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(N)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.870216
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.618840
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.027996
+Mutated 6 (Add ring): CC1NOOC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 5.901289
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.735269
+Temperature: 58.600632, Iteration: 119
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.613558
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(NC(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(C)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.623676
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.993071
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(O2)C(=C=C=C=O)N1O, Beta: 5.820524
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.003553
+Temperature: 58.249789, Iteration: 120
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.746084
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)NO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC1OC(C=C=C=C=O)ON(C(C)NO)OC(=C(O)O)C1O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.866592
+Mutated 5 (Change atom type): CC(OO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.432554
+Mutated 6 (Add ring): CC1(NO)OC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 4.068115
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.055043
+Temperature: 57.898947, Iteration: 121
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.564384
+Mutated 2 (Add atom inline): CC(N=CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.673020
+Mutated 3 (Add branch): CC(N)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.274122
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)NOC(C=C=C=C=O)O1, Beta: 13.526330
+Mutated 6 (Add ring): O=C=C=C=CC1OC2CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 4.175672
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.046234
+Temperature: 57.548105, Iteration: 122
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.562719
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)C=COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.852832
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.893527
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=N)O1, Beta: 5.503183
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)(COC(C=C=C=C=O)O2)N1O, Beta: 3.983934
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.011422
+Temperature: 57.197263, Iteration: 123
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.810181
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)=NCOC(C=C=C=C=O)O1, Beta: 4.262682
+Mutated 3 (Add branch): CC(NO)[N+]1([O-])OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.867802
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.824185
+Mutated 6 (Add ring): O=C=C=C=C1CC(NO)N2OC(=C(O)O)C(O)COC1O2, Beta: 4.352021
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.087595
+Temperature: 56.846421, Iteration: 124
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.812197
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)OCOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): COC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.549469
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.808040
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C1(O)COC(C=C=C=C=O)O2, Beta: 2.187702
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.098926
+Temperature: 56.495579, Iteration: 125
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.761053
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(CO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): COC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.265168
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CCC(C=C=C=C=O)O1, Beta: 7.946147
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.334496
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.677218
+Temperature: 56.144737, Iteration: 126
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.808457
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(N=C=C=C=C=O)O1, Beta: 60.060786
+Mutated 3 (Add branch): CC(N)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.471360
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.431400
+Mutated 6 (Add ring): O=C=C=C=CC1OCC2(O)CC(NO)N(OC2=C(O)O)O1, Beta: 5.498957
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.710405
+Temperature: 55.793895, Iteration: 127
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.805241
+Mutated 2 (Add atom inline): CNC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): COC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.620945
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.301377
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)C(OC(C=C=C=C=O)O2)N1O, Beta: 3.262939
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.358206
+Temperature: 55.443053, Iteration: 128
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.762280
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=C=O)O1, Beta: 1.570637
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.888815
+Mutated 5 (Change atom type): C=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -5.847588
+Mutated 6 (Add ring): CC1N(O)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 11.226921
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.588913
+Temperature: 55.092211, Iteration: 129
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): C=C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.537201
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(ON)COC(C=C=C=C=O)O1, Beta: 10.402912
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.616851
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.675538
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C2CON2)O1, Beta: 6.342983
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.131973
+Temperature: 54.741368, Iteration: 130
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)CONC(C=C=C=C=O)O1, Beta: 6.814889
+Mutated 3 (Add branch): CC(N(O)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.412430
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)NOC(C=C=C=C=O)O1, Beta: 13.774189
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2COC(C=C=C=C=O)(O2)O1, Beta: 6.152178
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.831961
+Temperature: 54.390526, Iteration: 131
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.773738
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(ON)COC(C=C=C=C=O)O1, Beta: 10.340415
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.708495
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(N=C=C=C=O)O1, Beta: 8.571772
+Mutated 6 (Add ring): CC1NOOC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 5.970719
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.595218
+Temperature: 54.039684, Iteration: 132
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.691031
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)=COCC(O)C(=C(O)O)O1, Beta: 0.896158
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(O)(C=C=C=C=O)O1, Beta: 7.668298
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.620653
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(N)COC(C=C=C=C=O)O1, Beta: 3.391928
+Mutated 6 (Add ring): CC1(NO)C(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 8.103568
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.587150
+Temperature: 53.688842, Iteration: 133
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.753889
+Mutated 2 (Add atom inline): CC(N=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 17.194525
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.109496
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.491475
+Mutated 5 (Change atom type): CC(NO)N1CC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 4.799009
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(O2)C(=C=C=C=O)N1O, Beta: 5.775292
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 60.442375
+Temperature: 53.338000, Iteration: 134
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.564940
+Mutated 2 (Add atom inline): C=NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 7.165276
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.315466
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.629605
+Mutated 5 (Change atom type): CC(NO)N1CC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)(COC(C=C=C=C=O)O2)N1O, Beta: 3.975789
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.603054
+Temperature: 52.987158, Iteration: 135
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.694615
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)OCOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.900381
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.670106
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.814586
+Mutated 6 (Add ring): CC1NOC(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 2.858478
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.946046
+Temperature: 52.636316, Iteration: 136
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.471689
+Mutated 2 (Add atom inline): CC(NO)NN1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.952342
+Mutated 3 (Add branch): COC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.177028
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(N=C=C=C=O)O1, Beta: 8.555004
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC(O1)C2=C=C=C=O, Beta: 3.252866
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.128283
+Temperature: 52.285474, Iteration: 137
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.807150
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(O)OC(C=C=C=C=O)O1, Beta: 10.167590
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.572687
+Mutated 5 (Change atom type): CC(NO)N1CC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 4.808568
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC(O1)C2=C=C=C=O, Beta: 7.120890
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 11.997145
+Temperature: 51.934632, Iteration: 138
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.578133
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)N=COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.887943
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.528986
+Mutated 6 (Add ring): O=C=C=C=CC1OC2CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 4.157176
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.122387
+Temperature: 51.583789, Iteration: 139
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.754963
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CC=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.101089
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.663917
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.499296
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(OC(C=C=C=C=O)O1)C2O, Beta: 5.641491
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.164273
+Temperature: 51.232947, Iteration: 140
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.686796
+Mutated 2 (Add atom inline): CC(NO)N1OC(=NC=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 3.923998
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.335159
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.249193
+Mutated 5 (Change atom type): CC(NO)N1NC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.812029
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC2(O)COC(C=C=C=C=O)O1, Beta: 7.162935
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.375997
+Temperature: 50.882105, Iteration: 141
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.568674
+Mutated 2 (Add atom inline): CN=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.588618
+Mutated 3 (Add branch): CC(N(C)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.620653
+Mutated 5 (Change atom type): CC(CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.766019
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C2CN2O)O1, Beta: 12.257070
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 65.939613
+Temperature: 50.531263, Iteration: 142
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.303127
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=COO)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)[N+]1([O-])OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.290791
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.753620
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)C(OC(C=C=C=C=O)O2)N1O, Beta: 3.275093
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.515820
+Temperature: 50.180421, Iteration: 143
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.988343
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.439247
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.508987
+Mutated 5 (Change atom type): CC(NO)N1NC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.478606
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(OC(C=C=C=C=O)O1)C2O, Beta: 5.630802
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.528114
+Temperature: 49.829579, Iteration: 144
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.287238
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.542718
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.289617
+Mutated 5 (Change atom type): CC(NO)N1NC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.869394
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC(O1)C2=C=C=C=O, Beta: 7.152860
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.521627
+Temperature: 49.478737, Iteration: 145
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.567348
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(NC(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): COC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.253563
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.813409
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OOC2COC(C=C=C=C=O)O1, Beta: 6.928555
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.222864
+Temperature: 49.127895, Iteration: 146
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.718563
+Mutated 2 (Add atom inline): CC(NO)N1ONC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 52.250106
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.682266
+Mutated 6 (Add ring): CC1NOOC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 14.896040
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.647057
+Temperature: 48.777053, Iteration: 147
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.812357
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(OC(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(N)(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.531701
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.456251
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C2CN2O)O1, Beta: 12.516305
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.078904
+Temperature: 48.426211, Iteration: 148
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.688582
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)C=O)C(O)COC(C=C=C=C=O)O1, Beta: 4.628530
+Mutated 3 (Add branch): C=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.616802
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.683473
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2COC(O1)C(=C=C=C=O)O2, Beta: 7.304583
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.545605
+Temperature: 48.075368, Iteration: 149
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CN=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C=O)NO)O1, Beta: 3.738512
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.487371
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.786611
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C2=C(O)OCC(NO)N(O2)O1, Beta: 5.502575
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.389929
+Temperature: 47.724526, Iteration: 150
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.559394
+Mutated 2 (Add atom inline): CC=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.031527
+Mutated 3 (Add branch): COC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.868840
+Mutated 5 (Change atom type): CC(NO)N1CC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 6 (Add ring): O=C=C=C=CC1OCC2(O)CC(NO)N(OC2=C(O)O)O1, Beta: 5.494010
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.725185
+Temperature: 47.373684, Iteration: 151
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.761639
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)C=O)C(O)COC(C=C=C=C=O)O1, Beta: 4.638305
+Mutated 3 (Add branch): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.862263
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.653520
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CCC(C=C=C=C=O)O1, Beta: 7.980790
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C2=C(O)OCC(NO)N(O2)O1, Beta: 5.554595
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.870481
+Temperature: 47.022842, Iteration: 152
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.760733
+Mutated 2 (Add atom inline): CC(NO)N1OCC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(=C=C=C=O)C1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.233337
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.794944
+Mutated 6 (Add ring): CC1NOOC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 5.924476
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.535620
+Temperature: 46.672000, Iteration: 153
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)NO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.402360
+Mutated 5 (Change atom type): CC(NO)N1CC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 6 (Add ring): CC1(NO)C2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 10.647572
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.640383
+Temperature: 46.321158, Iteration: 154
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.813992
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CNC=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.272355
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 47.825181
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)NOC(C=C=C=C=O)O1, Beta: 13.610430
+Mutated 6 (Add ring): O=C=C=C=CC1OCC2OCC(NO)N(OC2=C(O)O)O1, Beta: 145.014414
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.658756
+Temperature: 45.970316, Iteration: 155
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000055
+Mutated 2 (Add atom inline): CC(NCO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.869593
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.797973
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.325270
+Mutated 6 (Add ring): CC1N(O)OC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.335797
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 66.177986
+Temperature: 45.619474, Iteration: 156
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.577388
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(OC=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.514768
+Mutated 5 (Change atom type): CC(NO)N1NC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.471216
+Mutated 6 (Add ring): CC1(NO)C(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 8.049375
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.518556
+Temperature: 45.268632, Iteration: 157
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.564199
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=C=O)O1, Beta: 1.572998
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(C)(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.869013
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.763482
+Mutated 6 (Add ring): CC1N(O)OC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.339767
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.083904
+Temperature: 44.917789, Iteration: 158
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.688582
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(CNC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.442713
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.622385
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.762939
+Mutated 6 (Add ring): O=C=C=C=CC1OC2CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 4.167778
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 21.066911
+Temperature: 44.566947, Iteration: 159
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.984678
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)CC(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): COC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.622063
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.829084
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.718264
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.559562
+Temperature: 44.216105, Iteration: 160
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.807310
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=C=O)O1, Beta: 1.570950
+Mutated 3 (Add branch): CC(N(C)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.630325
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.672581
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC2(O)COC(C=C=C=C=O)O1, Beta: 7.180688
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.136325
+Temperature: 43.865263, Iteration: 161
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: -0.000084
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)=CCOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.741443
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.439061
+Mutated 6 (Add ring): CC1(NO)C2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 10.544986
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 11.961750
+Temperature: 43.514421, Iteration: 162
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.724243
+Mutated 2 (Add atom inline): CC(NC=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.997422
+Mutated 3 (Add branch): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.831447
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.602279
+Mutated 5 (Change atom type): C=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -5.879900
+Mutated 6 (Add ring): CC(NO)N1OC(=C2OO2)C(O)COC(C=C=C=C=O)O1, Beta: 134.120654
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.687541
+Temperature: 43.163579, Iteration: 163
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.475984
+Mutated 2 (Add atom inline): CC(NO)N1ONC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(O)OC(C=C=C=C=O)O1, Beta: 10.255066
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.484789
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.803150
+Mutated 6 (Add ring): CC1NOC2(O)COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.748508
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.515601
+Temperature: 42.812737, Iteration: 164
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.563706
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(COC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(C)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.635909
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CCC(C=C=C=C=O)O1, Beta: 7.934521
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C2=C(O)OCC(NO)N(O2)O1, Beta: 5.515299
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.447436
+Temperature: 42.461895, Iteration: 165
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.284901
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(NO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.308254
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 49.349702
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.791469
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)C(OC(C=C=C=C=O)O2)N1O, Beta: 3.279019
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.082724
+Temperature: 42.111053, Iteration: 166
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.982127
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(CO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): C=C1OC(C=C=C=C=O)ON(C(C)NO)OC(=C(O)O)C1O, Beta: 9.841253
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.642683
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(N=C=C=C=O)O1, Beta: 8.562488
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2OC2OC(C=C=C=C=O)O1, Beta: 13.133332
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.576840
+Temperature: 41.760211, Iteration: 167
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.579390
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CC=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(C)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.560038
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.500541
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.329050
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.593200
+Temperature: 41.409368, Iteration: 168
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.299211
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.118108
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 55.753993
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.685496
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.350067
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.517461
+Temperature: 41.058526, Iteration: 169
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.981447
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)NO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.281422
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.809549
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.487473
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.619800
+Temperature: 40.707684, Iteration: 170
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.768936
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=C=O)O1, Beta: 1.577014
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.274741
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.737304
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.672712
+Mutated 6 (Add ring): O=C=C=C=CC1OCC2(O)CC(NO)N(OC2=C(O)O)O1, Beta: 5.509913
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.534514
+Temperature: 40.356842, Iteration: 171
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.984552
+Mutated 2 (Add atom inline): CC(N=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 16.848123
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(O)OC(C=C=C=C=O)O1, Beta: 10.106439
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.679866
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.304488
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.469587
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.573075
+Temperature: 40.006000, Iteration: 172
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.320954
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=C=O)O1, Beta: 1.573626
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.437511
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 47.825181
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.463463
+Mutated 6 (Add ring): CC1(N2OC(=C(O)O)C(O)COC(C=C=C=C=O)O2)NO1, Beta: 6.281452
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.548184
+Temperature: 39.655158, Iteration: 173
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.591938
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)CO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.087041
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 49.241455
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.481330
+Mutated 6 (Add ring): O=C=C=C=CC12CC(NO)N(OC(=C(O)O)C(O)CO1)O2, Beta: 5.033321
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.572323
+Temperature: 39.304316, Iteration: 174
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.315698
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CC=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.446006
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.498419
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.515264
+Mutated 6 (Add ring): CC1(NO)C2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 10.712384
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.956350
+Temperature: 38.953474, Iteration: 175
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.724680
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(CNC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.440065
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.513321
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.827402
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC2(O)COC(C=C=C=C=O)O1, Beta: 7.139144
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.525032
+Temperature: 38.602632, Iteration: 176
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.494637
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)=NOCC(O)C(=C(O)O)O1, Beta: 4.354301
+Mutated 3 (Add branch): CC(N(O)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.857278
+Mutated 5 (Change atom type): CC(NO)N1CC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2OC2OC(C=C=C=C=O)O1, Beta: 13.118797
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.515273
+Temperature: 38.251789, Iteration: 177
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.997157
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C=C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(N)OC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 52.741146
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.795002
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.102695
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.112040
+Temperature: 37.900947, Iteration: 178
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.711150
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)CO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(ON)COC(C=C=C=C=O)O1, Beta: 10.503955
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.677378
+Mutated 5 (Change atom type): CC(OO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.401549
+Mutated 6 (Add ring): CC(NO)N1OC(=C2OO2)C(O)COC(C=C=C=C=O)O1, Beta: 130.410873
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.047407
+Temperature: 37.550105, Iteration: 179
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.774020
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)=NCOC(C=C=C=C=O)O1, Beta: 4.242525
+Mutated 3 (Add branch): CC(N(C)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.641945
+Mutated 5 (Change atom type): CC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 7.801457
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.119711
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.524483
+Temperature: 37.199263, Iteration: 180
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(CNC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.489211
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.383006
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.798672
+Mutated 6 (Add ring): CC1NOOC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 5.958749
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 62.595187
+Temperature: 36.848421, Iteration: 181
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.980721
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(CC(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.741125
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.635253
+Mutated 6 (Add ring): CC1(NO)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 3.260536
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.606346
+Temperature: 36.497579, Iteration: 182
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.812229
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)CO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(ON)COC(C=C=C=C=O)O1, Beta: 10.401142
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.267297
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.773597
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C2CN2O)O1, Beta: 12.398302
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.530097
+Temperature: 36.146737, Iteration: 183
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: -0.000861
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=NO)O1, Beta: 3.656882
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.124379
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 49.079962
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.790775
+Mutated 6 (Add ring): CC1N(O)OC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.338538
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.522395
+Temperature: 35.795895, Iteration: 184
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.556627
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(OC=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.411881
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.594731
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.016300
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C1(O)COC(C=C=C=C=O)O2, Beta: 2.181245
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.088595
+Temperature: 35.445053, Iteration: 185
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.597843
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.562884
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.743834
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.331199
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC2(O)COC(C=C=C=C=O)O1, Beta: 7.152427
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.103423
+Temperature: 35.094211, Iteration: 186
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.269636
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)CO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.870271
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.736986
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.832637
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.474298
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.519762
+Temperature: 34.743368, Iteration: 187
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.808330
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(=NO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(N)=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.801577
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.681605
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C1(O)COC(C=C=C=C=O)O2, Beta: 2.180181
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.710405
+Temperature: 34.392526, Iteration: 188
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.561548
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=COC=C=O)O1, Beta: 4.897032
+Mutated 3 (Add branch): C=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.652466
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.810220
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.722227
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.860598
+Temperature: 34.041684, Iteration: 189
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.746746
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 18.574607
+Mutated 3 (Add branch): COC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 49.898194
+Mutated 5 (Change atom type): CC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 7.783107
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC2(C=C=C=C=O)O1, Beta: 4.560312
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.671934
+Temperature: 33.690842, Iteration: 190
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.609945
+Mutated 2 (Add atom inline): CC(N=CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.702348
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.867364
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.277624
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.675604
+Mutated 6 (Add ring): CC1NOC2(O)COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.738148
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.742097
+Temperature: 33.340000, Iteration: 191
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.990089
+Mutated 2 (Add atom inline): CC(N=CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.654205
+Mutated 3 (Add branch): C=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.501058
+Mutated 5 (Change atom type): CC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 7.830810
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.134528
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.137207
+Temperature: 32.989158, Iteration: 192
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.965312
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=C=O)O1, Beta: 1.574955
+Mutated 3 (Add branch): CONC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.504658
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.759553
+Mutated 6 (Add ring): CC1NOOC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 5.965240
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.574831
+Temperature: 32.638316, Iteration: 193
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.986893
+Mutated 2 (Add atom inline): CC(NO)N1OC(=CC=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 2.456151
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.252137
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.743993
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=N)O1, Beta: 5.509182
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.756294
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.697893
+Temperature: 32.287474, Iteration: 194
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.688582
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(NC=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.441088
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.875595
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=N)O1, Beta: 5.523027
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.750108
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.178261
+Temperature: 31.936632, Iteration: 195
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000083
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CC=O)O1, Beta: 9.177771
+Mutated 3 (Add branch): NCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.239917
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.360127
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC2(O)COC(C=C=C=C=O)O1, Beta: 7.139654
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.523493
+Temperature: 31.585789, Iteration: 196
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.981107
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(=NO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.621955
+Mutated 5 (Change atom type): CC(NO)N1CC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 6 (Add ring): CC1(NO)C(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 8.121327
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 21.015760
+Temperature: 31.234947, Iteration: 197
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.690965
+Mutated 2 (Add atom inline): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.858872
+Mutated 3 (Add branch): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.853072
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.609740
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.826381
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)C(OC(C=C=C=C=O)O2)N1O, Beta: 3.267378
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.525472
+Temperature: 30.884105, Iteration: 198
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.814378
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(=NO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.124556
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.872475
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(N=C=C=C=O)O1, Beta: 8.553224
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)(COC(C=C=C=C=O)O2)N1O, Beta: 3.978840
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.085088
+Temperature: 30.533263, Iteration: 199
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.749920
+Mutated 2 (Add atom inline): CC(=NNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.245365
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(N)(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.228311
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.297545
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)(COC(C=C=C=C=O)O2)N1O, Beta: 3.974604
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.639597
+Temperature: 30.182421, Iteration: 200
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.607366
+Mutated 2 (Add atom inline): CC(NO)N1OC(=NC(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.913583
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.119801
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.655279
+Mutated 5 (Change atom type): CC(OO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.398942
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC2(C=C=C=C=O)O1, Beta: 4.512557
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.564310
+Temperature: 29.831579, Iteration: 201
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.574028
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)N=O)C(O)COC(C=C=C=C=O)O1, Beta: 6.096120
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.650182
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.671400
+Mutated 6 (Add ring): CC1NOOC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 14.923038
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.389929
+Temperature: 29.480737, Iteration: 202
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.761053
+Mutated 2 (Add atom inline): CC(NO)N1COC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.884633
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.671687
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC(O1)C2=C=C=C=O, Beta: 3.261212
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.872153
+Temperature: 29.129895, Iteration: 203
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.556566
+Mutated 2 (Add atom inline): CC(=CNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 1.752333
+Mutated 3 (Add branch): CC(N(O)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 55.103893
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.467227
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.319813
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.591777
+Temperature: 28.779053, Iteration: 204
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.602473
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.141250
+Mutated 3 (Add branch): CC(NON)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.072248
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.660564
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(N=C=C=C=O)O1, Beta: 8.601547
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OOC2COC(C=C=C=C=O)O1, Beta: 6.958359
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.065628
+Temperature: 28.428211, Iteration: 205
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.701799
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.916843
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.623461
+Mutated 5 (Change atom type): C=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -5.869509
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.738131
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.073716
+Temperature: 28.077368, Iteration: 206
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.575648
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(N=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(N)(O)COC(C=C=C=C=O)O1, Beta: 4.899156
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.260738
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.757394
+Mutated 6 (Add ring): CC1(NO)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 3.265430
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.600020
+Temperature: 27.726526, Iteration: 207
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.984890
+Mutated 2 (Add atom inline): CC(NO)N1OOC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.241630
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.314965
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.335859
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.601031
+Temperature: 27.375684, Iteration: 208
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.971711
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CNC=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(O)(C=C=C=C=O)O1, Beta: 7.679721
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.881500
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CCC(C=C=C=C=O)O1, Beta: 7.917788
+Mutated 6 (Add ring): CC1(NO)OC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 4.048689
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.498080
+Temperature: 27.024842, Iteration: 209
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.724025
+Mutated 2 (Add atom inline): CC(NCO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.400369
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.497939
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.768390
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OOC2COC(C=C=C=C=O)O1, Beta: 6.905907
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.902404
+Temperature: 26.674000, Iteration: 210
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.974414
+Mutated 2 (Add atom inline): CC(=NN1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1)NO, Beta: 1.120996
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 54.140362
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.757525
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C1(O)COC(C=C=C=C=O)O2, Beta: 2.179675
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.619545
+Temperature: 26.323158, Iteration: 211
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.978647
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=NC=O)O1, Beta: 2.266548
+Mutated 3 (Add branch): N=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 12.205628
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.608099
+Mutated 5 (Change atom type): CC(NO)N1CC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OOC2COC(C=C=C=C=O)O1, Beta: 6.947590
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.329796
+Temperature: 25.972316, Iteration: 212
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.980089
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)N=O)C(O)COC(C=C=C=C=O)O1, Beta: 6.098892
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(N)(O)COC(C=C=C=C=O)O1, Beta: 4.903878
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.627685
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.446842
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.472452
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.594966
+Temperature: 25.621474, Iteration: 213
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.982637
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(CC(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.271561
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.534129
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.844615
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC(O1)C2=C=C=C=O, Beta: 7.110297
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.925488
+Temperature: 25.270632, Iteration: 214
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.309929
+Mutated 2 (Add atom inline): CC(=CNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 1.752359
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(N)OC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.736986
+Mutated 5 (Change atom type): CC(NO)N1CC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 4.815311
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C2CN2O)O1, Beta: 12.198957
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.105629
+Temperature: 24.919789, Iteration: 215
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.315961
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)N=COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.283176
+Mutated 5 (Change atom type): CC(NO)N1NC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.862602
+Mutated 6 (Add ring): CC1NOC(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 2.871421
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 64.525712
+Temperature: 24.568947, Iteration: 216
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.572175
+Mutated 2 (Add atom inline): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(O)OC(C=C=C=C=O)O1, Beta: 10.132411
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.761425
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.509415
+Mutated 6 (Add ring): CC1NOC2(O)COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.735402
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 64.753954
+Temperature: 24.218105, Iteration: 217
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.568399
+Mutated 2 (Add atom inline): CC(=CNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 1.752383
+Mutated 3 (Add branch): CC(N(O)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.266260
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 21.995050
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.115887
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.041540
+Temperature: 23.867263, Iteration: 218
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.499441
+Mutated 2 (Add atom inline): CC(=CNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 1.753053
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C)(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.257943
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.317274
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.767239
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.565811
+Temperature: 23.516421, Iteration: 219
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.579135
+Mutated 2 (Add atom inline): CC(NO)N1NOC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.465236
+Mutated 3 (Add branch): CC(N(N)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.879648
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.251024
+Mutated 5 (Change atom type): CC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 7.773728
+Mutated 6 (Add ring): CC1(NO)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 3.261840
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.843666
+Temperature: 23.165579, Iteration: 220
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000030
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=CCC=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(O)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.610139
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=N)O1, Beta: 5.520212
+Mutated 6 (Add ring): O=C=C=C=CC1OC2CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 4.182336
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.559811
+Temperature: 22.814737, Iteration: 221
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.621056
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(N=O)COC(C=C=C=C=O)O1, Beta: 5.570321
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(C)(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.238656
+Mutated 5 (Change atom type): CC(NN)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.755956
+Mutated 6 (Add ring): CC1NOC2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 6.327689
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.551796
+Temperature: 22.463895, Iteration: 222
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.999517
+Mutated 2 (Add atom inline): CC(NO)N1NOC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.084209
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.278209
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.506499
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C2=C(O)OCC(NO)N(O2)O1, Beta: 5.612656
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.678275
+Temperature: 22.113053, Iteration: 223
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=CO)O1, Beta: -0.669675
+Mutated 3 (Add branch): CC(O)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.879690
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.632306
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.339973
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.739943
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.545108
+Temperature: 21.762211, Iteration: 224
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.244219
+Mutated 2 (Add atom inline): CC(NO)N1OOC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): N=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 12.277706
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.626261
+Mutated 5 (Change atom type): CC(NO)N1CC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 4.801844
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C(O)COC1(C=C=C=C=O)O2, Beta: 4.155583
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 21.008951
+Temperature: 21.411368, Iteration: 225
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.565124
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)CO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 52.341469
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.759890
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C(O)COC1(C=C=C=C=O)O2, Beta: 4.164863
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.028691
+Temperature: 21.060526, Iteration: 226
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.969351
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COCC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(N)(O)COC(C=C=C=C=O)O1, Beta: 4.887199
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.900002
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.424341
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.760668
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.081544
+Temperature: 20.709684, Iteration: 227
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.682179
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(OC(O)O)O1, Beta: 5.150101
+Mutated 3 (Add branch): CC(C)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.353616
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=N)O1, Beta: 5.511183
+Mutated 6 (Add ring): CC1(N2OC(=C(O)O)C(O)COC(C=C=C=C=O)O2)NO1, Beta: 6.272150
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.012296
+Temperature: 20.358842, Iteration: 228
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.989976
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)CO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.119293
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.252907
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.789387
+Mutated 6 (Add ring): CC(NO)N1OC(=C2OO2)C(O)COC(C=C=C=C=O)O1, Beta: 137.718519
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.518233
+Temperature: 20.008000, Iteration: 229
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.721402
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COCC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.446724
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.544217
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.310854
+Mutated 6 (Add ring): CC1N(O)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 11.240621
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.074465
+Temperature: 19.657158, Iteration: 230
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.811556
+Mutated 2 (Add atom inline): CC(NO)N1OC(=CC=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 2.462911
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(N)(O)COC(C=C=C=C=O)O1, Beta: 4.887003
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.530245
+Mutated 5 (Change atom type): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(O)NO)O1, Beta: 6.683809
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC2(O)COC(C=C=C=C=O)O1, Beta: 7.142715
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.104104
+Temperature: 19.306316, Iteration: 231
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.285680
+Mutated 2 (Add atom inline): CC(NO)N1ONC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.822533
+Mutated 3 (Add branch): C=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 8.303745
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.220099
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(N)COC(C=C=C=C=O)O1, Beta: 3.378550
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC2(O)COC(C=C=C=C=O)O1, Beta: 7.162677
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.518118
+Temperature: 18.955474, Iteration: 232
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.974160
+Mutated 2 (Add atom inline): CC(N=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 17.137946
+Mutated 3 (Add branch): CC(=C=C=C=O)C1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.620128
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.419562
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OOC2COC(C=C=C=C=O)O1, Beta: 6.966458
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.125211
+Temperature: 18.604632, Iteration: 233
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.991676
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)NCOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(=C=C=C=O)C1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.745269
+Mutated 5 (Change atom type): CC(CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.743045
+Mutated 6 (Add ring): O=C=C=C=CC12CC(NO)N(OC(=C(O)O)C(O)CO1)O2, Beta: 5.071424
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 11.947880
+Temperature: 18.253789, Iteration: 234
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000000
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)OC(O)COC(C=C=C=C=O)O1, Beta: 3.284460
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(O)OC(C=C=C=C=O)O1, Beta: 10.254037
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.265647
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(N)COC(C=C=C=C=O)O1, Beta: 3.391303
+Mutated 6 (Add ring): CC1NOC2(C=C=C=C=O)OCC(O)C(=C(O)O)ON1O2, Beta: 3.353401
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.868799
+Temperature: 17.902947, Iteration: 235
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.750889
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C=C(O)O)O1, Beta: 3.499858
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.899126
+Mutated 5 (Change atom type): C=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -5.839176
+Mutated 6 (Add ring): O=C=C=C=CC1OC2=CC(NO)N(OC(=C(O)O)C2O)O1, Beta: 14.307344
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.053914
+Temperature: 17.552105, Iteration: 236
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.812357
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)OCOC(C=C=C=C=O)O1, Beta: 4.680696
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(=N)OC(C=C=C=C=O)O1, Beta: 3.762908
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.487415
+Mutated 5 (Change atom type): CC(OO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.420825
+Mutated 6 (Add ring): CC1(NO)C(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 8.099375
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.521627
+Temperature: 17.201263, Iteration: 237
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.465874
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)C=O)C(O)COC(C=C=C=C=O)O1, Beta: 4.615824
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.890991
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.503218
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.442782
+Mutated 6 (Add ring): CC1NOC(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 2.885012
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.026199
+Temperature: 16.850421, Iteration: 238
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000023
+Mutated 2 (Add atom inline): CC(NO)N1COC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.887093
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 49.870477
+Mutated 5 (Change atom type): CC(CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.755485
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(O2)C(=C=C=C=O)N1O, Beta: 5.787787
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.521298
+Temperature: 16.499579, Iteration: 239
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.982072
+Mutated 2 (Add atom inline): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.838874
+Mutated 3 (Add branch): CC(NON)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.080606
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.880283
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.781575
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(OC(C=C=C=C=O)O1)C2O, Beta: 5.597000
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.579100
+Temperature: 16.148737, Iteration: 240
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.979371
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)CCOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(N)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.871194
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.860723
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.673237
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC(O1)C2=C=C=C=O, Beta: 3.245451
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.141215
+Temperature: 15.797895, Iteration: 241
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.743318
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(NO)COC(C=C=C=C=O)O1, Beta: 3.177391
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.870429
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.680400
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.005951
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)(COC(C=C=C=C=O)O2)N1O, Beta: 3.975282
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.877641
+Temperature: 15.447053, Iteration: 242
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.500062
+Mutated 2 (Add atom inline): CC(ONO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.340595
+Mutated 3 (Add branch): CC(O)(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.867326
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.753255
+Mutated 5 (Change atom type): CC(OO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.439278
+Mutated 6 (Add ring): CC1(NO)C(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 8.034221
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.510032
+Temperature: 15.096211, Iteration: 243
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.807692
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)C=COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(O)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.665860
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CCC(C=C=C=C=O)O1, Beta: 7.919073
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)C(OC(C=C=C=C=O)O2)N1O, Beta: 3.266728
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.586394
+Temperature: 14.745368, Iteration: 244
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.972418
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COOC(C=C=C=C=O)O1, Beta: 4.292289
+Mutated 3 (Add branch): CC(=C=C=C=O)C1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.880805
+Mutated 5 (Change atom type): CC(NO)N1CC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 4.798712
+Mutated 6 (Add ring): CC1NOC2(O)COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.738092
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.103798
+Temperature: 14.394526, Iteration: 245
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.677644
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(COC=C=C=O)O1, Beta: 3.794351
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.106404
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 48.628102
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.760988
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(C=C=C=C=O)(O2)N1O, Beta: 6.167735
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.071959
+Temperature: 14.043684, Iteration: 246
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.755962
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)NO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)(O)COC(C=C=C=C=O)O1, Beta: 14.186903
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 53.336369
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.368194
+Mutated 6 (Add ring): CC1(NO)N2OC(=C(O)O)C1(O)COC(C=C=C=C=O)O2, Beta: 2.171154
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.021785
+Temperature: 13.692842, Iteration: 247
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.543299
+Mutated 2 (Add atom inline): CC(NO)N1OC(C=C=C=C=O)=NOCC(O)C(=C(O)O)O1, Beta: 4.360603
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.241040
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(N)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.814755
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC(O1)C2=C=C=C=O, Beta: 3.261212
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.865447
+Temperature: 13.342000, Iteration: 248
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.809958
+Mutated 2 (Add atom inline): C=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 8.244854
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.123039
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.619482
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.831610
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.118754
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.024564
+Temperature: 12.991158, Iteration: 249
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.747657
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 18.583234
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(N)=C=C=C=O)O1, Beta: 8.120627
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.881500
+Mutated 5 (Change atom type): CC(NO)N1NC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.471488
+Mutated 6 (Add ring): CC1(NO)C2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 10.599911
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.047996
+Temperature: 12.640316, Iteration: 250
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.598872
+Mutated 2 (Add atom inline): CC(NO)N1OC(=NC=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 3.924719
+Mutated 3 (Add branch): N=CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 12.298008
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.860896
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.517636
+Mutated 6 (Add ring): CC1(NO)OC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 4.062334
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 61.166029
+Temperature: 12.289474, Iteration: 251
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.808744
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.120817
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.124887
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 52.494467
+Mutated 5 (Change atom type): CC(NO)C1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.467483
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.095116
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.002385
+Temperature: 11.938632, Iteration: 252
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.756315
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(CCC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(N)(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.296366
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)NOC(C=C=C=C=O)O1, Beta: 13.697466
+Mutated 6 (Add ring): CC1(NO)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 3.271542
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.525582
+Temperature: 11.587789, Iteration: 253
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.600158
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.128966
+Mutated 3 (Add branch): CC(N(O)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 53.848159
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.487587
+Mutated 6 (Add ring): CC1NOOC2COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 14.570961
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.084049
+Temperature: 11.236947, Iteration: 254
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.811620
+Mutated 2 (Add atom inline): CC(N=CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.625741
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(N)OC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.733966
+Mutated 5 (Change atom type): CC(CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.758191
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(OC(C=C=C=C=O)O1)C2O, Beta: 5.654686
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.096491
+Temperature: 10.886105, Iteration: 255
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.766919
+Mutated 2 (Add atom inline): CC(NO)N1OOC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CONC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 7.005559
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.751816
+Mutated 5 (Change atom type): CC(NO)N1NC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.836671
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C2=C(O)OCC(NO)N(O2)O1, Beta: 5.556117
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.075644
+Temperature: 10.535263, Iteration: 256
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.769807
+Mutated 2 (Add atom inline): CC(C=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.866693
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.111014
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 51.383006
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.130547
+Mutated 6 (Add ring): CC1(NO)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 3.270776
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.681979
+Temperature: 10.184421, Iteration: 257
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.749701
+Mutated 2 (Add atom inline): CC(NN=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.932495
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)OO)C(O)COC(C=C=C=C=O)O1, Beta: 4.095224
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.531458
+Mutated 5 (Change atom type): CC(CO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.760587
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.799552
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.064451
+Temperature: 9.833579, Iteration: 258
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.686202
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)NO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CONC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 7.059631
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.510430
+Mutated 5 (Change atom type): CNC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.675144
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)COC(C=C=C=C=O)(O2)N1O, Beta: 6.157713
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.063865
+Temperature: 9.482737, Iteration: 259
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.984552
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(=CO)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C=O)NO)O1, Beta: 3.735214
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.486698
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.289135
+Mutated 6 (Add ring): CC1NOOC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 5.952613
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.567562
+Temperature: 9.131895, Iteration: 260
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.762308
+Mutated 2 (Add atom inline): CC(NO)N1ONC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.787805
+Mutated 3 (Add branch): COC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.622408
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.178069
+Mutated 6 (Add ring): CC1N(O)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 11.290212
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.700286
+Temperature: 8.781053, Iteration: 261
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.582971
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)C=COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)[N+]1([O-])OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.687525
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)OOC(C=C=C=C=O)O1, Beta: 7.767581
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2COC(C=C=C=C=O)(O2)O1, Beta: 6.229331
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.518666
+Temperature: 8.430211, Iteration: 262
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.685344
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 18.572147
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(=N)OC(C=C=C=C=O)O1, Beta: 3.766841
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 50.402360
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.779495
+Mutated 6 (Add ring): O=C=C=C=CC1OCC2(O)CC(NO)N(OC2=C(O)O)O1, Beta: 5.482297
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.619291
+Temperature: 8.079368, Iteration: 263
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.803336
+Mutated 2 (Add atom inline): CC(NO)ON1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.430345
+Mutated 3 (Add branch): CONC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 7.093753
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.869358
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.337655
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.429158
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.584884
+Temperature: 7.728526, Iteration: 264
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.976190
+Mutated 2 (Add atom inline): CC(CN1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1)NO, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(N)OC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.722390
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)COC(N=C=C=C=O)O1, Beta: 8.591838
+Mutated 6 (Add ring): CC(NO)N1OC(=C2OO2)C(O)COC(C=C=C=C=O)O1, Beta: 129.606097
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.216849
+Temperature: 7.377684, Iteration: 265
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.485522
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=CO)O1, Beta: -0.668588
+Mutated 3 (Add branch): CC(NO)[N+]1([O-])OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.522980
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.304958
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC(O1)C2=C=C=C=O, Beta: 3.290003
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.002385
+Temperature: 7.026842, Iteration: 266
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.487837
+Mutated 2 (Add atom inline): CC(CNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 9.253062
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(N)(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.278793
+Mutated 5 (Change atom type): CC(NO)N1NC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.433747
+Mutated 6 (Add ring): O=C=C=C=CC12CC(NO)N(OC(=C(O)O)C(O)CO1)O2, Beta: 5.004986
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.499870
+Temperature: 6.676000, Iteration: 267
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.975106
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)CO)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(OO)COC(C=C=C=C=O)O1, Beta: 3.858891
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.244409
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.769675
+Mutated 6 (Add ring): CC1(NO)C(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 8.024149
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.102275
+Temperature: 6.325158, Iteration: 268
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.567348
+Mutated 2 (Add atom inline): CC(N=C=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 7.638766
+Mutated 3 (Add branch): COC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 4.384542
+Mutated 4 (Delete atom): CC(NO)NOC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 5.760303
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CCC(C=C=C=C=O)O1, Beta: 7.992118
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC(O1)C2=C=C=C=O, Beta: 7.113989
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.623472
+Temperature: 5.974316, Iteration: 269
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.814731
+Mutated 2 (Add atom inline): CC(N=C=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 7.607717
+Mutated 3 (Add branch): CC(=C=C=C=O)C1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.672055
+Mutated 5 (Change atom type): CC1COC(C=C=C=C=O)ON(C(C)NO)OC1=C(O)O, Beta: 7.792506
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OOC2COC(C=C=C=C=O)O1, Beta: 6.897417
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.031585
+Temperature: 5.623474, Iteration: 270
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.744431
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)=CCOC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(C)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 54.435754
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.333526
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2COC(O1)C(=C=C=C=O)O2, Beta: 7.289479
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 11.978552
+Temperature: 5.272632, Iteration: 271
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.309668
+Mutated 2 (Add atom inline): CC(NO)N1OC(=NC(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.924980
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(=N)OC(C=C=C=C=O)O1, Beta: 3.781041
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.615301
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.984736
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(C=C=C=C=O)(OCC2O)O1, Beta: 4.123817
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.112651
+Temperature: 4.921789, Iteration: 272
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.505344
+Mutated 2 (Add atom inline): CC(NO)N1OOC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CONC(C)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 7.090167
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.233058
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(N)COC(C=C=C=C=O)O1, Beta: 3.384966
+Mutated 6 (Add ring): CC(NO)N1OC2=C(O)OC(=C=C=C=O)C(OCC2O)O1, Beta: 6.739943
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.610910
+Temperature: 4.570947, Iteration: 273
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.688846
+Mutated 2 (Add atom inline): CC(CNO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 9.211432
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(O)(C=C=C=C=O)O1, Beta: 7.715923
+Mutated 4 (Delete atom): CC(NO)NOC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 5.641800
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.328416
+Mutated 6 (Add ring): CC1(NO)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 3.270995
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.526462
+Temperature: 4.220105, Iteration: 274
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(=O)COC(C=C=C=C=O)O1, Beta: 2.985793
+Mutated 2 (Add atom inline): CC(=NN1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1)NO, Beta: 1.120955
+Mutated 3 (Add branch): CC(NOO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.828578
+Mutated 4 (Delete atom): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(CNO)O1, Beta: 4.255540
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.304447
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C(O)C2OC2(C=C=C=C=O)O1, Beta: 4.518772
+Mutated 7 (Delete ring): CC(NO)N(OCC=C=C=C=O)OC(=C(O)O)C(O)CO, Beta: 12.061509
+Temperature: 3.869263, Iteration: 275
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=CC=O)O1, Beta: 2.689309
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(C=O)COC(C=C=C=C=O)O1, Beta: 5.295972
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(=N)OC(C=C=C=C=O)O1, Beta: 3.799497
+Mutated 4 (Delete atom): CC(O)C(ON(OCC=C=C=C=O)C(C)NO)=C(O)O, Beta: 4.648426
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)N(O)COC(C=C=C=C=O)O1, Beta: 5.301123
+Mutated 6 (Add ring): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C2CON2)O1, Beta: 6.345493
+Mutated 7 (Delete ring): CC(NO)N(O)OC(C=C=C=C=O)OCC(O)C=C(O)O, Beta: 20.842000
+Temperature: 3.518421, Iteration: 276
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): C=C(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2.975767
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(=C=O)COC(C=C=C=C=O)O1, Beta: 16.306693
+Mutated 3 (Add branch): CCC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.128463
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.882544
+Mutated 5 (Change atom type): C=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: -5.865112
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)C(OC(C=C=C=C=O)O2)N1O, Beta: 3.259376
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 23.343993
+Temperature: 3.167579, Iteration: 277
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.597329
+Mutated 2 (Add atom inline): CC(N=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 17.159764
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.427432
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.286102
+Mutated 5 (Change atom type): NC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 4.325944
+Mutated 6 (Add ring): CC1NOC2(C=C=C=C=O)OCC(O)C(=C(O)O)ON1O2, Beta: 3.353732
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.535620
+Temperature: 2.816737, Iteration: 278
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=O)O1, Beta: 1.813319
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CNO)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(N)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.868627
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.269753
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.531800
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC2(C=C=C=C=O)O1, Beta: 3.458374
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.684627
+Temperature: 2.465895, Iteration: 279
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(CC=C=C=O)O1, Beta: 2.754879
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=NC=C=O)O1, Beta: 3.423989
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(O)=C=C=C=O)O1, Beta: 9.270368
+Mutated 4 (Delete atom): CC(N)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.626476
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CNC(C=C=C=C=O)O1, Beta: 22.249737
+Mutated 6 (Add ring): CC1NOC(=C=C=C=O)C2OCC(O)C(=C(O)O)ON1O2, Beta: 2.859725
+Mutated 7 (Delete ring): COC(C=C=C=C=O)ON(OC(CO)=C(O)O)C(C)NO, Beta: 22.887861
+Temperature: 2.115053, Iteration: 280
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)=COC(C=C=C=C=O)O1, Beta: 6.582458
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=COC=C=O)O1, Beta: 4.879934
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 54.173030
+Mutated 5 (Change atom type): CN(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.018895
+Mutated 6 (Add ring): CC1(NO)C2OC(C=C=C=C=O)ON1OC(=C(O)O)C2O, Beta: 10.709740
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.561060
+Temperature: 1.764211, Iteration: 281
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(C=C=C=C=O)OCC(O)C(C(O)O)O1, Beta: 4.506433
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(NO)COC(C=C=C=C=O)O1, Beta: 3.179224
+Mutated 3 (Add branch): O=C=C=C=CC1OCC(O)C(=C(O)O)ON(C(CO)NO)O1, Beta: 3.454337
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.868667
+Mutated 5 (Change atom type): CC(O)=C1ON(C(C)NO)OC(C=C=C=C=O)OCC1O, Beta: 3.772724
+Mutated 6 (Add ring): CC1NOC2(O)COC(C=C=C=C=O)ON1OC2=C(O)O, Beta: 2.736410
+Mutated 7 (Delete ring): CC(NO)N(OC=C(O)O)OC(C=C=C=C=O)OCCO, Beta: 3.523384
+Temperature: 1.413368, Iteration: 282
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000114
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)N=COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(N(N)O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 3.874007
+Mutated 4 (Delete atom): CC(NO)N(OC(CO)=C(O)O)OC(O)C=C=C=C=O, Beta: 6.296953
+Mutated 5 (Change atom type): CC(NO)N1NC(C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: 7.865431
+Mutated 6 (Add ring): CC1NOC2(C=C=C=C=O)OCC(O)C(=C(O)O)ON1O2, Beta: 3.349543
+Mutated 7 (Delete ring): CC(NO)N(O)OC(=C(O)O)C(O)COCC=C=C=C=O, Beta: 7.684892
+Temperature: 1.062526, Iteration: 283
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C=C=C=C=O)OCC(O)C(=C(O)O)O1, Beta: -5.269636
+Mutated 2 (Add atom inline): CC(N=NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 17.141794
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)ON)C(O)COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): CC(NO)N1OC(=C(O)O)CCOC(C=C=C=C=O)O1, Beta: 4.878720
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(N)COC(C=C=C=C=O)O1, Beta: 3.385381
+Mutated 6 (Add ring): CC(NO)N1OC(=C(O)O)C2(O)COC(O1)C2=C=C=C=O, Beta: 3.258227
+Mutated 7 (Delete ring): CC(O)C(ON(OC(O)C=C=C=C=O)C(C)NO)=C(O)O, Beta: 6.619036
+Temperature: 0.711684, Iteration: 284
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=CO)O1, Beta: 0.000090
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)COC(C=CC=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)COC(C(N)=C=C=C=O)O1, Beta: -1000.000000
+Mutated 4 (Delete atom): C=C=C=CC1OCC(O)C(=C(O)O)ON(C(C)NO)O1, Beta: 5.510913
+Mutated 5 (Change atom type): CC(NO)N1OC(=C(O)O)C(O)CON(C=C=C=C=O)O1, Beta: 3.520572
+Mutated 6 (Add ring): CC1N2OC(=C(O)O)C(O)(COC(C=C=C=C=O)O2)N1O, Beta: 3.992966
+Mutated 7 (Delete ring): CC(NO)NOC(C=C=C=C=O)OCC(O)C(O)=C(O)O, Beta: 63.243939
+Temperature: 0.360842, Iteration: 285
+Best molecule: CC(NO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 2498.961139
+Mutated 1 (Change bond type): CC(N=O)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 6.748159
+Mutated 2 (Add atom inline): CC(NO)N1OC(=C(O)O)C(O)C=COC(C=C=C=C=O)O1, Beta: -1000.000000
+Mutated 3 (Add branch): CC(NO)N1OC(=C(O)O)C(O)C(O)OC(C=C=C=C=O)O1, Beta: 10.081594
+Mutated 4 (Delete atom): CC(NO)N1OC(=CO)C(O)COC(C=C=C=C=O)O1, Beta: 47.521464
+Mutated 5 (Change atom type): CC(OO)N1OC(=C(O)O)C(O)COC(C=C=C=C=O)O1, Beta: 5.415576
+Mutated 6 (Add ring): CC1N(O)OC(O)=C2ON1OC(C=C=C=C=O)OCC2O, Beta: 11.507389
+Mutated 7 (Delete ring): CC(NO)NOC(=C(O)O)C(O)COC(O)C=C=C=C=O, Beta: 6.074071
