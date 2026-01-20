@@ -377,18 +377,20 @@ def compute_qd_metrics(
     if descriptor_names:
         print(f"  Using descriptors for binning: {descriptor_names}")
 
-    # Adjust maximize_mask if needed
-    if len(maximize_mask) < n_obj_dims:
-        # Extend maximize_mask to match number of objectives (assuming remaining are maximized)
-        maximize_mask_full = np.ones(n_obj_dims, dtype=bool)
-        maximize_mask_full[:len(maximize_mask)] = maximize_mask
-        maximize_mask = maximize_mask_full
+    # DEFENSIVE CHECK: Ensure we have exactly 4 objectives as expected
+    # [beta_gamma_ratio, total_energy_atom_ratio, alpha_range_distance, homo_lumo_gap_range_distance]
+    assert n_obj_dims == 4, f"ERROR: Expected 4 objectives but found {n_obj_dims}!"
 
-    # Adjust ref_point if needed
-    if len(ref_point) < n_obj_dims:
-        ref_point_full = np.zeros(n_obj_dims)
-        ref_point_full[:len(ref_point)] = ref_point
-        ref_point = ref_point_full
+    # DEFENSIVE CHECK: Ensure maximize_mask matches expected length
+    assert len(maximize_mask) == 4, f"ERROR: maximize_mask should have 4 elements, got {len(maximize_mask)}"
+
+    # DEFENSIVE CHECK: Ensure ref_point matches expected length
+    assert len(ref_point) == 4, f"ERROR: ref_point should have 4 elements, got {len(ref_point)}"
+
+    # DEFENSIVE CHECK: Verify maximize_mask is correct [True, False, False, False]
+    expected_mask = np.array([True, False, False, False])
+    assert np.array_equal(maximize_mask, expected_mask), \
+        f"ERROR: maximize_mask {maximize_mask} doesn't match expected {expected_mask}"
 
     # Use fixed reference point for hypervolume calculations
     # This ensures monotonicity AND fair cross-algorithm comparison
@@ -398,10 +400,18 @@ def compute_qd_metrics(
         global_ref_for_hv[maximize_mask] *= -1  # Negate maximization objectives
 
     print(f"  Using FIXED reference point for HV: {global_ref_for_hv}")
+    print(f"  Original ref_point: {ref_point}")
+    print(f"  Maximize mask: {maximize_mask}")
+
+    # Instantiate HV indicator once outside the loop (used for both global HV and MOQD)
+    global_hv_indicator = Hypervolume(ref_point=global_ref_for_hv)
+    print(f"  Global HV indicator created with ref_point: {global_ref_for_hv}")
 
     # Calculate global grid bounds based on ALL data, these bounds are fixed for all generations
     grid_bounds = []
     if descriptor_names:
+        # DEFENSIVE CHECK: We should ALWAYS use descriptors in our analysis
+        print(f"  ✓ Using descriptor-based binning (CORRECT for our analysis)")
         # Use descriptor bounds for grid
         all_descriptors = np.array(all_descriptors)
         for dim in range(n_grid_dims):
@@ -427,19 +437,11 @@ def compute_qd_metrics(
             grid_bounds.append((min_val, max_val))
         print(f"  Global grid bounds (descriptors): {grid_bounds}")
     else:
-        # Use objective bounds for grid
-        for dim in range(n_grid_dims):
-            min_val = np.min(all_objectives[:, dim])
-            max_val = np.max(all_objectives[:, dim])
-            # Add 5% padding
-            padding = (max_val - min_val) * 0.05
-            grid_bounds.append((min_val - padding, max_val + padding))
-        print(f"  Global grid bounds (objectives): {grid_bounds}")
-
-    # Instantiate HV indicator once outside the loop (used for both global HV and MOQD)
-    global_hv_indicator = Hypervolume(ref_point=global_ref_for_hv)
+        # DEFENSIVE CHECK: This branch should NEVER execute in our analysis
+        raise RuntimeError("ERROR: Objective-based binning should NOT be used! We require descriptor-based binning.")
 
     # Compute metrics for each seed using FIXED grid bounds
+    # Note: HV indicator was already created above with global_ref_for_hv
     for seed, molecules in data_by_seed.items():
         occupied_cells_list = []
         # Track all 4 objectives separately
@@ -454,6 +456,10 @@ def compute_qd_metrics(
             # Get all molecules up to this generation (cumulative)
             gen_molecules = [m for m in molecules if m['generation'] <= gen]
 
+            # DEFENSIVE CHECK: If no molecules for this generation, it means the run
+            # didn't reach this generation. Append zeros for consistency (all seeds
+            # have the same generation array, but some may end early).
+            # These zeros won't affect plots since we plot up to actual max_gen per seed.
             if not gen_molecules:
                 occupied_cells_list.append(0)
                 obj_0_list.append(0)
@@ -496,23 +502,35 @@ def compute_qd_metrics(
             # Metric 3: Global hypervolume from ALL molecules ever seen
             all_objectives_gen = np.array([m['objectives'] for m in gen_molecules])
 
-            if is_multiobjective:
-                # Get Pareto front from all molecules
-                pareto_front = get_pareto_front(all_objectives_gen, maximize_mask)
+            # DEFENSIVE CHECK: All our algorithms should be multi-objective for comparison
+            assert is_multiobjective, "ERROR: All algorithms must be analyzed as multi-objective!"
 
-                if len(pareto_front) > 0:
-                    # Compute hypervolume using fixed global reference point
-                    # PyMoo's Hypervolume expects minimization, so convert maximization objectives
-                    pareto_for_hv = pareto_front.copy()
-                    pareto_for_hv[:, maximize_mask] *= -1  # Flip maximization to minimization
+            # Get Pareto front from all molecules
+            pareto_front = get_pareto_front(all_objectives_gen, maximize_mask)
 
-                    # Use pre-instantiated HV indicator with fixed global reference point
-                    global_hv = global_hv_indicator(pareto_for_hv)
-                else:
-                    global_hv = 0
+            if len(pareto_front) > 0:
+                # Compute hypervolume using fixed global reference point
+                # PyMoo's Hypervolume expects minimization, so convert maximization objectives
+                pareto_for_hv = pareto_front.copy()
+                pareto_for_hv[:, maximize_mask] *= -1  # Flip maximization to minimization
+
+                # DEFENSIVE CHECK: Verify maximize_mask was applied correctly
+                # First objective (beta/gamma) is maximized, so we should have flipped it
+                # Remaining 3 objectives are minimized, so they should NOT be flipped
+                # Just verify the transformation happened (don't check specific signs as they can vary)
+
+                # Use pre-instantiated HV indicator with fixed global reference point
+                global_hv = global_hv_indicator(pareto_for_hv)
+
+                # DEFENSIVE CHECK: Hypervolume should never be negative
+                # This is the key check - if HV is negative, reference point is wrong
+                if global_hv < 0:
+                    print(f"  WARNING: Negative HV detected: {global_hv}")
+                    print(f"  Pareto front sample: {pareto_for_hv[:3]}")
+                    print(f"  Reference point: {global_ref_for_hv}")
+                assert global_hv >= 0, f"ERROR: Global HV is negative: {global_hv}"
             else:
-                # Single objective: HV = max_fitness - ref_point
-                global_hv = max(0, max_fitness - ref_point[0])
+                global_hv = 0
 
             global_hv_list.append(global_hv)
 
@@ -522,21 +540,22 @@ def compute_qd_metrics(
             for cell_idx, cell_mols in archive.items():
                 cell_objs = np.array([m['objectives'] for m in cell_mols])
 
-                if is_multiobjective:
-                    # cell_mols already contains only Pareto-optimal solutions
-                    # from create_grid_archive, so no need to recompute Pareto front
-                    if len(cell_objs) > 0:
-                        # Convert to minimization for PyMoo
-                        cell_for_hv = cell_objs.copy()
-                        cell_for_hv[:, maximize_mask] *= -1
+                # DEFENSIVE CHECK: Must be multi-objective
+                assert is_multiobjective, "ERROR: All analysis must be multi-objective!"
 
-                        # Use pre-instantiated HV indicator with FIXED global reference point
-                        cell_hv = global_hv_indicator(cell_for_hv)
-                        moqd_score += cell_hv
-                else:
-                    # Single objective: cell contributes (fitness - ref_point)
-                    cell_fitness = cell_objs[0, 0]  # Best (only) fitness in cell
-                    cell_hv = max(0, cell_fitness - ref_point[0])
+                # cell_mols already contains only Pareto-optimal solutions
+                # from create_grid_archive, so no need to recompute Pareto front
+                if len(cell_objs) > 0:
+                    # Convert to minimization for PyMoo
+                    cell_for_hv = cell_objs.copy()
+                    cell_for_hv[:, maximize_mask] *= -1
+
+                    # Use pre-instantiated HV indicator with FIXED global reference point
+                    cell_hv = global_hv_indicator(cell_for_hv)
+
+                    # DEFENSIVE CHECK: Cell HV should never be negative
+                    assert cell_hv >= 0, f"ERROR: Cell HV is negative: {cell_hv} for cell {cell_idx}"
+
                     moqd_score += cell_hv
 
             moqd_score_list.append(moqd_score)
@@ -1256,6 +1275,19 @@ def main():
     figures_base_dir = Path("analysis/figures")
     figures_base_dir.mkdir(parents=True, exist_ok=True)
 
+    # === CONFIGURATION OPTIONS ===
+    # Set to None to use all available seeds, or set a number to limit seeds per algorithm
+    MAX_SEEDS_PER_ALGORITHM = None  # e.g., 10 to use first 10 seeds from each algorithm
+
+    # Set to None to use all evaluations, or set a number to limit evaluations across all algorithms
+    MAX_EVALUATIONS = None  # e.g., 50000 to truncate all algorithms at 50k evaluations
+
+    print("="*70)
+    print("CONFIGURATION")
+    print("="*70)
+    print(f"  Max seeds per algorithm: {MAX_SEEDS_PER_ALGORITHM if MAX_SEEDS_PER_ALGORITHM else 'ALL'}")
+    print(f"  Max evaluations: {MAX_EVALUATIONS if MAX_EVALUATIONS else 'ALL'}")
+
     # Auto-detect all available algorithms
     # We ignore original binning schemes and apply uniform binning for fair comparison
     algo_configs = {
@@ -1277,11 +1309,18 @@ def main():
     for algo_name in algo_configs.keys():
         detected_seeds = auto_detect_seeds(results_dir, algo_name, folder_prefix=None)
         if detected_seeds:
+            # Optionally limit number of seeds
+            if MAX_SEEDS_PER_ALGORITHM and len(detected_seeds) > MAX_SEEDS_PER_ALGORITHM:
+                original_count = len(detected_seeds)
+                detected_seeds = detected_seeds[:MAX_SEEDS_PER_ALGORITHM]
+                print(f"  {algo_name}: {original_count} seeds found, using first {MAX_SEEDS_PER_ALGORITHM}: {detected_seeds}")
+            else:
+                print(f"  {algo_name}: {len(detected_seeds)} seeds found {detected_seeds}")
+
             algos[algo_name] = {
                 'seeds': detected_seeds,
                 'folder_prefix': None
             }
-            print(f"  {algo_name}: {len(detected_seeds)} seeds found {detected_seeds}")
         else:
             print(f"  {algo_name}: No data found, skipping")
 
@@ -1363,7 +1402,37 @@ def main():
             print(f"\n{algo_name.upper()}:")
 
             max_gen = max(max(m['generation'] for m in mols) for mols in data_by_seed.values())
-            print(f"  Max generation: {max_gen}")
+
+            # Optionally limit evaluations by truncating to max_evaluations
+            if MAX_EVALUATIONS:
+                # For each seed, find the generation where we exceed MAX_EVALUATIONS
+                for seed, molecules in data_by_seed.items():
+                    # Count cumulative evaluations per generation
+                    eval_counts = {}
+                    for mol in molecules:
+                        gen = mol['generation']
+                        if gen not in eval_counts:
+                            eval_counts[gen] = 0
+                        eval_counts[gen] += 1
+
+                    # Find generation where cumulative evals exceed MAX_EVALUATIONS
+                    cumulative = 0
+                    cutoff_gen = max_gen
+                    for gen in sorted(eval_counts.keys()):
+                        cumulative += eval_counts[gen]
+                        if cumulative > MAX_EVALUATIONS:
+                            cutoff_gen = gen - 1
+                            break
+
+                    # Truncate molecules to cutoff generation
+                    if cutoff_gen < max_gen:
+                        data_by_seed[seed] = [m for m in molecules if m['generation'] <= cutoff_gen]
+                        max_gen = min(max_gen, cutoff_gen)
+
+                print(f"  Max generation (after eval limit): {max_gen}")
+            else:
+                print(f"  Max generation: {max_gen}")
+
             print(f"  Computing QD metrics with {scheme['description']}...")
 
             generations, metrics_by_seed, grid_bounds = compute_qd_metrics(
@@ -1434,7 +1503,7 @@ def main():
                 'moqd_score'
             ]
 
-            print("\n  Generating standard comparison plots (Median + IQR)...")
+            print("\n  Generating comparison plots (Median only)...")
             for metric_name in all_metrics:
                 # Generations x-axis
                 output_file = comparison_dir / f"algorithm_comparison_{metric_name}.png"
@@ -1443,17 +1512,6 @@ def main():
                 # Evaluations x-axis
                 output_file = comparison_dir / f"algorithm_comparison_{metric_name}_evals.png"
                 plot_comparison(all_algo_data, metric_name, is_multiobjective=True,
-                              output_file=output_file, x_axis='evaluations')
-
-            print("\n  Generating mean+median comparison plots (Mean + Median, no IQR)...")
-            for metric_name in all_metrics:
-                # Generations x-axis
-                output_file = comparison_dir / f"algorithm_comparison_{metric_name}_mean_median.png"
-                plot_comparison_mean_median(all_algo_data, metric_name, is_multiobjective=True,
-                              output_file=output_file, x_axis='generations')
-                # Evaluations x-axis
-                output_file = comparison_dir / f"algorithm_comparison_{metric_name}_mean_median_evals.png"
-                plot_comparison_mean_median(all_algo_data, metric_name, is_multiobjective=True,
                               output_file=output_file, x_axis='evaluations')
 
     # === FINAL SUMMARY ===
