@@ -6,6 +6,7 @@ from typing import Dict, List, Tuple
 from pymoo.indicators.hv import Hypervolume
 from matplotlib.ticker import FuncFormatter
 import re
+import argparse
 from rdkit import Chem
 
 
@@ -60,28 +61,34 @@ def populate_missing_descriptors(molecules: List[dict]) -> List[dict]:
 
 
 def parse_sa_progress_file(file_path: Path) -> List[dict]:
-    """Parse SA annealing_progress.txt file."""
-    molecules = []
+    """
+    Parse SA annealing_progress.txt file to get iteration numbers.
+    Returns a dict mapping SMILES -> first iteration number.
+    """
+    smiles_to_iteration = {}
     with open(file_path, 'r') as f:
         current_iteration = None
         for line in f:
+            # Track iteration number
             iter_match = re.search(r'Iteration:\s*(\d+)', line)
             if iter_match:
                 current_iteration = int(iter_match.group(1))
 
-            match = re.search(r'Best molecule:\s*([^,]+),\s*Beta:\s*([-\d.]+)', line)
-            if match and current_iteration is not None:
-                smiles = match.group(1).strip()
-                fitness_value = float(match.group(2))
-                molecule = {
-                    'smiles': smiles,
-                    'generation': current_iteration,
-                    'beta_gamma_ratio': fitness_value,
-                    'fitness': fitness_value,
-                    'objectives': [fitness_value]  # Single objective
-                }
-                molecules.append(molecule)
-    return molecules
+            # Parse best molecule lines
+            best_match = re.search(r'Best molecule:\s*([^,]+),\s*Beta:\s*([-\d.]+)', line)
+            if best_match and current_iteration is not None:
+                smiles = best_match.group(1).strip()
+                if smiles not in smiles_to_iteration:
+                    smiles_to_iteration[smiles] = current_iteration
+
+            # Parse mutated molecule lines
+            mut_match = re.search(r'Mutated \d+.*?:\s*([^,]+),\s*Beta:\s*([-\d.]+)', line)
+            if mut_match and current_iteration is not None:
+                smiles = mut_match.group(1).strip()
+                if smiles not in smiles_to_iteration:
+                    smiles_to_iteration[smiles] = current_iteration
+
+    return smiles_to_iteration
 
 
 def auto_detect_seeds(results_dir: Path, algorithm_name: str, folder_prefix: str = None) -> List[int]:
@@ -119,6 +126,71 @@ def load_algorithm_data(results_dir: Path, algorithm_name: str, seeds: List[int]
         prefix = folder_prefix if folder_prefix else base_name
 
         folder_name = f"{prefix}_results_seed_{seed}"
+
+        # SPECIAL CASE: For SA, merge progress file (iteration info) with JSON (molecular properties)
+        if 'sa' in algorithm_name or 'simulated_annealing' in algorithm_name:
+            # Step 1: Parse progress file to get SMILES -> iteration mapping
+            sa_progress_file = results_dir / algorithm_name / folder_name / "annealing_progress.txt"
+            if not sa_progress_file.exists():
+                sa_progress_file = results_dir / folder_name / "annealing_progress.txt"
+
+            # Step 2: Load JSON file to get full molecular properties
+            json_file = results_dir / algorithm_name / folder_name / "all_molecules_database.json"
+            if not json_file.exists():
+                json_file = results_dir / folder_name / "all_molecules_database.json"
+
+            if sa_progress_file.exists() and json_file.exists():
+                # Get SMILES -> iteration mapping
+                smiles_to_iteration = parse_sa_progress_file(sa_progress_file)
+
+                # Load molecules with full properties from JSON
+                with open(json_file, 'r') as f:
+                    molecules = json.load(f)
+
+                # Assign iteration numbers to molecules based on SMILES
+                molecules_with_gen = []
+                for m in molecules:
+                    smiles = m.get('smiles', '')
+                    if smiles in smiles_to_iteration:
+                        m['generation'] = smiles_to_iteration[smiles]
+                        molecules_with_gen.append(m)
+
+                if molecules_with_gen:
+                    # Process molecules to compute objectives (same as other algorithms)
+                    for m in molecules_with_gen:
+                        # Step 1: Recalculate beta_gamma_ratio from beta_mean / gamma
+                        if 'beta_mean' in m and 'gamma' in m and m['gamma'] != 0:
+                            m['beta_gamma_ratio'] = m['beta_mean'] / m['gamma']
+                        else:
+                            m['beta_gamma_ratio'] = m.get('beta_gamma_ratio', 0.0)
+
+                        # Step 2: Recalculate total_energy_atom_ratio
+                        natoms = m.get('num_atoms', m.get('natoms', 0))
+                        if 'total_energy' in m and natoms > 0:
+                            m['total_energy_atom_ratio'] = m['total_energy'] / natoms
+                        else:
+                            m['total_energy_atom_ratio'] = m.get('total_energy_atom_ratio', 0.0)
+
+                        # Step 3: Objectives array [beta_gamma, energy_atom, alpha_dist, homo_dist]
+                        m['objectives'] = [
+                            m['beta_gamma_ratio'],
+                            m['total_energy_atom_ratio'],
+                            m['alpha_range_distance'],
+                            m['homo_lumo_gap_range_distance']
+                        ]
+
+                    # Populate missing descriptors
+                    molecules_with_gen = populate_missing_descriptors(molecules_with_gen)
+
+                    data_by_seed[seed] = molecules_with_gen
+                    print(f"  Loaded {len(molecules_with_gen)} molecules from {algorithm_name} seed {seed} (SA merged)")
+                else:
+                    print(f"  Warning: No molecules matched between SA progress and JSON for seed {seed}")
+            else:
+                print(f"  Warning: SA files not found for seed {seed}")
+            continue  # Skip regular JSON loading for SA
+
+        # For all other algorithms, load from JSON
         json_file = results_dir / algorithm_name / folder_name / "all_molecules_database.json"
 
         if not json_file.exists():
@@ -180,24 +252,8 @@ def load_algorithm_data(results_dir: Path, algorithm_name: str, seeds: List[int]
 
             data_by_seed[seed] = molecules
             print(f"  Loaded {len(molecules)} molecules from {algorithm_name} seed {seed}")
-        elif 'sa' in algorithm_name or 'simulated_annealing' in algorithm_name:
-            base_name = algorithm_name.split('-')[0]
-            prefix = folder_prefix if folder_prefix else base_name
-            folder_name_sa = f"{prefix}_results_seed_{seed}"
-
-            sa_file = results_dir / algorithm_name / folder_name_sa / "annealing_progress.txt"
-            if not sa_file.exists():
-                sa_file = results_dir / folder_name_sa / "annealing_progress.txt"
-
-            if sa_file.exists():
-                molecules = parse_sa_progress_file(sa_file)
-                if molecules:
-                    data_by_seed[seed] = molecules
-                    print(f"  Loaded {len(molecules)} iterations from SA seed {seed}")
-            else:
-                print(f"  Warning: File not found: {sa_file}")
         else:
-            print(f"  Warning: File not found: {json_file}")
+            print(f"  Warning: JSON file not found: {json_file}")
 
     return data_by_seed
 
@@ -223,7 +279,7 @@ def get_pareto_front(objectives: np.ndarray, maximize_mask: np.ndarray) -> np.nd
     obj_transformed[:, ~maximize_mask] *= -1
 
     # Find Pareto front using correct dominance definition
-    # Point j dominates point i if: j >= i in ALL objectives AND j > i in at least ONE
+    # Point j dominates point i if: j >= i in all objectives and j > i in at least one objective
     is_pareto = np.ones(n_points, dtype=bool)
     
     for i in range(n_points):
@@ -233,7 +289,7 @@ def get_pareto_front(objectives: np.ndarray, maximize_mask: np.ndarray) -> np.nd
             if i == j or not is_pareto[j]:
                 continue
             # Check if j dominates i
-            # j dominates i if j >= i everywhere AND j > i somewhere
+            # j dominates i if j >= i everywhere and j > i somewhere
             if (np.all(obj_transformed[j] >= obj_transformed[i]) and 
                 np.any(obj_transformed[j] > obj_transformed[i])):
                 is_pareto[i] = False
@@ -1271,16 +1327,47 @@ def generate_median_archive_heatmap(
 
 
 def main():
-    results_dir = Path("analysis/results")
-    figures_base_dir = Path("analysis/figures")
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(
+        description='Quality-Diversity Analysis for Molecular Evolution',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Run with all seeds and all evaluations (default)
+  python3 qd_analysis.py
+
+  # Use only first 5 seeds per algorithm
+  python3 qd_analysis.py --max-seeds 5
+
+  # Limit to 30,000 evaluations across all algorithms
+  python3 qd_analysis.py --max-evals 30000
+
+  # Combine both limits
+  python3 qd_analysis.py --max-seeds 10 --max-evals 50000
+        """
+    )
+    parser.add_argument(
+        '--max-seeds',
+        type=int,
+        default=None,
+        help='Maximum number of seeds to use per algorithm (default: all available)'
+    )
+    parser.add_argument(
+        '--max-evals',
+        type=int,
+        default=None,
+        help='Maximum number of function evaluations to include (default: all available)'
+    )
+    args = parser.parse_args()
+
+    results_dir = Path("results")
+    figures_base_dir = Path("figures")
     figures_base_dir.mkdir(parents=True, exist_ok=True)
 
     # === CONFIGURATION OPTIONS ===
-    # Set to None to use all available seeds, or set a number to limit seeds per algorithm
-    MAX_SEEDS_PER_ALGORITHM = None  # e.g., 10 to use first 10 seeds from each algorithm
-
-    # Set to None to use all evaluations, or set a number to limit evaluations across all algorithms
-    MAX_EVALUATIONS = None  # e.g., 50000 to truncate all algorithms at 50k evaluations
+    # Get values from command-line arguments
+    MAX_SEEDS_PER_ALGORITHM = args.max_seeds
+    MAX_EVALUATIONS = args.max_evals
 
     print("="*70)
     print("CONFIGURATION")
