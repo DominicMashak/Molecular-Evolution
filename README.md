@@ -1,5 +1,5 @@
 <h1>
-  <img align="absmiddle" src="mol-evo-logo.png" width="96" height="96" alt="Molecular Evolution logo" style="margin-right: 16px;">
+  <img align="absmiddle" src="mol-evo-logo.png" width="64" height="64" alt="Molecular Evolution logo" style="margin-right: 16px;">
   Molecular-Evolution
 </h1>
 
