@@ -1,4 +1,7 @@
-# Molecular-Evolution
+<h1>
+  <img src="mol-evo-logo.png" width="96" height="96" style="align: middle; margin-right: 0;">
+  Molecular-Evolution
+</h1>
 
 [![CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-EF9421.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/) [![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#) [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=F0F0F0)](#) 
