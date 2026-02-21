@@ -4,7 +4,7 @@
 </h1>
 
 [![CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-EF9421.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/) [![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#) [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=F0F0F0)](#) 
+[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/) [![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#) [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=F0F0F0)](#) [![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=fff)](#) [![ROCm](https://img.shields.io/badge/ROCm-ED1C24?logo=amd&logoColor=white)](#) [![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white)](#) [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](#)
 
 To learn how to start using, skip to reading [TUTORIAL.md](https://github.com/DominicMashak/Molecular-Evolution/blob/main/TUTORIAL.md)
 
