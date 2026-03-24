@@ -17,7 +17,8 @@ The project currently implements algorithms such as Simulated Annealing (SA), Mu
 ## Key Features
 
 - **Evolutionary Optimization**: Apply evolutionary algorithms to evolve molecular populations toward optimal properties.
-- **NLO Property Focus**: We target the properties' hyperpolarizability (β), second hyperpolarizability (γ), linear polarizability (α), HUMO-LUMO gap, and total energy to be screened and optimized.
+- **Drug Properties**: TODO
+- **NLO Properties**: We target the properties' hyperpolarizability (β), second hyperpolarizability (γ), linear polarizability (α), HUMO-LUMO gap, and total energy to be screened and optimized.
 - **SMILES or SELFIES Based**: Uses RDKit for generating and manipulating SMILES strings, ensuring compatibility with standard cheminformatics pipelines. We currently use 7 mutation operators, which include: changing a bond, adding an atom, adding a branch, deleting an atom, changing an atom, adding a ring, and deleting a ring. All of the mutation operators have mutable weights. TODO EXPLAIN CROSSOVER USE
 
 ## Supported Algorithms
