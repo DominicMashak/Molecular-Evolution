@@ -20,7 +20,9 @@ class MOMEOptimizer:
         evaluate_fn: Callable[[Any], Dict[str, Any]],
         random_init_size: int = 100,
         output_dir: str = "mome_results",
-        reference_point: List[float] = None
+        reference_point: List[float] = None,
+        crossover_rate: float = 0.0,
+        crossover_fn: Optional[Callable[[Any, Any], Any]] = None
     ):
         """
         Initialize the MOME optimizer.
@@ -39,6 +41,8 @@ class MOMEOptimizer:
         self.mutate_fn = mutate_fn
         self.evaluate_fn = evaluate_fn
         self.random_init_size = random_init_size
+        self.crossover_rate = crossover_rate
+        self.crossover_fn = crossover_fn
         
         from pathlib import Path
         self.output_dir = Path(output_dir)
@@ -62,7 +66,20 @@ class MOMEOptimizer:
 
         # Database of all evaluated molecules (like NSGA-II)
         self.all_molecules = []
+
+        # Cache: SMILES -> properties dict (avoid redundant QC evaluations)
+        self._eval_cache: Dict[str, Dict[str, Any]] = {}
     
+    def _evaluate_with_cache(self, solution: str) -> Dict[str, Any]:
+        """Evaluate a molecule, using cached result if already seen."""
+        if solution in self._eval_cache:
+            return self._eval_cache[solution]
+        properties = self.evaluate_fn(solution)
+        self.total_evaluations += 1
+        if properties is not None:
+            self._eval_cache[solution] = properties
+        return properties
+
     def initialize(self) -> None:
         """Initialize the archive with random solutions."""
         print(f"Initializing MOME with {self.random_init_size} random solutions...")
@@ -72,8 +89,9 @@ class MOMEOptimizer:
             if solution is None:
                 continue
 
-            properties = self.evaluate_fn(solution)
-            self.total_evaluations += 1
+            properties = self._evaluate_with_cache(solution)
+            if properties is None:
+                continue
 
             # Update molecule database (like NSGA-II)
             self.update_molecule_database(solution, properties, generation=0)
@@ -115,6 +133,15 @@ class MOMEOptimizer:
             if parent is None:
                 # Archive is empty, generate random solution
                 solution = self.generate_fn()
+            elif (self.crossover_fn is not None
+                  and self.crossover_rate > 0.0
+                  and random.random() < self.crossover_rate):
+                # Crossover: sample a second parent and recombine
+                parent2 = self.archive.sample_solution_from_archive()
+                if parent2 is not None:
+                    solution = self.crossover_fn(parent, parent2)
+                else:
+                    solution = self.mutate_fn(parent)
             else:
                 # Mutate the parent
                 solution = self.mutate_fn(parent)
@@ -122,9 +149,10 @@ class MOMEOptimizer:
             if solution is None:
                 continue
             
-            # Evaluate the solution
-            properties = self.evaluate_fn(solution)
-            self.total_evaluations += 1
+            # Evaluate the solution (uses cache if already seen)
+            properties = self._evaluate_with_cache(solution)
+            if properties is None:
+                continue
 
             # Update molecule database (like NSGA-II)
             self.update_molecule_database(solution, properties, generation=self.generation + 1)
@@ -290,23 +318,21 @@ class MOMEOptimizer:
         }
         
         # Save each cell's Pareto front
-        for idx in np.ndindex(self.archive.measure_dims):
-            front = self.archive.fronts[idx]
-            if len(front) > 0:
-                cell_data = {
-                    'indices': idx,
-                    'front_size': len(front),
-                    'solutions': []
-                }
-                
-                for entry in front:
-                    cell_data['solutions'].append({
-                        'smiles': entry['solution'],
-                        'properties': entry['properties'],
-                        'objectives': entry['objectives'].tolist()
-                    })
-                
-                archive_data['cells'].append(cell_data)
+        for idx, front in self.archive.iter_filled_cells():
+            cell_data = {
+                'indices': idx,
+                'front_size': len(front),
+                'solutions': []
+            }
+
+            for entry in front:
+                cell_data['solutions'].append({
+                    'smiles': entry['solution'],
+                    'properties': entry['properties'],
+                    'objectives': entry['objectives'].tolist()
+                })
+
+            archive_data['cells'].append(cell_data)
         
         filename = self.output_dir / f'mome_archive_gen_{generation:04d}.json'
         import json
@@ -474,23 +500,21 @@ class MOMEOptimizer:
             'cells': []
         }
 
-        for idx in np.ndindex(final_archive.measure_dims):
-            front = final_archive.fronts[idx]
-            if len(front) > 0:
-                cell_data = {
-                    'indices': idx,
-                    'front_size': len(front),
-                    'solutions': []
-                }
+        for idx, front in final_archive.iter_filled_cells():
+            cell_data = {
+                'indices': idx,
+                'front_size': len(front),
+                'solutions': []
+            }
 
-                for entry in front:
-                    cell_data['solutions'].append({
-                        'smiles': entry['solution'],
-                        'properties': entry['properties'],
-                        'objectives': entry['objectives'].tolist()
-                    })
+            for entry in front:
+                cell_data['solutions'].append({
+                    'smiles': entry['solution'],
+                    'properties': entry['properties'],
+                    'objectives': entry['objectives'].tolist()
+                })
 
-                archive_data['cells'].append(cell_data)
+            archive_data['cells'].append(cell_data)
 
         archive_file = results_path / 'mome_archive_recalculated.json'
         with open(archive_file, 'w') as f:

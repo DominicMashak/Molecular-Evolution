@@ -19,7 +19,9 @@ class MAPElitesOptimizer:
         evaluate_fn: Callable[[Any], Dict[str, Any]],
         random_init_size: int = 100,
         output_dir: str = "map_elites_results",
-        reference_point: List[float] = None
+        reference_point: List[float] = None,
+        crossover_rate: float = 0.0,
+        crossover_fn: Optional[Callable[[Any, Any], Any]] = None
     ):
         """
         Initialize the MAP-Elites optimizer.
@@ -43,6 +45,8 @@ class MAPElitesOptimizer:
         self.mutate_fn = mutate_fn
         self.evaluate_fn = evaluate_fn
         self.random_init_size = random_init_size
+        self.crossover_rate = crossover_rate
+        self.crossover_fn = crossover_fn
         
         from pathlib import Path
         self.output_dir = Path(output_dir)
@@ -283,10 +287,19 @@ class MAPElitesOptimizer:
             if parent is None:
                 # Archive is empty, generate random solution
                 solution = self.generate_fn()
+            elif (self.crossover_fn is not None
+                  and self.crossover_rate > 0.0
+                  and random.random() < self.crossover_rate):
+                # Crossover: sample a second parent and recombine
+                parent2 = self.sample_parent()
+                if parent2 is not None:
+                    solution = self.crossover_fn(parent, parent2)
+                else:
+                    solution = self.mutate_fn(parent)
             else:
                 # Mutate the parent
                 solution = self.mutate_fn(parent)
-            
+
             if solution is None:
                 continue  # Skip invalid mutations
             

@@ -6,6 +6,27 @@ from pathlib import Path
 from collections import defaultdict
 from molev_utils.molecule_ops import MoleculeMutator
 
+# Lazy-import SELFIES support — only loaded when encoding='selfies' is requested.
+# This keeps the default SMILES path free of the selfies dependency.
+_SELFIESMutator = None
+_smiles_to_selfies = None
+_selfies_to_smiles = None
+
+def _load_selfies_ops():
+    """Import selfies_ops on first use; raises ImportError with a clear message if selfies is not installed."""
+    global _SELFIESMutator, _smiles_to_selfies, _selfies_to_smiles
+    if _SELFIESMutator is None:
+        try:
+            from molev_utils.selfies_ops import SELFIESMutator, smiles_to_selfies, selfies_to_smiles
+            _SELFIESMutator = SELFIESMutator
+            _smiles_to_selfies = smiles_to_selfies
+            _selfies_to_smiles = selfies_to_smiles
+        except ImportError:
+            raise ImportError(
+                "The 'selfies' package is required for SELFIES encoding. "
+                "Install it with: pip install selfies"
+            )
+
 
 # Helper function to load canonicalize_smiles
 def _load_molecular_utils():
@@ -103,7 +124,7 @@ class MoleculeGenerator:
                 list: A list of unique, valid SMILES strings.
     """
     """Generate diverse molecules using shared MoleculeMutator"""
-    def __init__(self, seed=92, mutation_weights=None):
+    def __init__(self, seed=92, mutation_weights=None, atom_set='nlo', encoding='smiles'):
         # Set random seed for reproducibility
         random.seed(seed)
 
@@ -121,7 +142,16 @@ class MoleculeGenerator:
         except:
             pass
 
-        self.mutator = MoleculeMutator()
+        if encoding not in ('smiles', 'selfies'):
+            raise ValueError(f"Unknown encoding '{encoding}'. Must be 'smiles' or 'selfies'.")
+        self.encoding = encoding
+        self.atom_set = atom_set
+        self.mutator = MoleculeMutator(atom_set=atom_set)
+        if encoding == 'selfies':
+            _load_selfies_ops()
+            self.selfies_mutator = _SELFIESMutator(atom_set=atom_set)
+        else:
+            self.selfies_mutator = None
         if mutation_weights is None:
             # Equal weights for all mutation types (1/7 each)
             equal_weight = 1.0 / 7.0
@@ -139,18 +169,95 @@ class MoleculeGenerator:
         total = sum(self.mutation_weights.values())
         self.mutation_weights = {k: v/total for k, v in self.mutation_weights.items()}
         self.mutation_stats = defaultdict(lambda: {'attempts': 0, 'successes': 0})
+        self._crossover = None  # lazily initialised by crossover_as_smiles()
 
-    def mutate_multiple(self, smiles: str, n_mutations: int = None):
+    def crossover_in_encoding(self, sol1: str, sol2: str) -> 'str | None':
+        """Fragment-based crossover, returning the result in the configured encoding.
+
+        For MOME / MAP-Elites where the archive stores solutions in the internal
+        encoding (SMILES or SELFIES), this ensures the offspring is in the same
+        format as the parents so it can be stored in the archive without
+        additional conversion steps.
+        """
+        result_smiles = self.crossover_as_smiles(sol1, sol2)
+        if result_smiles is None:
+            return None
+        if self.encoding == 'selfies':
+            _load_selfies_ops()
+            return _smiles_to_selfies(result_smiles)
+        return result_smiles
+
+    def crossover_as_smiles(self, smiles1: str, smiles2: str) -> 'str | None':
+        """Fragment-based crossover on two SMILES strings; always returns SMILES or None.
+
+        When encoding='selfies', the inputs are decoded to SMILES before crossing.
+        The crossover engine operates on RDKit mol objects and is encoding-agnostic.
+        """
+        if self.encoding == 'selfies':
+            s1 = self.decode_to_smiles(smiles1)
+            s2 = self.decode_to_smiles(smiles2)
+        else:
+            s1, s2 = smiles1, smiles2
+        if s1 is None or s2 is None:
+            return None
+        if self._crossover is None:
+            from molev_utils.crossover_ops import MoleculeCrossover
+            self._crossover = MoleculeCrossover(atom_set=self.atom_set)
+        return self._crossover.crossover(s1, s2)
+
+    def mutate_as_smiles(self, smiles: str) -> 'str | None':
+        """Mutate a SMILES string and always return a SMILES string.
+
+        For 'smiles' encoding this is equivalent to mutate_multiple().
+        For 'selfies' encoding the input SMILES is encoded to SELFIES, mutated
+        via token-level operations, then decoded back to SMILES.
+        """
+        if self.encoding == 'smiles':
+            return self.mutate_multiple(smiles)
+        # SELFIES mode: encode → mutate tokens → decode back to SMILES
+        selfies_str = _smiles_to_selfies(smiles)
+        if selfies_str is None:
+            return None
+        mutated_selfies = self._mutate_selfies(selfies_str)
+        if mutated_selfies is None:
+            return None
+        return _selfies_to_smiles(mutated_selfies)
+
+    def validate_as_smiles(self, smiles: str, max_atoms: int = 30) -> bool:
+        """Validate a SMILES string using the underlying SMILES validator.
+
+        Always interprets the input as SMILES, regardless of the configured
+        encoding.  Useful for NSGA-II and other callers that always work
+        with SMILES-based Individual objects.
+        """
+        return self.mutator.validate(smiles, max_atoms)
+
+    def decode_to_smiles(self, solution: str) -> 'str | None':
+        """Convert a solution string to SMILES regardless of encoding.
+
+        For 'smiles' encoding this is a no-op; for 'selfies' it decodes via the
+        SELFIES library.  Returns None if decoding fails.
+        """
+        if self.encoding == 'selfies':
+            return _selfies_to_smiles(solution)
+        return solution
+
+    def mutate_multiple(self, solution: str, n_mutations: int = None):
         if n_mutations is None:
             n_mutations = random.choices([1,2,3,4,5], weights=[0.3,0.3,0.2,0.1,0.1])[0]
-        current = smiles
+        current = solution
         for _ in range(n_mutations):
             mutated = self.mutate(current)
             if mutated:
                 current = mutated
-        return current if current != smiles else None
+        return current if current != solution else None
 
-    def mutate(self, smiles: str):
+    def mutate(self, solution: str):
+        if self.encoding == 'selfies':
+            return self._mutate_selfies(solution)
+        return self._mutate_smiles(solution)
+
+    def _mutate_smiles(self, smiles: str):
         mutation_types = [1,2,3,4,5,6,7]
         mutation_probs = [self.mutation_weights[k] for k in [
             'change_bond','add_atom_inline','add_branch','delete_atom','change_atom','add_ring','delete_ring']]
@@ -164,6 +271,19 @@ class MoleculeGenerator:
             if new_smiles and self.mutator.validate(new_smiles):
                 self.mutation_stats[mutation_type]['successes'] += 1
                 return new_smiles
+        return None
+
+    def _mutate_selfies(self, selfies_str: str):
+        # SELFIES mutations: types 1 (substitute), 2 (insert), 3 (delete)
+        selfies_mutation_types = [1, 2, 3]
+        attempts = 0
+        max_attempts = 10
+        while attempts < max_attempts:
+            attempts += 1
+            mutation_type = random.choice(selfies_mutation_types)
+            new_selfies = self.selfies_mutator.mutate(selfies_str, mutation_type)
+            if new_selfies and self.selfies_mutator.validate(new_selfies):
+                return new_selfies
         return None
 
     def get_mutation_success_rates(self):
@@ -184,8 +304,10 @@ class MoleculeGenerator:
         total = sum(self.mutation_weights.values())
         self.mutation_weights = {k: v/total for k, v in self.mutation_weights.items()}
 
-    def validate_molecule(self, smiles: str, max_atoms: int = 30):
-        return self.mutator.validate(smiles, max_atoms)
+    def validate_molecule(self, solution: str, max_atoms: int = 30):
+        if self.encoding == 'selfies':
+            return self.selfies_mutator.validate(solution, max_atoms)
+        return self.mutator.validate(solution, max_atoms)
 
     def generate_initial_population(self, size: int, save_to_file=False, seed_number=None, algorithm_name=None):
         """Generate random initial molecules based on random seed.
@@ -203,21 +325,55 @@ class MoleculeGenerator:
         Returns:
             list: List of valid SMILES strings
         """
-        # Simple base molecules (very basic structures to start from)
-        base_molecules = [
-            'C',           # Methane
-            'CC',          # Ethane
-            'CCC',         # Propane
-            'CCCC',        # Butane
-            'CCO',         # Ethanol
-            'CCN',         # Ethylamine
-            'C=C',         # Ethene
-            'C=CC',        # Propene
-            'C1CC1',       # Cyclopropane
-            'C1CCC1',      # Cyclobutane
-            'C1CCCC1',     # Cyclopentane
-            'C1CCCCC1',    # Cyclohexane
-        ]
+        # Select base molecules based on atom set
+        if self.atom_set == 'drug':
+            base_molecules = [
+                'c1ccccc1',        # Benzene
+                'c1ccncc1',        # Pyridine
+                'c1ccoc1',         # Furan
+                'c1cc[nH]c1',      # Pyrrole
+                'c1ccsc1',         # Thiophene
+                'c1ccc2[nH]ccc2c1',  # Indole
+                'c1ccc2ncccc2c1',  # Quinoline
+                'C1CCNCC1',        # Piperidine
+                'C1CNCCN1',        # Piperazine
+                'C1CCOCC1',        # Tetrahydropyran (morpholine-like)
+                'c1ccc(O)cc1',     # Phenol
+                'c1ccc(N)cc1',     # Aniline
+                'c1ccc(F)cc1',     # Fluorobenzene
+                'c1ccc(Cl)cc1',    # Chlorobenzene
+                'c1ccc(Br)cc1',    # Bromobenzene
+                'c1ccc(S)cc1',     # Thiophenol
+                'c1cnc2ccccc2n1',  # Quinazoline
+                'c1ccc(-c2ccccc2)cc1',  # Biphenyl
+                'c1nc2ccccc2[nH]1',  # Benzimidazole
+                'CC(=O)Nc1ccccc1', # Acetanilide
+            ]
+        else:
+            base_molecules = [
+                'C',           # Methane
+                'CC',          # Ethane
+                'CCC',         # Propane
+                'CCCC',        # Butane
+                'CCO',         # Ethanol
+                'CCN',         # Ethylamine
+                'C=C',         # Ethene
+                'C=CC',        # Propene
+                'C1CC1',       # Cyclopropane
+                'C1CCC1',      # Cyclobutane
+                'C1CCCC1',     # Cyclopentane
+                'C1CCCCC1',    # Cyclohexane
+            ]
+
+        # Convert base molecules to SELFIES encoding if needed
+        if self.encoding == 'selfies':
+            converted = []
+            for smi in base_molecules:
+                enc = _smiles_to_selfies(smi)
+                if enc:
+                    converted.append(enc)
+            if converted:
+                base_molecules = converted
 
         population = []
         attempts = 0
@@ -240,7 +396,7 @@ class MoleculeGenerator:
                     mutant = temp
 
             # Add to population if valid and unique
-            if mutant and mutant not in population and self.mutator.validate(mutant):
+            if mutant and mutant not in population and self.validate_molecule(mutant):
                 population.append(mutant)
 
         # If we couldn't generate enough, fill with base molecules
@@ -248,7 +404,7 @@ class MoleculeGenerator:
             for base in base_molecules:
                 if len(population) >= size:
                     break
-                if base not in population and self.mutator.validate(base):
+                if base not in population and self.validate_molecule(base):
                     population.append(base)
 
         final_population = population[:size]
@@ -278,7 +434,8 @@ class MoleculeGenerator:
                     f.write(f"# Random Seed: {seed_number}\n")
                 f.write(f"# Population Size: {len(final_population)}\n")
                 f.write("#\n")
-                f.write("# SMILES strings (one per line):\n")
+                enc_label = "SELFIES" if self.encoding == 'selfies' else "SMILES"
+                f.write(f"# {enc_label} strings (one per line):\n")
                 f.write("#" + "="*60 + "\n\n")
 
                 for i, smiles in enumerate(final_population, 1):

@@ -66,7 +66,7 @@ class QuantumChemistryInterface:
     def _build_command(self, smiles: str, charge: int = 0, spin: int = 1) -> list:
         """Build the command line for quantum chemistry calculation"""
         cmd = [
-            "python3",
+            sys.executable,
             str(self.qc_dir / "main.py"),
             "--calculator", self.calculator_type,
             "--method", self.method,
@@ -161,8 +161,6 @@ class QuantumChemistryInterface:
     
     def _parse_output(self, stdout: str, stderr: str, smiles: str) -> dict:
         """Parse the output from quantum chemistry calculation"""
-        print(f"\nDEBUG QCI - _parse_output called for {smiles}")
-        print(f"DEBUG QCI - File: {__file__}")
         result = {
             'smiles': smiles,
             'beta_vec': None,
@@ -193,9 +191,9 @@ class QuantumChemistryInterface:
         is_harmless = any(pattern in combined_out.lower() for pattern in harmless_patterns)
 
         if not is_harmless:
-            # Check for real ERROR messages
-            if "ERROR:" in combined_out or "error:" in combined_out:
-                error_match = re.search(r'ERROR:\s*(.+)', combined_out, re.IGNORECASE)
+            # Check for real ERROR messages (case-insensitive)
+            if re.search(r'error:', combined_out, re.IGNORECASE):
+                error_match = re.search(r'error:\s*(.+)', combined_out, re.IGNORECASE)
                 if error_match:
                     result['error'] = error_match.group(1).strip()
                     if self.verbose:
@@ -223,8 +221,6 @@ class QuantumChemistryInterface:
             mean_regex = re.compile(r'β\s+mean:\s+' + float_pat, re.IGNORECASE | re.UNICODE)
             m = mean_regex.search(stdout)
             if m:
-                print(f"DEBUG REGEX: Matched string = '{m.group()}'")
-                print(f"DEBUG REGEX: Extracted value = {m.group(1)}")
                 beta_mean = float(m.group(1))
 
             # vector
@@ -252,9 +248,7 @@ class QuantumChemistryInterface:
                     if self.verbose:
                         print(f"Clamping negative beta_mean ({beta_mean}) to 0.0 for {smiles}")
                     beta_mean = 0.0
-                print(f"DEBUG: About to store beta_mean = {beta_mean}")
                 result['beta_mean'] = beta_mean
-                print(f"DEBUG: Stored in result dict, result['beta_mean'] = {result['beta_mean']}")
             if beta_vec is not None:
                 result['beta_vec'] = beta_vec
             result.update({
@@ -262,8 +256,6 @@ class QuantumChemistryInterface:
                 'beta_yyy': beta_components.get('beta_yyy', result['beta_yyy']),
                 'beta_zzz': beta_components.get('beta_zzz', result['beta_zzz'])
             })
-            print(f"DEBUG: After result.update(), result['beta_mean'] = {result.get('beta_mean')}")
-
         except Exception as e:
             if self.verbose:
                 print(f"Beta parsing error for {smiles}: {e}")
@@ -305,7 +297,6 @@ class QuantumChemistryInterface:
             result['oscillator_strength'] = float(osc_match.group(1))
 
         # Calculate number of atoms from SMILES
-        print(f"DEBUG QCI - About to calculate natoms for {smiles}")
         try:
             from rdkit import Chem
             mol = Chem.MolFromSmiles(smiles, sanitize=False)
@@ -315,58 +306,60 @@ class QuantumChemistryInterface:
                 result['natoms'] = 0
         except:
             result['natoms'] = 0
-        print(f"DEBUG QCI - natoms = {result.get('natoms')}")
 
         # Calculate derived properties (ratios)
-        print(f"DEBUG QCI - Calculating derived objectives for {smiles}")
-        print(f"DEBUG: BEFORE derived calc, result['beta_mean'] = {result.get('beta_mean')}")
-        print(f"  beta_mean: {result.get('beta_mean')}, gamma: {result.get('gamma')}")
-        print(f"  total_energy: {result.get('total_energy')}, natoms: {result.get('natoms')}")
-        print(f"  alpha_mean: {result.get('alpha_mean')}, homo_lumo_gap: {result.get('homo_lumo_gap')}")
+        # Note: use 'is not None' checks instead of truthiness to handle 0.0 correctly
+        beta_mean = result.get('beta_mean')
+        gamma = result.get('gamma')
+        total_energy = result.get('total_energy')
+        natoms = result.get('natoms', 0)
+        alpha = result.get('alpha_mean')
+        homo_lumo_gap = result.get('homo_lumo_gap')
 
         # beta_gamma_ratio = beta_mean / gamma
-        if result.get('beta_mean') and result.get('gamma') and result['gamma'] != 0:
-            result['beta_gamma_ratio'] = result['beta_mean'] / result['gamma']
-            print(f"  Calculated beta_gamma_ratio: {result['beta_gamma_ratio']}")
+        if beta_mean is not None and gamma is not None and gamma != 0:
+            bgr = beta_mean / gamma
+            # Cap extreme values from SCF convergence issues
+            result['beta_gamma_ratio'] = max(-1000.0, min(1000.0, bgr))
         else:
             result['beta_gamma_ratio'] = 0.0
-            print(f"  Set beta_gamma_ratio to 0.0 (condition not met)")
 
         # total_energy_atom_ratio = total_energy / natoms
-        if result.get('total_energy') and result.get('natoms') and result['natoms'] > 0:
-            result['total_energy_atom_ratio'] = result['total_energy'] / result['natoms']
-            print(f"  Calculated total_energy_atom_ratio: {result['total_energy_atom_ratio']}")
+        if total_energy is not None and total_energy != 0.0 and natoms > 0:
+            result['total_energy_atom_ratio'] = total_energy / natoms
         else:
             result['total_energy_atom_ratio'] = 0.0
-            print(f"  Set total_energy_atom_ratio to 0.0 (condition not met)")
 
         # Range-based objectives: distance from target range (0 if within range)
         # alpha target range: [100, 500]
-        alpha = result.get('alpha_mean', 0.0)
-        if alpha < 100.0:
-            result['alpha_range_distance'] = 100.0 - alpha
-        elif alpha > 500.0:
-            result['alpha_range_distance'] = alpha - 500.0
+        alpha_val = alpha if alpha is not None else 0.0
+        if alpha_val < 100.0:
+            result['alpha_range_distance'] = 100.0 - alpha_val
+        elif alpha_val > 500.0:
+            result['alpha_range_distance'] = alpha_val - 500.0
         else:
             result['alpha_range_distance'] = 0.0
-        print(f"  Calculated alpha_range_distance: {result['alpha_range_distance']}")
 
         # homo_lumo_gap target range: [2.5, 3.5]
-        homo_lumo_gap = result.get('homo_lumo_gap', 0.0)
-        if homo_lumo_gap < 2.5:
-            result['homo_lumo_gap_range_distance'] = 2.5 - homo_lumo_gap
-        elif homo_lumo_gap > 3.5:
-            result['homo_lumo_gap_range_distance'] = homo_lumo_gap - 3.5
+        hlg_val = homo_lumo_gap if homo_lumo_gap is not None else 0.0
+        if hlg_val < 2.5:
+            result['homo_lumo_gap_range_distance'] = 2.5 - hlg_val
+        elif hlg_val > 3.5:
+            result['homo_lumo_gap_range_distance'] = hlg_val - 3.5
         else:
             result['homo_lumo_gap_range_distance'] = 0.0
-        print(f"  Calculated homo_lumo_gap_range_distance: {result['homo_lumo_gap_range_distance']}")
-
-        print(f"DEBUG QCI - Final result keys: {list(result.keys())}")
 
         return result
     
     def _error_result(self, smiles: str, error: str) -> dict:
-        """Return result dictionary for failed calculation"""
+        """Return result dictionary for failed calculation.
+
+        Values are chosen so failed molecules look BAD across all objectives:
+        - beta_gamma_ratio = 0.0 (bad for maximization)
+        - total_energy_atom_ratio = 0.0 (bad for minimization since real values are ~-55)
+        - alpha_range_distance = 500.0 (far from target, bad for minimization)
+        - homo_lumo_gap_range_distance = 100.0 (far from target, bad for minimization)
+        """
         return {
             'smiles': smiles,
             'beta_vec': 0.0,
@@ -384,7 +377,7 @@ class QuantumChemistryInterface:
             'natoms': 0,
             'beta_gamma_ratio': 0.0,
             'total_energy_atom_ratio': 0.0,
-            'alpha_range_distance': 100.0,  # Far from range
-            'homo_lumo_gap_range_distance': 2.5,  # Far from range
+            'alpha_range_distance': 500.0,  # Max distance (reference point value)
+            'homo_lumo_gap_range_distance': 100.0,  # Max distance (reference point value)
             'error': error
         }

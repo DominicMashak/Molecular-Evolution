@@ -2,9 +2,11 @@ name: mol-evo
 
 channels:
   - conda-forge
+  - pytorch
   - defaults
 
 dependencies:
+  # Core scientific packages
   - python=3.10
   - numpy
   - scipy
@@ -14,14 +16,32 @@ dependencies:
   - h5py
   - rdkit
   - periodictable
-  - ase
+  - pymoo
+  - scikit-learn
+
+  # Quantum chemistry
   - pyscf
+  - ase
   - tblite-python
   - dftbplus
   - dftd4
   - simple-dftd3
   - plumed
-  - pymoo
+
+  # Docking dependencies for SmartCADD
+  - xtb          # Quantum mechanics for geometry optimization
+  - openbabel    # Molecule format conversion (PDB <-> PDBQT)
+  - pymol-open-source  # Optional: visualization
+
+  # PyTorch (MPS support included by default on macOS arm64)
+  - pytorch::pytorch
+
+  # Notebooks
   - jupyter
   - notebook
+
   - pip
+  - pip:
+    # Molecular embeddings (ChemBERTa-2 for CVT-MOME)
+    - transformers
+    - umap-learn

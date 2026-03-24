@@ -1,5 +1,6 @@
 """
 Main script for (μ+λ) Evolution Strategy molecular optimization
+Supports both NLO (quantum chemistry) and drug design (SmartCADD) modes.
 """
 
 import sys
@@ -10,7 +11,7 @@ import logging
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'molev_utils')))
 
-from optimizer import MuLambdaOptimizer, QuantumChemistryInterface
+from optimizer import MuLambdaOptimizer
 from molecule_generator import MoleculeGenerator
 
 
@@ -32,21 +33,32 @@ def main():
         description="(μ+λ) Evolution Strategy for Molecular Optimization",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Supported Calculators:
+Supported Modes:
+  qc         - Quantum chemistry (NLO) optimization
+  smartcadd  - Drug design optimization via SmartCADD
+
+Supported Calculators (qc mode):
   dft          - DFT calculations (requires functional and basis)
   cc           - Coupled cluster calculations (requires functional and basis)
   semiempirical - Semiempirical methods (PM6, PM7, AM1, etc.)
   xtb          - xTB methods (GFN2-xTB, etc.)
 
 Examples:
-  # Maximize beta_mean using xTB
-  python main.py --calculator xtb --mu 20 --lambda 40 --n-gen 100 \\
-                 --objective beta_mean --maximize
-
-  # Minimize homo_lumo_gap using DFT
-  python main.py --calculator dft --functional HF --basis STO-3G \\
+  # NLO: Maximize beta_gamma_ratio using DFT
+  python main.py --fitness-mode qc --calculator dft --functional HF --basis 3-21G \\
                  --mu 20 --lambda 40 --n-gen 100 \\
-                 --objective homo_lumo_gap --minimize
+                 --objective beta_gamma_ratio --maximize
+
+  # Drug design: Maximize QED using SmartCADD descriptors
+  python main.py --fitness-mode smartcadd --smartcadd-mode descriptors \\
+                 --mu 20 --lambda 40 --n-gen 100 \\
+                 --objective qed --maximize
+
+  # Drug design: Minimize SA score with docking
+  python main.py --fitness-mode smartcadd --smartcadd-mode docking \\
+                 --protein-code 1AQ1 \\
+                 --mu 20 --lambda 40 --n-gen 100 \\
+                 --objective sa_score --minimize
 
   # Recalculate from existing database
   python main.py --recalculate mu_lambda_results/ --objective beta_mean
@@ -63,17 +75,23 @@ Examples:
 
     # Objective
     parser.add_argument('--objective', type=str, default='beta_mean',
-                       help='Property to optimize (beta_mean, homo_lumo_gap, dipole_moment, etc.)')
+                       help='Property to optimize (beta_mean, homo_lumo_gap, qed, sa_score, etc.)')
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--maximize', action='store_true', default=True,
                       help='Maximize the objective (default)')
     group.add_argument('--minimize', action='store_true',
                       help='Minimize the objective')
 
-    # Calculator options
+    # Fitness mode options
+    parser.add_argument('--fitness-mode', type=str, default='qc',
+                       choices=['qc', 'smartcadd'],
+                       help='Fitness evaluation mode: "qc" for quantum chemistry, '
+                            '"smartcadd" for drug-design evaluation')
+
+    # Calculator options (qc mode)
     parser.add_argument('--calculator', type=str, required=False,
                        choices=['dft', 'cc', 'semiempirical', 'xtb'],
-                       help='Calculator type')
+                       help='Calculator type (required for qc mode)')
     parser.add_argument('--basis', type=str, default="6-31G",
                        help='Basis set (for DFT/CC)')
     parser.add_argument('--functional', type=str, default="B3LYP",
@@ -86,6 +104,27 @@ Examples:
                        help='xTB method')
     parser.add_argument('--field-strength', type=float, default=0.001,
                        help='Field strength for finite field method')
+
+    # SmartCADD options (drug mode)
+    parser.add_argument('--smartcadd-path', type=str, default=None,
+                       help='Path to SmartCADD repository')
+    parser.add_argument('--smartcadd-mode', type=str, default='descriptors',
+                       choices=['descriptors', 'docking'],
+                       help='SmartCADD evaluation mode')
+    parser.add_argument('--protein-code', type=str, default=None,
+                       help='PDB code for docking target')
+    parser.add_argument('--protein-path', type=str, default=None,
+                       help='Local path to protein PDB file')
+    parser.add_argument('--alert-collection', type=str, default=None,
+                       help='Path to ADMET alert collection CSV')
+    parser.add_argument('--atom-set', type=str, default=None,
+                       choices=['nlo', 'drug'],
+                       help='Atom set for mutation/validation')
+    parser.add_argument('--encoding', type=str, default='smiles',
+                       choices=['smiles', 'selfies'],
+                       help='Molecular string encoding used internally (smiles or selfies)')
+    parser.add_argument('--crossover-rate', type=float, default=0.0,
+                       help='Probability of crossover vs mutation per offspring (0.0 = off, default)')
 
     # Output options
     parser.add_argument('--output-dir', type=str, default="mu_lambda_results",
@@ -124,10 +163,6 @@ Examples:
         )
         return
 
-    # Validate calculator is provided for optimization
-    if not args.calculator:
-        parser.error("--calculator is required when not using --recalculate")
-
     # Set random seeds for reproducibility
     import random
     import numpy as np
@@ -137,30 +172,56 @@ Examples:
     np.random.seed(args.seed)
     rdBase.SeedRandomNumberGenerator(args.seed)
 
-    # Setup calculator kwargs
-    calculator_kwargs = {}
-    if args.basis:
-        calculator_kwargs['basis'] = args.basis
-    if args.functional:
-        calculator_kwargs['functional'] = args.functional
-    if args.se_method:
-        calculator_kwargs['se_method'] = args.se_method
-    if args.xtb_method:
-        calculator_kwargs['xtb_method'] = args.xtb_method
+    # Determine atom set
+    if args.atom_set:
+        atom_set = args.atom_set
+    elif args.fitness_mode == 'smartcadd':
+        atom_set = 'drug'
+    else:
+        atom_set = 'nlo'
+
+    # Setup evaluation interface
+    if args.fitness_mode == 'smartcadd':
+        from smartcadd_interface import SmartCADDInterface
+        smartcadd_kwargs = {'mode': args.smartcadd_mode}
+        if args.smartcadd_path:
+            smartcadd_kwargs['smartcadd_path'] = args.smartcadd_path
+        if args.protein_code:
+            smartcadd_kwargs['protein_code'] = args.protein_code
+        if args.protein_path:
+            smartcadd_kwargs['protein_path'] = args.protein_path
+        if args.alert_collection:
+            smartcadd_kwargs['alert_collection_path'] = args.alert_collection
+        eval_interface = SmartCADDInterface(verbose=args.verbose, **smartcadd_kwargs)
+        logger.info(f"Using SmartCADD evaluation (mode={args.smartcadd_mode})")
+    else:
+        # Validate calculator is provided for QC mode
+        if not args.calculator:
+            parser.error("--calculator is required when using --fitness-mode qc")
+
+        from quantum_chemistry_interface import QuantumChemistryInterface
+        calculator_kwargs = {}
+        if args.basis:
+            calculator_kwargs['basis'] = args.basis
+        if args.functional:
+            calculator_kwargs['functional'] = args.functional
+        if args.se_method:
+            calculator_kwargs['se_method'] = args.se_method
+        if args.xtb_method:
+            calculator_kwargs['xtb_method'] = args.xtb_method
+
+        eval_interface = QuantumChemistryInterface(
+            calculator_type=args.calculator,
+            calculator_kwargs=calculator_kwargs,
+            method=args.method,
+            field_strength=args.field_strength,
+            verbose=args.verbose
+        )
+        logger.info(f"Using quantum chemistry evaluation (calculator={args.calculator})")
 
     # Initialize components
     logger.info("Initializing molecule generator...")
-    # Use equal mutation weights by default
-    generator = MoleculeGenerator(seed=args.seed)
-
-    logger.info("Initializing quantum chemistry interface...")
-    qc_interface = QuantumChemistryInterface(
-        calculator_type=args.calculator,
-        calculator_kwargs=calculator_kwargs,
-        method=args.method,
-        field_strength=args.field_strength,
-        verbose=args.verbose
-    )
+    generator = MoleculeGenerator(seed=args.seed, atom_set=atom_set, encoding=args.encoding)
 
     # Determine maximize
     maximize = not args.minimize
@@ -174,17 +235,21 @@ Examples:
         objective_property=args.objective,
         maximize=maximize,
         generator=generator,
-        qc_interface=qc_interface,
+        eval_interface=eval_interface,
         output_dir=args.output_dir,
         initial_seeds=args.initial_seeds,
         save_frequency=args.save_frequency,
         log_frequency=args.log_frequency,
-        seed=args.seed
+        seed=args.seed,
+        encoding=args.encoding,
+        crossover_rate=args.crossover_rate
     )
 
     # Run optimization
     logger.info("\n" + "="*60)
-    logger.info("Starting optimization")
+    logger.info(f"Starting optimization ({args.fitness_mode} mode)")
+    logger.info(f"Objective: {args.objective} ({'maximize' if maximize else 'minimize'})")
+    logger.info(f"Atom set: {atom_set}")
     logger.info("="*60 + "\n")
 
     final_population = optimizer.run()

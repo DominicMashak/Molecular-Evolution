@@ -441,8 +441,8 @@ class QuantumChemistryInterface:
 
 class NSGA2Optimizer:
     """NSGA-II with subprocess-based quantum chemistry calculations and full multi-objective support"""
-    
-    def __init__(self, 
+
+    def __init__(self,
                  generator: MoleculeGenerator,
                  calculator_type: str = "dft",
                  calculator_kwargs: dict = None,
@@ -473,22 +473,50 @@ class NSGA2Optimizer:
                  max_atoms_per_add: int = 5,
                  atoms_per_stagnation: float = 0.5,
                  base_addition_repeats: int = 1,
-                 max_addition_repeats: int = 3):
-        """Initialize optimizer with subprocess-based calculations"""
-        
+                 max_addition_repeats: int = 3,
+                 fitness_mode: str = "qc",
+                 smartcadd_kwargs: dict = None,
+                 encoding: str = "smiles",
+                 crossover_rate: float = 0.0):
+        """Initialize optimizer with subprocess-based calculations.
+
+        Args:
+            fitness_mode: "qc" for quantum chemistry (default) or "smartcadd"
+                for drug-design evaluation via SmartCADD.
+            smartcadd_kwargs: Keyword arguments for SmartCADDInterface (only
+                used when fitness_mode="smartcadd").
+            encoding: Molecular string encoding ('smiles' or 'selfies').
+                When 'selfies', mutations use SELFIES token-level operations
+                internally; NSGA-II individuals always store canonical SMILES.
+        """
+
+        self.encoding = encoding
+        self.crossover_rate = crossover_rate
         self.generator = generator
         self.verbose = verbose
         self.field_strength = field_strength
         self.method = method
-        
-        # Initialize quantum chemistry interface
-        self.qc_interface = QuantumChemistryInterface(
-            calculator_type=calculator_type,
-            calculator_kwargs=calculator_kwargs or {},
-            method=method,
-            field_strength=field_strength,
-            verbose=verbose
-        )
+        self.fitness_mode = fitness_mode.lower()
+
+        # Initialize evaluation interface based on fitness mode
+        if self.fitness_mode == "smartcadd":
+            sys.path.append(os.path.abspath(os.path.join(
+                os.path.dirname(__file__), '..', '..', 'molev_utils')))
+            from smartcadd_interface import SmartCADDInterface
+            self.qc_interface = SmartCADDInterface(
+                verbose=verbose,
+                **(smartcadd_kwargs or {})
+            )
+            logger.info("Using SmartCADD fitness evaluation")
+        else:
+            # Initialize quantum chemistry interface (original behavior)
+            self.qc_interface = QuantumChemistryInterface(
+                calculator_type=calculator_type,
+                calculator_kwargs=calculator_kwargs or {},
+                method=method,
+                field_strength=field_strength,
+                verbose=verbose
+            )
         
         self.pop_size = pop_size
         self.n_gen = n_gen
@@ -677,6 +705,52 @@ class NSGA2Optimizer:
                 value = _safe_float(qc_result.get('homo_lumo_gap_range_distance', 0.0), default=0.0)
                 obj_values.append(float(value))
 
+            # SmartCADD drug-design objectives
+            elif obj_name == 'qed':
+                value = _safe_float(qc_result.get('qed', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'sa_score':
+                value = _safe_float(qc_result.get('sa_score', 10.0), default=10.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'docking_score':
+                value = _safe_float(qc_result.get('docking_score', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'lipinski_violations':
+                value = _safe_float(qc_result.get('lipinski_violations', 4), default=4)
+                obj_values.append(float(value))
+
+            elif obj_name == 'mol_weight':
+                value = _safe_float(qc_result.get('mol_weight', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'logp':
+                value = _safe_float(qc_result.get('logp', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'tpsa':
+                value = _safe_float(qc_result.get('tpsa', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'admet_pass':
+                value = _safe_float(qc_result.get('admet_pass', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            # Drug-design range-distance objectives (optimal ranges)
+            elif obj_name == 'mol_weight_range_distance':
+                value = _safe_float(qc_result.get('mol_weight_range_distance', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'logp_range_distance':
+                value = _safe_float(qc_result.get('logp_range_distance', 0.0), default=0.0)
+                obj_values.append(float(value))
+
+            elif obj_name == 'tpsa_range_distance':
+                value = _safe_float(qc_result.get('tpsa_range_distance', 0.0), default=0.0)
+                obj_values.append(float(value))
+
             else:
                 logger.warning(f"Unknown objective: {obj_name}, using 0.0")
                 obj_values.append(0.0)
@@ -753,33 +827,44 @@ class NSGA2Optimizer:
         
         # Compute objectives using subprocess
         objectives = self.compute_objectives(smiles, atomic_numbers, positions)
-        
-        # Get additional properties from QC result
-        qc_result = self.qc_interface.calculate(smiles)
-        
+
+        # Get additional properties from evaluation result
+        # Note: this is a second call — for expensive evaluators, consider caching
+        eval_result = self.qc_interface.calculate(smiles)
+
         # Find beta value in objectives (if present)
         beta_val = 0.0
         if 'beta' in self.objectives or 'beta_mean' in self.objectives:
             beta_idx = self.objectives.index('beta') if 'beta' in self.objectives else self.objectives.index('beta_mean')
             beta_val = float(objectives[beta_idx]) if len(objectives) > beta_idx else 0.0
-        
+
         # Find natoms value in objectives (if present)
         natoms_val = heavy_natoms
         if 'natoms' in self.objectives:
             natoms_idx = self.objectives.index('natoms')
             natoms_val = int(objectives[natoms_idx]) if len(objectives) > natoms_idx else heavy_natoms
-        
+
         return Individual(
             smiles=smiles,
             objectives=objectives,
             beta_surrogate=beta_val,
             natoms=natoms_val,
             generation=generation,
-            homo_lumo_gap=qc_result.get('homo_lumo_gap', 0.0) or 0.0,
-            transition_dipole=qc_result.get('transition_dipole', 0.0) or 0.0,
-            oscillator_strength=qc_result.get('oscillator_strength', 0.0) or 0.0,
-            gamma=qc_result.get('gamma', 0.0) or 0.0,
-            alpha_mean=qc_result.get('alpha_mean', 0.0) or 0.0
+            # Quantum chemistry properties
+            homo_lumo_gap=eval_result.get('homo_lumo_gap', 0.0) or 0.0,
+            transition_dipole=eval_result.get('transition_dipole', 0.0) or 0.0,
+            oscillator_strength=eval_result.get('oscillator_strength', 0.0) or 0.0,
+            gamma=eval_result.get('gamma', 0.0) or 0.0,
+            alpha_mean=eval_result.get('alpha_mean', 0.0) or 0.0,
+            # Drug-design properties (populated in SmartCADD mode)
+            qed=_safe_float(eval_result.get('qed', 0.0)),
+            sa_score=_safe_float(eval_result.get('sa_score', 10.0)),
+            docking_score=_safe_float(eval_result.get('docking_score', 0.0)),
+            lipinski_violations=int(_safe_float(eval_result.get('lipinski_violations', 0))),
+            mol_weight=_safe_float(eval_result.get('mol_weight', 0.0)),
+            logp=_safe_float(eval_result.get('logp', 0.0)),
+            tpsa=_safe_float(eval_result.get('tpsa', 0.0)),
+            admet_pass=_safe_float(eval_result.get('admet_pass', 0.0)),
         )
     
     def create_offspring_with_adaptive_mutation(self, parents):
@@ -794,21 +879,37 @@ class NSGA2Optimizer:
         else:
             n_repeats = 1
         
+        import random as _random
         while len(children) < self.n_children:
             if not parents:
                 break
             tournament_size = min(3, len(parents))
             tournament = np.random.choice(parents, tournament_size, replace=False).tolist()
             winner = min(tournament, key=lambda x: (x.rank, -x.crowding_distance))
-            
+
+            # Attempt crossover if enabled and a second parent is available
+            if self.crossover_rate > 0.0 and len(parents) >= 2 and _random.random() < self.crossover_rate:
+                t2 = np.random.choice(parents, tournament_size, replace=False).tolist()
+                winner2 = min(t2, key=lambda x: (x.rank, -x.crowding_distance))
+                try:
+                    cx_smiles = self.generator.crossover_as_smiles(winner.smiles, winner2.smiles)
+                    if cx_smiles and self.generator.validate_as_smiles(cx_smiles):
+                        child = self.create_individual(cx_smiles, self.generation + 1)
+                        children.append(child)
+                        continue
+                except Exception as e:
+                    logger.debug(f"  Crossover failed: {e}")
+
             mutated_smiles = winner.smiles
             success = False
-            
+
             for repeat in range(n_repeats):
                 try:
-                    temp_smiles = self.generator.mutate_multiple(mutated_smiles)
-                    
-                    if temp_smiles and self.generator.validate_molecule(temp_smiles):
+                    # mutate_as_smiles handles SELFIES encoding internally:
+                    # SMILES → encode → SELFIES mutation → decode → SMILES
+                    temp_smiles = self.generator.mutate_as_smiles(mutated_smiles)
+
+                    if temp_smiles and self.generator.validate_as_smiles(temp_smiles):
                         mutated_smiles = temp_smiles
                         success = True
                         logger.debug(f"  Mutation repeat {repeat+1}/{n_repeats} successful")
@@ -817,14 +918,14 @@ class NSGA2Optimizer:
                 except Exception as e:
                     logger.debug(f"  Mutation repeat {repeat+1}/{n_repeats} failed: {e}")
                     break
-            
+
             if success and mutated_smiles != winner.smiles:
                 child = self.create_individual(mutated_smiles, self.generation + 1)
                 children.append(child)
             elif len(children) < self.n_children:
                 try:
-                    simple_mutated = self.generator.mutate_multiple(winner.smiles)
-                    if simple_mutated and self.generator.validate_molecule(simple_mutated):
+                    simple_mutated = self.generator.mutate_as_smiles(winner.smiles)
+                    if simple_mutated and self.generator.validate_as_smiles(simple_mutated):
                         child = self.create_individual(simple_mutated, self.generation + 1)
                         children.append(child)
                 except Exception:
@@ -846,8 +947,11 @@ class NSGA2Optimizer:
         """Main optimization loop"""
         logger.info(f"Starting NSGA-II optimization")
         logger.info(f"Pop size: {self.pop_size}, Generations: {self.n_gen}")
-        logger.info(f"Calculator: {self.qc_interface.calculator_type}")
-        logger.info(f"Method: {self.method}") 
+        if hasattr(self.qc_interface, 'calculator_type'):
+            logger.info(f"Calculator: {self.qc_interface.calculator_type}")
+        logger.info(f"Fitness mode: {self.fitness_mode}")
+        if self.fitness_mode == 'qc':
+            logger.info(f"Method: {self.method}")
         logger.info(f"Objectives: {self.objectives}")
         logger.info(f"Optimization: {[opt[0] for opt in self.optimize_objectives]}")
         if self.enable_stagnation_response:

@@ -7,9 +7,10 @@ class Individual:
 
     Encapsulates the properties of a molecular individual, including its SMILES,
     objective values, surrogate predictions, and features for archiving/selection.
+    Supports both quantum chemistry (NLO) and drug-design (SmartCADD) objectives.
     """
     smiles: str
-    objectives: Optional[List[float]] = None  # [beta, natoms]
+    objectives: Optional[List[float]] = None  # [beta, natoms] or [qed, sa_score, ...]
     beta_surrogate: float = 0.0
     natoms: int = 0
     rank: float = field(default=float('inf'))
@@ -17,11 +18,21 @@ class Individual:
     dominated_by: int = 0
     dominates: List = field(default_factory=list)
     generation: int = 0
+    # Quantum chemistry properties
     homo_lumo_gap: float = 0.0
     transition_dipole: float = 0.0
     oscillator_strength: float = 0.0
     gamma: float = 0.0
     alpha_mean: float = 0.0
+    # Drug-design properties (SmartCADD)
+    qed: float = 0.0
+    sa_score: float = 10.0
+    docking_score: float = 0.0
+    lipinski_violations: int = 0
+    mol_weight: float = 0.0
+    logp: float = 0.0
+    tpsa: float = 0.0
+    admet_pass: float = 0.0
 
     def __post_init__(self):
         if not self.objectives:

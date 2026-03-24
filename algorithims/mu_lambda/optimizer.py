@@ -16,7 +16,6 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 from molecule_generator import MoleculeGenerator
-from quantum_chemistry_interface import QuantumChemistryInterface
 
 logger = logging.getLogger(__name__)
 
@@ -38,13 +37,12 @@ class Individual:
     fitness: float  # Single objective value
     generation: int
     # Additional properties for tracking
-    beta_mean: float = 0.0
     natoms: int = 0
-    homo_lumo_gap: float = 0.0
-    dipole_moment: float = 0.0
-    alpha_mean: float = 0.0
-    gamma: float = 0.0
-    total_energy: float = 0.0
+    properties: Dict[str, Any] = None
+
+    def __post_init__(self):
+        if self.properties is None:
+            self.properties = {}
 
     def __lt__(self, other):
         """For sorting by fitness (higher is better for maximization)"""
@@ -52,18 +50,15 @@ class Individual:
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary for JSON serialization"""
-        return {
+        d = {
             'smiles': self.smiles,
             'fitness': self.fitness,
             'generation': self.generation,
-            'beta': self.beta_mean,
             'natoms': self.natoms,
-            'homo_lumo_gap': self.homo_lumo_gap,
-            'dipole_moment': self.dipole_moment,
-            'alpha': self.alpha_mean,
-            'gamma': self.gamma,
-            'total_energy': self.total_energy
         }
+        # Include all evaluation properties
+        d.update(self.properties)
+        return d
 
 
 class MuLambdaOptimizer:
@@ -83,12 +78,14 @@ class MuLambdaOptimizer:
         objective_property: str,  # Property to optimize (e.g., 'beta_mean')
         maximize: bool,  # True to maximize, False to minimize
         generator: MoleculeGenerator,
-        qc_interface: QuantumChemistryInterface,
+        eval_interface,
         output_dir: str = "mu_lambda_results",
         initial_seeds: List[str] = None,
         save_frequency: int = 10,
         log_frequency: int = 1,
-        seed: int = None
+        seed: int = None,
+        encoding: str = 'smiles',
+        crossover_rate: float = 0.0
     ):
         """
         Initialize (μ+λ) optimizer
@@ -97,10 +94,10 @@ class MuLambdaOptimizer:
             mu: Number of parents to maintain
             lambda_: Number of offspring to generate per generation
             n_gen: Number of generations to run
-            objective_property: Property name to optimize (e.g., 'beta_mean', 'homo_lumo_gap')
+            objective_property: Property name to optimize (e.g., 'beta_mean', 'homo_lumo_gap', 'qed')
             maximize: True to maximize objective, False to minimize
             generator: MoleculeGenerator instance for mutations
-            qc_interface: QuantumChemistryInterface for evaluations
+            eval_interface: Evaluation interface (QuantumChemistryInterface or SmartCADDInterface)
             output_dir: Directory for saving results
             initial_seeds: Optional list of SMILES to seed population
             save_frequency: How often to save population (generations)
@@ -112,13 +109,15 @@ class MuLambdaOptimizer:
         self.objective_property = objective_property
         self.maximize = maximize
         self.generator = generator
-        self.qc_interface = qc_interface
+        self.eval_interface = eval_interface
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True, parents=True)
         self.initial_seeds = initial_seeds or []
         self.save_frequency = save_frequency
         self.log_frequency = log_frequency
         self.seed = seed
+        self.encoding = encoding
+        self.crossover_rate = crossover_rate
 
         # Population
         self.population: List[Individual] = []
@@ -139,17 +138,12 @@ class MuLambdaOptimizer:
         """Evaluate a molecule and create an Individual"""
         from rdkit import Chem
 
-        # Calculate quantum properties
-        qc_result = self.qc_interface.calculate(smiles)
-
-        # DEBUG: Show what's in qc_result
-        print(f"DEBUG OPTIMIZER: qc_result keys = {list(qc_result.keys())}")
-        print(f"DEBUG OPTIMIZER: beta_mean from qc_result = {qc_result.get('beta_mean')}")
-        print(f"DEBUG OPTIMIZER: gamma from qc_result = {qc_result.get('gamma')}")
+        # Calculate properties using evaluation interface (QC or SmartCADD)
+        result = self.eval_interface.calculate(smiles)
 
         # Handle calculation errors
-        if qc_result.get('error'):
-            logger.warning(f"QC error for {smiles}: {qc_result['error']}")
+        if result.get('error'):
+            logger.warning(f"Evaluation error for {smiles}: {result['error']}")
             fitness = -1e9 if self.maximize else 1e9  # Very bad fitness
             return Individual(
                 smiles=smiles,
@@ -157,31 +151,24 @@ class MuLambdaOptimizer:
                 generation=generation
             )
 
-        # Extract fitness value
-        fitness = _safe_float(qc_result.get(self.objective_property, 0.0))
+        # Extract fitness value from the configured objective property
+        fitness = _safe_float(result.get(self.objective_property, 0.0))
 
         # Get molecule info
         mol = Chem.MolFromSmiles(smiles)
         natoms = mol.GetNumAtoms() if mol else 0
 
-        extracted_beta = _safe_float(qc_result.get('beta_mean', 0.0))
-        print(f"DEBUG OPTIMIZER: Extracted beta_mean = {extracted_beta}")
+        # Store all properties from evaluation result
+        properties = {k: v for k, v in result.items()
+                      if k not in ('smiles', 'error') and v is not None}
 
         ind = Individual(
             smiles=smiles,
             fitness=fitness,
             generation=generation,
-            beta_mean=extracted_beta,
             natoms=natoms,
-            homo_lumo_gap=_safe_float(qc_result.get('homo_lumo_gap', 0.0)),
-            dipole_moment=_safe_float(qc_result.get('dipole_moment', 0.0)),
-            alpha_mean=_safe_float(qc_result.get('alpha_mean', 0.0)),
-            gamma=_safe_float(qc_result.get('gamma', 0.0)),
-            total_energy=_safe_float(qc_result.get('total_energy', 0.0))
+            properties=properties
         )
-
-        print(f"DEBUG OPTIMIZER: Created Individual with beta_mean = {ind.beta_mean}")
-        print(f"DEBUG OPTIMIZER: Individual.to_dict()['beta'] = {ind.to_dict()['beta']}")
 
         return ind
 
@@ -189,7 +176,6 @@ class MuLambdaOptimizer:
         """Update the molecule database with evaluated individuals"""
         for ind in individuals:
             ind_dict = ind.to_dict()
-            print(f"DEBUG UPDATE_DB: Adding molecule {ind.smiles}, beta = {ind_dict.get('beta')}")
 
             # Check if molecule already exists
             existing = next((m for m in self.all_molecules if m['smiles'] == ind.smiles), None)
@@ -201,15 +187,10 @@ class MuLambdaOptimizer:
             else:
                 # Add new entry
                 self.all_molecules.append(ind_dict)
-                print(f"DEBUG UPDATE_DB: Appended to all_molecules, beta = {self.all_molecules[-1].get('beta')}")
 
     def save_molecule_database(self):
         """Save the complete molecule database to JSON"""
         db_file = self.output_dir / "all_molecules_database.json"
-
-        print(f"DEBUG SAVE_DB: Saving {len(self.all_molecules)} molecules")
-        for i, mol in enumerate(self.all_molecules):
-            print(f"DEBUG SAVE_DB: Molecule {i}: smiles={mol.get('smiles')}, beta={mol.get('beta')}")
 
         # Sort by generation
         sorted_molecules = sorted(self.all_molecules, key=lambda x: x.get('generation', 0))
@@ -265,28 +246,35 @@ class MuLambdaOptimizer:
             return min(tournament, key=lambda x: x.fitness)
 
     def create_offspring(self, parents: List[Individual]) -> List[Individual]:
-        """Create offspring through mutation"""
+        """Create offspring through mutation (or crossover if crossover_rate > 0)."""
+        import random
         offspring = []
 
         for _ in range(self.lambda_):
             if not parents:
                 break
 
-            # Select parent
-            parent = self.tournament_selection(parents)
-
-            # Mutate
             try:
-                mutated_smiles = self.generator.mutate_multiple(parent.smiles)
+                child_smiles = None
 
-                if mutated_smiles and self.generator.validate_molecule(mutated_smiles):
-                    child = self.create_individual(mutated_smiles, self.generation + 1)
+                # Attempt crossover if enabled and we have at least 2 parents
+                if self.crossover_rate > 0.0 and len(parents) >= 2 and random.random() < self.crossover_rate:
+                    p1 = self.tournament_selection(parents)
+                    p2 = self.tournament_selection(parents)
+                    child_smiles = self.generator.crossover_as_smiles(p1.smiles, p2.smiles)
+
+                # Fall back to mutation if crossover disabled / failed
+                if not child_smiles:
+                    parent = self.tournament_selection(parents)
+                    child_smiles = self.generator.mutate_as_smiles(parent.smiles)
+
+                if child_smiles and self.generator.validate_as_smiles(child_smiles):
+                    child = self.create_individual(child_smiles, self.generation + 1)
                     offspring.append(child)
                 else:
-                    # Mutation failed, try again with simple mutation
-                    logger.debug(f"Mutation failed, retrying...")
+                    logger.debug("Offspring generation failed, skipping slot.")
             except Exception as e:
-                logger.debug(f"Mutation exception: {e}")
+                logger.debug(f"Offspring exception: {e}")
 
         return offspring
 
@@ -329,7 +317,12 @@ class MuLambdaOptimizer:
 
         logger.info("Evaluating initial population...")
         self.population = []
-        for i, smiles in enumerate(initial_smiles):
+        for i, solution in enumerate(initial_smiles):
+            # Decode to SMILES if using SELFIES encoding
+            smiles = self.generator.decode_to_smiles(solution)
+            if smiles is None:
+                logger.warning(f"  Skipping {i+1}/{self.mu}: failed to decode '{solution}'")
+                continue
             logger.info(f"  Evaluating {i+1}/{self.mu}: {smiles}")
             ind = self.create_individual(smiles, 0)
             self.population.append(ind)

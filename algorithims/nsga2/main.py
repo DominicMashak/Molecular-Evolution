@@ -48,7 +48,14 @@ def validate_objectives(objectives, optimize_objectives):
         'oscillator_strength',
         # Derived objectives
         'beta_gamma_ratio', 'total_energy_atom_ratio',
-        'alpha_range_distance', 'homo_lumo_gap_range_distance'
+        'alpha_range_distance', 'homo_lumo_gap_range_distance',
+        # SmartCADD drug-design objectives (primary)
+        'qed', 'sa_score', 'docking_score', 'lipinski_violations',
+        'admet_pass',
+        # SmartCADD descriptors (can be used as objectives)
+        'mol_weight', 'logp', 'tpsa',
+        # SmartCADD range-distance objectives (recommended for drug design)
+        'mol_weight_range_distance', 'logp_range_distance', 'tpsa_range_distance',
     }
     
     for obj in objectives:
@@ -291,15 +298,33 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Supported Objectives:
-  beta, beta_mean       - First hyperpolarizability (a.u.)
-  natoms                - Number of atoms
-  energy                - Total energy (a.u.)
-  dipole                - Dipole moment (a.u.)
-  homo_lumo_gap         - HOMO-LUMO gap (eV)
-  alpha                 - Polarizability (a.u.)
-  gamma                 - Second hyperpolarizability (a.u.)
-  transition_dipole     - Transition dipole moment (a.u.)
-  oscillator_strength   - Oscillator strength
+  Quantum Chemistry (--fitness-mode qc):
+    beta, beta_mean       - First hyperpolarizability (a.u.)
+    natoms                - Number of atoms
+    energy                - Total energy (a.u.)
+    dipole                - Dipole moment (a.u.)
+    homo_lumo_gap         - HOMO-LUMO gap (eV)
+    alpha                 - Polarizability (a.u.)
+    gamma                 - Second hyperpolarizability (a.u.)
+    transition_dipole     - Transition dipole moment (a.u.)
+    oscillator_strength   - Oscillator strength
+
+  Drug Design (--fitness-mode smartcadd):
+    PRIMARY OBJECTIVES (what you should optimize):
+      qed                        - Quantitative Estimate of Drug-likeness (0-1, maximize)
+      sa_score                   - Synthetic Accessibility (1=easy, 10=hard, minimize)
+      docking_score              - Smina binding affinity (kcal/mol, minimize)
+      mol_weight_range_distance  - Distance from optimal MW range [150-500 Da] (minimize) **RECOMMENDED**
+      lipinski_violations        - Lipinski Rule of Five violations (0-4, minimize)
+      admet_pass                 - ADMET/PAINS filter (1=pass, 0=fail, maximize)
+
+    DESCRIPTORS (can be used as objectives if needed):
+      mol_weight                 - Molecular weight (Da, raw value)
+      logp                       - LogP lipophilicity (raw value)
+      tpsa                       - Topological Polar Surface Area (raw value)
+      logp_range_distance        - Distance from optimal LogP [0-5] (minimize, optional)
+      tpsa_range_distance        - Distance from optimal TPSA [20-130] (minimize, optional)
+      natoms                     - Number of heavy atoms
 
 Examples:
   # 2 objectives: maximize beta, minimize natoms
@@ -324,10 +349,23 @@ Examples:
                  --objectives beta natoms homo_lumo_gap \\
                  --optimize maximize minimize maximize \\
                  --pop_size 30 --n_gen 200
-  
+
   # Disable stagnation response
   python main.py --objectives beta natoms --optimize maximize minimize \\
                  --no-stagnation-response
+
+  # SmartCADD drug-design: Fast descriptors mode (RECOMMENDED)
+  python main.py --fitness-mode smartcadd \\
+                 --objectives qed sa_score mol_weight_range_distance lipinski_violations \\
+                 --optimize maximize minimize minimize minimize \\
+                 --pop_size 50 --n_gen 100
+
+  # SmartCADD with docking against CDK2 (requires full SmartCADD setup)
+  python main.py --fitness-mode smartcadd --smartcadd-mode docking \\
+                 --protein-code 1AQ1 \\
+                 --objectives docking_score qed sa_score mol_weight_range_distance \\
+                 --optimize minimize maximize minimize minimize \\
+                 --pop_size 30 --n_gen 50
         """
     )
     
@@ -387,8 +425,35 @@ Examples:
                        choices=['hybrid', 'weight', 'atoms'],
                        help='Stagnation response strategy')
     
+    # Fitness mode options
+    parser.add_argument('--fitness-mode', type=str, default='qc',
+                       choices=['qc', 'smartcadd'],
+                       help='Fitness evaluation mode: "qc" for quantum chemistry (default), '
+                            '"smartcadd" for drug-design evaluation')
+    parser.add_argument('--smartcadd-path', type=str, default=None,
+                       help='Path to SmartCADD repository (auto-detected if not set)')
+    parser.add_argument('--smartcadd-mode', type=str, default='descriptors',
+                       choices=['descriptors', 'docking'],
+                       help='SmartCADD evaluation mode: "descriptors" (fast, RDKit only) '
+                            'or "docking" (full Smina docking pipeline)')
+    parser.add_argument('--protein-code', type=str, default=None,
+                       help='PDB code for docking target (required for docking mode)')
+    parser.add_argument('--protein-path', type=str, default=None,
+                       help='Local path to protein PDB file (optional, overrides PDB fetch)')
+    parser.add_argument('--alert-collection', type=str, default=None,
+                       help='Path to ADMET alert collection CSV')
+    parser.add_argument('--atom-set', type=str, default=None,
+                       choices=['nlo', 'drug'],
+                       help='Atom set: "nlo" for C/N/O (default for qc mode), '
+                            '"drug" for C/N/O/S/F/Cl/Br (default for smartcadd mode)')
+    parser.add_argument('--encoding', type=str, default='smiles',
+                       choices=['smiles', 'selfies'],
+                       help='Molecular string encoding used internally (smiles or selfies)')
+    parser.add_argument('--crossover-rate', type=float, default=0.0,
+                       help='Probability of crossover vs mutation per offspring (0.0 = off, default)')
+
     # Other options
-    parser.add_argument('--debug-mopac', action='store_true', 
+    parser.add_argument('--debug-mopac', action='store_true',
                        help='Enable debugging output for MOPAC')
     parser.add_argument('--seed', type=int, default=None, 
                        help='Random seed for reproducibility')
@@ -417,8 +482,11 @@ Examples:
         return
     
     # Validate required arguments for optimization mode
-    if not args.calculator:
-        parser.error("--calculator is required")
+    if args.fitness_mode == 'qc' and not args.calculator:
+        parser.error("--calculator is required for qc fitness mode")
+    if args.fitness_mode == 'smartcadd' and args.smartcadd_mode == 'docking':
+        if not args.protein_code and not args.protein_path:
+            parser.error("--protein-code or --protein-path required for docking mode")
     if not args.objectives:
         parser.error("--objectives is required")
     if not args.optimize:
@@ -444,11 +512,22 @@ Examples:
     else:
         reference_points = None
     
+    # Determine atom set
+    if args.atom_set:
+        atom_set = args.atom_set
+    elif args.fitness_mode == 'smartcadd':
+        atom_set = 'drug'
+    else:
+        atom_set = 'nlo'
+
     # Log configuration
     logging.info("="*60)
     logging.info("NSGA-II Multi-Objective Optimization")
     logging.info("="*60)
-    logging.info(f"Calculator: {args.calculator}")
+    logging.info(f"Fitness mode: {args.fitness_mode}")
+    logging.info(f"Atom set: {atom_set}")
+    if args.fitness_mode == 'qc':
+        logging.info(f"Calculator: {args.calculator}")
     logging.info(f"Objectives ({len(args.objectives)}): {', '.join(args.objectives)}")
     logging.info(f"Optimization: {', '.join([opt[0] for opt in optimize_objectives])}")
     if reference_points:
@@ -497,12 +576,29 @@ Examples:
     
     # Create generator (uses equal mutation weights by default if mutation_weights is None)
     generator = MoleculeGenerator(seed=args.seed if args.seed is not None else 92,
-                                  mutation_weights=mutation_weights)
+                                  mutation_weights=mutation_weights,
+                                  atom_set=atom_set,
+                                  encoding=args.encoding)
     
+    # Build SmartCADD kwargs if in smartcadd mode
+    smartcadd_kwargs = None
+    if args.fitness_mode == 'smartcadd':
+        smartcadd_kwargs = {
+            'mode': args.smartcadd_mode,
+        }
+        if args.smartcadd_path:
+            smartcadd_kwargs['smartcadd_path'] = args.smartcadd_path
+        if args.protein_code:
+            smartcadd_kwargs['protein_code'] = args.protein_code
+        if args.protein_path:
+            smartcadd_kwargs['protein_path'] = args.protein_path
+        if args.alert_collection:
+            smartcadd_kwargs['alert_collection_path'] = args.alert_collection
+
     # Create optimizer
     optimizer = NSGA2Optimizer(
         generator=generator,
-        calculator_type=args.calculator,
+        calculator_type=args.calculator or "dft",
         calculator_kwargs=calculator_kwargs,
         method=args.method or "full_tensor",
         pop_size=args.pop_size,
@@ -523,7 +619,11 @@ Examples:
         stagnation_threshold=args.stagnation_threshold,
         stagnation_strategy=args.stagnation_strategy,
         verbose=args.verbose,
-        field_strength=args.field_strength
+        field_strength=args.field_strength,
+        fitness_mode=args.fitness_mode,
+        smartcadd_kwargs=smartcadd_kwargs,
+        encoding=args.encoding,
+        crossover_rate=args.crossover_rate,
     )
     
     # Run optimization

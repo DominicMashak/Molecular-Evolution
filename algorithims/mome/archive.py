@@ -395,6 +395,12 @@ class MOMEArchive:
         
         return global_front
     
+    def iter_filled_cells(self):
+        """Yield (index, front) for all non-empty cells."""
+        for idx in np.ndindex(self.measure_dims):
+            if len(self.fronts[idx]) > 0:
+                yield idx, self.fronts[idx]
+
     def __len__(self) -> int:
         """Return the total number of solutions in archive."""
         return sum(len(self.fronts[idx]) for idx in np.ndindex(self.measure_dims))

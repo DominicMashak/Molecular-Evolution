@@ -48,8 +48,7 @@ class MOMEPerformanceTracker:
         self.metrics['global_hypervolume'].append(float(global_hv))
         
         # Mean front size per cell
-        all_fronts = [archive.fronts[idx] for idx in np.ndindex(archive.measure_dims) 
-                     if len(archive.fronts[idx]) > 0]
+        all_fronts = [front for _, front in archive.iter_filled_cells()]
         mean_size = np.mean([len(f) for f in all_fronts]) if all_fronts else 0.0
         self.metrics['mean_front_size'].append(float(mean_size))
         

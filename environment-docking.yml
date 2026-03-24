@@ -1,0 +1,43 @@
+name: molev-docking
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python (SmartCADD requires 3.10 or 3.11)
+  - python=3.10
+
+  # Core scientific computing
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+
+  # Chemistry and drug design
+  - rdkit
+  - openbabel  # Required for PDB ↔ PDBQT conversion
+
+  # Molecular docking and optimization
+  - smina  # Molecular docking engine (AutoDock Vina fork)
+  - xtb    # Semi-empirical quantum mechanics for geometry optimization
+  - pymol-open-source  # Protein visualization (optional but recommended)
+
+  # Multi-objective optimization
+  - pymoo
+
+  # Utilities
+  - h5py
+  - periodictable
+
+  # For quantum chemistry (optional, if also doing NLO optimization)
+  - ase
+  - pyscf
+  - tblite-python
+
+  # Package management
+  - pip
+
+  # Pip dependencies (installed after conda)
+  - pip:
+    # SmartCADD will be installed manually with: pip install -e ~/SmartCADD

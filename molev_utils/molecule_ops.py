@@ -11,13 +11,44 @@ class MoleculeMutator:
 
     Supports bond-type changes, atom additions/removals, atom-type changes,
     ring additions/removals, and validation. Mutations are restricted to
-    allowed atoms (C, N, O) and allowed bond types (single, double).
+    allowed atoms and allowed bond types (single, double).
+
+    Args:
+        atom_set: Which atom set to use. "nlo" for C/N/O only (original),
+            "drug" for C/N/O/S/F/Cl/Br (drug-like molecules).
     """
 
-    def __init__(self):
+    # Predefined atom sets
+    ATOM_SETS = {
+        'nlo': ['C', 'N', 'O'],
+        'drug': ['C', 'N', 'O', 'S', 'F', 'Cl', 'Br'],
+    }
+
+    # Atoms that can form at least 2 bonds (for insertion mutations)
+    MULTIVALENT_ATOMS = {
+        'nlo': ['C', 'N', 'O'],
+        'drug': ['C', 'N', 'O', 'S'],  # Excludes F, Cl, Br (only 1 bond)
+    }
+
+    # Max valence for each atom (used to check compatibility)
+    MAX_VALENCE = {'C': 4, 'N': 3, 'O': 2, 'S': 2, 'F': 1, 'Cl': 1, 'Br': 1}
+
+    # Atomic numbers for validation
+    ATOMIC_NUMBERS = {
+        'nlo': {1, 6, 7, 8},           # H, C, N, O
+        'drug': {1, 6, 7, 8, 9, 16, 17, 35},  # H, C, N, O, F, S, Cl, Br
+    }
+
+    def __init__(self, atom_set='nlo'):
         """Initialize allowed atoms and bond types."""
-        self.allowed_atoms = ['C', 'N', 'O']
+        if atom_set not in self.ATOM_SETS:
+            raise ValueError(f"Unknown atom_set '{atom_set}'. "
+                             f"Must be one of: {list(self.ATOM_SETS.keys())}")
+        self.atom_set = atom_set
+        self.allowed_atoms = self.ATOM_SETS[atom_set]
+        self.allowed_atomic_numbers = self.ATOMIC_NUMBERS[atom_set]
         self.allowed_bond_types = [Chem.BondType.SINGLE, Chem.BondType.DOUBLE]
+        self.multivalent_atoms = self.MULTIVALENT_ATOMS[atom_set]
     
     def mutate(self, smiles, mutation_type):
         mol = Chem.MolFromSmiles(smiles)
@@ -50,7 +81,8 @@ class MoleculeMutator:
                 bond = random.choice(bonds)
                 a1_idx = bond.GetBeginAtomIdx()
                 a2_idx = bond.GetEndAtomIdx()
-                new_atom_symbol = random.choice(self.allowed_atoms)
+                # Use only multivalent atoms (need at least 2 bonds for insertion)
+                new_atom_symbol = random.choice(self.multivalent_atoms)
                 new_atom = Chem.Atom(new_atom_symbol)
                 new_rw = Chem.RWMol(rw)
                 new_idx = new_rw.AddAtom(new_atom)
@@ -105,7 +137,11 @@ class MoleculeMutator:
             if atoms:
                 atom = random.choice(atoms)
                 current_symbol = atom.GetSymbol()
-                possible_symbols = [s for s in self.allowed_atoms if s != current_symbol]
+                # Count bonds on this atom to filter compatible replacements
+                num_bonds = sum(int(b.GetBondTypeAsDouble()) for b in atom.GetBonds())
+                # Only allow atoms with enough valence capacity
+                possible_symbols = [s for s in self.allowed_atoms
+                                    if s != current_symbol and self.MAX_VALENCE.get(s, 4) >= num_bonds]
                 if possible_symbols:
                     new_symbol = random.choice(possible_symbols)
                     new_rw = Chem.RWMol(rw)
@@ -151,16 +187,34 @@ class MoleculeMutator:
         return None
     
     def validate(self, smiles, max_atoms=30):
-        """Validate molecule - ONLY C,N,O,H with single/double bonds, single connected component"""
+        """Validate molecule against configured atom set with single/double bonds only.
+
+        Validation rules:
+            - Single connected component (no fragments)
+            - No triple bonds
+            - Only atoms from the configured atom set
+            - Atom count within [5, max_atoms]
+            - Molecular weight within allowed range
+            - No iodine (even in drug mode)
+        """
         try:
             if '.' in smiles:  # Disconnected structures
                 return False
             if '#' in smiles:  # Triple bonds
                 return False
-            if 'S' in smiles or 's' in smiles:  # Sulfur
-                return False
-            if 'F' in smiles or 'Cl' in smiles or 'Br' in smiles or 'I' in smiles:  # Halogens
-                return False
+
+            # NLO mode: reject heteroatoms not in C/N/O
+            if self.atom_set == 'nlo':
+                if 'S' in smiles or 's' in smiles:
+                    return False
+                if 'F' in smiles or 'Cl' in smiles or 'Br' in smiles or 'I' in smiles:
+                    return False
+
+            # Always reject iodine
+            if 'I' in smiles and 'Cl' not in smiles:
+                # 'I' could appear alone (iodine) — but watch out for 'Cl' containing 'l'
+                # More robust: parse the molecule and check atomic numbers below
+                pass
 
             # Parse without sanitization first to avoid warnings
             mol = Chem.MolFromSmiles(smiles, sanitize=False)
@@ -177,10 +231,11 @@ class MoleculeMutator:
             if len(Chem.GetMolFrags(mol)) > 1:
                 return False
 
-            # Check atoms - ONLY C, N, O, H allowed
-            allowed_atoms = {1, 6, 7, 8}  # H, C, N, O
+            # Check atoms against configured atom set and reject formal charges
             for atom in mol.GetAtoms():
-                if atom.GetAtomicNum() not in allowed_atoms:
+                if atom.GetAtomicNum() not in self.allowed_atomic_numbers:
+                    return False
+                if atom.GetFormalCharge() != 0:
                     return False
 
             # Check bonds - NO TRIPLE bonds
@@ -196,17 +251,21 @@ class MoleculeMutator:
             if mol.GetNumAtoms() < 5:  # Too small
                 return False
 
-            # Check molecular weight
+            # Check molecular weight (drug mode allows larger molecules)
             mw = Descriptors.MolWt(mol)
-            if mw > 600 or mw < 50:  # Adjusted for CNOH only
-                return False
+            if self.atom_set == 'drug':
+                if mw > 800 or mw < 50:
+                    return False
+            else:
+                if mw > 600 or mw < 50:
+                    return False
 
             return True
         except Exception:
             return False
 
-def mutate_smiles(smiles, mutation_type, interrupted=False, max_attempts=100):
-    mutator = MoleculeMutator()
+def mutate_smiles(smiles, mutation_type, interrupted=False, max_attempts=100, atom_set='nlo'):
+    mutator = MoleculeMutator(atom_set=atom_set)
     for attempt in range(max_attempts):
         if interrupted:
             break
