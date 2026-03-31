@@ -8,6 +8,8 @@
 
 To learn how to start using, skip to reading [TUTORIAL.md](https://github.com/DominicMashak/Molecular-Evolution/blob/main/TUTORIAL.md)
 
+Please cite using [CITATION.cff](https://github.com/DominicMashak/Molecular-Evolution/blob/main/CITATION.cff)
+
 ## Overview
 
 Molecular-Evolution is a GitHub repository for our project of using evolutionary algorithms for optimizing molecular structures, with a primary focus on enhancing Non-Linear Optical (NLO) properties, particularly hyperpolarizability. We utilize genetic and evolutionary optimization algorithms to evolve molecules from initial SMILES representations, evaluating and selecting candidates based on quantum chemical calculations. It is designed for researchers in computational physics/chemistry, materials science who aim to discover novel molecules with improved NLO characteristics.
