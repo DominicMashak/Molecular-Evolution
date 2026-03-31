@@ -8,7 +8,7 @@
 
 To learn how to start using, skip to reading [TUTORIAL.md](https://github.com/DominicMashak/Molecular-Evolution/blob/main/TUTORIAL.md)
 
-Please cite using [CITATION.cff](https://github.com/DominicMashak/Molecular-Evolution/blob/main/CITATION.cff)
+Please cite using [CITATION.cff](https://github.com/DominicMashak/Molecular-Evolution/blob/main/CITATION.cff) or BibTeX [CITATION.bib](https://github.com/DominicMashak/Molecular-Evolution/blob/main/CITATION.bib)
 
 ## Overview
 
