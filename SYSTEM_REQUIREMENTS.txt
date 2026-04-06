@@ -1,31 +1,16 @@
-For the cheapest DFT functional HF, and STO-3G, any xTB or semi-empirical:
+Minimum Specifications
 
-Minimum spec -
-Memory: 8GB+
-CPU: 4 cores+
-
-Recommended spec -
-Memory: 16GB+
-CPU: 8 cores+
+OS: Ubuntu, MacOS, Windows 11 (running Ubuntu in WSL2)
+Processor: 8 cores
+Memory: 16 GB RAM
+Graphics: Modern AMD, NVIDIA, or Apple >= 4GB VRAM (Intel ARC is untested)
+Storage: NVME PCIE 3.0 SSD
 
 
-For the more expensive DFT functionals (e.g., B3LYP, PBE0) with up to 6-31G basis set, and any xTB or semi-empirical:
+Recommended Specifications
 
-Minimum spec -
-Memory: 16GB+
-CPU: 8 cores+
-
-Recommended spec -
-Memory: 32GB+
-CPU: 12 cores+
-
-
-For the most expensive DFT basis sets (e.g., CAM-B3LYP), any xTB or semi-empirical, as well as Coupled Cluster with moderate basis sets:
-
-Minimum spec -
-Memory: 92GB+
-CPU: 16 cores+
-
-Recommended spec -
-Memory: as much as you have
-CPU: as much as you have
+OS: Ubuntu or MacOS
+Processor: 16 cores
+Memory: 64 GB RAM
+Graphics: Modern AMD, NVIDIA, or Apple >= 8GB VRAM (Intel ARC is untested)
+Storage: NVME PCIE 4.0 or 5.0 SSD
