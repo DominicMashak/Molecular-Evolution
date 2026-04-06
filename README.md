@@ -79,13 +79,15 @@ This project is licensed under the Creative Commons BY-NC 4.0 License.
 
 Mashak, D., Schrum, J., & Alexander, S. A. (2026).
 Multi-Objective Evolutionary Design of Molecules with Enhanced Nonlinear Optical Properties.
-*arXiv preprint arXiv:2602.16044* [physics.comp-ph]. (Used this repository)
+*arXiv preprint arXiv:2602.16044* [physics.comp-ph].
 https://arxiv.org/abs/2602.16044
+*Uses [v0.2.5](https://github.com/DominicMashak/Molecular-Evolution/releases/tag/v0.2.5) of this repository.*
 
 Mashak, D., & Alexander, S. A. (2025).
 Benchmarking Hartree-Fock and DFT for Molecular Hyperpolarizability: Implications for Evolutionary Design.
-*arXiv preprint arXiv:2511.17767* [physics.chem-ph]. (Used this repository)
+*arXiv preprint arXiv:2511.17767* [physics.chem-ph].
 https://arxiv.org/abs/2511.17767
+*Uses this repository.*
 
 Mashak, D., & Alexander, S. A. (2025).
 Finding Molecules with Specific Properties: Simulated Annealing vs. Evolution.
