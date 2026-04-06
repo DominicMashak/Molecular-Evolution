@@ -8,7 +8,7 @@
 
 Please note this is a very work-in-progress repository and project. For inquiries, contact [Dominic Mashak](mailto:mashakd@southwestern.edu)
 
-To learn how to start using, skip to reading [TUTORIAL.md](https://github.com/DominicMashak/Molecular-Evolution/blob/main/TUTORIAL.md)
+To learn how to start using, skip to reading [TUTORIAL.md](https://github.com/DominicMashak/Molecular-Evolution/blob/main/TUTORIAL.md) and check system requirements [SYSTEM_REQUIREMENTS.txt](https://github.com/DominicMashak/Molecular-Evolution/blob/main/SYSTEM_REQUIREMENTS.txt)
 
 To cite use [CITATION.cff](https://github.com/DominicMashak/Molecular-Evolution/blob/main/CITATION.cff) or BibTeX [CITATION.bib](https://github.com/DominicMashak/Molecular-Evolution/blob/main/CITATION.bib)
 
