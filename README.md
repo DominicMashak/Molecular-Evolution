@@ -47,7 +47,7 @@ The repository supports a range of computational methods for property calculatio
 - **Tight-Binding Methods**:
   - xTB: GFN0-xTB, GFN1-xTB, GFN2-xTB, GFNFF
 
-- **Supported basis sets (non-xTB methods) include**: 
+- **Supported basis sets**: 
   - STO-3G, 3-21G, 6-31G, 6-31G*, 6-31G**, 6-31+G*, 6-311G, 6-311G*, 6-311G**, 6-311++G**, def2-SVP, def2-TZVP, def2-TZVPP, cc-pVDZ, cc-pVTZ, cc-pVQZ, aug-cc-pVDZ, aug-cc-pVTZ
 
 These methods enable rapid screening for evolutionary optimization or more accurate but computationally expensive calculations.
