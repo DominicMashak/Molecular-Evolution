@@ -14,7 +14,7 @@ To cite use [CITATION.cff](https://github.com/DominicMashak/Molecular-Evolution/
 
 ## Overview
 
-Molecular-Evolution is a GitHub repository for our project using evolutionary algorithms to optimize molecular structures, with a primary focus on enhancing Nonlinear Optical (NLO) properties, and continued work is in the domain of drug discovery. We use evolutionary optimization algorithms to evolve molecules, evaluating and selecting candidates based on performance evaluation (dependent on the domain). It is designed for researchers in computational physics/chemistry and materials science who aim to discover novel molecules, as well as computer scientists interested in molecular optimization.
+Molecular-Evolution is a GitHub repository for our project using evolutionary algorithms to optimize molecular structures, with a primary focus on enhancing Nonlinear Optical (NLO) properties, and continued work is in the domain of drug discovery. It is designed for researchers in computational physics/chemistry and materials science who aim to discover novel molecules, as well as computer scientists interested in molecular optimization.
 
 ## Supported Algorithms
 
