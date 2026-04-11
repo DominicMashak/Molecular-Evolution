@@ -77,6 +77,12 @@ This project is licensed under the Creative Commons BY-NC 4.0 License.
 
 ## References
 
+Mashak, D., & Schrum, J. (2026).
+CVT Archives and Chemical Embedding Measures for Multi-Objective Quality Diversity in Molecular Design.
+*arXiv preprint arXiv:2604.05622* [physics.comp-ph].
+https://arxiv.org/abs/2604.05622
+*Uses [v0.3.0](https://github.com/DominicMashak/Molecular-Evolution/releases/tag/v0.3.0) of this repository.*
+
 Mashak, D., Schrum, J., & Alexander, S. A. (2026).
 Multi-Objective Evolutionary Design of Molecules with Enhanced Nonlinear Optical Properties.
 *arXiv preprint arXiv:2602.16044* [physics.comp-ph].
