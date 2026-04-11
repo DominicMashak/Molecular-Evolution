@@ -1,4 +1,4 @@
-python ~/Molecular-Evolution/quantum_chemistry/main.py \
+python main.py \
     --calculator dft \
     --functional B3LYP \
     --basis "6-31G" \
