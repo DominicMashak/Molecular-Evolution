@@ -76,6 +76,13 @@ Examples:
     # Objective
     parser.add_argument('--objective', type=str, default='beta_mean',
                        help='Property to optimize (beta_mean, homo_lumo_gap, qed, sa_score, etc.)')
+<<<<<<< Updated upstream
+=======
+    parser.add_argument('--problem', type=str, default=None,
+                       help='Named problem preset (e.g. nlo_1obj_beta, drug_1obj_qed). '
+                            'Informational only for mu+lambda (single-objective); '
+                            'also sets atom_set/fitness_mode defaults when not explicit.')
+>>>>>>> Stashed changes
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--maximize', action='store_true', default=True,
                       help='Maximize the objective (default)')
@@ -147,6 +154,12 @@ Examples:
                        help='Recalculate metrics from existing all_molecules_database.json')
 
     args = parser.parse_args()
+
+    # Resolve --problem preset (atom_set / fitness_mode hints for single-objective runs)
+    from problem_config import resolve_from_args
+    _problem = resolve_from_args(args)
+    if _problem is not None and args.atom_set is None:
+        args.atom_set = _problem.atom_set
 
     # Setup logging
     setup_logging(args.verbose)

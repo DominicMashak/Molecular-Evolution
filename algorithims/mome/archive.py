@@ -106,8 +106,18 @@ class MOMEArchive:
             raise ValueError(f"Invalid objective value: {e}")
     
     def _dominates(self, obj1: np.ndarray, obj2: np.ndarray) -> bool:
-        """Check if obj1 strictly dominates obj2 (all >= and at least one >)."""
-        return np.all(obj1 >= obj2) and np.any(obj1 > obj2)
+        """Check if obj1 strictly dominates obj2 accounting for optimization direction.
+
+        Transforms both vectors to all-minimise space before comparing, so
+        'minimize' objectives are handled correctly (lower is better).
+        """
+        t1 = obj1.copy().astype(float)
+        t2 = obj2.copy().astype(float)
+        for i, (opt, _) in enumerate(self.optimize_objectives):
+            if opt == 'max':
+                t1[i] = -t1[i]
+                t2[i] = -t2[i]
+        return bool(np.all(t1 <= t2) and np.any(t1 < t2))
     
     def _calculate_crowding_distance(self, front: List[Dict]) -> np.ndarray:
         """

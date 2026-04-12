@@ -1,8 +1,15 @@
 #!/bin/bash
+<<<<<<< Updated upstream
 # Update existing mol-evo conda environment on macOS with new dependencies
 # Run from the Molecular-Evolution project root
 
 set -e
+=======
+set -euo pipefail
+# Update existing mol-evo conda environment on macOS with new dependencies
+# Run from the Molecular-Evolution project root
+
+>>>>>>> Stashed changes
 
 ENV_NAME="mol-evo"
 

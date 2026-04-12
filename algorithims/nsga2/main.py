@@ -415,7 +415,11 @@ Examples:
                        help='Optimization types (e.g., maximize minimize target:15.0)')
     parser.add_argument('--reference-points', nargs='+', type=float, default=None,
                        help='Reference points for hypervolume calculation, one per objective (e.g., 0.0 50.0)')
-    
+    parser.add_argument('--problem', type=str, default=None,
+                       help='Named problem preset (e.g. nlo_4obj, drug_2obj). '
+                            'Fills default objectives, optimize directions, and reference points. '
+                            'All explicit CLI flags override preset values.')
+
     # Stagnation response options
     parser.add_argument('--no-stagnation-response', action='store_true',
                        help='Disable stagnation-adaptive mutation')
@@ -475,7 +479,21 @@ Examples:
                        help='Recalculate archive, HV, MOQD, and plots from existing all_molecules_database.json in the specified results directory')
     
     args = parser.parse_args()
-    
+
+    # Resolve --problem preset
+    from problem_config import resolve_from_args
+    _problem = resolve_from_args(args)
+    if _problem is not None:
+        if args.objectives is None:
+            args.objectives = _problem.objective_keys
+        if args.optimize is None:
+            args.optimize = _problem.optimize_strings
+        # nsga2 uses --reference-points (plural)
+        if args.reference_points is None:
+            args.reference_points = _problem.reference_point
+        if args.measure_bounds is None:
+            args.measure_bounds = _problem.measure_bounds_flat
+
     # Handle recalculation mode
     if args.recalculate:
         recalculate_from_database(args.recalculate)

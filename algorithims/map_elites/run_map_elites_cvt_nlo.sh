@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run MAP-Elites with CVT archive (structural measures) for NLO optimization
 # Uses continuous num_atoms/num_bonds as CVT descriptors instead of fixed grid bins
 

@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run MAP-Elites with CVT archive (ChemBERTa embedding measures) for NLO optimization
 # Uses ChemBERTa-2 MTR molecular embeddings reduced by UMAP as CVT descriptors
 

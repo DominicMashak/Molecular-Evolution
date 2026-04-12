@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run CVT-MAP-Elites (structural measures) for drug-design optimization
 # Uses SmartCADD with quality-diversity and CVT archive
 

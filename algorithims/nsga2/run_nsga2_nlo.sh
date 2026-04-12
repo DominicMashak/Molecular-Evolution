@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run NSGA-II for NLO (Non-Linear Optics) molecular optimization
 # Uses quantum chemistry calculations to optimize hyperpolarizability
 

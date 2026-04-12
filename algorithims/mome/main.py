@@ -12,6 +12,14 @@ import performance as mp
 from molecule_generator import MoleculeGenerator
 from quantum_chemistry_interface import QuantumChemistryInterface
 
+from problem_config import bounds_for_keys
+
+
+def _property_bounds_for_keys(keys, measure_bounds_flat):
+    """Return (min, max) pairs for each property key."""
+    return bounds_for_keys(keys, measure_bounds_flat)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="MOME (Multi-Objective MAP-Elites) Molecular Optimization",
@@ -59,8 +67,9 @@ Examples:
     
     # MOME-specific options
     parser.add_argument('--objectives', type=str, nargs='+',
-                       default=['beta_mean', 'homo_lumo_gap'],
-                       help='List of objectives to optimize (e.g., beta_mean homo_lumo_gap)')
+                       default=None,
+                       help='List of objectives to optimize (e.g., beta_mean homo_lumo_gap). '
+                            'Defaults to [beta_mean, homo_lumo_gap] unless --problem is set.')
     parser.add_argument('--optimize', type=str, nargs='+',
                        default=None,
                        help='Optimization direction for each objective (maximize or minimize). If not specified, all objectives are maximized.')
@@ -113,6 +122,46 @@ Examples:
     parser.add_argument('--reference-point', type=float, nargs='+',
                        default=None,
                        help='Reference point for hypervolume calculation (one value per objective)')
+    parser.add_argument('--problem', type=str, default=None,
+                       help='Named problem preset (e.g. nlo_4obj, drug_2obj). '
+                            'Fills default objectives, optimize directions, reference point, '
+                            'and measure bounds. All explicit CLI flags override preset values. '
+                            f'Available: see molev_utils/problem_config.py list_presets()')
+
+    # Archive tessellation options
+    parser.add_argument('--archive-type', type=str, default='grid',
+                       choices=['grid', 'cvt'],
+                       help='Archive tessellation: grid (fixed bins) or cvt (Centroidal Voronoi)')
+    parser.add_argument('--n-centroids', type=int, default=100,
+                       help='Number of CVT cells (--archive-type cvt only)')
+    parser.add_argument('--cvt-samples', type=int, default=50000,
+                       help='Random samples for CVT centroid generation')
+    parser.add_argument('--measure-bounds', type=float, nargs='+', default=None,
+                       help='Descriptor bounds as pairs: min1 max1 min2 max2 ...')
+    parser.add_argument('--cvt-measures', type=str, default='structural',
+                       choices=['structural', 'embedding', 'property'],
+                       help='CVT measure type: structural (num_atoms/bonds), '
+                            'embedding (ChemBERTa UMAP), or '
+                            'property (fast oracle proxies, e.g. qed + sa_score)')
+    parser.add_argument('--property-measure-keys', type=str, nargs='+', default=None,
+                       help='Property keys to use as CVT behavioral dimensions when '
+                            '--cvt-measures property (e.g. qed sa_score for drug; '
+                            'homo_lumo_gap alpha_mean for NLO). '
+                            'Keys must be present in evaluate_fn output.')
+
+    # Embedding options (used with --cvt-measures embedding)
+    parser.add_argument('--embedding-model', type=str, default='DeepChem/ChemBERTa-77M-MTR',
+                       help='HuggingFace model for molecular embeddings')
+    parser.add_argument('--embedding-dims', type=int, default=8,
+                       help='Number of UMAP dimensions for embedding-based CVT measures')
+    parser.add_argument('--embedding-device', type=str, default='auto',
+                       choices=['auto', 'cpu', 'cuda', 'mps'],
+                       help='Device for transformer inference (auto detects best available)')
+    parser.add_argument('--embedding-sample-size', type=int, default=1000,
+                       help='Number of molecules for UMAP fitting (generates random molecules to learn the embedding manifold)')
+    # Legacy alias for backward compatibility
+    parser.add_argument('--pca-sample-size', type=int, dest='embedding_sample_size',
+                       help='(DEPRECATED: use --embedding-sample-size) Number of molecules for UMAP fitting')
 
     # Archive tessellation options
     parser.add_argument('--archive-type', type=str, default='grid',
@@ -148,6 +197,23 @@ Examples:
 
     args = parser.parse_args()
 
+    # Resolve --problem preset (fills defaults; explicit CLI flags already win because
+    # resolve_from_args only overwrites when the arg is still None)
+    from problem_config import resolve_from_args
+    _problem = resolve_from_args(args)
+    if _problem is not None:
+        if args.objectives is None:
+            args.objectives = _problem.objective_keys
+        if args.optimize is None:
+            args.optimize = _problem.optimize_strings
+        if args.reference_point is None:
+            args.reference_point = _problem.reference_point
+        if args.measure_bounds is None:
+            args.measure_bounds = _problem.measure_bounds_flat
+    # Legacy default when neither --problem nor --objectives provided
+    if args.objectives is None:
+        args.objectives = ['beta_mean', 'homo_lumo_gap']
+
     # Handle recalculation mode
     if args.recalculate:
         mo.MOMEOptimizer.recalculate_from_database(args.recalculate)
@@ -182,6 +248,7 @@ Examples:
     
     # Set reference point
     if args.reference_point is None:
+<<<<<<< Updated upstream
         # Default reference points (should be below minimum expected values)
         ref_defaults = {
             'beta_mean': 0.0,
@@ -206,6 +273,19 @@ Examples:
             'admet_pass': 0.0,
         }
         args.reference_point = [ref_defaults.get(obj, 0.0) for obj in args.objectives]
+=======
+        # Auto-derive from PROPERTY_BOUNDS: worst case for each direction
+        #   maximize → lower bound of physical range
+        #   minimize → upper bound of physical range
+        from problem_config import PROPERTY_BOUNDS as _PB
+        optimize_map = dict(zip(args.objectives, args.optimize)) if args.optimize else {}
+        refs = []
+        for obj in args.objectives:
+            direction = optimize_map.get(obj, 'maximize')
+            lo, hi = _PB.get(obj, (0.0, 1.0))
+            refs.append(lo if direction == 'maximize' else hi)
+        args.reference_point = refs
+>>>>>>> Stashed changes
     elif len(args.reference_point) != len(args.objectives):
         raise ValueError(f"Reference point must have {len(args.objectives)} values")
     
@@ -270,6 +350,21 @@ Examples:
     # Initialize molecular embedder if using embedding-based CVT measures
     embedder = None
     cvt_seed_data = None
+<<<<<<< Updated upstream
+=======
+    property_measure_keys = None  # set when --cvt-measures property
+
+    if args.archive_type == 'cvt' and args.cvt_measures == 'property':
+        if not args.property_measure_keys:
+            parser.error(
+                "--property-measure-keys is required when --cvt-measures property. "
+                "Example for drug: --property-measure-keys qed sa_score "
+                "Example for NLO:  --property-measure-keys homo_lumo_gap alpha_mean"
+            )
+        property_measure_keys = args.property_measure_keys
+        # cvt_seed_data stays None → uniform random seeding in property space
+
+>>>>>>> Stashed changes
     if args.archive_type == 'cvt' and args.cvt_measures == 'embedding':
         from molecular_embedder import MolecularEmbedder
         # Generate random molecules to fit UMAP manifold (always decode to SMILES for embedder)
@@ -319,9 +414,18 @@ Examples:
         """Evaluate molecule using configured interface (QC or SmartCADD)."""
         from rdkit import Chem
 
+<<<<<<< Updated upstream
         if solution is None:
             return {
                 **{obj: 0.0 for obj in args.objectives},
+=======
+        _prop_zeros = {k: 0.0 for k in (property_measure_keys or [])}
+
+        if solution is None:
+            return {
+                **{obj: 0.0 for obj in args.objectives},
+                **_prop_zeros,
+>>>>>>> Stashed changes
                 'num_atoms_bin': 0, 'num_bonds_bin': 0,
                 'num_atoms': 0, 'num_bonds': 0,
                 'error': 'Invalid solution'
@@ -332,6 +436,10 @@ Examples:
         if smiles is None:
             return {
                 **{obj: 0.0 for obj in args.objectives},
+<<<<<<< Updated upstream
+=======
+                **_prop_zeros,
+>>>>>>> Stashed changes
                 'num_atoms_bin': 0, 'num_bonds_bin': 0,
                 'num_atoms': 0, 'num_bonds': 0,
                 'error': 'SELFIES decode failed'
@@ -341,6 +449,10 @@ Examples:
         if mol is None:
             return {
                 **{obj: 0.0 for obj in args.objectives},
+<<<<<<< Updated upstream
+=======
+                **_prop_zeros,
+>>>>>>> Stashed changes
                 'num_atoms_bin': 0, 'num_bonds_bin': 0,
                 'num_atoms': 0, 'num_bonds': 0,
                 'error': 'Invalid SMILES'
@@ -403,6 +515,20 @@ Examples:
         if args.cvt_measures == 'embedding' and embedder is not None:
             cvt_measure_keys = embedder.get_measure_keys()
             cvt_measure_bounds = embedder.get_measure_bounds()
+<<<<<<< Updated upstream
+=======
+        elif args.cvt_measures == 'property' and property_measure_keys:
+            # Property-informed behavioral space: archive cells correspond to
+            # chemically meaningful property niches (e.g. QED × SA landscape).
+            # CVT seeding uses uniform random samples in property space — no
+            # extra oracle calls needed.
+            cvt_measure_keys = property_measure_keys
+            cvt_measure_bounds = _property_bounds_for_keys(
+                property_measure_keys, args.measure_bounds
+            )
+            print(f"Property-informed CVT measures: {cvt_measure_keys}")
+            print(f"  Bounds: {cvt_measure_bounds}")
+>>>>>>> Stashed changes
         elif args.measure_bounds:
             cvt_measure_keys = ['num_atoms', 'num_bonds']
             cvt_measure_bounds = list(zip(args.measure_bounds[::2], args.measure_bounds[1::2]))
@@ -462,7 +588,7 @@ Examples:
         else:
             print(f"{key:.<30} {value}")
     print(f"{'='*70}\n")
-    
+
     # Show best solutions from global Pareto front
     print("\nTop solutions from Global Pareto Front:")
     best_solutions = optimizer.get_best_solutions(n=5)

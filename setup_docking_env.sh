@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Setup script for molecular docking environment
 # This creates a dedicated conda environment with all docking dependencies
 

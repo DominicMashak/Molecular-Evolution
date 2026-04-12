@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Run Simulated Annealing with multiple random seeds
 # Usage: ./run_multiple_seeds.sh [seed1] [seed2] [seed3] ...
 # Example: ./run_multiple_seeds.sh 42 123 456 789 1000

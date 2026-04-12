@@ -214,7 +214,7 @@ class FullTensorMethod(HyperpolarizabilityMethod):
             result.beta_vec = np.sqrt(beta_x**2 + beta_y**2 + beta_z**2)
             
             # Calculate mean (rotationally averaged) hyperpolarizability
-            # Formula: β_mean = (1/5)[Σ_i β_iii + 2 Σ_{i≠j} β_ijj]
+            # Formula: β_mean = (1/3)[Σ_i β_iii + 2 Σ_{i≠j} β_ijj]
             beta_mean = 0
             for i in range(3):
                 # Diagonal contributions

@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run (μ+λ) Evolution Strategy for drug-design molecular optimization
 # Uses SmartCADD with single-objective optimization
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Run MOME (Multi-Objective MAP-Elites) for molecular optimization
 
 # Random seed (change this for different runs)

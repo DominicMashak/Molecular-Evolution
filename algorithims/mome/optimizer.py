@@ -1,9 +1,14 @@
+import os
+import sys
 import random
 import numpy as np
 from typing import Callable, Dict, Any, Optional, List
 from archive import MOMEArchive
 from performance import MOMEPerformanceTracker
 from plotting import MOMEPlotter
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', 'molev_utils'))
+from diversity_metrics import compute_diversity_metrics
 
 
 class MOMEOptimizer:
@@ -172,6 +177,14 @@ class MOMEOptimizer:
         # Calculate global hypervolume using PyMoo (same as NSGA-II)
         global_hv = self.archive.compute_global_hypervolume()
         
+        # Diversity metrics over all archive members
+        archive_smiles = [
+            entry['solution']
+            for _, front in self.archive.iter_filled_cells()
+            for entry in front
+        ]
+        div = compute_diversity_metrics(archive_smiles, max_sample=500)
+
         return {
             'generation': self.generation,
             'n_added': n_added,
@@ -180,7 +193,10 @@ class MOMEOptimizer:
             'coverage': self.archive.get_coverage(),
             'moqd_score': moqd_score,
             'global_hypervolume': global_hv,
-            'total_evaluations': self.total_evaluations
+            'total_evaluations': self.total_evaluations,
+            'int_div': div['int_div'],
+            'scaffold_count': div['scaffold_count'],
+            'n_unique': div['n_unique'],
         }
 
     def update_molecule_database(self, solution: Any, properties: Dict[str, Any], generation: int):

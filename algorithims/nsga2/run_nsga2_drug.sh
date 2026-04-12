@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run NSGA-II for drug-design molecular optimization
 # Uses SmartCADD for fast drug-likeness evaluation (QED, SA score, ADMET, etc.)
 

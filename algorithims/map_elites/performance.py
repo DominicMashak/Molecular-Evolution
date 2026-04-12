@@ -26,7 +26,7 @@ class PerformanceTracker:
         }
         
         # Initialize calculators
-        self.hv_reference = reference_point if reference_point is not None else [0.0, 50, 15.0]
+        self.hv_reference = reference_point if reference_point is not None else [0.0]
         self.hypervolume_calculator = HypervolumeCalculator(self.hv_reference)
         
         # For IGD+, we need a reference set (Pareto front approximation)
@@ -46,11 +46,15 @@ class PerformanceTracker:
         self.metrics['max_beta'].append(max_beta if not np.isinf(max_beta) else 0.0)
         self.metrics['mean_beta'].append(mean_beta if not np.isinf(mean_beta) else 0.0)
         
-        # Calculate QD Score (sum of fitness improvements over worst fitness)
-        # For beta_mean, worst fitness = 0, so QD score = sum of all beta_mean values
-        # This is the total "quality-diversity" - it can only increase or stay same
-        all_objectives = archive.objectives[~np.isinf(archive.objectives)]
-        qd_score = float(np.sum(all_objectives)) if len(all_objectives) > 0 else 0.0
+        # Calculate QD Score (sum of objective values across all filled cells)
+        if hasattr(archive, 'objectives'):
+            all_objectives = archive.objectives[~np.isinf(archive.objectives)]
+            qd_score = float(np.sum(all_objectives)) if len(all_objectives) > 0 else 0.0
+        else:
+            # CVT archive: iterate filled cells
+            all_objectives = [cell['objective'] for _, cell in archive.iter_filled_cells()
+                              if not np.isinf(cell['objective'])]
+            qd_score = float(np.sum(all_objectives)) if all_objectives else 0.0
         
         # Check for monotonicity (QD score should never decrease in MAP-Elites)
         if qd_score < self.previous_qd_score - 1e-6:  # Allow small numerical errors

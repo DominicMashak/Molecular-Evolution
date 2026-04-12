@@ -25,7 +25,13 @@ class CVTMOMEArchive:
                  optimize_objectives: List[Tuple[str, Any]] = None,
                  cvt_samples: int = 50000,
                  random_state: int = 42,
+<<<<<<< Updated upstream
                  seed_data: Optional[np.ndarray] = None):
+=======
+                 seed_data: Optional[np.ndarray] = None,
+                 reference_point: Optional[np.ndarray] = None,
+                 precomputed_centroids: Optional[np.ndarray] = None):
+>>>>>>> Stashed changes
         """
         Initialize the CVT-MOME archive.
 
@@ -64,12 +70,31 @@ class CVTMOMEArchive:
         else:
             self.optimize_objectives = optimize_objectives
 
+<<<<<<< Updated upstream
+=======
+        # User-supplied reference point in original objective space.
+        # None means fall back to hardcoded worst-case values (backward-compat).
+        self._user_reference_point = (np.asarray(reference_point, dtype=float)
+                                      if reference_point is not None else None)
+
+>>>>>>> Stashed changes
         if len(measure_keys) != self.n_dims:
             raise ValueError(f"Number of measure_keys ({len(measure_keys)}) must match "
                            f"number of measure_bounds ({len(measure_bounds)})")
 
+<<<<<<< Updated upstream
         # Generate CVT centroids and build KDTree
         self.centroids = self._generate_centroids(cvt_samples, random_state, seed_data)
+=======
+        # Generate CVT centroids and build KDTree.
+        # When precomputed_centroids is provided (e.g. from main.py to guarantee
+        # both adaptation and result archives use the exact same tessellation),
+        # skip k-means entirely.
+        if precomputed_centroids is not None:
+            self.centroids = np.asarray(precomputed_centroids, dtype=float)
+        else:
+            self.centroids = self._generate_centroids(cvt_samples, random_state, seed_data)
+>>>>>>> Stashed changes
         self.kd_tree = KDTree(self.centroids)
 
         # Fronts stored as dict: centroid_index -> list of solution dicts
@@ -141,7 +166,23 @@ class CVTMOMEArchive:
     # ── Objective handling (same as MOMEArchive) ─────────────────
 
     def _get_ref_point(self):
+<<<<<<< Updated upstream
         """Get reference point for hypervolume calculation in transformed (minimization) space."""
+=======
+        """Get reference point for hypervolume calculation in transformed (minimization) space.
+
+        When a user reference_point was supplied at construction, transforms it to
+        all-minimise space (negate 'max' objectives).  Otherwise falls back to
+        hardcoded worst-case values for backward compatibility.
+        """
+        if self._user_reference_point is not None:
+            ref = self._user_reference_point.copy()
+            for i, (opt, _) in enumerate(self.optimize_objectives):
+                if opt == 'max':
+                    ref[i] = -ref[i]
+            return ref
+        # fallback
+>>>>>>> Stashed changes
         ref = []
         for opt, _ in self.optimize_objectives:
             if opt == 'max':
@@ -170,8 +211,23 @@ class CVTMOMEArchive:
     # ── Pareto front logic (same as MOMEArchive) ─────────────────
 
     def _dominates(self, obj1: np.ndarray, obj2: np.ndarray) -> bool:
+<<<<<<< Updated upstream
         """Check if obj1 strictly dominates obj2 (all >= and at least one >)."""
         return np.all(obj1 >= obj2) and np.any(obj1 > obj2)
+=======
+        """Check if obj1 strictly dominates obj2 accounting for optimization direction.
+
+        Transforms both vectors to all-minimise space before comparing, so
+        'minimize' objectives are handled correctly (lower is better).
+        """
+        t1 = obj1.copy().astype(float)
+        t2 = obj2.copy().astype(float)
+        for i, (opt, _) in enumerate(self.optimize_objectives):
+            if opt == 'max':
+                t1[i] = -t1[i]
+                t2[i] = -t2[i]
+        return bool(np.all(t1 <= t2) and np.any(t1 < t2))
+>>>>>>> Stashed changes
 
     def _calculate_crowding_distance(self, front: List[Dict]) -> np.ndarray:
         """
@@ -237,6 +293,59 @@ class CVTMOMEArchive:
 
     # ── Public interface (same signatures as MOMEArchive) ────────
 
+<<<<<<< Updated upstream
+=======
+    def force_add(self, solution: Any, properties: Dict[str, Any],
+                  niche_idx: int = None) -> bool:
+        """
+        MO-CMA-MAE Algorithm 1 line 12:  P_e ← {x_i} ∪ {x ∈ P_e | x ⊀ x_i}
+
+        Inserts unconditionally (no inbound dominance check against existing F_e).
+        Removes any existing solutions that are dominated BY the new solution.
+        Applies crowding-distance downsize if max_front_size is exceeded.
+
+        This is more permissive than add(): a solution dominated by existing F_e
+        members is still inserted.  Over time, as better solutions are added,
+        dominated entries are naturally evicted.
+        """
+        objectives = self._extract_objectives(properties)
+        if niche_idx is None:
+            niche_idx = self._extract_measures(properties)
+        if niche_idx is None:
+            return False
+
+        current_front = self.fronts[niche_idx]
+        was_empty = len(current_front) == 0
+
+        # Keep all existing solutions NOT dominated by the new solution
+        new_front = [e for e in current_front
+                     if not self._dominates(objectives, e['objectives'])]
+        new_front.append({
+            'solution': solution,
+            'properties': properties.copy(),
+            'objectives': objectives,
+        })
+
+        # Prune if exceeding max size (crowding-distance or random)
+        if len(new_front) > self.max_front_size:
+            if self.use_crowding_distance:
+                distances = self._calculate_crowding_distance(new_front)
+                finite_indices = np.where(np.isfinite(distances))[0]
+                if len(finite_indices) > 0:
+                    remove_idx = finite_indices[np.argmin(distances[finite_indices])]
+                else:
+                    remove_idx = np.random.randint(len(new_front))
+            else:
+                remove_idx = np.random.randint(len(new_front))
+            new_front.pop(remove_idx)
+
+        self.fronts[niche_idx] = new_front
+        if was_empty and len(new_front) > 0:
+            self.n_filled += 1
+        self.n_updates += 1
+        return True
+
+>>>>>>> Stashed changes
     def add(self, solution: Any, properties: Dict[str, Any]) -> bool:
         """Add a solution to the archive if it's not dominated in its cell."""
         objectives = self._extract_objectives(properties)

@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run MAP-Elites for drug-design molecular optimization
 # Uses SmartCADD with quality-diversity archive
 

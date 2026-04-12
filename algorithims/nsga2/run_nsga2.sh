@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Run NSGA-II for molecular optimization
 
 # Random seed (change this for different runs)

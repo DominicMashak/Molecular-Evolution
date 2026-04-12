@@ -96,7 +96,17 @@ Examples:
     parser.add_argument('--crossover-rate', type=float, default=0.0,
                        help='Probability of crossover vs mutation per offspring (0.0 = off, default)')
     parser.add_argument('--objective-key', type=str, default=None,
+<<<<<<< Updated upstream
                        help='Objective key for MAP-Elites archive (default: beta_gamma_ratio for qc, qed for smartcadd)')
+=======
+                       help='Objective key for MAP-Elites archive (default: beta_gamma_ratio for qc, '
+                            'qed for smartcadd descriptors, docking_score for smartcadd docking)')
+    _obj_dir = parser.add_mutually_exclusive_group()
+    _obj_dir.add_argument('--maximize', action='store_true',
+                       help='Maximise the objective (default for all objectives except docking_score)')
+    _obj_dir.add_argument('--minimize', action='store_true',
+                       help='Minimise the objective (values negated internally so archive always maximises)')
+>>>>>>> Stashed changes
 
     # Other options
     parser.add_argument('--seed', type=int, default=42,
@@ -105,6 +115,37 @@ Examples:
                        help='Enable verbose output')
     parser.add_argument('--reference-point', type=float, nargs='+', default=None,
                        help='Reference point for hypervolume calculation (list of floats)')
+    parser.add_argument('--problem', type=str, default=None,
+                       help='Named problem preset (e.g. nlo_1obj_beta, drug_1obj_qed). '
+                            'Fills default measure bounds. All explicit CLI flags override preset values.')
+
+    # Archive tessellation options
+    parser.add_argument('--archive-type', type=str, default='grid',
+                       choices=['grid', 'cvt'],
+                       help='Archive tessellation: grid (fixed bins) or cvt (Centroidal Voronoi)')
+    parser.add_argument('--n-centroids', type=int, default=100,
+                       help='Number of CVT cells (--archive-type cvt only)')
+    parser.add_argument('--cvt-samples', type=int, default=50000,
+                       help='Random samples for CVT centroid generation')
+    parser.add_argument('--measure-bounds', type=float, nargs='+', default=None,
+                       help='Descriptor bounds as pairs: min1 max1 min2 max2 ...')
+    parser.add_argument('--cvt-measures', type=str, default='structural',
+                       choices=['structural', 'embedding'],
+                       help='CVT measure type: structural (num_atoms/bonds) or embedding (ChemBERTa)')
+
+    # Embedding options (used with --cvt-measures embedding)
+    parser.add_argument('--embedding-model', type=str, default='DeepChem/ChemBERTa-77M-MTR',
+                       help='HuggingFace model for molecular embeddings')
+    parser.add_argument('--embedding-dims', type=int, default=8,
+                       help='Number of UMAP dimensions for embedding-based CVT measures')
+    parser.add_argument('--embedding-device', type=str, default='auto',
+                       choices=['auto', 'cpu', 'cuda', 'mps'],
+                       help='Device for transformer inference (auto detects best available)')
+    parser.add_argument('--embedding-sample-size', type=int, default=1000,
+                       help='Number of molecules for UMAP fitting (generates random molecules to learn the embedding manifold)')
+    # Legacy alias for backward compatibility
+    parser.add_argument('--pca-sample-size', type=int, dest='embedding_sample_size',
+                       help='(DEPRECATED: use --embedding-sample-size) Number of molecules for UMAP fitting')
 
     # Archive tessellation options
     parser.add_argument('--archive-type', type=str, default='grid',
@@ -139,6 +180,15 @@ Examples:
                        help='Recalculate archive and metrics from existing all_molecules_database.json in the specified directory')
 
     args = parser.parse_args()
+
+    # Resolve --problem preset (mainly used here for measure_bounds defaults)
+    from problem_config import resolve_from_args
+    _problem = resolve_from_args(args)
+    if _problem is not None:
+        if args.measure_bounds is None:
+            args.measure_bounds = _problem.measure_bounds_flat
+        if args.reference_point is None:
+            args.reference_point = _problem.reference_point
 
     # Handle recalculation mode
     if args.recalculate:
@@ -293,19 +343,45 @@ Examples:
             for i, val in enumerate(emb):
                 props[f'emb_{i}'] = float(val)
 
+<<<<<<< Updated upstream
         return props
 
     # Determine objective key
     if args.objective_key:
         objective_key = args.objective_key
+=======
+        # Negate objective for minimization (archive always maximises internally)
+        if negate and objective_key in props and props[objective_key] is not None:
+            props[objective_key] = -float(props[objective_key])
+
+        return props
+
+    # Determine objective key and direction
+    if args.objective_key:
+        objective_key = args.objective_key
+    elif args.fitness_mode == 'smartcadd' and args.smartcadd_mode == 'docking':
+        objective_key = 'docking_score'
+>>>>>>> Stashed changes
     elif args.fitness_mode == 'smartcadd':
         objective_key = 'qed'
     else:
         objective_key = 'beta_gamma_ratio'
+<<<<<<< Updated upstream
 
     # Set default reference point if not provided
     if args.reference_point is None:
         args.reference_point = [0.0, 50, 15.0]
+=======
+    # docking_score is always minimized (lower kcal/mol = tighter binding)
+    if objective_key == 'docking_score' and not args.maximize:
+        negate = True
+    else:
+        negate = args.minimize and not args.maximize
+
+    # Set default reference point if not provided (legacy: was [0.0, 50, 15.0])
+    if args.reference_point is None:
+        args.reference_point = [0.0]
+>>>>>>> Stashed changes
 
     # Create archive
     if args.archive_type == 'cvt':
@@ -317,8 +393,14 @@ Examples:
             cvt_measure_keys = ['num_atoms', 'num_bonds']
             cvt_measure_bounds = list(zip(args.measure_bounds[::2], args.measure_bounds[1::2]))
         else:
+<<<<<<< Updated upstream
             cvt_measure_keys = ['num_atoms', 'num_bonds']
             cvt_measure_bounds = [(5, 35), (4, 40)]
+=======
+            from problem_config import PROPERTY_BOUNDS as _PB
+            cvt_measure_keys = ['num_atoms', 'num_bonds']
+            cvt_measure_bounds = [_PB['num_atoms'], _PB['num_bonds']]
+>>>>>>> Stashed changes
         archive = CVTMAPElitesArchive(
             n_centroids=args.n_centroids,
             measure_keys=cvt_measure_keys,

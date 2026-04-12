@@ -92,9 +92,21 @@ class MolecularEmbedder:
         with torch.no_grad():
             for i in range(0, len(smiles_list), batch_size):
                 batch = smiles_list[i:i + batch_size]
+<<<<<<< Updated upstream
                 tokens = self.tokenizer(
                     batch, padding=True, truncation=True,
                     max_length=512, return_tensors='pt'
+=======
+                n_real = len(batch)
+                # Pad to fixed batch_size so every GPU call has shape (64, 128).
+                # Constant tensor shape → one ROCm kernel compiled at warmup, never again.
+                if n_real < batch_size:
+                    batch = batch + [batch[0]] * (batch_size - n_real)
+
+                tokens = self.tokenizer(
+                    batch, padding='max_length', truncation=True,
+                    max_length=128, return_tensors='pt'
+>>>>>>> Stashed changes
                 ).to(self.device)
 
                 outputs = self.model(**tokens)
@@ -103,7 +115,11 @@ class MolecularEmbedder:
                 hidden = outputs.last_hidden_state * attention_mask
                 pooled = hidden.sum(dim=1) / attention_mask.sum(dim=1)
 
+<<<<<<< Updated upstream
                 embeddings.append(pooled.cpu().numpy())
+=======
+                embeddings.append(pooled[:n_real].cpu().numpy())
+>>>>>>> Stashed changes
 
         return np.vstack(embeddings)
 

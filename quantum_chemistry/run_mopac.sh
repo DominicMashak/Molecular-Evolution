@@ -1,3 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+
 python ~/Molecular-Evolution/quantum_chemistry/main.py \
     --calculator semiempirical \
     --se-method PM7 \

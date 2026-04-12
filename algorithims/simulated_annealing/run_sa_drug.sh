@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run Simulated Annealing for drug-design molecular optimization
 # Uses SmartCADD for evaluation
 

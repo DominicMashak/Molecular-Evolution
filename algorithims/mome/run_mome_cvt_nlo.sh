@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run CVT-MOME (CVT Multi-Objective MAP-Elites) for NLO molecular optimization
 # Uses Centroidal Voronoi Tessellation instead of fixed grid for niche definition
 

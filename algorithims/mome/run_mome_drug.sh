@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run MOME (Multi-Objective MAP-Elites) for drug-design optimization
 # Uses SmartCADD with multi-objective quality-diversity
 

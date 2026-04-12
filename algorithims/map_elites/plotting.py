@@ -112,30 +112,60 @@ class PerformancePlotter:
         logger.info(f"Saved hypervolume plot to {hv_file}")
     
     def plot_archive_heatmap(self, archive, filename='archive_heatmap.png'):
-        """Plot heatmap of archive coverage"""
+        """Plot archive coverage. Uses a scatter plot for CVT archives and a
+        grid heatmap for fixed-grid archives."""
+        heatmap_file = self.output_dir / filename
+
+        # CVT archive: no natural 2D grid — render as scatter plot
+        if hasattr(archive, 'centroids'):
+            centroids = archive.centroids  # (n_centroids, n_dims)
+            objectives = []
+            coords = []
+            for i, cell in archive.cells.items():
+                if cell is not None:
+                    coords.append(centroids[i])
+                    objectives.append(cell['objective'])
+            if not coords:
+                return
+            coords = np.array(coords)
+            # Use first two dims for 2D scatter (or PCA if >2D)
+            if coords.shape[1] >= 2:
+                x, y = coords[:, 0], coords[:, 1]
+                xlabel = archive.measure_keys[0] if len(archive.measure_keys) > 0 else 'dim_0'
+                ylabel = archive.measure_keys[1] if len(archive.measure_keys) > 1 else 'dim_1'
+            else:
+                x = coords[:, 0]
+                y = np.zeros_like(x)
+                xlabel = archive.measure_keys[0]
+                ylabel = ''
+            fig, ax = plt.subplots(figsize=(10, 8))
+            sc = ax.scatter(x, y, c=objectives, cmap='viridis', s=60, alpha=0.85)
+            cbar = plt.colorbar(sc, ax=ax)
+            cbar.set_label(archive.objective_key)
+            ax.set_xlabel(xlabel)
+            ax.set_ylabel(ylabel)
+            ax.set_title(f'CVT Archive ({len(objectives)}/{archive.n_centroids} cells filled)')
+            plt.tight_layout()
+            plt.savefig(heatmap_file, dpi=150, bbox_inches='tight')
+            plt.close()
+            logger.info(f"Saved archive scatter plot to {heatmap_file}")
+            return
+
+        # Grid archive: standard 2D heatmap
         fig, ax = plt.subplots(figsize=(10, 8))
-        
-        # Create heatmap data
         heatmap = np.full(archive.measure_dims, np.nan)
         for entry in archive.get_all_solutions():
             idx = entry['indices']
             heatmap[idx] = entry['objective']
-        
         im = ax.imshow(heatmap.T, origin='lower', cmap='viridis', aspect='auto')
-        
         ax.set_xlabel(f'{archive.measure_keys[0]} Bin')
         ax.set_ylabel(f'{archive.measure_keys[1]} Bin')
-        ax.set_title('Archive Heatmap (Beta Mean)')
-        
-        # Add colorbar
+        ax.set_title(f'Archive Heatmap ({archive.objective_key})')
         cbar = plt.colorbar(im, ax=ax)
-        cbar.set_label('Beta Mean')
-        
+        cbar.set_label(archive.objective_key)
         plt.tight_layout()
-        heatmap_file = self.output_dir / filename
         plt.savefig(heatmap_file, dpi=150, bbox_inches='tight')
         plt.close()
-        
         logger.info(f"Saved archive heatmap to {heatmap_file}")
     
     def plot_archive_cells_evolution(self, performance_tracker, filename='archive_cells_evolution.png'):
@@ -204,24 +234,33 @@ class HypervolumeCalculator:
         self.hv_calculator = HV(ref_point=-self.reference_point)  # pymoo uses negative for max
     
     def calculate(self, archive):
-        """Calculate hypervolume of the archive"""
+        """Calculate hypervolume of the archive.
+
+        Supports both grid (MAPElitesArchive) and CVT (CVTMAPElitesArchive)
+        archives for any single objective key.
+        """
         if len(archive) == 0:
             return 0.0
-        
-        # Get points from archive: (beta_mean, num_atoms, homo_lumo_gap)
-        points = []
-        for entry in archive.get_all_solutions():
-            props = entry['properties']
-            point = [
-                props.get('beta_mean', 0.0),
-                props.get('num_atoms', 0),
-                props.get('homo_lumo_gap', 0.0)
-            ]
-            points.append(point)
-        
-        points = np.array(points)
-        
-        # For maximization, negate the points and reference
+
+        # Collect objective values generically across both archive types
+        objectives = []
+        if hasattr(archive, 'iter_filled_cells'):
+            for _, cell in archive.iter_filled_cells():
+                obj = cell.get('objective')
+                if obj is not None and not np.isinf(obj):
+                    objectives.append([float(obj)])
+        elif hasattr(archive, 'get_all_solutions'):
+            obj_key = getattr(archive, 'objective_key', 'beta_mean')
+            for entry in archive.get_all_solutions():
+                obj = entry.get('properties', {}).get(obj_key)
+                if obj is not None and not np.isinf(obj):
+                    objectives.append([float(obj)])
+
+        if not objectives:
+            return 0.0
+
+        points = np.array(objectives)  # (N, 1) for single-objective
+        # pymoo HV: ref_point was set to -reference_point (for maximisation convention)
         return float(self.hv_calculator.do(-points))
 
 class IGDCalculator:

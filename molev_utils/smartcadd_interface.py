@@ -126,6 +126,7 @@ class SmartCADDInterface:
         )
         logger.info("SmartCADD ADMETFilter initialized successfully")
 
+<<<<<<< Updated upstream
         # Validate mode requirements
         if self.mode == "docking":
             if not self.protein_code and not self.protein_path:
@@ -133,6 +134,32 @@ class SmartCADDInterface:
 
         logger.info(f"SmartCADD interface initialized (mode={self.mode})")
 
+=======
+        # Validate mode requirements and auto-prepare protein
+        if self.mode == "docking":
+            if not self.protein_code and not self.protein_path:
+                raise ValueError("Docking mode requires protein_code or protein_path")
+            self._protein_dir = self._prepare_protein()
+        else:
+            self._protein_dir = None
+
+        logger.info(f"SmartCADD interface initialized (mode={self.mode})")
+
+    def _prepare_protein(self) -> Path:
+        """Auto-download and prepare protein files via protein_manager."""
+        import sys as _sys
+        _repo_root = str(Path(__file__).parent.parent)
+        if _repo_root not in _sys.path:
+            _sys.path.insert(0, _repo_root)
+        from drug.protein_manager import ensure_protein_ready
+        protein_dir = ensure_protein_ready(
+            protein_code=self.protein_code,
+            protein_path=self.protein_path,
+        )
+        logger.info(f"Protein {self.protein_code} ready at {protein_dir}")
+        return protein_dir
+
+>>>>>>> Stashed changes
     def _find_smartcadd(self, explicit_path: str = None) -> Path:
         """Find SmartCADD installation directory."""
         if explicit_path:
@@ -235,11 +262,25 @@ class SmartCADDInterface:
         else:
             result['tpsa_range_distance'] = 0.0
 
+<<<<<<< Updated upstream
         # ADMET / PAINS filtering via SmartCADD
         result['admet_pass'] = self._evaluate_admet(smiles)
 
         # Docking (only in docking mode)
         if self.mode == "docking":
+=======
+        # ADMET / PAINS filtering via SmartCADD.
+        # This is the cheap pre-filter — molecules that fail never reach docking.
+        result['admet_pass'] = self._evaluate_admet(smiles)
+
+        # Docking (only in docking mode, only for ADMET-passing molecules)
+        if self.mode == "docking":
+            if not result['admet_pass']:
+                # ADMET/PAINS failure — skip expensive docking.
+                # docking_score stays at 0.0 (worst possible: real scores are ≤ 0 kcal/mol).
+                logger.debug(f"ADMET filter failed for {smiles} — skipping docking")
+                return result
+>>>>>>> Stashed changes
             try:
                 result['docking_score'] = self._evaluate_docking(smiles)
             except RuntimeError as e:
@@ -265,7 +306,16 @@ class SmartCADDInterface:
         return 1.0 if passes else 0.0
 
     def _evaluate_docking(self, smiles: str) -> float:
+<<<<<<< Updated upstream
         """Run Smina docking. Returns binding affinity (lower = better)."""
+=======
+        """Run Smina docking. Returns binding affinity (lower = better).
+
+        SmartCADD's SminaDockingFilter resolves receptor and ligand mol2 files
+        via relative paths from the CWD, so we temporarily cd to the prepared
+        protein directory where those files live.
+        """
+>>>>>>> Stashed changes
         from smartcadd.data import Compound
         from smartcadd.modules import SMILETo3D, PDBToPDBQT
         from smartcadd.filters import SminaDockingFilter
@@ -293,6 +343,7 @@ class SmartCADDInterface:
             if not hasattr(compound, 'pdbqt_path') or compound.pdbqt_path is None:
                 raise RuntimeError(f"No PDBQT path generated for {smiles}")
 
+<<<<<<< Updated upstream
             # Run docking
             docking_filter = SminaDockingFilter(
                 protein_code=self.protein_code,
@@ -301,6 +352,27 @@ class SmartCADDInterface:
                 output_dir=tmpdir,
             )
             docking_filter.run([compound])
+=======
+            # Run docking — cd to protein dir so SmartCADD's relative paths
+            # ({code}.pdbqt, {code}_lig.mol2) resolve correctly.
+            # We monkey-patch _load_and_preprocess_protein to a no-op because:
+            #   (a) protein_manager already prepared all files, and
+            #   (b) SmartCADD would try to cmd.fetch(protein_code) from RCSB,
+            #       which fails for codes like "6WPJ_A" (not a 4-char RCSB id).
+            _orig_cwd = os.getcwd()
+            try:
+                os.chdir(str(self._protein_dir))
+                docking_filter = SminaDockingFilter(
+                    protein_code=self.protein_code,
+                    optimized_pdb_dir=tmpdir,
+                    protein_path=None,
+                    output_dir=tmpdir,
+                )
+                docking_filter._load_and_preprocess_protein = lambda: None
+                docking_filter.run([compound])
+            finally:
+                os.chdir(_orig_cwd)
+>>>>>>> Stashed changes
 
             # Parse docking score from output
             docked_path = os.path.join(tmpdir, "dock_eval_docked.pdb")

@@ -1,9 +1,36 @@
 import json
 import csv
+<<<<<<< Updated upstream
+=======
+import sys
+import os
+>>>>>>> Stashed changes
 import numpy as np
 from pathlib import Path
 from typing import Callable, Dict, Any, List, Optional
 
+<<<<<<< Updated upstream
+=======
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', 'molev_utils'))
+from diversity_metrics import compute_diversity_metrics
+
+
+def _morgan_embeddings(smiles_list: List[str], nbits: int = 2048) -> np.ndarray:
+    """Compute Morgan fingerprint bit-vectors (ECFP4) for a list of SMILES.
+    Returns (N, nbits) float32 array. Invalid SMILES get zero vectors."""
+    from rdkit import Chem
+    from rdkit.Chem import rdMolDescriptors
+    out = np.zeros((len(smiles_list), nbits), dtype=np.float32)
+    for i, smi in enumerate(smiles_list):
+        if smi is None:
+            continue
+        mol = Chem.MolFromSmiles(smi)
+        if mol is not None:
+            fp = rdMolDescriptors.GetMorganFingerprintAsBitVect(mol, 2, nbits)
+            out[i] = np.array(fp, dtype=np.float32)
+    return out
+
+>>>>>>> Stashed changes
 
 class CMAMaeOptimizer:
     """
@@ -14,10 +41,16 @@ class CMAMaeOptimizer:
     - EvolutionStrategyEmitter with improvement ranking ("imp"): the CMA-ES component
     - Scheduler to coordinate emitters and archive
 
+<<<<<<< Updated upstream
     A MolecularVAE provides the continuous latent space:
         CMA-ES generates z ∈ ℝ^latent_dim
         VAE decoder maps z → SELFIES → molecule
         evaluate_fn scores each molecule and returns (objective, measures)
+=======
+    CMA-ES operates in the frozen ChemBERTa-2 MTR UMAP embedding space.
+    The decode step maps a latent vector to a SMILES string via nearest-neighbour
+    lookup in the running pool followed by SMILES mutation.
+>>>>>>> Stashed changes
 
     The result_archive (learning_rate=1.0) is a standard MAP-Elites archive that
     tracks the best-ever molecule per cell — used for final output and analysis.
@@ -27,7 +60,12 @@ class CMAMaeOptimizer:
         self,
         scheduler,
         result_archive,
+<<<<<<< Updated upstream
         vae,
+=======
+        embedder,
+        mutate_fn: Callable[[str], Optional[str]],
+>>>>>>> Stashed changes
         generate_fn: Callable[[], Optional[str]],
         evaluate_fn: Callable[[str], Dict[str, Any]],
         measure_keys: List[str],
@@ -35,6 +73,7 @@ class CMAMaeOptimizer:
         output_dir: str = "cma_mae_results",
         random_init_size: int = 100,
         threshold_min: float = -float('inf'),
+<<<<<<< Updated upstream
     ):
         """
         Args:
@@ -52,12 +91,30 @@ class CMAMaeOptimizer:
         self.scheduler = scheduler
         self.result_archive = result_archive
         self.vae = vae
+=======
+        reference_point: Optional[List[float]] = None,
+    ):
+        self.scheduler = scheduler
+        self.result_archive = result_archive
+        self.embedder = embedder
+        self._embed_dim: int = embedder.n_components
+        self.mutate_fn = mutate_fn
+>>>>>>> Stashed changes
         self.generate_fn = generate_fn
         self.evaluate_fn = evaluate_fn
         self.measure_keys = measure_keys
         self.objective_key = objective_key
         self.threshold_min = threshold_min
         self.random_init_size = random_init_size
+<<<<<<< Updated upstream
+=======
+        self.reference_point = reference_point if reference_point is not None else [0.0]
+
+        # Running pool of (embedding, SMILES) for nearest-neighbour decode
+        self._z_smiles_pool: List[tuple] = []
+
+        self.molecular_embedder = embedder
+>>>>>>> Stashed changes
 
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
@@ -67,16 +124,41 @@ class CMAMaeOptimizer:
         self.all_molecules: List[Dict] = []
         self._eval_cache: Dict[str, Dict] = {}
 
+<<<<<<< Updated upstream
+=======
+        # Failed evaluation tracking
+        self.total_eval_failures = 0
+        self.failed_evaluations: List[Dict] = []
+
+>>>>>>> Stashed changes
         # CSV stats log
         self._stats_file = self.output_dir / 'stats_log.csv'
         with open(self._stats_file, 'w', newline='') as f:
             writer = csv.writer(f)
             writer.writerow([
                 'generation', 'coverage', 'archive_size',
+<<<<<<< Updated upstream
                 'max_objective', 'mean_objective',
                 'decode_success_rate', 'total_evaluations',
             ])
 
+=======
+                'max_objective', 'mean_objective', 'qd_score',
+                'decode_success_rate', 'total_evaluations',
+                'int_div', 'scaffold_count', 'n_unique',
+                'eval_fail_count', 'eval_fail_rate',
+            ])
+
+    def _record_failure(self, smiles: str, props: Dict, generation: int) -> None:
+        """Log a failed evaluation (xTB/QC error) without inserting into archive."""
+        self.total_eval_failures += 1
+        self.failed_evaluations.append({
+            'smiles': smiles,
+            'generation': generation,
+            'error': props.get('error', 'unknown'),
+        })
+
+>>>>>>> Stashed changes
     def _evaluate_with_cache(self, smiles: str) -> Dict[str, Any]:
         if smiles in self._eval_cache:
             return self._eval_cache[smiles]
@@ -109,11 +191,26 @@ class CMAMaeOptimizer:
         except Exception:
             pass  # measure out of range — skip
 
+<<<<<<< Updated upstream
     def initialize(self) -> None:
         """
         Seed both archives using molecules generated by generate_fn,
         then encoded into latent space via the VAE.
         """
+=======
+    def _decode_to_smiles(self, z: np.ndarray) -> Optional[str]:
+        """Map a CMA-ES latent vector to a SMILES string via nearest-neighbour + mutation."""
+        if not self._z_smiles_pool:
+            return self.generate_fn()
+        pool_vecs = np.stack([p[0] for p in self._z_smiles_pool])
+        dists = np.linalg.norm(pool_vecs - z, axis=1)
+        nearest_smiles = self._z_smiles_pool[int(np.argmin(dists))][1]
+        mutated = self.mutate_fn(nearest_smiles)
+        return mutated if mutated is not None else nearest_smiles
+
+    def initialize(self) -> None:
+        """Seed both archives using random molecules encoded into the ChemBERTa-UMAP space."""
+>>>>>>> Stashed changes
         print(f"Initialising archive with {self.random_init_size} molecules...")
         n_added = 0
 
@@ -122,6 +219,7 @@ class CMAMaeOptimizer:
             if smiles is None:
                 continue
 
+<<<<<<< Updated upstream
             z = self.vae.encode(smiles)
             if z is None:
                 # Fall back to random z if encoding fails
@@ -131,6 +229,19 @@ class CMAMaeOptimizer:
                     continue
 
             props = self._evaluate_with_cache(smiles)
+=======
+            try:
+                z = self.embedder.embed([smiles])[0].astype(np.float64)
+            except Exception:
+                z = np.random.randn(self._embed_dim).astype(np.float64)
+            self._z_smiles_pool.append((z, smiles))
+
+            props = self._evaluate_with_cache(smiles)
+            if props.get('error') is not None:
+                self._record_failure(smiles, props, generation=0)
+                continue
+
+>>>>>>> Stashed changes
             obj, measures = self._get_obj_and_measures(props)
 
             self._add_to_archives(z, obj, measures, smiles, props, generation=0)
@@ -164,12 +275,33 @@ class CMAMaeOptimizer:
         measures = np.zeros((n, len(self.measure_keys)))
         n_decoded = 0
 
+<<<<<<< Updated upstream
         for i, z in enumerate(solutions):
             smiles = self.vae.decode(z)
             if smiles is None:
                 continue
 
             props = self._evaluate_with_cache(smiles)
+=======
+        # ── Decode all candidates (nearest-neighbour + mutation) ──────────
+        decoded = []
+        for z in solutions:
+            decoded.append(self._decode_to_smiles(z))
+
+        selected_idx = set(range(n))
+
+        for i, (z, smiles) in enumerate(zip(solutions, decoded)):
+            if smiles is None:
+                continue
+            if i not in selected_idx:
+                continue
+
+            props = self._evaluate_with_cache(smiles)
+            if props.get('error') is not None:
+                self._record_failure(smiles, props, generation=self.generation + 1)
+                continue
+
+>>>>>>> Stashed changes
             obj, meas = self._get_obj_and_measures(props)
 
             objectives[i] = obj
@@ -177,21 +309,50 @@ class CMAMaeOptimizer:
             n_decoded += 1
 
             self._add_to_archives(z, obj, meas, smiles, props, generation=self.generation + 1)
+<<<<<<< Updated upstream
+=======
+            self._z_smiles_pool.append((z.astype(np.float64), smiles))
+>>>>>>> Stashed changes
 
         # Update CMA-MAE archive and emitter covariance matrices
         self.scheduler.tell(objectives, measures)
         self.generation += 1
 
         decode_rate = n_decoded / n if n > 0 else 0.0
+<<<<<<< Updated upstream
         stats = self.result_archive.stats
+=======
+        fail_rate = (
+            self.total_eval_failures / self.total_evaluations
+            if self.total_evaluations > 0 else 0.0
+        )
+        stats = self.result_archive.stats
+
+        archive_smiles = [m['smiles'] for m in self.all_molecules if m.get('smiles')]
+        div = compute_diversity_metrics(archive_smiles, max_sample=500)
+
+        qd_score = float(self.result_archive.stats.qd_score) \
+            if self.result_archive.stats.qd_score is not None else 0.0
+>>>>>>> Stashed changes
         return {
             'generation': self.generation,
             'coverage': float(stats.coverage),
             'archive_size': int(stats.num_elites),
             'max_objective': float(stats.obj_max) if stats.obj_max is not None else 0.0,
             'mean_objective': float(stats.obj_mean) if stats.obj_mean is not None else 0.0,
+<<<<<<< Updated upstream
             'decode_success_rate': decode_rate,
             'total_evaluations': self.total_evaluations,
+=======
+            'qd_score': qd_score,
+            'decode_success_rate': decode_rate,
+            'total_evaluations': self.total_evaluations,
+            'int_div': div['int_div'],
+            'scaffold_count': div['scaffold_count'],
+            'n_unique': div['n_unique'],
+            'eval_fail_count': self.total_eval_failures,
+            'eval_fail_rate': fail_rate,
+>>>>>>> Stashed changes
         }
 
     def _log_stats(self, stats: Dict):
@@ -199,8 +360,15 @@ class CMAMaeOptimizer:
             writer = csv.writer(f)
             writer.writerow([
                 stats['generation'], stats['coverage'], stats['archive_size'],
+<<<<<<< Updated upstream
                 stats['max_objective'], stats['mean_objective'],
                 stats['decode_success_rate'], stats['total_evaluations'],
+=======
+                stats['max_objective'], stats['mean_objective'], stats['qd_score'],
+                stats['decode_success_rate'], stats['total_evaluations'],
+                stats['int_div'], stats['scaffold_count'], stats['n_unique'],
+                stats['eval_fail_count'], stats['eval_fail_rate'],
+>>>>>>> Stashed changes
             ])
 
     def run(
@@ -232,7 +400,11 @@ class CMAMaeOptimizer:
                     f"Coverage={stats['coverage']:6.2%}, "
                     f"Size={stats['archive_size']:5d}, "
                     f"Max={stats['max_objective']:8.3f}, "
+<<<<<<< Updated upstream
                     f"Mean={stats['mean_objective']:8.3f}, "
+=======
+                    f"QD={stats['qd_score']:10.3f}, "
+>>>>>>> Stashed changes
                     f"Decode={stats['decode_success_rate']:5.1%}"
                 )
 
@@ -240,6 +412,12 @@ class CMAMaeOptimizer:
         print(f"Final coverage: {self.result_archive.stats.coverage:.2%}")
         print(f"Final archive size: {self.result_archive.stats.num_elites}")
         print(f"Total evaluations: {self.total_evaluations}")
+<<<<<<< Updated upstream
+=======
+        if self.total_eval_failures > 0:
+            fail_rate = self.total_eval_failures / self.total_evaluations
+            print(f"Eval failures:     {self.total_eval_failures} ({fail_rate:.1%})")
+>>>>>>> Stashed changes
 
         self.save_archive(n_generations)
         self.save_molecule_database()
@@ -267,6 +445,7 @@ class CMAMaeOptimizer:
             json.dump(sorted_mols, f, indent=2)
         print(f"Saved {len(sorted_mols)} molecules to {db_file}")
 
+<<<<<<< Updated upstream
     def save_archive(self, generation: int):
         """Save current result_archive to JSON. Molecules looked up from database."""
         archive_data = {'generation': generation, 'solutions': []}
@@ -276,6 +455,29 @@ class CMAMaeOptimizer:
             # Decode z to recover SMILES for the archive snapshot
             z = np.array([row[f'solution_{i}'] for i in range(self.vae.latent_dim)])
             smiles = self.vae.decode(z)
+=======
+        if self.failed_evaluations:
+            fail_file = self.output_dir / 'failed_evaluations.json'
+            with open(fail_file, 'w') as f:
+                json.dump(self.failed_evaluations, f, indent=2)
+            print(f"Saved {len(self.failed_evaluations)} failed evaluations to {fail_file}")
+
+    def save_archive(self, generation: int):
+        """Save current result_archive to JSON. SMILES looked up from molecule database."""
+        archive_data = {'generation': generation, 'solutions': []}
+
+        # Build reverse map from z-bytes → smiles using the molecule database
+        _z_lookup = {
+            np.array(m['z_vector']).tobytes(): m['smiles']
+            for m in self.all_molecules
+            if m.get('z_vector') and m.get('smiles')
+        }
+
+        df = self.result_archive.data(return_type='pandas')
+        for _, row in df.iterrows():
+            z = np.array([row[f'solution_{i}'] for i in range(self._embed_dim)])
+            smiles = _z_lookup.get(z.tobytes())
+>>>>>>> Stashed changes
             entry = {
                 'objective': float(row['objective']),
                 'measures': [float(row[f'measures_{i}'])

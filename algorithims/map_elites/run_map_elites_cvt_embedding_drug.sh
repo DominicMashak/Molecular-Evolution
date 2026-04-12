@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run CVT-MAP-Elites with ChemBERTa-2 embeddings for drug-design optimization
 # Uses transformer-based molecular embeddings as CVT behavior descriptors
 

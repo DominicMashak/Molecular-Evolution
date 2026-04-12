@@ -1,4 +1,8 @@
 #!/bin/bash
+<<<<<<< Updated upstream
+=======
+set -euo pipefail
+>>>>>>> Stashed changes
 # Run MOME (Multi-Objective MAP-Elites) for NLO molecular optimization
 # Uses quantum chemistry calculations with multi-objective quality-diversity
 
