@@ -23,6 +23,7 @@ Molecular-Evolution is a GitHub repository for our project using evolutionary al
 - Non-dominated Sorting Genetic Algorithm II (NSGA-II)
 - Multi-dimensional Archive of Phenotypic Elites (MAP-Elites)
 - Multi-Objective MAP-Elites (MOME)
+- Covariance Matrix Adaptation MAP-Elites (CMA-ME)
 - Covariance Matrix Adaptation MAP-Annealing (CMA-MAE)
 - Multi-Objective Covariance Matrix Adaptation MAP-Annealing (MO-CMA-MAE)
 
