@@ -23,7 +23,7 @@ Molecular-Evolution is a GitHub repository for our project using evolutionary al
 - Non-dominated Sorting Genetic Algorithm II (NSGA-II)
 - Multi-dimensional Archive of Phenotypic Elites (MAP-Elites)
 - Multi-Objective MAP-Elites (MOME)
-- Covariance Matrix Adaptation MAP-Elites (CMA-ME)
+- Covariance Matrix Adaptation MAP-Elites (CMA-ME) *In-progress*
 - Covariance Matrix Adaptation MAP-Annealing (CMA-MAE)
 - Multi-Objective Covariance Matrix Adaptation MAP-Annealing (MO-CMA-MAE)
 
@@ -31,6 +31,8 @@ Molecular-Evolution is a GitHub repository for our project using evolutionary al
 
 - Simplified Molecular Input Line Entry System (SMILES)
 - Self-Referencing Embedded Strings (SELFIES)
+- Macromolecule SMILES (BigSMILES) *In-progress*
+- Simplified Line-Input Crystal-Encoding System (SLICES) *In-progress*
 
 ## Supported Quantum Chemistry Methods
 
