@@ -152,7 +152,7 @@ def setup_calculator_config(args) -> CalculatorConfig:
     # Add properties to config
     config.properties = getattr(args, 'properties', None)
     if config.properties is None:
-        config.properties = ['beta', 'dipole', 'homo_lumo_gap', 'transition_dipole', 'oscillator_strength', 'gamma', 'energy', 'alpha']  # Default to all
+        config.properties = ['beta', 'dipole', 'homo_lumo_gap', 'transition_dipole', 'oscillator_strength', 'excitation_energies', 'gamma', 'energy', 'alpha']  # Default to all
     return config
 
 
@@ -303,8 +303,69 @@ def process_single_molecule(args):
             print(f"Transition dipole: {format_value(result.transition_dipole, True)} a.u.")
         if 'oscillator_strength' in requested and hasattr(result, 'oscillator_strength') and result.oscillator_strength is not None:
             print(f"Oscillator strength: {format_value(result.oscillator_strength, True)}")
+        if 'excitation_energies' in requested and hasattr(result, 'excitation_energies') and result.excitation_energies:
+            print(f"\n{'Excitation Energies (TD-DFT):':^40}")
+            print(f"{'-'*40}")
+            energies_au = result.excitation_energies
+            for i, e_au in enumerate(energies_au):
+                e_ev = e_au * 27.2114
+                e_nm = 1239.84 / e_ev if e_ev > 0 else float('inf')
+                print(f"S{i+1}: {e_ev:.4f} eV  ({e_nm:.1f} nm)  [{e_au:.6f} a.u.]")
         if 'gamma' in requested and hasattr(result, 'gamma') and result.gamma is not None:
             print(f"Gamma mean:       {format_value(result.gamma, True)} a.u.")
+
+        # Kuzyk fundamental limit ratio
+        if 'beta' in requested and result.beta_vec is not None:
+            try:
+                from rdkit import Chem
+                from rdkit.Chem import rdchem
+                mol_rdkit = Chem.MolFromSmiles(canonical_smiles)
+                if mol_rdkit is not None:
+                    # Count π electrons (not total electrons) per Kuzyk formalism
+                    n_pi = 0
+                    for atom in mol_rdkit.GetAtoms():
+                        anum = atom.GetAtomicNum()
+                        hyb = atom.GetHybridization()
+                        is_arom = atom.GetIsAromatic()
+                        fc = atom.GetFormalCharge()
+                        n_hs = atom.GetTotalNumHs()
+                        if is_arom:
+                            if anum == 6:
+                                n_pi += 1
+                            elif anum == 7:
+                                n_pi += 2 if (n_hs > 0 or fc < 0) else 1
+                            elif anum in (8, 16):
+                                n_pi += 2
+                        elif hyb == rdchem.HybridizationType.SP2:
+                            if anum == 6:
+                                n_pi += 1
+                            elif anum == 7:
+                                n_pi += 0 if fc > 0 else 2
+                            elif anum in (8, 16):
+                                n_pi += 2
+                    # E_10 in a.u.: prefer first TD-DFT excitation energy, fall back to HOMO-LUMO gap
+                    e10_au = None
+                    if hasattr(result, 'excitation_energies') and result.excitation_energies:
+                        e10_au = result.excitation_energies[0]
+                    elif result.homo_lumo_gap is not None:
+                        e10_au = result.homo_lumo_gap / 27.2114
+                    if n_pi > 0 and e10_au and e10_au > 0:
+                        # Three-level model limit (Kuzyk): β_max = 3^(1/4) * N_pi^(3/2) / E_10^(7/2) [a.u.]
+                        beta_max_au = (3 ** 0.25) * (n_pi ** 1.5) / (e10_au ** 3.5)
+                        beta_max_esu = beta_max_au * 8.641e-33
+                        beta_esu = abs(result.beta_vec) * 8.641e-33
+                        kuzyk_ratio = abs(result.beta_vec) / beta_max_au
+                        print(f"\n{'Kuzyk Fundamental Limit (3-level):':^40}")
+                        print(f"{'-'*40}")
+                        print(f"N_π electrons:    {n_pi}")
+                        print(f"E₁₀ (a.u.):       {e10_au:.6f}  ({e10_au * 27.2114:.4f} eV)")
+                        print(f"β_max (a.u.):     {format_value(beta_max_au, True)}")
+                        print(f"β_max (esu):      {beta_max_esu:.4e}")
+                        print(f"β (esu):          {beta_esu:.4e}")
+                        print(f"β/β_max ratio:    {kuzyk_ratio:.6f}  ({kuzyk_ratio*100:.4f}% of limit)")
+            except Exception as e:
+                if args.verbose:
+                    print(f"  Warning: Could not compute Kuzyk limit: {e}")
     
     print(f"\n{'='*80}")
 
@@ -602,7 +663,7 @@ Examples:
     parser.add_argument('--scientific', action='store_true',
                        help='Display numeric results in scientific notation (default: False)')
     parser.add_argument('--properties', nargs='*', default=None,
-                       help='List of properties to calculate (beta dipole homo_lumo_gap transition_dipole oscillator_strength gamma energy alpha). Default: all')
+                       help='List of properties to calculate (beta dipole homo_lumo_gap transition_dipole oscillator_strength excitation_energies gamma energy alpha). Default: all')
     args = parser.parse_args()
 
     if args.check_deps or len(sys.argv) == 1:

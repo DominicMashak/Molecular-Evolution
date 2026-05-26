@@ -393,9 +393,11 @@ class DFTCalculator(Calculator):
         
         # Perform TD-DFT
         from pyscf import tdscf
-        if mf.spin == 0:
+        if mf.mol.spin == 0:
             td = tdscf.TDDFT(mf)
-        
+        else:
+            td = tdscf.TDA(mf)
+
         td.nstates = n_states
         td.verbose = 0 if not self.verbose else 4
         
@@ -407,9 +409,10 @@ class DFTCalculator(Calculator):
         else:
             td.kernel()
         
-        # Check convergence
-        if not td.converged:
-            raise RuntimeError("TD-DFT did not converge")
+        # Check convergence (td.converged is a list/array — require at least first state converged)
+        converged_list = list(td.converged)
+        if not converged_list or not converged_list[0]:
+            raise RuntimeError("TD-DFT did not converge for first excited state")
         
         # Extract properties using built-in methods
         transition_dipoles = td.transition_dipole()  # Array of [x, y, z] for each state

@@ -146,9 +146,10 @@ class MoleculeResult:
     dipole_moment: Optional[float] = None
     homo_lumo_gap: Optional[float] = None
     total_energy: Optional[float] = None
-    transition_dipole: Optional[float] = None 
-    oscillator_strength: Optional[float] = None 
-    gamma: Optional[float] = None 
+    transition_dipole: Optional[float] = None
+    oscillator_strength: Optional[float] = None
+    excitation_energies: Optional[List[float]] = None
+    gamma: Optional[float] = None
     alpha_mean: Optional[float] = None 
     wall_time: float = 0.0
     error: Optional[str] = None

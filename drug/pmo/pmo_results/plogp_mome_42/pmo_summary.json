@@ -1,0 +1,14 @@
+{
+  "oracle": "penalized_logp",
+  "algorithm": "mome",
+  "seed": 42,
+  "budget": 10000,
+  "top1_auc": 1.0,
+  "top10_auc": 1.0,
+  "top100_auc": 1.0,
+  "final_top1": 4.3553989505055535,
+  "final_top10": 3.8264391510494624,
+  "final_top100": 3.031755817277136,
+  "n_evaluations": 8134,
+  "n_valid": 8134
+}

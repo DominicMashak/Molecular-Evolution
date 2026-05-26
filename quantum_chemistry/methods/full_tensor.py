@@ -261,6 +261,8 @@ class FullTensorMethod(HyperpolarizabilityMethod):
                         result.transition_dipole = trans_result['transition_dipole_magnitudes'][0] if trans_result['transition_dipole_magnitudes'] else None
                     if trans_result and 'oscillator_strengths' in trans_result:
                         result.oscillator_strength = trans_result['oscillator_strengths'][0] if trans_result['oscillator_strengths'] else None
+                    if trans_result and 'excitation_energies' in trans_result:
+                        result.excitation_energies = trans_result['excitation_energies']
             except Exception as e:
                 if self.verbose:
                     print(f"  Warning: Could not calculate transition dipole: {e}")

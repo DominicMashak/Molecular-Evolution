@@ -178,7 +178,8 @@ class Processor:
             # Transfer results - include all possible properties
             for key in ['beta_vec', 'beta_xxx', 'beta_yyy', 'beta_zzz', 'beta_mean',
                        'dipole_moment', 'homo_lumo_gap', 'total_energy', 'error',
-                       'transition_dipole', 'oscillator_strength', 'gamma', 'alpha_mean']:
+                       'transition_dipole', 'oscillator_strength', 'excitation_energies',
+                       'gamma', 'alpha_mean']:
                 if hasattr(calc_result, key):
                     setattr(result, key, getattr(calc_result, key))
             

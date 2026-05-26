@@ -29,6 +29,12 @@ try:
 except ImportError:
     pass
 
+try:
+    from calculators.qe_crystal import QECrystalCalculator
+    calculators['qe_crystal'] = QECrystalCalculator
+except ImportError:
+    pass
+
 def get_calculator(name: str):
     """
     Get calculator class by name.

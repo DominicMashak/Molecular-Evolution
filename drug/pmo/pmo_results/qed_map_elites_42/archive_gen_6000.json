@@ -1,0 +1,2675 @@
+{
+  "generation": 6000,
+  "solutions": [
+    {
+      "indices": [
+        5,
+        4
+      ],
+      "smiles": "BrOCSBr",
+      "properties": {
+        "qed": 0.6625414608997848,
+        "sa": 0.48870572215204916,
+        "mol_weight": 221.90099999999998,
+        "num_atoms": 5,
+        "num_bonds": 4
+      },
+      "objective": 0.6625414608997848
+    },
+    {
+      "indices": [
+        5,
+        5
+      ],
+      "smiles": "BrNC1CC1",
+      "properties": {
+        "qed": 0.5308848078455523,
+        "sa": 0.7037838286609248,
+        "mol_weight": 135.992,
+        "num_atoms": 5,
+        "num_bonds": 5
+      },
+      "objective": 0.5308848078455523
+    },
+    {
+      "indices": [
+        5,
+        6
+      ],
+      "smiles": "NC1=C2CC12",
+      "properties": {
+        "qed": 0.43100643981589376,
+        "sa": 0.683651206053843,
+        "mol_weight": 67.091,
+        "num_atoms": 5,
+        "num_bonds": 6
+      },
+      "objective": 0.43100643981589376
+    },
+    {
+      "indices": [
+        5,
+        7
+      ],
+      "smiles": "S1C2=C3C1C23",
+      "properties": {
+        "qed": 0.41981613437453036,
+        "sa": 0.5425133834217388,
+        "mol_weight": 82.12699999999998,
+        "num_atoms": 5,
+        "num_bonds": 7
+      },
+      "objective": 0.41981613437453036
+    },
+    {
+      "indices": [
+        6,
+        5
+      ],
+      "smiles": "Cl[SH](Br)COBr",
+      "properties": {
+        "qed": 0.7493420123894862,
+        "sa": 0.35774258931904485,
+        "mol_weight": 258.36199999999997,
+        "num_atoms": 6,
+        "num_bonds": 5
+      },
+      "objective": 0.7493420123894862
+    },
+    {
+      "indices": [
+        6,
+        6
+      ],
+      "smiles": "BrNCC1CC1",
+      "properties": {
+        "qed": 0.5845995513454343,
+        "sa": 0.7430936142929906,
+        "mol_weight": 150.01899999999998,
+        "num_atoms": 6,
+        "num_bonds": 6
+      },
+      "objective": 0.5845995513454343
+    },
+    {
+      "indices": [
+        6,
+        7
+      ],
+      "smiles": "c1sc2nc1N2",
+      "properties": {
+        "qed": 0.5351759995514678,
+        "sa": 0.5338665886800108,
+        "mol_weight": 98.13,
+        "num_atoms": 6,
+        "num_bonds": 7
+      },
+      "objective": 0.5351759995514678
+    },
+    {
+      "indices": [
+        6,
+        8
+      ],
+      "smiles": "OC12c3sn1c32",
+      "properties": {
+        "qed": 0.48314553781083885,
+        "sa": 0.5163225428053972,
+        "mol_weight": 99.114,
+        "num_atoms": 6,
+        "num_bonds": 8
+      },
+      "objective": 0.48314553781083885
+    },
+    {
+      "indices": [
+        6,
+        9
+      ],
+      "smiles": "OC12C3=S4N1C342",
+      "properties": {
+        "qed": 0.3135131829342409,
+        "sa": 0.3406787791281555,
+        "mol_weight": 99.114,
+        "num_atoms": 6,
+        "num_bonds": 9
+      },
+      "objective": 0.3135131829342409
+    },
+    {
+      "indices": [
+        7,
+        6
+      ],
+      "smiles": "ClO[SH](Cl)COBr",
+      "properties": {
+        "qed": 0.750402956291242,
+        "sa": 0.3755534483182505,
+        "mol_weight": 229.91,
+        "num_atoms": 7,
+        "num_bonds": 6
+      },
+      "objective": 0.750402956291242
+    },
+    {
+      "indices": [
+        7,
+        7
+      ],
+      "smiles": "BrSc1nncs1",
+      "properties": {
+        "qed": 0.6874643527280744,
+        "sa": 0.6861236185913416,
+        "mol_weight": 197.08200000000002,
+        "num_atoms": 7,
+        "num_bonds": 7
+      },
+      "objective": 0.6874643527280744
+    },
+    {
+      "indices": [
+        7,
+        8
+      ],
+      "smiles": "Brc1sc2nc1O2",
+      "properties": {
+        "qed": 0.614981442104247,
+        "sa": 0.5596666239381143,
+        "mol_weight": 178.01,
+        "num_atoms": 7,
+        "num_bonds": 8
+      },
+      "objective": 0.614981442104247
+    },
+    {
+      "indices": [
+        7,
+        9
+      ],
+      "smiles": "OC12C3=C1C2(Br)S3",
+      "properties": {
+        "qed": 0.5528773773997356,
+        "sa": 0.4529242732477352,
+        "mol_weight": 177.022,
+        "num_atoms": 7,
+        "num_bonds": 9
+      },
+      "objective": 0.5528773773997356
+    },
+    {
+      "indices": [
+        8,
+        7
+      ],
+      "smiles": "CSC(N)=C(Br)SC",
+      "properties": {
+        "qed": 0.7625629357797782,
+        "sa": 0.62721480090518,
+        "mol_weight": 214.153,
+        "num_atoms": 8,
+        "num_bonds": 7
+      },
+      "objective": 0.7625629357797782
+    },
+    {
+      "indices": [
+        8,
+        8
+      ],
+      "smiles": "BrSSc1nncs1",
+      "properties": {
+        "qed": 0.7277416626672207,
+        "sa": 0.6502456370255812,
+        "mol_weight": 229.14900000000003,
+        "num_atoms": 8,
+        "num_bonds": 8
+      },
+      "objective": 0.7277416626672207
+    },
+    {
+      "indices": [
+        8,
+        9
+      ],
+      "smiles": "Oc1c(Br)cc2nc1-2",
+      "properties": {
+        "qed": 0.6529738047415976,
+        "sa": 0.7699689267793057,
+        "mol_weight": 171.981,
+        "num_atoms": 8,
+        "num_bonds": 9
+      },
+      "objective": 0.6529738047415976
+    },
+    {
+      "indices": [
+        8,
+        10
+      ],
+      "smiles": "BrOC1=c2sc3n2S=31",
+      "properties": {
+        "qed": 0.6360552818424859,
+        "sa": 0.38230322966590513,
+        "mol_weight": 210.077,
+        "num_atoms": 8,
+        "num_bonds": 10
+      },
+      "objective": 0.6360552818424859
+    },
+    {
+      "indices": [
+        8,
+        11
+      ],
+      "smiles": "C1=C2NSC13C1=C2C13",
+      "properties": {
+        "qed": 0.4759487336203437,
+        "sa": 0.33153220184586935,
+        "mol_weight": 121.16399999999997,
+        "num_atoms": 8,
+        "num_bonds": 11
+      },
+      "objective": 0.4759487336203437
+    },
+    {
+      "indices": [
+        8,
+        12
+      ],
+      "smiles": "C1=C2C3=C4C15SC2C345",
+      "properties": {
+        "qed": 0.45877554283226724,
+        "sa": 0.7285125330234014,
+        "mol_weight": 118.15999999999998,
+        "num_atoms": 8,
+        "num_bonds": 12
+      },
+      "objective": 0.45877554283226724
+    },
+    {
+      "indices": [
+        9,
+        8
+      ],
+      "smiles": "CCSC(N)=C(Br)SC",
+      "properties": {
+        "qed": 0.8035295725739727,
+        "sa": 0.6497834358378145,
+        "mol_weight": 228.18,
+        "num_atoms": 9,
+        "num_bonds": 8
+      },
+      "objective": 0.8035295725739727
+    },
+    {
+      "indices": [
+        9,
+        9
+      ],
+      "smiles": "ClOc1ncc(SBr)s1",
+      "properties": {
+        "qed": 0.8005670223692208,
+        "sa": 0.6070107000518612,
+        "mol_weight": 246.538,
+        "num_atoms": 9,
+        "num_bonds": 9
+      },
+      "objective": 0.8005670223692208
+    },
+    {
+      "indices": [
+        9,
+        10
+      ],
+      "smiles": "CNc1c2ncc-2c1Br",
+      "properties": {
+        "qed": 0.7328389017699299,
+        "sa": 0.7520322385133996,
+        "mol_weight": 185.024,
+        "num_atoms": 9,
+        "num_bonds": 10
+      },
+      "objective": 0.7328389017699299
+    },
+    {
+      "indices": [
+        9,
+        11
+      ],
+      "smiles": "BrOC1=c2sc3n2[SH]1C=3",
+      "properties": {
+        "qed": 0.684708450906208,
+        "sa": 0.3588640024940889,
+        "mol_weight": 224.104,
+        "num_atoms": 9,
+        "num_bonds": 11
+      },
+      "objective": 0.684708450906208
+    },
+    {
+      "indices": [
+        9,
+        12
+      ],
+      "smiles": "Br[SH]1NC2=CC13C1=C2C13",
+      "properties": {
+        "qed": 0.5654357458167097,
+        "sa": 0.2408583956949525,
+        "mol_weight": 202.076,
+        "num_atoms": 9,
+        "num_bonds": 12
+      },
+      "objective": 0.5654357458167097
+    },
+    {
+      "indices": [
+        9,
+        13
+      ],
+      "smiles": "Br[SH]1NC2=C3C45C2=C4C315",
+      "properties": {
+        "qed": 0.5586269595440048,
+        "sa": 0.25502830716879465,
+        "mol_weight": 200.05999999999997,
+        "num_atoms": 9,
+        "num_bonds": 13
+      },
+      "objective": 0.5586269595440048
+    },
+    {
+      "indices": [
+        10,
+        9
+      ],
+      "smiles": "CCS(=S)C(N)=C(Br)SC",
+      "properties": {
+        "qed": 0.8393783933427638,
+        "sa": 0.5280678830022791,
+        "mol_weight": 260.247,
+        "num_atoms": 10,
+        "num_bonds": 9
+      },
+      "objective": 0.8393783933427638
+    },
+    {
+      "indices": [
+        10,
+        10
+      ],
+      "smiles": "Oc1nc(OF)sc1SBr",
+      "properties": {
+        "qed": 0.870036441615071,
+        "sa": 0.5835073923067093,
+        "mol_weight": 246.082,
+        "num_atoms": 10,
+        "num_bonds": 10
+      },
+      "objective": 0.870036441615071
+    },
+    {
+      "indices": [
+        10,
+        11
+      ],
+      "smiles": "CCNc1c2ncc-2c1Br",
+      "properties": {
+        "qed": 0.8016891104186552,
+        "sa": 0.7679128054121225,
+        "mol_weight": 199.051,
+        "num_atoms": 10,
+        "num_bonds": 11
+      },
+      "objective": 0.8016891104186552
+    },
+    {
+      "indices": [
+        10,
+        12
+      ],
+      "smiles": "BrOC1=c2sc3n2[SH](C=3)O1",
+      "properties": {
+        "qed": 0.7181946341402883,
+        "sa": 0.36014399971315453,
+        "mol_weight": 240.103,
+        "num_atoms": 10,
+        "num_bonds": 12
+      },
+      "objective": 0.7181946341402883
+    },
+    {
+      "indices": [
+        10,
+        13
+      ],
+      "smiles": "SCC1SC2=CC13C1=C2C13",
+      "properties": {
+        "qed": 0.5800736019515462,
+        "sa": 0.3357765450112578,
+        "mol_weight": 166.26999999999998,
+        "num_atoms": 10,
+        "num_bonds": 13
+      },
+      "objective": 0.5800736019515462
+    },
+    {
+      "indices": [
+        10,
+        14
+      ],
+      "smiles": "BrN1C2SC3=CC24C2=C3C214",
+      "properties": {
+        "qed": 0.5612059766428209,
+        "sa": 0.24903616942330536,
+        "mol_weight": 212.07099999999997,
+        "num_atoms": 10,
+        "num_bonds": 14
+      },
+      "objective": 0.5612059766428209
+    },
+    {
+      "indices": [
+        10,
+        15
+      ],
+      "smiles": "C1=C2SC34SC3C35C2C3C145",
+      "properties": {
+        "qed": 0.4996374308692244,
+        "sa": 0.29328658499069327,
+        "mol_weight": 164.254,
+        "num_atoms": 10,
+        "num_bonds": 15
+      },
+      "objective": 0.4996374308692244
+    },
+    {
+      "indices": [
+        11,
+        10
+      ],
+      "smiles": "CCCS(=S)C(N)=C(Br)SC",
+      "properties": {
+        "qed": 0.8517378391733911,
+        "sa": 0.5529601830809407,
+        "mol_weight": 274.274,
+        "num_atoms": 11,
+        "num_bonds": 10
+      },
+      "objective": 0.8517378391733911
+    },
+    {
+      "indices": [
+        11,
+        11
+      ],
+      "smiles": "CNc1nc(OCl)sc1SBr",
+      "properties": {
+        "qed": 0.9189414911939566,
+        "sa": 0.6148989369926156,
+        "mol_weight": 275.58,
+        "num_atoms": 11,
+        "num_bonds": 11
+      },
+      "objective": 0.9189414911939566
+    },
+    {
+      "indices": [
+        11,
+        12
+      ],
+      "smiles": "BrONC1=C(Br)SC=C2N=C21",
+      "properties": {
+        "qed": 0.7949490031668863,
+        "sa": 0.5604322206981573,
+        "mol_weight": 297.95900000000006,
+        "num_atoms": 11,
+        "num_bonds": 12
+      },
+      "objective": 0.7949490031668863
+    },
+    {
+      "indices": [
+        11,
+        13
+      ],
+      "smiles": "Cl[SH]12C=c3sc(n31)=C(OBr)O2",
+      "properties": {
+        "qed": 0.7758375438192898,
+        "sa": 0.40383569464356683,
+        "mol_weight": 275.55600000000004,
+        "num_atoms": 11,
+        "num_bonds": 13
+      },
+      "objective": 0.7758375438192898
+    },
+    {
+      "indices": [
+        11,
+        14
+      ],
+      "smiles": "SCC1SC2=C(Br)C13C1=C2C13",
+      "properties": {
+        "qed": 0.6926439403890976,
+        "sa": 0.3533184275075018,
+        "mol_weight": 245.16599999999997,
+        "num_atoms": 11,
+        "num_bonds": 14
+      },
+      "objective": 0.6926439403890976
+    },
+    {
+      "indices": [
+        11,
+        15
+      ],
+      "smiles": "BrN1C2SC3=CC24NC12C3=C42",
+      "properties": {
+        "qed": 0.6195722086455585,
+        "sa": 0.24377534919124302,
+        "mol_weight": 227.08599999999998,
+        "num_atoms": 11,
+        "num_bonds": 15
+      },
+      "objective": 0.6195722086455585
+    },
+    {
+      "indices": [
+        11,
+        16
+      ],
+      "smiles": "C1=C2SC34[SH]=[SH]C3C35C2C3C145",
+      "properties": {
+        "qed": 0.5345855416254618,
+        "sa": 0.18975034449598205,
+        "mol_weight": 198.337,
+        "num_atoms": 11,
+        "num_bonds": 16
+      },
+      "objective": 0.5345855416254618
+    },
+    {
+      "indices": [
+        11,
+        17
+      ],
+      "smiles": "O1C2=C3N4C15C1=C2C32C1SC425",
+      "properties": {
+        "qed": 0.47420890638181706,
+        "sa": 0.3126863407472432,
+        "mol_weight": 159.16899999999998,
+        "num_atoms": 11,
+        "num_bonds": 17
+      },
+      "objective": 0.47420890638181706
+    },
+    {
+      "indices": [
+        12,
+        11
+      ],
+      "smiles": "CCC(SC)=C(Br)CC(Cl)=CN",
+      "properties": {
+        "qed": 0.8408716098136896,
+        "sa": 0.6213957956307257,
+        "mol_weight": 270.623,
+        "num_atoms": 12,
+        "num_bonds": 11
+      },
+      "objective": 0.8408716098136896
+    },
+    {
+      "indices": [
+        12,
+        12
+      ],
+      "smiles": "CNc1nc(OF)sc1S(=S)Br",
+      "properties": {
+        "qed": 0.8657783918978934,
+        "sa": 0.5345141647841578,
+        "mol_weight": 291.192,
+        "num_atoms": 12,
+        "num_bonds": 12
+      },
+      "objective": 0.8657783918978934
+    },
+    {
+      "indices": [
+        12,
+        13
+      ],
+      "smiles": "NC=CCC(Br)=c1scc2c1=C2",
+      "properties": {
+        "qed": 0.8424024167659397,
+        "sa": 0.5757529989587069,
+        "mol_weight": 242.141,
+        "num_atoms": 12,
+        "num_bonds": 13
+      },
+      "objective": 0.8424024167659397
+    },
+    {
+      "indices": [
+        12,
+        14
+      ],
+      "smiles": "ClO[SH]12C=c3sc(n31)=C(OBr)O2",
+      "properties": {
+        "qed": 0.8261211507187202,
+        "sa": 0.40864937904920456,
+        "mol_weight": 291.555,
+        "num_atoms": 12,
+        "num_bonds": 14
+      },
+      "objective": 0.8261211507187202
+    },
+    {
+      "indices": [
+        12,
+        15
+      ],
+      "smiles": "SC12C3C4=CC1(C(CSCl)S4)C32",
+      "properties": {
+        "qed": 0.7302246325365936,
+        "sa": 0.25880605417118335,
+        "mol_weight": 234.798,
+        "num_atoms": 12,
+        "num_bonds": 15
+      },
+      "objective": 0.7302246325365936
+    },
+    {
+      "indices": [
+        12,
+        16
+      ],
+      "smiles": "SC12C3C4=CC15C(CSCl)(S4)C325",
+      "properties": {
+        "qed": 0.727241086693071,
+        "sa": 0.26549009091768194,
+        "mol_weight": 232.78199999999998,
+        "num_atoms": 12,
+        "num_bonds": 16
+      },
+      "objective": 0.727241086693071
+    },
+    {
+      "indices": [
+        12,
+        17
+      ],
+      "smiles": "ClSCC12SC3=CC14C15SC31C245",
+      "properties": {
+        "qed": 0.6695027495171999,
+        "sa": 0.20836843563705168,
+        "mol_weight": 230.766,
+        "num_atoms": 12,
+        "num_bonds": 17
+      },
+      "objective": 0.6695027495171999
+    },
+    {
+      "indices": [
+        12,
+        18
+      ],
+      "smiles": "S=S1C2C3=C4C5=C6N7C3(O5)C71C462",
+      "properties": {
+        "qed": 0.48923587848150357,
+        "sa": 0.23680503648066953,
+        "mol_weight": 191.23599999999996,
+        "num_atoms": 12,
+        "num_bonds": 18
+      },
+      "objective": 0.48923587848150357
+    },
+    {
+      "indices": [
+        13,
+        12
+      ],
+      "smiles": "CSC(SC)=C(Br)C(F)C(Cl)=CN",
+      "properties": {
+        "qed": 0.8583162575324397,
+        "sa": 0.5618392980631466,
+        "mol_weight": 306.653,
+        "num_atoms": 13,
+        "num_bonds": 12
+      },
+      "objective": 0.8583162575324397
+    },
+    {
+      "indices": [
+        13,
+        13
+      ],
+      "smiles": "Cc1ccc(C(C)N)c(COBr)n1",
+      "properties": {
+        "qed": 0.8877681178119567,
+        "sa": 0.7131030076868562,
+        "mol_weight": 245.12,
+        "num_atoms": 13,
+        "num_bonds": 13
+      },
+      "objective": 0.8877681178119567
+    },
+    {
+      "indices": [
+        13,
+        14
+      ],
+      "smiles": "NC=CCCC(Br)=c1scc2c1=N2",
+      "properties": {
+        "qed": 0.8936507262238992,
+        "sa": 0.6061295172662866,
+        "mol_weight": 257.156,
+        "num_atoms": 13,
+        "num_bonds": 14
+      },
+      "objective": 0.8936507262238992
+    },
+    {
+      "indices": [
+        13,
+        15
+      ],
+      "smiles": "NCCCC1C(Br)=c2sc1c1c2=N1",
+      "properties": {
+        "qed": 0.8852209390842726,
+        "sa": 0.5349998030700502,
+        "mol_weight": 257.15599999999995,
+        "num_atoms": 13,
+        "num_bonds": 15
+      },
+      "objective": 0.8852209390842726
+    },
+    {
+      "indices": [
+        13,
+        16
+      ],
+      "smiles": "NSC12C3C4=CC1C(CSCl)(S4)C32",
+      "properties": {
+        "qed": 0.7776814503955934,
+        "sa": 0.27430824515265073,
+        "mol_weight": 249.813,
+        "num_atoms": 13,
+        "num_bonds": 16
+      },
+      "objective": 0.7776814503955934
+    },
+    {
+      "indices": [
+        13,
+        17
+      ],
+      "smiles": "NSC12C3C4=CC15C(CSCl)(S4)C325",
+      "properties": {
+        "qed": 0.7740289601654613,
+        "sa": 0.25509310305861493,
+        "mol_weight": 247.79699999999997,
+        "num_atoms": 13,
+        "num_bonds": 17
+      },
+      "objective": 0.7740289601654613
+    },
+    {
+      "indices": [
+        13,
+        18
+      ],
+      "smiles": "N=S1C2=CC34C1(CSCl)C31C23SC341",
+      "properties": {
+        "qed": 0.7541208828271082,
+        "sa": 0.17605028862763442,
+        "mol_weight": 245.78099999999998,
+        "num_atoms": 13,
+        "num_bonds": 18
+      },
+      "objective": 0.7541208828271082
+    },
+    {
+      "indices": [
+        13,
+        19
+      ],
+      "smiles": "C1=C2OC34C5=C2C26C1OC3C42NC56",
+      "properties": {
+        "qed": 0.5304116878683928,
+        "sa": 0.2844157805535942,
+        "mol_weight": 171.155,
+        "num_atoms": 13,
+        "num_bonds": 19
+      },
+      "objective": 0.5304116878683928
+    },
+    {
+      "indices": [
+        14,
+        13
+      ],
+      "smiles": "CCCC(=C(Br)CC(Cl)=CN)S(C)=O",
+      "properties": {
+        "qed": 0.847053993877923,
+        "sa": 0.5775411321713722,
+        "mol_weight": 300.649,
+        "num_atoms": 14,
+        "num_bonds": 13
+      },
+      "objective": 0.847053993877923
+    },
+    {
+      "indices": [
+        14,
+        14
+      ],
+      "smiles": "CC(=CCN)c1ccnc(CSBr)c1",
+      "properties": {
+        "qed": 0.9161714846147614,
+        "sa": 0.7366570552386775,
+        "mol_weight": 273.19899999999996,
+        "num_atoms": 14,
+        "num_bonds": 14
+      },
+      "objective": 0.9161714846147614
+    },
+    {
+      "indices": [
+        14,
+        15
+      ],
+      "smiles": "NCC=c1sc2cc1cc(COBr)n2",
+      "properties": {
+        "qed": 0.9232563601683141,
+        "sa": 0.55650128035084,
+        "mol_weight": 273.155,
+        "num_atoms": 14,
+        "num_bonds": 15
+      },
+      "objective": 0.9232563601683141
+    },
+    {
+      "indices": [
+        14,
+        16
+      ],
+      "smiles": "NC1CC2Cc3cc2c1c(COBr)n3",
+      "properties": {
+        "qed": 0.8781372811703839,
+        "sa": 0.480063010393969,
+        "mol_weight": 255.11499999999998,
+        "num_atoms": 14,
+        "num_bonds": 16
+      },
+      "objective": 0.8781372811703839
+    },
+    {
+      "indices": [
+        14,
+        17
+      ],
+      "smiles": "CC1[SH]2C3=C(SBr)C14CN=NN2C3C4",
+      "properties": {
+        "qed": 0.7524195686789383,
+        "sa": 0.38296224743227253,
+        "mol_weight": 292.22700000000003,
+        "num_atoms": 14,
+        "num_bonds": 17
+      },
+      "objective": 0.7524195686789383
+    },
+    {
+      "indices": [
+        14,
+        18
+      ],
+      "smiles": "BrOC1=C2[SH]N3N=NC4=C5CC41CC523",
+      "properties": {
+        "qed": 0.7434288429455331,
+        "sa": 0.3836513898962899,
+        "mol_weight": 271.119,
+        "num_atoms": 14,
+        "num_bonds": 18
+      },
+      "objective": 0.7434288429455331
+    },
+    {
+      "indices": [
+        14,
+        19
+      ],
+      "smiles": "N=S1C2=CC34C1(CSCl)C31C23CSC341",
+      "properties": {
+        "qed": 0.8234318410480621,
+        "sa": 0.18828294391795217,
+        "mol_weight": 259.808,
+        "num_atoms": 14,
+        "num_bonds": 19
+      },
+      "objective": 0.8234318410480621
+    },
+    {
+      "indices": [
+        14,
+        20
+      ],
+      "smiles": "C1=C2OC34C5=C2C26C1=[SH]OC3C42NC56",
+      "properties": {
+        "qed": 0.4161304749819552,
+        "sa": 0.2172820406403078,
+        "mol_weight": 203.222,
+        "num_atoms": 14,
+        "num_bonds": 20
+      },
+      "objective": 0.4161304749819552
+    },
+    {
+      "indices": [
+        15,
+        14
+      ],
+      "smiles": "CCC(N)C(=C(Br)CC(Cl)=CN)S(C)=S",
+      "properties": {
+        "qed": 0.8134732005500795,
+        "sa": 0.5204883268291983,
+        "mol_weight": 331.73199999999997,
+        "num_atoms": 15,
+        "num_bonds": 14
+      },
+      "objective": 0.8134732005500795
+    },
+    {
+      "indices": [
+        15,
+        15
+      ],
+      "smiles": "NCC=C(CF)c1ccnc(CSBr)c1",
+      "properties": {
+        "qed": 0.9062321282372255,
+        "sa": 0.6899021809387589,
+        "mol_weight": 291.18899999999996,
+        "num_atoms": 15,
+        "num_bonds": 15
+      },
+      "objective": 0.9062321282372255
+    },
+    {
+      "indices": [
+        15,
+        16
+      ],
+      "smiles": "NCC=C1c2cc(CSBr)nc(c2)C1F",
+      "properties": {
+        "qed": 0.9293794823682597,
+        "sa": 0.5140214024914584,
+        "mol_weight": 289.17299999999994,
+        "num_atoms": 15,
+        "num_bonds": 16
+      },
+      "objective": 0.9293794823682597
+    },
+    {
+      "indices": [
+        15,
+        17
+      ],
+      "smiles": "NC1CC2c3cc(nc(COBr)c31)C2F",
+      "properties": {
+        "qed": 0.8997309757339605,
+        "sa": 0.4618464581035932,
+        "mol_weight": 273.10499999999996,
+        "num_atoms": 15,
+        "num_bonds": 17
+      },
+      "objective": 0.8997309757339605
+    },
+    {
+      "indices": [
+        15,
+        18
+      ],
+      "smiles": "OCc1nc2c3c4c1C(=CCC=C23)SC4",
+      "properties": {
+        "qed": 0.792077172650419,
+        "sa": 0.5472118905613894,
+        "mol_weight": 215.277,
+        "num_atoms": 15,
+        "num_bonds": 18
+      },
+      "objective": 0.792077172650419
+    },
+    {
+      "indices": [
+        15,
+        19
+      ],
+      "smiles": "BrSC1=C2NC3CC14C1=CC4[SH]2N3N=N1",
+      "properties": {
+        "qed": 0.7308330219217429,
+        "sa": 0.28308664169208647,
+        "mol_weight": 303.21,
+        "num_atoms": 15,
+        "num_bonds": 19
+      },
+      "objective": 0.7308330219217429
+    },
+    {
+      "indices": [
+        16,
+        15
+      ],
+      "smiles": "CN=C=NC=C(C)CC=C=NC(=CN)SBr",
+      "properties": {
+        "qed": 0.7929936042710917,
+        "sa": 0.49034562395119546,
+        "mol_weight": 301.21299999999997,
+        "num_atoms": 16,
+        "num_bonds": 15
+      },
+      "objective": 0.7929936042710917
+    },
+    {
+      "indices": [
+        16,
+        16
+      ],
+      "smiles": "CNC(C)c1c(F)cc(C)nc1C(F)OCl",
+      "properties": {
+        "qed": 0.8921981825512793,
+        "sa": 0.6470674122693825,
+        "mol_weight": 250.676,
+        "num_atoms": 16,
+        "num_bonds": 16
+      },
+      "objective": 0.8921981825512793
+    },
+    {
+      "indices": [
+        16,
+        17
+      ],
+      "smiles": "CCNn1cc(Br)c2ccnc(COCl)c21",
+      "properties": {
+        "qed": 0.9434568915951563,
+        "sa": 0.7064108531664246,
+        "mol_weight": 304.575,
+        "num_atoms": 16,
+        "num_bonds": 17
+      },
+      "objective": 0.9434568915951563
+    },
+    {
+      "indices": [
+        16,
+        18
+      ],
+      "smiles": "NC1CC2c3cc(nc(CCOBr)c31)C2F",
+      "properties": {
+        "qed": 0.9286292533283445,
+        "sa": 0.4716780118941404,
+        "mol_weight": 287.13199999999995,
+        "num_atoms": 16,
+        "num_bonds": 18
+      },
+      "objective": 0.9286292533283445
+    },
+    {
+      "indices": [
+        16,
+        19
+      ],
+      "smiles": "OCc1nc2c3c4c1C(=CCCSC23)SC4",
+      "properties": {
+        "qed": 0.829329691238371,
+        "sa": 0.4423656856211022,
+        "mol_weight": 249.35999999999999,
+        "num_atoms": 16,
+        "num_bonds": 19
+      },
+      "objective": 0.829329691238371
+    },
+    {
+      "indices": [
+        16,
+        20
+      ],
+      "smiles": "OCc1nc2c3c4c1C1=CC(=CC4S1)C=C23",
+      "properties": {
+        "qed": 0.8086365556344813,
+        "sa": 0.463727323616473,
+        "mol_weight": 225.27200000000002,
+        "num_atoms": 16,
+        "num_bonds": 20
+      },
+      "objective": 0.8086365556344813
+    },
+    {
+      "indices": [
+        16,
+        21
+      ],
+      "smiles": "OC1C2=C3C=C4c5nc1c1c(c54)C2SC1=C3",
+      "properties": {
+        "qed": 0.7437153883931029,
+        "sa": 0.39462847264487194,
+        "mol_weight": 223.256,
+        "num_atoms": 16,
+        "num_bonds": 21
+      },
+      "objective": 0.7437153883931029
+    },
+    {
+      "indices": [
+        17,
+        16
+      ],
+      "smiles": "C=C(N=C=CCC(C)(N)C=CN=C=NC)SBr",
+      "properties": {
+        "qed": 0.7653457324615199,
+        "sa": 0.44399397020616327,
+        "mol_weight": 315.24,
+        "num_atoms": 17,
+        "num_bonds": 16
+      },
+      "objective": 0.7653457324615199
+    },
+    {
+      "indices": [
+        17,
+        17
+      ],
+      "smiles": "OCC=Cc1ccccnccc(CSCl)n1",
+      "properties": {
+        "qed": 0.9119027520796015,
+        "sa": 0.7381636719330079,
+        "mol_weight": 268.76899999999995,
+        "num_atoms": 17,
+        "num_bonds": 17
+      },
+      "objective": 0.9119027520796015
+    },
+    {
+      "indices": [
+        17,
+        18
+      ],
+      "smiles": "CCNn1cc(C)c2cc(C)nc(COBr)c21",
+      "properties": {
+        "qed": 0.9426829156633698,
+        "sa": 0.7079552134016038,
+        "mol_weight": 298.18399999999997,
+        "num_atoms": 17,
+        "num_bonds": 18
+      },
+      "objective": 0.9426829156633698
+    },
+    {
+      "indices": [
+        17,
+        19
+      ],
+      "smiles": "CCC1=Cc2cn(c3c(COBr)nccc23)N1",
+      "properties": {
+        "qed": 0.9447104160905329,
+        "sa": 0.5767361312933583,
+        "mol_weight": 294.152,
+        "num_atoms": 17,
+        "num_bonds": 19
+      },
+      "objective": 0.9447104160905329
+    },
+    {
+      "indices": [
+        17,
+        20
+      ],
+      "smiles": "BrOCc1nc2cc3c4cn(c13)NC(=C4)CS2",
+      "properties": {
+        "qed": 0.9256521254083817,
+        "sa": 0.4485242387108307,
+        "mol_weight": 310.17600000000004,
+        "num_atoms": 17,
+        "num_bonds": 20
+      },
+      "objective": 0.9256521254083817
+    },
+    {
+      "indices": [
+        17,
+        21
+      ],
+      "smiles": "OCc1nc2c3c4c1C1=NC(=C(Br)C4S1)CC23",
+      "properties": {
+        "qed": 0.8671731378147102,
+        "sa": 0.4543934638677063,
+        "mol_weight": 307.172,
+        "num_atoms": 17,
+        "num_bonds": 21
+      },
+      "objective": 0.8671731378147102
+    },
+    {
+      "indices": [
+        17,
+        22
+      ],
+      "smiles": "C1=C2CCn3[nH]c4c5c6c(nc43)CC15SC6=N2",
+      "properties": {
+        "qed": 0.7642348647655443,
+        "sa": 0.2807891148284074,
+        "mol_weight": 240.29099999999997,
+        "num_atoms": 17,
+        "num_bonds": 22
+      },
+      "objective": 0.7642348647655443
+    },
+    {
+      "indices": [
+        18,
+        17
+      ],
+      "smiles": "CN=C=NC=CC(C)(N)CC=C=NC(=C=N)SBr",
+      "properties": {
+        "qed": 0.7345572954740119,
+        "sa": 0.4264529072854558,
+        "mol_weight": 328.23900000000003,
+        "num_atoms": 18,
+        "num_bonds": 17
+      },
+      "objective": 0.7345572954740119
+    },
+    {
+      "indices": [
+        18,
+        18
+      ],
+      "smiles": "OCC(F)=Cc1ccccnccc(CSCl)n1",
+      "properties": {
+        "qed": 0.922454777370495,
+        "sa": 0.7133315295035739,
+        "mol_weight": 286.75899999999996,
+        "num_atoms": 18,
+        "num_bonds": 18
+      },
+      "objective": 0.922454777370495
+    },
+    {
+      "indices": [
+        18,
+        19
+      ],
+      "smiles": "CCNn1cc(C)c2c(F)c(C)nc(COBr)c21",
+      "properties": {
+        "qed": 0.9414776834089035,
+        "sa": 0.6888754183923165,
+        "mol_weight": 316.174,
+        "num_atoms": 18,
+        "num_bonds": 19
+      },
+      "objective": 0.9414776834089035
+    },
+    {
+      "indices": [
+        18,
+        20
+      ],
+      "smiles": "FCCC1=Cc2cn(c3c(COBr)nccc23)N1",
+      "properties": {
+        "qed": 0.94263511832896,
+        "sa": 0.5610733197915617,
+        "mol_weight": 312.142,
+        "num_atoms": 18,
+        "num_bonds": 20
+      },
+      "objective": 0.94263511832896
+    },
+    {
+      "indices": [
+        18,
+        21
+      ],
+      "smiles": "BrOCc1nc2cc3c4cn(c13)NC(=C4)CC=N2",
+      "properties": {
+        "qed": 0.927952911990449,
+        "sa": 0.399368466821825,
+        "mol_weight": 305.13500000000005,
+        "num_atoms": 18,
+        "num_bonds": 21
+      },
+      "objective": 0.927952911990449
+    },
+    {
+      "indices": [
+        18,
+        22
+      ],
+      "smiles": "NC1=C2c3cc4cc5c(COCl)nc(cc35)CC124",
+      "properties": {
+        "qed": 0.8976059940362598,
+        "sa": 0.4815629069245379,
+        "mol_weight": 256.69199999999995,
+        "num_atoms": 18,
+        "num_bonds": 22
+      },
+      "objective": 0.8976059940362598
+    },
+    {
+      "indices": [
+        18,
+        23
+      ],
+      "smiles": "ClOCc1nc2cc3c4c(ccc13)C1C3=C2C1C34",
+      "properties": {
+        "qed": 0.8173185860833843,
+        "sa": 0.45878300974873176,
+        "mol_weight": 253.68800000000002,
+        "num_atoms": 18,
+        "num_bonds": 23
+      },
+      "objective": 0.8173185860833843
+    },
+    {
+      "indices": [
+        19,
+        18
+      ],
+      "smiles": "CCN=C=NC=CC(C)(N)CC=C=NC(=C=N)SBr",
+      "properties": {
+        "qed": 0.6963568314544891,
+        "sa": 0.4428220641413445,
+        "mol_weight": 342.26599999999996,
+        "num_atoms": 19,
+        "num_bonds": 18
+      },
+      "objective": 0.6963568314544891
+    },
+    {
+      "indices": [
+        19,
+        19
+      ],
+      "smiles": "Cc1ccc(C=CCN)nc(CSCl)ccnc1F",
+      "properties": {
+        "qed": 0.9254847478348623,
+        "sa": 0.7027959783983503,
+        "mol_weight": 299.802,
+        "num_atoms": 19,
+        "num_bonds": 19
+      },
+      "objective": 0.9254847478348623
+    },
+    {
+      "indices": [
+        19,
+        20
+      ],
+      "smiles": "CC(N)=C(C)Cc1cncc2c(COCl)nccc12",
+      "properties": {
+        "qed": 0.9327751415335503,
+        "sa": 0.7349677919547827,
+        "mol_weight": 277.755,
+        "num_atoms": 19,
+        "num_bonds": 20
+      },
+      "objective": 0.9327751415335503
+    },
+    {
+      "indices": [
+        19,
+        21
+      ],
+      "smiles": "CC1=C(N)C=C1c1cncc2c(COBr)nccc12",
+      "properties": {
+        "qed": 0.9445740518191487,
+        "sa": 0.7084546757907232,
+        "mol_weight": 318.174,
+        "num_atoms": 19,
+        "num_bonds": 21
+      },
+      "objective": 0.9445740518191487
+    },
+    {
+      "indices": [
+        19,
+        22
+      ],
+      "smiles": "NC1(c2ccc3c(COCl)nccc3c2)C2CC1S2",
+      "properties": {
+        "qed": 0.944764310964187,
+        "sa": 0.5688805553792117,
+        "mol_weight": 292.791,
+        "num_atoms": 19,
+        "num_bonds": 22
+      },
+      "objective": 0.944764310964187
+    },
+    {
+      "indices": [
+        19,
+        23
+      ],
+      "smiles": "NC12c3ccc4c(COCl)nccc4c3C3C1CC32",
+      "properties": {
+        "qed": 0.9144763207678697,
+        "sa": 0.5304545960499633,
+        "mol_weight": 272.73500000000007,
+        "num_atoms": 19,
+        "num_bonds": 23
+      },
+      "objective": 0.9144763207678697
+    },
+    {
+      "indices": [
+        19,
+        24
+      ],
+      "smiles": "OC12c3ccc4c(COCl)nc5cc4c3C3C1C5C32",
+      "properties": {
+        "qed": 0.9127319067684745,
+        "sa": 0.45887535025059406,
+        "mol_weight": 271.703,
+        "num_atoms": 19,
+        "num_bonds": 24
+      },
+      "objective": 0.9127319067684745
+    },
+    {
+      "indices": [
+        20,
+        19
+      ],
+      "smiles": "C=NC(C)(C=CN=C=NCC)CC=C=NC(=C=N)SBr",
+      "properties": {
+        "qed": 0.6597699260011306,
+        "sa": 0.4226886263539675,
+        "mol_weight": 354.277,
+        "num_atoms": 20,
+        "num_bonds": 19
+      },
+      "objective": 0.6597699260011306
+    },
+    {
+      "indices": [
+        20,
+        20
+      ],
+      "smiles": "C=C(CCN)c1ccc(C)nc(COCl)nccc1F",
+      "properties": {
+        "qed": 0.9070516466189499,
+        "sa": 0.7203403746057158,
+        "mol_weight": 297.76099999999997,
+        "num_atoms": 20,
+        "num_bonds": 20
+      },
+      "objective": 0.9070516466189499
+    },
+    {
+      "indices": [
+        20,
+        21
+      ],
+      "smiles": "CC(N)=C(C)Cc1cncc2c(C(=O)OCl)nccc12",
+      "properties": {
+        "qed": 0.9404949534326108,
+        "sa": 0.7445458284840903,
+        "mol_weight": 291.738,
+        "num_atoms": 20,
+        "num_bonds": 21
+      },
+      "objective": 0.9404949534326108
+    },
+    {
+      "indices": [
+        20,
+        22
+      ],
+      "smiles": "NC1=NCC(c2c(F)ccc3c(COCl)nccc23)C1",
+      "properties": {
+        "qed": 0.9463438176106534,
+        "sa": 0.6820769860644325,
+        "mol_weight": 293.72900000000004,
+        "num_atoms": 20,
+        "num_bonds": 22
+      },
+      "objective": 0.9463438176106534
+    },
+    {
+      "indices": [
+        20,
+        23
+      ],
+      "smiles": "CCC1=c2oc3c(c4cc(cc(COCl)n4)o2)CC13N",
+      "properties": {
+        "qed": 0.9386664874862635,
+        "sa": 0.46488429983729873,
+        "mol_weight": 292.72200000000004,
+        "num_atoms": 20,
+        "num_bonds": 23
+      },
+      "objective": 0.9386664874862635
+    },
+    {
+      "indices": [
+        20,
+        24
+      ],
+      "smiles": "NC12CC3(C1)c1osc4c3cnc(COCl)c4ccc12",
+      "properties": {
+        "qed": 0.9249389620902532,
+        "sa": 0.44396543610885675,
+        "mol_weight": 306.774,
+        "num_atoms": 20,
+        "num_bonds": 24
+      },
+      "objective": 0.9249389620902532
+    },
+    {
+      "indices": [
+        20,
+        25
+      ],
+      "smiles": "NC12C3=C4Oc5cc(nc(COCl)c5CC3)C3C1C4C32",
+      "properties": {
+        "qed": 0.904397186666098,
+        "sa": 0.4055659879423936,
+        "mol_weight": 288.7339999999999,
+        "num_atoms": 20,
+        "num_bonds": 25
+      },
+      "objective": 0.904397186666098
+    },
+    {
+      "indices": [
+        21,
+        20
+      ],
+      "smiles": "C=NC(C)(C=CN=C=NCC)CC(F)=C=NC(=C=N)SBr",
+      "properties": {
+        "qed": 0.6374502328848023,
+        "sa": 0.42615023267484137,
+        "mol_weight": 372.26699999999994,
+        "num_atoms": 21,
+        "num_bonds": 20
+      },
+      "objective": 0.6374502328848023
+    },
+    {
+      "indices": [
+        21,
+        21
+      ],
+      "smiles": "Cc1ccc(C(C)OCCN)c(F)cccc(COCl)n1",
+      "properties": {
+        "qed": 0.8744264989845916,
+        "sa": 0.7110181667031757,
+        "mol_weight": 314.78799999999995,
+        "num_atoms": 21,
+        "num_bonds": 21
+      },
+      "objective": 0.8744264989845916
+    },
+    {
+      "indices": [
+        21,
+        22
+      ],
+      "smiles": "COCc1nc2cc(C(C)N)c1C=NOC(Cl)=C(C)C=N2",
+      "properties": {
+        "qed": 0.9304640770477646,
+        "sa": 0.4747727216799917,
+        "mol_weight": 308.769,
+        "num_atoms": 21,
+        "num_bonds": 22
+      },
+      "objective": 0.9304640770477646
+    },
+    {
+      "indices": [
+        21,
+        23
+      ],
+      "smiles": "Cc1cc2c(C3CN=C(N)C3)c(F)ccc2c(COCl)n1",
+      "properties": {
+        "qed": 0.9469612465488272,
+        "sa": 0.6790339399874514,
+        "mol_weight": 307.7559999999999,
+        "num_atoms": 21,
+        "num_bonds": 23
+      },
+      "objective": 0.9469612465488272
+    },
+    {
+      "indices": [
+        21,
+        24
+      ],
+      "smiles": "CCC1=c2oc3c(c4cc(cc(COCl)n4)o2)C(C)C13N",
+      "properties": {
+        "qed": 0.9434812689526405,
+        "sa": 0.43983572736656423,
+        "mol_weight": 306.749,
+        "num_atoms": 21,
+        "num_bonds": 24
+      },
+      "objective": 0.9434812689526405
+    },
+    {
+      "indices": [
+        21,
+        25
+      ],
+      "smiles": "NC12CC3=Cc4c1ccc1c(COCl)nc(cc41)CN=C32",
+      "properties": {
+        "qed": 0.9269848758899981,
+        "sa": 0.403923207622535,
+        "mol_weight": 297.74500000000006,
+        "num_atoms": 21,
+        "num_bonds": 25
+      },
+      "objective": 0.9269848758899981
+    },
+    {
+      "indices": [
+        21,
+        26
+      ],
+      "smiles": "NC12CC34c5osc6c3c(nc(COCl)c6ccc51)CC24",
+      "properties": {
+        "qed": 0.924252470820991,
+        "sa": 0.32245327134131735,
+        "mol_weight": 318.785,
+        "num_atoms": 21,
+        "num_bonds": 26
+      },
+      "objective": 0.924252470820991
+    },
+    {
+      "indices": [
+        21,
+        27
+      ],
+      "smiles": "NC12C3=C4c5nc(COCl)c6ccc1c1osc6c5C31C42",
+      "properties": {
+        "qed": 0.9256203463120538,
+        "sa": 0.298943545604092,
+        "mol_weight": 314.75300000000004,
+        "num_atoms": 21,
+        "num_bonds": 27
+      },
+      "objective": 0.9256203463120538
+    },
+    {
+      "indices": [
+        22,
+        21
+      ],
+      "smiles": "CCC=CC(N=CC(C)=C(O)Cl)=NC(=NCC=N)C(C)OC",
+      "properties": {
+        "qed": 0.4253877484526325,
+        "sa": 0.5446084209246139,
+        "mol_weight": 326.82800000000003,
+        "num_atoms": 22,
+        "num_bonds": 21
+      },
+      "objective": 0.4253877484526325
+    },
+    {
+      "indices": [
+        22,
+        22
+      ],
+      "smiles": "Cc1ccc(C(C)OCCN)c(F)cc(F)cc(COCl)n1",
+      "properties": {
+        "qed": 0.8658807524817885,
+        "sa": 0.6942215941253749,
+        "mol_weight": 332.7780000000001,
+        "num_atoms": 22,
+        "num_bonds": 22
+      },
+      "objective": 0.8658807524817885
+    },
+    {
+      "indices": [
+        22,
+        23
+      ],
+      "smiles": "COCc1nc2cc(C=C(C)N)c1C=NOC(Cl)=C(C)C=N2",
+      "properties": {
+        "qed": 0.9273880458925188,
+        "sa": 0.5065137879822981,
+        "mol_weight": 320.78000000000003,
+        "num_atoms": 22,
+        "num_bonds": 23
+      },
+      "objective": 0.9273880458925188
+    },
+    {
+      "indices": [
+        22,
+        24
+      ],
+      "smiles": "C=C1C(N)=NCC1c1c(F)ccc2c(COCl)nc(C)cc12",
+      "properties": {
+        "qed": 0.9432574598242148,
+        "sa": 0.6630484576869624,
+        "mol_weight": 319.76700000000005,
+        "num_atoms": 22,
+        "num_bonds": 24
+      },
+      "objective": 0.9432574598242148
+    },
+    {
+      "indices": [
+        22,
+        25
+      ],
+      "smiles": "C=CC1=C2C(=CC)C3CCC(=O)C3C3C(=C23)NN=C1COCl",
+      "properties": {
+        "qed": 0.8703952898934572,
+        "sa": 0.5229477562428272,
+        "mol_weight": 316.788,
+        "num_atoms": 22,
+        "num_bonds": 25
+      },
+      "objective": 0.8703952898934572
+    },
+    {
+      "indices": [
+        22,
+        26
+      ],
+      "smiles": "NC12C3=NCc4cc5c(c1ccc5c(COCl)n4)C=C3C2F",
+      "properties": {
+        "qed": 0.9266840021884098,
+        "sa": 0.36884563929997705,
+        "mol_weight": 315.735,
+        "num_atoms": 22,
+        "num_bonds": 26
+      },
+      "objective": 0.9266840021884098
+    },
+    {
+      "indices": [
+        22,
+        27
+      ],
+      "smiles": "N=C1C2CCN1C21c2c3cccscc-3c3nn(c21)C3OCl",
+      "properties": {
+        "qed": 0.8739220871918698,
+        "sa": 0.38981699476640025,
+        "mol_weight": 330.80000000000007,
+        "num_atoms": 22,
+        "num_bonds": 27
+      },
+      "objective": 0.8739220871918698
+    },
+    {
+      "indices": [
+        22,
+        28
+      ],
+      "smiles": "FOCc1nc2cc3c1N=CC1=C4OS3=NC13SC1=C2C3C41",
+      "properties": {
+        "qed": 0.8358838809026359,
+        "sa": 0.38094055600188664,
+        "mol_weight": 331.353,
+        "num_atoms": 22,
+        "num_bonds": 28
+      },
+      "objective": 0.8358838809026359
+    },
+    {
+      "indices": [
+        23,
+        22
+      ],
+      "smiles": "CCCC=CC(N=CC(C)=C(O)Cl)=NC(=NCC=N)C(C)OC",
+      "properties": {
+        "qed": 0.39798804158218376,
+        "sa": 0.5560789726801885,
+        "mol_weight": 340.855,
+        "num_atoms": 23,
+        "num_bonds": 22
+      },
+      "objective": 0.39798804158218376
+    },
+    {
+      "indices": [
+        23,
+        23
+      ],
+      "smiles": "Cc1ccc(C=CCN)nc(COCl)cc(=O)cn[nH]oc1C",
+      "properties": {
+        "qed": 0.8715740656911093,
+        "sa": 0.6331078731144316,
+        "mol_weight": 338.795,
+        "num_atoms": 23,
+        "num_bonds": 23
+      },
+      "objective": 0.8715740656911093
+    },
+    {
+      "indices": [
+        23,
+        24
+      ],
+      "smiles": "CNc1c(C)c(=C(F)CSC)oc2cc(C)nc1cc(OC)n2",
+      "properties": {
+        "qed": 0.9245774995935053,
+        "sa": 0.5724466704652528,
+        "mol_weight": 337.4200000000001,
+        "num_atoms": 23,
+        "num_bonds": 24
+      },
+      "objective": 0.9245774995935053
+    },
+    {
+      "indices": [
+        23,
+        25
+      ],
+      "smiles": "COc1cc2nc3cc(n1)oc(=C(F)CSC)c(c2N)CC=C3",
+      "properties": {
+        "qed": 0.9307149779607136,
+        "sa": 0.485024969340843,
+        "mol_weight": 333.3880000000001,
+        "num_atoms": 23,
+        "num_bonds": 25
+      },
+      "objective": 0.9307149779607136
+    },
+    {
+      "indices": [
+        23,
+        26
+      ],
+      "smiles": "NC1=C2C=C(CCOCl)C=CN=C=CC34CCC(=O)CC(=N3)C124",
+      "properties": {
+        "qed": 0.8632228744915352,
+        "sa": 0.2733305734419535,
+        "mol_weight": 329.78700000000015,
+        "num_atoms": 23,
+        "num_bonds": 26
+      },
+      "objective": 0.8632228744915352
+    },
+    {
+      "indices": [
+        23,
+        27
+      ],
+      "smiles": "N=C1CCCN1C1c2c3cccsc(O)c-3c3nn(c21)C3OCl",
+      "properties": {
+        "qed": 0.8720155193335029,
+        "sa": 0.5151470828249847,
+        "mol_weight": 348.81500000000005,
+        "num_atoms": 23,
+        "num_bonds": 27
+      },
+      "objective": 0.8720155193335029
+    },
+    {
+      "indices": [
+        23,
+        28
+      ],
+      "smiles": "N=NC1C2CCN1C21c2c3cccscc-3c3nn(c21)C3OCl",
+      "properties": {
+        "qed": 0.847548640084075,
+        "sa": 0.3390776693171471,
+        "mol_weight": 345.81500000000005,
+        "num_atoms": 23,
+        "num_bonds": 28
+      },
+      "objective": 0.847548640084075
+    },
+    {
+      "indices": [
+        23,
+        29
+      ],
+      "smiles": "FOCc1nc2cc3c1N=CC1=C4OS3=NCC13SC1=C2C3C41",
+      "properties": {
+        "qed": 0.8267063394847469,
+        "sa": 0.2720239681637937,
+        "mol_weight": 345.38000000000005,
+        "num_atoms": 23,
+        "num_bonds": 29
+      },
+      "objective": 0.8267063394847469
+    },
+    {
+      "indices": [
+        24,
+        23
+      ],
+      "smiles": "CN=C(N)C=CC(N=CC(C)=C(F)Cl)=NC(=NCC=N)C(C)OCl",
+      "properties": {
+        "qed": 0.5253083698826579,
+        "sa": 0.4851681559929752,
+        "mol_weight": 377.2510000000001,
+        "num_atoms": 24,
+        "num_bonds": 23
+      },
+      "objective": 0.5253083698826579
+    },
+    {
+      "indices": [
+        24,
+        24
+      ],
+      "smiles": "CC1=C(Cl)ON=CC(=O)C=C(COCl)N=C(C=CC(C)(C)N)C=C1",
+      "properties": {
+        "qed": 0.8196968635925894,
+        "sa": 0.550073107916052,
+        "mol_weight": 372.2520000000001,
+        "num_atoms": 24,
+        "num_bonds": 24
+      },
+      "objective": 0.8196968635925894
+    },
+    {
+      "indices": [
+        24,
+        25
+      ],
+      "smiles": "C=Cc1c(NC)c2cc(OC)nc(cc(C)n2)oc1=C(F)CSC",
+      "properties": {
+        "qed": 0.891323100414365,
+        "sa": 0.5590033111526541,
+        "mol_weight": 349.4310000000001,
+        "num_atoms": 24,
+        "num_bonds": 25
+      },
+      "objective": 0.891323100414365
+    },
+    {
+      "indices": [
+        24,
+        26
+      ],
+      "smiles": "CNc1c2c(=C(F)CSC)oc3cc(nc1cc(OC)n3)C=CC2",
+      "properties": {
+        "qed": 0.9169074804361025,
+        "sa": 0.4866414782896963,
+        "mol_weight": 347.41500000000013,
+        "num_atoms": 24,
+        "num_bonds": 26
+      },
+      "objective": 0.9169074804361025
+    },
+    {
+      "indices": [
+        24,
+        27
+      ],
+      "smiles": "O=C1CC=NC2(C=C=NC=CC3=CC4=C(NN=C3COCl)C42)CC1",
+      "properties": {
+        "qed": 0.8358343029325477,
+        "sa": 0.28106305218587324,
+        "mol_weight": 342.78600000000006,
+        "num_atoms": 24,
+        "num_bonds": 27
+      },
+      "objective": 0.8358343029325477
+    },
+    {
+      "indices": [
+        24,
+        28
+      ],
+      "smiles": "N=C1N=CCCN1C1c2c3cccsc(O)c-3c3nn(c21)C3OCl",
+      "properties": {
+        "qed": 0.8603217942707132,
+        "sa": 0.47697316711226456,
+        "mol_weight": 361.8140000000001,
+        "num_atoms": 24,
+        "num_bonds": 28
+      },
+      "objective": 0.8603217942707132
+    },
+    {
+      "indices": [
+        24,
+        29
+      ],
+      "smiles": "O=C1CCC23N=C(C1)C21C2=C1C1=C(C=CN=C=C13)C(COCl)=NN2",
+      "properties": {
+        "qed": 0.8331107033724784,
+        "sa": 0.3054481325431941,
+        "mol_weight": 338.7540000000001,
+        "num_atoms": 24,
+        "num_bonds": 29
+      },
+      "objective": 0.8331107033724784
+    },
+    {
+      "indices": [
+        24,
+        30
+      ],
+      "smiles": "FOCc1nc2cc3c1N=CC1=C4O[SH](=NCC15SC1=C2C5C41)=N3",
+      "properties": {
+        "qed": 0.8225336439937826,
+        "sa": 0.23894697721584623,
+        "mol_weight": 360.39500000000004,
+        "num_atoms": 24,
+        "num_bonds": 30
+      },
+      "objective": 0.8225336439937826
+    },
+    {
+      "indices": [
+        25,
+        24
+      ],
+      "smiles": "CN=C(N)C=C=NC(N=CC(C)=C(F)Cl)=NC(=NCC=N)C(C)OCl",
+      "properties": {
+        "qed": 0.5352632472454639,
+        "sa": 0.459854215910114,
+        "mol_weight": 390.2500000000001,
+        "num_atoms": 25,
+        "num_bonds": 24
+      },
+      "objective": 0.5352632472454639
+    },
+    {
+      "indices": [
+        25,
+        25
+      ],
+      "smiles": "CC1=CON=CC(=O)C=C(COCl)N=NON=C(C=CC(C)N)C=C1",
+      "properties": {
+        "qed": 0.8183988681062349,
+        "sa": 0.46348705567839105,
+        "mol_weight": 367.79300000000006,
+        "num_atoms": 25,
+        "num_bonds": 25
+      },
+      "objective": 0.8183988681062349
+    },
+    {
+      "indices": [
+        25,
+        26
+      ],
+      "smiles": "C=Cc1c(NC)c2cc(OC)[nH]nc(cc(C)n2)oc1=C(F)CSC",
+      "properties": {
+        "qed": 0.8468592960557738,
+        "sa": 0.5308557646690285,
+        "mol_weight": 364.44600000000014,
+        "num_atoms": 25,
+        "num_bonds": 26
+      },
+      "objective": 0.8468592960557738
+    },
+    {
+      "indices": [
+        25,
+        27
+      ],
+      "smiles": "CC1CC=C(N)N(C)C(c2cccc3c2N=CNN=C3COCl)=CC1",
+      "properties": {
+        "qed": 0.8675696783919261,
+        "sa": 0.5969682405862995,
+        "mol_weight": 359.8610000000002,
+        "num_atoms": 25,
+        "num_bonds": 27
+      },
+      "objective": 0.8675696783919261
+    },
+    {
+      "indices": [
+        25,
+        28
+      ],
+      "smiles": "O=C1CC=NC2(C=C=NC=CC3=CC4=C(NN=CC3COCl)C42)CC1",
+      "properties": {
+        "qed": 0.8254899381771886,
+        "sa": 0.2510267405405508,
+        "mol_weight": 356.8130000000002,
+        "num_atoms": 25,
+        "num_bonds": 28
+      },
+      "objective": 0.8254899381771886
+    },
+    {
+      "indices": [
+        25,
+        29
+      ],
+      "smiles": "CN=C1C2=C3C=C(C)N(N=C3COCl)C3=C2C32C(C(=O)CCF)=NC12",
+      "properties": {
+        "qed": 0.754009271912686,
+        "sa": 0.3753726030096569,
+        "mol_weight": 360.77600000000007,
+        "num_atoms": 25,
+        "num_bonds": 29
+      },
+      "objective": 0.754009271912686
+    },
+    {
+      "indices": [
+        25,
+        30
+      ],
+      "smiles": "O=C1CCC23N=C(C1)C21C2=S=C1C1=C(C=CN=C=C13)C(COCl)=NN2",
+      "properties": {
+        "qed": 0.7489216888450425,
+        "sa": 0.22487953341369396,
+        "mol_weight": 370.8210000000001,
+        "num_atoms": 25,
+        "num_bonds": 30
+      },
+      "objective": 0.7489216888450425
+    },
+    {
+      "indices": [
+        25,
+        31
+      ],
+      "smiles": "FOCC1=NC2=CCC3=C1N=CC1=C4O[SH](=NCC15SC1=C2C5C41)=N3",
+      "properties": {
+        "qed": 0.7560202438197008,
+        "sa": 0.22657982698042764,
+        "mol_weight": 374.42200000000014,
+        "num_atoms": 25,
+        "num_bonds": 31
+      },
+      "objective": 0.7560202438197008
+    },
+    {
+      "indices": [
+        26,
+        25
+      ],
+      "smiles": "CN=C(N)C=NC(N=CC(C)=C(F)Cl)=NSC(=NCC=C=N)C(C)OCl",
+      "properties": {
+        "qed": 0.371870162316079,
+        "sa": 0.4529293492126316,
+        "mol_weight": 422.3170000000001,
+        "num_atoms": 26,
+        "num_bonds": 25
+      },
+      "objective": 0.371870162316079
+    },
+    {
+      "indices": [
+        26,
+        26
+      ],
+      "smiles": "CC1=C(Cl)ON=CC(=O)C=C(COCl)N=NON=C(C=CC(C)N)C=C1",
+      "properties": {
+        "qed": 0.7736808948748698,
+        "sa": 0.46422018626554773,
+        "mol_weight": 402.2380000000001,
+        "num_atoms": 26,
+        "num_bonds": 26
+      },
+      "objective": 0.7736808948748698
+    },
+    {
+      "indices": [
+        26,
+        27
+      ],
+      "smiles": "CC1C=NCC(C2=CN=CNN=C(COCl)C=CC=C2)N(C)C(N)=CC1",
+      "properties": {
+        "qed": 0.7909717558987944,
+        "sa": 0.46342699995668113,
+        "mol_weight": 376.8920000000001,
+        "num_atoms": 26,
+        "num_bonds": 27
+      },
+      "objective": 0.7909717558987944
+    },
+    {
+      "indices": [
+        26,
+        28
+      ],
+      "smiles": "CC1C=NCC(c2cccc3c2N=CNN=C3COCl)N(C)C(N)=CC1",
+      "properties": {
+        "qed": 0.8509971788359391,
+        "sa": 0.49562720785688913,
+        "mol_weight": 374.87600000000015,
+        "num_atoms": 26,
+        "num_bonds": 28
+      },
+      "objective": 0.8509971788359391
+    },
+    {
+      "indices": [
+        26,
+        29
+      ],
+      "smiles": "CC1C=NCC2c3cccc4c3N=CN(N=C4COCl)C1C=C(N)N2C",
+      "properties": {
+        "qed": 0.8641825174956742,
+        "sa": 0.36521297328333474,
+        "mol_weight": 372.86000000000007,
+        "num_atoms": 26,
+        "num_bonds": 29
+      },
+      "objective": 0.8641825174956742
+    },
+    {
+      "indices": [
+        26,
+        30
+      ],
+      "smiles": "C=CC1=CC2=C3C(=C)C4N=C(C(=O)NCF)C45C3=C5N1N=C(COCl)C2",
+      "properties": {
+        "qed": 0.7529068710741729,
+        "sa": 0.35561565891502656,
+        "mol_weight": 372.78700000000003,
+        "num_atoms": 26,
+        "num_bonds": 30
+      },
+      "objective": 0.7529068710741729
+    },
+    {
+      "indices": [
+        26,
+        31
+      ],
+      "smiles": "O=C1C=C2N=NC3(CC1)C1=C=NC=CC4=C1C1=S=C(NN=C4COCl)C213",
+      "properties": {
+        "qed": 0.7399411531009289,
+        "sa": 0.27052829374194837,
+        "mol_weight": 383.8200000000001,
+        "num_atoms": 26,
+        "num_bonds": 31
+      },
+      "objective": 0.7399411531009289
+    },
+    {
+      "indices": [
+        27,
+        26
+      ],
+      "smiles": "CN=C(N)N=C=NC(N=NCC(C)=CCl)=NC(=NCC(=N)O)C(C)=COCl",
+      "properties": {
+        "qed": 0.2624728474424517,
+        "sa": 0.5113631263570679,
+        "mol_weight": 416.27300000000014,
+        "num_atoms": 27,
+        "num_bonds": 26
+      },
+      "objective": 0.2624728474424517
+    },
+    {
+      "indices": [
+        27,
+        27
+      ],
+      "smiles": "CCC(N)C=C[SH]=C1C=CC(C)=C(Cl)ON=CC(=O)C=C(COCl)NON1",
+      "properties": {
+        "qed": 0.3868665818808817,
+        "sa": 0.4361044329248068,
+        "mol_weight": 437.34900000000016,
+        "num_atoms": 27,
+        "num_bonds": 27
+      },
+      "objective": 0.3868665818808817
+    },
+    {
+      "indices": [
+        27,
+        28
+      ],
+      "smiles": "C=C=C(CS)Cc1c(C)c2cc(c1=C(SC)C(=C=O)SC)=NC(OCl)=C=C2",
+      "properties": {
+        "qed": 0.3990791640691769,
+        "sa": 0.4425450812456957,
+        "mol_weight": 436.0230000000002,
+        "num_atoms": 27,
+        "num_bonds": 28
+      },
+      "objective": 0.3990791640691769
+    },
+    {
+      "indices": [
+        27,
+        29
+      ],
+      "smiles": "C=C=C1Cc2c(C)c3cc(c2=C(OC)C(=C=O)SCSC1=N)=NC(O)=C=C3",
+      "properties": {
+        "qed": 0.5634330565827179,
+        "sa": 0.41519870076239435,
+        "mol_weight": 396.49300000000005,
+        "num_atoms": 27,
+        "num_bonds": 29
+      },
+      "objective": 0.5634330565827179
+    },
+    {
+      "indices": [
+        27,
+        30
+      ],
+      "smiles": "C=NC1CC=C(N)N(C)C2(CC1)c1nc3c2occcc-3c(COCl)n[nH]1",
+      "properties": {
+        "qed": 0.7829756874658779,
+        "sa": 0.42949537352946593,
+        "mol_weight": 388.8590000000001,
+        "num_atoms": 27,
+        "num_bonds": 30
+      },
+      "objective": 0.7829756874658779
+    },
+    {
+      "indices": [
+        27,
+        31
+      ],
+      "smiles": "O=C1C=C2N=NC3(C=C=NC=CC4=CC5=S=C(NN=C4COCl)C23C5)CC1",
+      "properties": {
+        "qed": 0.7238674354653432,
+        "sa": 0.38664395018460657,
+        "mol_weight": 399.8630000000002,
+        "num_atoms": 27,
+        "num_bonds": 31
+      },
+      "objective": 0.7238674354653432
+    },
+    {
+      "indices": [
+        27,
+        32
+      ],
+      "smiles": "O=C1C=C2N=NC3(CC1)C1=C=NC=CC4=C1C1=S=C(NN=C4COCl)C23C1",
+      "properties": {
+        "qed": 0.7256542270547264,
+        "sa": 0.258725660618984,
+        "mol_weight": 397.84700000000015,
+        "num_atoms": 27,
+        "num_bonds": 32
+      },
+      "objective": 0.7256542270547264
+    },
+    {
+      "indices": [
+        28,
+        27
+      ],
+      "smiles": "CN=C(N)N=C=NC(N=CCC(C)=CCl)=NC(=NCC(=N)OC)C(C)=COCl",
+      "properties": {
+        "qed": 0.3802834980935253,
+        "sa": 0.523307393822907,
+        "mol_weight": 429.3120000000001,
+        "num_atoms": 28,
+        "num_bonds": 27
+      },
+      "objective": 0.3802834980935253
+    },
+    {
+      "indices": [
+        28,
+        28
+      ],
+      "smiles": "C=C=C=CCCc1cc(=C(CSC(=C)N)SF)c(N)c(Cl)c1=C=C(F)COF",
+      "properties": {
+        "qed": 0.43531524703682095,
+        "sa": 0.530113466697401,
+        "mol_weight": 446.9470000000002,
+        "num_atoms": 28,
+        "num_bonds": 28
+      },
+      "objective": 0.43531524703682095
+    },
+    {
+      "indices": [
+        28,
+        29
+      ],
+      "smiles": "C=C=C1NC2=C(C=C)C(C)=CC(=NCOCl)C2=C(OC)C(=C=O)SCCC1=N",
+      "properties": {
+        "qed": 0.5334395157107438,
+        "sa": 0.5022455626376288,
+        "mol_weight": 417.9180000000002,
+        "num_atoms": 28,
+        "num_bonds": 29
+      },
+      "objective": 0.5334395157107438
+    },
+    {
+      "indices": [
+        28,
+        30
+      ],
+      "smiles": "C=C=C=C1CNc2c(Cl)c3cc(c2=C(SC)C(=C)CC(N)S1)=NC(OCl)=C=C3",
+      "properties": {
+        "qed": 0.6591109468471545,
+        "sa": 0.3520034275982023,
+        "mol_weight": 450.4160000000002,
+        "num_atoms": 28,
+        "num_bonds": 30
+      },
+      "objective": 0.6591109468471545
+    },
+    {
+      "indices": [
+        28,
+        31
+      ],
+      "smiles": "C=C=C=C1CN2c3c(Cl)c4cc(c3=C(SC)C(=C)C2C(N)S1)=NC(OCl)=C=C4",
+      "properties": {
+        "qed": 0.7002918616753724,
+        "sa": 0.370505245064568,
+        "mol_weight": 448.40000000000015,
+        "num_atoms": 28,
+        "num_bonds": 31
+      },
+      "objective": 0.7002918616753724
+    },
+    {
+      "indices": [
+        28,
+        32
+      ],
+      "smiles": "C=C1C(SC)=c2c(c(Cl)c3cc2=NC(OCl)=C=C3)N2C3=C=C=C=C3SC(N)C12",
+      "properties": {
+        "qed": 0.7078625722243833,
+        "sa": 0.3252622745005653,
+        "mol_weight": 444.36800000000017,
+        "num_atoms": 28,
+        "num_bonds": 32
+      },
+      "objective": 0.7078625722243833
+    },
+    {
+      "indices": [
+        28,
+        33
+      ],
+      "smiles": "O=C1C=C2N=NC3(C=CC1)C1=C=NC=CC4=C1C1=S=C(NN=C4COCl)C23C1",
+      "properties": {
+        "qed": 0.5613034292141017,
+        "sa": 0.24477638797759896,
+        "mol_weight": 409.8580000000001,
+        "num_atoms": 28,
+        "num_bonds": 33
+      },
+      "objective": 0.5613034292141017
+    },
+    {
+      "indices": [
+        29,
+        28
+      ],
+      "smiles": "CN=C(N)N=C=NC(N=CCC(C)=CCl)=NC(=NC=CC(=N)OC)C(C)=COCl",
+      "properties": {
+        "qed": 0.3687300310439723,
+        "sa": 0.5096748377796928,
+        "mol_weight": 441.3230000000001,
+        "num_atoms": 29,
+        "num_bonds": 28
+      },
+      "objective": 0.3687300310439723
+    },
+    {
+      "indices": [
+        29,
+        29
+      ],
+      "smiles": "C=C=C=CCCC1=CC(=C(CSC(=C)N)SF)C(N)=C(Cl)C(=C=C(F)COF)C1",
+      "properties": {
+        "qed": 0.3942446915742597,
+        "sa": 0.5209083333979988,
+        "mol_weight": 460.9740000000002,
+        "num_atoms": 29,
+        "num_bonds": 29
+      },
+      "objective": 0.3942446915742597
+    },
+    {
+      "indices": [
+        29,
+        30
+      ],
+      "smiles": "C=C=C1SC(N)CC(C2=C(N)C(C=C)=CC(=NCOCl)C2=C(C=C)SC)C1=NC",
+      "properties": {
+        "qed": 0.5849931737881969,
+        "sa": 0.44782911407403897,
+        "mol_weight": 449.0450000000002,
+        "num_atoms": 29,
+        "num_bonds": 30
+      },
+      "objective": 0.5849931737881969
+    },
+    {
+      "indices": [
+        29,
+        31
+      ],
+      "smiles": "C=C=C1SC(N)C2C(=C)C(SC)=C3C(=NCOCl)C=C(C=C)C(N)=C3C2C1=NC",
+      "properties": {
+        "qed": 0.635068235911689,
+        "sa": 0.43799861710801014,
+        "mol_weight": 447.0290000000002,
+        "num_atoms": 29,
+        "num_bonds": 31
+      },
+      "objective": 0.635068235911689
+    },
+    {
+      "indices": [
+        29,
+        32
+      ],
+      "smiles": "C=CC1=CC(=NCOCl)C2=C(SC)C(=C)C3CSC4=C=COCN=C4C3C2=C1N",
+      "properties": {
+        "qed": 0.6456101448442403,
+        "sa": 0.4364083408059362,
+        "mol_weight": 445.99700000000024,
+        "num_atoms": 29,
+        "num_bonds": 32
+      },
+      "objective": 0.6456101448442403
+    },
+    {
+      "indices": [
+        29,
+        33
+      ],
+      "smiles": "C=C1C(SC)=c2c(c(N)c3cc2=NC(OCl)=C=C3)C2C3=NC=C=C=C3SC(N)C12",
+      "properties": {
+        "qed": 0.5473669270511377,
+        "sa": 0.31783569673671863,
+        "mol_weight": 438.96500000000015,
+        "num_atoms": 29,
+        "num_bonds": 33
+      },
+      "objective": 0.5473669270511377
+    },
+    {
+      "indices": [
+        30,
+        29
+      ],
+      "smiles": "CN=C(N)N=C=NC(N=CCC(C)=C(F)Cl)=NC(=NC=CC(=N)OC)C(C)=COCl",
+      "properties": {
+        "qed": 0.35242828511842694,
+        "sa": 0.508186076134503,
+        "mol_weight": 459.3130000000001,
+        "num_atoms": 30,
+        "num_bonds": 29
+      },
+      "objective": 0.35242828511842694
+    },
+    {
+      "indices": [
+        30,
+        30
+      ],
+      "smiles": "NCc1c(Cl)c(=C=C(F)COF)c(CCC=C=C=CCl)cc1=C(CSC(N)=O)SF",
+      "properties": {
+        "qed": 0.4928542390587084,
+        "sa": 0.5340529165208555,
+        "mol_weight": 497.3910000000002,
+        "num_atoms": 30,
+        "num_bonds": 30
+      },
+      "objective": 0.4928542390587084
+    },
+    {
+      "indices": [
+        30,
+        31
+      ],
+      "smiles": "C=CC1=CC(=NCOCl)C(=C(C=C)SC)C(C2CC(N)SC(=C)C2=NCOC)=C1N",
+      "properties": {
+        "qed": 0.5534865611440563,
+        "sa": 0.4595888585714892,
+        "mol_weight": 467.0600000000003,
+        "num_atoms": 30,
+        "num_bonds": 31
+      },
+      "objective": 0.5534865611440563
+    },
+    {
+      "indices": [
+        30,
+        32
+      ],
+      "smiles": "C=CC(SC)=c1c2c(N)c(C=C)cc1=NC(OCl)C21CC(N)SC(=C)C1=NCOC",
+      "properties": {
+        "qed": 0.6282914431770528,
+        "sa": 0.32674818515058973,
+        "mol_weight": 465.04400000000027,
+        "num_atoms": 30,
+        "num_bonds": 32
+      },
+      "objective": 0.6282914431770528
+    },
+    {
+      "indices": [
+        30,
+        33
+      ],
+      "smiles": "C=CC1=CC(=NCOCl)C2=C(SC)C(=C)C3C(N)SC4=C=COCN=C4C3C2=C1N",
+      "properties": {
+        "qed": 0.6198345091333829,
+        "sa": 0.4121465862191713,
+        "mol_weight": 461.0120000000002,
+        "num_atoms": 30,
+        "num_bonds": 33
+      },
+      "objective": 0.6198345091333829
+    },
+    {
+      "indices": [
+        30,
+        34
+      ],
+      "smiles": "C=CC1=CC(=NCOCl)C2=C(SC)C(=C)C34NC1=C2C3C1=NCOC=C=C1SC4N",
+      "properties": {
+        "qed": 0.6270064670073872,
+        "sa": 0.3225134929483593,
+        "mol_weight": 458.9960000000002,
+        "num_atoms": 30,
+        "num_bonds": 34
+      },
+      "objective": 0.6270064670073872
+    }
+  ]
+}

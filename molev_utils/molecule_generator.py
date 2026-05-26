@@ -28,6 +28,50 @@ def _load_selfies_ops():
             )
 
 
+# Lazy-import BigSMILES support — only loaded when encoding='bigsmiles' is requested.
+# This keeps the default SMILES/SELFIES paths free of the gbigsmiles dependency.
+_BigSMILESMutator = None
+_smiles_to_bigsmiles = None
+_bigsmiles_to_smiles = None
+
+def _load_bigsmiles_ops():
+    """Import bigsmiles_ops on first use; raises ImportError if gbigsmiles is not installed."""
+    global _BigSMILESMutator, _smiles_to_bigsmiles, _bigsmiles_to_smiles
+    if _BigSMILESMutator is None:
+        try:
+            from molev_utils.bigsmiles_ops import BigSMILESMutator, smiles_to_bigsmiles, bigsmiles_to_smiles
+            _BigSMILESMutator = BigSMILESMutator
+            _smiles_to_bigsmiles = smiles_to_bigsmiles
+            _bigsmiles_to_smiles = bigsmiles_to_smiles
+        except ImportError:
+            raise ImportError(
+                "The 'gbigsmiles' package is required for BigSMILES encoding. "
+                "Install it with: pip install gbigsmiles"
+            )
+
+
+# Lazy-import SLICES support — only loaded when encoding='slices' is requested.
+_SLICESMutator = None
+_structure_to_slices = None
+_crystal_error_props = None
+
+def _load_slices_ops():
+    """Import slices_ops on first use; raises ImportError if slices/pymatgen are not installed."""
+    global _SLICESMutator, _structure_to_slices, _crystal_error_props
+    if _SLICESMutator is None:
+        try:
+            from molev_utils.slices_ops import (
+                SLICESMutator, structure_to_slices, crystal_error_props)
+            _SLICESMutator = SLICESMutator
+            _structure_to_slices = structure_to_slices
+            _crystal_error_props = crystal_error_props
+        except ImportError:
+            raise ImportError(
+                "slices and pymatgen are required for SLICES encoding. "
+                "Install with: pip install slices --no-deps && pip install pymatgen matgl"
+            )
+
+
 # Helper function to load canonicalize_smiles
 def _load_molecular_utils():
     """load molecular.py from quantum_chemistry."""
@@ -124,7 +168,8 @@ class MoleculeGenerator:
                 list: A list of unique, valid SMILES strings.
     """
     """Generate diverse molecules using shared MoleculeMutator"""
-    def __init__(self, seed=92, mutation_weights=None, atom_set='nlo', encoding='smiles'):
+    def __init__(self, seed=92, mutation_weights=None, atom_set='nlo', encoding='smiles',
+                 n_samples=3, dp=None, element_set='oxides'):
         # Set random seed for reproducibility
         random.seed(seed)
 
@@ -142,16 +187,35 @@ class MoleculeGenerator:
         except:
             pass
 
-        if encoding not in ('smiles', 'selfies'):
-            raise ValueError(f"Unknown encoding '{encoding}'. Must be 'smiles' or 'selfies'.")
+        if encoding not in ('smiles', 'selfies', 'bigsmiles', 'slices'):
+            raise ValueError(
+                f"Unknown encoding '{encoding}'. "
+                "Must be 'smiles', 'selfies', 'bigsmiles', or 'slices'.")
         self.encoding = encoding
         self.atom_set = atom_set
-        self.mutator = MoleculeMutator(atom_set=atom_set)
+        self.element_set = element_set
+        # SLICES uses slices_mutator exclusively; MoleculeMutator is only for
+        # SMILES/SELFIES/BigSMILES and requires atom_set in {'nlo', 'drug'}.
+        if encoding == 'slices':
+            self.mutator = None
+        else:
+            self.mutator = MoleculeMutator(atom_set=atom_set)
         if encoding == 'selfies':
             _load_selfies_ops()
             self.selfies_mutator = _SELFIESMutator(atom_set=atom_set)
         else:
             self.selfies_mutator = None
+        if encoding == 'bigsmiles':
+            _load_bigsmiles_ops()
+            self.bigsmiles_mutator = _BigSMILESMutator(
+                atom_set=atom_set, n_samples=n_samples, dp=dp)
+        else:
+            self.bigsmiles_mutator = None
+        if encoding == 'slices':
+            _load_slices_ops()
+            self.slices_mutator = _SLICESMutator(element_set=element_set)
+        else:
+            self.slices_mutator = None
         if mutation_weights is None:
             # Equal weights for all mutation types (1/7 each)
             equal_weight = 1.0 / 7.0
@@ -178,13 +242,20 @@ class MoleculeGenerator:
         encoding (SMILES or SELFIES), this ensures the offspring is in the same
         format as the parents so it can be stored in the archive without
         additional conversion steps.
+
+        Returns None for 'slices' encoding (no crystal crossover in v1).
         """
+        if self.encoding == 'slices':
+            return None
         result_smiles = self.crossover_as_smiles(sol1, sol2)
         if result_smiles is None:
             return None
         if self.encoding == 'selfies':
             _load_selfies_ops()
             return _smiles_to_selfies(result_smiles)
+        if self.encoding == 'bigsmiles':
+            _load_bigsmiles_ops()
+            return _smiles_to_bigsmiles(result_smiles)
         return result_smiles
 
     def crossover_as_smiles(self, smiles1: str, smiles2: str) -> 'str | None':
@@ -192,7 +263,10 @@ class MoleculeGenerator:
 
         When encoding='selfies', the inputs are decoded to SMILES before crossing.
         The crossover engine operates on RDKit mol objects and is encoding-agnostic.
+        Returns None for 'slices' encoding (no crystal crossover in v1).
         """
+        if self.encoding == 'slices':
+            return None
         if self.encoding == 'selfies':
             s1 = self.decode_to_smiles(smiles1)
             s2 = self.decode_to_smiles(smiles2)
@@ -211,9 +285,24 @@ class MoleculeGenerator:
         For 'smiles' encoding this is equivalent to mutate_multiple().
         For 'selfies' encoding the input SMILES is encoded to SELFIES, mutated
         via token-level operations, then decoded back to SMILES.
+        For 'bigsmiles' encoding the SMILES is mutated directly (SMILES-level
+        mutations) and a SMILES is returned — CMA algorithms use this path.
+        Returns None for 'slices' encoding when called by CMA algorithms
+        (which use the result as an embedding input).  For non-CMA optimisers
+        that call this path, _mutate_slices() is dispatched instead so that
+        the SLICES string is mutated in place.
+
+        Note: CMA-MAE / CMA-ME raise NotImplementedError for slices; for all
+        other optimisers mutate_as_smiles passes through to _mutate_slices.
         """
+        if self.encoding == 'slices':
+            # Non-CMA path: mutate the SLICES string in place
+            return self._mutate_slices(smiles)
         if self.encoding == 'smiles':
             return self.mutate_multiple(smiles)
+        if self.encoding == 'bigsmiles':
+            # Mutate the SMILES directly; CMA latent-space pool stores SMILES
+            return self._mutate_smiles(smiles)
         # SELFIES mode: encode → mutate tokens → decode back to SMILES
         selfies_str = _smiles_to_selfies(smiles)
         if selfies_str is None:
@@ -224,23 +313,48 @@ class MoleculeGenerator:
         return _selfies_to_smiles(mutated_selfies)
 
     def validate_as_smiles(self, smiles: str, max_atoms: int = 30) -> bool:
-        """Validate a SMILES string using the underlying SMILES validator.
+        """Validate a solution string using the appropriate validator.
 
-        Always interprets the input as SMILES, regardless of the configured
-        encoding.  Useful for NSGA-II and other callers that always work
-        with SMILES-based Individual objects.
+        For molecular encodings the input is validated as SMILES (via RDKit).
+        For 'slices' encoding the input is validated as a SLICES string so
+        that existing optimisers (nsga2, mu_lambda) work without modification.
         """
+        if self.encoding == 'slices':
+            return self.slices_mutator.validate(smiles)
         return self.mutator.validate(smiles, max_atoms)
 
     def decode_to_smiles(self, solution: str) -> 'str | None':
         """Convert a solution string to SMILES regardless of encoding.
 
         For 'smiles' encoding this is a no-op; for 'selfies' it decodes via the
-        SELFIES library.  Returns None if decoding fails.
+        SELFIES library; for 'bigsmiles' it samples a molecule from the polymer
+        ensemble and returns the SMILES with the highest QED.
+
+        For 'slices' encoding returns the SLICES string unchanged so that
+        optimisers that pass the result to a crystal eval_interface work
+        without modification.  Use ``decode_to_structure()`` for structure
+        decoding; check ``generator.encoding == 'slices'`` to distinguish.
         """
+        if self.encoding == 'slices':
+            return solution  # pass through; crystal eval_interface accepts SLICES strings
         if self.encoding == 'selfies':
             return _selfies_to_smiles(solution)
+        if self.encoding == 'bigsmiles':
+            return self.bigsmiles_mutator.to_smiles(solution)
         return solution
+
+    def decode_to_structure(self, solution: str):
+        """Convert a SLICES string to a pymatgen Structure.
+
+        Only applicable when encoding='slices'.  Returns None for all other
+        encodings.
+
+        Returns:
+            pymatgen.core.Structure or None.
+        """
+        if self.encoding == 'slices':
+            return self.slices_mutator.to_structure(solution)
+        return None
 
     def mutate_multiple(self, solution: str, n_mutations: int = None):
         if n_mutations is None:
@@ -253,8 +367,12 @@ class MoleculeGenerator:
         return current if current != solution else None
 
     def mutate(self, solution: str):
+        if self.encoding == 'slices':
+            return self._mutate_slices(solution)
         if self.encoding == 'selfies':
             return self._mutate_selfies(solution)
+        if self.encoding == 'bigsmiles':
+            return self._mutate_bigsmiles(solution)
         return self._mutate_smiles(solution)
 
     def _mutate_smiles(self, smiles: str):
@@ -286,6 +404,40 @@ class MoleculeGenerator:
                 return new_selfies
         return None
 
+    def _mutate_bigsmiles(self, bigsmiles_str: str):
+        # BigSMILES mutations: same 7 types as SMILES, applied to the repeat unit
+        mutation_types = [1, 2, 3, 4, 5, 6, 7]
+        mutation_probs = [self.mutation_weights[k] for k in [
+            'change_bond', 'add_atom_inline', 'add_branch', 'delete_atom',
+            'change_atom', 'add_ring', 'delete_ring']]
+        attempts = 0
+        max_attempts = 10
+        while attempts < max_attempts:
+            attempts += 1
+            mutation_type = random.choices(mutation_types, mutation_probs)[0]
+            self.mutation_stats[mutation_type]['attempts'] += 1
+            new_bs = self.bigsmiles_mutator.mutate(bigsmiles_str, mutation_type)
+            if new_bs and self.bigsmiles_mutator.validate(new_bs):
+                self.mutation_stats[mutation_type]['successes'] += 1
+                return new_bs
+        return None
+
+    def _mutate_slices(self, slices_str: str):
+        # SLICES mutations: 6 types (substitute, add_site, remove_site,
+        # change_pbc, add_edge, remove_edge) — uniform weights
+        slices_mutation_types = [1, 2, 3, 4, 5, 6]
+        attempts = 0
+        max_attempts = 10
+        while attempts < max_attempts:
+            attempts += 1
+            mutation_type = random.choice(slices_mutation_types)
+            self.mutation_stats[mutation_type]['attempts'] += 1
+            new_slices = self.slices_mutator.mutate(slices_str, mutation_type)
+            if new_slices and self.slices_mutator.validate(new_slices):
+                self.mutation_stats[mutation_type]['successes'] += 1
+                return new_slices
+        return None
+
     def get_mutation_success_rates(self):
         rates = {}
         for k in [1,2,3,4,5,6,7]:
@@ -305,8 +457,12 @@ class MoleculeGenerator:
         self.mutation_weights = {k: v/total for k, v in self.mutation_weights.items()}
 
     def validate_molecule(self, solution: str, max_atoms: int = 30):
+        if self.encoding == 'slices':
+            return self.slices_mutator.validate(solution)
         if self.encoding == 'selfies':
             return self.selfies_mutator.validate(solution, max_atoms)
+        if self.encoding == 'bigsmiles':
+            return self.bigsmiles_mutator.validate(solution, max_atoms)
         return self.mutator.validate(solution, max_atoms)
 
     def generate_initial_population(self, size: int, save_to_file=False, seed_number=None, algorithm_name=None):
@@ -325,6 +481,22 @@ class MoleculeGenerator:
         Returns:
             list: List of valid SMILES strings
         """
+        # SLICES encoding: generate crystal seed structures instead of molecules
+        if self.encoding == 'slices':
+            _load_slices_ops()
+            seeds = self.slices_mutator.generate_seeds(
+                element_set=self.element_set, n=max(size * 3, 30))
+            if seeds:
+                base_molecules = seeds[:size]
+                # Fill any shortfall with mutations of the available seeds
+                while len(base_molecules) < size and seeds:
+                    mut = self.mutate(random.choice(seeds))
+                    if mut and mut not in base_molecules:
+                        base_molecules.append(mut)
+                return base_molecules[:size]
+            # Fallback: return whatever seeds we have
+            return seeds[:size]
+
         # Select base molecules based on atom set
         if self.atom_set == 'drug':
             base_molecules = [
@@ -372,6 +544,14 @@ class MoleculeGenerator:
                 enc = _smiles_to_selfies(smi)
                 if enc:
                     converted.append(enc)
+            if converted:
+                base_molecules = converted
+
+        # Convert base SMILES to BigSMILES encoding if needed
+        if self.encoding == 'bigsmiles':
+            _load_bigsmiles_ops()
+            converted = [_smiles_to_bigsmiles(smi) for smi in base_molecules]
+            converted = [b for b in converted if b is not None]
             if converted:
                 base_molecules = converted
 
@@ -434,7 +614,7 @@ class MoleculeGenerator:
                     f.write(f"# Random Seed: {seed_number}\n")
                 f.write(f"# Population Size: {len(final_population)}\n")
                 f.write("#\n")
-                enc_label = "SELFIES" if self.encoding == 'selfies' else "SMILES"
+                enc_label = {'selfies': 'SELFIES', 'bigsmiles': 'BigSMILES'}.get(self.encoding, 'SMILES')
                 f.write(f"# {enc_label} strings (one per line):\n")
                 f.write("#" + "="*60 + "\n\n")
 
