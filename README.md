@@ -21,13 +21,14 @@ Molecular-Evolution is a GitHub repository for our project using evolutionary al
 - Simulated Annealing
 - Mu + Lambda
 - Non-dominated Sorting Genetic Algorithm II (NSGA-II)
-- Non-dominated Sorting Genetic Algorithm III (NSGA-III) *In-progress*
+- Non-dominated Sorting Genetic Algorithm III (NSGA-III)
 - Multi-dimensional Archive of Phenotypic Elites (MAP-Elites)
 - Multi-Objective MAP-Elites (MOME)
-- Covariance Matrix Adaptation MAP-Elites (CMA-ME) *In-progress*
+- Covariance Matrix Adaptation MAP-Elites (CMA-ME)
 - Covariance Matrix Adaptation MAP-Annealing (CMA-MAE)
 - Multi-Objective Covariance Matrix Adaptation MAP-Annealing (MO-CMA-MAE)
-- Multi-Objective Evolutionary Algorithm based on Decomposition (MOEA/D) *Planned*
+- Multi-Objective Evolutionary Algorithm based on Decomposition (MOEA/D)
+- Two-Archive Evolutionary Algorithm for Constrained Multi-Objective Optimization (C-TAEA) *In-Progress*
 
 ## Supported Molecular Genotypes
 
