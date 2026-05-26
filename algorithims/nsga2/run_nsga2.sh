@@ -6,10 +6,11 @@ SEED=${1:-55}  # Default to 42 if no argument provided
 
 echo "Running NSGA-II with seed ${SEED}..."
 
-cd ~/Molecular-Evolution/algorithims/nsga2
+# Change to the NSGA2 script directory (use correct Documents/GitHub path)
+cd "$HOME/Documents/GitHub/Molecular-Evolution/algorithims/nsga2" || { echo "Directory not found: $HOME/Documents/GitHub/Molecular-Evolution/algorithims/nsga2"; exit 1; }
 
-# Set Python path to include quantum_chemistry directory
-export PYTHONPATH="$HOME/Molecular-Evolution/quantum_chemistry:$PYTHONPATH"
+# Ensure project root and quantum_chemistry are on PYTHONPATH so top-level packages resolve
+export PYTHONPATH="$HOME/Documents/GitHub/Molecular-Evolution:$HOME/Documents/GitHub/Molecular-Evolution/quantum_chemistry:$PYTHONPATH"
 
 python3 main.py \
     --calculator dft \
