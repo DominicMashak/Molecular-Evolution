@@ -1,8 +1,5 @@
 #!/bin/bash
-<<<<<<< Updated upstream
-=======
 set -euo pipefail
->>>>>>> Stashed changes
 # Setup script for molecular docking environment
 # This creates a dedicated conda environment with all docking dependencies
 
@@ -101,7 +98,7 @@ if [ $VALIDATION_STATUS -eq 0 ]; then
     echo "To use the docking environment:"
     echo "  conda activate molev-docking"
     echo "  cd ~/Molecular-Evolution"
-    echo "  ./algorithims/nsga2/run_nsga2_drug.sh 42 docking 1AQ1"
+    echo "  ./algorithms/nsga2/run_nsga2_drug.sh 42 docking 1AQ1"
     echo ""
 else
     echo ""
@@ -110,7 +107,7 @@ else
     echo "Please review the error messages above."
     echo "You may still be able to use descriptor mode:"
     echo "  conda activate molev-docking"
-    echo "  ./algorithims/nsga2/run_nsga2_drug.sh 42 descriptors"
+    echo "  ./algorithms/nsga2/run_nsga2_drug.sh 42 descriptors"
     echo ""
     echo "For troubleshooting, see: DOCKING_SETUP_GUIDE.md"
     echo ""
@@ -123,5 +120,5 @@ echo ""
 echo "Next steps:"
 echo "  1. Activate: conda activate molev-docking"
 echo "  2. Validate: python tools/validate_docking_env.py --test-all"
-echo "  3. Run test: ./algorithims/nsga2/run_nsga2_drug.sh 42 docking 1AQ1"
+echo "  3. Run test: ./algorithms/nsga2/run_nsga2_drug.sh 42 docking 1AQ1"
 echo ""

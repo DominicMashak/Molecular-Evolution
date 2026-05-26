@@ -1,7 +1,6 @@
 name: mol-evo
 channels:
   - conda-forge
-  - pytorch
   - defaults
 dependencies:
   # Core scientific packages
@@ -23,18 +22,17 @@ dependencies:
   - openbabel    # Molecule format conversion (PDB <-> PDBQT)
   - pymol-open-source  # Visualization
 
-  # Quantum chemistry
+  # Quantum chemistry (molecular)
   - pyscf
   - ase
   - dftbplus
   - dftd4
   - tblite
   - tblite-python
-
-  # PyTorch (CPU/CUDA version from pytorch channel)
-  # NOTE: For AMD ROCm GPU support, install PyTorch ROCm build via pip instead:
-  #   pip install torch --index-url https://download.pytorch.org/whl/rocm6.2
-  - pytorch::pytorch
+  # Quantum ESPRESSO periodic DFT (crystal bandgap, band structure, effective masses)
+  # Install: conda install -n mol-evo -c conda-forge qe
+  # Pseudopotentials: python -m quantum_chemistry.setup_pseudos --elements Si Ge Ga As N
+  - qe
 
   # Other utilities
   - flask
@@ -47,3 +45,18 @@ dependencies:
     - selfies
     # CMA-MAE quality-diversity optimisation (GridArchive, EvolutionStrategyEmitter, Scheduler)
     - ribs
+    # BigSMILES polymer genotype encoding and sampling
+    - gbigsmiles
+    # SLICES crystal genotype encoding and structure reconstruction
+    - slices           # install with --no-deps (avoids tensorflow/m3gnet; we use CHGNet instead)
+    - pymatgen         # crystal structure representation
+    - smact            # element validity checking
+    - chgnet           # PyTorch CHGNet for formation energy prediction (no DGL required)
+    # PyTorch: install via pip to support both CPU and AMD ROCm (WSL)
+    # CPU:   pip install torch
+    # ROCm:  pip install torch --index-url https://download.pytorch.org/whl/rocm6.2
+    - torch>=2.9
+    - torch-geometric  # Graph neural network utilities (crystal property models)
+    # ALIGNN + JARVIS pretrained models for SLICES superconductor Tc prediction (InvDesFlow)
+    - alignn           # Atomistic Line Graph Neural Network
+    - jarvis-tools     # JARVIS/NIST pretrained model infrastructure and structure converters

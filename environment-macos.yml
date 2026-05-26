@@ -45,3 +45,18 @@ dependencies:
     # Molecular embeddings (ChemBERTa-2 for CVT-MOME)
     - transformers
     - umap-learn
+    # SELFIES molecular string encoding
+    - selfies
+    # CMA-MAE quality-diversity optimisation
+    - ribs
+    # BigSMILES polymer genotype encoding
+    - gbigsmiles
+    # SLICES crystal genotype encoding and structure reconstruction
+    - slices           # install with --no-deps (avoids tensorflow/m3gnet)
+    - pymatgen         # crystal structure representation
+    - smact            # element validity checking
+    - chgnet           # PyTorch CHGNet for formation energy prediction
+    - torch-geometric  # Graph neural network utilities
+    # ALIGNN + JARVIS pretrained models for SLICES superconductor Tc prediction (InvDesFlow)
+    - alignn           # Atomistic Line Graph Neural Network
+    - jarvis-tools     # JARVIS/NIST pretrained model infrastructure and structure converters
