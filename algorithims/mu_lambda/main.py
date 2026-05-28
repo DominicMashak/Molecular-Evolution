@@ -84,7 +84,7 @@ Examples:
 
     # Fitness mode options
     parser.add_argument('--fitness-mode', type=str, default='qc',
-                       choices=['qc', 'smartcadd'],
+                       choices=['qc', 'smartcadd', 'gpdrp'],
                        help='Fitness evaluation mode: "qc" for quantum chemistry, '
                             '"smartcadd" for drug-design evaluation')
 
@@ -117,6 +117,8 @@ Examples:
                        help='Local path to protein PDB file')
     parser.add_argument('--alert-collection', type=str, default=None,
                        help='Path to ADMET alert collection CSV')
+    parser.add_argument('--cell-line', type=str, default='22RV1',
+                       help='Cell line for GPDRP drug response prediction')
     parser.add_argument('--atom-set', type=str, default=None,
                        choices=['nlo', 'drug'],
                        help='Atom set for mutation/validation')
@@ -194,6 +196,14 @@ Examples:
             smartcadd_kwargs['alert_collection_path'] = args.alert_collection
         eval_interface = SmartCADDInterface(verbose=args.verbose, **smartcadd_kwargs)
         logger.info(f"Using SmartCADD evaluation (mode={args.smartcadd_mode})")
+    elif args.fitness_mode == 'gpdrp':
+        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+        from drug.gpdrp_interface import GPDRPInterface
+        eval_interface = GPDRPInterface(
+            cell_line=args.cell_line,
+            verbose=args.verbose
+        )
+        logger.info(f"Using GPDRP evaluation (cell_line={args.cell_line})")
     else:
         # Validate calculator is provided for QC mode
         if not args.calculator:
