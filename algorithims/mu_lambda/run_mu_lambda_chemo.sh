@@ -3,6 +3,8 @@ SEED=${1:-42}
 cell_line=${2:-22RV1}
 mu_value=${3:-10}
 lambda_value=${4:-20}
+qed_min=${5:-0.3}
+filter_lipinski=${6:-true}
 
 echo "======================================================================"
 echo "Running (μ+λ) ES for GPDRP Optimization with seed ${SEED} and cell line ${cell_line}"
@@ -18,6 +20,8 @@ python main.py \
     --objective lnic50 \
     --atom-set drug \
     --minimize \
+    --qed-min ${qed_min} \
+    $( [ "$filter_lipinski" = "true" ] && echo "--filter-lipinski" ) \
     --mu ${mu_value} \
     --lambda ${lambda_value} \
     --n-gen 5 \

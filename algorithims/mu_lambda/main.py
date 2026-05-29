@@ -3,6 +3,7 @@ Main script for (μ+λ) Evolution Strategy molecular optimization
 Supports both NLO (quantum chemistry) and drug design (SmartCADD) modes.
 """
 
+from html import parser
 import sys
 import os
 import argparse
@@ -119,6 +120,10 @@ Examples:
                        help='Path to ADMET alert collection CSV')
     parser.add_argument('--cell-line', type=str, default='22RV1',
                        help='Cell line for GPDRP drug response prediction')
+    parser.add_argument('--qed-min', type=float, default=0.3,
+                   help='Minimum QED score for drug-likeness filter (gpdrp mode, default: 0.3)')
+    parser.add_argument('--filter-lipinski', action='store_true', default=True,
+                   help='Filter molecules with >1 Lipinski violations (gpdrp mode, default: True)')
     parser.add_argument('--atom-set', type=str, default=None,
                        choices=['nlo', 'drug'],
                        help='Atom set for mutation/validation')
@@ -197,13 +202,13 @@ Examples:
         eval_interface = SmartCADDInterface(verbose=args.verbose, **smartcadd_kwargs)
         logger.info(f"Using SmartCADD evaluation (mode={args.smartcadd_mode})")
     elif args.fitness_mode == 'gpdrp':
-        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
         from drug.gpdrp_interface import GPDRPInterface
         eval_interface = GPDRPInterface(
             cell_line=args.cell_line,
-            verbose=args.verbose
+            verbose=args.verbose,
+            qed_min=args.qed_min,
+            filter_lipinski=args.filter_lipinski
         )
-        logger.info(f"Using GPDRP evaluation (cell_line={args.cell_line})")
     else:
         # Validate calculator is provided for QC mode
         if not args.calculator:

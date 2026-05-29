@@ -1,6 +1,9 @@
 #!/bin/bash
 SEED=${1:-42}
 cell_line=${2:-22RV1}
+qed_min=${3:-0.3}
+filter_lipinski=${4:-true}
+
 
 echo "======================================================================"
 echo "Running MAP-Elites CVT for GPDRP with seed ${SEED} cell line ${cell_line}"
@@ -14,6 +17,8 @@ python main.py \
     --fitness-mode gpdrp \
     --cell-line ${cell_line} \
     --objective-key lnic50 \
+    --qed-min ${qed_min} \
+    $( [ "$filter_lipinski" = "true" ] && echo "--filter-lipinski" ) \
     --archive-type cvt \
     --n-centroids 100 \
     --pop_size 20 \

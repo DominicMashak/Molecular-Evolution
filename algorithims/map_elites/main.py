@@ -1,3 +1,4 @@
+from email import parser
 from random import random
 import sys
 import os
@@ -90,6 +91,10 @@ Examples:
                        help='Path to ADMET alert collection CSV')
     parser.add_argument('--cell-line', type=str, default='22RV1',
                        help='Cell line for GPDRP drug response prediction')
+    parser.add_argument('--qed-min', type=float, default=0.3,
+                   help='Minimum QED score for drug-likeness filter (gpdrp mode, default: 0.3)')
+    parser.add_argument('--filter-lipinski', action='store_true', default=True,
+                   help='Filter molecules with >1 Lipinski violations (gpdrp mode, default: True)')
     parser.add_argument('--atom-set', type=str, default=None,
                        choices=['nlo', 'drug'],
                        help='Atom set for mutation/validation')
@@ -188,7 +193,9 @@ Examples:
         from drug.gpdrp_interface import GPDRPInterface
         eval_interface = GPDRPInterface(
             cell_line=args.cell_line,
-            verbose=args.verbose
+            verbose=args.verbose,
+            qed_min=args.qed_min,
+            filter_lipinski=args.filter_lipinski
         )
         atom_set = 'drug'
     else:
