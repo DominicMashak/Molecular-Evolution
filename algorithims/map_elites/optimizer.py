@@ -383,7 +383,8 @@ class MAPElitesOptimizer:
         self.performance_tracker.save()
         self.performance_plotter.plot_convergence(self.performance_tracker)
         self.performance_plotter.plot_hypervolume(self.performance_tracker)
-        self.performance_plotter.plot_archive_heatmap(self.archive)
+        if hasattr(self.archive, 'objectives'):  # only for grid archives
+            self.performance_plotter.plot_archive_heatmap(self.archive)
         self.performance_plotter.plot_archive_cells_evolution(self.performance_tracker)
         self.performance_plotter.plot_qd_score_evolution(self.performance_tracker)
         

@@ -1,3 +1,4 @@
+from random import random
 import sys
 import os
 import argparse
@@ -73,9 +74,9 @@ Examples:
     
     # Fitness mode options
     parser.add_argument('--fitness-mode', type=str, default='qc',
-                       choices=['qc', 'smartcadd'],
+                       choices=['qc', 'smartcadd', 'gpdrp'],
                        help='Fitness evaluation mode: "qc" for quantum chemistry, '
-                            '"smartcadd" for drug-design evaluation')
+                            '"smartcadd" for drug-design evaluation, "gpdrp" for GPDRP evaluation')
     parser.add_argument('--smartcadd-path', type=str, default=None,
                        help='Path to SmartCADD repository')
     parser.add_argument('--smartcadd-mode', type=str, default='descriptors',
@@ -87,6 +88,8 @@ Examples:
                        help='Local path to protein PDB file')
     parser.add_argument('--alert-collection', type=str, default=None,
                        help='Path to ADMET alert collection CSV')
+    parser.add_argument('--cell-line', type=str, default='22RV1',
+                       help='Cell line for GPDRP drug response prediction')
     parser.add_argument('--atom-set', type=str, default=None,
                        choices=['nlo', 'drug'],
                        help='Atom set for mutation/validation')
@@ -181,6 +184,13 @@ Examples:
         if args.alert_collection:
             smartcadd_kwargs['alert_collection_path'] = args.alert_collection
         eval_interface = SmartCADDInterface(verbose=args.verbose, **smartcadd_kwargs)
+    elif args.fitness_mode == 'gpdrp':
+        from drug.gpdrp_interface import GPDRPInterface
+        eval_interface = GPDRPInterface(
+            cell_line=args.cell_line,
+            verbose=args.verbose
+        )
+        atom_set = 'drug'
     else:
         # Setup calculator kwargs
         calculator_kwargs = {}
@@ -300,6 +310,8 @@ Examples:
         objective_key = args.objective_key
     elif args.fitness_mode == 'smartcadd':
         objective_key = 'qed'
+    elif args.fitness_mode == 'gpdrp':
+        objective_key = 'lnic50'
     else:
         objective_key = 'beta_gamma_ratio'
 
@@ -366,13 +378,15 @@ Examples:
     
     # Show some example solutions from different regions
     print("\nSample solutions from archive:")
-    for entry in random.sample(optimizer.archive.get_all_solutions(), 
-                               min(5, len(optimizer.archive))):
-        print(f"  {entry['indices']}: {entry['solution']} "
-              f"(beta_mean={entry['properties']['beta_mean']:.3f}, "
-              f"num_atoms={entry['properties']['num_atoms']})")    
     
-    #optimizer 
+    for entry in random.sample(optimizer.archive.get_all_solutions(),
+                           min(5, len(optimizer.archive))):
+        obj_val = entry['properties'].get(objective_key, 0.0)
+        print(f"  {entry['solution']} "
+          f"({objective_key}={obj_val:.4f}, "
+          f"num_atoms={entry['properties'].get('num_atoms', 'N/A')})")
+    
+ 
     
 if __name__ == "__main__":
     main()

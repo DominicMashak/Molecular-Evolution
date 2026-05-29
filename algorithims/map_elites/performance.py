@@ -49,7 +49,13 @@ class PerformanceTracker:
         # Calculate QD Score (sum of fitness improvements over worst fitness)
         # For beta_mean, worst fitness = 0, so QD score = sum of all beta_mean values
         # This is the total "quality-diversity" - it can only increase or stay same
-        all_objectives = archive.objectives[~np.isinf(archive.objectives)]
+        solutions = archive.get_all_solutions()
+        all_objectives = np.array([
+            s['properties'].get(archive.objective_key, 0.0)
+            for s in solutions
+            if s['properties'].get(archive.objective_key) is not None
+        ])
+        all_objectives = all_objectives[~np.isinf(all_objectives)]
         qd_score = float(np.sum(all_objectives)) if len(all_objectives) > 0 else 0.0
         
         # Check for monotonicity (QD score should never decrease in MAP-Elites)
