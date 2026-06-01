@@ -6,14 +6,21 @@ Mirrors the interface of smartcadd_interface.py and quantum_chemistry_interface.
 
 import subprocess
 import os
+import sys
 from typing import Dict, Any
 
 GPDRP_DIR    = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
 INFER_SCRIPT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "infer.py")
 CONDA_PYTHON = "/Users/rohanbasuroy/miniconda3/envs/GPDRP/bin/python"
 
+# sascorer is an RDKit contrib script, not an installed package
+_SASCORER_PATH = "/Users/rohanbasuroy/miniconda3/envs/GPDRP/share/RDKit/Contrib/SA_Score"
+if _SASCORER_PATH not in sys.path and os.path.isfile(os.path.join(_SASCORER_PATH, 'sascorer.py')):
+    sys.path.insert(0, _SASCORER_PATH)
+
 # ── drug-likeness filter thresholds ──────────────────────────
 QED_MIN          = 0.3    # below this → not drug-like, reject
+SA_MAX           = 6.0    # above this → too hard to synthesize, reject
 MOL_WEIGHT_MAX   = 500    # Lipinski rule
 LOGP_MAX         = 5      # Lipinski rule
 HBD_MAX          = 5      # hydrogen bond donors
@@ -30,11 +37,13 @@ class GPDRPInterface:
     """
 
     def __init__(self, cell_line: str = "22RV1", verbose: bool = False,
-                 qed_min: float = QED_MIN, filter_lipinski: bool = True):
+                 qed_min: float = QED_MIN, filter_lipinski: bool = True,
+                 sa_max: float = SA_MAX):
         self.cell_line       = cell_line
         self.verbose         = verbose
         self.qed_min         = qed_min
         self.filter_lipinski = filter_lipinski
+        self.sa_max          = sa_max
 
     def _compute_rdkit_props(self, smiles: str) -> Dict[str, Any]:
         """
@@ -45,7 +54,7 @@ class GPDRPInterface:
         try:
             from rdkit import Chem
             from rdkit.Chem import Descriptors, QED
-            from rdkit.Chem.rdMolDescriptors import CalcNumHBD, CalcNumHBA
+            import sascorer
 
             mol = Chem.MolFromSmiles(smiles)
             if mol is None:
@@ -56,6 +65,7 @@ class GPDRPInterface:
             hbd        = Descriptors.NumHDonors(mol)
             hba        = Descriptors.NumHAcceptors(mol)
             qed        = QED.qed(mol)
+            sa         = sascorer.calculateScore(mol)
 
             violations = sum([
                 mol_weight > MOL_WEIGHT_MAX,
@@ -66,6 +76,7 @@ class GPDRPInterface:
 
             return {
                 'qed':                 qed,
+                'sa_score':            sa,
                 'mol_weight':          mol_weight,
                 'logp':                logp,
                 'hbd':                 hbd,
@@ -105,6 +116,11 @@ class GPDRPInterface:
                 print(f"REJECTED (Lipinski violations={props['lipinski_violations']}): {smiles}")
             return {"error": f"Lipinski violations: {props['lipinski_violations']}"}
 
+        if props['sa_score'] > self.sa_max:
+            if self.verbose:
+                print(f"REJECTED (SA={props['sa_score']:.3f} > {self.sa_max}): {smiles}")
+            return {"error": f"SA score too high: {props['sa_score']:.3f}"}
+
         # step 3 — run GPDRP
         try:
             cmd = [
@@ -141,6 +157,7 @@ class GPDRPInterface:
             return {
                 "lnic50":                lnic50,
                 "qed":                   props['qed'],
+                "sa_score":              props['sa_score'],
                 "mol_weight":            props['mol_weight'],
                 "logp":                  props['logp'],
                 "hbd":                   props['hbd'],

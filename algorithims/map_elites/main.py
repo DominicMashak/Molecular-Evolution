@@ -12,6 +12,29 @@ import optimizer as op
 from molecule_generator import MoleculeGenerator
 from quantum_chemistry_interface import QuantumChemistryInterface
 
+
+def load_smiles_from_file(path: str):
+    """Load SMILES from a TXT file (one per line, # comments) or CSV with a 'smiles' column."""
+    import csv
+    smiles_list = []
+    if path.endswith('.csv'):
+        with open(path) as f:
+            reader = csv.DictReader(f)
+            col = next((c for c in reader.fieldnames if c.lower() == 'smiles'), None)
+            if col is None:
+                raise ValueError(f"CSV file '{path}' has no 'smiles' column.")
+            for row in reader:
+                s = row[col].strip()
+                if s:
+                    smiles_list.append(s)
+    else:
+        with open(path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#'):
+                    smiles_list.append(line.split()[0])
+    return smiles_list
+
 def main():
     parser = argparse.ArgumentParser(
         description="MAP-Elites Molecular Optimization",
@@ -95,6 +118,8 @@ Examples:
                    help='Minimum QED score for drug-likeness filter (gpdrp mode, default: 0.3)')
     parser.add_argument('--filter-lipinski', action='store_true', default=True,
                    help='Filter molecules with >1 Lipinski violations (gpdrp mode, default: True)')
+    parser.add_argument('--sa-max', type=float, default=6.0,
+                   help='Maximum SA score (1=easy, 10=hard to synthesize) for gpdrp mode (default: 6.0)')
     parser.add_argument('--atom-set', type=str, default=None,
                        choices=['nlo', 'drug'],
                        help='Atom set for mutation/validation')
@@ -105,6 +130,9 @@ Examples:
                        help='Probability of crossover vs mutation per offspring (0.0 = off, default)')
     parser.add_argument('--objective-key', type=str, default=None,
                        help='Objective key for MAP-Elites archive (default: beta_gamma_ratio for qc, qed for smartcadd)')
+
+    parser.add_argument('--initial-population-file', type=str, default=None,
+                       help='Path to a TXT or CSV file containing seed SMILES for the initial population')
 
     # Other options
     parser.add_argument('--seed', type=int, default=42,
@@ -195,7 +223,8 @@ Examples:
             cell_line=args.cell_line,
             verbose=args.verbose,
             qed_min=args.qed_min,
-            filter_lipinski=args.filter_lipinski
+            filter_lipinski=args.filter_lipinski,
+            sa_max=args.sa_max
         )
         atom_set = 'drug'
     else:
@@ -312,7 +341,7 @@ Examples:
 
         return props
 
-    # Determine objective key
+    # Determine objective key and direction
     if args.objective_key:
         objective_key = args.objective_key
     elif args.fitness_mode == 'smartcadd':
@@ -356,6 +385,12 @@ Examples:
             objective_key=objective_key
         )
     
+    # Load initial population from file if provided
+    initial_molecules = []
+    if args.initial_population_file:
+        initial_molecules = load_smiles_from_file(args.initial_population_file)
+        print(f"Loaded {len(initial_molecules)} seed SMILES from {args.initial_population_file}")
+
     crossover_fn = generator.crossover_in_encoding if args.crossover_rate > 0.0 else None
     optimizer = op.MAPElitesOptimizer(
         archive=archive,
@@ -366,7 +401,8 @@ Examples:
         output_dir=args.output_dir,
         reference_point=args.reference_point,
         crossover_rate=args.crossover_rate,
-        crossover_fn=crossover_fn
+        crossover_fn=crossover_fn,
+        initial_molecules=initial_molecules
     )
     
     # Run optimization

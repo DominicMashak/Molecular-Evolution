@@ -3,6 +3,8 @@ SEED=${1:-42}
 cell_line=${2:-22RV1}
 qed_min=${3:-0.3}
 filter_lipinski=${4:-true}
+sa_max=${5:-6.0}
+initial_molecules_file=${6:-$HOME/Documents/GitHub/Molecular-Evolution/drug/initial_molecules.txt}
 
 
 echo "======================================================================"
@@ -18,6 +20,7 @@ python main.py \
     --cell-line ${cell_line} \
     --objective-key lnic50 \
     --qed-min ${qed_min} \
+    --sa-max ${sa_max} \
     $( [ "$filter_lipinski" = "true" ] && echo "--filter-lipinski" ) \
     --archive-type cvt \
     --n-centroids 100 \
@@ -28,6 +31,7 @@ python main.py \
     --output_dir map_elites_gpdrp_results_seed_${SEED} \
     --seed ${SEED} \
     --atom-set drug \
+    --initial-population-file ${initial_molecules_file} \
     --verbose
 
 echo "======================================================================"

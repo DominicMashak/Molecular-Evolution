@@ -80,7 +80,7 @@ class MuLambdaOptimizer:
         generator: MoleculeGenerator,
         eval_interface,
         output_dir: str = "mu_lambda_results",
-        initial_seeds: List[str] = None,
+        initial_molecules: List[str] = None,
         save_frequency: int = 10,
         log_frequency: int = 1,
         seed: int = None,
@@ -99,7 +99,7 @@ class MuLambdaOptimizer:
             generator: MoleculeGenerator instance for mutations
             eval_interface: Evaluation interface (QuantumChemistryInterface or SmartCADDInterface)
             output_dir: Directory for saving results
-            initial_seeds: Optional list of SMILES to seed population
+            initial_molecules: Optional list of SMILES to seed population
             save_frequency: How often to save population (generations)
             log_frequency: How often to log progress (generations)
         """
@@ -112,7 +112,7 @@ class MuLambdaOptimizer:
         self.eval_interface = eval_interface
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True, parents=True)
-        self.initial_seeds = initial_seeds or []
+        self.initial_molecules = initial_molecules or []
         self.save_frequency = save_frequency
         self.log_frequency = log_frequency
         self.seed = seed
@@ -297,8 +297,8 @@ class MuLambdaOptimizer:
 
         # Initialize population
         logger.info("Generating initial population...")
-        if self.initial_seeds:
-            initial_smiles = self.initial_seeds[:self.mu]
+        if self.initial_molecules:
+            initial_smiles = self.initial_molecules[:self.mu]
             if len(initial_smiles) < self.mu:
                 additional = self.generator.generate_initial_population(
                     self.mu - len(initial_smiles),

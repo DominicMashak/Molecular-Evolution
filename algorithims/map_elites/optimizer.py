@@ -21,7 +21,8 @@ class MAPElitesOptimizer:
         output_dir: str = "map_elites_results",
         reference_point: List[float] = None,
         crossover_rate: float = 0.0,
-        crossover_fn: Optional[Callable[[Any, Any], Any]] = None
+        crossover_fn: Optional[Callable[[Any, Any], Any]] = None,
+        initial_molecules: Optional[List[str]] = None
     ):
         """
         Initialize the MAP-Elites optimizer.
@@ -47,6 +48,7 @@ class MAPElitesOptimizer:
         self.random_init_size = random_init_size
         self.crossover_rate = crossover_rate
         self.crossover_fn = crossover_fn
+        self.initial_molecules = initial_molecules or []
         
         from pathlib import Path
         self.output_dir = Path(output_dir)
@@ -63,39 +65,43 @@ class MAPElitesOptimizer:
     
     def initialize(self) -> None:
         """
-        Initialize the archive with random solutions.
+        Initialize the archive. Evaluates any provided initial_molecules first,
+        then fills remaining slots with randomly generated solutions.
         """
-        print(f"Initializing with {self.random_init_size} random solutions...")
-        
-        bin_stats = {}  # Track which bins are being filled
-        
-        for i in range(self.random_init_size):
-            # Generate and evaluate a random solution
-            solution = self.generate_fn()
+        total = max(self.random_init_size, len(self.initial_molecules))
+        print(f"Initializing archive "
+              f"({len(self.initial_molecules)} seeds + "
+              f"{max(0, self.random_init_size - len(self.initial_molecules))} random)...")
+
+        bin_stats = {}
+
+        def _evaluate_and_add(solution):
             if solution is None:
-                continue  # Skip invalid generations
+                return
             properties = self.evaluate_fn(solution)
             self.total_evaluations += 1
-
-            # Update molecule database (generation 0 for initialization)
             self.update_molecule_database(solution, properties, generation=0)
-
-            # Track bin statistics
+            if properties.get('error'):
+                return
             bin_key = (properties.get('num_atoms_bin', -1), properties.get('num_bonds_bin', -1))
             bin_stats[bin_key] = bin_stats.get(bin_key, 0) + 1
-            
-            # Try to add to archive
-            was_added = self.archive.add(solution, properties)
-            
-            if (i + 1) % max(1, self.random_init_size // 10) == 0:
-                print(f"  {i + 1}/{self.random_init_size} - "
+            self.archive.add(solution, properties)
+
+        # Evaluate seed molecules first
+        for i, smiles in enumerate(self.initial_molecules):
+            print(f"  Seed {i + 1}/{len(self.initial_molecules)}: {smiles}")
+            _evaluate_and_add(smiles)
+
+        # Fill remaining slots with random solutions
+        n_random = max(0, self.random_init_size - len(self.initial_molecules))
+        for i in range(n_random):
+            _evaluate_and_add(self.generate_fn())
+            if (i + 1) % max(1, n_random // 10) == 0:
+                print(f"  Random {i + 1}/{n_random} - "
                       f"Coverage: {self.archive.get_coverage():.2%}, "
-                      f"Unique bins tried: {len(bin_stats)}")
-        
+                      f"Unique bins: {len(bin_stats)}")
+
         print(f"Initialization complete. Archive size: {len(self.archive)}")
-        print(f"Bin distribution during init: {len(bin_stats)} unique bins explored")
-        
-        # Show top 5 most common bins
         sorted_bins = sorted(bin_stats.items(), key=lambda x: x[1], reverse=True)[:5]
         print(f"Most common bins: {sorted_bins}")
     
@@ -309,6 +315,9 @@ class MAPElitesOptimizer:
 
             # Update molecule database
             self.update_molecule_database(solution, properties, generation=self.generation + 1)
+
+            if properties.get('error'):
+                continue
 
             # Try to add to archive
             was_added = self.archive.add(solution, properties)

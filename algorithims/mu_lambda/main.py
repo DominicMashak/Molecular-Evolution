@@ -16,6 +16,29 @@ from optimizer import MuLambdaOptimizer
 from molecule_generator import MoleculeGenerator
 
 
+def load_smiles_from_file(path: str):
+    """Load SMILES from a TXT file (one per line, # comments) or CSV with a 'smiles' column."""
+    import csv
+    smiles_list = []
+    if path.endswith('.csv'):
+        with open(path) as f:
+            reader = csv.DictReader(f)
+            col = next((c for c in reader.fieldnames if c.lower() == 'smiles'), None)
+            if col is None:
+                raise ValueError(f"CSV file '{path}' has no 'smiles' column.")
+            for row in reader:
+                s = row[col].strip()
+                if s:
+                    smiles_list.append(s)
+    else:
+        with open(path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#'):
+                    smiles_list.append(line.split()[0])
+    return smiles_list
+
+
 def setup_logging(verbose: bool = False):
     """Setup logging configuration"""
     level = logging.DEBUG if verbose else logging.INFO
@@ -124,6 +147,8 @@ Examples:
                    help='Minimum QED score for drug-likeness filter (gpdrp mode, default: 0.3)')
     parser.add_argument('--filter-lipinski', action='store_true', default=True,
                    help='Filter molecules with >1 Lipinski violations (gpdrp mode, default: True)')
+    parser.add_argument('--sa-max', type=float, default=6.0,
+                   help='Maximum SA score (1=easy, 10=hard to synthesize) for gpdrp mode (default: 6.0)')
     parser.add_argument('--atom-set', type=str, default=None,
                        choices=['nlo', 'drug'],
                        help='Atom set for mutation/validation')
@@ -146,8 +171,10 @@ Examples:
                        help='Random seed')
     parser.add_argument('--verbose', action='store_true',
                        help='Enable verbose output')
-    parser.add_argument('--initial-seeds', type=str, nargs='+',
-                       help='Initial SMILES strings to seed population')
+    parser.add_argument('--initial-molecules', type=str, nargs='+',
+                       help='Initial SMILES strings for the starting population')
+    parser.add_argument('--initial-population-file', type=str, default=None,
+                       help='Path to a TXT or CSV file containing seed SMILES for the initial population')
 
     # Recalculation option
     parser.add_argument('--recalculate', type=str, default=None,
@@ -207,7 +234,8 @@ Examples:
             cell_line=args.cell_line,
             verbose=args.verbose,
             qed_min=args.qed_min,
-            filter_lipinski=args.filter_lipinski
+            filter_lipinski=args.filter_lipinski,
+            sa_max=args.sa_max
         )
     else:
         # Validate calculator is provided for QC mode
@@ -234,6 +262,13 @@ Examples:
         )
         logger.info(f"Using quantum chemistry evaluation (calculator={args.calculator})")
 
+    # Build initial molecules list (file takes priority, then --initial-molecules)
+    initial_molecules = list(args.initial_molecules or [])
+    if args.initial_population_file:
+        file_molecules = load_smiles_from_file(args.initial_population_file)
+        logger.info(f"Loaded {len(file_molecules)} seed SMILES from {args.initial_population_file}")
+        initial_molecules = file_molecules + [s for s in initial_molecules if s not in file_molecules]
+
     # Initialize components
     logger.info("Initializing molecule generator...")
     generator = MoleculeGenerator(seed=args.seed, atom_set=atom_set, encoding=args.encoding)
@@ -252,7 +287,7 @@ Examples:
         generator=generator,
         eval_interface=eval_interface,
         output_dir=args.output_dir,
-        initial_seeds=args.initial_seeds,
+        initial_molecules=initial_molecules,
         save_frequency=args.save_frequency,
         log_frequency=args.log_frequency,
         seed=args.seed,
