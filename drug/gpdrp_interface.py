@@ -9,14 +9,14 @@ import os
 import sys
 from typing import Dict, Any
 
+# sascorer is an RDKit contrib script, not an installed package
+_SASCORER_PATH = "/Users/rohanbasuroy/miniconda3/envs/mol-evo/share/RDKit/Contrib/SA_Score"
+if _SASCORER_PATH not in sys.path and os.path.isfile(os.path.join(_SASCORER_PATH, 'sascorer.py')):
+    sys.path.insert(0, _SASCORER_PATH)
+
 GPDRP_DIR    = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
 INFER_SCRIPT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "infer.py")
 CONDA_PYTHON = "/Users/rohanbasuroy/miniconda3/envs/GPDRP/bin/python"
-
-# sascorer is an RDKit contrib script, not an installed package
-_SASCORER_PATH = "/Users/rohanbasuroy/miniconda3/envs/GPDRP/share/RDKit/Contrib/SA_Score"
-if _SASCORER_PATH not in sys.path and os.path.isfile(os.path.join(_SASCORER_PATH, 'sascorer.py')):
-    sys.path.insert(0, _SASCORER_PATH)
 
 # ── drug-likeness filter thresholds ──────────────────────────
 QED_MIN          = 0.3    # below this → not drug-like, reject
@@ -111,7 +111,7 @@ class GPDRPInterface:
                 print(f"REJECTED (QED={props['qed']:.3f} < {self.qed_min}): {smiles}")
             return {"error": f"QED too low: {props['qed']:.3f}"}
 
-        if self.filter_lipinski and props['lipinski_violations'] > 1:
+        if self.filter_lipinski and props['lipinski_violations'] > 2:
             if self.verbose:
                 print(f"REJECTED (Lipinski violations={props['lipinski_violations']}): {smiles}")
             return {"error": f"Lipinski violations: {props['lipinski_violations']}"}

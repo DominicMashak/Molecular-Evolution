@@ -20,7 +20,7 @@ python main.py \
     --fitness-mode gpdrp \
     --cell-line ${cell_line} \
     --objective lnic50 \
-    --atom-set drug \
+    --atom-set gpdrp \
     --minimize \
     --qed-min ${qed_min} \
     --sa-max ${sa_max} \

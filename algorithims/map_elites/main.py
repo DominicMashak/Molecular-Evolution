@@ -121,7 +121,7 @@ Examples:
     parser.add_argument('--sa-max', type=float, default=6.0,
                    help='Maximum SA score (1=easy, 10=hard to synthesize) for gpdrp mode (default: 6.0)')
     parser.add_argument('--atom-set', type=str, default=None,
-                       choices=['nlo', 'drug'],
+                       choices=['nlo', 'drug', 'gpdrp'],
                        help='Atom set for mutation/validation')
     parser.add_argument('--encoding', type=str, default='smiles',
                        choices=['smiles', 'selfies'],

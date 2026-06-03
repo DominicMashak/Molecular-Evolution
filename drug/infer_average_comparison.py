@@ -2,13 +2,18 @@
 """
 inference_average.py
 
-Runs GPDRP inference across all available cell lines for a given SMILES string.
-Loads the model once and loops through all cell lines in the same process.
+Runs GPDRP inference across cell lines for a given SMILES string.
+
+Modes:
+  all_cells       - inference on all 550 cell lines, known avg on available subset
+  overlapping     - inference and known avg only on cell lines with known data
+  unknown         - inference only on cell lines NOT in known data
 
 Usage:
     conda activate GPDRP
-    python inference_average.py --smiles "CC(=O)Oc1ccccc1C(=O)O"
-    python inference_average.py --smiles "CC(=O)Oc1ccccc1C(=O)O" --drug-name "5-Fluorouracil"
+    python inference_average.py --smiles "CC(=O)Oc1ccccc1C(=O)O" --drug-name "5-Fluorouracil" --mode all_cells
+    python inference_average.py --smiles "CC(=O)Oc1ccccc1C(=O)O" --drug-name "5-Fluorouracil" --mode overlapping
+    python inference_average.py --smiles "CC(=O)Oc1ccccc1C(=O)O" --drug-name "5-Fluorouracil" --mode unknown
 """
 
 import argparse
@@ -21,13 +26,12 @@ import torch
 from torch_geometric.data import Data
 from contextlib import redirect_stdout
 
-GPDRP_DIR = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
+GPDRP_DIR      = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
 sys.path.insert(0, GPDRP_DIR)
 
 from model.gin import GINConvNet
 
-MODEL_PATH  = os.path.join(GPDRP_DIR, "model.pth")
-CELL_GE_PATH = os.path.join(GPDRP_DIR, "data/cell_ge.txt")
+MODEL_PATH     = os.path.join(GPDRP_DIR, "model.pth")
 DRUG_IC50_PATH = os.path.join(GPDRP_DIR, "data/drug_cl_ic.csv")
 
 
@@ -83,33 +87,23 @@ def smile_to_graph(smile):
 # ── data loading ──────────────────────────────────────────────
 
 def load_all_cell_features():
-    """
-    Load gene expression features for all cell lines from cell_ge.txt.
-    Returns dict mapping cell_line_name -> np.array of shape [1329]
-    """
+    """Load all cell line features. Returns dict: cell_line -> np.array[1329]"""
     original_dir = os.getcwd()
     os.chdir(GPDRP_DIR)
-
     try:
         from preprocess import save_cell_oge_matrix
         with redirect_stdout(io.StringIO()):
             cell_dict, cell_feature = save_cell_oge_matrix()
     finally:
         os.chdir(original_dir)
-
-    # cell_dict maps name -> index, cell_feature is [550, 1329]
     all_cells = {}
     for name, idx in cell_dict.items():
         all_cells[name] = cell_feature[idx].astype(np.float32)
-
     return all_cells
 
 
 def load_known_ic50(drug_name):
-    """
-    Load known IC50 values for a drug from drug_cl_ic.csv.
-    Returns dict mapping cell_line_name -> known_ic50
-    """
+    """Load known IC50 values for a drug. Returns dict: cell_line -> ic50"""
     known = {}
     with open(DRUG_IC50_PATH, newline='') as f:
         reader = csv.DictReader(f)
@@ -126,19 +120,15 @@ def load_known_ic50(drug_name):
 
 def smiles_to_data(smiles, cell_feature):
     c_size, features, edge_index = smile_to_graph(smiles)
-
     x = torch.FloatTensor(np.array(features))
-
     if len(edge_index) > 0:
         edge_index_tensor = torch.LongTensor(edge_index).T
     else:
         edge_index_tensor = torch.LongTensor([[], []])
-
     data = Data(x=x, edge_index=edge_index_tensor)
-    data.batch = torch.zeros(x.size(0), dtype=torch.long)
+    data.batch     = torch.zeros(x.size(0), dtype=torch.long)
     data.target_ge = torch.FloatTensor(cell_feature).unsqueeze(0)
-    data.c_size = torch.LongTensor([c_size])
-
+    data.c_size    = torch.LongTensor([c_size])
     return data
 
 
@@ -147,114 +137,175 @@ def inverse_transform(y):
     return -10 * np.log(1 / y - 1)
 
 
-def run_inference_all_cells(smiles, model, device, all_cells):
+def run_inference(smiles, model, device, cells_to_run):
     """
-    Run inference for a SMILES string across all cell lines.
-    Returns dict mapping cell_line_name -> predicted_lnic50
+    Run inference on a specific subset of cell lines.
+    Returns dict: cell_line -> predicted_lnic50
     """
     results = {}
-    total = len(all_cells)
-
-    for i, (cell_name, cell_feature) in enumerate(all_cells.items()):
+    total   = len(cells_to_run)
+    for i, (cell_name, cell_feature) in enumerate(cells_to_run.items()):
         print(f"\r  Progress: {i+1}/{total} cell lines", end='', flush=True)
-
         try:
             data = smiles_to_data(smiles, cell_feature).to(device)
             with torch.no_grad():
                 pred, _ = model(data)
-            lnic50 = inverse_transform(pred.item())
-            results[cell_name] = lnic50
-        except Exception as e:
-            # skip cell lines that fail silently
+            results[cell_name] = inverse_transform(pred.item())
+        except Exception:
             pass
-
-    print()  # newline after progress
+    print()
     return results
+
+
+def print_stats(label, values):
+    """Print summary statistics for a set of LNIC50 values."""
+    if not values:
+        print(f"  {label}: no data")
+        return
+    arr = np.array(values)
+    print(f"  {label}:")
+    print(f"    n={len(arr)}  avg={np.mean(arr):.4f}  "
+          f"std={np.std(arr):.4f}  "
+          f"min={np.min(arr):.4f}  max={np.max(arr):.4f}")
 
 
 # ── main ──────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--smiles", required=True,
+    parser.add_argument("--smiles",    required=True,
                         help="SMILES string to evaluate")
     parser.add_argument("--drug-name", default=None,
-                        help="Optional drug name to compare against known GDSC values")
+                        help="Drug name for known GDSC comparison")
+    parser.add_argument("--mode",      default="all_cells",
+                        choices=["all_cells", "overlapping", "unknown"],
+                        help=(
+                            "all_cells:   inference on all 550 cell lines, "
+                            "known avg on available subset | "
+                            "overlapping: inference and known only on shared cell lines | "
+                            "unknown:     inference only on cell lines NOT in known data"
+                        ))
     args = parser.parse_args()
 
     print(f"\nSMILES: {args.smiles}")
+    print(f"Mode:   {args.mode}")
     print("="*60)
 
-    # load model once
+    # load model
     print("Loading model...")
     device = torch.device("cpu")
-    model = GINConvNet().to(device)
+    model  = GINConvNet().to(device)
     model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
     model.eval()
 
-    # load all cell line features once
+    # load all cell features
     print("Loading cell line features...")
     all_cells = load_all_cell_features()
-    print(f"Found {len(all_cells)} cell lines")
+    print(f"  {len(all_cells)} total cell lines available")
 
-    # run inference across all cell lines
-    print("\nRunning inference across all cell lines...")
-    results = run_inference_all_cells(args.smiles, model, device, all_cells)
+    # load known IC50 values if drug name provided
+    known = {}
+    if args.drug_name:
+        known = load_known_ic50(args.drug_name)
+        print(f"  {len(known)} known IC50 values for '{args.drug_name}'")
 
-    if not results:
+    known_cell_lines      = set(known.keys())
+    all_cell_lines        = set(all_cells.keys())
+    overlapping_cells     = known_cell_lines & all_cell_lines
+    unknown_cells         = all_cell_lines - known_cell_lines
+
+    # ── determine which cell lines to run inference on ────────
+    if args.mode == "all_cells":
+        cells_to_infer = all_cells
+        print(f"\nMode all_cells: running inference on all {len(cells_to_infer)} cell lines")
+
+    elif args.mode == "overlapping":
+        if not known:
+            print("ERROR: --drug-name required for overlapping mode")
+            sys.exit(1)
+        cells_to_infer = {c: all_cells[c] for c in overlapping_cells if c in all_cells}
+        print(f"\nMode overlapping: running inference on {len(cells_to_infer)} "
+              f"shared cell lines ({len(known)} known, {len(all_cells)} total)")
+
+    elif args.mode == "unknown":
+        if not known:
+            print("ERROR: --drug-name required for unknown mode")
+            sys.exit(1)
+        if len(unknown_cells) == 0:
+            print(f"\nNOTE: '{args.drug_name}' covers all {len(all_cells)} cell lines "
+                  f"— no unknown cell lines exist. Running inference on all {len(all_cells)}.")
+            cells_to_infer = all_cells
+        else:
+            cells_to_infer = {c: all_cells[c] for c in unknown_cells}
+            print(f"\nMode unknown: running inference on {len(cells_to_infer)} "
+                  f"cell lines not in known data "
+                  f"({len(known)} known, {len(unknown_cells)} unknown)")
+
+    # ── run inference ─────────────────────────────────────────
+    print("\nRunning inference...")
+    predictions = run_inference(args.smiles, model, device, cells_to_infer)
+
+    if not predictions:
         print("ERROR: No successful predictions")
         sys.exit(1)
 
-    # compute statistics
-    values      = np.array(list(results.values()))
-    cell_names  = list(results.keys())
+    # ── print results ─────────────────────────────────────────
+    print(f"\n{'='*60}")
+    print("RESULTS")
+    print(f"{'='*60}")
 
-    avg_lnic50  = np.mean(values)
-    std_lnic50  = np.std(values)
-    min_lnic50  = np.min(values)
-    max_lnic50  = np.max(values)
-    best_cell   = cell_names[np.argmin(values)]   # lowest = most potent
-    worst_cell  = cell_names[np.argmax(values)]   # highest = least potent
+    pred_values = list(predictions.values())
+    best_cell   = min(predictions, key=predictions.get)
+    worst_cell  = max(predictions, key=predictions.get)
 
-    print("\nResults:")
-    print(f"  Average LNIC50:  {avg_lnic50:.4f}")
-    print(f"  Std:             {std_lnic50:.4f}")
-    print(f"  Min LNIC50:      {min_lnic50:.4f}  (cell line: {best_cell})  ← most potent")
-    print(f"  Max LNIC50:      {max_lnic50:.4f}  (cell line: {worst_cell})  ← least potent")
+    print_stats("Predicted LNIC50", pred_values)
+    print(f"    most potent:  {best_cell}  ({predictions[best_cell]:.4f})")
+    print(f"    least potent: {worst_cell}  ({predictions[worst_cell]:.4f})")
 
-    # compare against known values if drug name provided
-    if args.drug_name:
-        print(f"\nComparing against known GDSC values for '{args.drug_name}':")
-        known = load_known_ic50(args.drug_name)
+    # known average — always on whatever known data exists
+    if known:
+        known_values = list(known.values())
+        print_stats("Known LNIC50   ", known_values)
 
-        if not known:
-            print(f"  No known values found for '{args.drug_name}' in drug_cl_ic.csv")
-        else:
-            # find overlapping cell lines
-            overlap = {c: (results[c], known[c]) for c in results if c in known}
+        # per mode comparison
+        if args.mode == "all_cells":
+            # inference on all 550, known on subset
+            overlap     = {c: (predictions[c], known[c])
+                           for c in predictions if c in known}
+            if overlap:
+                pred_overlap  = [v[0] for v in overlap.values()]
+                known_overlap = [v[1] for v in overlap.values()]
+                mae = np.mean(np.abs(np.array(pred_overlap) - np.array(known_overlap)))
+                print(f"\n  Overlap comparison ({len(overlap)} shared cell lines):")
+                print(f"    Predicted avg (overlap): {np.mean(pred_overlap):.4f}")
+                print(f"    Known avg    (overlap): {np.mean(known_overlap):.4f}")
+                print(f"    MAE:                    {mae:.4f}")
 
-            if not overlap:
-                print("  No overlapping cell lines between predictions and known values")
-            else:
-                pred_vals  = np.array([v[0] for v in overlap.values()])
-                known_vals = np.array([v[1] for v in overlap.values()])
-                diff       = pred_vals - known_vals
+        elif args.mode == "overlapping":
+            # both on same cell lines
+            overlap     = {c: (predictions[c], known[c])
+                           for c in predictions if c in known}
+            pred_vals   = np.array([v[0] for v in overlap.values()])
+            known_vals  = np.array([v[1] for v in overlap.values()])
+            mae         = np.mean(np.abs(pred_vals - known_vals))
+            print(f"\n  Direct comparison on {len(overlap)} overlapping cell lines:")
+            print(f"    Predicted avg: {np.mean(pred_vals):.4f}")
+            print(f"    Known avg:     {np.mean(known_vals):.4f}")
+            print(f"    MAE:           {mae:.4f}")
 
-                print(f"  Overlapping cell lines: {len(overlap)}")
-                print(f"  Predicted avg:          {np.mean(pred_vals):.4f}")
-                print(f"  Known avg:              {np.mean(known_vals):.4f}")
-                print(f"  Mean absolute error:    {np.mean(np.abs(diff)):.4f}")
-                print(f"  Max error:              {np.max(np.abs(diff)):.4f}")
-                max_err_cell = max(overlap.items(), key=lambda x: abs(x[1][0] - x[1][1]))
-                print(f"  Worst prediction: {max_err_cell[0]} predicted={max_err_cell[1][0]:.4f} known={max_err_cell[1][1]:.4f}")
+            # top 5
+            print(f"\n  Top 5 most potent (predicted):")
+            print(f"  {'Cell line':<15} {'Predicted':>10} {'Known':>10} {'Diff':>10}")
+            print(f"  {'-'*47}")
+            sorted_cells = sorted(overlap.items(), key=lambda x: x[1][0])
+            for cell, (pred, kn) in sorted_cells[:5]:
+                print(f"  {cell:<15} {pred:>10.4f} {kn:>10.4f} {pred-kn:>10.4f}")
 
-                # show top 5 best predicted cell lines vs known
-                print(f"\n  Top 5 most potent predictions vs known:")
-                print(f"  {'Cell line':<15} {'Predicted':>10} {'Known':>10} {'Diff':>10}")
-                print(f"  {'-'*47}")
-                sorted_cells = sorted(overlap.items(), key=lambda x: x[1][0])
-                for cell, (pred, known_val) in sorted_cells[:5]:
-                    print(f"  {cell:<15} {pred:>10.4f} {known_val:>10.4f} {pred-known_val:>10.4f}")
+        elif args.mode == "unknown":
+            # inference on unknown cells, known on known cells — no direct comparison
+            print(f"\n  NOTE: inference and known data are on different cell lines")
+            print(f"  Predicted avg (unknown cells): {np.mean(pred_values):.4f}")
+            print(f"  Known avg     (known cells):   {np.mean(known_values):.4f}")
 
     print("\n" + "="*60)
 

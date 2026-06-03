@@ -30,7 +30,7 @@ python main.py \
     --log_frequency 1 \
     --output_dir map_elites_gpdrp_results_seed_${SEED} \
     --seed ${SEED} \
-    --atom-set drug \
+    --atom-set gpdrp \
     --initial-population-file ${initial_molecules_file} \
     --verbose
 

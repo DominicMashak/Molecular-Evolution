@@ -22,21 +22,24 @@ class MoleculeMutator:
     ATOM_SETS = {
         'nlo': ['C', 'N', 'O'],
         'drug': ['C', 'N', 'O', 'S', 'F', 'Cl', 'Br'],
+        'gpdrp': ['C', 'N', 'O', 'S', 'F', 'Cl', 'Br', 'B']
     }
 
     # Atoms that can form at least 2 bonds (for insertion mutations)
     MULTIVALENT_ATOMS = {
         'nlo': ['C', 'N', 'O'],
         'drug': ['C', 'N', 'O', 'S'],  # Excludes F, Cl, Br (only 1 bond)
+        'gpdrp': ['C', 'N', 'O', 'S', 'B']  # B can also form multiple bonds
     }
 
     # Max valence for each atom (used to check compatibility)
-    MAX_VALENCE = {'C': 4, 'N': 3, 'O': 2, 'S': 2, 'F': 1, 'Cl': 1, 'Br': 1}
+    MAX_VALENCE = {'C': 4, 'N': 3, 'O': 2, 'S': 2, 'F': 1, 'Cl': 1, 'Br': 1, 'B': 3}
 
     # Atomic numbers for validation
     ATOMIC_NUMBERS = {
         'nlo': {1, 6, 7, 8},           # H, C, N, O
         'drug': {1, 6, 7, 8, 9, 16, 17, 35},  # H, C, N, O, F, S, Cl, Br
+        'gpdrp': {1, 6, 7, 8, 9, 16, 17, 35, 5}  # H, C, N, O, F, S, Cl, Br, B
     }
 
     def __init__(self, atom_set='nlo'):
@@ -212,8 +215,6 @@ class MoleculeMutator:
 
             # Always reject iodine
             if 'I' in smiles and 'Cl' not in smiles:
-                # 'I' could appear alone (iodine) — but watch out for 'Cl' containing 'l'
-                # More robust: parse the molecule and check atomic numbers below
                 pass
 
             # Parse without sanitization first to avoid warnings
@@ -244,16 +245,23 @@ class MoleculeMutator:
                     return False
 
             # Check size
-            if mol.GetNumAtoms() > max_atoms:
-                return False
+            if self.atom_set == 'gpdrp':
+                if mol.GetNumAtoms() > 65:
+                    return False
+            else:
+                if mol.GetNumAtoms() > max_atoms:
+                    return False
 
             # Check for reasonable chemistry
-            if mol.GetNumAtoms() < 5:  # Too small
+            if mol.GetNumAtoms() < 5:
                 return False
 
-            # Check molecular weight (drug mode allows larger molecules)
+            # Check molecular weight
             mw = Descriptors.MolWt(mol)
-            if self.atom_set == 'drug':
+            if self.atom_set == 'gpdrp':
+                if mw > 900 or mw < 50:
+                    return False
+            elif self.atom_set == 'drug':
                 if mw > 800 or mw < 50:
                     return False
             else:
