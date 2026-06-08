@@ -6,7 +6,8 @@ lambda_value=${4:-20}
 qed_min=${5:-0.3}
 filter_lipinski=${6:-true}
 sa_max=${7:-6.0}
-initial_molecules_file=${8:-$HOME/Documents/GitHub/Molecular-Evolution/drug/initial_molecules.txt}
+inference_mode=${8:-single}
+initial_molecules_file=${9:-$HOME/Documents/GitHub/Molecular-Evolution/drug/initial_molecules.txt}
 
 echo "======================================================================"
 echo "Running (μ+λ) ES for GPDRP Optimization with seed ${SEED} and cell line ${cell_line}"
@@ -27,12 +28,13 @@ python main.py \
     $( [ "$filter_lipinski" = "true" ] && echo "--filter-lipinski" ) \
     --mu ${mu_value} \
     --lambda ${lambda_value} \
-    --n-gen 10 \
+    --n-gen 100 \
     --save-frequency 1 \
     --log-frequency 1 \
     --output-dir mu_lambda_gpdrp_results_seed_${SEED} \
     --seed ${SEED} \
     --initial-population-file ${initial_molecules_file} \
+    --inference-mode ${inference_mode} \
     --verbose
 
 echo ""

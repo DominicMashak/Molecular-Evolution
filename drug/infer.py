@@ -85,6 +85,21 @@ def load_cell_feature(cell_line):
     idx = cell_dict[cell_line]
     return cell_feature[idx].astype(np.float32)
 
+def load_all_cell_features():
+    """Load all cell line features. Returns dict: cell_line -> np.array[1329]"""
+    original_dir = os.getcwd()
+    os.chdir(GPDRP_DIR)
+    try:
+        from preprocess import save_cell_oge_matrix
+        with redirect_stdout(io.StringIO()):
+            cell_dict, cell_feature = save_cell_oge_matrix()
+    finally:
+        os.chdir(original_dir)
+    all_cells = {}
+    for name, idx in cell_dict.items():
+        all_cells[name] = cell_feature[idx].astype(np.float32)
+    return all_cells
+
 
 # ── smiles → PyG Data object ──────────────────────────────────
 
@@ -112,23 +127,43 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--smiles", required=True, help="SMILES string for the molecule")
     parser.add_argument("--cell-line", default=CELL_LINE, help="Cell line to use for prediction")
+    parser.add_argument("--mode", default="single",
+                    choices=["single", "average"],
+                    help="single: predict for one cell line, average: predict across all 550")
     args = parser.parse_args()
-
-    device = torch.device("cpu")
-    cell_feature = load_cell_feature(args.cell_line)
-
-    model = GINConvNet().to(device)
-    model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
-    model.eval()
-
-    data = smiles_to_data(args.smiles, cell_feature).to(device)
-
-    with torch.no_grad():
-        pred, _ = model(data)
 
     def inverse_transform(y):
         y = np.clip(y, 1e-6, 1 - 1e-6)
         return -10 * np.log(1 / y - 1)
+
+    device = torch.device("cpu")
+
+    # load model once regardless of mode
+    model = GINConvNet().to(device)
+    model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
+    model.eval()
+
+    if args.mode == "average":
+        all_cells = load_all_cell_features()
+        preds = []
+        for cell_name, cell_feature in all_cells.items():
+            try:
+                data = smiles_to_data(args.smiles, cell_feature).to(device)
+                with torch.no_grad():
+                    pred, _ = model(data)
+                preds.append(inverse_transform(pred.item()))
+            except Exception:
+                pass
+        avg = np.mean(preds) if preds else 0.0
+        print(f"Predicted value (IC50): {avg:.4f}")
+        return
+
+    # single mode
+    cell_feature = load_cell_feature(args.cell_line)
+    data = smiles_to_data(args.smiles, cell_feature).to(device)
+
+    with torch.no_grad():
+        pred, _ = model(data)
 
     print(f"Predicted value (raw): {pred.item():.10f}")
     print(f"Predicted value (IC50): {inverse_transform(pred.item()):.4f}")

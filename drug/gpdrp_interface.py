@@ -38,12 +38,13 @@ class GPDRPInterface:
 
     def __init__(self, cell_line: str = "22RV1", verbose: bool = False,
                  qed_min: float = QED_MIN, filter_lipinski: bool = True,
-                 sa_max: float = SA_MAX):
+                 sa_max: float = SA_MAX, mode: str = "single"):
         self.cell_line       = cell_line
         self.verbose         = verbose
         self.qed_min         = qed_min
         self.filter_lipinski = filter_lipinski
         self.sa_max          = sa_max
+        self.mode            = mode #single or average
 
     def _compute_rdkit_props(self, smiles: str) -> Dict[str, Any]:
         """
@@ -123,18 +124,27 @@ class GPDRPInterface:
 
         # step 3 — run GPDRP
         try:
-            cmd = [
-                CONDA_PYTHON,
-                INFER_SCRIPT,
-                "--smiles", smiles,
-                "--cell-line", self.cell_line
-            ]
+            if self.mode == "average":
+                cmd = [
+                    CONDA_PYTHON,
+                    INFER_SCRIPT,
+                    "--smiles", smiles,
+                    "--mode", "average"
+                ]
+            else:
+
+                cmd = [
+                    CONDA_PYTHON,
+                    INFER_SCRIPT,
+                    "--smiles", smiles,
+                    "--cell-line", self.cell_line
+                ]
 
             proc = subprocess.run(
                 cmd,
                 capture_output=True,
                 text=True,
-                timeout=120,
+                timeout=180,
                 cwd=GPDRP_DIR
             )
 

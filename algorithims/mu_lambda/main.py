@@ -60,6 +60,7 @@ def main():
 Supported Modes:
   qc         - Quantum chemistry (NLO) optimization
   smartcadd  - Drug design optimization via SmartCADD
+  gpdrp      - Drug response prediction optimization (GPDRP)
 
 Supported Calculators (qc mode):
   dft          - DFT calculations (requires functional and basis)
@@ -81,8 +82,7 @@ Examples:
   # Drug design: Minimize SA score with docking
   python main.py --fitness-mode smartcadd --smartcadd-mode docking \\
                  --protein-code 1AQ1 \\
-                 --mu 20 --lambda 40 --n-gen 100 \\
-                 --objective sa_score --minimize
+                 --mu 20 --lambda 40 --n-gen 100 \\  GPDRP: Maximize predicted drug response (beta_mean) for a cell line
 
   # Recalculate from existing database
   python main.py --recalculate mu_lambda_results/ --objective beta_mean
@@ -143,6 +143,9 @@ Examples:
                        help='Path to ADMET alert collection CSV')
     parser.add_argument('--cell-line', type=str, default='22RV1',
                        help='Cell line for GPDRP drug response prediction')
+    parser.add_argument('--inference-mode', type=str, default='single',
+                       choices=['single', 'average'],
+                       help='single: predict for one cell line, average: predict across all 550 cell lines')
     parser.add_argument('--qed-min', type=float, default=0.3,
                    help='Minimum QED score for drug-likeness filter (gpdrp mode, default: 0.3)')
     parser.add_argument('--filter-lipinski', action='store_true', default=True,
@@ -235,7 +238,8 @@ Examples:
             verbose=args.verbose,
             qed_min=args.qed_min,
             filter_lipinski=args.filter_lipinski,
-            sa_max=args.sa_max
+            sa_max=args.sa_max,
+            mode=args.inference_mode
         )
     else:
         # Validate calculator is provided for QC mode
