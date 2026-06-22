@@ -6,6 +6,7 @@ filter_lipinski=${4:-true}
 sa_max=${5:-6.0}
 initial_molecules_file=${6:-$HOME/Documents/GitHub/Molecular-Evolution/drug/initial_molecules.txt}
 inference_mode=${7:-average}
+gpdrp_dir=${8:-$HOME/Documents/GitHub/GPDRP_GDSC2}
 
 echo "======================================================================"
 echo "Running MAP-Elites CVT for GPDRP with seed ${SEED} cell line ${cell_line}"
@@ -33,8 +34,9 @@ python main.py \
     --output_dir map_elites_gpdrp_results_seed_${SEED} \
     --seed ${SEED} \
     --atom-set gpdrp \
+    --gpdrp-dir ${gpdrp_dir} \
     --initial-population-file ${initial_molecules_file} \
-    --measure-bounds 5 65 4 70
+    --measure-bounds 5 65 4 70 \
     --verbose
 
 echo "======================================================================"

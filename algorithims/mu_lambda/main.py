@@ -178,6 +178,8 @@ Examples:
                        help='Initial SMILES strings for the starting population')
     parser.add_argument('--initial-population-file', type=str, default=None,
                        help='Path to a TXT or CSV file containing seed SMILES for the initial population')
+    parser.add_argument('--gpdrp-dir', type=str, default=None,
+                   help='Path to GPDRP repo directory (default: original GPDRP)')
 
     # Recalculation option
     parser.add_argument('--recalculate', type=str, default=None,
@@ -239,7 +241,9 @@ Examples:
             qed_min=args.qed_min,
             filter_lipinski=args.filter_lipinski,
             sa_max=args.sa_max,
-            mode=args.inference_mode
+            mode=args.inference_mode,
+            gpdrp_dir=args.gpdrp_dir
+
         )
     else:
         # Validate calculator is provided for QC mode

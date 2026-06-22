@@ -38,13 +38,14 @@ class GPDRPInterface:
 
     def __init__(self, cell_line: str = "22RV1", verbose: bool = False,
                  qed_min: float = QED_MIN, filter_lipinski: bool = True,
-                 sa_max: float = SA_MAX, mode: str = "single"):
+                 sa_max: float = SA_MAX, mode: str = "single", gpdrp_dir: str = None):
         self.cell_line       = cell_line
         self.verbose         = verbose
         self.qed_min         = qed_min
         self.filter_lipinski = filter_lipinski
         self.sa_max          = sa_max
         self.mode            = mode #single or average
+        self.gpdrp_dir       = gpdrp_dir or GPDRP_DIR
 
     def _compute_rdkit_props(self, smiles: str) -> Dict[str, Any]:
         """
@@ -62,6 +63,11 @@ class GPDRPInterface:
                 return None
 
             mol_weight = Descriptors.MolWt(mol)
+             
+             # add this check right after computing mol_weight:
+            if mol_weight > 900:
+                return None
+            
             logp       = Descriptors.MolLogP(mol)
             hbd        = Descriptors.NumHDonors(mol)
             hba        = Descriptors.NumHAcceptors(mol)
@@ -129,6 +135,7 @@ class GPDRPInterface:
                     CONDA_PYTHON,
                     INFER_SCRIPT,
                     "--smiles", smiles,
+                    "--gpdrp-dir", self.gpdrp_dir,
                     "--mode", "average"
                 ]
             else:
@@ -137,6 +144,7 @@ class GPDRPInterface:
                     CONDA_PYTHON,
                     INFER_SCRIPT,
                     "--smiles", smiles,
+                    "--gpdrp-dir", self.gpdrp_dir,
                     "--cell-line", self.cell_line
                 ]
 
@@ -145,7 +153,7 @@ class GPDRPInterface:
                 capture_output=True,
                 text=True,
                 timeout=180,
-                cwd=GPDRP_DIR
+                cwd=self.gpdrp_dir
             )
 
             if proc.returncode != 0:

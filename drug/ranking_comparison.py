@@ -22,7 +22,7 @@ from torch_geometric.data import Data
 from contextlib import redirect_stdout
 from scipy.stats import pearsonr, spearmanr
 
-GPDRP_DIR    = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
+GPDRP_DIR    = "/Users/rohanbasuroy/Documents/GitHub/GPDRP_GDSC2"
 sys.path.insert(0, GPDRP_DIR)
 
 from model.gin import GINConvNet

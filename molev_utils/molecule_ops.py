@@ -39,7 +39,7 @@ class MoleculeMutator:
     ATOMIC_NUMBERS = {
         'nlo': {1, 6, 7, 8},           # H, C, N, O
         'drug': {1, 6, 7, 8, 9, 16, 17, 35},  # H, C, N, O, F, S, Cl, Br
-        'gpdrp': {1, 6, 7, 8, 9, 16, 17, 35, 5}  # H, C, N, O, F, S, Cl, Br, B
+        'gpdrp': {1, 5, 6, 7, 8, 9, 16, 17, 35}  # H, B, C, N, O, F, S, Cl, Br
     }
 
     def __init__(self, atom_set='nlo'):

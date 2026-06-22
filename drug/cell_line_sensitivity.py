@@ -26,7 +26,8 @@ from torch_geometric.data import Data
 from contextlib import redirect_stdout
 from collections import defaultdict
 
-GPDRP_DIR    = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
+GPDRP_DIR    = "/Users/rohanbasuroy/Documents/GitHub/GPDRP_GDSC2"
+sys.path.insert(0, "/Users/rohanbasuroy/Documents/GitHub/GPDRP")  # ← model architecture
 sys.path.insert(0, GPDRP_DIR)
 
 from model.gin import GINConvNet
@@ -144,7 +145,17 @@ def main():
 
     print("Loading cell line features...")
     all_cells = load_all_cell_features()
-    print(f"  {len(all_cells)} cell lines\n")
+    print(f"  {len(all_cells)} cell lines available")
+
+    # filter to GDSC2 cell lines only
+    gdsc2_cells_file = os.path.join(os.path.dirname(__file__), 'gdsc2_cell_lines.txt')
+    if os.path.exists(gdsc2_cells_file):
+        with open(gdsc2_cells_file) as f:
+            gdsc2_cells = set(l.strip() for l in f if l.strip())
+        all_cells = {c: v for c, v in all_cells.items() if c in gdsc2_cells}
+        print(f"  Filtered to {len(all_cells)} GDSC2 cell lines\n")
+    else:
+        print(f"  Using all {len(all_cells)} cell lines\n")
 
     # counters
     most_potent_count  = defaultdict(int)   # cell line → times it was most potent

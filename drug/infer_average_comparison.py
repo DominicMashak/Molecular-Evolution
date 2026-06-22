@@ -26,8 +26,9 @@ import torch
 from torch_geometric.data import Data
 from contextlib import redirect_stdout
 
-GPDRP_DIR      = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
+GPDRP_DIR      = "/Users/rohanbasuroy/Documents/GitHub/GPDRP_GDSC2"
 sys.path.insert(0, GPDRP_DIR)
+sys.path.insert(0, "/Users/rohanbasuroy/Documents/GitHub/GPDRP")  # ← add this
 
 from model.gin import GINConvNet
 
@@ -185,6 +186,9 @@ def main():
                             "overlapping: inference and known only on shared cell lines | "
                             "unknown:     inference only on cell lines NOT in known data"
                         ))
+    parser.add_argument("--cell-lines-file", default=None,
+                    help="Path to file with cell line names to restrict inference to "
+                         "(one per line). If not provided uses all available cell lines.")
     args = parser.parse_args()
 
     print(f"\nSMILES: {args.smiles}")
@@ -202,8 +206,14 @@ def main():
     print("Loading cell line features...")
     all_cells = load_all_cell_features()
     print(f"  {len(all_cells)} total cell lines available")
-
+    # filter to specific cell lines if provided
+    if args.cell_lines_file:
+        with open(args.cell_lines_file) as f:
+            requested = set(l.strip() for l in f if l.strip() and not l.startswith('#'))
+        all_cells = {c: v for c, v in all_cells.items() if c in requested}
+        print(f"  Filtered to {len(all_cells)} cell lines from {args.cell_lines_file}")
     # load known IC50 values if drug name provided
+    
     known = {}
     if args.drug_name:
         known = load_known_ic50(args.drug_name)

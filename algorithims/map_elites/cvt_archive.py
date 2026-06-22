@@ -175,7 +175,7 @@ class CVTMAPElitesArchive:
         return self.n_filled / self.n_centroids
 
     def get_max_objective(self) -> float:
-        """Get the maximum objective value in the archive."""
+        """Get the best objective value in the archive (max when maximizing, min when minimizing)."""
         if self.n_filled == 0:
             return -np.inf
         return max(cell['objective'] for cell in self.cells.values() if cell is not None)

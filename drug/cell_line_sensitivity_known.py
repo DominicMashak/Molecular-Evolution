@@ -19,8 +19,8 @@ import numpy as np
 from collections import defaultdict
 
 
-DRUG_IC50_PATH = "/Users/rohanbasuroy/Documents/GitHub/GPDRP/data/drug_cl_ic.csv"
-
+#DRUG_IC50_PATH = "/Users/rohanbasuroy/Documents/GitHub/GPDRP/data/drug_cl_ic.csv"
+DRUG_IC50_PATH = "/Users/rohanbasuroy/Documents/GitHub/GPDRP_GDSC2/data/drug_cl_ic.csv"
 
 def main():
     parser = argparse.ArgumentParser()

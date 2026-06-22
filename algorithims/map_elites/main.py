@@ -114,6 +114,11 @@ Examples:
                        help='Path to ADMET alert collection CSV')
     parser.add_argument('--cell-line', type=str, default='22RV1',
                        help='Cell line for GPDRP drug response prediction')
+    parser.add_argument('--gpdrp-dir', type=str, default=None,
+                   help='Path to GPDRP repo directory (default: original GPDRP)')
+    parser.add_argument('--inference-mode', type=str, default='single',
+                       choices=['single', 'average'],
+                       help='single: predict for one cell line, average: predict across all 550 cell lines')
     parser.add_argument('--qed-min', type=float, default=0.3,
                    help='Minimum QED score for drug-likeness filter (gpdrp mode, default: 0.3)')
     parser.add_argument('--filter-lipinski', action='store_true', default=True,
@@ -224,9 +229,11 @@ Examples:
             verbose=args.verbose,
             qed_min=args.qed_min,
             filter_lipinski=args.filter_lipinski,
-            sa_max=args.sa_max
+            sa_max=args.sa_max,
+            mode=args.inference_mode,
+            gpdrp_dir=args.gpdrp_dir 
         )
-        atom_set = 'drug'
+        atom_set = 'gpdrp'  # Override atom set for GPDRP mode
     else:
         # Setup calculator kwargs
         calculator_kwargs = {}
@@ -332,6 +339,11 @@ Examples:
         for key, val in result.items():
             if key not in props and key != 'smiles':
                 props[key] = val if val is not None else 0.0
+        # negate lnic50 so MAP-Elites maximizes correctly
+        
+        # lower lnic50 = more potent = higher negated value
+        if args.fitness_mode == 'gpdrp' and 'lnic50' in props:
+            props['lnic50'] = -props['lnic50']
 
         # Add ChemBERTa embedding dimensions if embedder is active
         if embedder is not None:
@@ -417,7 +429,10 @@ Examples:
     best = optimizer.get_best_solution()
     if best:
         print(f"\nBest solution: {best['solution']}")
-        print(f"Properties: {best['properties']}")
+        props = best['properties'].copy()
+        if args.fitness_mode == 'gpdrp' and 'lnic50' in props:
+            props['lnic50'] = -props['lnic50']  # un-negate for display
+        print(f"Properties: {props}")
     
     # Show some example solutions from different regions
     print("\nSample solutions from archive:")
@@ -425,9 +440,19 @@ Examples:
     for entry in random.sample(optimizer.archive.get_all_solutions(),
                            min(5, len(optimizer.archive))):
         obj_val = entry['properties'].get(objective_key, 0.0)
+        if args.fitness_mode == 'gpdrp':
+            obj_val = -obj_val  # un-negate for display
+        print(f"  {entry['solution']} "
+            f"({objective_key}={obj_val:.4f}, "
+            f"num_atoms={entry['properties'].get('num_atoms', 'N/A')})")
+    '''
+    for entry in random.sample(optimizer.archive.get_all_solutions(),
+                           min(5, len(optimizer.archive))):
+        obj_val = entry['properties'].get(objective_key, 0.0)
         print(f"  {entry['solution']} "
           f"({objective_key}={obj_val:.4f}, "
           f"num_atoms={entry['properties'].get('num_atoms', 'N/A')})")
+     '''
     
  
     

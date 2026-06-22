@@ -51,11 +51,10 @@ class PerformanceTracker:
         # This is the total "quality-diversity" - it can only increase or stay same
         solutions = archive.get_all_solutions()
         all_objectives = np.array([
-            s['properties'].get(archive.objective_key, 0.0)
+            s['objective']
             for s in solutions
-            if s['properties'].get(archive.objective_key) is not None
+            if s['objective'] is not None and not np.isinf(s['objective'])
         ])
-        all_objectives = all_objectives[~np.isinf(all_objectives)]
         qd_score = float(np.sum(all_objectives)) if len(all_objectives) > 0 else 0.0
         
         # Check for monotonicity (QD score should never decrease in MAP-Elites)

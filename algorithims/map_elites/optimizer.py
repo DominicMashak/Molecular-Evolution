@@ -400,26 +400,26 @@ class MAPElitesOptimizer:
         return history
     
     def save_archive(self, generation: int):
-        """Save current archive to JSON"""
-        archive_data = {
-            'generation': generation,
-            'solutions': []
-        }
+        archive_data = {'generation': generation, 'solutions': []}
         
-        for entry in self.archive.get_all_solutions():
-            archive_data['solutions'].append({
-                'indices': entry['indices'],
-                'smiles': entry['solution'],
-                'properties': entry['properties'],
-                'objective': entry['objective']
-            })
-        
-        filename = self.output_dir / f'archive_gen_{generation:04d}.json'
-        import json
-        with open(filename, 'w') as f:
-            json.dump(archive_data, f, indent=2)
-        
-        print(f"Saved archive to {filename}")
+        # ribs newer API uses retrieve/data instead of as_pandas
+        try:
+            # newer ribs API
+            occupied = self.result_archive.data()
+            solutions = occupied['solution']
+            objectives = occupied['objective']
+            measures = occupied['measures']
+            for i in range(len(objectives)):
+                z = solutions[i]
+                smiles = self.vae.decode(z)
+                entry = {
+                    'objective': float(objectives[i]),
+                    'measures': [float(m) for m in measures[i]],
+                    'smiles': smiles,
+                }
+                archive_data['solutions'].append(entry)
+        except Exception as e:
+            print(f"Warning: could not save archive details: {e}")
     
     def get_best_solution(self) -> Optional[Dict[str, Any]]:
         """
