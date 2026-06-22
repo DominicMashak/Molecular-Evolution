@@ -1,4 +1,5 @@
 import random
+import json
 from typing import Callable, Dict, Any, Optional, List
 from archive import MAPElitesArchive
 from performance import PerformanceTracker
@@ -17,6 +18,7 @@ class MAPElitesOptimizer:
         generate_fn: Callable[[], Any],
         mutate_fn: Callable[[Any], Any],
         evaluate_fn: Callable[[Any], Dict[str, Any]],
+        objective_key: str = 'objective',
         random_init_size: int = 100,
         output_dir: str = "map_elites_results",
         reference_point: List[float] = None,
@@ -45,6 +47,7 @@ class MAPElitesOptimizer:
         self.generate_fn = generate_fn
         self.mutate_fn = mutate_fn
         self.evaluate_fn = evaluate_fn
+        self.objective_key = objective_key
         self.random_init_size = random_init_size
         self.crossover_rate = crossover_rate
         self.crossover_fn = crossover_fn
@@ -137,7 +140,7 @@ class MAPElitesOptimizer:
             # Update if this generation is earlier
             if generation < existing['generation']:
                 existing['generation'] = generation
-                existing['objective'] = properties.get('objective')
+                existing['objective'] = properties.get(self.objective_key)
                 # Update all other properties
                 for key, value in properties.items():
                     if key != 'smiles':
@@ -145,9 +148,9 @@ class MAPElitesOptimizer:
         else:
             # Add new molecule entry
             mol_entry = {
-                'smiles': solution,
+                'smiles': solution, 
                 'generation': generation,
-                'objective': properties.get('objective')
+                'objective': properties.get(self.objective_key)
             }
             # Add all other properties from evaluation
             for key, value in properties.items():
@@ -401,36 +404,30 @@ class MAPElitesOptimizer:
     
     def save_archive(self, generation: int):
         archive_data = {'generation': generation, 'solutions': []}
-        
-        # ribs newer API uses retrieve/data instead of as_pandas
         try:
-            # newer ribs API
-            occupied = self.result_archive.data()
-            solutions = occupied['solution']
-            objectives = occupied['objective']
-            measures = occupied['measures']
-            for i in range(len(objectives)):
-                z = solutions[i]
-                smiles = self.vae.decode(z)
-                entry = {
-                    'objective': float(objectives[i]),
-                    'measures': [float(m) for m in measures[i]],
-                    'smiles': smiles,
-                }
-                archive_data['solutions'].append(entry)
+            for entry in self.archive.get_all_solutions():
+                archive_data['solutions'].append({
+                    'objective': entry['objective'],
+                    'solution': entry['solution'],
+                    'properties': entry['properties'],
+                })
         except Exception as e:
             print(f"Warning: could not save archive details: {e}")
+        
+        filename = self.output_dir / f'archive_gen_{generation:04d}.json'
+        with open(filename, 'w') as f:
+            json.dump(archive_data, f, indent=2)
+        print(f"Saved archive ({len(archive_data['solutions'])} cells) to {filename}")
     
     def get_best_solution(self) -> Optional[Dict[str, Any]]:
-        """
-        Get the solution with the highest objective value.
-        
-        Returns:
-            Dictionary with solution info, or None if archive is empty
-        """
-        all_solutions = self.archive.get_all_solutions()
-        
-        if not all_solutions:
+        if not self.all_molecules:
             return None
-        
-        return max(all_solutions, key=lambda x: x['objective'])
+        valid = [m for m in self.all_molecules if m.get('objective') is not None]
+        if not valid:
+            return None
+        best = max(valid, key=lambda x: x['objective'])
+        return {
+            'solution': best['smiles'],
+            'properties': best,
+            'objective': best['objective'],
+        }

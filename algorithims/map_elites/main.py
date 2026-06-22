@@ -409,6 +409,7 @@ Examples:
         generate_fn=generate_solution,
         mutate_fn=mutate_solution,
         evaluate_fn=evaluate_solution,
+        objective_key=objective_key,
         random_init_size=args.pop_size,
         output_dir=args.output_dir,
         reference_point=args.reference_point,

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import parser
 import sys
 import os
 import io
@@ -8,10 +9,19 @@ import torch
 from torch_geometric.data import Data
 from contextlib import redirect_stdout
 
-GPDRP_DIR = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
+
+_DEFAULT_GPDRP_DIR = "/Users/rohanbasuroy/Documents/GitHub/GPDRP"
+
+def _get_gpdrp_dir():
+    """Get GPDRP directory from environment variable or default."""
+    return os.environ.get('GPDRP_DIR', _DEFAULT_GPDRP_DIR)
+
+GPDRP_DIR  = _get_gpdrp_dir()
+sys.path.insert(0, GPDRP_DIR)
+MODEL_PATH = os.path.join(GPDRP_DIR, "model.pth")
 sys.path.insert(0, GPDRP_DIR)
 
-from model.gin import GINConvNet
+
 
 CELL_LINE  = "22RV1"
 MODEL_PATH = os.path.join(GPDRP_DIR, "model.pth")
@@ -130,7 +140,19 @@ def main():
     parser.add_argument("--mode", default="single",
                     choices=["single", "average"],
                     help="single: predict for one cell line, average: predict across all 550")
+    parser.add_argument("--gpdrp-dir", default=None,
+                    help="Path to GPDRP repo (default: original GPDRP)")
     args = parser.parse_args()
+
+    # override if provided
+    if args.gpdrp_dir:
+        global GPDRP_DIR, MODEL_PATH
+        GPDRP_DIR  = args.gpdrp_dir
+        MODEL_PATH = os.path.join(GPDRP_DIR, "model.pth")
+        sys.path.insert(0, GPDRP_DIR)
+
+    from model.gin import GINConvNet  # ← move here to ensure correct GPDRP_DIR is used
+    
 
     def inverse_transform(y):
         y = np.clip(y, 1e-6, 1 - 1e-6)
