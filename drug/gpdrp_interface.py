@@ -67,6 +67,19 @@ class GPDRPInterface:
              # add this check right after computing mol_weight:
             if mol_weight > 900:
                 return None
+
+            # reject unusual valence states for S and B
+            # (real drugs essentially never have S=B, S valence=4
+            # outside of sulfoxide/sulfone contexts with oxygen)
+            for atom in mol.GetAtoms():
+                symbol = atom.GetSymbol()
+                valence = atom.GetTotalValence()
+                if symbol == 'S' and valence not in (2, 6):
+                    return None
+                if symbol == 'B' and valence != 3:
+                    return None
+                
+                
             
             logp       = Descriptors.MolLogP(mol)
             hbd        = Descriptors.NumHDonors(mol)
